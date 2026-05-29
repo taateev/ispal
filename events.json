@@ -1,0 +1,3364 @@
+[
+  {
+    "cat": "violence",
+    "n": 1,
+    "date": "1517",
+    "year": 1517,
+    "location": "Safed",
+    "event": "Pogrom during Mamluk–Ottoman transition; false rumor of Ottoman defeat triggered sack of the Jewish quarter.",
+    "quote": "Our brethren were evicted from their homes, robbed, and plundered, and they fled naked to the villages.",
+    "src": "David 1999",
+    "srcType": "primary",
+    "srcNote": "Contemporary Hebrew source",
+    "actor": "Mamluk-loyalist rioters",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Multiple killed",
+    "scaleBig": "Many",
+    "scaleNote": "Community fled",
+    "links": [],
+    "searchTerms": [
+      "1517",
+      "Safed",
+      "Mamluk",
+      "pogrom",
+      "Jewish quarter",
+      "Ottoman conquest"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "It appears that shortly after the Ottoman conquest in 1517, Safed's Jewish population suffered a severe blow following the dissemination of unfounded reports that the Ottoman sultan had met defeat at the gates of Cairo. A contemporary Hebrew source described the results of the bloody clash between Mamluk supporters and representatives of the Ottoman authorities; the rioters killed many of Safed's Jews and robbed others and left them destitute. Those Jews who escaped physical harm sought refuge in the nearby villages, 'for due to sins it happened that our brethren were evicted from their homes, robbed, and plundered, and they fled naked to the villages, without any provisions.' Despite this setback, five years later Moses Basola reported that the Safed community had again reached its former level of 'more than three hundred households.'"
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 2,
+    "date": "1516–17",
+    "year": 1516,
+    "location": "Hebron",
+    "event": "Jewish community decimated in the course of rioting by the local populace during the Ottoman conquest.",
+    "src": "David 1999",
+    "srcType": "secondary",
+    "srcNote": "Document of uncertain origin",
+    "actor": "Local populace",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Community reduced from 20 to 8–10 families",
+    "scaleBig": "~½",
+    "scaleNote": "families remaining",
+    "links": [],
+    "searchTerms": [
+      "1516",
+      "Hebron",
+      "Ottoman conquest",
+      "Jewish community",
+      "rioting"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "Hebron belonged to the sanjak of Jerusalem. Its Jewish population was tiny; in the 1480s, Hebron's entire Jewish presence reportedly totaled twenty families. Evidently, with the Ottoman incursion to Eretz-Israel, Hebron's Jewish community was decimated in the course of rioting by the local populace, as a document of uncertain origin indicates. Generally speaking, for Hebron's Jewish community, the postconquest period may be summed up as one of growth and subsequent decline."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 3,
+    "date": "1599",
+    "year": 1599,
+    "location": "Ein Zeitim · Meron · Birya",
+    "event": "Anti-Jewish brigandage; yeshivah relocated to Safed, ending Jewish settlement in these Galilee villages.",
+    "src": "David 1999; Solomon Shlomil 1607 letter",
+    "srcType": "primary",
+    "actor": "Muslim brigands (Fakhr al-Din II instability)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Unknown",
+    "scaleBig": "—",
+    "scaleNote": "Villages permanently abandoned",
+    "links": [
+      {
+        "id": "expulsion-5",
+        "label": "Same event: villages permanently emptied"
+      }
+    ],
+    "searchTerms": [
+      "1599",
+      "Ein Zeitim",
+      "Meron",
+      "Birya",
+      "brigand",
+      "yeshivah"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "From the century's second half, Ein Zeitim boasted its own yeshivah, headed by Moses ben Makhir in the last quarter of the century until its doors closed in 1599. In that year, against the background of Druze emir Fa[kh]r ed-Din II's early-seventeenth-century attempt to bring all of southern Lebanon and large parts of Eretz-Israel under his control, there were outbreaks of anti-Jewish violence by Muslim brigands. These resulted in the yeshivah's relocation to Safed, thus ending Jewish settlement in Ein Zeitim. A letter written by Solomon Shlomil Meinstral of Safed in 1607 reflects this state of affairs: 'In the village of Ein Zeitim, and in Meron, there are abandoned synagogues, and no [Jewish] inhabitants.' ... Birya's Jewish settlement dates from an earlier period. ... Like Ein Zeitim and other nearby settlements, this village was evidently abandoned in the early seventeenth century because of the outbreaks of violence."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 4,
+    "date": "1604",
+    "year": 1604,
+    "location": "Safed",
+    "event": "Druze massacre; Jews escaped to Damascus. Rival forces conquered the town several times.",
+    "quote": "By 1653 [Safed was] practically devoid of Jews.",
+    "src": "Ayalon 2025",
+    "srcType": "secondary",
+    "actor": "Druze (Ma'an family faction)",
+    "actorType": [
+      "druze"
+    ],
+    "scale": "Unspecified",
+    "scaleBig": "—",
+    "scaleNote": "Mass flight",
+    "links": [
+      {
+        "id": "expulsion-6",
+        "label": "Same event: flight to Damascus"
+      }
+    ],
+    "searchTerms": [
+      "1604",
+      "Safed",
+      "Druze",
+      "Ma'an",
+      "Fakhr a-Din",
+      "massacre"
+    ],
+    "passages": [
+      {
+        "file": "Ayalon (curated)",
+        "text": "Safed's economic and scholarly prosperity did not last long. Between 1570 and 1590, virtually its entire stratum of leading scholars had either died or left the city. Some moved to neighboring Jerusalem or Damascus, and Safed ceased to attract new students. Early signs of a financial crisis were already noticeable in the 1560s and were felt by many in the early-1570s. The price of wool from the Balkans rose sharply from the mid-1570s, which made production in Safed unprofitable due to high transportation costs. An Ottoman decree requiring Safed Jews to move to Cyprus in 1576, presumably for financial reasons, caused great turmoil in the local community and, although it was rescinded in 1578 (also due to financial concerns), it likely prompted some Jews to leave. The introduction into the markets of cheap English woolen broadcloth in the 1580s eliminated whatever wool industry remained in Safed. Jewish merchants left, seeking opportunities elsewhere. Safed suffered further from severe droughts in 1583-4, 1591, and 1599, and epidemics in 1586-7, and 1594-5. From 1595 to about 1610, eastern Anatolia was marred by the outbreak of the Jelali (or Celali) revolts, a series of anti-Ottoman rebellions that involved more criminals and bandits than ordinary military units and required significant resources to subdue. The Celali revolts produced population movements and further shortages of basic staples that were felt throughout the region, including in Safed. From 1604, military disputes between the Druze Ma'an family, led by Fakhr a-Din II and his brother, and forces loyal to the Ottomans in the northern Galilee area, led to further emigration from Safed. Rival forces conquered the town several times. By 1653, after another round of famine and conquests, Safed was practically devoid of Jews. [Footnote 101: Rozen, Ha-kehillah ha-yehudit, 2-6; Ayalon, 'Safed.'] A second mention earlier in the book also references Sephardim 'escaping that town after a Druze massacre there in 1604' (line 1838, citing Rivlin & Rivlin, Korot, 18; Rosanes, Korot ha-Yehudim, 3:228-32)."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 5,
+    "date": "1625",
+    "year": 1625,
+    "location": "Jerusalem",
+    "event": "Governor Ibn Farrukh's anti-Jewish disturbances. Synagogue raided during Sabbath; 15 hostages taken; mock executions with rope and axe.",
+    "src": "David 1999; Schwarz 1850",
+    "srcType": "primary",
+    "srcNote": "1628 Venice printed petition",
+    "actor": "Governor Muhammad ibn Farrukh",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "1 dead (Cordovero); 15 hostaged",
+    "scaleBig": "1+15",
+    "scaleNote": "Community leader killed",
+    "links": [
+      {
+        "id": "extortion-8",
+        "label": "Same episode: Ibn Farrukh fiscal extraction"
+      },
+      {
+        "id": "halukah-9",
+        "label": "Funded by Italian collection mission"
+      }
+    ],
+    "searchTerms": [
+      "Ibn Farrukh",
+      "1625",
+      "Jerusalem",
+      "hostage",
+      "Cordovero",
+      "אבן פרוך"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "During the anti-Jewish disturbances fostered by Jerusalem governor Mu[h]ammad ibn Farruk in 1625, Gedaliah's role as leader of the Jewish community was put to the test. He died in the course of these events. [Endnote 25, citing M. Rozen, ed., The Ruins of Jerusalem]: 'In the month of [H]eshvan [5]386 [November 1625] the evil kadi thought of ways to increase his wealth, and thought to turn the synagogue [the so-called Na[h]manides synagogue] into a flour mill. Some forty years earlier, a mufti who hated the [Jewish] religion commanded that [the synagogue] be closed, since it was set aside to be a mosque ... and to the present day, the Jews have not succeeded in restoring its glory.'"
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 6,
+    "date": "c. 1660",
+    "year": 1660,
+    "location": "Tiberias",
+    "event": "Destruction of the city during general factional crisis; Jewish community dispersed.",
+    "src": "Scholem; d'Arvieux 1660",
+    "srcType": "primary",
+    "actor": "Unknown (general crisis)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Community destroyed",
+    "scaleBig": "—",
+    "scaleNote": "Total dispersal",
+    "links": [],
+    "searchTerms": [
+      "1660",
+      "Tiberias",
+      "destruction",
+      "factional crisis"
+    ],
+    "passages": []
+  },
+  {
+    "cat": "violence",
+    "n": 7,
+    "date": "mid-17th c.",
+    "year": 1660,
+    "location": "Tiberias",
+    "event": "Tiberias was destroyed as a result of incessant wars, and its Jewish community was dispersed.",
+    "src": "Barnai 1992",
+    "srcType": "secondary",
+    "actor": "Bedouin · Druze · Maronite · Metouali",
+    "actorType": [
+      "local",
+      "bedouin",
+      "druze"
+    ],
+    "scale": "Community dispersed",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Tiberias",
+      "Bedouin",
+      "Druze",
+      "Maronite",
+      "Metouali"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In the middle of the seventeenth century Tiberias was destroyed as a result of the incessant wars, and its Jewish community was dispersed. In the second half of the seventeenth century the Jewish presence in Palestine dwindled, and the Jewish presence in the Galilee also shrank. Only in Safed was there a small community. The main community was that of Jerusalem, and even in this city there were no more than a thousand people (about ten percent of the population). [...] In the second half of the seventeenth century Tiberias was almost completely destroyed as a result of the wars in the Galilee. The Jewish settlement in the city dwindled even more in the beginning of the eighteenth century, as is attested by R. Jacob Berav, one of the immigrants to Palestine in 1740: 'It is now seventy years that it [Tiberias] is desolate without its sons, there is no synagogue and no study-house and Jews do not live there at all, not a kaddish [prayer] has been heard since the day it was destroyed.'"
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 8,
+    "date": "1720",
+    "year": 1720,
+    "location": "Jerusalem",
+    "event": "Muslim creditors burned the Ashkenazi synagogue compound — the Hurva. Ashkenazim expelled from Jerusalem for decades.",
+    "src": "Barnai 1992; Ayalon 2025; Cohen sijill",
+    "srcType": "primary",
+    "actor": "Muslim creditors (debt enforcement)",
+    "actorType": [
+      "creditor"
+    ],
+    "scale": "No deaths recorded",
+    "scaleBig": "0",
+    "scaleNote": "Community destroyed and dispersed",
+    "links": [
+      {
+        "id": "immigration-7",
+        "label": "Community that arrived in 1700"
+      },
+      {
+        "id": "expulsion-8",
+        "label": "Caused this displacement"
+      },
+      {
+        "id": "halukah-4",
+        "label": "Funded reconstruction"
+      },
+      {
+        "id": "extortion-12",
+        "label": "Debt spiral preceding burning"
+      }
+    ],
+    "searchTerms": [
+      "Hurva",
+      "1720",
+      "creditors",
+      "Ashkenaz",
+      "synagogue",
+      "חורבה",
+      "אשכנז"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "All the efforts to save the Ashkenazi community came to naught. In November 1720 the creditors burned the Ashkenazi court and its synagogue, and the Ashkenazi community was dispersed. Ruin was also in store for the Sephardi community. [...] The years 1720-26, between the destruction of the Ashkenazi court and the establishment of the Istanbul Officials, were years of decline. The leadership of the Jerusalem community had disintegrated, as some leaders were arrested and some fled to safety, and the Jews of the city were faced with a severe economic and social crisis. [...] Tradition relates that from the time of the destruction of the Ashkenazi court until the renewal of the Ashkenazi community at the beginning of the nineteenth century the Ashkenazim in Jerusalem were forced to dress like the Sephardim so that their Moslem creditors and their descendants would not recognize them and try to collect the Ashkenazi community debt remaining from the early eighteenth century."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 9,
+    "date": "1799",
+    "year": 1799,
+    "location": "Safed",
+    "event": "Jewish quarter completely sacked by Ottoman troops after the retreat of the French from Acre.",
+    "src": "Burckhardt 1822",
+    "srcType": "primary",
+    "srcNote": "Burckhardt visited 1812",
+    "actor": "Ottoman Turkish soldiers",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Unspecified; complete sack",
+    "scaleBig": "—",
+    "scaleNote": "Entire quarter sacked",
+    "links": [],
+    "searchTerms": [
+      "1799",
+      "Safed",
+      "sack",
+      "French",
+      "Napoleon",
+      "צפת"
+    ],
+    "passages": [
+      {
+        "file": "Burckhardt_Travels_Syria_1822",
+        "text": "Burckhardt, visiting Safed in 1812, describes the town as built on several low hills, with the Jewish quarter the largest of the divisions (about 150 of the town's roughly 600 houses): 'In 1799 the Jews quarter was completely sacked by the Turks, after the retreat of the French from Akka; the French had occupied Szaffad with a garrison of about four hundred men, whose outposts were advanced as far as the bridge of Beni Yakoub.' This is a direct contemporaneous testimony placing the sack as Ottoman-troop retaliation following Bonaparte's withdrawal from Acre. See also p. 340 (line 3827): after the French retreat from Acre, Djezzar planned to massacre all Christians in his Pashalik until Sir Sidney Smith forced him to rescind the orders — same broader retaliatory dynamic."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 10,
+    "date": "1817",
+    "year": 1817,
+    "location": "Acre",
+    "event": "Murder of Haym Pharchi, Jewish minister and community protector. His wife died suddenly on the road — suspicion of poisoning.",
+    "src": "Schwarz 1850",
+    "srcType": "eyewitness",
+    "srcNote": "Named personal-acquaintance source",
+    "actor": "Abdalla Pasha of Acre",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "2 dead (Pharchi + wife)",
+    "scaleBig": "2",
+    "scaleNote": "",
+    "links": [
+      {
+        "id": "extortion-26",
+        "label": "Same arc: murder opened persecution regime"
+      }
+    ],
+    "searchTerms": [
+      "Pharchi",
+      "Haym",
+      "Acre",
+      "murder"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "Now it happened, on Thursday, the 28th of Ab, 5579 (August, 1817), which the pious Pharchi kept as a fast day (as the eve of the New Moon of the month Elul), and as he was about to take his supper, that an officer with his soldiers suddenly entered his apartment; his death-warrant was read to him, in which he was condemned on account of treason, and with the offence that his private Synagogue was built higher than the mosque of Akko, and several other diabolical charges and crimes; and this sentence was instantly executed. The day following his house and court-yard were ransacked and plundered, and a large quantity of gold, money, silver, and other valuable articles were carried to the Pacha, the monster and parricide. The corpse of this martyr he did not even permit to be interred, but ordered it to be cast into the sea; and when, the day following, it was carried again on shore, he ordered it to be taken out far into the sea, and then to be thrown into the water. The pious widow of Pharchi fled in all haste towards Damascus, but died suddenly on the road, and was buried in Zafed; and suspicion was entertained that she had been poisoned by the furies who surrounded the Pacha."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 11,
+    "date": "Jun 1834",
+    "year": 1834,
+    "location": "Safed",
+    "event": "Six-week sack of the Jewish quarter during the Peasants' Revolt. Synagogues desecrated; Torah scrolls cut to pieces. Jews fled to Biriyeh, Ein Zeitun, Meron. Druze rescue 22 Tamuz.",
+    "quote": "The fury with which this crowd attacked their defenceless victims was boundless.",
+    "src": "Schwarz 1850; Keter vol. 8",
+    "srcType": "eyewitness",
+    "actor": "Arabs + trans-Jordan Bedouins (rebels against Egyptian rule)",
+    "actorType": [
+      "local",
+      "bedouin"
+    ],
+    "scale": "Several slain; many wounded/maimed",
+    "scaleBig": "Many",
+    "scaleNote": "Entire community impoverished",
+    "links": [],
+    "searchTerms": [
+      "1834",
+      "Safed",
+      "sack",
+      "Peasants",
+      "revolt",
+      "Druze rescue"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "In the year 5594 (1834), during the rebellion of the Arabs and Bedouins against Abraim Pacha, Zafed suffered from a fearful calamity. On Sunday, the 8th of Sivan (June), a very large number of Arabs and Bedouins from the environs of Zafed, aided by those from the east of the Jordan, suddenly surprised the Jewish quarter of the town, and wasted and destroyed everything to such a degree that I am not able to paint accurately the scene of devastation which then ensued. Everything was carried off which could possibly be removed, even articles of no value; boxes, chests, packages, without even opening them, were dragged away; and the fury with which this crowd attacked their defenceless victims was boundless... The Jews in consequence left everything behind, and fled into the open country, some going to Birié, others to En Setun, and others to Miron... This miserable situation continued for six weeks, to the 22d of Tamuz (July)... The Synagogues were particularly exposed to the fury of the assailants; the rolls of the law were trodden upon and cut in pieces; Tephillin and Tallethim were used as straps and coverings for their cattle; books were torn into shreds; in brief, everything was blasphemously destroyed... Abshir therefore appeared suddenly in Zafed on the 22d of Tamuz, with a strong force of Druses, and the Israelites were relieved."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 12,
+    "date": "4 Jul 1834",
+    "year": 1834,
+    "location": "Hebron",
+    "event": "Ibrahim Pasha's troops sacked the city after storming it. Quarter plundered despite belated guard placement.",
+    "quote": "Five Jews were purposely murdered.",
+    "src": "Schwarz 1850; Keter vol. 8",
+    "srcType": "eyewitness",
+    "actor": "Egyptian soldiers (sacking a rebel town)",
+    "actorType": [
+      "egyptian"
+    ],
+    "scale": "5 Jews murdered",
+    "scaleBig": "5",
+    "scaleNote": "Community stripped",
+    "links": [],
+    "searchTerms": [
+      "1834",
+      "Hebron",
+      "Ibrahim Pasha",
+      "sack",
+      "Schwarz"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "In 5594 (1834), Hebron met with a heavy calamity, since it was taken by storm on the 28th day of Tamuz (July), by Abraim Pacha, and given up to his soldiers for several days. One can better imagine than describe the scenes which were then enacted. Nearly all the Mahomedan inhabitants fled into the depth of the mountain range, but the Jews could not do this; besides which, they entertained but little fear, since they could not be viewed as rebels and enemies by Abraim, wherefore they fell an easy prey into the hands of the assailants. When the Pacha marched out to take Hebron, a petition was presented to him by the officers of the Jewish congregation in Jerusalem to take these unfortunate people under his protection, which he faithfully promised to do; but, notwithstanding this, they were not spared at the taking of the town, so that five Jews were purposely murdered, and all their property which had not been buried under ground was either stolen or destroyed in the most wanton and cruel manner. Abraim did then indeed place a guard around their quarter of the town, but it was too late; and he said, 'Whatever is already in the hands of the conquerors, the soldiers, cannot be demanded back again of them;' wherefore the whole Jewish community was sunk into poverty."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 13,
+    "date": "1834",
+    "year": 1834,
+    "location": "Tiberias",
+    "event": "The rebels locked the Jews up in their quarter and demanded an immense sum of money.",
+    "src": "Schwarz 1850",
+    "srcType": "eyewitness",
+    "actor": "Arab rebels",
+    "actorType": [
+      "local"
+    ],
+    "scale": "No deaths",
+    "scaleBig": "0",
+    "scaleNote": "Total extortion",
+    "links": [],
+    "searchTerms": [
+      "Tiberias",
+      "1834"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "In 5594 (1834), during the Arab rebellion, the Tiberias Jews suffered the least. The rebels locked them up in their quarter of the town, and demanded an immense sum of money. The prisoners perceiving in what danger they were, surrendered at once all they had without the least hesitation, according to the advice of the wise king, 'It is a time to lose' (Eccles. iii. 6), and were then liberated, and no farther extortion was practised. But when Abraim Pacha overcame the rebels, they preferred their demand to him, again according to Solomon, 'It is a time to gather in,' and all the extorted property had to be restored to them."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 14,
+    "date": "Jul 1838",
+    "year": 1838,
+    "location": "Safed",
+    "event": "Druze plundered the already-devastated Jewish quarter during the revolt against Ibrahim Pasha — the same Druze who rescued Jews in 1834.",
+    "quote": "Destroyed completely the last vestige of their prosperity.",
+    "src": "Schwarz 1850; Mishaqa Arabic",
+    "srcType": "eyewitness",
+    "actor": "Druze (anti-Egyptian faction)",
+    "actorType": [
+      "druze"
+    ],
+    "scale": "Unspecified injuries",
+    "scaleBig": "—",
+    "scaleNote": "Community ruined",
+    "links": [],
+    "searchTerms": [
+      "1838",
+      "Safed",
+      "Druze",
+      "plunder"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "In addition to this, when, in 5598 (1838), Abraim Pacha was engaged in a violent contest with the Druses, these surprised Zafed suddenly in the month of Tamuz, at the same time of the year in which they had appeared four years before as protectors and defenders, plundered and ill treated the Jews yet remaining there, and thus destroyed completely the last vestige of their prosperity. Under the present government, Zafed is left entirely exposed to the pleasure of the surrounding Bedouins and Arabs, and its Jewish inhabitants lead a constant life of terror."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 15,
+    "date": "1840",
+    "year": 1840,
+    "location": "Damascus",
+    "event": "Blood libel following Father Thomas's disappearance. Mose Pharchi died through torture inflicted by Sherif Pasha. 7 elders tortured; 2 died; 63 children imprisoned. Mishaqa was the state-assigned forensic investigator.",
+    "src": "Schwarz; Mishaqa Arabic; Frankel 1997; Morris",
+    "srcType": "primary",
+    "actor": "Sherif Pasha + French-Catholic instigation",
+    "actorType": [
+      "ottoman",
+      "christian"
+    ],
+    "scale": "2–3 dead under torture",
+    "scaleBig": "2–3",
+    "scaleNote": "63 children imprisoned",
+    "links": [],
+    "searchTerms": [
+      "Damascus",
+      "blood libel",
+      "1840",
+      "Father Thomas",
+      "Mishaqa",
+      "דמשק"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "In Damascus dwelt the three brothers of the martyr Pharchi; they were the most distinguished and honoured men of the whole surrounding country, not only through their wealth and their extensive commerce, which was carried on to all parts of the Orient, but also for their great influence in Constantinople and other large cities and towns, and they were likewise famed for their honest and noble conduct. Their names were Seliman, Raphael, and the youngest Mosé Pharchi; the last mentioned died in 5600 (1840), through the torture inflicted by Serif Pacha, as one of the accused for the murder of Father Thomas, in which this excellent man was, among others, charged with having taken part in the slaughter of that old priest, to make use of his blood at the celebration of the Passover."
+      },
+      {
+        "file": "Morris_Righteous_Victims_2001",
+        "text": "Morris summarizes the Damascus Affair of 1840: 'A Capuchin monk from Sardinia disappeared, along with his Muslim servant. The Christian community in the city, egged on by the French consul, Count Ratti-Menton, accused the Jews of killing the monk and using his blood for ritual purposes. The governor, Sharif Pasha, rounded up seven Jewish elders and had them tortured; two died and one converted to Islam to save himself. Sixty-three children were imprisoned, and several homes were destroyed as the authorities searched for the missing bodies. Six months passed before British government pressure persuaded the authorities, meaning the nominally Ottoman governor of Egypt, Muhammad Ali Pasha, who was semi-independent of Constantinople, to release the remaining prisoners. Soon afterward Constantinople regained full control of Syria and Palestine (though not of Egypt), and the Sublime Porte issued an edict reaffirming its protection of the Jews and denouncing the blood libel.' Morris confirms the 7-elders-tortured / 2-deaths / 63-children-imprisoned figures and locates the affair under Egyptian transitional rule with French-Catholic instigation and a corrective Ottoman response upon return."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 16,
+    "date": "Jun 1846",
+    "year": 1846,
+    "location": "Hebron",
+    "event": "Factional warfare; Jews caught in the crossfire when the Pasha of Jerusalem stormed Hebron.",
+    "quote": "Many were dangerously wounded… and deprived of all their property.",
+    "src": "Schwarz 1850",
+    "srcType": "eyewitness",
+    "actor": "Soldiers of the Pasha of Jerusalem",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Many wounded",
+    "scaleBig": "Many",
+    "scaleNote": "All property taken",
+    "links": [],
+    "searchTerms": [
+      "Hebron",
+      "1846",
+      "Factional",
+      "Pasha",
+      "Jerusalem"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "In the year 5605 (1845), Abd al Rachman's two brothers rebelled against him, and laid claim to his government, that is, they wanted the right to plunder: they procured adherents, and a regular partisan warfare ensued; in consequence of which, Abd al Rachman was driven out. He next collected some Arabs, and had several bloody fights with his brothers; and it appeared that his good luck had forsaken him. But at length his star again became in the ascendant, through which, or rather through his heavy gold, he succeeded to induce the Pacha of Jerusalem to take his part, who then marched against Hebron with a large force, in the month of Sivan, 5606 (June, 1846). He took the town after several skirmishes, and reinstated Abd al Rachman in his government. On this occasion the Jews suffered severely, many were dangerously wounded at the taking of the town, and deprived of all their property. The two rebel brothers took to flight, and have not been heard of up to the time of writing this, in 5609 (1849)."
+      }
+    ]
+  },
+  {
+    "cat": "violence",
+    "n": 17,
+    "date": "1853",
+    "year": 1853,
+    "location": "Jerusalem",
+    "event": "Jew beaten by a Turkish soldier. Consul Finn gave redress at once.",
+    "src": "Finn 1878",
+    "srcType": "eyewitness",
+    "srcNote": "British Consul",
+    "actor": "Turkish soldier",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "1 beaten",
+    "scaleBig": "1",
+    "scaleNote": "Redress obtained",
+    "links": [],
+    "searchTerms": [
+      "1853",
+      "Jerusalem",
+      "Finn",
+      "soldier"
+    ],
+    "passages": [
+      {
+        "file": "Finn (curated)",
+        "text": "Later in the summer application was made to me one Sunday, after church, on behalf of one of our protégés, a Jew, who had been beaten by a soldier, and redress was given at once. These were the only cases of misconduct on the part of the present garrison, and they were redressed at once by the Commandant. [Context: Finn places this incident in mid-1853, following his account of a Turkish gunner who discharged a cannon at Christ Church and the Consulate. The offending 'Chaoosh' (sergeant) was bastinadoed in the open square between the Castle and the Consulate after sentence arrived from the Seriasker (Commander-in-chief) at Damascus. Finn explicitly draws the lesson at line 1496-1499: 'There never was any attempt of the kind made afterwards. It might have been otherwise if any timidity had been shown, but the case was promptly taken up, and redress obtained, and there it ended.' The Jew-beaten-by-soldier incident is presented as one of two minor sequels (the other being an insult to an English Colonel and his lady) — both redressed at once by the Commandant 'within his competency.' The framing emphasises that the British Consulate's interventionist posture deterred recurrence; redress was administrative and immediate, not requiring escalation to Damascus.]"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 1,
+    "date": "Ongoing 16th c.",
+    "year": 1550,
+    "location": "Jerusalem",
+    "event": "Subashi soldiers extort money at synagogue entrance; forced escort fees on Hebron road; bathhouse discrimination fees; illegal fines on grain merchants; pilgrims forced to hire escorts.",
+    "src": "Cohen 1984",
+    "srcType": "primary",
+    "srcNote": "Sijill records",
+    "actor": "Subashi · muhtasib · night watchmen",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Systematic",
+    "scaleBig": "—",
+    "scaleNote": "Multi-form harassment",
+    "links": [],
+    "searchTerms": [
+      "Subashi",
+      "synagogue",
+      "extort",
+      "escort",
+      "Jerusalem",
+      "סובאשי"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Jewish_Life_Under_Islam_1984",
+        "text": "Cohen documents a recurring pattern of subashi-led harassment of Jerusalem Jews across the sixteenth century, comprising (a) extortion at the synagogue entrance under various pretexts (informing, dress-code fines, fees to unlock the building) — e.g. the 1556 subashi who locked the synagogue and demanded 150 sultani from the beadle before reopening it (lines 3340-3372); (b) fees imposed by subashi and muhtasib on Jewish pilgrims traveling the Jerusalem-Hebron road, with officials warning village shaykhs not to let pilgrims pass without paying (lines 4440-4463); (c) bathhouse discrimination — separate towels and the requirement that Jews wear a small bell when entering, with the muhtasib making rounds to enforce it (lines 5699-5720); and (d) extortionate fines on Jewish grain merchants (al-yahud al-haddarin), whom the subashi and night watchmen would waylay on the alleged pretext that they had been trading with rebellious Bedouin, levying a tenth of their grain (lines 7750-7779)."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 2,
+    "date": "1537–38",
+    "year": 1537,
+    "location": "Jerusalem",
+    "event": "Relatively high incidence of Jews indebted to kadis — a possible elegant form of extortion. Karaite 'Abd al-Latif owed 5,400 para to a kadi.",
+    "src": "Cohen 1984",
+    "srcType": "primary",
+    "actor": "Kadis (Muslim judges)",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Debt-instrument",
+    "scaleBig": "5,400",
+    "scaleNote": "para owed by one Karaite",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1537",
+      "Relatively",
+      "Karaite",
+      "Latif",
+      "5,400"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Jewish_Life_Under_Islam_1984",
+        "text": "Cohen notes that 'the relatively high incidence of Jews indebted to kadis raises the possibility that some of these loans were simply an elegant form of extortion: for example, the debt of 'Abd al-Latif the Karaite, who owed 5400 para to the Shafi'i kadi in Jerusalem in 1537-38; the debt of Ya'qub Fallaq, shaykh al-yahud, who owed the Hanafi kadi of Jerusalem 24 gold qytbrusi in 1545-46; and others.'"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 3,
+    "date": "1554–56",
+    "year": 1554,
+    "location": "Jerusalem–Hebron road",
+    "event": "Pilgrims extorted, beaten, imprisoned. Officials falsely claimed roads unsafe to force escort payment.",
+    "quote": "You come from a place rife with plague… you bring evil to the land.",
+    "src": "Cohen 1984",
+    "srcType": "primary",
+    "srcNote": "Firman records",
+    "actor": "Subashi officials",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Pilgrims beaten + imprisoned",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem–Hebron road",
+      "1554",
+      "Pilgrims"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Jewish_Life_Under_Islam_1984",
+        "text": "Cohen documents that two years after a 1554 Porte order to stop harassment, the Jews again appealed to the sultan in 1556. The subashis were extorting payments and beating and imprisoning Jewish pilgrims, falsely claiming the roads were unsafe to force pilgrims traveling to and from Hebron to hire escorts (paying additional fees). The subashi would warn village shaykhs not to let pilgrims pass without consent, justifying the fees by alleging the Jewish pilgrims caused local economic harm: 'you come from a place rife with plague,' 'you bring evil to the land.' The sultan ordered the practices ended."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 4,
+    "date": "1556",
+    "year": 1556,
+    "location": "Jerusalem / Damascus province",
+    "event": "Comprehensive harassment: accusations of cursing Islam; homes appropriated for soldiers; forced labor during Jewish holidays; extorted fines.",
+    "src": "Cohen 1984",
+    "srcType": "primary",
+    "srcNote": "Sultan's firman",
+    "actor": "Various local officials",
+    "actorType": [
+      "ottoman",
+      "local"
+    ],
+    "scale": "Systematic",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1556",
+      "Comprehensive",
+      "Islam"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Jewish_Life_Under_Islam_1984",
+        "text": "Cohen documents that in mid-1556 the sultan issued an order to the kadis and governor of the Damascus province (and to Jerusalem) responding to a pattern of attacks on Jews based on various pretexts: accusations of cursing the Islamic religion; allegations about Jewish children supposedly converted to Islam; appropriation of Jewish homes for illegal billeting of soldiers; use of Jews for forced labor during Jewish holidays or weekdays; extortion of money; and entirely unjustified fines. A subsequent decree addressed qassam officials' attempts to force Jews to allocate bequests according to Shari'a, explicitly characterizing compulsion against Jewish religious tenets as contravening Islamic tradition and procedures."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 5,
+    "date": "1586",
+    "year": 1586,
+    "location": "Jerusalem",
+    "event": "Soldier extorts money and goods from Jews under false pretenses and harasses them at synagogue entrance.",
+    "src": "Cohen 1984",
+    "srcType": "primary",
+    "srcNote": "Sijill",
+    "actor": "Ahmad from Nablus (subashi's soldier)",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Goods + money",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1586",
+      "Soldier"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Jewish_Life_Under_Islam_1984",
+        "text": "Cohen describes a case tried on October 2, 1586, in which a large group of Jews (men and women) complained in court against Ahmad of Nablus, one of the Jerusalem subashi's soldiers, who 'had been extorting money and goods from them under false pretenses, and that he had harassed them at the entrance to the synagogue.' Although many Jewish witnesses testified, the court demanded Muslim corroboration; Ahmad's oath as a Muslim was accepted and he was acquitted. The judge nevertheless warned Ahmad not to stand in front of the synagogue, not to collect fines from the Jews, not to take anything from them, not to inform on them to the authorities (hakim al-siyasa), and not to harass them in any way."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 6,
+    "date": "1589",
+    "year": 1589,
+    "location": "Jerusalem",
+    "event": "Muslim soldier harasses Jews, extorts payments, informs on them to the subashi; one Jew dragged to the Christian quarter and forced to pay a gold coin for release.",
+    "src": "Cohen 1984",
+    "srcType": "primary",
+    "srcNote": "Sijill",
+    "actor": "Muslim soldier",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "1 abducted",
+    "scaleBig": "1",
+    "scaleNote": "Released for ransom",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1589",
+      "Christian"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Jewish_Life_Under_Islam_1984",
+        "text": "Cohen documents that 'on April 15, 1589, several Jews came to the kadi to lodge a complaint against a Muslim soldier who was harassing them, extorting illegal payments, and informing on them to the subashi. One of them even described how he had been dragged to the Christian quarter and forced to pay this same Muslim a gold coin for his release.' When the accused denied the charges, the kadi ordered him detained in the Citadel; the prisoner was forcibly freed en route by fellow soldiers. Although the Jews lost the case, the kadi 'proved his readiness to adopt an unpopular stand in order to prevent similar harassment of the Jews in the future.'"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 7,
+    "date": "1623",
+    "year": 1623,
+    "location": "Jerusalem",
+    "event": "The pasha of Jerusalem had oppressed the population with harsh decrees.",
+    "src": "Barnai 1992",
+    "srcType": "secondary",
+    "actor": "Pasha of Jerusalem",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Population-wide",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1623"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "At the beginning of the seventeenth century the pasha of Jerusalem had oppressed the population with harsh decrees, and as a result in 1623 the community leaders in Venice turned to the Jewish communities of Europe and announced the establishment of a central fund in their community. Gradually funds, collectors, and collection systems were organized, and by the middle of the seventeenth century all the Jewish communities had established various regulations that systematized the collection and transfer of funds for Palestine. These regulations were not confined to a limited geographic area, but covered Turkey, Italy, North Africa, central Europe, and eastern Europe."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 8,
+    "date": "1625–27",
+    "year": 1625,
+    "location": "Jerusalem",
+    "event": "Ibn Paruch purchased the governorship; demanded 11,000 grush ransom for 15 synagogue hostages; the community was forced to borrow 50,000 grush; guards prevented flight.",
+    "quote": "Most venerable and aged Israelites dragged to the scaffold.",
+    "src": "Schwarz via 1628 Venice primary",
+    "srcType": "primary",
+    "actor": "Governor Ibn Paruch",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "15 hostages",
+    "scaleBig": "50K",
+    "scaleNote": "grush borrowed",
+    "links": [
+      {
+        "id": "violence-5",
+        "label": "Same episode: Ibn Farrukh violence"
+      },
+      {
+        "id": "halukah-9",
+        "label": "Italian collection mission funded response"
+      }
+    ],
+    "searchTerms": [
+      "Ibn Paruch",
+      "Ibn Farrukh",
+      "hostage",
+      "grush",
+      "Jerusalem",
+      "אבן פרוך"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "When suddenly a rapacious and tyrannical Arab, who was blind in one eye, called Ibn Paruch, purchased the post of Pacha of Jerusalem from the chief of all Syria and Palestine, the Pacha of Damascus, as it is nothing strange to sell offices to the highest bidders. Ibn Paruch came thereupon, on the 26th day of Tebeth (January), to Jerusalem, with an escort of about three hundred armed men, and deprived the benevolent Machmad Pacha of his office... Thus, for example, he ordered the Synagogue to be surprised during divine worship on Sabbath, the 11th of Elul, of the above year, and caused fifteen venerable men to be taken from the same to prison as hostages; and they were not liberated until he was paid 11,000 grush, or 5500 American dollars. These scenes and exactions followed each other so often, and became so general, that the Jews were gradually exhausted... at length, to save their miserable lives from the tyrant, they were compelled to borrow of their Mahomedan fellow-townsmen the sum of 50,000 grush, for which, though obtained for but a short time... they had to promise the exorbitant interest of 20,000 grush, wherefore their indebtedness amounted to 75,000 grush, or 35,000 dollars. Many endeavoured to escape with their oppressed families by flight; they left everything behind, glad only to save their lives; but the tyrant placed guards in every direction, so that no one could leave the city; and even when a corpse was carried out for interment, it was examined, to discover whether or not it might be one feigning death endeavouring to make his escape... and he caused occasionally the most venerable and aged Israelites to be dragged to the scaffold, and the hangman stood with the axe in his hand, the rope was already fastened round their necks, and it only needed his diabolical nod to hurry these honoured fathers into eternity... This remarkable occurrence I have taken in extract from a printed document, entitled... 'The Ruins of Jerusalem,' printed in Venice, in 5388 (1628)."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 9,
+    "date": "c. 1640s",
+    "year": 1640,
+    "location": "Jerusalem",
+    "event": "Kadi extorts 500 guruş from imprisoned Jewish leaders.",
+    "src": "Rozen 2015",
+    "srcType": "primary",
+    "srcNote": "JNUL epistle 222",
+    "actor": "Kadi of Jerusalem",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Leaders imprisoned",
+    "scaleBig": "500",
+    "scaleNote": "guruş extorted",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1640"
+    ],
+    "passages": []
+  },
+  {
+    "cat": "extortion",
+    "n": 10,
+    "date": "1663",
+    "year": 1663,
+    "location": "Jerusalem",
+    "event": "Sum demanded this time was so high that the elders could not raise it, and many prominent scholars had to flee.",
+    "src": "Scholem",
+    "srcType": "primary",
+    "srcNote": "Sabbatean chronicle",
+    "actor": "Local authority",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Scholars fled",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1663"
+    ],
+    "passages": []
+  },
+  {
+    "cat": "extortion",
+    "n": 11,
+    "date": "Late 1690s",
+    "year": 1695,
+    "location": "Jerusalem",
+    "event": "Community owed 25,000 kuruş to gentiles; 5.5 kuruş per person demanded.",
+    "quote": "200 kurus every year in bribes so that they will not be punished… some of us are killed by them.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "Community letter",
+    "actor": "Ottoman local rulers · tax collectors",
+    "actorType": [
+      "ottoman",
+      "local"
+    ],
+    "scale": "Some killed",
+    "scaleBig": "25K",
+    "scaleNote": "kuruş owed",
+    "links": [
+      {
+        "id": "halukah-3",
+        "label": "Funded by diaspora"
+      }
+    ],
+    "searchTerms": [
+      "25,000",
+      "kurus",
+      "debt",
+      "Jerusalem",
+      "חוב",
+      "ירושלים"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In a letter that was sent through the Jerusalem emissary R. Moses Sasportas, R. David Itzhaki, R. Moses Hagiz, and others told about the troubles of the community at the end of the seventeenth century: 'Trouble upon trouble, and distress after distress, there is no moment free from affliction . . . our holy city has gone down a slope of disasters, it owes the Gentiles the sum of 25,000 kurus. . . a new trouble that has arisen in the past five years at the command of his majesty, the king, on all the lands in his reign is to change the value of head-tax . . . and every person must pay five and a half kurus . . . even though the holy community loses more than two hundred kurus every year in bribes so that they will not be punished . . . and so, for our sins, some of us are killed by them, and the lives of many people depend on this, besides the many different kinds of damages within this disaster.'"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 12,
+    "date": "1700–1720",
+    "year": 1710,
+    "location": "Jerusalem",
+    "event": "Tax collectors flayed them alive. From day to day they established new restrictions; leaders put in irons and beaten.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "1711 document",
+    "actor": "Ottoman local rulers · creditors",
+    "actorType": [
+      "ottoman",
+      "creditor"
+    ],
+    "scale": "Leaders beaten + jailed",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [
+      {
+        "id": "violence-8",
+        "label": "Debt spiral led to Hurva burning"
+      },
+      {
+        "id": "halukah-10",
+        "label": "1711 fund-drive + Istanbul Officials formed"
+      },
+      {
+        "id": "immigration-7",
+        "label": "Debt incurred by this community"
+      }
+    ],
+    "searchTerms": [
+      "flayed",
+      "1711",
+      "tax collectors",
+      "creditors",
+      "חוב",
+      "נושים"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In a document describing the situation at the beginning of the eighteenth century we read: 'There is serious trouble at the time of burning . . . and their land, which is their inheritance, has been given over in this bitter and bad exile to harsh masters and all its cities are their dwelling-places. At the decree of the king . . . the righteous have gone to their reward, they have gone to their rest in Paradise and left the remainder in anger and fury and reproofs, to be slaves in the land of their captivity . . . the poor nation that dwells in Zion [suffers] from the burden of the king and the enemies. They have put tax-collectors over them in order to torture them in their sufferings. A cruel nation which will not give account to anyone . . . and they have flayed them alive and carried them in their [shirts?]. From day to day and from month to month they have established new restrictions . . . and a mob has come upon those who from poverty and want have been forced to borrow at interest from the strong ones of the land and the crawlers in the dust, at forty percent . . . and when they saw that there was no more money and they were not able to collect their debts they punished them and the leaders of the Jews were put in irons. An arrow pierced their souls; suddenly they were beating them. The Jews were oppressed as they saw that the suffering had increased greatly. They have put bars on their houses and locked their doors. . . . They have come into the streets of the city and God has sent them out from their land. And the news arrived that the flock of God had been captured and the daughter of Zion had been left like a hut in a vineyard. . . . This was in the year 5471 [1711].'"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 13,
+    "date": "1722–23",
+    "year": 1722,
+    "location": "Jerusalem",
+    "event": "New ruler from Istanbul demanded 91,000 kuruş within 91 days; arrested community official R. Moses Meyuhas.",
+    "src": "Barnai 1992",
+    "srcType": "secondary",
+    "actor": "New Jerusalem governor",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "1 official arrested",
+    "scaleBig": "91K",
+    "scaleNote": "kuruş in 91 days",
+    "links": [
+      {
+        "id": "halukah-11",
+        "label": "Istanbul rescue mission"
+      }
+    ],
+    "searchTerms": [
+      "Jerusalem",
+      "1722",
+      "Istanbul",
+      "Meyuhas",
+      "91,000"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In the 1720s additional disasters occurred to the Jerusalem community. In 1722 the city was attacked by a severe drought, and in 1723 a new ruler arrived from Istanbul, who made many false accusations and extorted much money. For example, he demanded a payment of 91,000 kurus from the community within ninety-one days and arrested the community official R. Moses Meyuhas. The community quickly sent his grandson, R. Raphael Meyuhas Bechar Samuel—later chief rabbi of the city—to Istanbul on a rescue mission. With the assistance of the rich men of Istanbul the emissary succeeded in influencing the central authorities to arouse the mercy of the ruler."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 14,
+    "date": "1728–30",
+    "year": 1728,
+    "location": "Safed",
+    "event": "Burial prohibition + extortion. Safed was an open city, and peasants in the area could easily enter to rob and persecute the Jews.",
+    "src": "Barnai 1992",
+    "srcType": "secondary",
+    "actor": "Local rulers and peasants",
+    "actorType": [
+      "local",
+      "ottoman"
+    ],
+    "scale": "Population-wide",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Safed",
+      "1728",
+      "Burial"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In other parts of the Galilee as well the Jews were dependent on the mercy of the local rulers, and more than once they became a target for extortion. In Safed, where Dahir al-Umar's son was the ruler, the situation of the Jews was particularly bad. There are many attestations to extortions and expulsions. Documents describing the mission of the emissary R. Raphael Israel Kimhi in the years 1728-30 mentioned a prohibition on the burial of the dead in Safed and attempts to extort money. Safed was less safe than the other holy cities. Jerusalem and Tiberias were surrounded by walls, and in Hebron the Jews lived in an inner court. But Safed was an open city, and the peasants in the area could easily enter the city to rob and persecute the Jews."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 15,
+    "date": "1740s",
+    "year": 1745,
+    "location": "Safed",
+    "event": "Extortion escalated under Dahir al-Umar's son.",
+    "quote": "Because of the rage of the tormenter… we had to climb high mountains and hills to flee.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "R. Ezra Malkhi letter",
+    "actor": "Dahir al-Umar's son",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Mass flight",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Safed",
+      "1745",
+      "Extortion",
+      "Dahir",
+      "Because"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "During the 1740s the situation of the Safed Jews became even worse, as is attested by the words of R. Haim ben Attar: 'There are many fears and many troubles in the city.' His student, R. Abraham Ishmael Hay Singuineti, described the assessment of high taxes for the army of Dahir al-Umar. During these years some of the Jews in Safed had to flee to the surrounding hills because of the pressure of the authorities. And R. Ezra Malkhi wrote: 'Because of the rage of the tormenter . . . the siege of the holy city of Safed . . . terrors have overwhelmed us . . . we had to climb high mountains and hills to flee the wickedness of the Gentiles.' The most difficult period was the time of the great earthquake of 1759, in which many Jews were killed. In the wake of the earthquake there were plagues, and the debts of the Jews increased. But even at this time the rulers insisted on the taxes being paid and extorted more money."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 16,
+    "date": "1740s",
+    "year": 1745,
+    "location": "Jaffa–Jerusalem road",
+    "event": "Pilgrim entry tax doubled; new 20 kuruş road-tax; Jerusalem entry fee more than doubled. Governor of Jaffa appropriated Bedouin-protection funds, ceased providing escort.",
+    "src": "Cohen 1973",
+    "srcType": "secondary",
+    "actor": "Governor of Jaffa · Bedouin",
+    "actorType": [
+      "ottoman",
+      "bedouin"
+    ],
+    "scale": "Pilgrims",
+    "scaleBig": "2×",
+    "scaleNote": "entry tax",
+    "links": [],
+    "searchTerms": [
+      "Jaffa–Jerusalem road",
+      "1745",
+      "Pilgrim",
+      "Jerusalem",
+      "Governor"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Palestine_18th_1973",
+        "text": "Cohen documents that pilgrims arriving at Jaffa Port had traditionally paid 7 kurus to the gumruk emini, whose dragoman would then escort the party to Jerusalem and distribute half the sum to the Bedouin along the way. 'From the beginning of the 1740s,' however, the governor of Jaffa 'began to appropriate the entire sum collected for himself, and ceased even to provide the pilgrims with the services of his dragoman.' By mid-century, pilgrims at Jaffa were required to pay double the traditional 7 k., plus a new 20 k. 'road-tax' before being allowed to embark on return; the Jerusalem entry fee, traditionally 1.5 k., was 'more than doubled to between 3 and 4 k.' in the 1740s, with an additional special tax on departure — all contrary to Porte injunction."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 17,
+    "date": "1744",
+    "year": 1744,
+    "location": "Hebron",
+    "event": "Delivered to cruel gentiles… the creditor comes to collect his debt — he raises his hand against them with whips, and beats and wounds.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "Hebron letter",
+    "actor": "Local Muslim rulers + Christian population",
+    "actorType": [
+      "local",
+      "creditor",
+      "christian"
+    ],
+    "scale": "Beaten + wounded",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Hebron",
+      "1744",
+      "Delivered"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In a letter sent by the Hebron Jews to the Diaspora in 1744, they wrote: 'We were delivered to cruel gentiles . . . and the creditor comes to collect his debt . . . and we do not have [the money to pay]. . . and he raises his hand against [the Jews] with whips, and beats and wounds, and called together a meeting to arrest all of the community . . . because all the Christian gentiles have taken counsel together and our enemies have said, Let us destroy that people . . . and they plotted against us with religious plots.' Thus the Hebron Jews were persecuted by the local rulers as well as by the Christian population of the city. This complex system of relationships, in which the Hebron Jews were caught between the Moslems and the Christians, also appears in a letter sent by the officials of Hebron in Istanbul in 1765."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 18,
+    "date": "1750s–60s",
+    "year": 1755,
+    "location": "Jerusalem",
+    "event": "More than two hundred left the city. Every moment there are libels and harmful decrees; every day they take a person — a sage or a rich man — and beat him until he gives them what they want.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "Simon de-Gilderin letter",
+    "actor": "Local rulers and residents",
+    "actorType": [
+      "local",
+      "ottoman"
+    ],
+    "scale": "200+ left",
+    "scaleBig": "200+",
+    "scaleNote": "departed Jerusalem",
+    "links": [
+      {
+        "id": "expulsion-10",
+        "label": "Same event: 200+ fled Jerusalem"
+      }
+    ],
+    "searchTerms": [
+      "Jerusalem",
+      "1755",
+      "Every"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In the sixties, when the controversy among the leadership of the Jerusalem community reached its peak, the authorities took advantage of the situation to extort money. These were crisis years for the community, and many Jews fled the city, at their head some of the important sages. The German Jew Simon de-Gilderin, who was living in Jerusalem at the time, described the situation: 'More than two hundred . . . left the city . . . to flee in the night because it is difficult to live in the city . . . every moment there are libels and harmful decrees . . . every day they take a person or a sage or a rich man and beat him until he gives them what they want.'"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 19,
+    "date": "1760s",
+    "year": 1765,
+    "location": "Jaffa–Jerusalem road",
+    "event": "Bedouin collect 1–3 paras at multiple points; Shaykh of Abu Ghosh began levying additional taxes on all caravans.",
+    "src": "Cohen 1973",
+    "srcType": "secondary",
+    "actor": "Bedouin · Shaykh of Abu Ghosh",
+    "actorType": [
+      "bedouin",
+      "local"
+    ],
+    "scale": "All travelers",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Jaffa–Jerusalem road",
+      "1765",
+      "Abu Ghosh",
+      "Bedouin",
+      "Shaykh"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Palestine_18th_1973",
+        "text": "Cohen reports that 'in the 1760s, Mariti tells us, the Bedouin would stop travellers at a number of points between Latrun and Jerusalem, and collect between 1 and 3 paras from each of them. From the mid-1760s on, the Shaykh of Abu Ghosh too, it appears, began to levy taxes on caravans proceeding both to and from Jerusalem.' The ghafar was not exclusive to the Jaffa-Jerusalem road — the Shaykh of Samu' levied it on the Hebron-Egypt route, and Bedouin collected it at 'Ayn al-Tujjar (with half going to the Vali of Damascus) and along the Beirut-Sidon, Acre-Tyre, and Haifa-Megiddo roads in the north."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 20,
+    "date": "c. 1760s",
+    "year": 1765,
+    "location": "Hebron–Jerusalem road",
+    "event": "Rabbi Azulay diary entry.",
+    "quote": "They came out like the ten sons of Haman from Halhul and they distressed us and brought us back like war prisoners. The shaykhs of Yata and Samea persecuted us and demanded a large sum of money.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "Azulay diary",
+    "actor": "Village shaykhs (Halhul · Yata · Samea)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Travelers",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Hebron–Jerusalem road",
+      "1765",
+      "Rabbi Azulay",
+      "Azulay",
+      "Haman"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "Because of the lack of security on the roads danger awaited all travelers. Rabbi Azulay [in his diary] described: 'And afterwards they came out like the ten sons of Haman from Halhul [a village near Hebron] and they distressed us and brought us back like war prisoners. And the shaykhs of Yata and Sam'a persecuted us and demanded a large sum of money . . .'"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 21,
+    "date": "1763",
+    "year": 1763,
+    "location": "Safed",
+    "event": "Battle expenses demanded from Jews during Dahir-son factional war.",
+    "src": "Barnai 1992",
+    "srcType": "secondary",
+    "actor": "Dahir al-Umar's son",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Community",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "Safed",
+      "1763",
+      "Battle",
+      "Dahir"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In 1763 there were battles between Dahir al-Umar and his son, the ruler of Safed, and the Jews of that city were required to pay large sums to cover the battle expenses. In 1767 the sages of Safed wrote to Pisa in Italy about 'the rage of the tormenter . . . because the enemy has the upper hand and is causing Israel many troubles.' [...] The Jews of Safed suffered from the battles between Dahir al-Umar and his son."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 22,
+    "date": "1770s+",
+    "year": 1775,
+    "location": "Acre / Galilee",
+    "event": "Jezzar Pasha's regime: cizye increased five-fold (from 4,400 to 23,650 kuruş).",
+    "quote": "[He] could now simply demand any sum he liked.",
+    "src": "Cohen 1973; Burckhardt 1822",
+    "srcType": "primary",
+    "actor": "Jezzar Pasha",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "5× cizye",
+    "scaleBig": "5×",
+    "scaleNote": "poll tax increase",
+    "links": [
+      {
+        "id": "halukah-12",
+        "label": "Halukah absorbed 5× cizye increase"
+      }
+    ],
+    "searchTerms": [
+      "Jezzar",
+      "cizye",
+      "five-fold",
+      "Acre",
+      "ג'זיה",
+      "ג'זר"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Palestine_18th_1973",
+        "text": "Cohen documents that shortly after Jezzar's arrival in Acre, the Ottoman Treasury re-assessed the cizye for the Galilee Christian and Jewish communities, asking him to issue an additional 5,000 evrak each year (3,000 adna, 1,000 awsat, 1,000 a'la) — 'which would increase the original sum of 4,400 k. five-fold, to 23,650 k.' Cohen reads Jezzar's commitment to pay the increased sum as a calculated move: 'by dispensing with the need to produce the evrak in order to collect the cizye from the dhimmi, he could now simply demand any sum he liked.'"
+      },
+      {
+        "file": "Cohen_Palestine_18th_1973",
+        "text": "Cohen 1973 documents the Jezzar Pasha cizye reassessment with precise figures matching the event description: 'A short time after Jezzar's arrival in Acre, the Ottoman Treasury re-assessed the cizye owed by the Christian and Jewish communities in the Galilee and instructed the new vali to collect (and remit) a far larger amount than had been customary up to this time. He was asked to increase the original 900 evrak issued each year by 5,000 (3,000 adna, 1,000 awsat, and 1,000 a'la), which would increase the original sum of 4,400 k. five-fold, to 23,650 k. (Shafa'Amr and Nazareth, 8,000 k.; Acre, 7,000 k.; Safed and Rama, 6,650 k.; Haifa, 2,000 k.).' Source: Cevdet Maliye 27130, firman dated 21 Jumadha al-akhir 1191 / 27 July 1777. Cohen notes that Jezzar instead pledged to pay the additional sum himself as part of his annual miri (Cevdet Maliye 29746, firman of 22 August 1777), confident he could exact even more than 500 percent of the original from the dhimmi population. Corroborated by Burckhardt 1822 p. 323 (line 3737): under Soleiman Pasha and his Jewish minister Haym Farkhy, Tiberias Jews 'merely pay the Kharadj,' whereas 'during the life of Djezzar Pasha they were often obliged to pay heavy fines.'"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 23,
+    "date": "1781",
+    "year": 1781,
+    "location": "Jerusalem",
+    "event": "Synagogue collapsed from snow; in order to rebuild it was necessary to pay large sums to the Pasha of Damascus.",
+    "src": "Barnai 1992",
+    "srcType": "secondary",
+    "actor": "Pasha of Damascus",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Community",
+    "scaleBig": "—",
+    "scaleNote": "Rebuild ransom",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1781",
+      "Synagogue",
+      "Pasha",
+      "Damascus"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "Various problems plagued the Jewish settlement in the latter part of the century. In the seventies, at the time of the rebellion of Ali Bey, it is true that Jerusalem was not directly harmed, but it was besieged and the authorities exploited the Jews of the city. In 1781 a Jerusalem synagogue collapsed because of heavy snows, and in order to rebuild it was necessary to pay large sums to the Pasa of Damascus."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 24,
+    "date": "1784",
+    "year": 1784,
+    "location": "Tiberias",
+    "event": "Jezzar's grain monopoly: cereal prices rose 400%; head of Ashkenazi community reported famine conditions.",
+    "src": "Cohen 1973",
+    "srcType": "primary",
+    "srcNote": "1785 letter",
+    "actor": "Jezzar Pasha (monopoly)",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Famine",
+    "scaleBig": "400%",
+    "scaleNote": "price rise",
+    "links": [],
+    "searchTerms": [
+      "Tiberias",
+      "1784",
+      "Jezzar",
+      "Ashkenazi"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Palestine_18th_1973",
+        "text": "Cohen documents (citing an 1785 letter from the head of the Ashkenazi Jewish community in Tiberias, B. D. Hakohen, Sefer birkat ha-aretz) that Jezzar in 1784 began to extend his monopoly system from cotton to cereals — he forced reluctant farmers to plant wheat despite the previous year's drought; due to the rains the yield was good, but Jezzar forbade farmers either to sell or to store their grain, exporting the entire crop mainly to Egypt. 'One of the results of this, typical of any monopoly, was a sharp rise in cereal prices — by as much as 400%.' Jezzar stored seed in granaries built for the purpose and distributed it to farmers at each sowing season."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 25,
+    "date": "1799",
+    "year": 1799,
+    "location": "Jerusalem / Acre",
+    "event": "Jews accused of collaborating with Napoleon; forced to pay huge bribes. 125,000 kuruş in 1800 marked as 'Payments to rulers during Napoleonic war'.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "Debt tables",
+    "actor": "Jezzar + Jerusalem local authorities",
+    "actorType": [
+      "ottoman",
+      "local"
+    ],
+    "scale": "Community",
+    "scaleBig": "125K",
+    "scaleNote": "kuruş in bribes",
+    "links": [
+      {
+        "id": "halukah-6",
+        "label": "Emergency collection"
+      }
+    ],
+    "searchTerms": [
+      "Napoleon",
+      "1799",
+      "bribes",
+      "125,000",
+      "kuruş"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "During the Napoleonic invasion the Jews were accused of collaborating with the enemy, and the Jerusalem community was forced to pay huge bribes to the local authorities. Other problems that arose from time to time, which may be seen in Turkish and Arab documents, were illegal taxes that were assessed by the local authorities from Jewish and Christian immigrants and from pilgrims who came to Jerusalem. [...] Jezzar actually did grant the Jews many reductions in taxes and customs duties, but the war with Napoleon at the end of the century brought about a severe crisis in his relations with the Jews; in this period he needed a great deal of money and he consequently extorted large sums from the Jews. [Table 2 entry: 1800, 125,000 kurus, 'Payments to rulers during Napoleonic war,' Ya'ari, The Emissaries of Palestine, pp. 668-69.]"
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 26,
+    "date": "1817–20+",
+    "year": 1817,
+    "location": "Acre / Safed / Tiberias",
+    "event": "After murdering Pharchi, Abdalla Pasha persecuted all Galilee Jews. Planned to ambush synagogues and hang Jewish leaders. Safed Jews compelled to sell even their garments to pay ransom.",
+    "src": "Schwarz 1850",
+    "srcType": "eyewitness",
+    "actor": "Abdalla Pasha of Acre",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "Region-wide",
+    "scaleBig": "—",
+    "scaleNote": "Garments sold for ransom",
+    "links": [
+      {
+        "id": "violence-10",
+        "label": "Same arc: opened by Pharchi murder"
+      }
+    ],
+    "searchTerms": [
+      "Acre",
+      "1817",
+      "Abdalla Pasha",
+      "Galilee Jews",
+      "Safed Jews",
+      "Pharchi"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "This deed of terror excited universal consternation and mortal fear in all Palestine, especially among the Israelites; and the parricide now showed himself openly as the persecutor of the Jews in the Holy Land, and exercised such acts of violence and abomination among them, as are not perpetrated by cannibals and savages... The Pacha then continued: 'I mean, on the coming Saturday, during divine worship, to surprise the Synagogue, and to hang up before the same, on the instant, the spiritual chief of the Jews, A. J. I intend, also, to proceed in the same manner at Zafed, to capture, during worship, the three richest among them (giving here their names), to hang them, and to confiscate their property.'... In Zafed, also, the prior resolution of the Pacha was proceeded with; but the three rich men destined to be hanged had likewise disappeared, and could nowhere be found. He therefore ordered all the Jews of the place to be locked up in the castle, a small Kallai, and demanded of them an exorbitant ransom, which they were unable to furnish; so that they were compelled to sell even their garments, and whatever of value they possessed, in order to obtain their liberty. He also exacted much from the Jews in Tiberias and Akko. But Jerusalem and Hebron, being in the southern part of Palestine, belonged not to the Pachalik of Akko, but to that of Damascus, and the Jews residing there were spared for the present... Subsequently to the above related event, no one was secure in life and property in Galilee, on account of the tyrant Abdalla, till the excellent Austrian Jewish consul-general at Aleppo, the well-known Baron of Picciotto, employed the influence he had with him to restrain him in his barbarous procedure against his own brothers in faith."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 27,
+    "date": "1841–49+",
+    "year": 1841,
+    "location": "Hebron",
+    "event": "Sheikh Abd al-Rachman — a most insatiable leech, as scarcely a day passes on which some demand is not made. His entire family extorted independently. Drove most Jews to Jerusalem.",
+    "src": "Schwarz 1850",
+    "srcType": "eyewitness",
+    "actor": "Sheikh Abd al-Rachman",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Most fled to Jerusalem",
+    "scaleBig": "Most",
+    "scaleNote": "of Hebron Jews displaced",
+    "links": [
+      {
+        "id": "expulsion-12",
+        "label": "Same event: drove Hebron Jews to Jerusalem"
+      }
+    ],
+    "searchTerms": [
+      "Abd al-Rachman",
+      "Hebron",
+      "leech",
+      "extort",
+      "חברון"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "But when the government of Abraim came to an end, in 5601 (1841), the banished chief again appeared, greatly respected and with increased power. He also acquired anew a strong party, and became again the Sheich of the whole district. He thereupon caused Abu Suwat to be publicly executed in Hebron, and acquired gradually such authority that the Pacha of Jerusalem did not think it prudent to venture putting a check on his proceedings and actions; and the name of Abd al Rachman sounded more fearful and was more respected than that of the Sultan... Towards the Jews he permits no ill-treatment; but he is a most insatiable leech, as scarcely a day passes on which some demand is not made, which, though not presented as an extortion, comes in a worse shape yet — in that of a request or petition, with an understanding that a threat may be added to enforce compliance. And, as his whole family, from little to big, imitate, each for his own benefit, the magnanimous head of the house, it is almost impossible to live among such leeches; and actually the greater part of the Israelites of Hebron have left it and settled in Jerusalem."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 28,
+    "date": "Entire 18th c.",
+    "year": 1750,
+    "location": "Jerusalem",
+    "event": "Burial extortion — one of the problems that disturbed the Jews most during the Ottoman period was the prevention of Jewish burials, in order to extort money. Istanbul intervened repeatedly.",
+    "src": "Barnai 1992; Cohen 1973",
+    "srcType": "secondary",
+    "actor": "Local rulers and residents",
+    "actorType": [
+      "local",
+      "ottoman"
+    ],
+    "scale": "Continuous",
+    "scaleBig": "—",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "burial",
+      "extort",
+      "cemetery",
+      "Jerusalem",
+      "קבורה"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "The local rulers extorted money with many excuses (for example, giving a firman for the construction of a cemetery). One of the problems that disturbed the Jews most during the Ottoman period was the prevention of Jewish burials, in order to extort money from them. The residents and the local authorities acted in an especially hostile manner when they attempted to expropriate Jewish burial plots on the Mount of Olives and disturbed the transfer of Jews to the cemetery. Every few years it was necessary for the central authority in Istanbul to intervene in order to settle the matter."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 29,
+    "date": "Entire 18th c.",
+    "year": 1750,
+    "location": "Jerusalem",
+    "event": "Comprehensive extra-legal taxation: kudumiye (governor-arrival tax, 300 kuruş), mufakhare (monthly, 20), idiye/bayramlik (festival tribute), imdadiye (hajj contribution), burial permits, search tax, wood tax, wool tax — plus various fines and irregular imposts.",
+    "src": "Cohen 1973",
+    "srcType": "secondary",
+    "actor": "Pashas + local officials",
+    "actorType": [
+      "ottoman",
+      "local"
+    ],
+    "scale": "Continuous",
+    "scaleBig": "8+",
+    "scaleNote": "named taxes",
+    "links": [],
+    "searchTerms": [
+      "kudumiye",
+      "mufakhare",
+      "idiye",
+      "taxation",
+      "מס"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Palestine_18th_1973",
+        "text": "Cohen catalogues a series of special taxes imposed on Christians and Jews in 18th-century Jerusalem beyond the cizye: the 'kudumiye' (paid to each new governor on arrival — for Jews, 300 k. by mid-century); the 'mufahere' (a monthly payment to the pasha — 20 k. for Jews); the 'idiye' or 'bayramlik' (festival tribute of sugar, honey, velvet, plus cash to the kethuda and retinue); the 'imdadiye' (Christian contribution toward the cerde meeting the Hajj caravan); and irregular 'search' (kosf), wood (kereste), and wool (yapagi) taxes plus various 'gifts' (hizmet, ziyafet, peskes). Jews also paid arbitrary burial-permission fees (e.g. the 'izin tezkeresi') beyond the qassam's official 5 k. burial tax, plus assorted fines. Cohen notes the Porte issued firman after firman forbidding these as illegal and contrary to Shari'a, but they continued for at least the first sixty years of the century."
+      }
+    ]
+  },
+  {
+    "cat": "extortion",
+    "n": 30,
+    "date": "1853",
+    "year": 1853,
+    "location": "Hebron",
+    "event": "Finn wrote on behalf of the Jews in Hebron, who had cause of complaint as to oppression exercised against them by the townspeople.",
+    "src": "Finn 1878",
+    "srcType": "eyewitness",
+    "actor": "Hebron townspeople",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Community",
+    "scaleBig": "—",
+    "scaleNote": "Consular intervention",
+    "links": [],
+    "searchTerms": [
+      "Hebron",
+      "1853"
+    ],
+    "passages": [
+      {
+        "file": "Finn (curated)",
+        "text": "But I was soon under the necessity of addressing to this same officer, the Bairakdâr, a letter on behalf of the Jews in Hebron (his own station), who had cause of complaint as to oppression exercised against them by the townspeople, and other complaints soon followed. [Context: The reference is brief — a single paragraph embedded in Finn's larger 1853 Hebron narrative, which is otherwise dominated by Muslim-on-Muslim factional violence under 'Abderrahhmân el 'Amer of Hebron. The Bairakdâr in question is Mustafa Aga Bairakdâr, 'principal Commander of the Bashi-Bozuk, a good soldier, one who kept his troops in order and discipline, and who had been for many years well known at the Consulate' — and whose post of duty was Hebron itself. Finn's framing is acid (lines 1572-1575): 'yet Hebron was the post of duty of the latter officer, and he ought to have known what was going on. However, a storm was brewing, whether he knew it or not.' The Jewish complaint is named but not elaborated; what follows in Finn's narrative is the long Moslem petition from Hebron against 'Abderrahhmân el 'Amer's tyranny, brought to Finn via the Rev. W. J. Beamont from Urtâs. The Jewish complaint is the opening item in a cascade of Hebron-region petitions to the British Consulate in summer 1853; Finn handles it through formal correspondence with the Ottoman commander responsible for the locality.]"
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 1,
+    "date": "1576–78",
+    "year": 1576,
+    "location": "Safed",
+    "event": "Sultan Murad III ordered 1,000 wealthiest Jewish families deported to Cyprus (sürgün). Rescinded 1578 after Jewish lobbying in Istanbul.",
+    "src": "David 1999; Lewis",
+    "srcType": "primary",
+    "srcNote": "Firman",
+    "actor": "Ottoman central government",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "1,000 families ordered",
+    "scaleBig": "1,000",
+    "scaleNote": "families · rescinded",
+    "links": [],
+    "searchTerms": [
+      "Safed",
+      "1576",
+      "Sultan Murad III",
+      "Murad",
+      "Cyprus",
+      "sürg"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "Ottoman documents reveal that a group of affluent Safed Jews was targeted for transfer to Cyprus as a means of assisting the Cypriot ruler to stabilize that island's economy, a step consistent with the Ottoman policy of s[ü]rg[ü]n. In 1576 Sultan Murad III issued an order for the deportation of a thousand of the Safed area's wealthiest Jews and their families to Cyprus. Less than a year later this firman was superseded by another one, later rescinded, authorizing the transfer of five hundred affluent Jews from Safed."
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 2,
+    "date": "1579",
+    "year": 1579,
+    "location": "Safed / Famagusta",
+    "event": "Cypriot governor diverted 100 Salonikan Jews in transit to Safed; firman approved.",
+    "src": "David 1999",
+    "srcType": "secondary",
+    "actor": "Ottoman governor of Cyprus",
+    "actorType": [
+      "ottoman"
+    ],
+    "scale": "100 diverted",
+    "scaleBig": "100",
+    "scaleNote": "Salonikan Jews",
+    "links": [],
+    "searchTerms": [
+      "Safed",
+      "1579",
+      "Salonikan Jews",
+      "Cypriot"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "Against the background of the late-sixteenth-century empire-wide economic crisis, we find reference to a large group of Safed-bound Jews from Salonika in an official Turkish document. As a means of stimulating the Cypriot economy, its governor had sought to import Jews to the island. Following the cancellation of a firman issued in 1575 that had authorized such a transfer of Jews from Safed to Cyprus, the Cypriot governor then turned to the sultan with a request to now appropriate a group of one hundred Salonikan Jews in transit to Safed who had made port at Famagusta. A firman issued in 1579 approved this request."
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 3,
+    "date": "Mar 1579",
+    "year": 1579,
+    "location": "Jerusalem",
+    "event": "Egyptian Jewish pilgrims arrested at the gates; kadi ordered them to leave within 15 days. Muslim petition alleged the Jews seized Muslim women.",
+    "quote": "The Jews are stubborn; they ride horses, change their clothing [to resemble Muslims], seize Muslim women.",
+    "src": "Cohen 1984",
+    "srcType": "primary",
+    "srcNote": "Sijill",
+    "actor": "Local Muslim population + kadi",
+    "actorType": [
+      "local",
+      "ottoman"
+    ],
+    "scale": "Pilgrims expelled",
+    "scaleBig": "15",
+    "scaleNote": "days to leave",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1579",
+      "Egyptian Jewish",
+      "The Jews"
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Jewish_Life_Under_Islam_1984",
+        "text": "Cohen documents that at the beginning of March 1579 'Atiyya ibn Shmu'il ibn Shams Hacohen led a group of Egyptian Jewish pilgrims who were arrested at the gates of Jerusalem and forbidden to enter on the grounds that they were fleeing plague rather than coming as pilgrims; they were admitted only after producing a sultan's decree and letters from Cairo's rulers. After a second pilgrim group (led by 'Atiyya's father) likewise gained entry, Muslim residents petitioned the kadi to banish them, alleging that 'the Jews are stubborn,' that they did Jerusalem great harm, 'they ride horses, change their clothing [to resemble Muslims], follow in Muslims' footsteps, seize Muslim women and employ them as [their] servants, [and] upset the local residents by causing prices to rise.' The kadi ordered the group to leave Jerusalem within fifteen days; when they did not, he repeated the order; the dispute was effectively closed by the plague outbreak in June 1579, which sent the pilgrims back to Egypt."
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 4,
+    "date": "1587–88",
+    "year": 1587,
+    "location": "Jerusalem",
+    "event": "Main synagogue confiscated by Abu Seifin; the kadi expressly forbade Jews to use it. Community without official synagogue for several decades.",
+    "src": "David 1999",
+    "srcType": "secondary",
+    "actor": "Abu Seifin + kadi of Jerusalem",
+    "actorType": [
+      "local",
+      "ottoman"
+    ],
+    "scale": "Synagogue lost",
+    "scaleBig": "Decades",
+    "scaleNote": "without a synagogue",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1587",
+      "Abu Seifin",
+      "Seifin"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "Under the Ottoman regime in the 1530s, further Muslim attempts to encroach upon the area under Jewish control were made, even going so far as to seek total revocation of their rights. Rumors were spread of illegal renovations; the claim that the synagogue had been rebuilt was also advanced. Attempts to prove that the synagogue had been illegally constructed continued down to the late 1580s. In late 1587 the synagogue was confiscated by order of Abu Seifin; however, a temporary restraining order was obtained from the sultan. This brief period of grace ended in April 1588, when the kadi of Jerusalem issued an order expressly forbidding Jews to utilize the structure. As the ban on the construction of new synagogues did not apply to informal or semiformal worship, the local authorities permitted the Jews to worship in private homes. Several decades were to pass before the Jews were again allowed to pray openly in an officially designated public setting, the Yo[h]anan ben Zakkai synagogue."
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 5,
+    "date": "1599–1607",
+    "year": 1599,
+    "location": "Ein Zeitim · Meron · Birya",
+    "event": "Anti-Jewish brigandage permanently emptied these Galilee villages.",
+    "quote": "In the village of Ein Zeitim, and in Meron, there are abandoned synagogues, and no [Jewish] inhabitants.",
+    "src": "David 1999",
+    "srcType": "primary",
+    "srcNote": "1607 letter",
+    "actor": "Muslim brigands",
+    "actorType": [
+      "local"
+    ],
+    "scale": "3 villages emptied",
+    "scaleBig": "3",
+    "scaleNote": "villages abandoned",
+    "links": [
+      {
+        "id": "violence-3",
+        "label": "Same event: brigandage that emptied these villages"
+      }
+    ],
+    "searchTerms": [
+      "Ein Zeitim",
+      "1599",
+      "Galilee",
+      "Zeitim"
+    ],
+    "passages": [
+      {
+        "file": "David (curated)",
+        "text": "From the century's second half, Ein Zeitim boasted its own yeshivah, headed by Moses ben Makhir in the last quarter of the century until its doors closed in 1599. In that year, against the background of Druze emir Fa[kh]r ed-Din II's early-seventeenth-century attempt to bring all of southern Lebanon and large parts of Eretz-Israel under his control, there were outbreaks of anti-Jewish violence by Muslim brigands. These resulted in the yeshivah's relocation to Safed, thus ending Jewish settlement in Ein Zeitim. A letter written by Solomon Shlomil Meinstral of Safed in 1607 reflects this state of affairs: 'In the village of Ein Zeitim, and in Meron, there are abandoned synagogues, and no [Jewish] inhabitants.' ... [Birya] was evidently abandoned in the early seventeenth century because of the outbreaks of violence."
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 6,
+    "date": "1604+",
+    "year": 1604,
+    "location": "Safed",
+    "event": "Druze massacre triggered mass flight to Damascus; town conquered multiple times. By 1653 practically devoid of Jews.",
+    "src": "Ayalon 2025",
+    "srcType": "secondary",
+    "actor": "Druze (Ma'an faction) + Ottoman–Druze warfare",
+    "actorType": [
+      "druze",
+      "ottoman"
+    ],
+    "scale": "Town depopulated",
+    "scaleBig": "—",
+    "scaleNote": "of Jews by 1653",
+    "links": [
+      {
+        "id": "violence-4",
+        "label": "Same event: Druze massacre"
+      },
+      {
+        "id": "immigration-6",
+        "label": "Survivors redistributed to Hebron"
+      }
+    ],
+    "searchTerms": [
+      "Safed",
+      "1604",
+      "Druze",
+      "Damascus"
+    ],
+    "passages": [
+      {
+        "file": "Ayalon (curated)",
+        "text": "From 1604, military disputes between the Druze Ma'an family, led by Fakhr a-Din II and his brother, and forces loyal to the Ottomans in the northern Galilee area, led to further emigration from Safed. Rival forces conquered the town several times. By 1653, after another round of famine and conquests, Safed was practically devoid of Jews. [Footnote 101: Rozen, Ha-kehillah ha-yehudit, 2-6; Ayalon, 'Safed.'] An earlier passage (line 1837-1838) discussing Sephardic-Mustaʽribi assimilation in Damascus notes: 'In Damascus, this Sephardi takeover was further assisted by a flow of Sephardic Jews coming from Safed since the late sixteenth century, and those escaping that town after a Druze massacre there in 1604.' [Footnote 71 cites Rivlin and Rivlin, Korot, 18; Rosanes, Korot ha-Yehudim, 3:228-32.] These two passages together support the expulsion-6 event: Druze-Ottoman warfare from 1604 onward (described as 'massacre' in the assimilation passage), Jewish flight to Damascus, repeated conquests of the town, and a community 'practically devoid of Jews' by 1653."
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 7,
+    "date": "1654–55",
+    "year": 1654,
+    "location": "Jerusalem",
+    "event": "Ashkenazim 15,000 reichsthalers in debt; synagogue closed; leaders imprisoned. Henry Jessey at Whitehall 1655.",
+    "quote": "Of the 700 widows and poor Jews there, about four hundred have been famished.",
+    "src": "Ayalon 2025; Rozen 2015",
+    "srcType": "primary",
+    "actor": "Muslim creditors + Ottoman judicial system",
+    "actorType": [
+      "creditor",
+      "ottoman"
+    ],
+    "scale": "~400 famished of 700",
+    "scaleBig": "~400",
+    "scaleNote": "of 700 widows / poor",
+    "links": [
+      {
+        "id": "halukah-2",
+        "label": "Funded by London appeal"
+      }
+    ],
+    "searchTerms": [
+      "Jerusalem",
+      "1654",
+      "Henry Jessey",
+      "Ashkenazim",
+      "Jessey",
+      "15,000"
+    ],
+    "passages": []
+  },
+  {
+    "cat": "expulsion",
+    "n": 8,
+    "date": "1720",
+    "year": 1720,
+    "location": "Jerusalem",
+    "event": "After the Hurva burning, Ashkenazim fled Jerusalem, and for several decades there were virtually no Ashkenazim there. Returning Ashkenazim disguised as Sephardim for decades afterward.",
+    "src": "Barnai 1992; Ayalon 2025",
+    "srcType": "primary",
+    "actor": "Muslim creditors",
+    "actorType": [
+      "creditor"
+    ],
+    "scale": "Ashkenazi community",
+    "scaleBig": "Decades",
+    "scaleNote": "of absence",
+    "links": [
+      {
+        "id": "violence-8",
+        "label": "Caused by Hurva burning"
+      },
+      {
+        "id": "immigration-7",
+        "label": "Community that arrived in 1700"
+      },
+      {
+        "id": "halukah-4",
+        "label": "Reconstruction fundraising"
+      }
+    ],
+    "searchTerms": [
+      "Jerusalem",
+      "1720",
+      "Returning Ashkenazim",
+      "Hurva",
+      "Ashkenazim"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "All the efforts to save the Ashkenazi community came to naught. In November 1720 the creditors burned the Ashkenazi court and its synagogue, and the Ashkenazi community was dispersed. [...] It is likely that after the destruction of the Ashkenazi court not all the Ashkenazim left Jerusalem, and a small community, numbering a few dozen souls, remained in the city. [...] Tradition relates that from the time of the destruction of the Ashkenazi court until the renewal of the Ashkenazi community at the beginning of the nineteenth century the Ashkenazim in Jerusalem were forced to dress like the Sephardim so that their Moslem creditors and their descendants would not recognize them and try to collect the Ashkenazi community debt remaining from the early eighteenth century. At any rate, in a document from 1769 R. Moses Yerushalmi related: 'And it is forbidden for an Ashkenazi . . . to enter Jerusalem unless he is dressed in Turkish [Sephardi] clothing and speaks the Turkish language so that no one will know that he comes from Europe. And all this is because of the actions of the group of Hasidim that immigrated with the late R. Judah Hasid the second.'"
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 9,
+    "date": "1741",
+    "year": 1741,
+    "location": "Jerusalem",
+    "event": "Attempts to expel the Jews from Jerusalem because of the growth of the city's Jewish population. Jews prohibited from buying food — 'the Arabs had nothing to eat'. Expulsion averted via bribe.",
+    "src": "Barnai 1992",
+    "srcType": "secondary",
+    "actor": "Local rulers and residents",
+    "actorType": [
+      "local",
+      "ottoman"
+    ],
+    "scale": "Expulsion averted",
+    "scaleBig": "—",
+    "scaleNote": "by bribe",
+    "links": [],
+    "searchTerms": [
+      "Jerusalem",
+      "1741",
+      "Attempts",
+      "Arabs"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "The early forties were critical for the community, and it was feared that the tragedy of 1720 (burning the synagogue) would be repeated. In 1741 the emissaries R. Abraham ben Asher and R. Isaac Zerahia Azulai were sent with a letter saying that there had been attempts to expel the Jews from Jerusalem because of the growth of the city's Jewish population. The Jews were also prohibited from buying food with the excuse that because of the increase in the number of Jews, 'the Arabs had nothing to eat.' To avoid expulsion the Jews had to pay a large bribe. In 1744 the Istanbul Officials wrote that the increased number of Jews in Jerusalem was the cause of the libels and the heavy taxes that the authorities were assessing. And indeed, in 1752 R. Moses Bula, one of the sages of Jerusalem, wrote that the increase in the number of immigrants had led to the greed of the local residents: 'Because the cries of the poor people who sigh and suffer from the gentiles, from the robbers, the bold nations have increased . . . due to the gentiles accusations . . . because they say that too many Jews are coming.'"
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 10,
+    "date": "1750s–60s",
+    "year": 1755,
+    "location": "Jerusalem",
+    "event": "More than two hundred left the city — fled in the night because it is difficult to live in the city.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "de-Gilderin letter",
+    "actor": "Local rulers (extortion-driven)",
+    "actorType": [
+      "local",
+      "ottoman"
+    ],
+    "scale": "200+ fled",
+    "scaleBig": "200+",
+    "scaleNote": "left Jerusalem",
+    "links": [
+      {
+        "id": "extortion-18",
+        "label": "Same event: extortion that drove flight"
+      }
+    ],
+    "searchTerms": [
+      "Jerusalem",
+      "1755"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In the sixties, when the controversy among the leadership of the Jerusalem community reached its peak, the authorities took advantage of the situation to extort money. These were crisis years for the community, and many Jews fled the city, at their head some of the important sages. The German Jew Simon de-Gilderin, who was living in Jerusalem at the time, described the situation: 'More than two hundred . . . left the city . . . to flee in the night because it is difficult to live in the city . . . every moment there are libels and harmful decrees . . . every day they take a person or a sage or a rich man and beat him until he gives them what they want.'"
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 11,
+    "date": "1765",
+    "year": 1765,
+    "location": "Hebron",
+    "event": "Hebron Officials' letter to Istanbul.",
+    "quote": "Let us replace the Jews by another nation so that the name of Israel will no longer be remembered in the hills of Hebron, let us expel them and bring in idol-worshippers in their place.",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "actor": "Local Muslim officials",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Expulsion proposed",
+    "scaleBig": "—",
+    "scaleNote": "Petitioned Istanbul",
+    "links": [],
+    "searchTerms": [
+      "Hebron",
+      "1765",
+      "Hebron Officials",
+      "Istanbul",
+      "Israel"
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In Hebron the position of the Jews did not differ from that of the Jerusalem Jews. We have evidence in our possession concerning the extortion of money by the rulers and repeated attempts to expel the Jews. [...] Thus the Hebron Jews were persecuted by the local rulers as well as by the Christian population of the city. This complex system of relationships, in which the Hebron Jews were caught between the Moslems and the Christians, also appears in a letter sent by the officials of Hebron in Istanbul in 1765: 'Let us replace the Jews by another nation so that the name of Israel will no longer be remembered in the hills of Hebron, let us expel them and bring in idol-worshippers [i.e., Christians] in their place.'"
+      }
+    ]
+  },
+  {
+    "cat": "expulsion",
+    "n": 12,
+    "date": "1841–49+",
+    "year": 1841,
+    "location": "Hebron",
+    "event": "Abd al-Rachman's extortion drove the greater part of the Israelites of Hebron to resettle in Jerusalem.",
+    "src": "Schwarz 1850",
+    "srcType": "eyewitness",
+    "actor": "Sheikh Abd al-Rachman (extortion-driven)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Most of Hebron Jewry",
+    "scaleBig": "Most",
+    "scaleNote": "to Jerusalem",
+    "links": [
+      {
+        "id": "extortion-27",
+        "label": "Same event: Abd al-Rachman's chronic extraction"
+      }
+    ],
+    "searchTerms": [
+      "Hebron",
+      "1841",
+      "Rachman",
+      "Israelites"
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "And, as his whole family, from little to big, imitate, each for his own benefit, the magnanimous head of the house, it is almost impossible to live among such leeches; and actually the greater part of the Israelites of Hebron have left it and settled in Jerusalem."
+      }
+    ]
+  },
+  {
+    "cat": "immigration",
+    "n": 1,
+    "date": "1492 onward",
+    "year": 1492,
+    "location": "Safed · Jerusalem · Hebron · Tiberias",
+    "event": "Iberian Sefardim (1492 exiles + secondary chain migration via Salonika/Istanbul/Italian-peninsula). Peak at Safed: near-parity with Muslim population by 1567.",
+    "actor": "Iberian exile chain migration",
+    "actorType": [
+      "sephardi"
+    ],
+    "scale": "Safed 233 hh (1525) → 945 hh / ~5,700 souls (1567 peak)",
+    "scaleBig": "945 hh",
+    "scaleNote": "near-parity with 988 Muslim hh at peak",
+    "src": "Lewis-Cohen 1978 defter; David 1999",
+    "srcType": "primary",
+    "srcNote": "Defter census records",
+    "searchTerms": [
+      "Sefardim",
+      "Safed",
+      "defter",
+      "1525",
+      "household"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 2,
+    "date": "16th c.",
+    "year": 1555,
+    "location": "Safed",
+    "event": "Italian-peninsula Sefardim: Apulia, Calabria, and Italian-rite congregations named in defter. Small but culturally distinct cohort.",
+    "actor": "Italian-peninsula Sefardim",
+    "actorType": [
+      "sephardi"
+    ],
+    "scale": "~75 hh (~450 souls) at 1555-6 census",
+    "scaleBig": "75 hh",
+    "scaleNote": "Named congregations in defter",
+    "src": "Defter 1555-6; David 1999",
+    "srcType": "primary",
+    "srcNote": "Defter census",
+    "searchTerms": [
+      "Apulia",
+      "Calabria",
+      "Italian",
+      "Safed",
+      "defter"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 3,
+    "date": "16th c.",
+    "year": 1555,
+    "location": "Safed",
+    "event": "Maghrebi Jews from North Africa (Morocco, Algeria, Tunisia, Libya). Retained distinct Maliki-adjacent communal identity.",
+    "actor": "North African Jewish migration",
+    "actorType": [
+      "maghrebi"
+    ],
+    "scale": "~38 hh in Safed; smaller elsewhere",
+    "scaleBig": "38 hh",
+    "scaleNote": "Maghreb congregation in defter",
+    "src": "Defter 1555-6; Lewis-Cohen 1978",
+    "srcType": "primary",
+    "srcNote": "Defter census",
+    "searchTerms": [
+      "Maghreb",
+      "Safed",
+      "North Africa",
+      "defter"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 4,
+    "date": "16th c.",
+    "year": 1555,
+    "location": "Safed",
+    "event": "German and Hungarian Ashkenazi minority. Small cohort via Italy; named congregations in defter.",
+    "actor": "Central European Ashkenazim",
+    "actorType": [
+      "ashkenazi"
+    ],
+    "scale": "~32 hh (~190 souls)",
+    "scaleBig": "32 hh",
+    "scaleNote": "German 20 hh, Hungarian 12 hh",
+    "src": "Defter 1555-6",
+    "srcType": "primary",
+    "srcNote": "Defter census",
+    "searchTerms": [
+      "German",
+      "Hungarian",
+      "Ashkenaz",
+      "Safed",
+      "defter"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 5,
+    "date": "1563–64",
+    "year": 1563,
+    "location": "Tiberias",
+    "event": "Don Joseph Nasi's state-sponsored Tiberias revival: sultanic firman, walls rebuilt, Spanish wool imported, mulberries planted for silk. Project failed by Nasi's death; Jews 'continually fled' even in his lifetime.",
+    "actor": "Mendes-Nasi banking family (sultanic concession)",
+    "actorType": [
+      "sephardi",
+      "ottoman-state"
+    ],
+    "scale": "Project-scale; demographically minor",
+    "scaleBig": "—",
+    "scaleNote": "State-sponsored attempted resettlement",
+    "src": "Sultanic firman; David 1999",
+    "srcType": "primary",
+    "srcNote": "Firman",
+    "searchTerms": [
+      "Nasi",
+      "Tiberias",
+      "firman",
+      "1563",
+      "mulberry"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 6,
+    "date": "post-1660",
+    "year": 1660,
+    "location": "Hebron",
+    "event": "Internal redistribution after Tiberias destruction. Survivors + post-1666 Sabbatean refugees resettled in Hebron. ~25× growth across the century.",
+    "actor": "Tiberias survivors + Sabbatean inflow",
+    "actorType": [
+      "internal",
+      "sabbatean"
+    ],
+    "scale": "Hebron 11 hh (1596) → ~250 souls (1700)",
+    "scaleBig": "25×",
+    "scaleNote": "growth across the century",
+    "src": "Ayalon 2025; Scholem; Rozen JNUL Ms. 8°61",
+    "srcType": "primary",
+    "srcNote": "JNUL epistle",
+    "searchTerms": [
+      "Tiberias",
+      "Hebron",
+      "1660",
+      "Sabbatean",
+      "destruction"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 7,
+    "date": "1700",
+    "year": 1700,
+    "location": "Jerusalem",
+    "event": "R. Judah Hasid's Polish-Sabbatean wave. ~1,500 left Europe; many died en route. Surviving cohort founded the institutional anchor of Ashkenazi Jerusalem — the courtyard later burned as the Hurva (1720).",
+    "quote": "Corroborated by 1720 Muslim-creditor burning of the courtyard (the Hurva — 'the Ruin' — named after its burning).",
+    "actor": "Polish-Lithuanian Sabbatean-tinged movement",
+    "actorType": [
+      "ashkenazi",
+      "sabbatean"
+    ],
+    "scale": "~1,500 left Europe; founded Ashkenazi institutional anchor",
+    "scaleBig": "~1,500",
+    "scaleNote": "Many died en route",
+    "src": "Barnai; Ayalon 2025",
+    "srcType": "primary",
+    "searchTerms": [
+      "Judah Hasid",
+      "1700",
+      "Hurva",
+      "Ashkenaz",
+      "Jerusalem"
+    ],
+    "links": [
+      {
+        "id": "violence-8",
+        "label": "Led to Hurva burning (1720)"
+      },
+      {
+        "id": "expulsion-8",
+        "label": "Community expelled after debt crisis"
+      },
+      {
+        "id": "extortion-12",
+        "label": "Debt spiral that followed"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "IN 1700 AN EVENT OCCURRED that led to widespread changes in the Jewish settlement in Palestine: the immigration of R. Judah Hasid and his followers from Eastern and Central Europe. Such immigrations at the first of the century had a considerable effect on the history of the Jewish people in general, and on the history of the Jewish settlement in Palestine in particular. Not only did these immigrations, with their messianic fervor, capture the imagination of many Jewish communities in Europe, but they also led to a greater involvement of the communities in the Diaspora with the small settlement in Palestine and to the extension of the protection of the Istanbul Officials to the Yishuv. The failure of Sabbateanism had led to a severe crisis in the Jewish communities in the form of the despair that overtook the communities, and had resulted in a search for ways to relieve the subsequent great tension. One of the ways was immigration to Palestine. Indeed, at the end of the seventeenth and the beginning of the eighteenth centuries several caravans of immigrants were organized, first and foremost that of the Sabbatean R. Judah Hasid and his followers in 1700. [...] The arrival of hundreds of immigrants in Jerusalem at the beginning of the eighteenth century changed the structure of the Ashkenazi community in the city. [...] The members of Rabbi Hasid's group had in fact secured for themselves systematic financial support from the European Jewish communities before their immigration, but when they arrived in Palestine the immigrants needed a large amount of money for renting apartments, for buying food and other necessities for daily living, and for paying taxes and bribes to the local authorities. The money from Europe did not arrive on time, and the immigrants found it necessary to borrow large sums of money from moneylenders, mainly Moslems, who charged very high interest."
+      }
+    ]
+  },
+  {
+    "cat": "immigration",
+    "n": 8,
+    "date": "1740",
+    "year": 1740,
+    "location": "Tiberias",
+    "event": "R. Hayim Abulafia + students, under Dahir al-Umar's invitation and protection. Rebuilt synagogue, bathhouse, oil press, wall around Jewish quarter, vineyards. Survived 1737/1742/1743 Sulayman al-Azm sieges.",
+    "actor": "Turkish-Sephardi under local-ruler patronage",
+    "actorType": [
+      "sephardi"
+    ],
+    "scale": "~10 students + families; institutional revival",
+    "scaleBig": "~10",
+    "scaleNote": "Rebuilt quarter infrastructure",
+    "src": "Barnai",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Abulafia",
+      "Tiberias",
+      "Dahir",
+      "1740",
+      "synagogue"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "After he had established his residence in Tiberias and fortified the city, Dahir al-Umar turned to the Jews with the suggestion that they come to live there. He had no doubt that the Jews, whose attitude to Tiberias was surely known to him, would not endanger his rule, and thanks to their connections with their brothers in the Diaspora they would be able to contribute to the development of the place and add money to his coffers. In 1738 he appealed to R. Haim Abulafia in Izmir and suggested that he settle in Tiberias. [...] Dahir al-Umar promised the immigrants tax discounts for three years and assistance in the building of houses, synagogues, and study-houses. [...] When he arrived in Tiberias R. Abulafia was received with great honor by Dahir al-Umar, who put at the disposal of his group, at a low price, a piece of land for building a neighborhood for the Jews. He also assisted them in building their houses and public institutions. Concerning the development of Tiberias in general we have the following evidence from R. Berav: 'And during two years he built houses and courtyards for the Jews and a fine synagogue . . . and he built a fine bathhouse and stores for the market-days and a factory for sesame oil and he began to build roads in the land and he also commanded that fields and vineyards be planted.' Rabbi Berav composed a special poem at the occasion of the completion of each step in the following projects: the building of the wall around the Jewish quarter, the founding of the synagogue, and the building of the new houses. Siileyman went to war three times against Dahir al-Umar (1737, 1742, 1743); R. Abulafia held the Tiberias Jews in the city through the sieges."
+      }
+    ]
+  },
+  {
+    "cat": "immigration",
+    "n": 9,
+    "date": "1741",
+    "year": 1741,
+    "location": "Jerusalem",
+    "event": "R. Hayyim ibn Attar (Or Ha-Hayyim) + students from Morocco via Leghorn/Modena financing. Founded Knesseth Israel yeshiva in Jerusalem with Italian-Jewish funding.",
+    "actor": "Moroccan Sephardi with Italian-Jewish funding",
+    "actorType": [
+      "sephardi",
+      "maghrebi"
+    ],
+    "scale": "Dozens of students",
+    "scaleBig": "Dozens",
+    "scaleNote": "Founded Knesseth Israel yeshiva",
+    "src": "Barnai",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Attar",
+      "Or Ha-Hayyim",
+      "Morocco",
+      "Jerusalem",
+      "Knesseth"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In 1741 R. Haim ben Attar immigrated to Palestine from Morocco, accompanied by dozens of his students, and established the yeshiva Knesseth Israel in Jerusalem with the assistance of wealthy Italian-Jewish donors. [...] In many communities of the Diaspora committees were formed for the establishment and support of yeshivas in Palestine. The best-known committee was that called Knesseth Israel in Italy, which was formed by R. Haim ben Attar on his way to Palestine and bore the name of the yeshiva that he established in Jerusalem. The centers of the committee were in Leghorn and Modena, and its branches were spread throughout Italy. [...] In the immigration of R. Haim ben Attar and his group in 1741 it is also possible to find signs of messianic strains, even though there were other motives for his immigration as well. Rabbi ben Attar was one of the calculators of the year of redemption in his generation and once even expressed the opinion that 1740 would be the year of redemption."
+      }
+    ]
+  },
+  {
+    "cat": "immigration",
+    "n": 10,
+    "date": "1777",
+    "year": 1777,
+    "location": "Safed · Tiberias",
+    "event": "The great Hasidic aliyah from White Russia. ~300 Hasidim under R. Menahem-Mendel of Vitebsk, R. Abraham of Kalisk, R. Israel of Polotsk. Institutional founding of Habad-precursor presence in Palestine.",
+    "actor": "White Russian Hasidim",
+    "actorType": [
+      "ashkenazi",
+      "hasidic"
+    ],
+    "scale": "~300 Hasidim",
+    "scaleBig": "~300",
+    "scaleNote": "Institutional founding of Habad presence",
+    "src": "Barnai; canonical Hasidic historiography",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Hasidic",
+      "1777",
+      "Vitebsk",
+      "Menahem-Mendel",
+      "Safed"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "The immigration of Hasidim in 1777 was relatively large and consisted of several hundred people who arrived at the same time. At its head were three Hasidic leaders of White Russia: R. Menahem-Mendel of Vitebsk, R. Abraham of Kalisk, and R. Israel of Plock. The caravan set out in March 1777 from eastern Europe and arrived in Palestine, via Istanbul, in September of the same year. The Hasidim constituted only a small fraction of these immigrants, because hundreds of people joined them who took advantage of the departure of the caravan and did not have the slightest connection to Hasidism. The leaders of the Hasidim were not happy about this and they called them names such as erev rav (the rabble). There was indeed much justification for their displeasure because before their immigration the Hasidim had provided for orderly economic support from their brothers in the Diaspora, as was accepted in those days, whereas the erev rav had no means of support and became a burden to the Hasidim, especially to the leaders of the group. This immigration differed somewhat from the other immigrations in the eighteenth century, both of the Sephardim and of the Ashkenazim, in that it was an immigration resulting from a new movement within Judaism that led to a turning-point in the modern history of the Jewish people: Hasidism."
+      }
+    ]
+  },
+  {
+    "cat": "immigration",
+    "n": 11,
+    "date": "1812 onward",
+    "year": 1812,
+    "location": "Jerusalem",
+    "event": "Vilna Perushim (Lithuanian mitnagdim). Post-1812 Galilee plague drove surviving Lithuanian-Ashkenazi community to Jerusalem, anchoring post-plague Ashkenazi reconstitution in the city.",
+    "actor": "Lithuanian mitnagdim",
+    "actorType": [
+      "ashkenazi"
+    ],
+    "scale": "Sustained flow; anchored reconstitution",
+    "scaleBig": "—",
+    "scaleNote": "Post-plague institutional anchor",
+    "src": "Barnai; Blumberg",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Perushim",
+      "Vilna",
+      "Lithuanian",
+      "Jerusalem",
+      "1812"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "The growth of the Ashkenazi base in the Yishuv from the time of the great Hasidic immigration in 1777 until the immigration of the Perushim at the beginning of the nineteenth century led to the shifting of the center of gravity of the economic support for the Yishuv to central and eastern Europe. At the same time the decline of the Jewish community in Istanbul and the other important Jewish communities of the Ottoman Empire—such as Izmir, Salonika, and Edirne—continued as a result of the economic and political crisis taking place throughout the Ottoman Empire. [...] [Concerning the Habad immigration:] in the beginning of the nineteenth century a group of immigrants from among the 'Habad' Hasidim established important centers in Hebron and Jerusalem."
+      }
+    ]
+  },
+  {
+    "cat": "immigration",
+    "n": 12,
+    "date": "1838–1882",
+    "year": 1838,
+    "location": "Jerusalem · Hebron · Safed · Tiberias · Jaffa",
+    "event": "The 'Zero Aliyah' via British consular-regime protection. ~25,000–45,000 cumulative gross arrivals over 44 years — comparable to or larger than the entire First Aliyah. 0% WZO-channeled; 0% political-Zionist motivated. Organized through British Crown apparatus, not Jewish organizations.",
+    "quote": "301 Jews from Russia + 195 Others (1856 enumeration).",
+    "actor": "Foreign-consular-protected migration (British, Austrian, Russian, French)",
+    "actorType": [
+      "consular-regime"
+    ],
+    "scale": "~25,000–45,000 cumulative gross",
+    "scaleBig": "25–45K",
+    "scaleNote": "Comparable to entire First Aliyah",
+    "src": "Eliav 1997 Appendix 2 pp. 411-412",
+    "srcType": "primary",
+    "srcNote": "British Consulate Jerusalem records",
+    "searchTerms": [
+      "British Consulate",
+      "protégés",
+      "Eliav",
+      "consular",
+      "protection"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 13,
+    "date": "16th–18th c.",
+    "year": 1600,
+    "location": "Jerusalem · Hebron · Safed · Tiberias",
+    "event": "Continuous Sephardi pilgrimage-into-settlement from the greater Ottoman world (Salonika, Istanbul, Cairo, Damascus, Aleppo, Izmir, Italian peninsula, Yemen, Maghreb). Demographically dominant baseline of the Old Yishuv (~80%+ Sephardi-Mizrahi through 18th c.).",
+    "quote": "Every Sephardi Jew who fears God and has the means goes to Eretz Israel once in his lifetime (R. Simha of Zalozce, 1764).",
+    "actor": "Ottoman-world Sephardi trickle",
+    "actorType": [
+      "sephardi"
+    ],
+    "scale": "Baseline ~6,000–8,000 (Barnai aggregate)",
+    "scaleBig": "6–8K",
+    "scaleNote": "Continuous trickle; ~80%+ of Old Yishuv",
+    "src": "Barnai; R. Simha of Zalozce 1764",
+    "srcType": "primary",
+    "searchTerms": [
+      "Sephardi",
+      "pilgrimage",
+      "Eretz Israel",
+      "Zalozce",
+      "Old Yishuv"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "R. Simha of Zalozce, who immigrated to Palestine from eastern Europe in 1764, together with some friends of the Baal Shem Tov, gave this nice description: 'We had to wait for the ship which the community of Istanbul hires every year . . . since every Sephardi Jew who fears God and has the means goes to Eretz Israel once in his lifetime, and goes around to the graves of our forefathers, to the righteous and the pious men, and also the women go around, and devote themselves with all their heart and soul. And it should be counted for them as an atonement of sins, as it is said, And the land will atone for its people, and they return to their cities and their houses, and there are some who go to settle there until the day of their death.' DURING THE EIGHTEENTH CENTURY there was a continuous stream of Jewish immigrants to Palestine from all parts of the Diaspora: from Turkey, Greece, and other countries in the eastern basin of the Mediterranean Sea, from North Africa and Italy, from central and eastern Europe. There were almost no immigrants from western Europe. Until 1760 the immigrants and pilgrims came mainly from the countries of the Ottoman Empire and belonged to the Sephardi communities, whereas only a few were Ashkenazim. The boats that sailed from Istanbul generally contained about 100-200 people. But boats did not sail only from Istanbul. We know that toward the end of the summer boats set out from Izmir, Salonika, Leghorn (Livorno), and even Amsterdam."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 1,
+    "date": "16th c. onward",
+    "year": 1550,
+    "location": "Palestine ← diaspora",
+    "event": "Sheluchim (emissary) system established: rabbinical envoys sent from four holy cities to diaspora communities in Italy, Turkey, North Africa, and Europe to collect charitable funds. Documented across medieval through 19th-c. operations.",
+    "actor": "Sheluchim (emissaries from holy cities)",
+    "actorType": [
+      "sheluchim"
+    ],
+    "scale": "Continuous institutional system",
+    "scaleBig": "—",
+    "scaleNote": "Multi-century operational",
+    "src": "Yaari, Sheluchei Eretz Yisrael 1951",
+    "srcType": "primary",
+    "searchTerms": [
+      "sheluchei",
+      "Yaari",
+      "emissary",
+      "halukah",
+      "charity"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Yaari_Sheluchei_1951",
+        "text": "In his introduction Yaari frames the Eretz-Israel emissary (shaliach) system as a continuous institution stretching roughly 1,900 years from the destruction of the Second Temple to his own day, with means and forms adapting to historical conditions but motive and structure unchanged. He pushes back against earlier historians who reduced the shaliach to a wandering alms-collector: the office had two faces, taking and giving. The taking was not begging but a quasi-tax assessment, with many diaspora communities (especially in the East) assessing themselves more for Eretz Israel than they paid in state taxes; the giving included rabbinic rulings, halakhic arbitration, communal regulations, book approbations, ordinations, suppression of corrupt clergy, and transmission of Eretz-Israel customs and Kabbalistic teachings. Yaari argues that even when the Yishuv was small and impoverished its influence on the diaspora through this emissary network was structurally enormous and continuous, and that any historian who ignores it misrepresents Jewish historical reality."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 2,
+    "date": "1654–55",
+    "year": 1654,
+    "location": "Jerusalem → London",
+    "event": "Jerusalem Ashkenazi crisis appeal: 15,000 reichsthalers in debt, synagogue closed, leaders imprisoned. Henry Jessey petition at Whitehall 1655 — the first documented English-language Jewish Palestine appeal.",
+    "quote": "Of the 700 widows and poor Jews there, about four hundred have been famished.",
+    "actor": "Ashkenazi kollelim crisis appeal",
+    "actorType": [
+      "kollelim"
+    ],
+    "scale": "15,000 reichsthalers debt; ~400 of 700 famished",
+    "scaleBig": "15K",
+    "scaleNote": "reichsthalers in debt",
+    "src": "Ayalon 2025; Rozen 2015",
+    "srcType": "primary",
+    "searchTerms": [
+      "1654",
+      "Jerusalem",
+      "Ashkenaz",
+      "debt",
+      "famished",
+      "Jessey"
+    ],
+    "links": [
+      {
+        "id": "expulsion-7",
+        "label": "Response to this crisis"
+      }
+    ],
+    "passages": []
+  },
+  {
+    "cat": "halukah",
+    "n": 3,
+    "date": "Late 1690s",
+    "year": 1695,
+    "location": "Jerusalem ← diaspora",
+    "event": "Community owed 25,000 kuruş to gentiles; 5.5 kuruş per person demanded. Annual bribe of 200 kuruş required to prevent violence. Diaspora fundraising mobilized.",
+    "quote": "200 kurus every year in bribes so that they will not be punished… some of us are killed by them.",
+    "actor": "Community fundraising networks",
+    "actorType": [
+      "kollelim"
+    ],
+    "scale": "25,000 kuruş owed; 200 kuruş/year in bribes",
+    "scaleBig": "25K",
+    "scaleNote": "kuruş community debt",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "Community letter",
+    "searchTerms": [
+      "25,000",
+      "kurus",
+      "bribes",
+      "Jerusalem",
+      "debt"
+    ],
+    "links": [
+      {
+        "id": "extortion-11",
+        "label": "Response to this debt crisis"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In a letter that was sent through the Jerusalem emissary R. Moses Sasportas, R. David Itzhaki, R. Moses Hagiz, and others told about the troubles of the community at the end of the seventeenth century: 'Trouble upon trouble, and distress after distress, there is no moment free from affliction . . . our holy city has gone down a slope of disasters, it owes the Gentiles the sum of 25,000 kurus . . . a new trouble that has arisen in the past five years at the command of his majesty, the king, on all the lands in his reign is to change the value of head-tax . . . and every person must pay five and a half kurus . . . even though the holy community loses more than two hundred kurus every year in bribes so that they will not be punished . . . and so, for our sins, some of us are killed by them, and the lives of many people depend on this, besides the many different kinds of damages within this disaster.'"
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 4,
+    "date": "1720 onward",
+    "year": 1720,
+    "location": "Jerusalem ← Amsterdam",
+    "event": "Post-Hurva reconstruction appeal. After Muslim creditors burned the Ashkenazi synagogue compound (1720), Amsterdam Pekidim ve-Amarcalim organized decades of reconstruction fundraising. Returning Ashkenazim disguised as Sephardim for decades.",
+    "actor": "Amsterdam Pekidim ve-Amarcalim",
+    "actorType": [
+      "pekidim"
+    ],
+    "scale": "Decades of fundraising; compound rebuilt",
+    "scaleBig": "Decades",
+    "scaleNote": "Amsterdam-organized reconstruction",
+    "src": "Barnai 1992; Ayalon 2025",
+    "srcType": "primary",
+    "searchTerms": [
+      "Hurva",
+      "Amsterdam",
+      "Pekidim",
+      "reconstruction",
+      "1720"
+    ],
+    "links": [
+      {
+        "id": "violence-8",
+        "label": "Response to Hurva burning"
+      },
+      {
+        "id": "expulsion-8",
+        "label": "Response to Ashkenazi expulsion"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "All the efforts to save the Ashkenazi community came to naught. In November 1720 the creditors burned the Ashkenazi court and its synagogue, and the Ashkenazi community was dispersed. [...] Tradition relates that from the time of the destruction of the Ashkenazi court until the renewal of the Ashkenazi community at the beginning of the nineteenth century the Ashkenazim in Jerusalem were forced to dress like the Sephardim so that their Moslem creditors and their descendants would not recognize them and try to collect the Ashkenazi community debt remaining from the early eighteenth century. [Barnai also discusses Amsterdam's growing role in support of the Yishuv over the eighteenth century:] It seems that in the eighteenth century Amsterdam was the principal European center. Amsterdam was also a meeting place for the emissaries from Palestine. [Note: Barnai dates the formal Amsterdam Committee of Officials and Administrators institutional founding to the early 19th c.: 'At the beginning of the nineteenth century, with the establishment of the Committee of Officials and Administrators in Amsterdam, the Istanbul Officials exclusive authority was taken away from them and a sharp decline in their status began' (lines 3655-3658).]"
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 5,
+    "date": "1741–1771",
+    "year": 1741,
+    "location": "Istanbul ↔ Jerusalem · Hebron · Safed · Tiberias",
+    "event": "Istanbul Officials' Pinkas: 500+ documented letters coordinating halukah distribution, community governance, and crisis response between Istanbul and the four holy cities. The operational backbone of 18th-c. Old Yishuv institutional life.",
+    "actor": "Istanbul Pekidim (Officials)",
+    "actorType": [
+      "pekidim"
+    ],
+    "scale": "500+ letters over 30 years",
+    "scaleBig": "500+",
+    "scaleNote": "letters documented",
+    "src": "Lehmann 2014; Pinkas of Istanbul Officials",
+    "srcType": "primary",
+    "searchTerms": [
+      "Pinkas",
+      "Istanbul",
+      "Officials",
+      "Pekidim",
+      "halukah"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "halukah",
+    "n": 6,
+    "date": "1799–1800",
+    "year": 1799,
+    "location": "Jerusalem · Acre ← diaspora",
+    "event": "Napoleonic-war emergency collection. Jews accused of collaborating with Napoleon; forced to pay huge bribes. 125,000 kuruş in 1800 marked as 'Payments to rulers during Napoleonic war' in community debt tables.",
+    "actor": "Diaspora emergency mobilization",
+    "actorType": [
+      "kollelim"
+    ],
+    "scale": "125,000 kuruş in bribes",
+    "scaleBig": "125K",
+    "scaleNote": "kuruş — Napoleonic-war bribes",
+    "src": "Barnai 1992",
+    "srcType": "primary",
+    "srcNote": "Debt tables",
+    "searchTerms": [
+      "125,000",
+      "Napoleon",
+      "bribes",
+      "1799",
+      "1800"
+    ],
+    "links": [
+      {
+        "id": "extortion-25",
+        "label": "Response to Napoleonic extortion"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "During the Napoleonic invasion the Jews were accused of collaborating with the enemy, and the Jerusalem community was forced to pay huge bribes to the local authorities. [Table 2 entries:] Jerusalem 1799: 200,000 lions ('The year Palestine was occupied'); 1800: 125,000 kurus ('Payments to rulers during Napoleonic war,' source: Ya'ari, The Emissaries of Palestine, pp. 668-69). [Barnai narrative context:] Jezzar actually did grant the Jews many reductions in taxes and customs duties, but the war with Napoleon at the end of the century brought about a severe crisis in his relations with the Jews; in this period he needed a great deal of money and he consequently extorted large sums from the Jews. In the end he was able to expel Napoleon from Palestine with the help of the British. In 1799, at the time of Napoleon's conquest of Palestine, a severe economic crisis [occurred]."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 7,
+    "date": "c. 1841",
+    "year": 1841,
+    "location": "Istanbul → Jerusalem",
+    "event": "Ottoman Gülhane-era kollel protection firman. Less than two years after the Hatt-i Şerif of Gülhane (1839), Istanbul issued an order protecting the regular activity of the Jerusalem synagogue and its connected kollel — a practical implementation of Tanzimat equality.",
+    "quote": "A practical expression of the trend of the imperial leadership to present equality of rights to non-Muslims — much more than the merely propagandistic character.",
+    "actor": "Ottoman central government (Tanzimat implementation)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Imperial protective firman",
+    "scaleBig": "Firman",
+    "scaleNote": "Tanzimat practical implementation",
+    "src": "Cohen sijill 19th-c. §3187-3193",
+    "srcType": "primary",
+    "searchTerms": [
+      "Gülhane",
+      "kollel",
+      "synagogue",
+      "firman",
+      "equality"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Cohen_Yehudim_19th",
+        "text": "Cohen sijill 19th-c. document referenced at lines 3185-3193 describes an Ottoman recognition order, issued from Istanbul approximately 1841, securing the regular operation of the Sukkat Shalom synagogue in Jerusalem and its connected Ashkenazi-Perushim kollel. The synagogue had been established in the 1830s by two Dutch Jews to serve a growing Ashkenazi presence in the city, with ongoing support from the Dutch embassy in Istanbul. Cohen presents the firman — published less than two years after the Hatt-i Şerif of Gülhane (1839) — as a practical, on-the-ground implementation of the Tanzimat equality-rhetoric: a concrete instance of Istanbul translating the proclamation's universalist language into a specific protective act on behalf of a non-Muslim institution in the holy city (document no. 29). Cohen further notes that in the second half of the 19th century such protective firmans become rarer in the sijill record, which he interprets as evidence that the steady growth of synagogues and Jewish communal institutions in Jerusalem proceeded without significant Muslim-public disruption — though he cautions, with reference to a contemporaneous al-Nimri family case (document no. 30), that vigilance against Jewish institutional encroachment on Muslim neighbors remained a live concern."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 8,
+    "date": "1815–1881",
+    "year": 1815,
+    "location": "Europe → Palestine",
+    "event": "Halukah as demographic engine: the Ashkenazi share of the Yishuv rises from ~25% to ~55%, not through political-Zionist conviction (which does not yet exist), but through halukah-supported religious migration — Vilna Perushim (1812+), Hungarian/German Habad (1840s+), Romanian/Russian pogrom-refugee waves (1860s+).",
+    "actor": "Halukah-supported religious migration networks",
+    "actorType": [
+      "kollelim",
+      "pekidim"
+    ],
+    "scale": "Ashkenazi share 25% → 55% of Yishuv",
+    "scaleBig": "25→55%",
+    "scaleNote": "Ashkenazi demographic shift",
+    "src": "Barnai aggregate; Alroey",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Ashkenaz",
+      "halukah",
+      "halukkah",
+      "Perushim",
+      "demographic"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "halukah",
+    "n": 9,
+    "date": "1625–27",
+    "year": 1625,
+    "location": "Jerusalem → Italy",
+    "event": "Italian collection mission after Ibn Farrukh extortion. Community borrowed 50,000 grush at 40% interest from Muslim moneylenders as bridge loan; emissaries dispatched to Italy 'to make collections in behalf of the Holy City, which had been reduced to indigence.' Parallel diplomatic channel to Constantinople secured Farrukh's deposition.",
+    "quote": "Messengers who had been sent to Italy to make collections in behalf of the Holy City, which had been reduced to indigence through the acts of the tyrannical Ibn Paruch.",
+    "actor": "Italian collection emissaries + Constantinople intercession",
+    "actorType": [
+      "sheluchim"
+    ],
+    "scale": "50,000 grush borrowed at 20,000 interest",
+    "scaleBig": "50K",
+    "scaleNote": "grush bridge loan at 40% interest",
+    "src": "Schwarz 1850 lines 15073-15174",
+    "srcType": "eyewitness",
+    "searchTerms": [
+      "Ibn Paruch",
+      "Ibn Farrukh",
+      "50,000",
+      "grush",
+      "Italy",
+      "collections"
+    ],
+    "links": [
+      {
+        "id": "violence-5",
+        "label": "Response to Ibn Farrukh episode"
+      },
+      {
+        "id": "extortion-8",
+        "label": "Funded the 50K grush debt"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Schwarz (curated)",
+        "text": "This remarkable occurrence I have taken in extract from a printed document, entitled 'n man, 'The Ruins of Jerusalem,' printed in Venice, in 5388 (1628), in which this event is told circumstantially, and quite at length. The document was written and signed by the chiefs of the Jewish people at Jerusalem, and given as an authorization to the messengers who had been sent to Italy to make collections in behalf of the Holy City, which had been reduced to indigence through the acts of the tyrannical Ibn Paruch."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 10,
+    "date": "1711",
+    "year": 1711,
+    "location": "Jerusalem ← Europe",
+    "event": "Special fund-drive announced after 'tax collectors flayed them alive' crisis. First steps taken for Istanbul Committee of Officials. R. David Oppenheim and R. Samson Wertheim led European mobilization. R. Mosheh Hakkohen raised 25,600 ducats in Germany — but diaspora failed to mobilize the 60,000 reichstaler needed. Result: creditors burned the Hurva (Nov 1720).",
+    "quote": "They have flayed them alive… forced to borrow at interest from the strong ones of the land, at forty percent.",
+    "actor": "European fund-drive + Istanbul Officials formation",
+    "actorType": [
+      "pekidim",
+      "sheluchim"
+    ],
+    "scale": "25,600 ducats raised; 60,000 reichstaler needed",
+    "scaleBig": "25.6K",
+    "scaleNote": "ducats raised — insufficient",
+    "src": "Barnai 1992 lines 4421-4510; Schwarz 1850 lines 11060-11140",
+    "srcType": "primary",
+    "searchTerms": [
+      "flayed",
+      "1711",
+      "Oppenheim",
+      "Wertheim",
+      "ducats",
+      "reichstaler"
+    ],
+    "links": [
+      {
+        "id": "extortion-12",
+        "label": "Response to 1700-1720 debt spiral"
+      },
+      {
+        "id": "violence-8",
+        "label": "Failed to prevent Hurva burning"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "The situation in the Sephardi community in Jerusalem was also worsening, and intensive efforts were undertaken in the Istanbul community to ease the pressure. In 1711 a special fund-drive was announced, and the first steps were taken for the establishment of the Committee of Officials for Palestine in Istanbul. Among the people who strove to save the Jerusalem community were R. David Oppenheim, R. Samson Wertheim, and Berman Segal. [...] The efforts in Europe to save the Jerusalem community were concentrated mainly in the communities of Vienna, Prague, Metz, Breslau, and Venice. Large sums of money were collected, but they were not transferred to their destination because of the difficulties in the execution of the 'agreement' with the creditors at the beginning of the second decade of the century. The efforts to achieve the 'agreement' were performed by persons in the Istanbul community who were close to the court of the sultan, with Joseph the physician at their head, as is attested by his correspondence with Rabbi Wertheim and the community leaders in Europe from 1711 to 1717. At the beginning of this decade Joseph the physician succeeded in achieving a draft of an 'agreement,' but in the end the matter failed. In his last letter Joseph the physician laid the blame on the European communities, which did not succeed in mobilizing the enormous sum of 60,000 reichstaler (about 60,000 kurus). [...] All the efforts to save the Ashkenazi community came to naught. In November 1720 the creditors burned the Ashkenazi court and its synagogue, and the Ashkenazi community was dispersed."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 11,
+    "date": "1722–23",
+    "year": 1722,
+    "location": "Jerusalem → Istanbul",
+    "event": "R. Raphael Meyuhas sent on rescue mission to Istanbul after new ruler demanded 91,000 kuruş in 91 days and arrested community official R. Moses Meyuhas. With assistance of rich Istanbul Jews, succeeded in getting central authorities to restrain the local ruler.",
+    "actor": "Istanbul court intercession via Meyuhas family",
+    "actorType": [
+      "pekidim"
+    ],
+    "scale": "91,000 kuruş demand; political intercession",
+    "scaleBig": "91K",
+    "scaleNote": "kuruş — neutralized via Istanbul",
+    "src": "Barnai 1992 lines 4534-4543",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Meyuhas",
+      "91,000",
+      "1722",
+      "Istanbul",
+      "rescue"
+    ],
+    "links": [
+      {
+        "id": "extortion-13",
+        "label": "Response to 91K kuruş demand"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In the 1720s additional disasters occurred to the Jerusalem community. In 1722 the city was attacked by a severe drought, and in 1723 a new ruler arrived from Istanbul, who made many false accusations and extorted much money. For example, he demanded a payment of 91,000 kurus from the community within ninety-one days and arrested the community official R. Moses Meyuhas. The community quickly sent his grandson, R. Raphael Meyuhas Bechar Samuel—later chief rabbi of the city—to Istanbul on a rescue mission. With the assistance of the rich men of Istanbul the emissary succeeded in influencing the central authorities to arouse the mercy of the ruler. These years saw intensive activity in Istanbul in an attempt to rescue the Jerusalem community from its severe crisis, and in the wake of these activities the Committee of Officials for Jerusalem in Istanbul was finally established."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 12,
+    "date": "1770s onward",
+    "year": 1775,
+    "location": "Acre · Galilee ← diaspora",
+    "event": "Halukah absorbs Jezzar's 5× cizye increase (4,400→23,650 kuruş). Barnai: diaspora money served 'mainly for payment of taxes to the authorities, for repayment of debts. Only a small part was distributed among the people.' System held until the Napoleonic war broke it.",
+    "quote": "Money served mainly for the payment of taxes to the authorities, for the repayment of debts… Only a small part was distributed among the people of the community for individual use.",
+    "actor": "Halukah extraction-servicing mechanism",
+    "actorType": [
+      "kollelim",
+      "pekidim"
+    ],
+    "scale": "5× cizye absorbed; system-level",
+    "scaleBig": "5×",
+    "scaleNote": "cizye increase absorbed by halukah",
+    "src": "Barnai 1992 lines 7788-7800; Cohen 1973 lines 11321-11404",
+    "srcType": "primary",
+    "searchTerms": [
+      "Jezzar",
+      "cizye",
+      "halukah",
+      "taxes",
+      "debts",
+      "distributed"
+    ],
+    "links": [
+      {
+        "id": "extortion-22",
+        "label": "Absorbed Jezzar's 5× cizye increase"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Barnai (curated)",
+        "text": "In the eighteenth century the lion's share of the income of the Jewish communities in Palestine came from donations from the Diaspora. Every year tens of thousands of kurus arrived in Palestine from individual donors, estates, funds for Eretz Israel in the Diaspora communities, special fund-drives, and the collections of the emissaries. This money served mainly for the payment of taxes to the authorities, for the repayment of debts, and for the running expenses of the community. Only a small part was distributed among the people of the community for individual use. The collection of money was mostly in the hands of the Istanbul Officials, who also arranged special fund-drives in the Jewish communities and sent emissaries from Palestine to supervise them. The large amount of the sums led to waste and often to embezzlements and thefts as well. [Concerning Jezzar's tax policy:] His attitude to the Jews as well was similar to that of Dahir al-Umar. It is true that he displayed a hostile attitude toward non-Moslems, but his desire to develop the region caused him to act fairly to them as long as he gained some advantage from them. [...] Jezzar actually did grant the Jews many reductions in taxes and customs duties, but the war with Napoleon at the end of the century brought about a severe crisis in his relations with the Jews; in this period he needed a great deal of money and he consequently extorted large sums from the Jews."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 13,
+    "date": "1655–57",
+    "year": 1655,
+    "location": "Jerusalem → Amsterdam · Holland · England",
+    "event": "R. Nathan Shapira's emergency mission. Polish halukah cut off after Chmielnicki massacres (1648-49); 400 of 700 Ashkenazi widows died of hunger. Collected 6,000 Reichsthaler + £300 from English Christians via Jessey. Met Menasseh ben Israel in Amsterdam — information used in Cromwell readmission petition.",
+    "quote": "Sufficient only to pay the interest on principal debts and give gifts to the rulers of the land to extend payment deadlines.",
+    "actor": "R. Nathan Shapira + Christian millenarian network",
+    "actorType": [
+      "sheluchim"
+    ],
+    "scale": "6,000 Reichsthaler + £300 sterling",
+    "scaleBig": "6K+",
+    "scaleNote": "Barely covered interest",
+    "src": "Yaari 1951 lines 14208-14335",
+    "srcType": "primary",
+    "searchTerms": [
+      "נתן שפירא",
+      "שפירא",
+      "אמשטרדם",
+      "Shapira",
+      "Amsterdam",
+      "1655"
+    ],
+    "links": [
+      {
+        "id": "expulsion-7",
+        "label": "Response to this crisis"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Yaari_Sheluchei_1951",
+        "text": "Yaari documents that R. Nathan (Neta) Shapira b. Reuven David Teveil, a Jerusalem Ashkenazi sage learned in Kabbalah, was dispatched in the mid-1650s after the Chmielnicki massacres severed the customary remittances from Poland-Lithuania to the Ashkenazi kollel in Jerusalem (out of some 700 widows and poor, 400 reportedly died of starvation in 1655). He passed through Venice, reached Hamburg by Kislev 5416 (late 1655) where the Sephardic community pinkas recorded receiving him and the Reichsthaler subsidy voted for him, then traveled to Amsterdam, where he supplied Menasseh ben Israel with first-hand testimony on Jerusalem suffering that Menasseh in turn used before Cromwell's December 1655 committee on Jewish readmission to England. In Holland Christian benefactors organized a parallel collection (extended by Henry Jessey in England, c. 300 pounds sterling), generating a halakhic she'elah to R. Jacob Hagiz in Jerusalem on whether non-Trinitarian Christian donations could be accepted to pay off the community's Muslim creditors; Hagiz ruled permissively be-di'avad given the life-threatening danger. Yaari traces Shapira's return to Jerusalem by Iyyar 5417 (1657), his re-dispatch to Italy that summer carrying the famous R. Baruch Gad Ten-Lost-Tribes letter that became standard emissary credentialing material, his 1660 Venice printings of Matzat Shimurim and Yayin ha-Meshumar, and his death in Reggio Emilia on 1 Iyyar 5426 (1666) at the peak of the Sabbatean movement, with Yaari noting that the Lurianic-Kabbalistic and Lost-Tribes materials he had propagated in Italy helped prepare the ground for that movement's reception."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 14,
+    "date": "1685–91",
+    "year": 1690,
+    "location": "Jerusalem → Hamburg · Germany",
+    "event": "R. Moshe HaKohen's debt restructuring. Multi-year commitments in Hamburg (Billa, mother of Glikl of Hameln, pledged 200 Reichsthaler). On return (1691) negotiated first-ever debt compromise: creditors waived future interest AND one-third of principal.",
+    "actor": "R. Moshe HaKohen (Ashkenazi community head)",
+    "actorType": [
+      "sheluchim",
+      "kollelim"
+    ],
+    "scale": "First debt compromise — ⅓ principal waived",
+    "scaleBig": "1st",
+    "scaleNote": "debt compromise in community history",
+    "src": "Yaari 1951 lines 16100-16230",
+    "srcType": "primary",
+    "searchTerms": [
+      "משה הכהן",
+      "המבורג",
+      "חוב",
+      "HaKohen",
+      "Hamburg",
+      "compromise"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Yaari_Sheluchei_1951",
+        "text": "Yaari documents R. Moshe HaKohen Ashkenazi's mission on behalf of the Ashkenazi community of Jerusalem in the late 1680s and early 1690s, citing the Verona Ashkenazi community pinkas (11 Kislev 5447 / 1687) authorizing 100 zechinim to be channeled via R. Aharon Voltera of Venice (the appointed Eretz-Israel treasurer) for relay to Jerusalem. Passing through Hamburg in 5447 (1687) Moshe HaKohen secured not only one-time donations but the more unusual arrangement of multi-year and lifetime pledges from wealthy members of the Ashkenazi community; the Hamburg communal archive preserves the subscription list, headed by Bella daughter of R. Nathan Pinkerle (mother of Glikl of Hameln) pledging 200 Reichsthaler annually for Jerusalem's Ashkenazi poor. On his return c. 1690 he found that during his absence the community's debt burden to Muslim creditors had grown further; in 5451 (1691) he negotiated, with the support of Egyptian Jewish leaders headed by R. Abraham b. Mordechai Halevi, an unprecedented compromise (peshara) in which creditors waived all future interest and one-third of the principal in exchange for repayment of the remaining two-thirds within three years. Yaari quotes at length the rabbinic responsum confirming the arrangement, including the Egyptian rabbis' separate decree barring Sephardic emissaries from competing in Ashkenazi territory in Europe for the three-year repayment window, and notes that the Venetian beit din endorsed the agreement before Sephardic factions in Jerusalem subsequently attempted to undermine it."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 15,
+    "date": "1712–1720+",
+    "year": 1712,
+    "location": "Vienna · Constantinople → Jerusalem",
+    "event": "Wertheim-Oppenheim axis. Samson Wertheim (Court Jew of Vienna) sent funds via the Sultan's physician in Constantinople. R. David Oppenheim (Chief Rabbi of Prague, 'President of the Land of Israel') managed the Jerusalem fund. After Hurva destruction (1720), Wertheim family established permanent 'Jerusalem Fund' in Imperial Austrian treasury. Fund lasted until WWI.",
+    "actor": "Wertheim + Oppenheim + Habsburg diplomatic channel",
+    "actorType": [
+      "pekidim",
+      "philanthropist"
+    ],
+    "scale": "25,000 gold pieces → permanent endowment",
+    "scaleBig": "25K",
+    "scaleNote": "gold — permanent fund until WWI",
+    "src": "Yaari 1951 lines 17290-17345",
+    "srcType": "primary",
+    "searchTerms": [
+      "ורטהיים",
+      "אופנהיים",
+      "Wertheim",
+      "Oppenheim",
+      "Jerusalem Fund"
+    ],
+    "links": [
+      {
+        "id": "halukah-10",
+        "label": "Continuation of 1711 fund-drive"
+      },
+      {
+        "id": "violence-8",
+        "label": "Response to Hurva destruction"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Yaari_Sheluchei_1951",
+        "text": "Yaari documents the Vienna-Frankfurt-Prague axis assembled in 1712 to rescue the Jerusalem Ashkenazi community from its creditor crisis: R. Shimshon Wertheimer (the Court Jew of Vienna), R. David Oppenheim (chief rabbi of Prague, custodian of the 'kupat Yerushalayim'), and R. Yosef the physician at the Ottoman court in Constantinople collaborated to convey a fund (with Wertheimer holding the deposits) intended to negotiate a settlement with the community's Muslim creditors. R. Yosef wrote back to Wertheimer on Rosh Hodesh Kislev 5473 (late 1712) describing his efforts, his summoning of R. Avraham Kafili from Jerusalem, and his pessimism about the chances of success. Negotiations dragged on for years without conclusion; the Metz community withdrew its share after two years when no settlement materialized. The crisis culminated on 8 Heshvan 5481 (1720) when Muslim creditors stormed and destroyed the Ashkenazi courtyard in Jerusalem, burned the synagogue with its forty Torah scrolls, and jailed community leaders. After Wertheimer's death in 1724 the deposits (some 25,000 gulden) passed to his son R. Wolf Wertheimer, who briefly went bankrupt in 1732 after the Bavarian prince defaulted on him but recovered and ultimately returned the full Eretz-Israel deposit with interest. Yaari notes that the residual funds became the so-called 'Jerusalem Foundation' (Jerusalemer Stiftung), deposited in the Habsburg imperial treasury and distributed annually via the Austrian ambassador in Constantinople to Jerusalem, Hebron and Safed until the foundation collapsed with the Habsburg monarchy at the end of World War I."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 16,
+    "date": "1770–75",
+    "year": 1770,
+    "location": "Jerusalem → Constantinople · Italy",
+    "event": "Algazi-Hazan grand mission: 5-year tour of Constantinople, Balkans, Italy. Jerusalem debt at 70,000 lions; interest alone consumed all diaspora donations. Population ~5,000 Jewish souls. Algazi later became Chief Rabbi of Jerusalem.",
+    "actor": "R. Yom Tov Algazi + R. Ya'akov Hazan",
+    "actorType": [
+      "sheluchim"
+    ],
+    "scale": "70,000 lions debt; 5-year mission",
+    "scaleBig": "70K",
+    "scaleNote": "lions — interest consumed all halukah",
+    "src": "Yaari 1951 lines 27420-27536",
+    "srcType": "primary",
+    "searchTerms": [
+      "אלגאזי",
+      "חזן",
+      "Algazi",
+      "Hazan",
+      "70,000"
+    ],
+    "links": [
+      {
+        "id": "halukah-12",
+        "label": "Same period as Jezzar cizye increase"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Yaari_Sheluchei_1951",
+        "text": "Yaari documents the joint mission of R. Yom-Tov Algazi (born Jerusalem 1727, son of Sephardic chief rabbi R. Israel Yaakov Algazi and member of the kabbalist 'Ahavat Shalom' fellowship at the Beit El yeshiva) and R. Yaakov Hazan (also of Jerusalem, formerly of R. Avraham Meyuhas's yeshiva), dispatched to the Ashkenazi communities of Europe (which by then had eclipsed declining Ottoman Jewry as the principal supporters of the Yishuv) for the six years 1770-1775 to address Jerusalem's mounting debt crisis. The 1770 emissary letter from the Jerusalem sages described the community's debt to Muslim creditors as having reached 70,000 arayot (lion-thalers), explained that even full diaspora donations would barely cover half the annual interest, and noted that the population of Jerusalem had reached roughly 5,000 souls 'in the hands of harsh masters.' The two emissaries traveled via Constantinople (where they printed the appeal letter in 1771 with supporting letters from the pekidei Kushta), Adrianople, Belgrade, and into Italy in 1772-1773, working the communities of Padua, Verona, Ancona, Rome, Lugo, and Casale, granting numerous haskamot (book-approbations) along the way which Yaari catalogues. In Rome they were asked to select a new chief rabbi and two dayyanim for the leaderless community, which they did. Algazi returned to Jerusalem by 1777, was appointed chief rabbi and inherited R. Shalom Sharabi's seat at Beit El; he went out a second time in 1795 in old age and died in Jerusalem in 1802 at age 75. Hazan also returned in 1777 and died in Jerusalem in 1802."
+      }
+    ]
+  },
+  {
+    "cat": "halukah",
+    "n": 17,
+    "date": "1728",
+    "year": 1728,
+    "location": "Vienna → Constantinople → Jerusalem",
+    "event": "Austrian-brokered Hurva debt settlement. Austrian ambassador proposed 30,000 grush from Austrian Jews; Sultan agreed; funds handed to creditors in Jerusalem court as 'final settlement.' Eleven years later a creditor tried to re-impose Ashkenazi debts on Sephardim; qadi ruled against him.",
+    "actor": "Austrian ambassador + Habsburg apparatus",
+    "actorType": [
+      "pekidim",
+      "philanthropist"
+    ],
+    "scale": "30,000 grush — partial but accepted as final",
+    "scaleBig": "30K",
+    "scaleNote": "grush — court-registered settlement",
+    "src": "Cohen sijill 18th lines 7387-7404",
+    "srcType": "primary",
+    "srcNote": "Sijill docs 180-181",
+    "searchTerms": [
+      "30,000",
+      "Austrian",
+      "grush",
+      "אוסטרי",
+      "חוב",
+      "פשרה"
+    ],
+    "links": [
+      {
+        "id": "violence-8",
+        "label": "Settlement after Hurva burning"
+      },
+      {
+        "id": "expulsion-8",
+        "label": "Enabled partial Ashkenazi return"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Cohen_Yehudim_18th",
+        "text": "Cohen 18th sijill at the referenced range describes the 1728 Austrian-brokered Hurva debt settlement. After the burning of the Ashkenazi compound (the Hurva) and the flight of most Ashkenazim from Jerusalem, the Muslim creditors initially attempted to recover their loans from the remaining Sephardi community, which accepted responsibility under a ten-year repayment schedule. The Austrian ambassador in Istanbul then proposed a one-time settlement: 30,000 gurush — funds raised by donations from Austrian Jewry — to extinguish the entire Ashkenazi debt. The Sultan approved, sending an order to Jerusalem instructing the qadi to convene all creditors, register a comprehensive list, and have them sign waivers releasing both the debts and the pledged collateral in exchange for the 30,000 gurush. The transaction was finalized at the Jerusalem court in September 1728 (documents 180 and 1817 in Cohen's numbering). Cohen stresses that this was a singular, ad hoc arrangement, not a precedent. Eleven years later (1739), a Muslim creditor produced a 1707 document asserting joint Sephardi-Ashkenazi liability and tried to compel the Sephardi parnasim to repay 3,600 gold coins his brother had loaned to the Ashkenazim. After consulting the Hanafi mufti of Jerusalem, the qadi ruled in favor of the Sephardim, holding that they could not be charged with Ashkenazi debts — closing the door on further attempts of this kind (document 182)."
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 0,
+    "date": "~1550s",
+    "year": 1550,
+    "location": "Jerusalem",
+    "event": "Bayt Mal al-Yahud ('Treasury of the Jews') established — a state institution to collect heir-less Jewish property. Position farmed annually; initially held by a converted Jew 'who knew well the ins and outs of his former community,' then by the Elder of the Jews. Lease prices track demographic decline: 45 gold coins/yr (1550s) → 25 by century's end.",
+    "actor": "Ottoman state (tax-farm institution)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Lease: 45→25 gold coins/yr",
+    "scaleBig": "45→25",
+    "scaleNote": "gold coins/yr — tracks demographic decline",
+    "src": "Cohen sijill 16th lines 3345-3398",
+    "srcType": "primary",
+    "srcNote": "Sijill docs 60, 64-67",
+    "searchTerms": [
+      "אוצר היהודים",
+      "בית מאל",
+      "מוחתדי",
+      "Bayt Mal",
+      "treasury"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Cohen_Yehudim_16th_1993",
+        "text": "Cohen 16th sijill at the referenced range describes the establishment, around the mid-16th century, of a dedicated state-fiscal institution called Bayt Mal al-Yahud ('Treasury of the Jews'). It was created by the Ottoman authorities in Jerusalem to centralize the reporting, supervision, and collection of property belonging to Jews who died without heirs — applying to the Jewish community the general principle that heirless property accrued to the state treasury (Bayt al-Mal). The position of supervisor was annually farmed: the holder paid the treasury a fixed lease price (iltizam) and in return collected the relevant estates. The first known lessees were a converted Jew (documents 64, 65) — Cohen observes that the authorities considered such a person uniquely well-placed to know the internal affairs of the community he had left — after which the role passed to the Elder of the Jews (Zaqen ha-Yehudim), with the position contestable: at one point a Muslim outbid the Jewish elder by offering 25 percent more in lease price and was awarded the role on the spot. Most striking, Cohen presents the lease-price series as a demographic-economic indicator: 45 gold coins per year in the early 1550s, rising to 70 in 1561, dropping to 50 in 1581, and falling to only 25 by century's end (documents 66, 71, 72). He reads the trajectory as reflecting both the declining Jerusalem Jewish population and the diminishing flow of Jewish pilgrims (whose estates were also subject to the institution, document 70) — and concludes that Bayt Mal al-Yahud functioned not merely as a fiscal-legal mechanism but as a barometer of the Jerusalem Jewish community's economic and demographic condition."
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 1,
+    "date": "1854–55",
+    "year": 1854,
+    "location": "Jerusalem",
+    "event": "Rothschild-funded institutions established: hospital, lying-in charity, schools for women and girls. M. Albert Cohn directed the founding on behalf of the Rothschild family. First modern European-Jewish institutional infrastructure in Jerusalem.",
+    "actor": "Rothschild family (via Albert Cohn)",
+    "actorType": [
+      "philanthropist"
+    ],
+    "scale": "Hospital + schools",
+    "scaleBig": "4",
+    "scaleNote": "institutions founded",
+    "src": "Finn 1878 lines 11301-11304",
+    "srcType": "eyewitness",
+    "searchTerms": [
+      "Rothschild",
+      "hospital",
+      "Cohn",
+      "schools",
+      "Jerusalem"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Finn (curated)",
+        "text": "For in a few days later M. Albert Cohn arrived, a distinguished Israelite from Paris, bringing very large supplies for instant succour of Jewish distress, as well as for establishing permanent institutions — such as children's schools, institutions for manual work, and a lying-in hospital in connection with the hospital already existing. We were informed that some of the funds were from French sources; but a large portion from the Vienna Rothschilds, to whom a letter had been sent describing the efforts made in Jerusalem to meet the distress. A great affair was made of the inauguration of the projected institutions, and others were announced to follow. At the opening of the new hospital, Austrian, Prussian, English, and French Consuls were invited and attended. Speeches were delivered by M. Cohn, who, in his exuberant glorification of France and Paris as 'the centre from which all freedom and civilisation radiate,' contrived to offend the susceptibilities of others of the national representatives present. The speaker even proceeded to decree that henceforth the Turkish Empire was to be revived under the patronage of France. Then, by virtue of his lineage as a priest (Cohn), he mounted on the roof of the new ward of the hospital, and, turning towards the Mount of Olives, and surveying the Jewish wailing place, the great broken arch, and the site of the Temple, he pronounced in Hebrew the Aaronic benediction of Numbers vi. 24. So far so good; but what else? The bigotry of the Rabbis thwarted all his plans — except the hospital and the distribution of alms; — schools, and all that might savour of Gentile education were repudiated, lest they should interfere with 'Holy Gemara;' and his industrial establishments came to nil. Even when Dr. Fränkel, of Vienna, visited Jerusalem the following year, he found no school, and he complains of the want of useful secular institutions. [Cross-reference at lines 11301-11304: 'Besides these, there were in operation the institutions founded the year before by M. Albert Cohn on behalf of the Rothschild family. Among these were the hospital, the lying-in charity, and the schools for women and girls.' — confirming the founding occurred in 1854 and is recalled retrospectively in Finn's 1855 narrative.]"
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 2,
+    "date": "Jul 1855",
+    "year": 1855,
+    "location": "Jerusalem",
+    "event": "Montefiore land purchase outside Old City walls on the Bethlehem road, opposite the Pool of Gihon. Sultan's firman for rebuilding the Ashkenaz Khorbah synagogue. Deed registered in British Consulate and Mahkameh. Planned: almshouses, dispensary, windmill. Founding act of Mishkenot Sha'ananim (completed ~1860) — the first Jewish settlement outside the walls.",
+    "quote": "A signal favour conceded by the Ottoman Government, on the ground of the purchase being for purposes of a permanent charitable nature.",
+    "actor": "Sir Moses Montefiore (British subject, sultanic firman)",
+    "actorType": [
+      "philanthropist"
+    ],
+    "scale": "Land purchase + windmill + almshouses planned",
+    "scaleBig": "1st",
+    "scaleNote": "Jewish settlement outside walls",
+    "src": "Finn 1878 lines 11435-11870",
+    "srcType": "eyewitness",
+    "searchTerms": [
+      "Montefiore",
+      "windmill",
+      "almshouse",
+      "Bethlehem",
+      "firman",
+      "Mishkenot"
+    ],
+    "links": [
+      {
+        "id": "institution-3",
+        "label": "Enabled by this edict"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Finn (curated)",
+        "text": "After an absence of six years, Sir Moses and Lady Montefiore now re-visited Jerusalem (July, 1855), with plans for objects more permanent than the distribution of temporary alms. They were accompanied by several friends... We had already learned from the British Embassy that Sir Moses would be the bearer of certain official documents. These he now forwarded to me. They were a Firmân for the building of the ancient Ashkenaz Synagogue, called the 'Khorbah,' and a Vizerial letter, enjoining that aid should be afforded him by the Pashà in carrying out his plans for the benevolent projects which he designed to undertake. On the official presentation of Sir Moses with his documents to the Pashà, a council of the City Effendis was necessary, and had been summoned for hearing the Sultan's Firmân read... The Pasha set the example (which the rest seemed inclined to have omitted) of standing, as usual while a Sultan's Firmân was being read; and of making a salutation of respect at its close... But the principal work was the purchasing of the land outside the city on which to erect the almshouses, dispensary, and windmill. For this object Sir Moses Montefiore obtained a piece of land adjoining the high road going from Jerusalem to Bethlehem, but still opposite the City Walls (on the West), and close to the Pool of Gihon. For this purchase the deed of sale was made out in his own name, though he was not a Turkish subject, and this was a signal favour conceded by the Ottoman Government, on the ground of the purchase being for purposes of a permanent charitable nature. The witnessing, sealing, &c., of the Contract, that is to say the actual Sale, was performed in the British Consulate, but the registration was of course also made in the Public Mahhkameh (or Moslem Hall of Justice). Some of the phraseology of the deed of sale was quaint and curious, as when it makes mention of the permission of the Sublime Government and the imperial throne... and where the purchaser is described as 'Sir Moses Montefiore, Baronet, the honourable person of the Mosaic sect, and ornament of the tribe of Israel (son of Signor Joseph Elijah) who is a nobleman of the Government of England.' By this sale of land to a foreigner and a non-Moslem, another of the remarkable events in the history of Jerusalem was accomplished, of which this year had already seen several — one more step forward in the progress of affairs. Sir Moses and Lady Montefiore, with their friends, at once removed their tents to within the lands so acquired. In a few days afterwards a massive piece of rock, which forms an angle of its boundary upon the road, was marked with the large Hebrew letters [Mem-Mem] signifying, of course, the name Moses Montefiore. And thus was a Hebrew possession once more appropriated in the Land of Promise after an interval of many ages."
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 3,
+    "date": "Apr 7, 1856",
+    "year": 1856,
+    "location": "Jerusalem",
+    "event": "Hatt-i Humayun (Edict of Toleration) formally proclaimed at the Seraglio in Jerusalem. All Ottoman subjects declared equal regardless of religion. Provision that foreigners may possess landed property. Heads of all religious communities and foreign consuls attended. Finn: 'eminently distasteful to the old Mohammedan population.'",
+    "quote": "It should be lawful for foreigners to possess landed property.",
+    "actor": "Ottoman central government (Tanzimat)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Empire-wide legal transformation",
+    "scaleBig": "Edict",
+    "scaleNote": "Enabled all subsequent foreign land purchases",
+    "src": "Finn 1878 lines 15253-15412; Morris 2001 line 419",
+    "srcType": "eyewitness",
+    "searchTerms": [
+      "Hatt-i Humayun",
+      "1856",
+      "edict",
+      "toleration",
+      "foreigners",
+      "landed property"
+    ],
+    "links": [
+      {
+        "id": "institution-2",
+        "label": "Enabled Montefiore's purchase"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Finn (curated)",
+        "text": "WHILE these things were going on in Nabloos, the formal reading of the Sultan's gracious Hatt-i-Humayoon had taken place in Jerusalem. Probably this would have had no effect in preventing the insurrection had it arrived in time to be proclaimed in Nabloos before the riot, which occurred just two days before the Pashà received the document from the Porte. Indeed there were indications that the uproar had been stirred up by people furious at the idea of this edict being granted by the Sultan — as popular report had already informed them. All the leading inhabitants of the country, Moslems as well as Christians, had by this time a general knowledge of its intent. The Pashà announced, on the day after the admission of the great party of travellers and Europeans to the Temple Sanctuary, that on the morrow — April 7 — the formal reading of the Sultan's decree would take place at the Seraglio. That document was justly regarded at the time, and, indeed it ought to be so still, as one of extreme importance — especially by the Rayahs or non-Moslem subjects of the Sultan. His Excellency invited the heads of the various religious communities and the foreign Consuls to be present... I arrived first, in semi-uniform, assigning the reason to the Pasha that it seemed to me best not to make more show lest it should seem that we intended to exhibit a triumph over the Moslem population — thus causing irritation instead of soothing and allaying differences and excitement... We all issued forth to an open terrace, and there the Hatt was read with ceremony in the open air. After that a learned Shaikh of the Noble Sanctuary (Hharam) recited prayers, and acclamations followed from the Turkish authorities, the kawwâsses, and the few Moslems of the town there assembled... A printed copy of the document, in both Turkish and Arabic, was delivered to each Consul, Patriarch, &c. There can be no doubt of this charter of religious toleration and equality having been eminently distasteful to the old Mohammedan population, and distressing to their ancient feelings... Christians were to be no longer brought before purely Moslem courts of justice. Mixed tribunals were to be established, before which the testimony of every one was to be received on oath taken according to the religious law of each sect. Everything that resembles torture was entirely abolished. Christians were to be equally taxed and equally liable for recruitment into the army; and the principle of purchasing exemption was admitted. And finally, it was stated that it should be lawful for foreigners to possess landed property, conforming themselves to the laws and police regulations, and bearing the same charges as the native inhabitants, and after arrangements had been come to with the foreign Powers. These are the most important of the provisions contained in the Hatt-i-Humayoon, or Edict of Toleration."
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 4,
+    "date": "~1860",
+    "year": 1860,
+    "location": "Jerusalem",
+    "event": "Mishkenot Sha'ananim almshouses completed on Montefiore's 1855 land purchase. First Jewish residential quarter outside the Old City walls. The windmill (still standing) ground grain for the residents. Initially settlers had to be paid to live there — the area was exposed and feared.",
+    "actor": "Montefiore philanthropy",
+    "actorType": [
+      "philanthropist"
+    ],
+    "scale": "First extra-muros Jewish quarter",
+    "scaleBig": "1st",
+    "scaleNote": "residential quarter outside walls",
+    "src": "Montefiore Diaries; secondary literature",
+    "srcType": "primary",
+    "searchTerms": [
+      "Mishkenot",
+      "Sha'ananim",
+      "almshouse",
+      "windmill",
+      "outside walls"
+    ],
+    "links": [
+      {
+        "id": "institution-2",
+        "label": "Built on 1855 land purchase"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Montefiore_Diaries_vol2",
+        "text": "The Montefiore diaries document the windmill arc directly. At line 2842-2847 Montefiore, on departing Jerusalem after the 1855 visit, promises 'the representatives of the community that he would recommend the committee in London to erect a windmill in Jerusalem, with a view of superseding the expensive method used there for grinding corn. The poor, he said, should then have their flour at a reduced price.' At lines 3260-3272 the diaries record that in preparation for his 1857 (fifth) journey, Montefiore 'made an agreement with Messrs J. J. and T. R. Holman, millwrights of Canterbury, conjointly with the other trustees, for the erection of a windmill in Jerusalem at the cost of £1450.' At line 14238 Montefiore inspects 'the Touro almshouses, the windmill, and the whole of the estate.' The diaries thus directly attest the 1855 promise, the 1857 contract for the windmill, and the completed Touro almshouses (Mishkenot Sha'ananim) inspection. Note: the 'Mishkenoth Israel' society described at lines 14427-14438 is a separate, later (post-1876) Montefiore Testimonial Fund building project, not the 1860-completed Mishkenot Sha'ananim."
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 5,
+    "date": "1862",
+    "year": 1862,
+    "location": "Jerusalem",
+    "event": "Alliance Israelite Universelle school founded in Jerusalem. Part of the AIU's broader Middle Eastern Jewish education network (founded Paris 1860). French-language secular education for Jewish children — a direct challenge to the halukah-supported traditional kollel model.",
+    "actor": "Alliance Israelite Universelle",
+    "actorType": [
+      "alliance"
+    ],
+    "scale": "School founded",
+    "scaleBig": "AIU",
+    "scaleNote": "French-secular education model",
+    "src": "Mandel 1976; secondary literature",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Alliance",
+      "Israelite",
+      "school",
+      "Jerusalem",
+      "1862",
+      "French"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 6,
+    "date": "1869",
+    "year": 1869,
+    "location": "Jaffa → Jerusalem",
+    "event": "First carriage road in Palestine constructed between Jaffa and Jerusalem. Enabled wheeled transport to the interior for the first time. Precondition for the post-1882 settlement infrastructure.",
+    "actor": "Ottoman government (infrastructure modernization)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "First road in Palestine",
+    "scaleBig": "Road",
+    "scaleNote": "Jaffa-Jerusalem carriage road",
+    "src": "Morris 2001 line 361",
+    "srcType": "secondary",
+    "searchTerms": [
+      "carriage",
+      "road",
+      "Jaffa",
+      "Jerusalem",
+      "1869"
+    ],
+    "links": [],
+    "passages": [
+      {
+        "file": "Morris_Righteous_Victims_2001",
+        "text": "Morris writes: 'The second half of the nineteenth century saw a gradual modernization of the country, accompanying the growing urbanization. While most villages and towns were connected by footpaths rather than paved roads, and people and goods still moved on foot or by horse, camel, or mule rather than in wheeled vehicles, a carriage-road, the first in Palestine, was constructed in 1869 between Jaffa and Jerusalem. The first railroad was laid down in 1892 (also between these two towns), and a second railroad, connecting Haifa and Deraa, running through the Jezreel Valley, was constructed in 1903-05.' Morris places the 1869 carriage road in a broader account of late-Ottoman infrastructural modernization (urbanization, literacy, naphtha-then-electric lighting, the first pharmacy in 1842 and the first European hospital in 1843)."
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 7,
+    "date": "1870",
+    "year": 1870,
+    "location": "Near Jaffa",
+    "event": "Mikveh Israel agricultural school founded by Charles Netter on behalf of the Alliance Israelite Universelle. First Jewish agricultural training institution in Palestine. Trained settlers who later founded First Aliyah colonies.",
+    "actor": "Alliance Israelite Universelle (Charles Netter)",
+    "actorType": [
+      "alliance"
+    ],
+    "scale": "Agricultural school",
+    "scaleBig": "1st",
+    "scaleNote": "Jewish agricultural school",
+    "src": "Mandel 1976; secondary literature",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Mikveh Israel",
+      "Netter",
+      "agricultural",
+      "Alliance",
+      "1870"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 8,
+    "date": "1874",
+    "year": 1874,
+    "location": "Jerusalem",
+    "event": "Mea She'arim neighborhood founded by ultra-orthodox Ashkenazi Jews. Cooperative housing association modeled on European patterns. Second major extra-muros Jewish settlement after Mishkenot Sha'ananim. Named after Genesis 26:12.",
+    "actor": "Orthodox Ashkenazi cooperative",
+    "actorType": [
+      "religious"
+    ],
+    "scale": "Neighborhood founded",
+    "scaleBig": "2nd",
+    "scaleNote": "extra-muros quarter",
+    "src": "Ben-Arieh; secondary literature",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Mea She'arim",
+      "neighborhood",
+      "1874",
+      "Jerusalem",
+      "cooperative"
+    ],
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 9,
+    "date": "1878",
+    "year": 1878,
+    "location": "Coastal plain (near Jaffa)",
+    "event": "Petah Tikva founded by Jerusalem Jews — first Jewish agricultural colony. Land bought from Jaffa Christian Arabs who had purchased from Ottoman authorities after villagers of Yahudiya failed to pay taxes. Abandoned due to malaria; resettled by First Aliyah olim in 1882.",
+    "actor": "Jerusalem Old Yishuv Jews",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "14,200 dunams; first colony",
+    "scaleBig": "1st",
+    "scaleNote": "agricultural colony",
+    "src": "Morris 2001 line 784; Mandel 1976 line 2143",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Petah Tikva",
+      "1878",
+      "colony",
+      "Yahudiya",
+      "agricultural"
+    ],
+    "links": [
+      {
+        "id": "immigration-12",
+        "label": "Part of Zero Aliyah settlement pattern"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Morris_Righteous_Victims_2001",
+        "text": "Morris narrates the founding and resettlement at line 784: 'Petach Tikva, the first Zionist colony, was established by Jews from Jerusalem in 1878, abandoned, and resettled by First Aliyah olim in 1882. The original 14,200-dunam-site had been bought from two Jaffa Christian Arabs, who purchased it from the Ottoman authorities after villagers of Yahudiya and Um Labes, its original owners, had failed to pay their taxes. After the Zionists settled there, villagers continued to cultivate fields rented to them by the settlers. They also laid claim to an area of 2,600 dunams, saying that this had never belonged to the Jaffa effendis, and plowed up a road, claiming it ran through their fields...' Cross-cited at Mandel line 2143-2188: 'in March 1886 at Petah Tiqva (the oldest Jewish colony, founded in 1878, then abandoned and resettled in 1882). The Muslim village of al-Yahudiyya, about four miles south of Petah Tiqva, did not have sufficient pasture of its own and used to send its animals to graze on Petah Tiqva's land. The settlers offended the fellahin when they tried to put an end to this practice.' Both authors converge on the 1878-founded / abandoned / 1882-resettled chronology and the Yahudiya land-tax-default provenance of the original purchase."
+      }
+    ]
+  },
+  {
+    "cat": "institution",
+    "n": 10,
+    "date": "Nov 1881",
+    "year": 1881,
+    "location": "Constantinople → Palestine",
+    "event": "Ottoman government announces Jewish immigrants may settle throughout the Empire EXCLUDING Palestine. Repeated at Ottoman Consulate-General in Odessa, April 1882. Formal onset of the Hamidian barrier. Motivations: fear of 'another national problem' and reluctance to increase foreign-subject population under Capitulations.",
+    "actor": "Ottoman central government (Hamidian restriction)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Palestine-specific entry ban",
+    "scaleBig": "Ban",
+    "scaleNote": "Hamidian barrier onset",
+    "src": "Mandel 1976 lines 706-786",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1881",
+      "restriction",
+      "Palestine",
+      "Ottoman",
+      "exclude",
+      "Hamidian"
+    ],
+    "links": [
+      {
+        "id": "immigration-12",
+        "label": "Ended Zero Aliyah consular regime"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Mandel_Arabs_Zionism_1976",
+        "text": "Mandel narrates the formal onset of the Hamidian barrier directly: 'Thus in November 1881, ostensibly in response to the Anglo-German group's approach, the Ottoman Government announced that: \"[Jewish] immigrants will be able to settle as scattered groups throughout the Ottoman Empire, excluding Palestine. They must submit to all the laws of the Empire and become Ottoman subjects.\" This, in a nutshell, was the Ottoman Government's policy towards Jewish settlement in the Empire from 1881 onwards. In April 1882, it was repeated in a notice posted outside the Ottoman Consulate-General at Odessa, where growing numbers of Russian Jews were applying for visas to enter Palestine, and again in June by the Ottoman Foreign Minister in conversation with the American Minister at the Porte.' Mandel then disaggregates the Ottoman motivation: 'The real reasons lay elsewhere. They were principally two. First, the Ottoman Government feared the possibility of nurturing another national problem in the Empire. Second, it did not want to increase the number of foreign subjects, particularly Europeans and nationals of the Great Powers, in its domains.' He cites Fernandez's report that the ministers were determined 'to resist firmly the immigration of Jews into Syria and Mesopotamia, as they [did] not wish to have another nationality established in great numbers in that part of the Empire' — a fear Mandel grounds in the 19th-c. Balkan-nationality losses and the 1878 Congress of Berlin precedent. Primary citations: Havazzelet xii.41 (1.9.1882) and Levant Herald iii.444 (24.11.1881) for the November 1881 announcement; Ha-Meliz xviii.16 (9.5.1882) for the April 1882 Odessa notice; State Dept. Papers 1882 pp. 516-19 no. 319 (11.7.1882) for the June 1882 American confirmation; PRO FO 78/3394 no. 1155 (30.12.1882) for the Fernandez ministerial report."
+      }
+    ]
+  }
+]
