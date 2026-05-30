@@ -2047,6 +2047,34 @@
     "passages": []
   },
   {
+    "cat": "violence",
+    "n": 20,
+    "date": "1913",
+    "year": 1913,
+    "location": "Rehovot",
+    "event": "Rehovot HaShomer–Arab clash — a guard-post confrontation on the settler frontier; 2 HaShomer guards and 1 Arab killed. Continuation of the 1880s–1910s settler–fellahin frontier register, now with Jewish-organized armed guarding (HaShomer). Distinct from dhimmi-era coercion.",
+    "src": "Morris (Righteous Victims)",
+    "srcType": "secondary",
+    "srcNote": "Frontier guard-post clash, Second-Aliyah period",
+    "era": "Young Turk / Second Aliyah (1908–1914)",
+    "actor": "Local Arabs (frontier clash)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "2 HaShomer guards + 1 Arab killed",
+    "scaleBig": "3 dead",
+    "scaleNote": "Settler-frontier register; HaShomer guarding era",
+    "links": [],
+    "searchTerms": [
+      "Rehovot",
+      "1913",
+      "Rehovot Ha",
+      "Continuation",
+      "Distinct"
+    ],
+    "passages": []
+  },
+  {
     "cat": "immigration",
     "n": 1,
     "date": "1492 onward",
@@ -2474,6 +2502,36 @@
         "label": "Acceleration of the Zero Aliyah pattern"
       }
     ],
+    "passages": []
+  },
+  {
+    "cat": "immigration",
+    "n": 15,
+    "date": "1904–1914",
+    "year": 1904,
+    "location": "Jaffa · Tel Aviv · Galilee colonies",
+    "event": "Second Aliyah — ~32,000–40,000 arrivals, with the highest yerida of any wave (70–80% departed; ~50% had left by 1909). The socialist-Zionist vanguard that captured institutional leadership and wrote the historiography (Ben-Gurion, A.D. Gordon, HaShomer, the Degania kvutza) was only ~10–15% (Lavsky; Alroey's port-registration primaries); the other ~85% were family-pattern refugee/economic migrants, and only ~16% intended the agricultural colonies. The pioneer image describes who-built-the-institutions, not who-arrived — only the Third Aliyah (1919–23) approximates the Zionist self-image.",
+    "quote": "",
+    "actor": "Second Aliyah (Russian–Jewish; small labor-Zionist vanguard)",
+    "actorType": [
+      "ashkenazi"
+    ],
+    "scale": "~32–40K arrivals; 70–80% yerida",
+    "scaleBig": "32–40K",
+    "scaleNote": "Vanguard ~10–15%; majority economic/refugee",
+    "src": "Alroey; Lavsky",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Second Aliyah",
+      "1904",
+      "yerida",
+      "Alroey",
+      "Ben-Gurion",
+      "HaShomer",
+      "Degania"
+    ],
+    "era": "Young Turk / Second Aliyah (1904–1914)",
+    "links": [],
     "passages": []
   },
   {
@@ -3551,6 +3609,117 @@
     "passages": []
   },
   {
+    "cat": "institution",
+    "n": 16,
+    "date": "Apr 1909",
+    "year": 1909,
+    "location": "Tel Aviv (Jaffa)",
+    "event": "Tel Aviv founded as Ahuzat Bayit — a Jaffa garden suburb that became the first all-Hebrew city, absorbing much of the Second-Aliyah urban flow (only ~16% went to the agricultural colonies). Bourgeois more than pioneer — Schlör's 'Little Warsaw.'",
+    "actor": "Ahuzat Bayit society",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "First all-Hebrew city",
+    "scaleBig": "Tel Aviv",
+    "scaleNote": "Absorbed the urban Second-Aliyah flow",
+    "src": "Schlör; general",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Tel Aviv",
+      "1909",
+      "Ahuzat Bayit",
+      "Jaffa",
+      "Hebrew city"
+    ],
+    "era": "Young Turk / Second Aliyah (1904–1914)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 17,
+    "date": "1909–10",
+    "year": 1909,
+    "location": "Degania (Sea of Galilee)",
+    "event": "Degania founded — the first kvutza (collective farm), seedbed of the labor-Zionist / kibbutz movement (A.D. Gordon's circle). The iconic Second-Aliyah institution, though that vanguard was a ~10–15% minority of the wave.",
+    "actor": "Labor-Zionist vanguard (kvutza)",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "First kvutza / kibbutz",
+    "scaleBig": "Degania",
+    "scaleNote": "Vanguard institution, minority of the wave",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Degania",
+      "1909",
+      "kvutza",
+      "kibbutz",
+      "Gordon",
+      "collective"
+    ],
+    "era": "Young Turk / Second Aliyah (1904–1914)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 18,
+    "date": "1909",
+    "year": 1909,
+    "location": "Galilee colonies",
+    "event": "HaShomer ('The Watchman') founded — a Jewish self-defense / guarding organization for the colonies, succeeding Bar-Giora (1907). Marks the shift to Jewish-organized armed guarding on the settler frontier, the lineage later feeding the Haganah.",
+    "actor": "HaShomer (labor-Zionist guards)",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "Jewish guarding organization",
+    "scaleBig": "HaShomer",
+    "scaleNote": "Armed-guarding shift on the frontier",
+    "src": "general; Morris",
+    "srcType": "secondary",
+    "searchTerms": [
+      "HaShomer",
+      "1909",
+      "Bar-Giora",
+      "guard",
+      "self-defense",
+      "Galilee"
+    ],
+    "era": "Young Turk / Second Aliyah (1904–1914)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 19,
+    "date": "1913",
+    "year": 1913,
+    "location": "Haifa · Yishuv-wide",
+    "event": "The 'Language War' over the Technion in Haifa — whether instruction would be in German (the Hilfsverein's preference) or Hebrew — won decisively for Hebrew, consolidating Hebrew as the Yishuv's national language of instruction on the eve of WWI.",
+    "actor": "Yishuv (Hebrew-language movement)",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "Hebrew established as language of instruction",
+    "scaleBig": "Hebrew",
+    "scaleNote": "Cultural consolidation pre-WWI",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Language War",
+      "1913",
+      "Technion",
+      "Haifa",
+      "Hebrew",
+      "Hilfsverein"
+    ],
+    "era": "Young Turk / Second Aliyah (1904–1914)",
+    "links": [],
+    "passages": []
+  },
+  {
     "cat": "restriction",
     "n": 1,
     "date": "Nov 1881",
@@ -3643,6 +3812,63 @@
       "Zionist"
     ],
     "era": "Hamidian (1876–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "restriction",
+    "n": 4,
+    "date": "Jul 1908",
+    "year": 1908,
+    "location": "Ottoman Empire (Palestine)",
+    "event": "The Young Turk Revolution (July 1908) restored the constitution and brought a partial lifting of the Hamidian restrictions on Jewish immigration and land purchase — a brief constitutional opening, with Jews participating in the new Ottoman parliamentary politics.",
+    "actor": "Young Turk (CUP) constitutional regime",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Partial lift of restrictions",
+    "scaleBig": "Partial lift",
+    "scaleNote": "Constitutional opening, soon reversed",
+    "src": "Mandel 1976; Fishman 2021",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1908",
+      "Young Turk",
+      "constitution",
+      "lift",
+      "restriction",
+      "CUP"
+    ],
+    "era": "Young Turk (1908–1918)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "restriction",
+    "n": 5,
+    "date": "1910–1914",
+    "year": 1911,
+    "location": "Vilayet Jerusalem · Beirut",
+    "event": "Re-tightening of land-purchase and immigration restrictions 1910–1914 as organized Palestinian-Arab opposition to Zionist settlement emerged — the early Arabic press (Filastin 1911, al-Karmil), petitions, and 1911 Ottoman parliamentary debates. State friction returns on the eve of WWI.",
+    "actor": "Ottoman state + emergent Palestinian-Arab opposition",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Re-tightening of restrictions",
+    "scaleBig": "Re-tighten",
+    "scaleNote": "Driven by organized Arab opposition",
+    "src": "Mandel 1976; Fishman 2021",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1911",
+      "re-tightening",
+      "restriction",
+      "Filastin",
+      "al-Karmil",
+      "parliament",
+      "opposition"
+    ],
+    "era": "Young Turk (1908–1918)",
     "links": [],
     "passages": []
   },

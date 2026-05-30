@@ -128,6 +128,16 @@ window.CORPUS = [
   { y: 1891, c: "institution", m: 3, p: "Hadera", t: "Founded on the malarial coastal plain Arab villagers had avoided; heavy early malaria mortality, survival via drainage works.", s: "general" },
   { y: 1892, c: "restriction", m: 3, p: "Vilayet Jerusalem · Beirut", t: "Hamidian decree restricting Jewish land purchase in the Jerusalem/Beirut vilayets; routinely circumvented via bribery / Ottoman-subject intermediaries.", s: "Mandel 1976" },
   { y: 1900, c: "restriction", m: 3, p: "Vilayet Jerusalem · Beirut", t: "Renewed/tightened Hamidian land-purchase restrictions — late-Hamidian high-water mark of state friction before the 1908 partial lift.", s: "Mandel 1976" },
+
+  // ── 1904–1914: Second Aliyah / Young-Turk era, to the eve of WWI (close of the Ottoman period) ──
+  { y: 1904, c: "immigration", m: 5, p: "Jaffa · Tel Aviv · Galilee", t: "Second Aliyah — ~32–40K arrivals, highest yerida of any wave (70–80%). The socialist-Zionist vanguard (Ben-Gurion, Gordon, HaShomer, Degania) was only ~10–15%; the rest were family-pattern economic/refugee migrants. Only the Third Aliyah approximates the Zionist self-image.", s: "Alroey; Lavsky" },
+  { y: 1908, c: "restriction", m: 2, p: "Ottoman Empire", t: "Young Turk Revolution (July 1908) — constitution restored, partial lift of the Hamidian restrictions; a brief constitutional opening, soon reversed.", s: "Mandel; Fishman" },
+  { y: 1909, c: "institution", m: 4, p: "Tel Aviv (Jaffa)", t: "Tel Aviv founded (Ahuzat Bayit) — first all-Hebrew city; absorbed the urban Second-Aliyah flow. Bourgeois more than pioneer ('Little Warsaw').", s: "Schlör" },
+  { y: 1909, c: "institution", m: 3, p: "Degania", t: "Degania — first kvutza/kibbutz, seedbed of the labor-Zionist vanguard (Gordon's circle); iconic but a ~10–15% minority of the wave.", s: "general" },
+  { y: 1909, c: "institution", m: 3, p: "Galilee", t: "HaShomer ('The Watchman') founded — Jewish self-defense/guarding for the colonies (succeeding Bar-Giora 1907); the armed-guarding shift later feeding the Haganah.", s: "general; Morris" },
+  { y: 1911, c: "restriction", m: 3, p: "Vilayet Jerusalem · Beirut", t: "Re-tightening of land/immigration restrictions 1910–14 as organized Palestinian-Arab opposition emerged (Filastin 1911, al-Karmil, parliamentary debates). State friction returns on the eve of WWI.", s: "Mandel; Fishman" },
+  { y: 1913, c: "violence", m: 2, p: "Rehovot", t: "Rehovot HaShomer–Arab clash — guard-post confrontation; 2 HaShomer guards + 1 Arab killed. Settler-frontier register with Jewish-organized guarding, not dhimmi coercion.", s: "Morris" },
+  { y: 1913, c: "institution", m: 3, p: "Haifa", t: "The 'Language War' over the Technion — German vs. Hebrew instruction — won for Hebrew, consolidating it as the Yishuv's language on the eve of WWI.", s: "general" },
 ];
 
 // Natural disasters — shown as a separate band; not anti-Jewish violence, but
@@ -140,14 +150,14 @@ window.DISASTERS = [
 ];
 
 window.CORPUS_CATS = {
-  violence:    { color: "#b0231a", label: "Violence",    n: 19 },
+  violence:    { color: "#b0231a", label: "Violence",    n: 20 },
   extortion:   { color: "#c9941f", label: "Extortion",   n: 30 },
   expulsion:   { color: "#7d4f93", label: "Expulsion",   n: 12 },
-  restriction: { color: "#a06a30", label: "Restriction", n: 3 },
+  restriction: { color: "#a06a30", label: "Restriction", n: 5 },
   disaster:    { color: "#6b7280", label: "Disaster",    n: 4, aside: true },
-  immigration: { color: "#2f63a6", label: "Immigration", n: 14 },
+  immigration: { color: "#2f63a6", label: "Immigration", n: 15 },
   halukah:     { color: "#1f8a7a", label: "Halukah",     n: 17 },
-  institution: { color: "#3f8a55", label: "Institution", n: 15 },
+  institution: { color: "#3f8a55", label: "Institution", n: 19 },
 };
 // Lane order, top → bottom: coercion first, then the disasters aside, then build.
 window.CORPUS_LANES = ["violence", "extortion", "expulsion", "restriction", "disaster", "immigration", "halukah", "institution"];

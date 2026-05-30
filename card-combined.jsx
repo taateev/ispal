@@ -1,5 +1,5 @@
-// Combined Light Broadsheet — the full corpus, 1492–1904.
-// Population curve + an eight-lane event plot of all 114 documented events.
+// Combined Light Broadsheet — the full corpus, 1492–1914 (close of the Ottoman period).
+// Population curve + an eight-lane event plot of all 122 documented events.
 (function () {
   const CATS = window.CORPUS_CATS;
   const LANES = window.CORPUS_LANES;
@@ -88,8 +88,8 @@
 
         <div className="cmb-head">
           <div className="cmb-rail">
-            <span>1492 – 1904 · the full corpus</span>
-            <span>114 documented events</span>
+            <span>1492 – 1914 · the full corpus</span>
+            <span>122 documented events</span>
           </div>
           <h1>
             Jewish Population <span className="sep">·</span> Ottoman Palestine
