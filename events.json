@@ -1994,6 +1994,33 @@
     ]
   },
   {
+    "cat": "violence",
+    "n": 18,
+    "date": "Mar 1886",
+    "year": 1886,
+    "location": "Petah Tikva",
+    "event": "First Aliyah land-conflict: a grazing/land-rights dispute between Petah Tikva colonists and the neighbouring Arab village of al-Yahudiyya — over land the colonists had purchased but on which villagers held customary cultivation and grazing claims, escalating after the colony impounded trespassing animals — erupted into an attack on the colony: houses looted, livestock seized, crops damaged, one elderly Jewish woman dead. A DIFFERENT register from the dhimmi-era urban coercion catalogued above — settler–fellahin frontier land conflict, not confessional persecution.",
+    "src": "Frumkin (Petah Tikva co-founder, chronicle)",
+    "srcType": "primary",
+    "srcNote": "Frumkin 1882–86 Petah Tikva Yishuv–Arab violence record",
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "actor": "Fellahin of al-Yahudiyya (land/grazing dispute)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "1 Jewish death; houses looted, livestock seized",
+    "scaleBig": "1 dead",
+    "scaleNote": "Accounts vary; land-conflict, not dhimmi coercion",
+    "links": [],
+    "searchTerms": [
+      "Petah Tikva",
+      "1886",
+      "First Aliyah",
+      "Aliyah"
+    ],
+    "passages": []
+  },
+  {
     "cat": "immigration",
     "n": 1,
     "date": "1492 onward",
@@ -2387,6 +2414,41 @@
         "text": "R. Simha of Zalozce, who immigrated to Palestine from eastern Europe in 1764, together with some friends of the Baal Shem Tov, gave this nice description: 'We had to wait for the ship which the community of Istanbul hires every year . . . since every Sephardi Jew who fears God and has the means goes to Eretz Israel once in his lifetime, and goes around to the graves of our forefathers, to the righteous and the pious men, and also the women go around, and devote themselves with all their heart and soul. And it should be counted for them as an atonement of sins, as it is said, And the land will atone for its people, and they return to their cities and their houses, and there are some who go to settle there until the day of their death.' DURING THE EIGHTEENTH CENTURY there was a continuous stream of Jewish immigrants to Palestine from all parts of the Diaspora: from Turkey, Greece, and other countries in the eastern basin of the Mediterranean Sea, from North Africa and Italy, from central and eastern Europe. There were almost no immigrants from western Europe. Until 1760 the immigrants and pilgrims came mainly from the countries of the Ottoman Empire and belonged to the Sephardi communities, whereas only a few were Ashkenazim. The boats that sailed from Istanbul generally contained about 100-200 people. But boats did not sail only from Istanbul. We know that toward the end of the summer boats set out from Izmir, Salonika, Leghorn (Livorno), and even Amsterdam."
       }
     ]
+  },
+  {
+    "cat": "immigration",
+    "n": 14,
+    "date": "1882–1903",
+    "year": 1882,
+    "location": "Coastal plain · Galilee · Judean foothills",
+    "event": "First Aliyah. The Hovevei Zion / Bilu practical-settlement movement founds the first agricultural colonies — Rishon LeZion, Rosh Pina, Zikhron Yaakov (1882), Yesud HaMa'ala (1883), Gedera (1884); Petah Tikva re-established (1883). ~25,000–35,000 arrivals through 1903, but ~50–60% left (yerida); a small ideological vanguard (~10–15%) within a majority economic/refugee flow. Still pre-political-Zionism: Herzl's Der Judenstaat (1896) / Basel (1897) had little on-the-ground effect before the Second Aliyah (1904).",
+    "quote": "",
+    "actor": "Hovevei Zion / Bilu (Russian–Romanian)",
+    "actorType": [
+      "ashkenazi"
+    ],
+    "scale": "~25–35K arrivals; ~50–60% yerida",
+    "scaleBig": "25–35K",
+    "scaleNote": "Net retention a fraction; vanguard ~10–15%",
+    "src": "Alroey; Mandel 1976",
+    "srcType": "secondary",
+    "searchTerms": [
+      "First Aliyah",
+      "Hovevei Zion",
+      "Bilu",
+      "Rishon LeZion",
+      "colony",
+      "1882",
+      "yerida"
+    ],
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "links": [
+      {
+        "id": "immigration-12",
+        "label": "Acceleration of the Zero Aliyah pattern"
+      }
+    ],
+    "passages": []
   },
   {
     "cat": "halukah",
@@ -3348,6 +3410,7 @@
       "exclude",
       "Hamidian"
     ],
+    "era": "Hamidian (1876–1908)",
     "links": [
       {
         "id": "immigration-12",
@@ -3360,5 +3423,61 @@
         "text": "Mandel narrates the formal onset of the Hamidian barrier directly: 'Thus in November 1881, ostensibly in response to the Anglo-German group's approach, the Ottoman Government announced that: \"[Jewish] immigrants will be able to settle as scattered groups throughout the Ottoman Empire, excluding Palestine. They must submit to all the laws of the Empire and become Ottoman subjects.\" This, in a nutshell, was the Ottoman Government's policy towards Jewish settlement in the Empire from 1881 onwards. In April 1882, it was repeated in a notice posted outside the Ottoman Consulate-General at Odessa, where growing numbers of Russian Jews were applying for visas to enter Palestine, and again in June by the Ottoman Foreign Minister in conversation with the American Minister at the Porte.' Mandel then disaggregates the Ottoman motivation: 'The real reasons lay elsewhere. They were principally two. First, the Ottoman Government feared the possibility of nurturing another national problem in the Empire. Second, it did not want to increase the number of foreign subjects, particularly Europeans and nationals of the Great Powers, in its domains.' He cites Fernandez's report that the ministers were determined 'to resist firmly the immigration of Jews into Syria and Mesopotamia, as they [did] not wish to have another nationality established in great numbers in that part of the Empire' — a fear Mandel grounds in the 19th-c. Balkan-nationality losses and the 1878 Congress of Berlin precedent. Primary citations: Havazzelet xii.41 (1.9.1882) and Levant Herald iii.444 (24.11.1881) for the November 1881 announcement; Ha-Meliz xviii.16 (9.5.1882) for the April 1882 Odessa notice; State Dept. Papers 1882 pp. 516-19 no. 319 (11.7.1882) for the June 1882 American confirmation; PRO FO 78/3394 no. 1155 (30.12.1882) for the Fernandez ministerial report."
       }
     ]
+  },
+  {
+    "cat": "institution",
+    "n": 11,
+    "date": "1901",
+    "year": 1901,
+    "location": "Basel → Palestine",
+    "event": "Jewish National Fund (Keren Kayemet le-Israel) founded at the Fifth Zionist Congress to buy and hold land in Palestine as inalienable Jewish national property — the institutional turn from halukah-charity toward land-acquisition capital that the post-1858/1867 legal regime had made possible.",
+    "actor": "World Zionist Organization",
+    "actorType": [
+      "ashkenazi"
+    ],
+    "scale": "National land-purchase fund",
+    "scaleBig": "JNF",
+    "scaleNote": "Charity → capital turn",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "JNF",
+      "Jewish National Fund",
+      "Keren Kayemet",
+      "1901",
+      "land",
+      "Basel"
+    ],
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 12,
+    "date": "1903",
+    "year": 1903,
+    "location": "Jaffa · Jerusalem",
+    "event": "Anglo-Palestine Bank (later Bank Leumi) opens as the World Zionist Organization's financial arm in Palestine. With the JNF (1901) it marks the maturing capital infrastructure that distinguishes the Second-Aliyah era from the halukah-dependent Old Yishuv.",
+    "actor": "Anglo-Palestine Company / WZO",
+    "actorType": [
+      "ashkenazi"
+    ],
+    "scale": "Yishuv banking infrastructure",
+    "scaleBig": "APB",
+    "scaleNote": "Capital infrastructure",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "Anglo-Palestine Bank",
+      "1903",
+      "bank",
+      "Leumi",
+      "capital",
+      "WZO"
+    ],
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "links": [],
+    "passages": []
   }
 ]
