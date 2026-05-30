@@ -2021,6 +2021,32 @@
     "passages": []
   },
   {
+    "cat": "violence",
+    "n": 19,
+    "date": "1882",
+    "year": 1882,
+    "location": "Petah Tikva",
+    "event": "Petah Tikva re-established by First-Aliyah olim (after its 1878 malarial abandonment); onset of chronic boundary and grazing disputes with neighbouring fellahin. A colonist later ascribed 'all the clashes between Petah Tikva and its neighbours' to boundary disputes (Morris). A settler–fellahin frontier register — recurrent low-level raiding and crop/livestock disputes 1882–1886, not pogrom-scale or politically organized, and distinct from dhimmi-era coercion.",
+    "src": "Morris 2001 (Righteous Victims) ~p.758; Frumkin (chronicle)",
+    "srcType": "secondary",
+    "srcNote": "Morris pattern synthesis + Frumkin 1882–86 primary testimony",
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "actor": "Neighbouring fellahin (boundary/grazing disputes)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "Recurrent low-level raiding; no fatalities in this onset phase",
+    "scaleBig": "Chronic",
+    "scaleNote": "Pattern, not a single incident; settler–fellahin register",
+    "links": [],
+    "searchTerms": [
+      "Petah Tikva",
+      "1882",
+      "Tikva"
+    ],
+    "passages": []
+  },
+  {
     "cat": "immigration",
     "n": 1,
     "date": "1492 onward",
@@ -3388,44 +3414,6 @@
   },
   {
     "cat": "institution",
-    "n": 10,
-    "date": "Nov 1881",
-    "year": 1881,
-    "location": "Constantinople → Palestine",
-    "event": "Ottoman government announces Jewish immigrants may settle throughout the Empire EXCLUDING Palestine. Repeated at Ottoman Consulate-General in Odessa, April 1882. Formal onset of the Hamidian barrier. Motivations: fear of 'another national problem' and reluctance to increase foreign-subject population under Capitulations.",
-    "actor": "Ottoman central government (Hamidian restriction)",
-    "actorType": [
-      "ottoman-state"
-    ],
-    "scale": "Palestine-specific entry ban",
-    "scaleBig": "Ban",
-    "scaleNote": "Hamidian barrier onset",
-    "src": "Mandel 1976 lines 706-786",
-    "srcType": "secondary",
-    "searchTerms": [
-      "1881",
-      "restriction",
-      "Palestine",
-      "Ottoman",
-      "exclude",
-      "Hamidian"
-    ],
-    "era": "Hamidian (1876–1908)",
-    "links": [
-      {
-        "id": "immigration-12",
-        "label": "Ended Zero Aliyah consular regime"
-      }
-    ],
-    "passages": [
-      {
-        "file": "Mandel_Arabs_Zionism_1976",
-        "text": "Mandel narrates the formal onset of the Hamidian barrier directly: 'Thus in November 1881, ostensibly in response to the Anglo-German group's approach, the Ottoman Government announced that: \"[Jewish] immigrants will be able to settle as scattered groups throughout the Ottoman Empire, excluding Palestine. They must submit to all the laws of the Empire and become Ottoman subjects.\" This, in a nutshell, was the Ottoman Government's policy towards Jewish settlement in the Empire from 1881 onwards. In April 1882, it was repeated in a notice posted outside the Ottoman Consulate-General at Odessa, where growing numbers of Russian Jews were applying for visas to enter Palestine, and again in June by the Ottoman Foreign Minister in conversation with the American Minister at the Porte.' Mandel then disaggregates the Ottoman motivation: 'The real reasons lay elsewhere. They were principally two. First, the Ottoman Government feared the possibility of nurturing another national problem in the Empire. Second, it did not want to increase the number of foreign subjects, particularly Europeans and nationals of the Great Powers, in its domains.' He cites Fernandez's report that the ministers were determined 'to resist firmly the immigration of Jews into Syria and Mesopotamia, as they [did] not wish to have another nationality established in great numbers in that part of the Empire' — a fear Mandel grounds in the 19th-c. Balkan-nationality losses and the 1878 Congress of Berlin precedent. Primary citations: Havazzelet xii.41 (1.9.1882) and Levant Herald iii.444 (24.11.1881) for the November 1881 announcement; Ha-Meliz xviii.16 (9.5.1882) for the April 1882 Odessa notice; State Dept. Papers 1882 pp. 516-19 no. 319 (11.7.1882) for the June 1882 American confirmation; PRO FO 78/3394 no. 1155 (30.12.1882) for the Fernandez ministerial report."
-      }
-    ]
-  },
-  {
-    "cat": "institution",
     "n": 11,
     "date": "1901",
     "year": 1901,
@@ -3477,6 +3465,292 @@
       "WZO"
     ],
     "era": "Hamidian / First Aliyah (1882–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 13,
+    "date": "1882",
+    "year": 1882,
+    "location": "Rishon LeZion · Rosh Pina · Zikhron Yaakov",
+    "event": "First-Aliyah agricultural colonies founded — Rishon LeZion (coastal plain), Rosh Pina (Galilee), Zikhron Yaakov (Carmel). From 1883 most fell under Baron Edmond de Rothschild's administration and subsidy; the settlement-institution layer made possible by the 1858 Land Code + 1867 Foreign Ownership Law.",
+    "actor": "Hovevei Zion / Rothschild administration",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "First First-Aliyah colonies",
+    "scaleBig": "Colonies",
+    "scaleNote": "Rothschild-subsidized from 1883",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1882",
+      "Rishon LeZion",
+      "Rosh Pina",
+      "Zikhron",
+      "colony",
+      "Rothschild"
+    ],
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 14,
+    "date": "1890",
+    "year": 1890,
+    "location": "Rehovot · coastal plain",
+    "event": "Rehovot founded — the first colony established independent of Rothschild administration (by the Warsaw-based Menuha ve-Nahala society), a step toward self-financed Jewish settlement. The same year the Odessa Committee (Hovevei Zion) was legalized in Russia, formalizing the practical-settlement movement.",
+    "actor": "Menuha ve-Nahala society (Hovevei Zion)",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "First non-Rothschild colony",
+    "scaleBig": "Rehovot",
+    "scaleNote": "Self-financed settlement model",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1890",
+      "Rehovot",
+      "colony",
+      "Odessa Committee",
+      "Hovevei Zion"
+    ],
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "institution",
+    "n": 15,
+    "date": "1891",
+    "year": 1891,
+    "location": "Hadera · coastal plain",
+    "event": "Hadera founded on the malarial coastal plain north of Jaffa — land long avoided by Arab villagers for exactly that reason, which is why it was available for purchase. Heavy early mortality from malaria; survival required the drainage works that typified the high-cost First-Aliyah coastal settlements.",
+    "actor": "Hovevei Zion settlers",
+    "actorType": [
+      "settlement"
+    ],
+    "scale": "Malarial-coast colony",
+    "scaleBig": "Hadera",
+    "scaleNote": "Heavy early malaria mortality",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1891",
+      "Hadera",
+      "colony",
+      "malaria",
+      "coastal plain"
+    ],
+    "era": "Hamidian / First Aliyah (1882–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "restriction",
+    "n": 1,
+    "date": "Nov 1881",
+    "year": 1881,
+    "location": "Constantinople → Palestine",
+    "event": "Ottoman government announces Jewish immigrants may settle throughout the Empire EXCLUDING Palestine. Repeated at the Ottoman Consulate-General in Odessa, April 1882. Formal onset of the Hamidian barrier — soon enforced via the 'red ticket' (kırmızı tezkere) limiting foreign Jewish entry to a 30-day pilgrimage. Motivations: fear of 'another national problem' and reluctance to grow the foreign-subject population under the Capitulations. State immigration policy, not dhimmi coercion of the resident community.",
+    "actor": "Ottoman central government (Hamidian restriction)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Palestine-specific entry ban + 30-day 'red ticket'",
+    "scaleBig": "Entry ban",
+    "scaleNote": "Enforced unevenly; ~25k entered despite (Mandel)",
+    "src": "Mandel 1976 lines 706-786",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1881",
+      "restriction",
+      "Palestine",
+      "Ottoman",
+      "exclude",
+      "Hamidian",
+      "red ticket"
+    ],
+    "era": "Hamidian (1876–1908)",
+    "links": [
+      {
+        "id": "immigration-12",
+        "label": "Ended Zero Aliyah consular regime"
+      }
+    ],
+    "passages": [
+      {
+        "file": "Mandel_Arabs_Zionism_1976",
+        "text": "Mandel narrates the formal onset of the Hamidian barrier directly: 'Thus in November 1881, ostensibly in response to the Anglo-German group's approach, the Ottoman Government announced that: \"[Jewish] immigrants will be able to settle as scattered groups throughout the Ottoman Empire, excluding Palestine. They must submit to all the laws of the Empire and become Ottoman subjects.\" This, in a nutshell, was the Ottoman Government's policy towards Jewish settlement in the Empire from 1881 onwards. In April 1882, it was repeated in a notice posted outside the Ottoman Consulate-General at Odessa, where growing numbers of Russian Jews were applying for visas to enter Palestine, and again in June by the Ottoman Foreign Minister in conversation with the American Minister at the Porte.' Mandel then disaggregates the Ottoman motivation: 'The real reasons lay elsewhere. They were principally two. First, the Ottoman Government feared the possibility of nurturing another national problem in the Empire. Second, it did not want to increase the number of foreign subjects, particularly Europeans and nationals of the Great Powers, in its domains.' He cites Fernandez's report that the ministers were determined 'to resist firmly the immigration of Jews into Syria and Mesopotamia, as they [did] not wish to have another nationality established in great numbers in that part of the Empire' — a fear Mandel grounds in the 19th-c. Balkan-nationality losses and the 1878 Congress of Berlin precedent. Primary citations: Havazzelet xii.41 (1.9.1882) and Levant Herald iii.444 (24.11.1881) for the November 1881 announcement; Ha-Meliz xviii.16 (9.5.1882) for the April 1882 Odessa notice; State Dept. Papers 1882 pp. 516-19 no. 319 (11.7.1882) for the June 1882 American confirmation; PRO FO 78/3394 no. 1155 (30.12.1882) for the Fernandez ministerial report."
+      }
+    ]
+  },
+  {
+    "cat": "restriction",
+    "n": 2,
+    "date": "1892",
+    "year": 1892,
+    "location": "Vilayet Jerusalem · Vilayet Beirut",
+    "event": "Hamidian decree restricting Jewish land purchase in the Jerusalem and Beirut vilayets, tightening the 1881–82 entry restrictions. Foreign-subject Jews — barred from any land ownership until the 1867 Foreign Ownership Law — now faced purpose-built obstacles, routinely circumvented by bribery or shell purchase through Ottoman-subject intermediaries.",
+    "actor": "Ottoman central government (Hamidian decree)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Land-purchase restriction (Jerusalem/Beirut)",
+    "scaleBig": "Land ban",
+    "scaleNote": "Circumvented via bribery / intermediaries",
+    "src": "Mandel 1976",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1892",
+      "land",
+      "restriction",
+      "Hamidian",
+      "Jerusalem",
+      "Beirut",
+      "purchase"
+    ],
+    "era": "Hamidian (1876–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "restriction",
+    "n": 3,
+    "date": "1900",
+    "year": 1900,
+    "location": "Vilayet Jerusalem · Vilayet Beirut",
+    "event": "Renewed/tightened Hamidian land-purchase restrictions on Jews in the Jerusalem and Beirut vilayets, on the eve of the larger Zionist land-acquisition push. Enforcement stayed porous — Sursuq-type absentee-landlord sales and Ottoman-citizenship workarounds continued — but it marks the late-Hamidian high-water mark of state friction before the 1908 constitutional partial lift.",
+    "actor": "Ottoman central government (Hamidian decree)",
+    "actorType": [
+      "ottoman-state"
+    ],
+    "scale": "Land-purchase re-tightening",
+    "scaleBig": "Land ban",
+    "scaleNote": "Porous enforcement; partial 1908 lift followed",
+    "src": "Mandel 1976",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1900",
+      "land",
+      "restriction",
+      "Hamidian",
+      "purchase",
+      "Zionist"
+    ],
+    "era": "Hamidian (1876–1908)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "disaster",
+    "n": 1,
+    "date": "Oct–Nov 1759",
+    "year": 1759,
+    "location": "Safed · Galilee",
+    "event": "Two earthquakes (30 October and 25 November 1759) struck the Galilee. Safed's Jewish quarter, on the steep citadel slopes in poor unmortared housing, took a disproportionate share of the toll.",
+    "actor": "Earthquake (natural disaster)",
+    "actorType": [
+      "natural"
+    ],
+    "scale": "~140–150 Jewish dead",
+    "scaleBig": "~150 dead",
+    "scaleNote": "Natural disaster, not coercion",
+    "src": "inventory; Keter",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1759",
+      "earthquake",
+      "Safed",
+      "Galilee"
+    ],
+    "era": "Ottoman-classical",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "disaster",
+    "n": 2,
+    "date": "1812",
+    "year": 1812,
+    "location": "Safed · Galilee",
+    "event": "A plague swept the Galilee, killing an estimated ~80% of Safed's population. The surviving remnant was further reduced by the flight that followed.",
+    "actor": "Plague (epidemic)",
+    "actorType": [
+      "natural"
+    ],
+    "scale": "~80% of Safed's population",
+    "scaleBig": "~80%",
+    "scaleNote": "Epidemic, not coercion",
+    "src": "inventory",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1812",
+      "plague",
+      "Safed",
+      "epidemic",
+      "Galilee"
+    ],
+    "era": "Ottoman-classical",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "disaster",
+    "n": 3,
+    "date": "1 Jan 1837",
+    "year": 1837,
+    "location": "Safed · Tiberias",
+    "event": "The Galilee earthquake of 1 January 1837 — roughly 2,000 Jewish dead at Safed and Tiberias, the deadliest single event in the inventory, exceeding all human-perpetrated violence combined. The Jewish quarter sat on the steep, unmortared NW citadel slopes (the same ground as in Basola's 1522 account), so the disproportionate toll reflects impoverishment-driven housing, not relocation or targeting; Muslims died too, fewer.",
+    "actor": "Earthquake (natural disaster)",
+    "actorType": [
+      "natural"
+    ],
+    "scale": "~2,000 Jewish dead (Safed + Tiberias)",
+    "scaleBig": "~2,000 dead",
+    "scaleNote": "Deadliest event in the inventory",
+    "src": "Keter; inventory",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1837",
+      "earthquake",
+      "Safed",
+      "Tiberias",
+      "Galilee"
+    ],
+    "era": "Egyptian rule (1831–40)",
+    "links": [],
+    "passages": []
+  },
+  {
+    "cat": "disaster",
+    "n": 4,
+    "date": "1865",
+    "year": 1865,
+    "location": "Jerusalem · Jaffa",
+    "event": "The 1865 cholera pandemic reached Palestine via returning Mecca pilgrims, with significant mortality in Jaffa and Jerusalem; much of the population, the Jewish community included, fled to outlying villages. General historical record — the specific Jewish-community toll is not quantified in this corpus.",
+    "actor": "Cholera (epidemic)",
+    "actorType": [
+      "natural"
+    ],
+    "scale": "Toll not quantified in corpus",
+    "scaleBig": "Epidemic",
+    "scaleNote": "General record; Jewish toll unquantified",
+    "src": "general historical record",
+    "srcType": "secondary",
+    "searchTerms": [
+      "1865",
+      "cholera",
+      "epidemic",
+      "Jerusalem",
+      "Jaffa",
+      "pilgrims"
+    ],
+    "era": "Tanzimat (1839–76)",
     "links": [],
     "passages": []
   }

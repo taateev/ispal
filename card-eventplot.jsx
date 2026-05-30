@@ -144,8 +144,8 @@
               </text>
             </g>
           ))}
-          {/* divider between coercion and construction lanes */}
-          <line x1={GL} x2={W - GR} y1={LY + LH * 4} y2={LY + LH * 4} stroke="rgba(28,24,21,0.18)" strokeWidth="1" strokeDasharray="2 3" />
+          {/* divider between coercion (+ disaster aside) and construction lanes */}
+          <line x1={GL} x2={W - GR} y1={LY + LH * 5} y2={LY + LH * 5} stroke="rgba(28,24,21,0.18)" strokeWidth="1" strokeDasharray="2 3" />
 
           {/* Tanzimat reform band: 1839 proclamation → 1858 codification */}
           <rect x={DIVX} y={T} width={BANDX1 - DIVX} height={LANES_BOTTOM - T} fill="#7d7259" fillOpacity="0.1" />

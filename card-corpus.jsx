@@ -115,13 +115,19 @@ window.CORPUS = [
   { y: 1870, c: "institution", m: 4, p: "Near Jaffa", t: "Mikveh Israel agricultural school (Netter / AIU) — trained settlers who later founded First Aliyah colonies.", s: "Mandel 1976" },
   { y: 1874, c: "institution", m: 3, p: "Jerusalem", t: "Mea She'arim founded — a cooperative housing association; the second major extra-muros quarter.", s: "Ben-Arieh" },
   { y: 1878, c: "institution", m: 4, p: "Coastal plain", t: "Petah Tikva — the first Jewish agricultural colony; abandoned to malaria, resettled by First Aliyah in 1882.", s: "Morris 2001; Mandel 1976" },
-  { y: 1881, c: "institution", m: 4, p: "Constantinople → Palestine", t: "The Hamidian barrier — Jewish immigrants may settle empire-wide EXCEPT Palestine; the partial reversal.", s: "Mandel 1976" },
+  { y: 1881, c: "restriction", m: 4, p: "Constantinople → Palestine", t: "The Hamidian barrier — Jewish immigrants may settle empire-wide EXCEPT Palestine; soon enforced via the 30-day 'red ticket.' State immigration policy, not dhimmi coercion of the resident Old Yishuv.", s: "Mandel 1976" },
 
   // ── Post-1882 additions — Hamidian / First-Aliyah era (to the eve of the Second Aliyah, 1904) ──
   { y: 1882, c: "immigration", m: 5, p: "Coastal plain · Galilee · Judean foothills", t: "First Aliyah — Hovevei Zion/Bilu colonies (Rishon LeZion, Rosh Pina, Zikhron Yaakov 1882; Gedera 1884); ~25–35K arrivals, ~50–60% yerida. Still pre-political-Zionism: Herzl 1896/97 had little on-the-ground effect before the Second Aliyah.", s: "Alroey; Mandel 1976" },
   { y: 1886, c: "violence", m: 2, p: "Petah Tikva", t: "First-Aliyah land/grazing clash with al-Yahudiyya — the colony attacked, one death. A different register: settler–fellahin frontier conflict, not dhimmi coercion.", s: "Frumkin" },
   { y: 1901, c: "institution", m: 3, p: "Basel → Palestine", t: "Jewish National Fund founded to buy and hold land as inalienable national property — the charity → capital turn.", s: "general" },
   { y: 1903, c: "institution", m: 2, p: "Jaffa · Jerusalem", t: "Anglo-Palestine Bank (later Bank Leumi) — the WZO's financial arm; capital infrastructure for the Second-Aliyah era.", s: "general" },
+  { y: 1882, c: "violence", m: 2, p: "Petah Tikva", t: "Petah Tikva refounded; onset of chronic boundary/grazing disputes with neighbouring fellahin (Morris). Settler–fellahin frontier register, not dhimmi coercion.", s: "Morris; Frumkin" },
+  { y: 1882, c: "institution", m: 4, p: "Rishon LeZion · Rosh Pina · Zikhron Yaakov", t: "First First-Aliyah colonies founded; Rothschild administration from 1883. Settlement-institution layer enabled by the 1858/1867 land laws.", s: "general" },
+  { y: 1890, c: "institution", m: 3, p: "Rehovot", t: "First colony independent of Rothschild (Menuha ve-Nahala society); the same year the Odessa Committee was legalized — self-financed practical settlement.", s: "general" },
+  { y: 1891, c: "institution", m: 3, p: "Hadera", t: "Founded on the malarial coastal plain Arab villagers had avoided; heavy early malaria mortality, survival via drainage works.", s: "general" },
+  { y: 1892, c: "restriction", m: 3, p: "Vilayet Jerusalem · Beirut", t: "Hamidian decree restricting Jewish land purchase in the Jerusalem/Beirut vilayets; routinely circumvented via bribery / Ottoman-subject intermediaries.", s: "Mandel 1976" },
+  { y: 1900, c: "restriction", m: 3, p: "Vilayet Jerusalem · Beirut", t: "Renewed/tightened Hamidian land-purchase restrictions — late-Hamidian high-water mark of state friction before the 1908 partial lift.", s: "Mandel 1976" },
 ];
 
 // Natural disasters — shown as a separate band; not anti-Jewish violence, but
@@ -129,17 +135,19 @@ window.CORPUS = [
 window.DISASTERS = [
   { y: 1759, m: 3, p: "Safed", t: "Earthquake — ~140–150 Jewish dead.", s: "inventory" },
   { y: 1812, m: 5, p: "Galilee", t: "Plague — killed ~80% of Safed's population.", s: "inventory" },
-  { y: 1837, m: 5, p: "Safed · Tiberias", t: "Earthquake — ~2,100 Jewish dead (of a 2,000–4,000 all-community total); more than all human violence combined.", s: "inventory; Keter" },
+  { y: 1837, m: 5, p: "Safed · Tiberias", t: "Earthquake — ~2,000 Jewish dead (Safed + Tiberias); more than all human violence in the inventory combined.", s: "inventory; Keter" },
+  { y: 1865, m: 2, p: "Jerusalem · Jaffa", t: "Cholera pandemic reached Palestine via Mecca pilgrims; significant mortality, population fled to villages. Jewish-community toll not quantified in corpus.", s: "general" },
 ];
 
 window.CORPUS_CATS = {
-  violence:    { color: "#b0231a", label: "Violence",    n: 18 },
+  violence:    { color: "#b0231a", label: "Violence",    n: 19 },
   extortion:   { color: "#c9941f", label: "Extortion",   n: 30 },
   expulsion:   { color: "#7d4f93", label: "Expulsion",   n: 12 },
-  disaster:    { color: "#6b7280", label: "Disaster",    n: 3, aside: true },
+  restriction: { color: "#a06a30", label: "Restriction", n: 3 },
+  disaster:    { color: "#6b7280", label: "Disaster",    n: 4, aside: true },
   immigration: { color: "#2f63a6", label: "Immigration", n: 14 },
   halukah:     { color: "#1f8a7a", label: "Halukah",     n: 17 },
-  institution: { color: "#3f8a55", label: "Institution", n: 13 },
+  institution: { color: "#3f8a55", label: "Institution", n: 15 },
 };
 // Lane order, top → bottom: coercion first, then the disasters aside, then build.
-window.CORPUS_LANES = ["violence", "extortion", "expulsion", "disaster", "immigration", "halukah", "institution"];
+window.CORPUS_LANES = ["violence", "extortion", "expulsion", "restriction", "disaster", "immigration", "halukah", "institution"];

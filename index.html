@@ -23,6 +23,8 @@
     --accent-2: #5a4a2e;
     --accent-3: #2d4a3a;
     --accent-4: #3a4a6b;
+    --accent-5: #8a5a2b;
+    --accent-6: #6b7280;
     --highlight: #f0e5c5;
     --serif: "Source Serif 4", "Iowan Old Style", "Palatino", Georgia, serif;
     --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -88,7 +90,7 @@
   }
   .stats {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     border-top: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
     margin: 0 0 36px;
@@ -155,6 +157,8 @@
   .tab.on.imm { background: var(--accent-3); border-color: var(--accent-3); }
   .tab.on.hal { background: var(--accent-2); border-color: var(--accent-2); }
   .tab.on.inst { background: var(--accent-4); border-color: var(--accent-4); }
+  .tab.on.rest { background: var(--accent-5); border-color: var(--accent-5); }
+  .tab.on.dis { background: var(--accent-6); border-color: var(--accent-6); }
   .tab .count {
     font-family: var(--mono);
     font-size: 10px;
@@ -264,6 +268,8 @@
   .sub-immigration { color: var(--accent-3); }
   .sub-halukah { color: var(--accent-2); }
   .sub-institution { color: var(--accent-4); }
+  .sub-restriction { color: var(--accent-5); }
+  .sub-disaster { color: var(--accent-6); }
   .col-loc {
     width: 140px;
     font-weight: 500;
@@ -389,6 +395,8 @@
   .detail-panel.cat-immigration { border-left-color: var(--accent-3); }
   .detail-panel.cat-halukah { border-left-color: var(--accent-2); }
   .detail-panel.cat-institution { border-left-color: var(--accent-4); }
+  .detail-panel.cat-restriction { border-left-color: var(--accent-5); }
+  .detail-panel.cat-disaster { border-left-color: var(--accent-6); }
   .detail-section-head {
     font-family: var(--sans);
     font-size: 10px;
@@ -656,7 +664,7 @@
   </header>
 
   <p class="dek">
-    Five categories of documented experience — physical violence, fiscal extortion, forced displacement, immigration, and halukah (diaspora support) — tabulated from a multi-source corpus. Click any row to surface the underlying source passages. Connected events are cross-linked: an extortion event and its halukah funding response are two views of the same historical moment.
+    Documented events by register — coercion (violence, extortion, expulsion, and the post-1881 Hamidian immigration/land restrictions), natural disaster (a separate register, not anti-Jewish violence), and construction (immigration, halukah, institutions) — tabulated from a multi-source corpus. Click any row to surface the underlying source passages. Connected events are cross-linked: an extortion event and its halukah funding response are two views of the same historical moment.
   </p>
 
   <div id="stats-root"></div>
@@ -700,7 +708,7 @@
       <h2>Analytical Notes</h2>
       <p><b>Perpetrator disaggregation.</b> Violence came from at least six distinct actor categories: Ottoman state officials (overwhelmingly extractive/fiscal); local Arab and Bedouin populations during power vacuums; Druze forces, alliance-conditional (1834 rescuers / 1838 plunderers); Egyptian military; Christian-instigated events (1840 Damascus blood libel); and Muslim creditors operating through the legal-enforcement mechanism.</p>
       <p><b>Immigration as system input.</b> Sephardi chain migration from 1492, Ashkenazi religious waves from 1700, and consular-regime-protected flows from 1838 produced the Old Yishuv that the harm events targeted. The halukah system funded its survival; extortion events are often the extraction side of halukah events.</p>
-      <p><b>The earthquake-violence interaction.</b> The 1837 earthquake's ~2,100 Jewish dead (of a 2,000–4,000 all-community total) dwarfs all human-perpetrated casualties combined. The disproportion is structural, not selective: the community lived on the steep NW citadel slopes — the <i>same</i> ground in 1522 (Basola) as in 1837, so it is impoverishment-driven housing on static dhimmi-marginal ground, not relocation. A lagging structural effect of persecution, registered seismically; the natural-disaster "carve-out" is therefore not a clean category, but the base event still killed across communities (Muslims too).</p>
+      <p><b>The earthquake-violence interaction.</b> The 1837 earthquake's ~2,000 Jewish dead (Safed + Tiberias) dwarfs all human-perpetrated casualties combined. The disproportion is structural, not selective: the community lived on the steep NW citadel slopes — the <i>same</i> ground in 1522 (Basola) as in 1837, so it is impoverishment-driven housing on static dhimmi-marginal ground, not relocation. A lagging structural effect of persecution, registered seismically; the natural-disaster "carve-out" is therefore not a clean category, but the base event still killed across communities (Muslims too).</p>
       <p><b>Scope &amp; provenance.</b> The coercion catalog (violence / extortion / expulsion) runs 1516–1856; the thinning after 1856 is partly the inventory's construction, not only a measured decline — read the post-1839 drop against the population chart and comparison above, not as the table going silent. All pre-1839 population and money figures are estimates: no systematic count exists before the 1839 Montefiore censuses, and currency sums span a major debasement.</p>
     </div>
     <div>
@@ -741,6 +749,8 @@ const CAT_LABEL = {
   violence: "Massacres & Physical Violence",
   extortion: "Extortion & Fiscal Predation",
   expulsion: "Expulsion & Forced Displacement",
+  restriction: "Hamidian Immigration / Land Restriction",
+  disaster: "Natural Disaster — separate register",
   immigration: "Immigration & Settlement",
   halukah: "Halukah & Diaspora Support",
   institution: "Institutions & Infrastructure",
@@ -749,6 +759,8 @@ const CAT_SUB = {
   violence: "physical assault, murder, sack",
   extortion: "fiscal predation, ransom, extra-legal levy",
   expulsion: "expulsion, forced flight, displacement",
+  restriction: "state entry-ban & land-purchase policy (post-1881) — anti-immigration, not dhimmi coercion",
+  disaster: "earthquake, plague, epidemic — NOT anti-Jewish violence",
   immigration: "migration cohorts, settlement, demographic flows",
   halukah: "charitable support, institutional coordination, crisis funding",
   institution: "schools, hospitals, settlements, legal edicts, infrastructure",
@@ -764,6 +776,7 @@ const ACTOR_LABEL = {
   pekidim: "Pekidim", kollelim: "Kollelim", sheluchim: "Sheluchim",
   philanthropist: "Philanthropist",
   alliance: "Alliance Israelite", religious: "Religious", settlement: "Settlement",
+  natural: "Natural disaster",
 };
 
 const HARM_CATS = new Set(["violence", "extortion", "expulsion"]);
@@ -779,6 +792,8 @@ function colLabel(cat, col) {
     if (cat === "immigration") return "Origin / Mechanism";
     if (cat === "halukah") return "Institution";
     if (cat === "institution") return "Founder / Actor";
+    if (cat === "restriction") return "Authority";
+    if (cat === "disaster") return "Cause";
     if (HARM_CATS.has(cat)) return "Perpetrators";
     return "Actors";
   }
@@ -786,6 +801,8 @@ function colLabel(cat, col) {
     if (cat === "immigration") return "Scale (people)";
     if (cat === "halukah") return "Scale (financial)";
     if (cat === "institution") return "Significance";
+    if (cat === "restriction") return "Scope";
+    if (cat === "disaster") return "Toll";
     if (HARM_CATS.has(cat)) return "Casualties / Scope";
     return "Scale";
   }
@@ -796,13 +813,15 @@ function actorOptions(cat) {
   if (cat === "immigration") return IMM_ACTORS;
   if (cat === "halukah") return HAL_ACTORS;
   if (cat === "institution") return INST_ACTORS;
+  if (cat === "restriction") return ["ottoman-state"];
+  if (cat === "disaster") return ["natural"];
   if (HARM_CATS.has(cat)) return HARM_ACTORS;
-  return [...new Set([...HARM_ACTORS, ...IMM_ACTORS, ...HAL_ACTORS, ...INST_ACTORS])];
+  return [...new Set([...HARM_ACTORS, ...IMM_ACTORS, ...HAL_ACTORS, ...INST_ACTORS, "natural"])];
 }
 
 function StatsBar() {
   const counts = useMemo(() => {
-    const c = { total: window.DATA.length, violence:0, extortion:0, expulsion:0, immigration:0, halukah:0, institution:0 };
+    const c = { total: window.DATA.length, violence:0, extortion:0, expulsion:0, restriction:0, disaster:0, immigration:0, halukah:0, institution:0 };
     window.DATA.forEach(r => c[r.cat]++);
     return c;
   }, []);
@@ -812,6 +831,8 @@ function StatsBar() {
       <div className="stat"><div className="n">{counts.violence}</div><div className="l">Violence</div></div>
       <div className="stat"><div className="n">{counts.extortion}</div><div className="l">Extortion</div></div>
       <div className="stat"><div className="n">{counts.expulsion}</div><div className="l">Expulsion</div></div>
+      <div className="stat"><div className="n">{counts.restriction}</div><div className="l">Restriction</div></div>
+      <div className="stat"><div className="n">{counts.disaster}</div><div className="l">Disaster</div></div>
       <div className="stat"><div className="n">{counts.immigration}</div><div className="l">Immigration</div></div>
       <div className="stat"><div className="n">{counts.halukah}</div><div className="l">Halukah</div></div>
       <div className="stat"><div className="n">{counts.institution}</div><div className="l">Institution</div></div>
@@ -879,7 +900,7 @@ function App() {
   const rowRefs = useRef({});
 
   const counts = useMemo(() => {
-    const c = { all: window.DATA.length, violence:0, extortion:0, expulsion:0, immigration:0, halukah:0, institution:0 };
+    const c = { all: window.DATA.length, violence:0, extortion:0, expulsion:0, restriction:0, disaster:0, immigration:0, halukah:0, institution:0 };
     window.DATA.forEach(r => c[r.cat]++);
     return c;
   }, []);
@@ -948,6 +969,8 @@ function App() {
           <button className={`tab ${cat==="violence"?"on":""}`} onClick={()=>{setCat("violence");setActor("all");}}>Violence <span className="count">{counts.violence}</span></button>
           <button className={`tab ${cat==="extortion"?"on":""}`} onClick={()=>{setCat("extortion");setActor("all");}}>Extortion <span className="count">{counts.extortion}</span></button>
           <button className={`tab ${cat==="expulsion"?"on":""}`} onClick={()=>{setCat("expulsion");setActor("all");}}>Expulsion <span className="count">{counts.expulsion}</span></button>
+          <button className={`tab rest ${cat==="restriction"?"on":""}`} onClick={()=>{setCat("restriction");setActor("all");}}>Restriction <span className="count">{counts.restriction}</span></button>
+          <button className={`tab dis ${cat==="disaster"?"on":""}`} onClick={()=>{setCat("disaster");setActor("all");}}>Disaster <span className="count">{counts.disaster}</span></button>
           <button className={`tab imm ${cat==="immigration"?"on":""}`} onClick={()=>{setCat("immigration");setActor("all");}}>Immigration <span className="count">{counts.immigration}</span></button>
           <button className={`tab hal ${cat==="halukah"?"on":""}`} onClick={()=>{setCat("halukah");setActor("all");}}>Halukah <span className="count">{counts.halukah}</span></button>
           <button className={`tab inst ${cat==="institution"?"on":""}`} onClick={()=>{setCat("institution");setActor("all");}}>Institution <span className="count">{counts.institution}</span></button>
