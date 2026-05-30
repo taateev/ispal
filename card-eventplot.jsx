@@ -17,7 +17,7 @@
   const H = LANES_BOTTOM + 26;
 
   const Y0 = 1492, Y1 = 1904, SPAN = Y1 - Y0;
-  const MAXY = 25;
+  const MAXY = 52;
   const px = (y) => GL + (PW * (y - Y0)) / SPAN;
   const cy = (v) => T + CH * (1 - v / MAXY);
   const laneY = (k) => LY + LH * k + LH / 2;
@@ -30,7 +30,7 @@
   const KNOTS = [
     [1492, 4.0], [1500, 5.0], [1567, 12.0], [1620, 8.0], [1660, 5.0],
     [1700, 6.0], [1780, 6.0], [1837, 6.5], [1840, 8.0], [1856, 11.0],
-    [1860, 13.5], [1870, 18.0], [1881, 25.0],
+    [1860, 13.5], [1870, 18.0], [1881, 25.0], [1893, 40.0], [1904, 50.0],
   ];
   function smooth(pts) {
     if (pts.length < 2) return "";
@@ -108,9 +108,10 @@
       <div className="evp" style={{ position: "relative", width: W + "px", maxWidth: "100%" }}>
         <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display: "block", overflow: "visible", fontFamily: '"Archivo", sans-serif' }}>
           {/* curve gridlines */}
-          {[0, 5, 10, 15, 20, 25].map((v) => (
+          {[0, 10, 20, 30, 40, 50].map((v) => (
             <line key={"g" + v} x1={GL} x2={W - GR} y1={cy(v)} y2={cy(v)} stroke="rgba(28,24,21,0.07)" strokeWidth="1" />
           ))}
+          <text x={GL - 8} y={cy(50) + 4} textAnchor="end" fontSize="11" fill="#9c8f78">50K</text>
           <text x={GL - 8} y={cy(25) + 4} textAnchor="end" fontSize="11" fill="#9c8f78">25K</text>
           <text x={GL - 8} y={cy(0) + 4} textAnchor="end" fontSize="11" fill="#9c8f78">0</text>
           <line x1={GL} x2={W - GR} y1={cy(0)} y2={cy(0)} stroke="rgba(28,24,21,0.4)" strokeWidth="1" />
