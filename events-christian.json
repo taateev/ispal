@@ -7,7 +7,12 @@
     "event": "Christians are the largest, most widespread non-Muslim minority in Ottoman Palestine — bigger than the Jews. Gaza's Christians are ~25% of the city (the largest single minority community anywhere); Jerusalem's surpass the Jews by 1553-4. A rooted, multi-town population, three centuries before any great-power patron.",
     "src": "Lewis & Cohen, 16th-c. taḥrir defters",
     "srcType": "primary",
-    "passages": []
+    "passages": [
+      {
+        "file": "Lewis_Cohen_Population_Revenue_16th_1978",
+        "text": "Jerusalem, having overcome a certain weakening in the second decade of Ottoman rule, the Christians soon surpassed the Jewish community in 1553-4, and although they, too, started to decline in the 1560's, they still maintained their supremacy, 50% stronger"
+      }
+    ]
   },
   {
     "year": 1342,
@@ -67,7 +72,12 @@
     "event": "The Anglo-Prussian Protestant bishopric of Jerusalem is founded — built explicitly as a counterweight to the 'feared expansion' of Russian and French influence. A tiny convert base, an outsized school footprint.",
     "src": "Schölch",
     "srcType": "primary",
-    "passages": []
+    "passages": [
+      {
+        "file": "scholch_palestine_in_transformation_1856-1882_1993",
+        "text": "dox and the Catholics. This base was created with the establishment of an Anglo-Prussian Episcopal See in Jerusalem in 1841 and the building of a Protestant \"cathedral,\" Christ Church, dedicated in 1849.78 The installa­ tion of a Protestant bishop resulted from the activities of British mission­"
+      }
+    ]
   },
   {
     "year": 1843,
@@ -77,7 +87,12 @@
     "event": "A French consul (1843) and a revived Latin patriarch (Joseph Valerga, 1847) re-establish the Latin presence under 'the apostolic mission of France, that most Catholic of nations' — the patriarchate abandoned since the Crusades.",
     "src": "Schölch",
     "srcType": "secondary",
-    "passages": []
+    "passages": [
+      {
+        "file": "scholch_palestine_in_transformation_1856-1882_1993",
+        "text": "followed the founding of the Protestant episcopacy. After the arrival of a French consul in Jerusalem in 1843, a Latin patriarch, Joseph Valerga,91 appeared (1848). France viewed the reinforcement of the Catholic pres­ ence in Palestine as its specific mission, as the urgent task of French policy"
+      }
+    ]
   },
   {
     "year": 1847,
@@ -97,7 +112,12 @@
     "event": "The Russian Ecclesiastical Mission (Bishop Porfiri Uspenski) begins — Orthodox great-power patronage of the Arab-Orthodox majority, though mediated (and partly captured) by the foreign Greek hierarchy of the Patriarchate.",
     "src": "Hopwood 1969",
     "srcType": "secondary",
-    "passages": []
+    "passages": [
+      {
+        "file": "hopwood_the_russian_presence_in_syria_and_palestine_1969",
+        "text": "rode’s proposals.1 Four days later their choice fell on Archimandrite Porfiri Uspenski, who had at the time charge of the Russian ecclesiastical mission in Vienna, ‘because of his knowledge of Greek and because of his experience in dealing with our foreign co-"
+      }
+    ]
   },
   {
     "year": 1852,
@@ -117,7 +137,12 @@
     "event": "Hatt-i Hümayun proclaimed at the Seraglio in Jerusalem: all Ottoman subjects equal regardless of religion; churchbuilding eased; foreigners may own land. Finn: 'eminently distasteful to the old Mohammedan population.'",
     "src": "Ma'oz; Finn 1878",
     "srcType": "primary",
-    "passages": []
+    "passages": [
+      {
+        "file": "maoz_ottoman_reform_in_syria_and_palestine_1840-1861_1968",
+        "text": "contained in a brief passage which, for the first time in Ottoman history, officially promised equality before the law for Muslims |and non-Muslims alike. The passage reads as follows: ‘The M us­ lim and other peoples (ahali-i islam ve m ilel-i saire) who are among"
+      }
+    ]
   },
   {
     "year": 1860,
@@ -127,7 +152,12 @@
     "event": "The great anti-Christian massacres — centered in Damascus and Mount Lebanon, NOT Palestine proper, though panic reigned among the Christians of Galilee. The flip side of the great-power-proxy prestige: the same patronage that drove Christian growth made them targets.",
     "src": "Ma'oz; Mishaqa (eyewitness)",
     "srcType": "primary",
-    "passages": []
+    "passages": [
+      {
+        "file": "maoz_ottoman_reform_in_syria_and_palestine_1840-1861_1968",
+        "text": "occurred in the Syrian towns during the early Tanzimat period. The i860 massacre of Damascus Christians in particular had some of its main roots in this tacit alliance; the chief 'Ulema took the lead in this bloodshed while the local Turkish Pasha remained"
+      }
+    ]
   },
   {
     "year": 1872,
@@ -137,7 +167,12 @@
     "event": "~41,952 Christians, about 11% of all Palestine — the fastest-growing community through the late Tanzimat. Ma'oz: 'the dramatic improvement was for Christians, who had European consular advocacy from France, Russia, and Britain.'",
     "src": "Schölch; Ma'oz",
     "srcType": "secondary",
-    "passages": []
+    "passages": [
+      {
+        "file": "scholch_palestine_in_transformation_1856-1882_1993",
+        "text": "proceed from the idea that the other non-Muslim khanes were largely Christian households, we arrive at a Christian population of 6,992 khanes or 41,952 persons, about 11 percent of the total population. The Christians were concentrated in the cities of Jerusalem, Bethlehem, Jaffa, Lydda,"
+      }
+    ]
   },
   {
     "year": 1882,
@@ -172,7 +207,12 @@
     "event": "The Arab-Orthodox laity's long struggle to wrest the Patriarchate from the foreign Greek hierarchy ('Arabization' — Arab-vs-foreign, lay-vs-clerical, Arabic-vs-Greek) trains an organized, literate lay cadre: the incubator of a secular Arab nationalism, before Palestinian nationalism had a name.",
     "src": "Hopwood 1969; Robson 2011",
     "srcType": "secondary",
-    "passages": []
+    "passages": [
+      {
+        "file": "hopwood_the_russian_presence_in_syria_and_palestine_1969",
+        "text": "Russia should support the Greek hierarchy yet many Russians felt impelled to oppose Greek oppression of Slav and Arab Orthodox communities. Porfiri was caught between these two currents and could do little to satisfy either demand. N or was he able to demon­"
+      }
+    ]
   },
   {
     "year": 1908,
