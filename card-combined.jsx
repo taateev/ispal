@@ -157,10 +157,6 @@
           </div>
 
           <p className="cmb-foot">
-            The leaky bucket: ~9–15,000 immigrants and millions in charity over 340 years netted only <b>~3,000</b>
-            people — inputs consumed by extraction (jizya + shakedowns + debt service at 20–40%) and mortality.
-            After 1839, consular-protected immigration finally stuck and charity became capital — hospitals, schools,
-            the first quarters outside the walls.
             <span className="src">
               All pre-1839 figures are estimates (no systematic count before the 1839 Montefiore censuses). "0 massacres"
               is the urban Old Yishuv; net growth is after heavy yerida (50–80% departure); the post-1856 thinning is
