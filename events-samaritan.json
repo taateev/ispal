@@ -1,154 +1,274 @@
 [
   {
-    "year": 1516, "date": "1516", "cat": "demography",
+    "year": 1516,
+    "date": "1516",
+    "cat": "demography",
     "location": "Nablus · Gaza · Damascus · Cairo",
     "event": "The Ottoman conquest finds the Samaritans a scattered remnant of ~500, spread across Nablus, Gaza, Damascus, and Cairo.",
-    "src": "Pummer 2016", "srcType": "secondary"
+    "src": "Pummer 2016",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1530, "date": "c.1523–38", "cat": "restriction",
+    "year": 1530,
+    "date": "c.1523–38",
+    "cat": "restriction",
     "location": "Nablus → Damascus",
     "event": "High Priest Pinḥas is exiled to Damascus — leadership disruption under early Ottoman rule.",
-    "src": "Crown ed. 1989", "srcType": "secondary"
+    "src": "Crown ed. 1989",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1555, "date": "16th c. (taḥrir)", "cat": "demography",
+    "year": 1555,
+    "date": "16th c. (taḥrir)",
+    "cat": "demography",
     "location": "Nablus · Gaza · Safed · Cairo",
     "event": "Tax-register peak: ~1,400 Samaritans (Nablus ~120–205, Gaza ~48–150, Safed ~30, Cairo ~300) — the high point of the entire Ottoman record.",
-    "src": "Lewis–Cohen defter; Pummer", "srcType": "primary"
+    "src": "Lewis–Cohen defter; Pummer",
+    "srcType": "primary",
+    "passages": [
+      {
+        "file": "pummer_the_samaritans_a_profile_2016",
+        "text": "For the year 1538/9, twenty-nine Samaritan households and four bachelors who paid taxes were registered in Nablus; in 1548/9 there were thirty-four households and one bachelor, and in 1596/7 only twenty households are listed. If each household consisted of six persons,110 the number of Samaritans in Nablus in 1538/9 would have been 178 (i.e., 2.61 % of the population111); in 1548/9, 205 (0.87 % of the population);112 and in 1596/7, 120 (2.36 % of the population). In Gaza, in 1525/6 there were twenty-five Samaritan…"
+      }
+    ]
   },
   {
-    "year": 1574, "date": "1574", "cat": "restriction",
+    "year": 1574,
+    "date": "1574",
+    "cat": "restriction",
     "location": "Empire-wide",
     "event": "Murad III dress restrictions — small turbans, no silk — among repeated dhimmi sumptuary firmans.",
-    "src": "Crown; Pummer", "srcType": "secondary"
+    "src": "Crown; Pummer",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1623, "date": "1623/4", "cat": "violence",
+    "year": 1623,
+    "date": "1623/4",
+    "cat": "violence",
     "location": "Nablus → Gaza",
     "event": "The Aaronid high-priestly line ends: the last Aaronid, Shelemiah b. Pinḥas, flees Nablus over local disputes and is murdered en route; Levitical priests take over thereafter.",
-    "src": "Crown; Schur", "srcType": "secondary"
+    "src": "Crown; Schur",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1650, "date": "17th c.", "cat": "conversion",
+    "year": 1650,
+    "date": "17th c.",
+    "cat": "conversion",
     "location": "Nablus",
     "event": "Under the Tuqan and Jarrar governors, Muslims plunder the High Priest's house and the ritual bath and seize houses, vineyards, fields and 'countless goods' — and forcibly convert many Samaritans.",
     "quote": "Ils convertirent par force beaucoup de Samaritains. (They forcibly converted many Samaritans.)",
-    "src": "Adler–Séligsohn Chronicle, REJ 46 (1903)", "srcType": "chronicle"
+    "src": "Adler–Séligsohn Chronicle, REJ 46 (1903)",
+    "srcType": "chronicle",
+    "passages": []
   },
   {
-    "year": 1665, "date": "1648–87", "cat": "restriction",
+    "year": 1665,
+    "date": "1648–87",
+    "cat": "restriction",
     "location": "Mount Gerizim",
     "event": "Sultan Mehmed IV forbids access to Mount Gerizim, forcing the Passover sacrifice onto the mountain's eastern slope — a dated central-authority religious ban.",
-    "src": "Anderson–Giles, The Keepers", "srcType": "secondary"
+    "src": "Anderson–Giles, The Keepers",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "anderson_giles_the_keepers_2002",
+        "text": "(1648-1687) forbade access to the mount, and the annual Passover sacrifice had to be offered on its eastern slope. During the decade 1840-1 850, the Sa- maritans abandoned the site because of a lack of security."
+      }
+    ]
   },
   {
-    "year": 1610, "date": "early 17th c.", "cat": "conversion",
+    "year": 1610,
+    "date": "early 17th c.",
+    "cat": "conversion",
     "location": "Damascus",
     "event": "The Damascus community disappears, substantially by conversion to Islam: several prominent Muslim families of Damascus (Dar Gofari, Dar Nahas, Dar Rumah, Dar Mneid) are of Samaritan origin — the apostasy ratchet visible in family genealogies.",
-    "src": "Schur (in Crown ed.)", "srcType": "secondary"
+    "src": "Schur (in Crown ed.)",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1700, "date": "~1700", "cat": "protection",
+    "year": 1700,
+    "date": "~1700",
+    "cat": "protection",
     "location": "Jerusalem",
     "event": "A Jerusalem-mufti fatwa affirms the Samaritans as People of the Book — an intermittent legal floor; they are taxed alongside the Jews.",
-    "src": "Pummer 2016", "srcType": "secondary"
+    "src": "Pummer 2016",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1708, "date": "1708", "cat": "demography",
+    "year": 1708,
+    "date": "1708",
+    "cat": "demography",
     "location": "Cairo",
     "event": "The Cairo Samaritan synagogue is handed over to the local Jewish community — no Samaritans left in Cairo.",
-    "src": "Pummer 2016", "srcType": "secondary"
+    "src": "Pummer 2016",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1799, "date": "1799", "cat": "violence",
+    "year": 1799,
+    "date": "1799",
+    "cat": "violence",
     "location": "Gaza",
     "event": "During Napoleon's invasion local Arabs seize the property of the Gaza community; by now the diaspora has contracted to Nablus alone — 'the only place in the entire world' where Samaritans remain.",
-    "src": "Schur; Schwarz", "srcType": "secondary"
+    "src": "Schur; Schwarz",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1809, "date": "1805 · 1813", "cat": "extortion",
+    "year": 1809,
+    "date": "1805 · 1813",
+    "cat": "extortion",
     "location": "Nablus",
     "event": "The wealthy Shelaby / Danfī bankers — the community's de-facto leaders and bankers to the Nablus governors — are repeatedly extorted, arrested, and (1805, 1813) murdered.",
-    "src": "Finn; Mills; Rogers via Schur", "srcType": "primary"
+    "src": "Finn; Mills; Rogers via Schur",
+    "srcType": "primary",
+    "passages": []
   },
   {
-    "year": 1820, "date": "~1820", "cat": "violence",
+    "year": 1820,
+    "date": "~1820",
+    "cat": "violence",
     "location": "Nablus",
     "event": "Persecution under the governors 'Abdul Hady and Moosa Bek' — named by Mills as an earlier crisis a generation before the 1841 extirpation plot.",
-    "src": "Mills 1864", "srcType": "eyewitness"
+    "src": "Mills 1864",
+    "srcType": "eyewitness",
+    "passages": []
   },
   {
-    "year": 1835, "date": "1831–40", "cat": "relief",
+    "year": 1835,
+    "date": "1831–40",
+    "cat": "relief",
     "location": "Nablus (Egyptian rule)",
     "event": "The Egyptian decade under Ibrahim Pasha is the one window of relief — in the community's own chronicle, his just and equitable government relieved the Samaritans 'of the tyranny of the peoples inhabiting this country.' An inverted pasha-cascade: here the Egyptian rule itself was the opening, and its end the catastrophe.",
     "quote": "…the Samaritans were relieved of the tyranny of the peoples inhabiting this country, for his government was just and equitable.",
-    "src": "Adler–Séligsohn Chronicle, REJ 46 (1903)", "srcType": "chronicle"
+    "src": "Adler–Séligsohn Chronicle, REJ 46 (1903)",
+    "srcType": "chronicle",
+    "passages": []
   },
   {
-    "year": 1840, "date": "1840", "cat": "violence",
+    "year": 1840,
+    "date": "1840",
+    "cat": "violence",
     "location": "Nablus",
     "event": "On the Egyptian withdrawal, the Muslim inhabitants of Nablus vent their hatred of the toppled Egyptians in a pogrom against the Samaritans — whose notables had been the visible non-Muslim functionaries of the regime.",
-    "src": "Schur (in Crown ed.)", "srcType": "secondary"
+    "src": "Schur (in Crown ed.)",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1841, "date": "1841/42", "cat": "conversion",
+    "year": 1841,
+    "date": "1841/42",
+    "cat": "conversion",
     "location": "Nablus",
     "event": "The extirpation crisis: the ʿulamāʾ rule the Samaritans 'had no religion at all' — not People of the Book but pagans 'whom every true believer was commanded to convert or exterminate.' A widow's son Isaac is imprisoned, lashed, and forcibly converted (renamed 'Asaad'); her daughter dies of fear of the torture.",
-    "src": "Mills 1864 (in a Samaritan's own words)", "srcType": "eyewitness"
+    "src": "Mills 1864 (in a Samaritan's own words)",
+    "srcType": "eyewitness",
+    "passages": [
+      {
+        "file": "mills_three_months_residence_at_nablus_1864",
+        "text": "The plea upon which the Mohammedan Ulemas acted thus was, that the Samaritans had no religion at all, not even believing in any one of the five inspired books, which are : — 1. The Torah, or Law of Moses ; 2. The"
+      }
+    ]
   },
   {
-    "year": 1842, "date": "1842", "cat": "protection",
+    "year": 1842,
+    "date": "1842",
+    "cat": "protection",
     "location": "Jerusalem / Nablus",
     "event": "Rescue: the Sephardi Chief Rabbi of Jerusalem, Haim Avraham Gagin, issues a written declaration that 'the Samaritan people is a branch of the children of Israel' — refuting the ʿulamāʾ and giving the community just enough theological cover to survive. (The ruling is still cited in Israeli religious-status debates.)",
-    "src": "Mills 1864; Pummer 2016", "srcType": "primary"
+    "src": "Mills 1864; Pummer 2016",
+    "srcType": "primary",
+    "passages": []
   },
   {
-    "year": 1850, "date": "1846–55", "cat": "protection",
+    "year": 1850,
+    "date": "1846–55",
+    "cat": "protection",
     "location": "Nablus / London",
     "event": "British consular protection: Consul James Finn intervenes; the agent Jacob esh-Shellaby carries a petition to London; Lord Clarendon sends £50 with orders to use 'good offices to save the Samaritan people from persecution, from whatever quarter,' and Stratford de Redcliffe presses the Porte.",
-    "src": "Finn; Rogers 1855", "srcType": "primary"
+    "src": "Finn; Rogers 1855",
+    "srcType": "primary",
+    "passages": []
   },
   {
-    "year": 1853, "date": "1853", "cat": "demography",
+    "year": 1853,
+    "date": "1853",
+    "cat": "demography",
     "location": "Nablus",
     "event": "Petermann counts ~122 Samaritans — the community is now a single endogamous core at Nablus.",
-    "src": "Schur (Petermann)", "srcType": "secondary"
+    "src": "Schur (Petermann)",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1855, "date": "1855", "cat": "demography",
+    "year": 1855,
+    "date": "1855",
+    "cat": "demography",
     "location": "Nablus",
     "event": "John Mills, living among the community, counts 40 families / ~150 souls in a 'ghetto-like' quarter at the foot of Gerizim (+1 by 1860).",
-    "src": "Mills 1864", "srcType": "eyewitness"
+    "src": "Mills 1864",
+    "srcType": "eyewitness",
+    "passages": []
   },
   {
-    "year": 1859, "date": "1859", "cat": "protection",
+    "year": 1859,
+    "date": "1859",
+    "cat": "protection",
     "location": "Nablus",
     "event": "The Ottoman state pacifies the Nablus district by force, breaks the local feudal lords, and installs direct rule — beginning an unaccustomed 'deep peace' that runs to WWI.",
-    "src": "Schur; Pummer", "srcType": "secondary"
+    "src": "Schur; Pummer",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1888, "date": "1888", "cat": "demography",
+    "year": 1888,
+    "date": "1888",
+    "cat": "demography",
     "location": "Nablus",
     "event": "The community reaches its all-time low — about 85 souls — with a male-to-female ratio approaching 2:1; extinction is widely forecast and never arrives.",
-    "src": "Pummer (Schur series)", "srcType": "secondary"
+    "src": "Pummer (Schur series)",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "pummer_the_samaritans_a_profile_2016",
+        "text": "The number of the Samaritans by that time had dwindled to 195 individuals or fewer.144 Extinction seemed inevitable to many onlookers. To quote only one such prediction, by John Mills in his book Three Months’ Residence at Nablus: “before many generations more have passed away, this nation, in all probability, will have become extinct.”145 Although Mills lived with them in 1855 and 1860, many years later scholars and others made similar forecasts. Nathan Schur has compiled a list of numbers quoted by travelers,…"
+      }
+    ]
   },
   {
-    "year": 1900, "date": "~1900", "cat": "protection",
+    "year": 1900,
+    "date": "~1900",
+    "cat": "protection",
     "location": "Nablus",
     "event": "Historic nadir, ~140 souls; the American philanthropist E. K. Warren, 'amazed and enchanted' to find them surviving into the 20th century, builds medical and educational facilities, aiding recovery.",
-    "src": "Anderson–Giles, The Keepers", "srcType": "secondary"
+    "src": "Anderson–Giles, The Keepers",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1905, "date": "1905", "cat": "demography",
+    "year": 1905,
+    "date": "1905",
+    "cat": "demography",
     "location": "Jaffa",
     "event": "Abraham b. Marḥiv Tsedaka settles in Jaffa (attempts 1894, 1902; success 1905) — the nucleus of the modern second Samaritan centre (later Tel Aviv, then Ḥolon 1951).",
-    "src": "Pummer 2016", "srcType": "secondary"
+    "src": "Pummer 2016",
+    "srcType": "secondary",
+    "passages": []
   },
   {
-    "year": 1927, "date": "1927", "cat": "disaster",
+    "year": 1927,
+    "date": "1927",
+    "cat": "disaster",
     "location": "Nablus",
     "event": "The old Nablus synagogue is damaged in the magnitude-6.2 July earthquake — relief in this window came less from any change of heart among neighbours than from restored central order plus outside patronage.",
-    "src": "Pummer 2016", "srcType": "secondary"
+    "src": "Pummer 2016",
+    "srcType": "secondary",
+    "passages": []
   }
 ]

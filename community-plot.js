@@ -176,17 +176,36 @@
 
   function drawLog(events) {
     const el = document.getElementById("log"); if (!el) return;
-    el.innerHTML = events.slice().sort((a, b) => a.year - b.year).map((e) => {
+    const sorted = events.slice().sort((a, b) => a.year - b.year);
+    el.innerHTML = sorted.map((e, i) => {
       const c = cfg.cats[e.cat] || { label: e.cat, color: "#6b6358" };
       const quote = e.quote ? `<span class="quote">“${esc(e.quote)}”</span>` : "";
       const prov = e.srcType ? `<span class="prov ${esc(e.srcType)}">${esc(e.srcType)}</span>` : "";
-      return `<tr>
-        <td class="date">${esc(e.date)}</td>
-        <td><span class="chip" style="color:${c.color}">${esc(c.label)}</span></td>
-        <td class="place">${esc(e.location)}</td>
-        <td class="ev">${esc(e.event)}${quote}<div class="src">${esc(e.src || "")}${prov}</div></td>
-      </tr>`;
+      const ps = e.passages || [];
+      const hint = ps.length
+        ? `<span style="color:#7a2c1e;font-size:11px"> · ▸ ${ps.length} corpus passage${ps.length > 1 ? "s" : ""}</span>`
+        : `<span style="color:#b1a48c;font-size:11px"> · ▸ source</span>`;
+      let detail;
+      if (ps.length) {
+        detail = `<div style="font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#9a9080;margin-bottom:7px">Corpus passages</div>` +
+          ps.map((p) => `<div style="margin-bottom:9px"><div style="font-size:13px;line-height:1.55;color:#3a352d">${esc(p.text)}</div><div style="font-size:11px;color:#9a9080;margin-top:3px">— ${esc(p.file)}</div></div>`).join("");
+      } else {
+        detail = `<div style="font-size:13px;font-style:italic;color:#7a7060">Cited source: <b style="color:#5a5142">${esc(e.src || "")}</b>${e.srcType ? ` (${esc(e.srcType)})` : ""}.` +
+          (e.quote ? ` The quoted line above is the cited excerpt.` : ` A full corpus passage is not yet curated for this row.`) + `</div>`;
+      }
+      return `<tr class="cp-row" data-i="${i}" style="cursor:pointer">
+          <td class="date">${esc(e.date)}</td>
+          <td><span class="chip" style="color:${c.color}">${esc(c.label)}</span></td>
+          <td class="place">${esc(e.location)}</td>
+          <td class="ev">${esc(e.event)}${quote}<div class="src">${esc(e.src || "")}${prov}${hint}</div></td>
+        </tr>
+        <tr id="cp-d-${i}" style="display:none"><td colspan="4" style="background:#ede7d8;padding:13px 16px;border-bottom:1px solid #c9bfa6">${detail}</td></tr>`;
     }).join("");
+    el.addEventListener("click", (ev) => {
+      const row = ev.target.closest(".cp-row"); if (!row) return;
+      const d = document.getElementById("cp-d-" + row.getAttribute("data-i"));
+      if (d) d.style.display = d.style.display === "none" ? "table-row" : "none";
+    });
   }
 
   drawLegend();
