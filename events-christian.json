@@ -283,5 +283,95 @@
     "src": "Mandate censuses (Barron 1922; Mills 1931)",
     "srcType": "secondary",
     "passages": []
+  },
+  {
+    "year": 1893,
+    "date": "1880s–1914",
+    "cat": "patronage",
+    "location": "Jerusalem / Holy Places",
+    "event": "Mass Russian Orthodox pilgrimage — peasant pilgrims arriving by the thousands each year, housed in the IOPS hostels (capacity 10,000). The human face of Russia's patronage, and a popular constituency that kept Palestine in Russian politics.",
+    "src": "Hopwood 1969",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "hopwood_the_russian_presence_in_syria_and_palestine_1969",
+        "text": "T h e French and Austrian shipping companies had been carrying annually several thousand Orthodox pilgrims to Palestine and it was hoped that the Russian Company would capture this traffic. Consequently the Company decided to establish a direct link"
+      }
+    ]
+  },
+  {
+    "year": 1875,
+    "date": "1856–82 →",
+    "cat": "demography",
+    "location": "Galilee (Christian villages)",
+    "event": "Even as the community grew, emigration abroad began from the Christian villages of Galilee — the start of a sustained Christian outflow (later heavily to the Americas) that ran against the demographic-growth story.",
+    "src": "Schölch",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "scholch_palestine_in_transformation_1856-1882_1993",
+        "text": "population increase in the country up to World War I probably slowed, and there was even emigration abroad from the Christian villages of Galilee.73 For the liwa' of Nablus/Balqa' we accordingly arrive at 120,000 to 130,000 inhabitants 74"
+      }
+    ]
+  },
+  {
+    "year": 1868,
+    "date": "1868 →",
+    "cat": "demography",
+    "location": "Haifa · Jaffa · Sarona · Jerusalem",
+    "event": "A wholly different kind of Christian arrives: the Württemberg Pietist Templers (Tempelgesellschaft, under Christoph Hoffmann) found agricultural colonies from 1868 at Haifa, Jaffa, Sarona, Wilhelma and Jerusalem — European settler-Christians, not the indigenous Arab church.",
+    "src": "Carmel 1973",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "carmel_templer_1973",
+        "text": "Gruppe wiirttembergischer Siedler, die der von Christoph Hoffmann und Georg David Hardegg gegriin- deten Tempelgesellschaft angehorte"
+      }
+    ]
+  },
+  {
+    "year": 1909,
+    "date": "1908–14",
+    "cat": "coexistence",
+    "location": "Jerusalem / Palestine-wide",
+    "event": "The constitutional-revolution civic moment: Muslims, Christians and Jews articulated a shared Ottoman citizenship — 'liberty, equality, fraternity' — a brief inter-communal fraternity running alongside (and against) the hardening nationalisms.",
+    "src": "Campos, Ottoman Brothers 2010",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "campos_ottoman_brothers_2010",
+        "text": "In each locale, Muslims, Christians, and Jews developed distinct relationships that were shaped by residential patterns, economic situations, and a wide variety of cultural factors in addition to the policies set in place by the Ottoman state. In these mixed towns and cities, religious and ethnic groups often lived in the same neighborhoods (sometimes even in the same apartment building or courtyard), belonged to the same craft guilds, worked and shopped in the same markets, went into business together, and…"
+      }
+    ]
+  },
+  {
+    "year": 1850,
+    "date": "19th c. (nahda)",
+    "cat": "nationalism",
+    "location": "Beirut / Greater Syria",
+    "event": "The Arab cultural revival (nahda) — disproportionately Christian-led. Figures like Butrus al-Bustani (b. 1819, 'a Christian Arab' of Lebanon) built the Arabic literary-intellectual awakening that became the seedbed of later Arab nationalism.",
+    "src": "Antonius, The Arab Awakening 1938",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "antonius_the_arab_awakening_1938",
+        "text": "The other great figure was Butrus Bustani, born in 1819. He, too, was a Christian Arab and came from the Lebanon; but unlike Yazeji, he had received the best education which was then available and learnt other languages besides Arabic. At the age of ten, he entered the monastic college at ‘Ain-Waraqa where he was taught Syriac and Latin, as well as the canonical sciences and the science of his mother tongue. At school, he stood out among his contemporaries, both for his character and for the brilliance of his…"
+      }
+    ]
+  },
+  {
+    "year": 1915,
+    "date": "1904–48 (memoir)",
+    "cat": "coexistence",
+    "location": "Jerusalem",
+    "event": "Christian civic life from the inside: the oud-player and civil servant Wasif Jawhariyyeh's memoir captures a festive, cross-communal late-Ottoman and Mandate Jerusalem — Christians, Muslims and Jews sharing music, cafés and one another's feasts.",
+    "src": "Tamari & Nassar, The Storyteller of Jerusalem 2014",
+    "srcType": "primary",
+    "passages": [
+      {
+        "file": "tamari_nassar_the_storyteller_of_jerusalem_the_life_and_times_of_wasif_jawhariyyeh_1904-1948_2014",
+        "text": "Throughout his Ottoman years, and beyond in his adult career, Wasif saw himself as a musician and oud player above all else. When he sought employment in various government and municipal authorities, it was only to survive and release himself to his passionate obsession— the oud—and the company of men and women who shared his vision. His first paid “job” was that of a clerk in the Jerusalem Municipality in charge of recording and classifying contributions in-kind for the Ottoman war efforts. The job was created…"
+      }
+    ]
   }
 ]
