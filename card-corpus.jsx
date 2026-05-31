@@ -6,7 +6,7 @@
 //       t=concise description, s=source.
 window.CORPUS = [
   // ── Immigration ──────────────────────────────────────────────────────────
-  { y: 1540, c: "immigration", m: 4, p: "Safed · Jerusalem · Hebron · Tiberias", t: "Iberian Sefardim — main influx after the 1516 Ottoman conquest (Spanish exiles via Salonika/Istanbul/Italy); Safed 233 hh (1525) → 945 hh, near-parity with Muslims by 1567.", s: "Lewis–Cohen defter; David 1999" },
+  { y: 1540, c: "immigration", m: 4, p: "Safed · Jerusalem · Hebron · Tiberias", t: "Iberian Sefardim — a first trickle of post-expulsion sages reached Safed under Mamluk rule (via Egypt: Saragossi, Berab, the Radbaz); still a minority at the 1525 defter (21 Portuguese vs ~130 Musta'arabi of 233). The mass wave came 1530s–50s under Ottoman rule → 719+ hh, ~945 by the 1567 peak.", s: "Lewis–Cohen defter; David 1999" },
   { y: 1555, c: "immigration", m: 2, p: "Safed", t: "Italian-peninsula Sefardim — Apulia, Calabria, Italian-rite congregations (75 hh) named in the defter.", s: "Defter 1555–6; David 1999" },
   { y: 1556, c: "immigration", m: 2, p: "Safed", t: "Maghrebi Jews from North Africa (38 hh), retaining a distinct communal identity.", s: "Defter 1555–6; Lewis–Cohen 1978" },
   { y: 1557, c: "immigration", m: 2, p: "Safed", t: "German & Hungarian Ashkenazi minority (32 hh) via Italy; named congregations in the defter.", s: "Defter 1555–6" },
