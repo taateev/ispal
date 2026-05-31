@@ -1,34 +1,44 @@
 // community-plot.js — shared renderer for the per-community pages.
-// Reads window.COMMUNITY_CFG and renders: an EventPlot (population curve over
-// category lanes), the legend, and the documented-record table.
+// Mirrors the Jewish card-eventplot.jsx design (geometry, dot sizing, lane
+// labels, Tanzimat band) so all community pages share one look.
 //
-// COMMUNITY_CFG = {
+// window.COMMUNITY_CFG = {
 //   knots:      [[year, value, est?], ...],   // population curve (est=true → dashed)
 //   maxP:       number,                        // population y-axis max
-//   popUnit:    "souls" | "K",                 // y-axis tick suffix
+//   popUnit:    "souls" | "K",
 //   curveColor: "#hex", curveColorEst: "#hex",
-//   cats:       { key: {label, color:"#hex"}, ... },  // order = lane order
+//   peakLabel:  "~12K · 1567 peak", peakYear: 1567,   // optional curve annotation
+//   cats:       { key: {label, color:"#hex"}, ... },  // SHORT labels; order = lane order
 //   eventsUrl:  "events-xxx.json",
 //   yearRange:  [1500, 1950],
 //   tanzimat:   [1839, 1858],
-//   yTicks:     [0, ...],                       // population gridline values
+//   yTicks:     [0, ...],                       // up to 4 population gridline values
 // }
 (function () {
   const cfg = window.COMMUNITY_CFG;
   if (!cfg) return;
   const catKeys = Object.keys(cfg.cats);
   const [Y0, Y1] = cfg.yearRange;
+  const SANS = 'Archivo, "Helvetica Neue", Arial, sans-serif';
 
-  // ── geometry ───────────────────────────────────────────────────────────
-  const W = 900, GL = 156, GR = 18, GT = 14;
-  const CURVE_H = 104, GAP = 18, LANE_H = 23;
+  // ── geometry (matches card-eventplot.jsx) ───────────────────────────────
+  const W = 652, GL = 132, GR = 16;
+  const T = 30, CH = 132, GAP = 12, LH = 23;
   const N = catKeys.length;
-  const lanesTop = GT + CURVE_H + GAP;
-  const H = lanesTop + LANE_H * N + 28;
-  const px = (y) => GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0);
-  const cyP = (v) => GT + CURVE_H * (1 - v / cfg.maxP);
-  const laneY = (k) => lanesTop + LANE_H * k + LANE_H / 2;
+  const LY = T + CH + GAP;
+  const LANES_BOTTOM = LY + LH * N;
+  const H = LANES_BOTTOM + 26;
+  const SPAN = Y1 - Y0;
+  const px = (y) => GL + (W - GL - GR) * (y - Y0) / SPAN;
+  const cy = (v) => T + CH * (1 - v / cfg.maxP);
+  const laneY = (k) => LY + LH * k + LH / 2;
   const TZ = cfg.tanzimat || [1839, 1858];
+  const DIVX = px(TZ[0]), BANDX1 = px(TZ[1]);
+  const magR = (m) => 2.6 + 1.5 * Math.sqrt(m || 1);
+  const CREAM = "#f4efe4";
+
+  const fmtK = (v) => (cfg.popUnit === "K" ? v + "K" : v.toLocaleString());
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   function smooth(pts) {
     if (pts.length < 2) return "";
@@ -41,70 +51,87 @@
     }
     return d;
   }
-  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-  // ── EventPlot ──────────────────────────────────────────────────────────
+  // left-pack with min-gap, rigid left-shift on overflow (matches dodgeRun)
+  function dodgeRun(evs, lo, hi) {
+    const MIN_GAP = 6.5; const xs = []; let prev = null;
+    evs.forEach((e) => { let x = Math.max(px(e.year), lo); if (prev != null && x < prev + MIN_GAP) x = prev + MIN_GAP; prev = x; xs.push(x); });
+    if (xs.length && hi != null && xs[xs.length - 1] > hi) {
+      const shift = xs[xs.length - 1] - hi;
+      for (let i = 0; i < xs.length; i++) xs[i] = Math.max(lo, xs[i] - shift);
+    }
+    return xs;
+  }
+
   let EVENTS = [];
   function drawPlot(events) {
     EVENTS = events;
-    const counts = {};
-    catKeys.forEach((k) => (counts[k] = 0));
+    const counts = {}; catKeys.forEach((k) => (counts[k] = 0));
     events.forEach((e) => { if (counts[e.cat] != null) counts[e.cat]++; });
 
-    // per-lane, per-era (split at Tanzimat) horizontal dodging so clusters don't overlap
-    const MIN_GAP = 6.4;
-    const placed = events.map((e, i) => ({ i, e, lane: catKeys.indexOf(e.cat), x: px(e.year) }))
-      .filter((d) => d.lane >= 0);
-    catKeys.forEach((k, lane) => {
-      [[Y0, TZ[0]], [TZ[0], Y1 + 1]].forEach(([a, b]) => {
-        const grp = placed.filter((d) => d.lane === lane && d.e.year >= a && d.e.year < b).sort((p, q) => p.x - q.x);
-        let last = -1e9;
-        grp.forEach((d) => { if (d.x < last + MIN_GAP) d.x = last + MIN_GAP; last = d.x; });
-      });
+    // dots, per-lane, split pre/post-Tanzimat
+    const M = 2.5; const dots = [];
+    catKeys.forEach((cat, k) => {
+      const evs = events.filter((e) => e.cat === cat).slice().sort((a, b) => a.year - b.year);
+      const pre = evs.filter((e) => e.year < TZ[0]); const post = evs.filter((e) => e.year >= TZ[0]);
+      const preX = dodgeRun(pre, GL, DIVX - M); const postX = dodgeRun(post, DIVX + M, W - GR);
+      pre.forEach((e, i) => dots.push({ e, cat, x: preX[i], y: laneY(k), r: magR(e.n || 2) }));
+      post.forEach((e, i) => dots.push({ e, cat, x: postX[i], y: laneY(k), r: magR(e.n || 2) }));
     });
+    EVENTS = dots.map((d) => d.e); // index alignment for hover
 
     const s = [];
-    s.push(`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(cfg.title || "Population and documented record")}" font-family="Georgia, serif">`);
-    // Tanzimat band (full height)
-    s.push(`<rect x="${px(TZ[0])}" y="${GT}" width="${px(TZ[1]) - px(TZ[0])}" height="${H - GT - 24}" fill="#9a9080" opacity="0.13"/>`);
-    s.push(`<text x="${px(TZ[1]) + 4}" y="${GT + 8}" font-size="9" fill="#8a8270">Tanzimat ${TZ[0]}–${TZ[1]}</text>`);
+    s.push(`<svg viewBox="0 0 ${W} ${H}" width="100%" style="display:block;overflow:visible" font-family='${SANS}' role="img" aria-label="${esc(cfg.title || "")}">`);
 
-    // population curve band
+    // curve gridlines + ticks
     (cfg.yTicks || []).forEach((v) => {
-      s.push(`<line x1="${GL}" y1="${cyP(v)}" x2="${W - GR}" y2="${cyP(v)}" stroke="#ddd4bd" stroke-width="1"/>`);
-      s.push(`<text x="${GL - 8}" y="${cyP(v) + 3}" text-anchor="end" font-size="9" fill="#9a9080">${v.toLocaleString()}${cfg.popUnit === "K" ? "K" : ""}</text>`);
+      s.push(`<line x1="${GL}" x2="${W - GR}" y1="${cy(v)}" y2="${cy(v)}" stroke="rgba(28,24,21,0.07)" stroke-width="1"/>`);
+      s.push(`<text x="${GL - 8}" y="${cy(v) + 4}" text-anchor="end" font-size="11" fill="#9c8f78">${v === 0 ? "0" : fmtK(v)}</text>`);
     });
-    s.push(`<text x="${GL - 8}" y="${GT - 2}" text-anchor="end" font-size="9.5" fill="#6b6358" font-style="italic">Population</text>`);
-    const pts = cfg.knots.map(([y, v]) => [px(y), cyP(v)]);
+    s.push(`<line x1="${GL}" x2="${W - GR}" y1="${cy(0)}" y2="${cy(0)}" stroke="rgba(28,24,21,0.4)" stroke-width="1"/>`);
+
+    // population curve (est dashed → documented solid)
+    const pts = cfg.knots.map(([y, v]) => [px(y), cy(v)]);
     const splitAt = cfg.knots.findIndex((k) => !k[2]);
     if (splitAt > 0) {
-      s.push(`<path d="${smooth(pts.slice(0, splitAt + 1))}" fill="none" stroke="${cfg.curveColorEst || "#8a8270"}" stroke-width="2" stroke-dasharray="5 4"/>`);
-      s.push(`<path d="${smooth(pts.slice(splitAt))}" fill="none" stroke="${cfg.curveColor}" stroke-width="2.4"/>`);
+      s.push(`<path d="${smooth(pts.slice(0, splitAt + 1))}" fill="none" stroke="${cfg.curveColorEst || "#9c8f78"}" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 6"/>`);
+      s.push(`<path d="${smooth(pts.slice(splitAt))}" fill="none" stroke="${cfg.curveColor}" stroke-width="2.4" stroke-linecap="round"/>`);
     } else {
-      s.push(`<path d="${smooth(pts)}" fill="none" stroke="${cfg.curveColor}" stroke-width="2.4"/>`);
+      s.push(`<path d="${smooth(pts)}" fill="none" stroke="${cfg.curveColor}" stroke-width="2.4" stroke-linecap="round"/>`);
     }
-    cfg.knots.forEach(([y, v, est]) => s.push(`<circle cx="${px(y)}" cy="${cyP(v)}" r="2.6" fill="${est ? (cfg.curveColorEst || "#8a8270") : cfg.curveColor}"/>`));
+    if (cfg.peakLabel && cfg.peakYear) {
+      const pk = cfg.knots.find((k) => k[0] === cfg.peakYear);
+      const py = pk ? cy(pk[1]) - 8 : T + 10;
+      s.push(`<text x="${px(cfg.peakYear)}" y="${py}" text-anchor="middle" font-size="11" font-weight="600" fill="${cfg.curveColor}">${esc(cfg.peakLabel)}</text>`);
+    }
 
-    // category lanes
-    catKeys.forEach((k, lane) => {
-      const c = cfg.cats[k], y = laneY(lane);
-      s.push(`<line x1="${GL}" y1="${y}" x2="${W - GR}" y2="${y}" stroke="#e3dcc7" stroke-width="1"/>`);
-      s.push(`<circle cx="14" cy="${y}" r="4.5" fill="${c.color}"/>`);
-      s.push(`<text x="26" y="${y + 4}" font-size="12.5" fill="#3a352d">${esc(c.label)}</text>`);
-      s.push(`<text x="${GL - 10}" y="${y + 4}" text-anchor="end" font-size="11" fill="#9a9080" font-variant-numeric="tabular-nums">${counts[k]}</text>`);
+    // lane separators + labels + count column
+    catKeys.forEach((cat, k) => {
+      const c = cfg.cats[cat], y = laneY(k);
+      s.push(`<line x1="${GL}" x2="${W - GR}" y1="${y}" y2="${y}" stroke="rgba(28,24,21,0.06)" stroke-width="1"/>`);
+      s.push(`<circle cx="${GL - 120}" cy="${y}" r="4.5" fill="${c.color}"/>`);
+      s.push(`<text x="${GL - 108}" y="${y + 4}" font-size="12" fill="#5a5142" font-weight="500">${esc(c.label)}</text>`);
+      s.push(`<text x="${GL - 10}" y="${y + 4}" text-anchor="end" font-size="11" fill="#b1a48c" style="font-variant-numeric:tabular-nums">${counts[cat]}</text>`);
     });
+
+    // Tanzimat band
+    s.push(`<rect x="${DIVX}" y="${T}" width="${BANDX1 - DIVX}" height="${LANES_BOTTOM - T}" fill="#7d7259" fill-opacity="0.1"/>`);
+    s.push(`<line x1="${DIVX}" x2="${DIVX}" y1="${T}" y2="${LANES_BOTTOM}" stroke="#7d7259" stroke-width="1.25" stroke-dasharray="3 4"/>`);
+    s.push(`<line x1="${BANDX1}" x2="${BANDX1}" y1="${T}" y2="${LANES_BOTTOM}" stroke="#7d7259" stroke-width="1.25" stroke-dasharray="3 4"/>`);
+    s.push(`<text x="${(DIVX + BANDX1) / 2}" y="${T - 19}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#8a7e62" style="letter-spacing:0.16em">TANZIMAT</text>`);
+    s.push(`<text x="${DIVX - 3}" y="${T - 6}" text-anchor="end" font-size="10.5" font-weight="700" fill="#6f654f">${TZ[0]} ›</text>`);
+    s.push(`<text x="${BANDX1 + 3}" y="${T - 6}" text-anchor="start" font-size="10.5" font-weight="700" fill="#6f654f">‹ ${TZ[1]}</text>`);
 
     // dots
-    placed.forEach((d) => {
-      const c = cfg.cats[d.e.cat];
-      const r = d.e.n ? 3.4 + 1.5 * Math.sqrt(d.e.n) : 5;
-      s.push(`<circle class="cp-dot" data-i="${d.i}" cx="${d.x.toFixed(1)}" cy="${laneY(d.lane)}" r="${r}" fill="${c.color}" stroke="#f5f1e8" stroke-width="0.8" style="cursor:pointer"/>`);
+    dots.forEach((d, i) => {
+      s.push(`<circle class="cp-dot" data-i="${i}" cx="${d.x.toFixed(1)}" cy="${d.y}" r="${(d.r + 5).toFixed(1)}" fill="transparent" style="cursor:pointer"/>`);
+      s.push(`<circle cx="${d.x.toFixed(1)}" cy="${d.y}" r="${d.r.toFixed(1)}" fill="${cfg.cats[d.cat].color}" fill-opacity="0.9" stroke="${CREAM}" stroke-width="1.2" style="pointer-events:none"/>`);
     });
 
-    // x axis
-    (cfg.xTicks || [1500, 1567, 1650, 1700, 1800, 1850, 1900]).forEach((y) => {
+    // year axis
+    (cfg.xTicks || [1516, 1567, 1700, 1800, 1900]).forEach((y) => {
       if (y < Y0 || y > Y1) return;
-      s.push(`<text x="${px(y)}" y="${lanesTop + LANE_H * N + 16}" text-anchor="middle" font-size="10.5" fill="#9a9080">${y}</text>`);
+      s.push(`<text x="${px(y)}" y="${LANES_BOTTOM + 16}" text-anchor="middle" font-size="11.5" fill="#857a64" style="font-variant-numeric:tabular-nums">${y}</text>`);
     });
     s.push(`</svg>`);
     const host = document.getElementById("plot");
@@ -112,15 +139,14 @@
     wireHover(host);
   }
 
-  // ── hover tooltip ──────────────────────────────────────────────────────
   function wireHover(host) {
     let tip = document.getElementById("cp-tip");
     if (!tip) {
       tip = document.createElement("div");
       tip.id = "cp-tip";
-      tip.style.cssText = "position:fixed;z-index:50;max-width:320px;background:#1a1714;color:#f5f1e8;" +
-        "font:13px/1.45 Georgia,serif;padding:9px 11px;border-radius:3px;box-shadow:0 10px 30px -8px rgba(0,0,0,.6);" +
-        "pointer-events:none;opacity:0;transition:opacity .08s;";
+      tip.style.cssText = "position:fixed;z-index:50;max-width:300px;background:#1c1815;color:#f4efe4;" +
+        'font:13px/1.45 Archivo,"Helvetica Neue",Arial,sans-serif;padding:9px 11px;border-radius:3px;' +
+        "box-shadow:0 10px 30px -8px rgba(0,0,0,.6);pointer-events:none;opacity:0;transition:opacity .08s;";
       document.body.appendChild(tip);
     }
     host.addEventListener("mouseover", (ev) => {
@@ -129,8 +155,7 @@
       const c = cfg.cats[e.cat] || {};
       tip.innerHTML = `<b style="color:${c.color || "#fff"}">${esc(e.date)} · ${esc(c.label || e.cat)}</b>` +
         `<div style="color:#c9bfa6;font-style:italic;margin:1px 0 4px">${esc(e.location || "")}</div>` +
-        `${esc(e.event)}` +
-        (e.src ? `<div style="color:#9a9080;margin-top:5px;font-size:11.5px">${esc(e.src)}${e.srcType ? " · " + esc(e.srcType) : ""}</div>` : "");
+        `${esc(e.event)}` + (e.src ? `<div style="color:#9a9080;margin-top:5px;font-size:11.5px">${esc(e.src)}${e.srcType ? " · " + esc(e.srcType) : ""}</div>` : "");
       tip.style.opacity = "1";
     });
     host.addEventListener("mousemove", (ev) => {
@@ -143,17 +168,14 @@
     host.addEventListener("mouseout", (ev) => { if (ev.target.closest(".cp-dot")) tip.style.opacity = "0"; });
   }
 
-  // ── legend ─────────────────────────────────────────────────────────────
   function drawLegend() {
     const el = document.getElementById("legend"); if (!el) return;
     el.innerHTML = catKeys.map((k) => `<span><i style="background:${cfg.cats[k].color}"></i>${esc(cfg.cats[k].label)}</span>`).join("") +
       `<span style="color:#9a9080">· hover any dot for the record</span>`;
   }
 
-  // ── log table ──────────────────────────────────────────────────────────
   function drawLog(events) {
     const el = document.getElementById("log"); if (!el) return;
-    events.slice().sort((a, b) => a.year - b.year);
     el.innerHTML = events.slice().sort((a, b) => a.year - b.year).map((e) => {
       const c = cfg.cats[e.cat] || { label: e.cat, color: "#6b6358" };
       const quote = e.quote ? `<span class="quote">“${esc(e.quote)}”</span>` : "";
