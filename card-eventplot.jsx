@@ -16,7 +16,7 @@
   const LANES_BOTTOM = LY + LH * LANES.length;
   const H = LANES_BOTTOM + 26;
 
-  const Y0 = 1492, Y1 = 1914, SPAN = Y1 - Y0;
+  const Y0 = 1516, Y1 = 1914, SPAN = Y1 - Y0;
   const MAXY = 90;
   const px = (y) => GL + (PW * (y - Y0)) / SPAN;
   const cy = (v) => T + CH * (1 - v / MAXY);
@@ -28,7 +28,7 @@
 
   // Population curve knots.
   const KNOTS = [
-    [1492, 4.0], [1500, 5.0], [1567, 12.0], [1620, 8.0], [1660, 5.0],
+    [1516, 5.0], [1567, 12.0], [1620, 8.0], [1660, 5.0],
     [1700, 6.0], [1780, 6.0], [1837, 6.5], [1840, 8.0], [1856, 11.0],
     [1860, 13.5], [1870, 18.0], [1881, 25.0], [1893, 40.0], [1904, 50.0],
     [1908, 70.0], [1914, 85.0],
@@ -87,7 +87,7 @@
   }
   const DOTS = buildDots();
 
-  const YEAR_TICKS = [1500, 1567, 1700, 1800, 1900];
+  const YEAR_TICKS = [1516, 1567, 1700, 1800, 1900];
   const GRIDS = [1600, 1700, 1800];
 
   function EventPlot() {

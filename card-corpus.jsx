@@ -1,4 +1,4 @@
-// Full corpus — 100 documented events, 1492–1882, plus 3 natural disasters.
+// Full corpus — 100 documented events, 1516–1882, plus 3 natural disasters.
 // Compiled from the multi-source inventory (Morris, Barnai, Ayalon, Cohen,
 // David, Gerber, Burckhardt, Schwarz, Finn, Frumkin, Lewis, Eliav, Yaari).
 //
@@ -6,7 +6,7 @@
 //       t=concise description, s=source.
 window.CORPUS = [
   // ── Immigration ──────────────────────────────────────────────────────────
-  { y: 1492, c: "immigration", m: 4, p: "Safed · Jerusalem · Hebron · Tiberias", t: "Iberian Sefardim — 1492 exiles + chain migration; 945 hh, near-parity with Muslims at Safed's 1567 peak.", s: "Lewis–Cohen defter; David 1999" },
+  { y: 1540, c: "immigration", m: 4, p: "Safed · Jerusalem · Hebron · Tiberias", t: "Iberian Sefardim — main influx after the 1516 Ottoman conquest (Spanish exiles via Salonika/Istanbul/Italy); Safed 233 hh (1525) → 945 hh, near-parity with Muslims by 1567.", s: "Lewis–Cohen defter; David 1999" },
   { y: 1555, c: "immigration", m: 2, p: "Safed", t: "Italian-peninsula Sefardim — Apulia, Calabria, Italian-rite congregations (75 hh) named in the defter.", s: "Defter 1555–6; David 1999" },
   { y: 1556, c: "immigration", m: 2, p: "Safed", t: "Maghrebi Jews from North Africa (38 hh), retaining a distinct communal identity.", s: "Defter 1555–6; Lewis–Cohen 1978" },
   { y: 1557, c: "immigration", m: 2, p: "Safed", t: "German & Hungarian Ashkenazi minority (32 hh) via Italy; named congregations in the defter.", s: "Defter 1555–6" },

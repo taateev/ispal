@@ -1,4 +1,4 @@
-// Combined Light Broadsheet — the full corpus, 1492–1914 (close of the Ottoman period).
+// Combined Light Broadsheet — the full corpus, 1516–1914 (close of the Ottoman period).
 // Population curve + an eight-lane event plot of all 122 documented events.
 (function () {
   const CATS = window.CORPUS_CATS;
@@ -88,7 +88,7 @@
 
         <div className="cmb-head">
           <div className="cmb-rail">
-            <span>1492 – 1914 · the full corpus</span>
+            <span>1516 – 1914 · the full corpus</span>
             <span>122 documented events</span>
           </div>
           <h1>
@@ -140,7 +140,7 @@
           <div className="cmb-cmp">
             <div className="col pre">
               <h4>Dhimmi era</h4>
-              <p className="span">1500–1840 · 340 yrs · no consular protection · jizya in force</p>
+              <p className="span">1516–1840 · 324 yrs · no consular protection · jizya in force</p>
               <div className="row"><span className="k">Net population</span><span className="v big">+3,000</span></div>
               <div className="row"><span className="k">1567 peak</span><span className="v">halved</span></div>
               <div className="row"><span className="k">Coercion events</span><span className="v">59</span></div>
