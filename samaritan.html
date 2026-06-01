@@ -42,15 +42,25 @@
 
   <div id="stats-root"></div>
 
-  <p class="figttl">Population &amp; the documented record, by year</p>
-  <div class="chartcard"><div id="plot"></div></div>
-  <div class="legend" id="legend"></div>
+  <section class="bcard">
+    <div class="bcard-head">
+      <div class="bcard-rail">
+        <span>1516 – 1931 · the full record</span>
+        <span data-event-count>documented events</span>
+      </div>
+      <h2 class="bcard-title">Samaritan Population <span class="sep">·</span> Ottoman Palestine</h2>
+      <p class="bcard-dek">The estimated souls over a category-by-category record of violence, conversion, restriction, extortion, protection, relief, and demographic change — compiled from a multi-source corpus.</p>
+    </div>
+    <div class="bcard-body">
+      <p class="figttl">Population &amp; the documented record, by year</p>
+      <div id="plot"></div>
+      <div class="legend" id="legend"></div>
+      <p class="bcard-cap">Collapse, then a long remnant plateau. The community fell an order of magnitude across ~1.5 centuries — mostly the dissolution of the Gaza, Cairo and Damascus diaspora — then held at ~140 souls at Nablus alone. The one window of relief was the <b>1831–40 Egyptian decade</b>; the <b>1839–58 Tanzimat</b>, with no great-power patron behind it, barely touched them.</p>
+    </div>
+  </section>
   <p class="fignote">
-    Population curve above eight category lanes on one shared timeline; each dot is a documented event
-    (hover for the record). Order-of-magnitude collapse over ~1.5 centuries (mostly the dissolution of the
-    Gaza / Cairo / Damascus diaspora), then a long remnant plateau. The <b>1831–40 Egyptian decade</b> shows
-    in the <i>relief</i> lane — the one window of relief, in the community's own words; the shaded band is the
-    <b>1839–58 Tanzimat</b> reform era that, with no great-power patron, barely touched the Samaritans.
+    Each dot is a documented event (hover for the record); pre-1839 figures are estimates — no systematic
+    count exists before the mid-19th-c. traveler censuses.
   </p>
 
   <h2 class="section">The documented record</h2>
@@ -124,6 +134,9 @@ window.COMMUNITY_CFG = {
 (function () {
   function boot(data) {
     window.DATA = data;
+    document.querySelectorAll("[data-event-count]").forEach(function (el) {
+      el.textContent = data.length + " documented events";
+    });
     if (window.drawBroadsheetChart) window.drawBroadsheetChart(data);
     (function mount() {
       if (window.renderBroadsheet) window.renderBroadsheet();

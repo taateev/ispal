@@ -69,20 +69,20 @@ body {
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--ink-3);
   font-weight: 600;
 }
 .mast h1 {
-  font-family: var(--display);
-  font-weight: 500;
-  font-size: clamp(28px, 4.4vw, 44px);
-  line-height: 1.05;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(30px, 4.6vw, 44px);
+  line-height: 1.06;
   margin: 10px 0 0;
   letter-spacing: -0.015em;
   text-wrap: balance;
   color: var(--ink);
 }
-.mast h1 em { font-style: italic; color: var(--ink-2); font-weight: 500; }
+.mast h1 em { font-family: var(--serif); font-style: italic; color: var(--ink-2); font-weight: 500; }
 .mast .meta {
   font-family: var(--sans);
   font-size: 12px;
@@ -138,11 +138,11 @@ body {
 }
 .stat:last-child { border-right: 0; }
 .stat .n {
-  font-family: var(--display);
+  font-family: var(--serif);
   font-size: clamp(22px, 2.6vw, 27px);
   font-weight: 600;
   letter-spacing: -0.01em;
-  color: var(--accent);
+  color: var(--ink);
   line-height: 1;
 }
 .stat .l {
@@ -157,6 +157,52 @@ body {
 }
 
 /* ── Chart card ───────────────────────────────────────────────────────── */
+/* Framed "broadsheet card" — cream panel + soft drop shadow + header band,
+   mirroring the flagship card-combined.jsx so the chart reads as a centerpiece. */
+.bcard {
+  background: #f4efe4;
+  border: 1px solid #ddd4c2;
+  border-radius: 6px;
+  box-shadow: 0 24px 60px -28px rgba(40, 30, 18, 0.45);
+  overflow: hidden;
+  margin: 0 0 18px;
+}
+.bcard-head {
+  padding: clamp(22px, 3vw, 30px) clamp(20px, 3.4vw, 34px) 20px;
+  border-bottom: 2px solid var(--ink);
+}
+.bcard-rail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px 18px;
+  flex-wrap: wrap;
+  font-family: var(--label);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8a7e68;
+  margin-bottom: 12px;
+}
+.bcard-title {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(24px, 3.2vw, 33px);
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.bcard-title .sep { color: var(--accent); font-weight: 400; margin: 0 5px; }
+.bcard-dek {
+  font-size: clamp(14.5px, 1.6vw, 16px);
+  line-height: 1.45;
+  color: var(--ink-3);
+  margin: 9px 0 0;
+  max-width: 840px;
+  text-wrap: pretty;
+}
+.bcard-body { padding: 22px clamp(20px, 3.4vw, 34px) 26px; }
 .figttl {
   font-family: var(--label);
   font-size: 12px;
@@ -164,32 +210,36 @@ body {
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--ink-3);
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
-.chartcard {
-  border: 1px solid var(--rule);
-  background: var(--paper-2);
-  padding: 18px 18px 14px;
-  border-radius: 3px;
-}
-.chartcard svg { display: block; width: 100%; height: auto; }
+#plot svg { display: block; width: 100%; height: auto; }
 .legend {
   display: flex;
   flex-wrap: wrap;
   gap: 9px 16px;
-  margin: 14px 0 6px;
+  margin: 16px 0 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d8cfbd;
   font-family: var(--sans);
   font-size: 12px;
   color: var(--ink-3);
 }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
 .legend i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; flex: none; }
+.bcard-cap {
+  font-size: clamp(15px, 1.7vw, 17px);
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 18px 0 0;
+  text-wrap: pretty;
+}
+.bcard-cap b { font-weight: 600; color: var(--ink); }
 .fignote {
   font-size: 13px;
   line-height: 1.6;
   color: var(--ink-3);
   font-style: italic;
-  margin: 12px 0 40px;
+  margin: 14px 0 40px;
   max-width: 980px;
   text-wrap: pretty;
 }
