@@ -13,7 +13,7 @@
       <div className="cmb">
         <style>{`
           .cmb{
-            width:760px; box-sizing:border-box; background:${cream};
+            width:100%; box-sizing:border-box; background:${cream};
             border:1px solid #ddd4c2; border-radius:6px; padding:0; color:${ink};
             font-family:"Source Serif 4", Georgia, serif;
             box-shadow:0 24px 60px -28px rgba(40,30,18,0.45); overflow:hidden;
@@ -30,7 +30,7 @@
           .cmb-figttl{font-family:"Archivo",sans-serif;font-size:12px;font-weight:700;letter-spacing:0.13em;
             text-transform:uppercase;color:#8a7e68;margin:0 0 10px;}
 
-          .cmb-chart{position:relative;width:652px;max-width:100%;}
+          .cmb-chart{position:relative;width:100%;}
           .evp-tip{position:absolute;z-index:6;background:#211d18;color:#f1ece2;border-radius:8px;
             padding:11px 13px 12px;box-shadow:0 14px 34px -12px rgba(0,0,0,0.6);pointer-events:none;}
           .evp-tip.above{transform:translate(-50%,calc(-100% - 13px));}
