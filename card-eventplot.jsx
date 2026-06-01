@@ -8,7 +8,7 @@
   const LANES = window.CORPUS_LANES;
 
   // ── Geometry ───────────────────────────────────────────────────────────
-  const W = 652, GL = 132, GR = 16;
+  const W = 1072, GL = 132, GR = 16;
   const PW = W - GL - GR;
   const T = 30, CH = 132, GAP = 12;
   const LH = 23;
@@ -106,7 +106,7 @@
     }
 
     return (
-      <div className="evp" style={{ position: "relative", width: W + "px", maxWidth: "100%" }}>
+      <div className="evp" style={{ position: "relative", width: "100%", maxWidth: W + "px" }}>
         <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display: "block", overflow: "visible", fontFamily: '"Archivo", sans-serif' }}>
           {/* curve gridlines */}
           {[0, 25, 50, 75].map((v) => (
