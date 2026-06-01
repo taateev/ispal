@@ -50,6 +50,21 @@
     "passages": []
   },
   {
+    "year": 1831,
+    "date": "1831–40",
+    "cat": "reform",
+    "location": "Syria & Palestine (Egyptian rule)",
+    "event": "Under the Egyptian occupation (Ibrahim Pasha), Christians — and, to a lesser extent, Jews — gain de-facto equality with Muslims: seats on the local meclis, entry to the civil service, the right to build and repair churches, and exemption from conscription. The first European consulates open in Jerusalem and Damascus and missionary work is permitted. The pre-Tanzimat equality window — and the very resentment that fed the 1840 anti-Christian backlash.",
+    "src": "Ma'oz; Hopwood",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "maoz_ottoman_reform_in_syria_and_palestine_1840-1861_1968",
+        "text": "Christian subjects. Indeed under Egyptian rule Christians (and, to a lesser extent, Jews also) enjoyed full equality and complete security of life, property, and honour.’ They were no longer sub­ jected to oppression and extortion by Muslim notables, nor to"
+      }
+    ]
+  },
+  {
     "year": 1834,
     "date": "1834",
     "cat": "backlash",
@@ -63,9 +78,24 @@
     "year": 1840,
     "date": "1840",
     "cat": "backlash",
-    "location": "Damascus / country-wide",
-    "event": "On the Egyptian withdrawal an anti-Christian reaction runs 'throughout the country.' The Damascus Affair blood libel is instigated by Capuchin friars and the French consul — NOT by Muslims — and is repudiated by the returning Ottoman state (Abdülmecid's firman: 'the Hebrew nation will be protected'). The European blood-libel repertoire entered the Levant largely through Latin Christians.",
-    "src": "Ma'oz; Frankel 1997",
+    "location": "Syria & Palestine (country-wide)",
+    "event": "On the Egyptian withdrawal, a wave of intense anti-Christian — and, to some extent, anti-Jewish — violence sweeps the country: the Muslim backlash against the pro-Christian Egyptian regime and against the Hatt-i Şerif's new doctrine of equality before the law.",
+    "src": "Ma'oz",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "maoz_ottoman_reform_in_syria_and_palestine_1840-1861_1968",
+        "text": "the previous pro-Christian Egyptian régime,2 was expressed by a wave of intense anti-Christian and, to some extent, anti-Jewish violence which swept the country for a while, and was in some places encouraged by the Druze-M aronite hostilities in Lebanon"
+      }
+    ]
+  },
+  {
+    "year": 1840,
+    "date": "1840",
+    "cat": "backlash",
+    "location": "Damascus",
+    "event": "The Damascus Affair blood libel — instigated by Capuchin friars and the French consul, NOT by Muslims — and repudiated by the returning Ottoman state (Abdülmecid's firman: 'the Hebrew nation will be protected'). The European blood-libel repertoire entered the Levant largely through Latin Christians; here Christians are the instigators of an anti-Jewish libel.",
+    "src": "Frankel 1997",
     "srcType": "primary",
     "passages": [
       {
@@ -155,12 +185,27 @@
     ]
   },
   {
+    "year": 1856,
+    "date": "1856 (Apr)",
+    "cat": "backlash",
+    "location": "Nablus",
+    "event": "Anti-Christian riots erupt in Nablus, led by the local ulema as Muslim opposition to the new Hatt-i Hümayun equality decree — Palestine-proper anti-Christian violence, not only the Damascus/Lebanon theatre. An Imperial firman follows on the need to protect the Jews as well as the Christians.",
+    "src": "Ma'oz",
+    "srcType": "secondary",
+    "passages": [
+      {
+        "file": "maoz_ottoman_reform_in_syria_and_palestine_1840-1861_1968",
+        "text": "Along such statements there appeared also in at least one instance other signs of defiance: during the riots of April 1856 in Nablus, 1 F.O. 78/620, Rose to Aberdeen, No. 55, Beirut, 7 Oct. 1845; cf. Bazili, ii."
+      }
+    ]
+  },
+  {
     "year": 1860,
     "date": "1860",
     "cat": "backlash",
     "location": "Damascus / Mt Lebanon (Galilee panic)",
-    "event": "The great anti-Christian massacres — centered in Damascus and Mount Lebanon, NOT Palestine proper, though panic reigned among the Christians of Galilee. The flip side of the great-power-proxy prestige: the same patronage that drove Christian growth made them targets.",
-    "src": "Ma'oz; Mishaqa (eyewitness)",
+    "event": "The great anti-Christian massacres — centered in Damascus and Mount Lebanon, NOT Palestine proper, though panic reigned among the Christians of Galilee. Aqil Agha, the strongman of Galilee, undertook to protect its Christians and Jews (Nazareth especially); Schölch judges that in Palestine itself 'complete tranquillity prevailed' and no Christian was harmed. The flip side of great-power-proxy prestige: the same patronage that drove Christian growth made them targets.",
+    "src": "Ma'oz; Schölch; Mishaqa (eyewitness)",
     "srcType": "primary",
     "passages": [
       {
