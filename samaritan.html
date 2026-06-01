@@ -1,134 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Samaritan Life in Ottoman Palestine, 1516–1931 — A Compiled Inventory</title>
-<style>
-  :root{
-    --paper:#f5f1e8; --paper-2:#ede7d8; --paper-3:#e3dcc7;
-    --ink:#1a1714; --ink-2:#3a352d; --ink-3:#6b6358; --ink-4:#9a9080;
-    --rule:#c9bfa6; --rule-soft:#d9d0b8;
-    --accent:#7a2c1e; --highlight:#f0e5c5;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
-    -webkit-font-smoothing:antialiased;line-height:1.5;}
-  .wrap{max-width:920px;margin:0 auto;padding:28px 22px 64px;}
-  .masthead{border-bottom:3px double var(--ink);padding-bottom:14px;margin-bottom:6px;}
-  .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:bold;}
-  h1{font-size:34px;line-height:1.08;margin:6px 0 6px;letter-spacing:-.01em;}
-  .standfirst{font-size:15px;color:var(--ink-2);font-style:italic;margin:0;max-width:680px;}
-  .crosslinks{font-size:12px;color:var(--ink-3);margin-top:10px;}
-  .crosslinks a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule);}
-  .crosslinks a.active{color:var(--ink);font-weight:bold;border-bottom:2px solid var(--accent);}
-  .stats{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule);background:var(--paper-2);margin:18px 0 26px;}
-  .stat{flex:1 1 0;min-width:150px;padding:12px 14px;border-right:1px solid var(--rule-soft);text-align:center;}
-  .stat:last-child{border-right:0;}
-  .stat .v{font-size:24px;font-weight:bold;color:var(--accent);line-height:1;}
-  .stat .k{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);margin-top:6px;}
-  .figttl{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);
-    border-bottom:1px solid var(--rule);padding-bottom:5px;margin:0 0 4px;font-weight:bold;}
-  .fignote{font-size:12.5px;color:var(--ink-3);font-style:italic;margin:6px 0 22px;}
-  .chartcard{border:1px solid var(--rule);background:var(--paper-2);padding:14px 12px 10px;}
-  svg{display:block;width:100%;height:auto;}
-  h2.section{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);
-    border-bottom:2px solid var(--ink);padding-bottom:5px;margin:30px 0 0;font-weight:bold;}
-  table{width:100%;border-collapse:collapse;font-size:14px;}
-  thead th{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);
-    text-align:left;padding:9px 8px;border-bottom:1px solid var(--rule);font-weight:bold;}
-  tbody td{padding:11px 8px;border-bottom:1px solid var(--rule-soft);vertical-align:top;}
-  tbody tr:hover{background:var(--highlight);}
-  td.date{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:bold;color:var(--ink-2);width:78px;}
-  td.place{color:var(--ink-2);font-style:italic;width:128px;font-size:13px;}
-  .chip{display:inline-block;font-size:10px;letter-spacing:.05em;text-transform:uppercase;
-    font-weight:bold;padding:2px 7px;border:1px solid currentColor;border-radius:2px;white-space:nowrap;}
-  .ev{color:var(--ink);}
-  .ev .quote{display:block;margin-top:5px;font-style:italic;color:#5a4a2e;font-size:13px;
-    padding-left:10px;border-left:2px solid var(--rule);}
-  .src{font-size:12px;color:var(--ink-3);margin-top:6px;}
-  .prov{display:inline-block;font-size:9.5px;letter-spacing:.04em;text-transform:uppercase;
-    padding:1px 5px;border-radius:2px;border:1px solid var(--rule);margin-left:4px;color:var(--ink-3);}
-  .prov.primary,.prov.eyewitness,.prov.chronicle{color:var(--accent);border-color:var(--accent);background:#faf0eb;}
-  .legend{display:flex;flex-wrap:wrap;gap:10px 16px;margin:14px 0 4px;font-size:11px;color:var(--ink-3);}
-  .legend span{display:inline-flex;align-items:center;gap:5px;}
-  .legend i{width:10px;height:10px;border-radius:2px;display:inline-block;}
-  footer{margin-top:34px;border-top:1px solid var(--rule);padding-top:14px;font-size:12px;color:var(--ink-3);}
-  footer b{color:var(--ink-2);}
-  .err{color:var(--accent);font-style:italic;padding:30px;}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="broadsheet.css" rel="stylesheet" />
 </head>
 <body>
 <div class="wrap">
 
-  <div class="masthead">
-    <div class="kicker">A Compiled Inventory · Ottoman &amp; Mandate Palestine</div>
-    <h1>Samaritan Life under Ottoman Rule, 1516–1931</h1>
-    <p class="standfirst">An indigenous Palestinian religious community ground to the edge of extinction — from ~1,400 in the
-      16th-century tax registers to a single endogamous remnant of ~140 at Nablus by 1900, its historic nadir, before a slow recovery.</p>
-    <div class="crosslinks">
-      Communities: <a href="index.html">Jewish</a> · <a class="active" href="samaritan.html">Samaritan</a> · <a href="christian.html">Christian</a>
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Compiled Inventory · Ottoman &amp; Mandate Palestine</div>
+      <h1>Coercion, Conversion &amp; Survival<br /><em>Samaritan Life in Ottoman Palestine, 1516–1931</em></h1>
     </div>
-  </div>
+    <div class="meta">
+      <b>Period</b> 415 yrs · 1516 → 1931<br />
+      <b>Geography</b> Nablus · Gaza · Damascus · Cairo · Gerizim<br />
+      <b>Corpus</b> Pummer · Crown · Schur · Anderson–Giles<br />
+      <span class="faint">Mills · Finn · Petermann · Adler–Séligsohn</span>
+    </div>
+  </header>
 
-  <div class="stats">
-    <div class="stat"><div class="v">~1,400</div><div class="k">16th-c. peak</div></div>
-    <div class="stat"><div class="v">~140</div><div class="k">by 1690 · then plateau</div></div>
-    <div class="stat"><div class="v">85</div><div class="k">all-time low, 1888</div></div>
-    <div class="stat"><div class="v">1</div><div class="k">city left by ~1800 (Nablus)</div></div>
-  </div>
+  <nav class="crosslinks">
+    Communities:
+    <a href="index.html">Jewish</a> ·
+    <a class="active" href="samaritan.html">Samaritan</a> ·
+    <a href="christian.html">Christian</a>
+  </nav>
 
-  <p class="figttl">Population curve over the documented record, by category</p>
+  <p class="dek">
+    An indigenous Palestinian religious community ground to the edge of extinction — from ~1,400 in the
+    16th-century tax registers to a single endogamous remnant of ~140 at Nablus by 1900, its historic nadir,
+    before a slow recovery. The dominant cause was <em>religious coercion</em> — forced conversion under the
+    apostasy ratchet, central Gerizim bans, the 1841 "convert-or-exterminate" ruling — with fiscal extortion
+    and the tiny gene pool as aggravators. Click any row to surface the underlying source passages.
+  </p>
+
+  <div id="stats-root"></div>
+
+  <p class="figttl">Population &amp; the documented record, by year</p>
   <div class="chartcard"><div id="plot"></div></div>
   <div class="legend" id="legend"></div>
-  <p class="fignote">Population curve above eight category lanes on one shared timeline; each dot is a documented event (hover for the record).
-    Order-of-magnitude collapse over ~1.5 centuries (mostly the dissolution of the Gaza / Cairo / Damascus diaspora), then a long remnant
-    plateau. The <b>1831–40 Egyptian decade</b> shows in the <i>relief</i> lane — the one window of relief, in the community's own words;
-    the shaded band is the <b>1839–58 Tanzimat</b> reform era that, with no great-power patron, barely touched the Samaritans.</p>
+  <p class="fignote">
+    Population curve above eight category lanes on one shared timeline; each dot is a documented event
+    (hover for the record). Order-of-magnitude collapse over ~1.5 centuries (mostly the dissolution of the
+    Gaza / Cairo / Damascus diaspora), then a long remnant plateau. The <b>1831–40 Egyptian decade</b> shows
+    in the <i>relief</i> lane — the one window of relief, in the community's own words; the shaded band is the
+    <b>1839–58 Tanzimat</b> reform era that, with no great-power patron, barely touched the Samaritans.
+  </p>
 
   <h2 class="section">The documented record</h2>
-  <table>
-    <thead><tr><th>Date</th><th>Category</th><th>Place</th><th>Event</th></tr></thead>
-    <tbody id="log"><tr><td colspan="4" class="err">Loading events-samaritan.json …</td></tr></tbody>
-  </table>
+  <div id="app-root"></div>
 
-  <footer>
-    <p><b>Sources.</b> Reinhard Pummer, <i>The Samaritans: A Profile</i> (2016); Alan Crown (ed.), <i>The Samaritans</i> (1989, incl. Nathan Schur's
-      "Modern Period"); Anderson &amp; Giles, <i>The Keepers</i> (2002) &amp; <i>Tradition Kept</i> (2005); John Mills, <i>Three Months' Residence at
-      Nablus</i> (1864); James Finn, <i>Stirring Times</i>; Lewis &amp; Cohen 16th-c. <i>taḥrir</i> defters; and the community's own
-      <b>Adler &amp; Séligsohn Chronicle</b> (REJ 46, 1903).</p>
-    <p><b>Scope &amp; provenance.</b> Pre-1839 population figures are estimates — no systematic count exists before the mid-19th-c. traveler censuses.
-      Provenance is tagged per row (<span class="prov chronicle">community chronicle</span> = the Samaritans' own self-narration;
-      <span class="prov eyewitness">eyewitness</span>; <span class="prov primary">primary</span>; secondary = modern synthesis). The dominant cause was
-      religious coercion — forced conversion under the apostasy ratchet, central Gerizim bans, the 1841/42 "convert-or-exterminate" ruling — with fiscal
-      extortion and the tiny endogamous gene pool as aggravators. Part of the four-community comparison in <i>old-yishuv-samaritan-counterfactual-program.md</i>.</p>
+  <div class="endnotes">
+    <p>
+      <b>Sources.</b> Reinhard Pummer, <i>The Samaritans: A Profile</i> (2016); Alan Crown (ed.),
+      <i>The Samaritans</i> (1989, incl. Nathan Schur's "Modern Period"); Anderson &amp; Giles,
+      <i>The Keepers</i> (2002) &amp; <i>Tradition Kept</i> (2005); John Mills, <i>Three Months' Residence at
+      Nablus</i> (1864); James Finn, <i>Stirring Times</i>; Lewis &amp; Cohen 16th-c. <i>taḥrir</i> defters;
+      and the community's own <b>Adler &amp; Séligsohn Chronicle</b> (REJ 46, 1903).
+    </p>
+    <p>
+      <b>Scope &amp; provenance.</b> Pre-1839 population figures are estimates — no systematic count exists
+      before the mid-19th-c. traveler censuses. Provenance is tagged per row (<i>community chronicle</i> = the
+      Samaritans' own self-narration; <i>eyewitness</i>; <i>primary</i>; <i>secondary</i> = modern synthesis).
+      Part of the four-community comparison in <i>old-yishuv-samaritan-counterfactual-program.md</i>.
+    </p>
+  </div>
+
+  <footer class="colophon">
+    <div><b>Samaritan Life in Ottoman Palestine, 1516–1931</b> · Compiled inventory · Corpus-connected</div>
+    <div>Set in Source Serif 4 / Newsreader / Archivo</div>
   </footer>
+
 </div>
 
 <script>
 window.COMMUNITY_CFG = {
   title: "Samaritan population & documented record",
-  knots: [[1516,500],[1538,1400],[1567,1300],[1620,800],[1660,300],[1690,140],
-          [1760,150],[1800,150],[1840,180],[1853,122],[1855,150],[1888,85],
-          [1900,140],[1922,160],[1931,180]],
-  maxP: 1500, popUnit: "souls", curveColor: "#7a2c1e",
-  peakLabel: "~1,400 peak", peakYear: 1538,
-  yTicks: [0,500,1000,1500], yearRange: [1500,1950], tanzimat: [1839,1858],
-  xTicks: [1516,1567,1700,1800,1900],
-  cats: {
-    violence:    {label:"Violence",     color:"#7a2c1e"},
-    conversion:  {label:"Conversion",   color:"#8a5a2b"},
-    restriction: {label:"Restriction",  color:"#5a4a2e"},
-    extortion:   {label:"Extortion",    color:"#6b7280"},
-    protection:  {label:"Protection",   color:"#2d4a3a"},
-    relief:      {label:"Relief",       color:"#2f7d5b"},
-    disaster:    {label:"Disaster",     color:"#3a4a6b"},
-    demography:  {label:"Demography",   color:"#6b6358"},
-  },
   eventsUrl: "events-samaritan.json",
+  locations: ["Nablus", "Gaza", "Damascus", "Cairo", "Mount Gerizim", "Jerusalem", "Jaffa", "Safed"],
+  stats: [
+    { n: "~1,400", l: "16th-c. peak" },
+    { n: "~140",   l: "by 1690 · then plateau" },
+    { n: "85",     l: "all-time low, 1888" },
+    { n: "1",      l: "city left by ~1800 (Nablus)" }
+  ],
+  cats: {
+    violence:    { label: "Violence",    color: "#7a2c1e" },
+    conversion:  { label: "Conversion",  color: "#8a5a2b" },
+    restriction: { label: "Restriction", color: "#5a4a2e" },
+    extortion:   { label: "Extortion",   color: "#6b7280" },
+    protection:  { label: "Protection",  color: "#2d4a3a" },
+    relief:      { label: "Relief",      color: "#2f7d5b" },
+    disaster:    { label: "Disaster",    color: "#3a4a6b" },
+    demography:  { label: "Demography",  color: "#6b6358" }
+  },
+  chart: {
+    title: "Samaritan population & documented record",
+    knots: [[1516,500],[1538,1400],[1567,1300],[1620,800],[1660,300],[1690,140],
+            [1760,150],[1800,150],[1840,180],[1853,122],[1855,150],[1888,85],
+            [1900,140],[1922,160],[1931,180]],
+    maxP: 1500, popUnit: "souls", curveColor: "#7a2c1e", curveColorEst: "#8c8270",
+    peakLabel: "~1,400 peak", peakYear: 1538,
+    yTicks: [0, 500, 1000, 1500], yearRange: [1500, 1950], tanzimat: [1839, 1858],
+    xTicks: [1516, 1567, 1700, 1800, 1900]
+  }
 };
 </script>
-<script src="community-plot.js"></script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script src="broadsheet-chart.js"></script>
+<script type="text/babel" src="broadsheet-app.jsx"></script>
+
+<script>
+(function () {
+  function boot(data) {
+    window.DATA = data;
+    if (window.drawBroadsheetChart) window.drawBroadsheetChart(data);
+    (function mount() {
+      if (window.renderBroadsheet) window.renderBroadsheet();
+      else setTimeout(mount, 40);
+    })();
+  }
+  fetch(window.COMMUNITY_CFG.eventsUrl)
+    .then((r) => r.json())
+    .then(boot)
+    .catch(() => {
+      var el = document.getElementById("app-root");
+      if (el) el.innerHTML =
+        '<p class="empty">Could not load ' + window.COMMUNITY_CFG.eventsUrl +
+        ' — serve over http (e.g. python -m http.server 8080), not file://.</p>';
+    });
+})();
+</script>
 </body>
 </html>
