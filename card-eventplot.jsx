@@ -166,6 +166,7 @@
                 <circle
                   cx={d.x} cy={d.y} r={d.r + 5} fill="transparent" style={{ cursor: "pointer" }}
                   onMouseEnter={() => setHi(i)} onMouseLeave={() => setHi((p) => (p === i ? null : p))}
+                  onClick={() => setHi((p) => (p === i ? null : i))}
                 />
                 <circle
                   cx={d.x} cy={d.y} r={on ? d.r + 1.5 : d.r}

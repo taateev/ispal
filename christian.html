@@ -56,6 +56,7 @@
       <div id="plot"></div>
       <div class="legend" id="legend"></div>
       <p class="bcard-cap">A growth curve, not a collapse — the inverse of the Samaritan trajectory. A rooted majority-minority from the 16th century, the community rose roughly fourfold across the Tanzimat as <b>French, Russian and British</b> patronage compounded — at the recurring cost of backlash (1840, 1860).</p>
+      <div id="compare-root"></div>
     </div>
   </section>
   <p class="fignote">
@@ -91,7 +92,7 @@
 
   <footer class="colophon">
     <div><b>Christian Life in Ottoman Palestine, 1516–1931</b> · Compiled inventory · Corpus-connected</div>
-    <div>Set in Source Serif 4 / Newsreader / Archivo</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono</div>
   </footer>
 
 </div>
@@ -117,6 +118,41 @@ window.COMMUNITY_CFG = {
     conflict:    { label: "Holy Places", color: "#6b7280" },
     nationalism: { label: "Nationalism", color: "#5a2c5a" },
     coexistence: { label: "Coexistence", color: "#2e7d6b" }
+  },
+  actors: {
+    ottoman:   { label: "Ottoman state",  color: "#5a4a2e" },
+    local:     { label: "Local Muslims",  color: "#7a2c1e" },
+    ulama:     { label: "Muslim clergy",  color: "#5a3a2d" },
+    egyptian:  { label: "Egyptian rule",  color: "#8a5a2b" },
+    france:    { label: "France / Catholic", color: "#3a4a6b" },
+    russia:    { label: "Russia / Orthodox", color: "#2d4a3a" },
+    britain:   { label: "Britain / Protestant", color: "#3a3a6b" },
+    latin:     { label: "Latin clergy",   color: "#5a2c5a" },
+    orthodox:  { label: "Arab-Orthodox laity", color: "#2d5a4a" },
+    templer:   { label: "German Templers", color: "#6b4a2d" }
+  },
+  compare: {
+    pre: {
+      label: "Dhimmi era",
+      span: "1516–1840 · rooted minority · no patron",
+      rows: [
+        { k: "Population", v: "~8K → 15K", big: true },
+        { k: "Great-power patrons", v: "0" },
+        { k: "Documented events", v: "6" },
+        { k: "Institutions", v: "local" }
+      ]
+    },
+    post: {
+      label: "Tanzimat & patronage",
+      span: "1840–1931 · France · Russia · Britain",
+      rows: [
+        { k: "Population", v: "→ ~91K", big: true },
+        { k: "Great-power patrons", v: "3" },
+        { k: "Russian schools", v: "101 by 1914" },
+        { k: "Share of Palestine", v: "~11%" }
+      ]
+    },
+    foot: "A growth curve, not a collapse — the inverse of the Samaritan trajectory. Great-power patronage compounded institutions and numbers fourfold across the Tanzimat, at the recurring cost of backlash (1840, 1860)."
   },
   chart: {
     title: "Christian population & documented record",

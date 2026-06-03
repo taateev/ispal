@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=1280" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jewish Life in Ottoman Palestine, 1516–1914 — A Compiled Inventory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +44,7 @@
       radial-gradient(ellipse at top, rgba(0,0,0,0.02), transparent 60%),
       url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.04 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
   }
-  .wrap { max-width: 1240px; margin: 0 auto; padding: 56px 48px 96px; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: clamp(28px, 4vw, 56px) clamp(18px, 4vw, 48px) 96px; }
   .mast {
     border-top: 3px double var(--ink);
     border-bottom: 1px solid var(--ink);
@@ -90,7 +90,7 @@
   }
   .stats {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
     border-top: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
     margin: 0 0 36px;
@@ -646,6 +646,96 @@
   .halukah p { font-size: 13.5px; line-height: 1.6; color: var(--ink-2); margin: 14px 0 0; max-width: 960px; }
   .halukah p b { color: var(--ink); }
   @media (max-width: 720px) { .cmp-grid { grid-template-columns: 1fr; } .cmp-col.pre { border-right: 0; border-bottom: 1px solid var(--rule); } }
+
+  /* ── Mobile ─────────────────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .mast { grid-template-columns: 1fr; gap: 14px; }
+    .mast .meta { text-align: left; }
+    .notes { grid-template-columns: 1fr; gap: 28px; }
+  }
+  /* the stacked comparison card (card-combined.jsx) */
+  @media (max-width: 640px) {
+    .cmb .cmb-cmp { grid-template-columns: 1fr !important; }
+    .cmb .cmb-cmp .col.post { border-left: 0 !important; border-top: 1px solid #ddd4c2 !important; }
+    .cmb .cmb-head, .cmb .cmb-body { padding-left: 20px !important; padding-right: 20px !important; }
+  }
+  /* control rail */
+  @media (max-width: 680px) {
+    .controls { padding: 12px 11px; gap: 10px 12px; }
+    .controls label { width: 100%; margin-bottom: -2px; }
+    .tabs { width: 100%; }
+    .tab { flex: 1 1 auto; text-align: center; padding: 8px 7px; }
+    .search { flex: 1 1 100%; order: 5; }
+    .select { flex: 1 1 calc(50% - 7px); order: 6; }
+    .clearbtn { order: 7; }
+    /* inner data tables scroll within their panel instead of bursting the page */
+    .halukah, .disasters { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .halukah table, table.dis { min-width: 460px; }
+  }
+  /* the ledger restacks into broadsheet clipping cards */
+  @media (max-width: 600px) {
+    table.t { display: block; min-width: 0; font-size: 15px; }
+    table.t thead { display: none; }
+    table.t tbody { display: block; }
+    table.t tbody tr { display: block; }
+    table.t tbody tr.sec td { display: block; margin: 24px 0 13px; }
+    table.t tbody tr.sec:first-child td { margin-top: 4px; }
+    table.t tbody tr:not(.detail-row):not(.sec) {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 14px;
+      align-items: baseline;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--ink);
+      border-radius: 2px;
+      padding: 14px 15px 15px;
+      margin-bottom: 11px;
+    }
+    table.t tbody tr.expanded { background: var(--paper-2); margin-bottom: 0; }
+    table.t tbody tr:not(.detail-row):not(.sec):hover { background: var(--paper); }
+    table.t tbody tr.expanded:hover { background: var(--paper-2); }
+    table.t tbody tr:not(.detail-row):not(.sec) td { display: block; border: none !important; padding: 0; width: auto; }
+    table.t tbody tr:not(.detail-row):not(.sec) td.num { display: none !important; }
+    .col-date { grid-column: 1; font-size: 17px; }
+    .col-date .sub { margin-top: 5px; }
+    .col-loc { grid-column: 2; text-align: right; }
+    .col-loc .loc-name { font-size: 13px; color: var(--ink-3); }
+    .col-event { grid-column: 1 / -1; margin-top: 11px; font-size: 15px; }
+    .col-event blockquote { font-size: 14px; }
+    /* the actor / scale / source columns get a small label since the head is gone */
+    .col-actor, .col-scale, .col-src {
+      grid-column: 1 / -1;
+      margin-top: 12px;
+      padding-top: 11px !important;
+      border-top: 1px solid var(--rule-soft) !important;
+      width: 100%;
+    }
+    .col-actor::before, .col-scale::before, .col-src::before {
+      display: block;
+      font-family: var(--sans);
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .col-actor::before { content: "Actors"; }
+    .col-scale::before { content: "Scale"; }
+    .col-src::before { content: "Source"; }
+    .col-scale .big { display: inline-block; font-size: 17px; }
+    .detail-row { display: block; margin-bottom: 11px; }
+    .detail-row td { display: block; }
+    .detail-panel {
+      border: 1px solid var(--rule);
+      border-left-width: 3px;
+      border-radius: 0 0 2px 2px;
+      padding: 16px 16px 18px;
+    }
+    .linked-card { max-width: 100%; }
+  }
 </style>
 </head>
 <body>

@@ -79,8 +79,8 @@
       const post = evs.filter((e) => e.year >= TZ[0]);
       const preX = dodgeRun(pre, GL, DIVX - M);
       const postX = dodgeRun(post, DIVX + M, W - GR);
-      pre.forEach((e, i) => dots.push({ e, cat, x: preX[i], y: laneY(k), r: magR(e.n || 2) }));
-      post.forEach((e, i) => dots.push({ e, cat, x: postX[i], y: laneY(k), r: magR(e.n || 2) }));
+      pre.forEach((e, i) => dots.push({ e, cat, x: preX[i], y: laneY(k), r: magR(e.intensity || 2) }));
+      post.forEach((e, i) => dots.push({ e, cat, x: postX[i], y: laneY(k), r: magR(e.intensity || 2) }));
     });
     EVENTS = dots.map((d) => d.e);
 
@@ -143,6 +143,25 @@
     const host = document.getElementById("plot");
     if (host) { host.innerHTML = s.join(""); wireHover(host); }
     drawLegend();
+    drawCompare();
+  }
+
+  // Era comparison grid (pre-1840 dhimmi era vs Tanzimat & after) — parity with
+  // the flagship card. Reads COMMUNITY_CFG.compare; renders into #compare-root.
+  function drawCompare() {
+    const el = document.getElementById("compare-root");
+    const cmp = cfg.compare;
+    if (!el || !cmp) return;
+    const col = (c, side) => {
+      const rows = (c.rows || []).map((r) =>
+        `<div class="row"><span class="k">${esc(r.k)}</span>` +
+        `<span class="v${r.big ? " big" : ""}">${esc(r.v)}</span></div>`).join("");
+      return `<div class="col ${side}"><h4>${esc(c.label)}</h4>` +
+        `<p class="span">${esc(c.span)}</p>${rows}</div>`;
+    };
+    el.innerHTML =
+      `<div class="cmp2">${col(cmp.pre, "pre")}${col(cmp.post, "post")}</div>` +
+      (cmp.foot ? `<p class="cmp-foot">${cmp.foot}</p>` : "");
   }
 
   function wireHover(host) {
@@ -152,9 +171,7 @@
       tip.id = "cp-tip";
       document.body.appendChild(tip);
     }
-    host.addEventListener("mouseover", (ev) => {
-      const t = ev.target.closest(".cp-dot"); if (!t) return;
-      const e = EVENTS[+t.getAttribute("data-i")]; if (!e) return;
+    function fill(e) {
       const c = cats[e.cat] || {};
       tip.innerHTML =
         `<b style="color:${c.color || "#fff"}">${esc(e.date)} · ${esc(c.label || e.cat)}</b>` +
@@ -162,15 +179,36 @@
         `${esc(e.event)}` +
         (e.src ? `<div style="color:#a89e8d;margin-top:6px;font-size:11.5px">${esc(e.src)}${e.srcType ? " · " + esc(e.srcType) : ""}</div>` : "");
       tip.style.opacity = "1";
-    });
-    host.addEventListener("mousemove", (ev) => {
+    }
+    function place(cx, cy2) {
       const r = tip.getBoundingClientRect();
-      let x = ev.clientX + 14, y = ev.clientY + 14;
-      if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - 14;
-      if (y + r.height > innerHeight - 8) y = ev.clientY - r.height - 14;
+      let x = cx + 14, y = cy2 + 14;
+      if (x + r.width > innerWidth - 8) x = cx - r.width - 14;
+      if (x < 8) x = 8;
+      if (y + r.height > innerHeight - 8) y = cy2 - r.height - 14;
+      if (y < 8) y = 8;
       tip.style.left = x + "px"; tip.style.top = y + "px";
+    }
+    // Desktop: hover to reveal, follow the pointer.
+    host.addEventListener("mouseover", (ev) => {
+      const t = ev.target.closest(".cp-dot"); if (!t) return;
+      const e = EVENTS[+t.getAttribute("data-i")]; if (!e) return;
+      fill(e);
     });
+    host.addEventListener("mousemove", (ev) => { place(ev.clientX, ev.clientY); });
     host.addEventListener("mouseout", (ev) => { if (ev.target.closest(".cp-dot")) tip.style.opacity = "0"; });
+    // Touch / click: tap a dot to pin its record, tap elsewhere to dismiss.
+    host.addEventListener("click", (ev) => {
+      const t = ev.target.closest(".cp-dot"); if (!t) return;
+      const e = EVENTS[+t.getAttribute("data-i")]; if (!e) return;
+      const r = t.getBoundingClientRect();
+      fill(e);
+      place(r.left + r.width / 2, r.top + r.height / 2);
+      ev.stopPropagation();
+    });
+    document.addEventListener("click", (ev) => {
+      if (!ev.target.closest(".cp-dot")) tip.style.opacity = "0";
+    });
   }
 
   function drawLegend() {

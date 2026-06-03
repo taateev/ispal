@@ -1,12 +1,13 @@
 /* ============================================================================
    broadsheet-app.jsx — the React inventory for a community page
    Renders the stats bar, control rail (category tabs + search + location +
-   evidence filters), the sortable multi-column table with in-table category
-   section heads, and expandable corpus-passage detail rows.
+   actor + evidence filters), the sortable multi-column table with in-table
+   category section heads, and expandable corpus-passage + cross-link detail.
 
-   Tier 1: uses only fields present in the per-community JSON
-   (year, date, cat, location, event, quote?, src, srcType, passages[]).
-   No actor/scale/cross-link columns (those need data the light pages lack).
+   Tier 2: renders Actors + Scale columns and cross-links WHEN the per-community
+   JSON carries them (actorType[], actor, scaleBig, scaleNote, links[], n).
+   Pages whose data lacks those fields degrade gracefully (the columns simply
+   render empty). Brought to parity with the flagship index.html (Jewish page).
 
    Reads window.COMMUNITY_CFG + window.DATA. Call renderBroadsheet().
    ========================================================================== */
@@ -17,6 +18,7 @@ const CATS = CFG.cats || {};
 const CAT_KEYS = Object.keys(CATS);
 const CAT_ORDER = {};
 CAT_KEYS.forEach((k, i) => (CAT_ORDER[k] = i));
+const ACTORS = CFG.actors || {};
 
 const EVID_LABEL = {
   primary: "Primary",
@@ -27,6 +29,8 @@ const EVID_LABEL = {
 
 function catColor(cat) { return (CATS[cat] || {}).color || "#6b6358"; }
 function catLabel(cat) { return (CATS[cat] || {}).label || cat; }
+function actorColor(a) { return (ACTORS[a] || {}).color || "#6b6358"; }
+function actorLabel(a) { return (ACTORS[a] || {}).label || a; }
 
 /* ── Headline stats bar (bespoke per page, from cfg.stats) ─────────────── */
 function StatsBar() {
@@ -44,9 +48,17 @@ function StatsBar() {
   );
 }
 
-/* ── Expandable detail: corpus passages ───────────────────────────────── */
-function DetailPanel({ event }) {
+/* ── Expandable detail: corpus passages + connected events ─────────────── */
+function DetailPanel({ event, onNavigate }) {
   const passages = event.passages || [];
+  const links = event.links || [];
+  const linkedEvents = useMemo(() => {
+    return links.map((link) => {
+      const target = (window.DATA || []).find((e) => `${e.cat}-${e.n}` === link.id);
+      return target ? { ...link, target } : null;
+    }).filter(Boolean);
+  }, [links]);
+
   return (
     <div className="detail-panel" style={{ borderLeftColor: catColor(event.cat) }}>
       {passages.length > 0 ? (
@@ -68,6 +80,22 @@ function DetailPanel({ event }) {
             : " A full corpus passage is not yet curated for this row."}
         </div>
       )}
+      {linkedEvents.length > 0 && (
+        <React.Fragment>
+          <div className="detail-section-head">Connected events</div>
+          <div className="linked-cards">
+            {linkedEvents.map((link, i) => (
+              <button key={i} className="linked-card" onClick={() => onNavigate(link.id)}>
+                <div className="lc-label">{link.label}</div>
+                <div className="lc-title">
+                  <span className="lc-cat">{catLabel(link.target.cat)}</span>
+                  {link.target.date} — {link.target.location}
+                </div>
+              </button>
+            ))}
+          </div>
+        </React.Fragment>
+      )}
     </div>
   );
 }
@@ -77,6 +105,7 @@ function App() {
   const [cat, setCat] = useState("all");
   const [q, setQ] = useState("");
   const [loc, setLoc] = useState("all");
+  const [actor, setActor] = useState("all");
   const [evid, setEvid] = useState("all");
   const [sortKey, setSortKey] = useState("year");
   const [sortDir, setSortDir] = useState("asc");
@@ -84,11 +113,16 @@ function App() {
   const rowRefs = useRef({});
 
   const data = window.DATA || [];
-  // give every event a stable id + display index
+  // stable id + display index keyed on each event's own n (so cross-links resolve)
   const indexed = useMemo(
-    () => data.map((e, i) => ({ ...e, _id: `${e.cat}-${i}`, _n: i + 1 })),
+    () => data.map((e, i) => ({ ...e, _id: `${e.cat}-${e.n != null ? e.n : i}`, _n: e.n != null ? e.n : i + 1 })),
     [data]
   );
+
+  // does this dataset carry actor / scale data? (Tier-2 column gating — computed
+  // here, not at module load, so it sees window.DATA after the async fetch)
+  const hasActors = useMemo(() => data.some((r) => (r.actorType || []).length || (r.actor && r.actor !== "—")), [data]);
+  const hasScale = useMemo(() => data.some((r) => r.scaleBig || r.scale), [data]);
 
   const counts = useMemo(() => {
     const c = { all: indexed.length };
@@ -103,12 +137,20 @@ function App() {
     return seen;
   }, [indexed]);
 
+  // actor types actually present, ordered by the cfg.actors declaration
+  const actorTypes = useMemo(() => {
+    const present = new Set();
+    indexed.forEach((r) => (r.actorType || []).forEach((a) => present.add(a)));
+    return Object.keys(ACTORS).filter((k) => present.has(k));
+  }, [indexed]);
+
   const locations = CFG.locations || [];
 
   const rows = useMemo(() => {
     let r = indexed.slice();
     if (cat !== "all") r = r.filter((x) => x.cat === cat);
     if (loc !== "all") r = r.filter((x) => (x.location || "").includes(loc));
+    if (actor !== "all") r = r.filter((x) => (x.actorType || []).includes(actor));
     if (evid !== "all") r = r.filter((x) => x.srcType === evid);
     if (q.trim()) {
       const t = q.trim().toLowerCase();
@@ -116,6 +158,7 @@ function App() {
         (x.event || "").toLowerCase().includes(t) ||
         (x.quote || "").toLowerCase().includes(t) ||
         (x.location || "").toLowerCase().includes(t) ||
+        (x.actor || "").toLowerCase().includes(t) ||
         (x.src || "").toLowerCase().includes(t) ||
         (x.date || "").toLowerCase().includes(t) ||
         catLabel(x.cat).toLowerCase().includes(t)
@@ -132,18 +175,27 @@ function App() {
       return a.year - b.year; // tie-break chronological
     });
     return r;
-  }, [indexed, cat, q, loc, evid, sortKey, sortDir]);
+  }, [indexed, cat, q, loc, actor, evid, sortKey, sortDir]);
 
   function setSort(k) {
     if (sortKey === k) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
     else { setSortKey(k); setSortDir("asc"); }
   }
-  function clearFilters() { setCat("all"); setQ(""); setLoc("all"); setEvid("all"); }
+  function clearFilters() { setCat("all"); setQ(""); setLoc("all"); setActor("all"); setEvid("all"); }
   const sortMark = (k) => (sortKey === k ? (sortDir === "asc" ? "▲" : "▼") : "·");
   const showSectionHeads = cat === "all" && sortKey === "cat";
-  const hasFilters = cat !== "all" || q || loc !== "all" || evid !== "all";
+  const hasFilters = cat !== "all" || q || loc !== "all" || actor !== "all" || evid !== "all";
+
+  const colCount = 4 + (hasActors ? 1 : 0) + (hasScale ? 1 : 0);
 
   const toggleRow = useCallback((id) => setOpenId((p) => (p === id ? null : id)), []);
+  const navigateTo = useCallback((targetId) => {
+    setOpenId(targetId);
+    setTimeout(() => {
+      const el = rowRefs.current[targetId];
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 50);
+  }, []);
 
   return (
     <React.Fragment>
@@ -153,7 +205,7 @@ function App() {
           <button
             className={`tab ${cat === "all" ? "on" : ""}`}
             style={cat === "all" ? { background: "var(--ink)", borderColor: "var(--ink)" } : null}
-            onClick={() => setCat("all")}
+            onClick={() => { setCat("all"); setActor("all"); }}
           >
             All <span className="count">{counts.all}</span>
           </button>
@@ -162,7 +214,7 @@ function App() {
               key={k}
               className={`tab ${cat === k ? "on" : ""}`}
               style={cat === k ? { background: catColor(k), borderColor: catColor(k) } : null}
-              onClick={() => setCat(k)}
+              onClick={() => { setCat(k); setActor("all"); }}
             >
               {catLabel(k)} <span className="count">{counts[k]}</span>
             </button>
@@ -171,7 +223,7 @@ function App() {
         <input
           className="search"
           type="text"
-          placeholder="Search events, sources, places…"
+          placeholder="Search events, sources, actors…"
           value={q}
           onChange={(e) => setQ(e.target.value)}
         />
@@ -179,6 +231,12 @@ function App() {
           <select className="select" value={loc} onChange={(e) => setLoc(e.target.value)}>
             <option value="all">All places</option>
             {locations.map((l) => <option key={l} value={l}>{l}</option>)}
+          </select>
+        )}
+        {actorTypes.length > 0 && (
+          <select className="select" value={actor} onChange={(e) => setActor(e.target.value)}>
+            <option value="all">All actors</option>
+            {actorTypes.map((a) => <option key={a} value={a}>{actorLabel(a)}</option>)}
           </select>
         )}
         <select className="select" value={evid} onChange={(e) => setEvid(e.target.value)}>
@@ -200,6 +258,8 @@ function App() {
                 Place <span className="sortmark">{sortMark("location")}</span>
               </th>
               <th>Event</th>
+              {hasActors && <th>Actors</th>}
+              {hasScale && <th>Scale</th>}
               <th className={`sortable ${sortKey === "src" ? "sorted" : ""}`} onClick={() => setSort("src")}>
                 Source <span className="sortmark">{sortMark("src")}</span>
               </th>
@@ -207,17 +267,18 @@ function App() {
           </thead>
           <tbody>
             {rows.length === 0 && (
-              <tr><td colSpan="5" className="empty">No matching events. Adjust filters to widen.</td></tr>
+              <tr><td colSpan={colCount} className="empty">No matching events. Adjust filters to widen.</td></tr>
             )}
             {rows.map((r, i) => {
               const isOpen = openId === r._id;
               const showHead = showSectionHeads && (i === 0 || rows[i - 1].cat !== r.cat);
               const np = (r.passages || []).length;
+              const hasLinks = (r.links || []).length > 0;
               return (
                 <React.Fragment key={r._id}>
                   {showHead && (
                     <tr className="sec">
-                      <td colSpan="5">
+                      <td colSpan={colCount}>
                         <span className="secdot" style={{ background: catColor(r.cat) }}></span>
                         {catLabel(r.cat)}
                         <span className="seccount">{counts[r.cat]} {counts[r.cat] === 1 ? "event" : "events"}</span>
@@ -238,12 +299,27 @@ function App() {
                     <td className="col-event">
                       {r.event}
                       {r.quote && <blockquote>{r.quote}</blockquote>}
+                      {hasLinks && <span className="link-badge" title={`${r.links.length} connected event(s)`}>↔ {r.links.length}</span>}
                       <span className={`passage-badge ${np ? "" : "none"}`}>
                         {np
                           ? `▸ ${np} corpus passage${np > 1 ? "s" : ""}`
                           : "▸ source"}
                       </span>
                     </td>
+                    {hasActors && (
+                      <td className="col-actor">
+                        {(r.actorType || []).map((a) => (
+                          <span key={a} className="chip" style={{ color: actorColor(a) }}>{actorLabel(a)}</span>
+                        ))}
+                        {r.actor && r.actor !== "—" && <div className="actor-name">{r.actor}</div>}
+                      </td>
+                    )}
+                    {hasScale && (
+                      <td className="col-scale">
+                        {r.scaleBig && <span className="big">{r.scaleBig}</span>}
+                        {r.scaleNote && <span className="scale-note">{r.scaleNote}</span>}
+                      </td>
+                    )}
                     <td className="col-src">
                       <span className={`pill ${r.srcType}`}>{EVID_LABEL[r.srcType] || r.srcType}</span><br />
                       {r.src}
@@ -251,7 +327,7 @@ function App() {
                   </tr>
                   {isOpen && (
                     <tr className="detail-row">
-                      <td colSpan="5"><DetailPanel event={r} /></td>
+                      <td colSpan={colCount}><DetailPanel event={r} onNavigate={navigateTo} /></td>
                     </tr>
                   )}
                 </React.Fragment>

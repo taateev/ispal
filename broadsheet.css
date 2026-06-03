@@ -1,10 +1,11 @@
 /* ============================================================================
    broadsheet.css — shared design system for the ispal community inventories
    Ported from the flagship index.html (Jewish page) and unified for reuse by
-   samaritan.html + christian.html. Changes from the flagship:
-     · fully responsive (no fixed 1280px viewport; fluid down to phones)
-     · contrast bumps on the faintest ink tiers and provenance pills
-     · one shared token set + component library both pages consume
+   samaritan.html + christian.html. Design system is IDENTICAL to the flagship
+   (same tokens, Source Serif 4 / Inter type, same ink tiers) so all three pages
+   read as one set — data is the only difference. The sole structural change from
+   the flagship is that this sheet is fully responsive (no fixed 1280px viewport;
+   fluid down to phones) and shared by both light pages.
    ========================================================================== */
 
 :root {
@@ -13,8 +14,8 @@
   --paper-3: #e3dcc7;
   --ink: #1a1714;
   --ink-2: #3a352d;
-  --ink-3: #645c50;   /* was #6b6358 — nudged darker for body-label contrast */
-  --ink-4: #8c8270;   /* was #9a9080 — nudged darker so numerals read on paper */
+  --ink-3: #6b6358;
+  --ink-4: #9a9080;
   --rule: #c9bfa6;
   --rule-soft: #d9d0b8;
   --accent: #7a2c1e;
@@ -25,9 +26,9 @@
   --accent-6: #6b7280;
   --highlight: #f0e5c5;
   --serif: "Source Serif 4", "Iowan Old Style", "Palatino", Georgia, serif;
-  --display: "Newsreader", "Source Serif 4", Georgia, serif;
-  --sans: "Inter", "Archivo", -apple-system, BlinkMacSystemFont, sans-serif;
-  --label: "Archivo", "Inter", sans-serif;
+  --display: "Source Serif 4", "Iowan Old Style", "Palatino", Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --label: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
 }
 
@@ -184,6 +185,7 @@ body {
   color: #8a7e68;
   margin-bottom: 12px;
 }
+.bcard-rail span { white-space: nowrap; }
 .bcard-title {
   font-family: var(--display);
   font-weight: 500;
@@ -244,6 +246,77 @@ body {
   text-wrap: pretty;
 }
 .fignote b { color: var(--ink-2); font-style: normal; font-weight: 600; }
+
+/* ── In-card era comparison grid (parity with the flagship card-combined) ─ */
+.cmp2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid #ddd4c2;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0 4px;
+}
+.cmp2 .col { padding: 18px 20px 19px; }
+.cmp2 .col.pre  { background: rgba(176, 35, 26, 0.05); }
+.cmp2 .col.post { background: rgba(63, 138, 85, 0.06); border-left: 1px solid #ddd4c2; }
+.cmp2 h4 {
+  font-family: var(--label);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 2px;
+  font-weight: 700;
+}
+.cmp2 .col.pre h4  { color: var(--accent); }
+.cmp2 .col.post h4 { color: #357046; }
+.cmp2 .span {
+  font-family: var(--label);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9c8f78;
+  margin: 0 0 13px;
+  line-height: 1.4;
+}
+.cmp2 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 7px 0;
+  border-top: 1px solid rgba(28, 24, 21, 0.08);
+}
+.cmp2 .row .k { font-size: 13.5px; color: var(--ink-3); }
+.cmp2 .row .v {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.cmp2 .row .v.big { font-size: 22px; letter-spacing: -0.01em; }
+.cmp2 .col.pre  .row .v.big { color: var(--accent); }
+.cmp2 .col.post .row .v.big { color: #357046; }
+.cmp-foot {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-3);
+  font-style: italic;
+  margin: 14px 0 0;
+  text-wrap: pretty;
+}
+.cmp-foot b { color: var(--ink-2); font-style: normal; font-weight: 600; }
+
+/* richer chart tooltip — colored category swatch on the lead line */
+#cp-tip b { display: inline-flex; align-items: center; gap: 7px; }
+#cp-tip b::before {
+  content: "";
+  width: 9px; height: 9px; border-radius: 50%;
+  background: currentColor; flex: none;
+}
 
 /* ── Controls ─────────────────────────────────────────────────────────── */
 .controls {
@@ -343,7 +416,7 @@ table.t {
   font-family: var(--serif);
   font-size: 14.5px;
   line-height: 1.5;
-  min-width: 720px;
+  min-width: 880px;
 }
 table.t thead th {
   text-align: left;
@@ -439,6 +512,85 @@ table.t tbody tr.expanded:hover { background: var(--paper-2); }
   font-size: 11.5px;
   color: var(--ink-3);
   line-height: 1.5;
+}
+
+/* ── Tier-2 columns: Actors + Scale (parity with the flagship) ─────────── */
+.col-actor { width: 168px; font-size: 13.5px; color: var(--ink-2); }
+.col-actor .chip { margin: 0 3px 3px 0; }
+.col-actor .actor-name {
+  margin-top: 3px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.col-scale {
+  width: 124px;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+.col-scale .big {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 2px;
+  line-height: 1.05;
+}
+.col-scale .scale-note { display: block; color: var(--ink-3); font-size: 11px; }
+
+/* cross-link badge + connected-event cards */
+.link-badge {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 9px;
+  color: var(--accent-4);
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 6px;
+  opacity: 0.75;
+}
+.link-badge:hover { opacity: 1; }
+.linked-cards { display: flex; flex-wrap: wrap; gap: 10px; }
+.linked-card {
+  appearance: none;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 8px 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: left;
+  max-width: 360px;
+  transition: border-color 0.15s;
+}
+.linked-card:hover { border-color: var(--accent); }
+.linked-card .lc-label {
+  font-family: var(--label);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+  margin-bottom: 3px;
+}
+.linked-card .lc-title {
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.linked-card .lc-cat {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border: 1px solid var(--rule);
+  margin-right: 6px;
 }
 
 /* category chip (date sublabel mirror) + provenance pill */
@@ -627,9 +779,132 @@ h2.section {
 @media (max-width: 860px) {
   .mast { grid-template-columns: 1fr; gap: 14px; }
   .mast .meta { text-align: left; max-width: none; }
+  .bcard-head { padding-bottom: 18px; }
 }
-@media (max-width: 560px) {
-  .controls { padding: 12px 10px; }
-  .tab { padding: 6px 9px; font-size: 11px; }
-  table.t { font-size: 14px; }
+
+/* Tablet / large phone — let the control rail breathe and lay out in rows */
+@media (max-width: 680px) {
+  .controls { padding: 12px 11px; gap: 10px 12px; }
+  .controls label { width: 100%; margin-bottom: -2px; }
+  .tabs { width: 100%; }
+  .tab { flex: 1 1 auto; text-align: center; padding: 8px 8px; }
+  .search { flex: 1 1 100%; order: 5; }
+  .select { flex: 1 1 calc(50% - 7px); order: 6; }
+  .clearbtn { order: 7; }
+}
+
+/* Phone — the multi-column ledger restacks into broadsheet "clipping" cards.
+   thead is dropped; each <tr> becomes a self-contained record so nothing is
+   lost to a sideways scroll. */
+@media (max-width: 600px) {
+  .tablewrap { overflow: visible; }
+  table.t { min-width: 0; display: block; font-size: 15px; }
+  table.t thead { display: none; }
+  table.t tbody { display: block; }
+  table.t tbody tr { display: block; }
+
+  /* in-table category band */
+  table.t tbody tr.sec td {
+    display: block;
+    border-radius: 2px;
+    margin: 24px 0 13px;
+    letter-spacing: 0.16em;
+  }
+  table.t tbody tr:first-child.sec td { margin-top: 4px; }
+
+  /* each event → a clipping card */
+  table.t tbody tr.clickable {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 14px;
+    align-items: baseline;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-top: 2px solid var(--ink);
+    border-radius: 2px;
+    padding: 14px 15px 15px;
+    margin-bottom: 11px;
+  }
+  table.t tbody tr.clickable:hover { background: var(--paper); }
+  table.t tbody tr.clickable.expanded { background: var(--paper-2); margin-bottom: 0; border-bottom-color: var(--rule-soft); }
+  table.t tbody tr.clickable td {
+    display: block;
+    border: none !important;
+    padding: 0;
+    width: auto;
+  }
+
+  /* drop the running index on cards — the result count still reports totals */
+  table.t tbody tr.clickable .num { display: none; }
+
+  .col-date { grid-column: 1; font-size: 17px; }
+  .col-date .sub { margin-top: 5px; }
+  .col-loc { grid-column: 2; text-align: right; }
+  .col-loc .loc-name { font-size: 13px; color: var(--ink-3); }
+
+  .col-event { grid-column: 1 / -1; margin-top: 11px; font-size: 15px; }
+  .col-event blockquote { font-size: 14px; }
+  /* keep the "▸ N corpus passages" affordance, drop the redundant bare "source"
+     hint (the labelled Source footer below already says it) */
+  .col-event .passage-badge { margin-top: 11px; }
+  .col-event .passage-badge.none { display: none; }
+
+  .col-src {
+    grid-column: 1 / -1;
+    margin-top: 13px;
+    padding-top: 12px !important;
+    border-top: 1px solid var(--rule-soft) !important;
+    width: 100%;
+  }
+  .col-src::before {
+    content: "Source";
+    display: block;
+    font-family: var(--label);
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    margin-bottom: 6px;
+  }
+
+  /* Tier-2 columns restack like the source footer on phones */
+  .col-actor, .col-scale {
+    grid-column: 1 / -1;
+    margin-top: 13px;
+    padding-top: 12px !important;
+    border-top: 1px solid var(--rule-soft) !important;
+    width: 100%;
+  }
+  .col-actor:empty, .col-scale:empty { display: none !important; }
+  .col-actor::before, .col-scale::before {
+    display: block;
+    font-family: var(--label);
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    margin-bottom: 6px;
+  }
+  .col-actor::before { content: "Actors"; }
+  .col-scale::before { content: "Scale"; }
+  .col-scale .big { display: inline-block; font-size: 17px; }
+
+  .cmp2 { grid-template-columns: 1fr; }
+  .cmp2 .col.post { border-left: 0; border-top: 1px solid #ddd4c2; }
+
+  /* expanded detail reads as the back of the same clipping */
+  table.t tbody tr.detail-row { display: block; margin-bottom: 11px; }
+  table.t tbody tr.detail-row td { display: block; }
+  .detail-panel {
+    border: 1px solid var(--rule);
+    border-left-width: 3px;
+    border-top: 0;
+    border-radius: 0 0 2px 2px;
+    padding: 16px 16px 18px;
+  }
+
+  table.t tbody tr td.empty { display: block; padding: 48px 16px; }
+
+  .resultcount { text-align: center; }
 }

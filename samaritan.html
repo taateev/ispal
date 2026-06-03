@@ -56,6 +56,7 @@
       <div id="plot"></div>
       <div class="legend" id="legend"></div>
       <p class="bcard-cap">Collapse, then a long remnant plateau. The community fell an order of magnitude across ~1.5 centuries — mostly the dissolution of the Gaza, Cairo and Damascus diaspora — then held at ~140 souls at Nablus alone. The one window of relief was the <b>1831–40 Egyptian decade</b>; the <b>1839–58 Tanzimat</b>, with no great-power patron behind it, barely touched them.</p>
+      <div id="compare-root"></div>
     </div>
   </section>
   <p class="fignote">
@@ -84,7 +85,7 @@
 
   <footer class="colophon">
     <div><b>Samaritan Life in Ottoman Palestine, 1516–1931</b> · Compiled inventory · Corpus-connected</div>
-    <div>Set in Source Serif 4 / Newsreader / Archivo</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono</div>
   </footer>
 
 </div>
@@ -109,6 +110,41 @@ window.COMMUNITY_CFG = {
     relief:      { label: "Relief",      color: "#2f7d5b" },
     disaster:    { label: "Disaster",    color: "#3a4a6b" },
     demography:  { label: "Demography",  color: "#6b6358" }
+  },
+  actors: {
+    ottoman:       { label: "Ottoman state",       color: "#5a4a2e" },
+    governor:      { label: "Nablus governors",    color: "#6b3d12" },
+    local:         { label: "Local Muslims",       color: "#7a2c1e" },
+    ulama:         { label: "Muslim clergy",       color: "#5a3a2d" },
+    egyptian:      { label: "Egyptian rule",       color: "#8a5a2b" },
+    consular:      { label: "British consul",      color: "#2d4a5a" },
+    jewish:        { label: "Jewish authorities",  color: "#2d5a4a" },
+    philanthropist:{ label: "Foreign patron",      color: "#4a3a5a" },
+    internal:      { label: "Conversion / internal", color: "#6b6358" },
+    natural:       { label: "Natural disaster",    color: "#6b7280" }
+  },
+  compare: {
+    pre: {
+      label: "Dhimmi era",
+      span: "1516–1840 · 324 yrs · jizya in force · no patron",
+      rows: [
+        { k: "Population", v: "1,400 → 140", big: true },
+        { k: "Communities", v: "5 → 1" },
+        { k: "Coercion events", v: "9" },
+        { k: "Great-power patron", v: "none" }
+      ]
+    },
+    post: {
+      label: "Tanzimat & after",
+      span: "1840–1931 · ~91 yrs · no great-power patron",
+      rows: [
+        { k: "Population", v: "held ~140", big: true },
+        { k: "All-time low", v: "85 · 1888" },
+        { k: "Protection events", v: "4" },
+        { k: "16th-c. peak", v: "never regained" }
+      ]
+    },
+    foot: "Unlike the Jewish community, no consular patron stood behind the Samaritans — the Tanzimat reached them only as paper. The line held at a single Nablus remnant and crept back to ~180 by 1931, but the order-of-magnitude collapse was never reversed."
   },
   chart: {
     title: "Samaritan population & documented record",
