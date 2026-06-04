@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Muslim In-Migration into Ottoman Palestine, 1516–1917</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* ── Additions specific to the migration ledger ─────────────────────── */
+
+  /* Source-tradition pill palette (extends the .pill family in broadsheet.css) */
+  .pill.defter    { border-color: var(--accent-4); color: var(--accent-4); background: #eef0f5; }
+  .pill.sijill    { border-color: var(--accent-3); color: var(--accent-3); background: #ebf0ec; }
+  .pill.chronicle { border-color: var(--accent-5); color: #6f4416;         background: #f7efe2; }
+  .pill.consular  { border-color: var(--accent);   color: var(--accent);   background: #faf0eb; }
+  .pill.census    { border-color: var(--accent-2); color: var(--accent-2); background: #f2efe3; }
+  .pill.archival  { border-color: #3a3550;         color: #3a3550;         background: #eeecf3; }
+  .pill.secondary { border-color: var(--rule);     color: var(--ink-3);    background: var(--paper); }
+
+  .col-src .pill { margin: 0 4px 4px 0; }
+
+  /* Cohort cell: name + descriptive prose */
+  .cohort-name {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+  .cohort-name .orig { font-style: italic; font-weight: 500; color: var(--ink-2); }
+  .col-event p { margin: 0; }
+  .col-event .fig {
+    font-family: var(--label);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+  }
+
+  /* Scale / population cell */
+  .col-scale .big.qual { font-size: 14px; line-height: 1.2; letter-spacing: 0; }
+  .col-scale .big.none { color: var(--ink-4); font-weight: 500; }
+  .col-scale .big .star { color: var(--accent); font-weight: 700; }
+
+  /* Legal-status cell */
+  .col-status { font-family: var(--sans); font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+  .col-status .stat-lead { display: block; font-family: var(--serif); font-weight: 600; font-size: 13.5px; color: var(--ink); margin-bottom: 2px; }
+  .col-status .stat-lead.muhajir { color: var(--accent-4); }
+  .col-status .stat-note { display: block; color: var(--ink-3); font-size: 11px; }
+
+  /* Muhajir-regime note */
+  .regimenote {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    background: #f4efe4;
+    border: 1px solid #ddd4c2;
+    border-left: 3px solid var(--accent-4);
+    border-radius: 3px;
+    padding: 13px 16px;
+    margin: 0 0 26px;
+    max-width: 1040px;
+    text-wrap: pretty;
+  }
+  .regimenote b { color: var(--ink); font-weight: 600; }
+  .regimenote .rl {
+    display: block;
+    font-family: var(--label);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-4);
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  /* Thinly-attested flag */
+  .flag-weak {
+    display: inline-block;
+    font-family: var(--label);
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-3);
+    border: 1px dashed var(--ink-4);
+    background: repeating-linear-gradient(135deg, transparent, transparent 4px, rgba(154,144,128,0.10) 4px, rgba(154,144,128,0.10) 8px);
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-top: 9px;
+  }
+  tr.thin .col-date,
+  tr.thin .cohort-name { color: var(--ink-2); }
+  tr.thin td { background: rgba(154,144,128,0.045); }
+
+  /* Era band rows */
+  tr.era td {
+    background: var(--paper-3);
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 9px 14px;
+    font-family: var(--label);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  tr.era td .yr { font-family: var(--mono); font-weight: 500; letter-spacing: 0.02em; color: var(--ink-3); margin-left: 10px; }
+
+  /* Reception-zone cell */
+  .col-loc .zone-region {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--ink-2);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .col-loc .zone-places {
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+
+  /* column widths */
+  table.t { min-width: 1150px; }
+  .col-date { width: 98px; }
+  .col-scale { width: 108px; }
+  .col-status { width: 150px; }
+  .col-event { width: auto; }
+  .col-loc  { width: 150px; }
+  .col-src  { width: 118px; }
+  table.t thead th:last-child { white-space: normal; line-height: 1.3; }
+
+  /* combined-figure footnote */
+  .starnote {
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    line-height: 1.55;
+    margin: 12px 0 0;
+    max-width: 760px;
+    text-wrap: pretty;
+  }
+  .starnote .star { color: var(--accent); font-weight: 700; }
+
+  /* Source-tradition legend */
+  .tradlegend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 18px;
+    margin: 4px 0 30px;
+    padding: 14px 16px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+  .tradlegend .lg { display: inline-flex; align-items: baseline; gap: 7px; }
+  .tradlegend b { color: var(--ink-2); font-weight: 600; }
+
+  /* ── Print ──────────────────────────────────────────────────────────── */
+  @media print {
+    :root { --paper: #f5f1e8; }
+    html, body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page { size: A4 landscape; margin: 12mm 12mm 14mm; }
+    .wrap { max-width: none; padding: 0; }
+    .tablewrap { overflow: visible; }
+    table.t { min-width: 0; font-size: 11.5px; }
+    table.t thead th { position: static; }
+    table.t tbody tr { break-inside: avoid; }
+    .cohort-name { font-size: 12.5px; }
+    .tradlegend, .controls { break-inside: avoid; }
+    .colophon { break-inside: avoid; }
+    a[href] { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── Masthead ───────────────────────────────────────────────────── -->
+  <header class="mast">
+    <div>
+      <div class="eyebrow">Community Inventories · Ottoman Palestine</div>
+      <h1>Muslim In-Migration into Ottoman Palestine, <em>1516–1917</em></h1>
+      <p class="crosslinks">
+        <a href="index.html">‹&nbsp;Topics</a> &nbsp;·&nbsp; In-migration ledgers ·
+        <a class="active">Muslim</a> ·
+        <a href="jewish-migration-1516-1917.html">Jewish</a> ·
+        <a href="christian-migration-1516-1917.html">Christian</a>
+      </p>
+    </div>
+    <div class="meta">
+      <b>Scope</b> · the full Ottoman period<br />
+      <b>Window</b> · 1516–1917 (Ottoman conquest to the&nbsp;Mandate threshold)<br />
+      <span class="faint">Compiled from the corpus source ledger.<br />Sources tagged by evidentiary tradition.</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    Across the four centuries of Ottoman rule, settled and semi-settled Muslim populations entered Palestine
+    through several distinct channels — <em>the Maghribi and Mamluk-residue communities of the classical
+    centuries, the sedentarization of bedouin clans and military households, tribal and pastoral expansion,
+    state-directed military and labour relocation, and the state-assisted resettlement of refugees fleeing
+    imperial collapse on the empire's Caucasian, Balkan and North-African frontiers.</em> This table lists
+    each documented cohort with its period, an order-of-magnitude population estimate, its legal status and
+    land tenure, its principal reception zones, and the kind of primary evidence on which the entry rests.
+  </p>
+
+  <!-- ── Headline stats ─────────────────────────────────────────────── -->
+  <div class="stats">
+    <div class="stat"><div class="n">18</div><div class="l">Migration cohorts</div></div>
+    <div class="stat"><div class="n">1516–1917</div><div class="l">Period covered</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">Ottoman centuries</div></div>
+    <div class="stat"><div class="n">3</div><div class="l">Thinly attested</div></div>
+  </div>
+
+  <!-- ── Source-tradition legend ────────────────────────────────────── -->
+  <div class="tradlegend">
+    <span class="lg"><span class="pill defter">Defter</span> <b>Ottoman fiscal / cadastral register</b></span>
+    <span class="lg"><span class="pill sijill">Sijill</span> <b>Shariʿa court record</b></span>
+    <span class="lg"><span class="pill chronicle">Chronicle</span> <b>Arabic narrative chronicle</b></span>
+    <span class="lg"><span class="pill consular">Consular</span> <b>European consular / traveller</b></span>
+    <span class="lg"><span class="pill census">Census</span> <b>Ottoman / Mandate statistical</b></span>
+    <span class="lg"><span class="pill archival">Archival</span> <b>State archive (e.g. Refugee Commission)</b></span>
+    <span class="lg"><span class="pill secondary">Secondary</span> <b>Modern synthesis only</b></span>
+  </div>
+
+  <div class="regimenote">
+    <span class="rl">On legal status &amp; land tenure</span>
+    Muslim refugees resettled in the late Ottoman decades came under the <b>muhajir regime</b>: the Refugee
+    Commission <i>(Muhacirin Komisyonu, est. 1860)</i> granted a standard package — free allotments of state
+    <i>(miri)</i> or dead <i>(mawat)</i> land, a conscription exemption (initially up to 25 years), a
+    multi-year tax holiday, cash stipends (≈15 <i>kuruş</i> per adult, 7.5 per child) and gifts of oxen, seed
+    and tools, plus automatic Ottoman citizenship. The <b>Circassian, Chechen and Bosnian</b> cohorts received
+    these terms in full. Earlier and tribal cohorts instead held land through religious endowment <i>(waqf)</i>,
+    tax-farms <i>(iltizām)</i>, sanjaq appointments or military grants; the Algerians could often claim
+    French-subject protection, and the Indian residue British protection, under the Capitulations.
+  </div>
+
+  <!-- ── The ledger ─────────────────────────────────────────────────── -->
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr>
+          <th class="num">#</th>
+          <th>Period</th>
+          <th>Cohort &amp; pattern</th>
+          <th>Scale (est. population)</th>
+          <th>Legal status &amp; tenure</th>
+          <th>Principal reception zones</th>
+          <th>Source tradition</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="era"><td colspan="7">Ottoman-classical <span class="yr">1516 – 1700</span></td></tr>
+
+        <!-- 1 — Maghariba -->
+        <tr>
+          <td class="num">01</td>
+          <td class="col-date">16th–17th c.<span class="sub">Maghribi waqf</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Maghariba <span class="orig">(North-African Muslims)</span></div>
+            <p>North-African Muslims — Moroccan, Algerian, Tunisian — clustered around the Maliki-rite Maghariba
+            endowment near the Western Wall, a community whose waqf base reached back to Saladin. Household
+            counts in Jerusalem rose across the sixteenth century, with further nodes in Hebron and Gaza.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">31 → 130</span>
+            <span class="scale-note">Jerusalem households (~155 → 650 persons); + Hebron &amp; Gaza nodes</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Waqf endowment</span>
+            <span class="stat-note">Maliki tāʾifa under the Shaykh al-Maghariba</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem · Hebron · Gaza</span>
+            <span class="zone-places">Maghariba (Mughrabi) Quarter</span>
+          </td>
+          <td class="col-src">
+            <span class="pill defter">Defter</span>
+            <span class="pill sijill">Sijill</span>
+          </td>
+        </tr>
+
+        <!-- 2 — Mamluk-era ethnic quarters -->
+        <tr>
+          <td class="num">02</td>
+          <td class="col-date">13th c., sedimented<span class="sub">Fossilized labels</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Mamluk-era ethnic quarters</div>
+            <p>Quarter-names recording Kurdish, Turcoman, Bashkir and Egyptian Mamluk-era plantings survived in
+            Ramla, Gaza, Safed and Hebron — but by the sixteenth century these were sedimented local
+            populations, fossilized labels rather than active in-migration.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big none">—</span>
+            <span class="scale-note">no substantial 16th-c. influx; sedimented residue</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Ordinary subjects</span>
+            <span class="stat-note">reaya; no special grant (sedimented residue)</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Ramla · Gaza · Safed · Hebron</span>
+            <span class="zone-places">ethnic quarter-toponyms</span>
+          </td>
+          <td class="col-src">
+            <span class="pill defter">Defter</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 3 — Jundi veterans -->
+        <tr>
+          <td class="num">03</td>
+          <td class="col-date">16th c.<span class="sub">Mamluk garrison</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Mamluk <span class="orig">jundī</span> veterans</div>
+            <p>Retired Mamluk soldiery — the <span class="orig">mutekāʿid</span> of the registers — remained
+            very substantially represented in Gaza, Jerusalem and Safed for some eighty years after the 1517
+            Ottoman conquest: a sedentarizing garrison residue of the previous regime.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Substantial</span>
+            <span class="scale-note">garrison residue, esp. Gaza; ~80 yrs post-1517</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Military pension</span>
+            <span class="stat-note"><span class="orig">mutekāʾid</span> — retired askerī fiscal status</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Gaza · Jerusalem · Safed</span>
+            <span class="zone-places">former Mamluk garrison towns</span>
+          </td>
+          <td class="col-src">
+            <span class="pill defter">Defter</span>
+          </td>
+        </tr>
+
+        <!-- 4 — Tarabay -->
+        <tr>
+          <td class="num">04</td>
+          <td class="col-date">16th–17th c.<span class="sub">Bedouin sedentarization</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Ṭarabāy sedentarizing bedouin</div>
+            <p>The Ṭarabāy clan, holding sanjaq appointments over the Lajjun district, sedentarized from a
+            bedouin band into a settled, tax-holding presence across the Acre plain and the Marj Ibn ʿĀmir
+            (Jezreel valley).</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Clan-scale</span>
+            <span class="scale-note">tribal band sedentarizing into villages</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Sanjaq appointment</span>
+            <span class="stat-note">clan granted tax authority over the Lajjun district</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Acre plain · Marj Ibn ʿĀmir</span>
+            <span class="zone-places">Lajjun sanjaq</span>
+          </td>
+          <td class="col-src">
+            <span class="pill defter">Defter</span>
+            <span class="pill sijill">Sijill</span>
+          </td>
+        </tr>
+
+        <!-- 5 — Farrukh dynasty (thin) -->
+        <tr class="thin">
+          <td class="num">05</td>
+          <td class="col-date">c.1562–1640s<span class="sub">Circassian household</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Farrukh dynasty</div>
+            <p>A Circassian-Mamluk household that rose to dominate the Jerusalem sanjaq across several
+            generations — an elite military lineage drawn through the Caucasus-to-Mamluk pipeline.</p>
+            <span class="flag-weak">Thinly attested · single court-record series</span>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">~50–100 + deps</span>
+            <span class="scale-note">elite military household</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Provincial office</span>
+            <span class="stat-note">askerī household holding the Jerusalem sanjaq</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem district</span>
+            <span class="zone-places">sanjaq administration</span>
+          </td>
+          <td class="col-src">
+            <span class="pill sijill">Sijill</span>
+          </td>
+        </tr>
+
+        <!-- 6 — Druze under Fakhr al-Din -->
+        <tr>
+          <td class="num">06</td>
+          <td class="col-date">16th–17th c.<span class="sub">Maʿnid expansion</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Druze under Fakhr al-Dīn</div>
+            <p>Under the Maʿnid amir Fakhr al-Dīn II, Druze settlement pressed briefly onto Mount Carmel from
+            its Mount-Lebanon and Hauran heartland — a village-scale, largely peripheral intrusion into
+            Palestine's north.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Village-scale</span>
+            <span class="scale-note">peripheral; mostly Hauran, Carmel briefly</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Tax-farm <span class="orig">(iltizām)</span></span>
+            <span class="stat-note">Maʿnid amirate over the region</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Mount Carmel (briefly)</span>
+            <span class="zone-places">from Mt Lebanon / Hauran</span>
+          </td>
+          <td class="col-src">
+            <span class="pill defter">Defter</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <tr class="era"><td colspan="7">Late Ottoman-classical &amp; Pasha-cascade <span class="yr">1700 – 1882</span></td></tr>
+
+        <!-- 7 — ʿAnaza -->
+        <tr>
+          <td class="num">07</td>
+          <td class="col-date">late 17th c.+<span class="sub">Pastoral frontier</span></td>
+          <td class="col-event">
+            <div class="cohort-name">ʿAnaza bedouin expansion</div>
+            <p>Westward pastoral-nomadic expansion of the ʿAnaza tribal confederation out of the Syrian
+            desert onto the Hauran plateau and the eastern Galilee grazing frontier — a seasonal-then-settled
+            presence on the steppe margin rather than a directed resettlement. Seetzen, travelling in 1805–07,
+            recorded the ʿAnaza as the largest tribe of the region.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big none">—</span>
+            <span class="scale-note">pastoral confederation; Palestine presence not censused</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Outside land tenure</span>
+            <span class="stat-note">nomadic grazing; no land grant</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Hauran &amp; eastern Galilee frontier</span>
+            <span class="zone-places">Golan margins · Bet She'an / Jordan valley grazing grounds</span>
+          </td>
+          <td class="col-src">
+            <span class="pill consular">Consular</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 8 — Zaydani -->
+        <tr>
+          <td class="num">08</td>
+          <td class="col-date">1700–1776<span class="sub">Autonomous Galilee</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Zaydani consolidation <span class="orig">(Ẓāhir al-ʿUmar)</span></div>
+            <p>The rise of the autonomous Zaydani sheikhdom under Ẓāhir al-ʿUmar al-Zaydānī drew merchants,
+            soldiery and Maghribi traders into a fortifying Galilee built on the cotton-and-grain trade with
+            Marseille. Tiberias, Acre, Safad and Nazareth were rebuilt and repopulated under his rule.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big none">—</span>
+            <span class="scale-note">state consolidation; attached in-migration not quantified</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Tax-farm <span class="orig">(iltizām)</span></span>
+            <span class="stat-note">autonomous multazim ruling family</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Galilee</span>
+            <span class="zone-places">Tiberias · Acre · Safad · Nazareth · Shefaʿamr</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill consular">Consular</span>
+          </td>
+        </tr>
+
+        <!-- 9 — Jezzar -->
+        <tr>
+          <td class="num">09</td>
+          <td class="col-date">1776–1804<span class="sub">Acre pashalik</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Al-Jazzār's Acre household &amp; garrison</div>
+            <p>Aḥmad Pasha al-Jazzār, a Bosnian-born mamluk, governed Acre with an imported household of
+            Caucasian and Balkan mamluks and a standing force of North-African and Anatolian troops — fixing
+            a polyglot garrison population on the northern coast.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Low thousands</span>
+            <span class="scale-note">standing garrison &amp; mamluk household (estimate)</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Ottoman governor</span>
+            <span class="stat-note">wālī of Sidon / Acre; state office</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Acre &amp; coastal Galilee</span>
+            <span class="zone-places">ʿAkkā citadel &amp; environs · coastal garrison towns</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill consular">Consular</span>
+          </td>
+        </tr>
+
+        <!-- 10 — Mercenary streams -->
+        <tr>
+          <td class="num">10</td>
+          <td class="col-date">18th c.<span class="sub">Garrison labour</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Maghribi, Dalātiyya &amp; Lawand mercenary units</div>
+            <p>Recurrent recruitment of Maghribi, Dalātiyya and Lawand mercenary companies by Galilee and
+            Acre rulers across the century settled bands of soldiery — many of Maghrebi and Anatolian
+            origin — into the coastal towns they garrisoned.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Hundreds–<br />low thousands</span>
+            <span class="scale-note">mercenary companies, cumulative over the century</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Paid soldiery</span>
+            <span class="stat-note">wages &amp; quartering; no land grant</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Galilee &amp; Acre garrisons</span>
+            <span class="zone-places">Acre · Tiberias · Safad fortified towns</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill consular">Consular</span>
+          </td>
+        </tr>
+
+        <!-- 11 — Egyptians under Ibrahim Pasha -->
+        <tr>
+          <td class="num">11</td>
+          <td class="col-date">1831–1840<span class="sub">Egyptian occupation</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Egyptian fellahin &amp; soldiery <span class="orig">(Ibrāhīm Pasha)</span></div>
+            <p>Ibrāhīm Pasha's occupation of Bilād al-Shām under Mehmed Ali of Egypt brought Egyptian
+            fellahin, soldiers and labourers into the coastal plain; many remained after the 1840 withdrawal.
+            Egyptian-origin family names persisted in roughly <span class="fig">50</span> villages and in the
+            Jaffa quarters of Manshiyya and Abū Kabīr.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~50</span>
+            <span class="scale-note">villages with family-name retention; total population figure contested</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Miri-land settlement</span>
+            <span class="stat-note">no muhajir package; regularised as Ottoman subjects after 1840</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Coastal plain</span>
+            <span class="zone-places">Jaffa (Manshiyya, Abū Kabīr) · Sharon villages · al-Jūra (Gaza coast)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill census">Census</span>
+            <span class="pill archival">Archival</span>
+          </td>
+        </tr>
+
+        <!-- 12 — Maghribi / Abd al-Qadir -->
+        <tr>
+          <td class="num">12</td>
+          <td class="col-date">1850s–1860s<span class="sub">Post-1830 Maghreb</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Algerian Maghribis <span class="orig">(ʿAbd al-Qādir's followers)</span></div>
+            <p>Algerian followers of ʿAbd al-Qādir al-Jazāʾirī, displaced by the French conquest of Algeria
+            and the 1860 Mount Lebanon war, settled in Galilee villages, on Mount Carmel, and in Jerusalem's
+            centuries-old Maghariba Quarter.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Several<br />thousand</span>
+            <span class="scale-note">in the Galilee alone (Schölch)</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Refugees / French protégés</span>
+            <span class="stat-note">many claimed French-subject status (post-1830 Algeria); settled in villages</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Galilee · Mt Carmel · Jerusalem</span>
+            <span class="zone-places">Galilee villages · Mount Carmel · Maghariba Quarter (Jerusalem)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill sijill">Sijill</span>
+          </td>
+        </tr>
+
+        <tr class="era"><td colspan="7">Late Ottoman / early Mandate <span class="yr">1860 – 1917</span></td></tr>
+
+        <!-- 13 — Druze 1860 -->
+        <tr>
+          <td class="num">13</td>
+          <td class="col-date">1860+<span class="sub">1860 Lebanon war</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Druze refugees from Mount Lebanon</div>
+            <p>Druze fleeing the 1860 sectarian war in Mount Lebanon reinforced existing Druze villages on
+            Mount Carmel and in the western Galilee — absorbed into the established Carmel-area communities.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">A few<br />thousand</span>
+            <span class="scale-note">reinforcing existing Carmel / Galilee villages</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Ottoman subjects</span>
+            <span class="stat-note">absorbed into existing Druze villages</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Mt Carmel &amp; western Galilee</span>
+            <span class="zone-places">ʿUsfiya · Daliyat al-Karmel · western Galilee villages</span>
+          </td>
+          <td class="col-src">
+            <span class="pill consular">Consular</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 14 — Circassians -->
+        <tr>
+          <td class="num">14</td>
+          <td class="col-date">1864–1880s<span class="sub">Caucasus exodus</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Circassian muhājirūn</div>
+            <p>Muslim refugees of the Russian conquest of the Caucasus, resettled by the Ottoman Refugee
+            Commission <span class="orig">(Muhacirin Komisyonu)</span> under its <span class="orig">iskān</span>
+            programme of land, tax exemption and tools. The largest of the Caucasus streams in Palestine,
+            founding Kfar Kama, Reihaniya and the coastal village at Qisarya.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">≈10–15k<span class="star">*</span></span>
+            <span class="scale-note">combined Caucasus &amp; Balkan muhājirūn in Palestine — Circassians the largest share</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead muhajir">Muhajir iskān package</span>
+            <span class="stat-note">free miri/mawat land · ~25-yr conscription exemption · tax holiday · stipend · tools · citizenship</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Lower &amp; Upper Galilee · coast</span>
+            <span class="zone-places">Kfar Kama · Reihaniya · Qisarya (Caesarea)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill census">Census</span>
+            <span class="pill archival">Archival</span>
+          </td>
+        </tr>
+
+        <!-- 15 — Chechens -->
+        <tr>
+          <td class="num">15</td>
+          <td class="col-date">1864–1880s<span class="sub">Caucasus exodus</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Chechen &amp; Ingush muhājirūn</div>
+            <p>Part of the same 1864 Caucasus exodus; Chechen and Ingush refugees were settled by the Refugee
+            Commission across the northern frontier — a smaller and more dispersed stream than the Circassian
+            cohort, documented in the Ottoman resettlement archive.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big none">—</span>
+            <span class="scale-note">part of the combined <span style="color:var(--accent);font-weight:700">*</span> total; small, dispersed</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead muhajir">Muhajir iskān package</span>
+            <span class="stat-note">same Refugee-Commission terms</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Northern Galilee frontier</span>
+            <span class="zone-places">scattered Galilee resettlement (larger sister-settlements in Transjordan)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill archival">Archival</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 16 — Bosnians -->
+        <tr>
+          <td class="num">16</td>
+          <td class="col-date">post-1878<span class="sub">Balkan muhājirūn</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Bosnian muhājirūn</div>
+            <p>Bosnian Muslims emigrating after the 1878 Habsburg occupation of Bosnia were resettled by the
+            Ottoman state across its territories — part of a wider movement of some
+            <span class="fig">150,000</span> Bosnian Muslims (1881–1911). In Palestine they refounded the
+            coastal village at Qisarya (Caesarea).</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">One village</span>
+            <span class="scale-note">Qisarya; a few hundred (part of the combined <span style="color:var(--accent);font-weight:700">*</span> total)</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead muhajir">Muhajir iskān package</span>
+            <span class="stat-note">settled on mawat ruins (Qisarya); same terms</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Coast</span>
+            <span class="zone-places">Qisarya (Caesarea)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill census">Census</span>
+            <span class="pill archival">Archival</span>
+          </td>
+        </tr>
+
+        <!-- 17 — Turkmen & Kurds (weak) -->
+        <tr class="thin">
+          <td class="num">17</td>
+          <td class="col-date">late 19th c.<span class="sub">Pastoral settlement</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Turkmen &amp; Kurdish settlers</div>
+            <p>Turkmen and Kurdish pastoralist-cultivators settled the Ruha heights and the northern
+            Samaria / Marj Ibn ʿĀmir margins in the later nineteenth century.</p>
+            <span class="flag-weak">Thinly attested · secondary synthesis only</span>
+          </td>
+          <td class="col-scale">
+            <span class="big none">—</span>
+            <span class="scale-note">not quantified in the record</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Tapu settlement</span>
+            <span class="stat-note">sedentarised onto state land</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Northern Samaria</span>
+            <span class="zone-places">Ruha heights · Marj Ibn ʿĀmir (Jezreel) margins</span>
+          </td>
+          <td class="col-src">
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 18 — Indians (weak) -->
+        <tr class="thin">
+          <td class="num">18</td>
+          <td class="col-date">late 19th–<br />early 20th c.<span class="sub">Pilgrim residue</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Indian Muslim pilgrim residue</div>
+            <p>A small residual community of Indian Muslims — pilgrims and Sufi devotees who remained after
+            the Hajj — clustered around the Indian Hospice in the Old City of Jerusalem.</p>
+            <span class="flag-weak">Thinly attested · suggestive, secondary only</span>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Dozens–<br />low hundreds</span>
+            <span class="scale-note">small residual community (estimate)</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">British protégés</span>
+            <span class="stat-note">Capitulation protection; pilgrim residue</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem (Old City)</span>
+            <span class="zone-places">Indian Hospice · Bāb al-Zāhira quarter</span>
+          </td>
+          <td class="col-src">
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <p class="starnote">
+    <span class="star">*</span> The Circassian, Chechen and Bosnian muhājirūn together account for an estimated
+    <b>10,000–15,000</b> of the Palestine resettlement (Hamed-Troyansky, drawing on the Ottoman Refugee
+    Commission archive). The total is not cleanly separable by group; the Circassians were the largest share.
+  </p>
+
+  <p class="resultcount"><b>18</b> cohorts · ordered by approximate start date · <b>3</b> flagged as thinly attested</p>
+
+  <!-- ── Endnotes ───────────────────────────────────────────────────── -->
+  <div class="endnotes">
+    <h2 class="section">Note on method &amp; sources</h2>
+    <p>
+      This is a <b>descriptive ledger</b>, not an argument, covering the full Ottoman period. Each row records
+      a distinct stream of Muslim settlement into Palestine, ordered by approximate start date and grouped into
+      three eras. The <b>source-tradition tags</b> indicate the kind of primary evidence behind each entry —
+      fiscal registers <i>(defter)</i>, court records <i>(sijill)</i>, Arabic narrative chronicles, European
+      consular and travellers' accounts, Ottoman and Mandate census material, and state-archive holdings such
+      as the Ottoman Refugee Commission <i>(Muhacirin Komisyonu)</i> records. Where an entry rests only on
+      modern synthesis it carries a <b>Secondary</b> tag; three cohorts are additionally
+      <b>flagged as thinly attested</b>.
+    </p>
+    <p>
+      <b>The classical centuries (1516–1700) are largely sedentarization, not mass flow.</b> The Maghariba
+      grew as a distinct community, but the Mamluk-era ethnic quarters were fossilized labels — local
+      populations by 1525, not active in-migration — and the jundī veterans and Ṭarabāy clan were the
+      previous regime's military residue settling down. The first mass flows on the Muslim side open with the
+      Egyptians under Ibrāhīm Pasha (1831) and the mid-century refugee resettlements — the same Tanzimat-era
+      rupture as the Old Yishuv's protected immigration (1838–82) and the Aliyot on the companion sheet.
+    </p>
+    <p>
+      <b>Population figures are order-of-magnitude only</b>, and several — the Mandate-cusp Caucasus totals
+      above all — are contested in the historiography; the pre-census cohorts (tribal expansion, the
+      eighteenth-century garrisons) were never counted and are marked <i>not quantified</i>. The window opens
+      at 1516 with the Ottoman conquest and closes at 1917 with the end of Ottoman rule.
+    </p>
+    <p>
+      <b>Drawn from</b> · Hütteroth &amp; Abdulfattah, <i>Historical Geography of Palestine</i> (1977) ·
+      Lewis &amp; Cohen, <i>Population and Revenue in the Towns of Palestine</i> (1978) · Ze'evi,
+      <i>An Ottoman Century</i> (1996) · Rafeq on the eighteenth-century Damascene chronicles · Seetzen,
+      <i>Reisen durch Syrien, Palästina…</i> (1854) · Schölch, <i>Palestine in Transformation 1856–1882</i>
+      (1993) · Grossman, <i>Rural Arab Demography</i> (2011) · Hamed-Troyansky, <i>Empire of Refugees</i>
+      (2024) · Lemire, <i>Au pied du Mur</i> (2022) · Mills, <i>Census of Palestine 1931</i> ·
+      <i>Survey of Palestine 1945–46</i>.
+    </p>
+  </div>
+
+  <!-- ── Colophon ───────────────────────────────────────────────────── -->
+  <div class="colophon">
+    <span>Community Inventories — Ottoman Palestine</span>
+    <span><b>Muslim in-migration</b> · 1516–1917 · descriptive ledger</span>
+    <span>Source-tradition tags per the corpus provenance ledger</span>
+  </div>
+
+</div>
+</body>
+</html>

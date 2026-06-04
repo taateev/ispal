@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Christian In-Migration into Ottoman Palestine, 1516–1917</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* ── Additions specific to the migration ledger ─────────────────────── */
+
+  /* Source-tradition pill palette (extends the .pill family in broadsheet.css) */
+  .pill.ecclesiastical { border-color: #3a3550;       color: #3a3550;         background: #eeecf3; }
+  .pill.consular       { border-color: var(--accent);   color: var(--accent);   background: #faf0eb; }
+  .pill.census         { border-color: var(--accent-2); color: var(--accent-2); background: #f2efe3; }
+  .pill.settler        { border-color: var(--accent-3); color: var(--accent-3); background: #ebf0ec; }
+  .pill.secondary      { border-color: var(--rule);     color: var(--ink-3);    background: var(--paper); }
+
+  .col-src .pill { margin: 0 4px 4px 0; }
+
+  /* Cohort cell: name + descriptive prose */
+  .cohort-name {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+  .cohort-name .orig { font-style: italic; font-weight: 500; color: var(--ink-2); }
+  .col-event p { margin: 0; }
+  .col-event .fig {
+    font-family: var(--label);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+  }
+
+  /* Scale / population cell */
+  .col-scale .big.qual { font-size: 14px; line-height: 1.2; letter-spacing: 0; }
+  .col-scale .big.none { color: var(--ink-4); font-weight: 500; }
+
+  /* Era band rows */
+  tr.era td {
+    background: var(--paper-3);
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 9px 14px;
+    font-family: var(--label);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  tr.era td .yr { font-family: var(--mono); font-weight: 500; letter-spacing: 0.02em; color: var(--ink-3); margin-left: 10px; }
+
+  /* Reception-zone cell */
+  .col-loc .zone-region {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--ink-2);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .col-loc .zone-places {
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+
+  /* column widths */
+  table.t { min-width: 980px; }
+  .col-date { width: 104px; }
+  .col-scale { width: 116px; }
+  .col-event { width: auto; }
+  .col-loc  { width: 166px; }
+  .col-src  { width: 124px; }
+  table.t thead th:last-child { white-space: normal; line-height: 1.3; }
+
+  /* Source-tradition legend */
+  .tradlegend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 18px;
+    margin: 4px 0 30px;
+    padding: 14px 16px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+  .tradlegend .lg { display: inline-flex; align-items: baseline; gap: 7px; }
+  .tradlegend b { color: var(--ink-2); font-weight: 600; }
+
+  /* ── Print ──────────────────────────────────────────────────────────── */
+  @media print {
+    :root { --paper: #f5f1e8; }
+    html, body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page { size: A4 landscape; margin: 12mm 12mm 14mm; }
+    .wrap { max-width: none; padding: 0; }
+    .tablewrap { overflow: visible; }
+    table.t { min-width: 0; font-size: 11.5px; }
+    table.t thead th { position: static; }
+    table.t tbody tr { break-inside: avoid; }
+    .cohort-name { font-size: 12.5px; }
+    .tradlegend, .controls { break-inside: avoid; }
+    .colophon { break-inside: avoid; }
+    a[href] { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── Masthead ───────────────────────────────────────────────────── -->
+  <header class="mast">
+    <div>
+      <div class="eyebrow">Community Inventories · Ottoman Palestine</div>
+      <h1>Christian In-Migration into Ottoman Palestine, <em>1516–1917</em></h1>
+      <p class="crosslinks">
+        <a href="index.html">‹&nbsp;Topics</a> &nbsp;·&nbsp; In-migration ledgers ·
+        <a href="muslim-migration-1516-1917.html">Muslim</a> ·
+        <a href="jewish-migration-1516-1917.html">Jewish</a> ·
+        <a class="active">Christian</a>
+      </p>
+    </div>
+    <div class="meta">
+      <b>Scope</b> · non-Arab / institutional Christian flows<br />
+      <b>Window</b> · 1516–1917 (Ottoman conquest to the&nbsp;Mandate threshold)<br />
+      <span class="faint">The indigenous Arab-Christian population is a<br />continuous baseline, not a migration cohort.</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    Across the full Ottoman period Christian in-migration into Palestine ran mainly through institutions rather
+    than mass settlement — <em>the long-standing ecclesiastical communities that span the whole era (the
+    Franciscan Custody, the Greek-Orthodox and Armenian patriarchates, the Syriac and Maronite churches), and
+    then a nineteenth-century surge of pilgrim and church infrastructure under European protection (the restored
+    Latin Patriarchate, the Russian Orthodox establishment) together with a small number of Pietist and
+    millenarian settler colonies (the German Templers, the American Colony).</em> This ledger lists the
+    non-Arab and institutional Christian cohorts; the indigenous Arab-Christian population — roughly a twelfth
+    of Palestine — is a continuous local baseline and is noted as such, not as in-migration.
+  </p>
+
+  <!-- ── Headline stats ─────────────────────────────────────────────── -->
+  <div class="stats">
+    <div class="stat"><div class="n">10</div><div class="l">Communities &amp; cohorts</div></div>
+    <div class="stat"><div class="n">1516–1917</div><div class="l">Period covered</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">German Templer colonies</div></div>
+    <div class="stat"><div class="n">~8%</div><div class="l">Christian share of population, 1882</div></div>
+  </div>
+
+  <!-- ── Source-tradition legend ────────────────────────────────────── -->
+  <div class="tradlegend">
+    <span class="lg"><span class="pill ecclesiastical">Ecclesiastical</span> <b>Patriarchate / Custody records</b></span>
+    <span class="lg"><span class="pill consular">Consular</span> <b>European consular (Capitulations)</b></span>
+    <span class="lg"><span class="pill census">Census</span> <b>Ottoman / consular counts</b></span>
+    <span class="lg"><span class="pill settler">Settler</span> <b>Colony community records</b></span>
+    <span class="lg"><span class="pill secondary">Secondary</span> <b>Modern synthesis only</b></span>
+  </div>
+
+  <!-- ── The ledger ─────────────────────────────────────────────────── -->
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr>
+          <th class="num">#</th>
+          <th>Period</th>
+          <th>Cohort &amp; pattern</th>
+          <th>Scale (est. population)</th>
+          <th>Principal reception zones</th>
+          <th>Source tradition</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="era"><td colspan="6">Continuous ecclesiastical communities <span class="yr">1516 – 1917</span></td></tr>
+
+        <!-- 1 — Franciscan Custody -->
+        <tr>
+          <td class="num">01</td>
+          <td class="col-date">continuous<span class="sub">since 1342</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Latin Catholic — Franciscan Custody</div>
+            <p>The Custody of the Holy Land brought a continuous in-migration of international Franciscan
+            friars, predominantly Italian-speaking, sustained by the European Catholic powers under the
+            Capitulations and anchoring the Latin presence through the whole Ottoman period.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Institutional</span>
+            <span class="scale-note">friars &amp; clergy; continuous since 1342</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem · Bethlehem · Nazareth</span>
+            <span class="zone-places">Christian Quarter &amp; holy sites</span>
+          </td>
+          <td class="col-src">
+            <span class="pill ecclesiastical">Ecclesiastical</span>
+            <span class="pill consular">Consular</span>
+          </td>
+        </tr>
+
+        <!-- 2 — Greek Orthodox baseline -->
+        <tr>
+          <td class="num">02</td>
+          <td class="col-date">continuous<span class="sub">Patriarchate</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Greek-Orthodox hierarchy</div>
+            <p>The Greek-Orthodox Patriarchate drew its higher clergy from the Balkans and the Greek-speaking
+            world, presiding over a largely indigenous Arab-Orthodox laity. The in-migrant element is the
+            Greek/Balkan hierarchy and monastic brotherhood, not the Arab congregations.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Clergy + hierarchy</span>
+            <span class="scale-note">over a largely indigenous Arab-Orthodox community (~16,800 in 1847)</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem · Nazareth · Bethlehem</span>
+            <span class="zone-places">Patriarchate &amp; monasteries</span>
+          </td>
+          <td class="col-src">
+            <span class="pill ecclesiastical">Ecclesiastical</span>
+            <span class="pill census">Census</span>
+          </td>
+        </tr>
+
+        <!-- 3 — Armenian -->
+        <tr>
+          <td class="num">03</td>
+          <td class="col-date">continuous<span class="sub">post-1565 protection</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Armenian (Gregorian) community</div>
+            <p>A continuous Armenian presence sustained by the Patriarchate of St James — formalised under
+            Ottoman protection after 1565 — with clergy and pilgrims arriving via Constantinople and the
+            Armenian highlands and concentrating in the Armenian Quarter of the Old City.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Clergy + community</span>
+            <span class="scale-note">continuous; convent-anchored</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem</span>
+            <span class="zone-places">Armenian Quarter (Old City)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill ecclesiastical">Ecclesiastical</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 4 — Syriac / Chaldean -->
+        <tr>
+          <td class="num">04</td>
+          <td class="col-date">continuous<span class="sub">Ottoman trickle</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Syriac Orthodox &amp; Chaldean</div>
+            <p>Small Syrian- and Mesopotamian-origin communities sustained by a continuous Ottoman-era trickle,
+            maintaining patriarchal institutions and a modest presence in the Old City of Jerusalem.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Small community</span>
+            <span class="scale-note">continuous trickle; convent-anchored</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem</span>
+            <span class="zone-places">Old City (St Mark's &amp; nearby)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill ecclesiastical">Ecclesiastical</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 5 — Maronite -->
+        <tr>
+          <td class="num">05</td>
+          <td class="col-date">16th c.+<span class="sub">Mt Lebanon trickle</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Maronite trickle from Mount Lebanon</div>
+            <p>A small, continuing migration of Maronites from Mount Lebanon into the upper Galilee, sustaining
+            village communities such as al-Jish (Gush Halav) through the Ottoman centuries.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Village-scale</span>
+            <span class="scale-note">small continuing trickle</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Upper Galilee</span>
+            <span class="zone-places">al-Jish (Gush Halav) &amp; nearby villages</span>
+          </td>
+          <td class="col-src">
+            <span class="pill ecclesiastical">Ecclesiastical</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <tr class="era"><td colspan="6">Nineteenth-century expansion <span class="yr">1847 – 1917</span></td></tr>
+
+        <!-- 6 — Latin Patriarchate restored -->
+        <tr>
+          <td class="num">06</td>
+          <td class="col-date">1847+<span class="sub">Latin restoration</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Latin Patriarchate restored</div>
+            <p>The restoration of the resident Latin Patriarchate of Jerusalem in 1847 brought renewed
+            in-migration of Catholic clergy and teaching and nursing orders, expanding institutional Catholic
+            infrastructure across the holy places.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Institutional</span>
+            <span class="scale-note">clergy &amp; orders; Patriarchate restored 1847</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem · Bethlehem · Beit Jala · Nazareth</span>
+            <span class="zone-places">seminaries, schools, hospices</span>
+          </td>
+          <td class="col-src">
+            <span class="pill ecclesiastical">Ecclesiastical</span>
+            <span class="pill consular">Consular</span>
+          </td>
+        </tr>
+
+        <!-- 7 — Greek Orthodox via Russian protection -->
+        <tr>
+          <td class="num">07</td>
+          <td class="col-date">1853+<span class="sub">Russian protection</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Greek-Orthodox influx under Russian protection</div>
+            <p>From the Crimean War onward, the Russian-protection regime underwrote a substantial expansion of
+            the Greek-Orthodox presence and its clergy and pilgrims across the patriarchal sees.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Expansion</span>
+            <span class="scale-note">enlarged presence under Russian protection (1853+)</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem · Bethlehem · Nazareth</span>
+            <span class="zone-places">patriarchal sees</span>
+          </td>
+          <td class="col-src">
+            <span class="pill consular">Consular</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 8 — Russian Orthodox infrastructure -->
+        <tr>
+          <td class="num">08</td>
+          <td class="col-date">1860+<span class="sub">Pilgrim infrastructure</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Russian Orthodox pilgrim infrastructure</div>
+            <p>Russian-Empire clergy and pilgrims built a dense infrastructure of hostels, churches and
+            property — the Russian Compound (1860), holdings on the Mount of Olives and at Ein Karem —
+            formalised by the Imperial Orthodox Palestine Society from 1882.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Pilgrim infrastructure</span>
+            <span class="scale-note">resident clergy small; seasonal pilgrim flow large</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem area</span>
+            <span class="zone-places">Russian Compound (1860) · Mount of Olives · Ein Karem</span>
+          </td>
+          <td class="col-src">
+            <span class="pill consular">Consular</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 9 — Templers -->
+        <tr>
+          <td class="num">09</td>
+          <td class="col-date">1868–1914<span class="sub">German Templers</span></td>
+          <td class="col-event">
+            <div class="cohort-name">German Templers <span class="orig">(Tempelgesellschaft)</span></div>
+            <p>A Württemberg Pietist sect founded six agricultural-and-trade colonies across Palestine, the
+            largest discrete Christian settler cohort of the period. The community was expelled by the British
+            as enemy aliens in 1939–41, and its properties passed to the Israeli state after 1948.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~2,000</span>
+            <span class="scale-note">by 1914, across 6 colonies; expelled 1939–41</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Coast, Galilee &amp; Jerusalem</span>
+            <span class="zone-places">Haifa (1868) · Jaffa · Sarona (1871) · Wilhelma · Bethlehem of Galilee · Waldheim</span>
+          </td>
+          <td class="col-src">
+            <span class="pill settler">Settler</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 10 — American Colony -->
+        <tr>
+          <td class="num">10</td>
+          <td class="col-date">1881+<span class="sub">Millenarian colony</span></td>
+          <td class="col-event">
+            <div class="cohort-name">American Colony <span class="orig">(Spafford)</span></div>
+            <p>A small American and Swedish Christian Restorationist community settled in Jerusalem from 1881,
+            later well known for its photographic and charitable work; its quarter gave its name to the
+            American Colony neighbourhood.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~100+</span>
+            <span class="scale-note">at peak; American &amp; Swedish millenarians</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem</span>
+            <span class="zone-places">Old City, then the American Colony quarter</span>
+          </td>
+          <td class="col-src">
+            <span class="pill settler">Settler</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <p class="resultcount"><b>10</b> communities &amp; cohorts · the indigenous Arab-Christian population is a continuous baseline, not listed as in-migration</p>
+
+  <!-- ── Endnotes ───────────────────────────────────────────────────── -->
+  <div class="endnotes">
+    <h2 class="section">Note on method &amp; sources</h2>
+    <p>
+      This is a <b>descriptive ledger</b>, not an argument, and the third in a set with the
+      <a href="muslim-migration-1516-1917.html">Muslim</a> and
+      <a href="jewish-migration-1516-1917.html">Jewish</a> in-migration sheets for the full Ottoman period. It
+      records <b>non-Arab and institutional Christian</b> in-migration only. The large indigenous
+      Arab-Christian population — Orthodox, Catholic and others, roughly eight per cent of Palestine in the
+      late nineteenth century — is a continuous local community, not an in-migration cohort, and is deliberately
+      not listed here as one; the Greek-Orthodox and Latin rows above refer specifically to the in-migrating
+      clergy and hierarchy set over those indigenous congregations.
+    </p>
+    <p>
+      Most rows are <b>continuous institutional communities</b> spanning the whole Ottoman period rather than
+      dated waves — the genuine character of Christian in-migration here; only the nineteenth-century band
+      (the restored Latin Patriarchate, the Russian Orthodox establishment, the Templers and the American
+      Colony) consists of datable expansions and discrete settlement cohorts. The <b>source-tradition tags</b>
+      indicate the kind of evidence — patriarchate and Custody records, European consular reporting under the
+      Capitulations, Ottoman and consular counts, and the settler colonies' own records. Figures are
+      order-of-magnitude only.
+    </p>
+    <p>
+      <b>Drawn from</b> · Carmel, <i>Die Siedlungen der württembergischen Templer 1868–1918</i> (1973) ·
+      Lemire, <i>Jérusalem 1900</i> (2013) · Schölch, <i>Palestine in Transformation 1856–1882</i> (1993) ·
+      Eliav, <i>Britain and the Holy Land 1838–1914</i> (1997) · the French-consul count of 1847 (Cohen-Muller) ·
+      and the <i>Survey of Palestine 1945–46</i> for the late-period baselines.
+    </p>
+  </div>
+
+  <!-- ── Colophon ───────────────────────────────────────────────────── -->
+  <div class="colophon">
+    <span>Community Inventories — Ottoman Palestine</span>
+    <span><b>Christian in-migration</b> · 1516–1917 · descriptive ledger</span>
+    <span>Third of three · non-Arab / institutional flows</span>
+  </div>
+
+</div>
+</body>
+</html>

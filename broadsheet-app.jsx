@@ -7,7 +7,7 @@
    Tier 2: renders Actors + Scale columns and cross-links WHEN the per-community
    JSON carries them (actorType[], actor, scaleBig, scaleNote, links[], n).
    Pages whose data lacks those fields degrade gracefully (the columns simply
-   render empty). Brought to parity with the flagship index.html (Jewish page).
+   render empty). Brought to parity with the flagship jewish.html (Jewish page).
 
    Reads window.COMMUNITY_CFG + window.DATA. Call renderBroadsheet().
    ========================================================================== */

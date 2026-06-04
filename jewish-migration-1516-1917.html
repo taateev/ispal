@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jewish In-Migration into Ottoman Palestine, 1516–1917</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* ── Additions specific to the migration ledger ─────────────────────── */
+
+  /* Source-tradition pill palette (extends the .pill family in broadsheet.css) */
+  .pill.chronicle  { border-color: var(--accent-5); color: #6f4416;         background: #f7efe2; }
+  .pill.testimony  { border-color: var(--accent-3); color: var(--accent-3); background: #ebf0ec; }
+  .pill.communal   { border-color: var(--accent-4); color: var(--accent-4); background: #eef0f5; }
+  .pill.consular   { border-color: var(--accent);   color: var(--accent);   background: #faf0eb; }
+  .pill.census     { border-color: var(--accent-2); color: var(--accent-2); background: #f2efe3; }
+  .pill.secondary  { border-color: var(--rule);     color: var(--ink-3);    background: var(--paper); }
+
+  .col-src .pill { margin: 0 4px 4px 0; }
+
+  /* Cohort cell: name + descriptive prose */
+  .cohort-name {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 15.5px;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+  .cohort-name .orig { font-style: italic; font-weight: 500; color: var(--ink-2); }
+  .col-event p { margin: 0; }
+  .col-event .fig {
+    font-family: var(--label);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+  }
+
+  /* Scale / population cell */
+  .col-scale .big.qual { font-size: 14px; line-height: 1.2; letter-spacing: 0; }
+  .col-scale .big.none { color: var(--ink-4); font-weight: 500; }
+
+  /* Legal-status cell */
+  .col-status { font-family: var(--sans); font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+  .col-status .stat-lead { display: block; font-family: var(--serif); font-weight: 600; font-size: 13.5px; color: var(--ink); margin-bottom: 2px; }
+  .col-status .stat-lead.curb { color: var(--accent); }
+  .col-status .stat-lead.grant { color: var(--accent-3); }
+  .col-status .stat-note { display: block; color: var(--ink-3); font-size: 11px; }
+
+  /* Legal-status note */
+  .regimenote {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    background: #f4efe4;
+    border: 1px solid #ddd4c2;
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    padding: 13px 16px;
+    margin: 0 0 26px;
+    max-width: 1040px;
+    text-wrap: pretty;
+  }
+  .regimenote b { color: var(--ink); font-weight: 600; }
+  .regimenote .rl {
+    display: block;
+    font-family: var(--label);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  /* Era band rows */
+  tr.era td {
+    background: var(--paper-3);
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 9px 14px;
+    font-family: var(--label);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  tr.era td .yr { font-family: var(--mono); font-weight: 500; letter-spacing: 0.02em; color: var(--ink-3); margin-left: 10px; }
+
+  /* Reception-zone cell */
+  .col-loc .zone-region {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--ink-2);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .col-loc .zone-places {
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+
+  /* column widths */
+  table.t { min-width: 1150px; }
+  .col-date { width: 98px; }
+  .col-scale { width: 108px; }
+  .col-status { width: 150px; }
+  .col-event { width: auto; }
+  .col-loc  { width: 150px; }
+  .col-src  { width: 118px; }
+  table.t thead th:last-child { white-space: normal; line-height: 1.3; }
+
+  /* Source-tradition legend */
+  .tradlegend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 18px;
+    margin: 4px 0 30px;
+    padding: 14px 16px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+  .tradlegend .lg { display: inline-flex; align-items: baseline; gap: 7px; }
+  .tradlegend b { color: var(--ink-2); font-weight: 600; }
+
+  /* ── Print ──────────────────────────────────────────────────────────── */
+  @media print {
+    :root { --paper: #f5f1e8; }
+    html, body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page { size: A4 landscape; margin: 12mm 12mm 14mm; }
+    .wrap { max-width: none; padding: 0; }
+    .tablewrap { overflow: visible; }
+    table.t { min-width: 0; font-size: 11.5px; }
+    table.t thead th { position: static; }
+    table.t tbody tr { break-inside: avoid; }
+    .cohort-name { font-size: 12.5px; }
+    .tradlegend, .controls { break-inside: avoid; }
+    .colophon { break-inside: avoid; }
+    a[href] { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── Masthead ───────────────────────────────────────────────────── -->
+  <header class="mast">
+    <div>
+      <div class="eyebrow">Community Inventories · Ottoman Palestine</div>
+      <h1>Jewish In-Migration into Ottoman Palestine, <em>1516–1917</em></h1>
+      <p class="crosslinks">
+        <a href="index.html">‹&nbsp;Topics</a> &nbsp;·&nbsp; In-migration ledgers ·
+        <a href="muslim-migration-1516-1917.html">Muslim</a> ·
+        <a class="active">Jewish</a> ·
+        <a href="christian-migration-1516-1917.html">Christian</a>
+      </p>
+    </div>
+    <div class="meta">
+      <b>Scope</b> · the full Ottoman period<br />
+      <b>Window</b> · 1516–1917 (Ottoman conquest to the&nbsp;Mandate threshold)<br />
+      <span class="faint">Compiled from the corpus source ledger.<br />Sources tagged by evidentiary tradition.</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    Across the four centuries of Ottoman rule, Jewish in-migration into Palestine ran through three principal
+    channels — <em>the post-Expulsion Sephardi founding of Safed and the holy cities and its kabbalistic golden
+    age, religious and messianic migration (the Hasidic aliyot, the Lithuanian Perushim, the Yemenite and
+    Bukharian streams) sustained by the halukkah charity network, and refugee flight from the Russian pogroms
+    (the First and Second Aliyot).</em> This table lists each documented cohort with its period, an
+    order-of-magnitude population estimate, its legal status and land tenure, its principal reception zones, and the kind of evidence on which the
+    entry rests.
+  </p>
+
+  <!-- ── Headline stats ─────────────────────────────────────────────── -->
+  <div class="stats">
+    <div class="stat"><div class="n">16</div><div class="l">Migration cohorts</div></div>
+    <div class="stat"><div class="n">1516–1917</div><div class="l">Period covered</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">Holy-city anchors</div></div>
+    <div class="stat"><div class="n">~24,000</div><div class="l">Jewish population by 1882</div></div>
+  </div>
+
+  <!-- ── Source-tradition legend ────────────────────────────────────── -->
+  <div class="tradlegend">
+    <span class="lg"><span class="pill chronicle">Chronicle</span> <b>Hebrew narrative chronicle</b></span>
+    <span class="lg"><span class="pill testimony">Testimony</span> <b>First-person letters / memoir</b></span>
+    <span class="lg"><span class="pill communal">Communal</span> <b>Halukkah / community register</b></span>
+    <span class="lg"><span class="pill consular">Consular</span> <b>European consular record</b></span>
+    <span class="lg"><span class="pill census">Census</span> <b>Ottoman register / immigration statistics</b></span>
+    <span class="lg"><span class="pill secondary">Secondary</span> <b>Modern synthesis only</b></span>
+  </div>
+
+  <div class="regimenote">
+    <span class="rl">On legal status &amp; land tenure</span>
+    Jewish immigrants received no muhajir-style package. The Old Yishuv lived as <b>dhimmi</b> protected
+    subjects in the holy-city quarters; from the 1830s many gained <b>European consular protection</b> under
+    the Capitulations — especially after the 1838 British consulate in Jerusalem — which eased protected
+    immigration. From <b>1881</b> the Hamidian government moved the other way: the <b>“red ticket”</b> curbs
+    restricted Jewish entry and barred land purchase, so First- and Second-Aliyah settlers circumvented them
+    through the capitulations and bought land privately via the Rothschild administration and the JCA / JNF,
+    registered to Ottoman subjects — the structural mirror-image of the muhajir land grants on the
+    <a href="muslim-migration-1516-1917.html">Muslim sheet</a>.
+  </div>
+
+  <!-- ── The ledger ─────────────────────────────────────────────────── -->
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr>
+          <th class="num">#</th>
+          <th>Period</th>
+          <th>Cohort &amp; pattern</th>
+          <th>Scale (est. population)</th>
+          <th>Legal status &amp; tenure</th>
+          <th>Principal reception zones</th>
+          <th>Source tradition</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="era"><td colspan="7">Ottoman-classical <span class="yr">1516 – 1700</span></td></tr>
+
+        <!-- 1 — Iberian Sefardim -->
+        <tr>
+          <td class="num">01</td>
+          <td class="col-date">post-1516<span class="sub">Post-Expulsion surge</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Iberian Sefardim</div>
+            <p>The largest early-Ottoman Jewish stream: exiles of the 1492 Spanish Expulsion and their
+            descendants, arriving via Salonika, Istanbul and Italy. They turned Safed into a kabbalistic centre
+            and reinforced Jerusalem, Hebron and Tiberias.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">233 → 945</span>
+            <span class="scale-note">Safed households (~5,700 souls, 1567 peak); Jerusalem 199 → 324 hh</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Dhimmi subjects</span>
+            <span class="stat-note">jizya-paying protected non-Muslims; urban quarters, no land grant</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Safed · Jerusalem · Hebron · Tiberias</span>
+            <span class="zone-places">via Salonika, Istanbul, Italy</span>
+          </td>
+          <td class="col-src">
+            <span class="pill census">Census</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 2 — Italian / Maghrebi / Ashkenazi congregations -->
+        <tr>
+          <td class="num">02</td>
+          <td class="col-date">16th c.<span class="sub">Safed congregations</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Italian, Maghrebi &amp; Ashkenazi Sefardim</div>
+            <p>Alongside the Iberian majority, the Safed tax registers name distinct congregations —
+            Italian-peninsula (Apulia, Calabria), North-African Maghrebi, and German-Hungarian Ashkenazi —
+            each a small chain-migration cohort within the city's sixteenth-century boom.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">~75 / 38 / 32 hh</span>
+            <span class="scale-note">Italian / Maghrebi / Ashkenazi households in Safed</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Dhimmi / Frankish</span>
+            <span class="stat-note">Ottoman dhimmi; some European “Frankish” protégés</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Safed</span>
+            <span class="zone-places">named defter congregations</span>
+          </td>
+          <td class="col-src">
+            <span class="pill census">Census</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 3 — Don Joseph Nasi Tiberias -->
+        <tr>
+          <td class="num">03</td>
+          <td class="col-date">1563–1564<span class="sub">Tiberias project</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Don Joseph Nasi's Tiberias project</div>
+            <p>A state-sponsored venture: the Sultan granted Don Joseph Nasi the ruined Tiberias, whose walls
+            were rebuilt for a planned silk colony for Jewish refugees. The scheme faded after Nasi's death and
+            was demographically minor, but it is the era's clearest charter-backed settlement attempt.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Charter project</span>
+            <span class="scale-note">rebuilt Tiberias walls; faded after Nasi's death</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead grant">Sultanic charter</span>
+            <span class="stat-note">state concession of Tiberias — the era's one land grant</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Tiberias</span>
+            <span class="zone-places">sultanic grant</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 4 — Sephardi pilgrimage baseline -->
+        <tr>
+          <td class="num">04</td>
+          <td class="col-date">16th–18th c.<span class="sub">Continuous baseline</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Sephardi pilgrimage-into-settlement</div>
+            <p>The demographically dominant stream: a continuous pilgrimage-into-settlement of Sephardi and
+            Mizrahi Jews from across the Ottoman world into the four holy cities, sustained from the sixteenth
+            century onward. It made up some 80 per cent of the Old Yishuv.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">≈6–8k</span>
+            <span class="scale-note">Barnai aggregate; ~80% of the Old Yishuv</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Dhimmi subjects</span>
+            <span class="stat-note">jizya-paying; halukkah-supported</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Four holy cities</span>
+            <span class="zone-places">Jerusalem · Safed · Hebron · Tiberias</span>
+          </td>
+          <td class="col-src">
+            <span class="pill testimony">Testimony</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 5 — Sabbatean migrants -->
+        <tr>
+          <td class="num">05</td>
+          <td class="col-date">1666–1700<span class="sub">Sabbatean networks</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Sabbatean migrants</div>
+            <p>In the wake of Shabbetai Tzvi's 1666 messianic movement, clandestine and then open Sabbatean
+            migrants from Italy, Smyrna and the Polish-Lithuanian networks settled in Jerusalem and Hebron,
+            forming the substrate for Judah he-Hasid's 1700 wave.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Network-scale</span>
+            <span class="scale-note">substrate for the 1700 wave</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Dhimmi subjects</span>
+            <span class="stat-note">clandestine; no special tenure</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem · Hebron</span>
+            <span class="zone-places">from Italy, Smyrna, Poland-Lithuania</span>
+          </td>
+          <td class="col-src">
+            <span class="pill testimony">Testimony</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <tr class="era"><td colspan="7">Religious aliyot &amp; the Old Yishuv <span class="yr">1700 – 1882</span></td></tr>
+
+        <!-- 6 — Judah he-Hasid -->
+        <tr>
+          <td class="num">06</td>
+          <td class="col-date">1700<span class="sub">Sabbatean wave</span></td>
+          <td class="col-event">
+            <div class="cohort-name">R. Judah he-Hasid's wave</div>
+            <p>A wave of roughly 1,500 Polish and Lithuanian Jews, many from Sabbatean-influenced networks,
+            set out for Jerusalem under R. Judah he-Hasid in 1700. Many died en route; the Ashkenazi courtyard
+            they founded was burned by creditors in 1720, leaving the ruin long known as the
+            <span class="orig">Hurva</span>.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~1,500</span>
+            <span class="scale-note">left Europe; heavy losses en route</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Debt-encumbered</span>
+            <span class="stat-note">Ashkenazi courtyard bought on credit; seized &amp; burned 1720</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem</span>
+            <span class="zone-places">Ashkenazi courtyard (the Hurva)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill testimony">Testimony</span>
+          </td>
+        </tr>
+
+        <!-- 7 — Abulafia Tiberias revival -->
+        <tr>
+          <td class="num">07</td>
+          <td class="col-date">1740<span class="sub">Tiberias revival</span></td>
+          <td class="col-event">
+            <div class="cohort-name">R. Hayyim Abulafia &amp; students</div>
+            <p>R. Hayyim Abulafia of Izmir and his students re-established the Jewish community of Tiberias in
+            1740 under the protection of Ẓāhir al-ʿUmar, rebuilding the quarter the Zaydani ruler invited them
+            to repopulate.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">~10 + families</span>
+            <span class="scale-note">students; rebuilt the Tiberias Jewish quarter</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead grant">Local-ruler protection</span>
+            <span class="stat-note">invited &amp; protected by Ẓāhir al-ʿUmar</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Tiberias</span>
+            <span class="zone-places">under Ẓāhir al-ʿUmar's protection</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 8 — Ibn Attar -->
+        <tr>
+          <td class="num">08</td>
+          <td class="col-date">1741<span class="sub">Maghrebi cohort</span></td>
+          <td class="col-event">
+            <div class="cohort-name">R. Hayyim ibn ʿAttar <span class="orig">(Or ha-Hayyim)</span></div>
+            <p>R. Hayyim ibn ʿAttar — the Or ha-Hayyim — led a cohort of Moroccan students from Salé, by way
+            of Leghorn, to Jerusalem in 1741, where he founded the <span class="orig">Knesseth Israel</span>
+            yeshiva.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Dozens</span>
+            <span class="scale-note">students; founded the Knesseth Israel yeshiva</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Dhimmi; yeshiva endowment</span>
+            <span class="stat-note">Maghrebi-Italian cohort; endowed yeshiva</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem</span>
+            <span class="zone-places">from Morocco (Salé) via Leghorn</span>
+          </td>
+          <td class="col-src">
+            <span class="pill chronicle">Chronicle</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 9 — Hasidic aliyot -->
+        <tr>
+          <td class="num">09</td>
+          <td class="col-date">1747–1777<span class="sub">Hasidic aliyot</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Hasidic aliyot</div>
+            <p>Successive Hasidic groups from Galicia, Ukraine and Belarus settled in the holy cities across
+            the later eighteenth century, culminating in the "Great Aliyah" of roughly 300 Hasidim under
+            R. Menahem-Mendel of Vitebsk in 1777, who settled first in Safed and then Tiberias.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~300</span>
+            <span class="scale-note">1777 White-Russia aliyah (Habad-precursor); + earlier rebbe cohorts</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Foreign-subject protégés</span>
+            <span class="stat-note">halukkah-supported; some claimed Russian / Austrian protection</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Galilee &amp; holy cities</span>
+            <span class="zone-places">Safed · Tiberias · Hebron · Jerusalem</span>
+          </td>
+          <td class="col-src">
+            <span class="pill testimony">Testimony</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 10 — Perushim -->
+        <tr>
+          <td class="num">10</td>
+          <td class="col-date">1809–1812<span class="sub">Perushim</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Lithuanian Perushim</div>
+            <p>Disciples of the Vilna Gaon — the <span class="orig">Perushim</span> — emigrated from Lithuania
+            in 1809–1812 and re-established an Ashkenazi presence in Jerusalem and Safed.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~511</span>
+            <span class="scale-note">by 1815; disciples of the Vilna Gaon</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Foreign-subject protégés</span>
+            <span class="stat-note">Russian-subject consular protection; halukkah</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem &amp; Safed</span>
+            <span class="zone-places">re-established Ashkenazi presence</span>
+          </td>
+          <td class="col-src">
+            <span class="pill communal">Communal</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 11 — Habad Hebron -->
+        <tr>
+          <td class="num">11</td>
+          <td class="col-date">1816+<span class="sub">Habad Hebron</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Habad Hasidim</div>
+            <p>Habad Hasidim from Belarus settled in Hebron from 1816, founding the community that anchored
+            Habad's presence in the city.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Congregation-scale</span>
+            <span class="scale-note">founded the Hebron Habad community</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Russian-subject protégés</span>
+            <span class="stat-note">consular protection; halukkah</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Hebron</span>
+            <span class="zone-places">from Belarus</span>
+          </td>
+          <td class="col-src">
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 12 — Old Yishuv protected immigration -->
+        <tr>
+          <td class="num">12</td>
+          <td class="col-date">1800–1882<span class="sub">Protected immigration</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Old Yishuv — protected European immigration</div>
+            <p>The Old Yishuv's rise from about 5,000 in 1800 to roughly 24,000 by 1882 was driven by
+            substantial European-Jewish in-migration — an estimated <span class="fig">25,000–45,000</span>
+            cumulative protected arrivals between 1838 and 1882, well above the net rise, since high mortality
+            and return-migration offset much of the inflow. It was sustained by the halukkah charity network and
+            the Pekidim-ve-Amarkalim institutions and enabled by European consular protection after 1838.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~25–45k</span>
+            <span class="scale-note">cumulative in-migration 1838–82; net population only ~5k → 24k (gross inflow far exceeds net)</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead grant">Capitulations protection</span>
+            <span class="stat-note">European consular protection after the 1838 British consulate eased protected immigration</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Four holy cities</span>
+            <span class="zone-places">Jerusalem · Safed · Hebron · Tiberias</span>
+          </td>
+          <td class="col-src">
+            <span class="pill consular">Consular</span>
+            <span class="pill communal">Communal</span>
+            <span class="pill census">Census</span>
+          </td>
+        </tr>
+
+        <tr class="era"><td colspan="7">Late Ottoman / the first Aliyot <span class="yr">1881 – 1917</span></td></tr>
+
+        <!-- 13 — First Aliyah -->
+        <tr>
+          <td class="num">13</td>
+          <td class="col-date">1882–1903<span class="sub">First Aliyah</span></td>
+          <td class="col-event">
+            <div class="cohort-name">First Aliyah <span class="orig">(Russian-pogrom + Sephardic)</span></div>
+            <p>The First Aliyah brought predominantly refugees of the Russian pogroms together with a
+            substantial Sephardic minority — perhaps a third were Sephardi/Mizrahi, and only a small core was
+            ideologically Zionist. They founded the moshavot — Petah Tikva (1878), Rishon le-Zion (1882) — and
+            settled urban quarters.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~25–35k</span>
+            <span class="scale-note">30–40% Sephardic/Mizrahi; ~10–15% ideological</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead curb">Restricted — “red ticket”</span>
+            <span class="stat-note">1881 Hamidian curbs on Jewish entry &amp; land purchase; circumvented via capitulations &amp; Rothschild / JCA</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Moshavot &amp; urban quarters</span>
+            <span class="zone-places">Petah Tikva · Rishon le-Zion · Jerusalem / Jaffa quarters</span>
+          </td>
+          <td class="col-src">
+            <span class="pill census">Census</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 14 — Yemenite -->
+        <tr>
+          <td class="num">14</td>
+          <td class="col-date">1881+<span class="sub">Yemenite</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Yemenite Jews</div>
+            <p>Yemenite Jews began arriving from 1881, drawn by religious and messianic expectation rather
+            than political Zionism, settling in Jerusalem, Hebron and the Galilee at an average of about
+            <span class="fig">184</span> a year before the First World War.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~184 / yr</span>
+            <span class="scale-note">pre-WWII average; religious-messianic</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Ottoman subjects</span>
+            <span class="stat-note">intra-empire migrants (Ottoman Yemen); not foreign immigrants; no grant</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem · Hebron · Galilee</span>
+            <span class="zone-places">from Yemen</span>
+          </td>
+          <td class="col-src">
+            <span class="pill census">Census</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 15 — Bukharian / Persian / Iraqi -->
+        <tr>
+          <td class="num">15</td>
+          <td class="col-date">1880s+<span class="sub">Central Asia &amp; Iran</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Bukharian, Persian &amp; Iraqi Jews</div>
+            <p>Bukharian, Persian and Iraqi Jews migrated from the 1880s, religiously and economically
+            motivated; the Bukharian community founded its own quarter in Jerusalem in 1891, substantial by
+            the 1900s.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big qual">Substantial</span>
+            <span class="scale-note">Bukharian Quarter founded 1891; Persian &amp; Iraqi streams smaller</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead">Private land purchase</span>
+            <span class="stat-note">Bukharian Quarter built on bought land; foreign-subject protection</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Jerusalem</span>
+            <span class="zone-places">Bukharian Quarter (1891+)</span>
+          </td>
+          <td class="col-src">
+            <span class="pill communal">Communal</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+        <!-- 16 — Second Aliyah -->
+        <tr>
+          <td class="num">16</td>
+          <td class="col-date">1904–1914<span class="sub">Second Aliyah</span></td>
+          <td class="col-event">
+            <div class="cohort-name">Second Aliyah</div>
+            <p>The Second Aliyah came mostly from the Russian Pale after the 1905 pogroms; though it furnished
+            the labour-Zionist vanguard and the first kibbutz precursors, the great majority — 70 to 80 per
+            cent — eventually left the country <span class="orig">(yerida)</span>.</p>
+          </td>
+          <td class="col-scale">
+            <span class="big">~35–40k</span>
+            <span class="scale-note">arrivals; 70–80% later emigrated</span>
+          </td>
+          <td class="col-status">
+            <span class="stat-lead curb">Restricted — land via JNF</span>
+            <span class="stat-note">Ottoman entry curbs; land bought via JNF / JCA, registered to Ottoman subjects</span>
+          </td>
+          <td class="col-loc">
+            <span class="zone-region">Moshavot &amp; coast</span>
+            <span class="zone-places">moshavot · Jaffa / Tel Aviv (1909) · kibbutz precursors</span>
+          </td>
+          <td class="col-src">
+            <span class="pill census">Census</span>
+            <span class="pill secondary">Secondary</span>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <p class="resultcount"><b>16</b> cohorts · ordered by approximate start date</p>
+
+  <!-- ── Endnotes ───────────────────────────────────────────────────── -->
+  <div class="endnotes">
+    <h2 class="section">Note on method &amp; sources</h2>
+    <p>
+      This is a <b>descriptive ledger</b>, not an argument, and a companion to the
+      <a href="muslim-migration-1516-1917.html">Muslim</a> and
+      <a href="christian-migration-1516-1917.html">Christian</a> in-migration sheets for the full Ottoman
+      period. Each row records a distinct stream of Jewish settlement into Palestine, ordered by approximate
+      start date and grouped into three eras. The <b>source-tradition tags</b> indicate the kind of evidence
+      behind each entry — Hebrew narrative chronicles, first-person emigration letters and memoir, the halukkah
+      and Pekidim-ve-Amarkalim communal registers, European consular records, and Ottoman tax registers and
+      immigration statistics. Entries resting only on modern synthesis carry a <b>Secondary</b> tag.
+    </p>
+    <p>
+      <b>The classical centuries are dominated by the post-Expulsion Sephardi founding.</b> The 1492 exiles and
+      their descendants made Safed a kabbalistic centre and anchored the four holy cities; the named Ashkenazi
+      waves (Judah he-Hasid, the Hasidim, the Perushim) were smaller religious cohorts layered onto that
+      continuous Sephardi/Mizrahi baseline. The shift to mass flow begins in the Tanzimat decades, not only at
+      1881: the Old Yishuv's protected European immigration of 1838–82 — a gross inflow of some 25,000–45,000,
+      far above its net growth — already marks the rupture, which the First and Second Aliyot then carry
+      forward. It parallels the Egyptian and refugee flows opening on the Muslim sheet from 1831.
+    </p>
+    <p>
+      <b>Population figures are order-of-magnitude only</b>, though the Jewish-side figures are generally firmer
+      than their Muslim counterparts, resting on Ottoman tax registers, communal counts, consular protection
+      lists and registered immigration. The window opens at 1516 with the Ottoman conquest and closes at 1917
+      with the end of Ottoman rule, on the eve of the Mandate.
+    </p>
+    <p>
+      <b>Drawn from</b> · Lewis &amp; Cohen, <i>Population and Revenue in the Towns of Palestine</i> (1978) ·
+      Cohen, <i>Jewish Life Under Islam</i> (1984) · David, <i>To Come to the Land</i> (1999) · Barnai,
+      <i>The Jews in Palestine in the 18th Century</i> (1992) · Lehmann, <i>Emissaries from the Holy Land</i>
+      (2014) · Morgenstern on the Perushim · Schölch, <i>Palestine in Transformation 1856–1882</i> (1993) ·
+      Eliav, <i>Britain and the Holy Land</i> (1997) · Alroey, <i>An Unpromising Land</i> (2014) · Shafir,
+      <i>Land, Labor and the Origins</i> (1996) · Klorman, <i>Traditional Society in Transition</i> (2014) ·
+      Sarshar (ed.), <i>The Jews of Iran</i> (2014).
+    </p>
+  </div>
+
+  <!-- ── Colophon ───────────────────────────────────────────────────── -->
+  <div class="colophon">
+    <span>Community Inventories — Ottoman Palestine</span>
+    <span><b>Jewish in-migration</b> · 1516–1917 · descriptive ledger</span>
+    <span>Companion to the Muslim &amp; Christian sheets</span>
+  </div>
+
+</div>
+</body>
+</html>
