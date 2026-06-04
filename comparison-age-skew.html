@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age skew of lethality — adults & odds ratios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15171d; --ink-soft:#3f4350; --ink-faint:#6e7384;
+    --line:#dcdee6; --line-strong:#c2c5d1;
+    --a:#2f3fc7; --a-tint:#e9ebfb;   /* indigo — Palestinians */
+    --b:#b5630a; --b-tint:#fbeed6;   /* amber — Chechens */
+    --c:#b22a4d; --c-tint:#fbe6ec;   /* rose — Holocaust */
+    --d:#0e8a6e; --d-tint:#dcf4ec;   /* teal — Rwanda */
+    --serif:"Source Serif 4",Georgia,serif;
+    --sans:"Libre Franklin",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:#eef0f4;}
+  body{font-family:var(--serif);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;padding:26px;}
+  body.single{background:#fff;padding:0;}
+  .card{background:#fff;border:1px solid var(--line);padding:44px 50px;margin:0 auto 26px;width:1460px;}
+  body.single .card{border:none;margin:0;}
+
+  .eyebrow{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 8px;}
+  .eyebrow.a{color:var(--a);} .eyebrow.c{color:var(--c);}
+  h2{font-family:var(--serif);font-weight:600;font-size:31px;line-height:1.18;letter-spacing:-.01em;margin:0 0 10px;text-wrap:balance;}
+  .lede{margin:0 0 22px;color:var(--ink-soft);font-size:18px;line-height:1.45;max-width:92ch;}
+  .lede b{color:var(--ink);font-weight:600;}
+
+  /* ---- adults table ---- */
+  table{width:100%;border-collapse:collapse;font-family:var(--sans);margin:4px 0 0;}
+  th,td{padding:7px 16px;text-align:left;vertical-align:baseline;}
+  th:first-child,td:first-child{padding-left:0;}
+  td:last-child,th:last-child{padding-right:0;}
+  thead th{border-bottom:2px solid var(--line-strong);font-size:16px;line-height:1.25;padding-bottom:9px;}
+  thead th.ca{border-bottom-color:var(--a);} thead th.cb{border-bottom-color:var(--b);}
+  thead th.cc{border-bottom-color:var(--c);} thead th.cd{border-bottom-color:var(--d);}
+  .cname{font-family:var(--serif);font-weight:600;font-size:19px;display:block;}
+  .ca .cname{color:var(--a);} .cb .cname{color:var(--b);} .cc .cname{color:var(--c);} .cd .cname{color:var(--d);}
+  .cunder{display:block;font-size:13px;font-weight:500;color:var(--ink-faint);}
+  tbody th{font-weight:500;font-size:16.5px;color:var(--ink);border-bottom:1px solid var(--line);}
+  tbody td{font-family:var(--mono);font-size:16px;font-weight:500;color:var(--ink-soft);border-bottom:1px solid var(--line);font-feature-settings:"tnum" 1;white-space:nowrap;}
+  td.va{color:var(--a);} td.vb{color:var(--b);} td.vc{color:var(--c);} td.vd{color:var(--d);}
+  tr.sect th{font-family:var(--sans);font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);padding-top:16px;padding-bottom:4px;border-bottom:none;}
+  tr.sect td{border-bottom:none;}
+  tr.key th{font-weight:700;color:var(--ink);}
+  tr.key td{font-size:18px;font-weight:600;}
+  tr.key td.va{background:var(--a-tint);} tr.key td.vb{background:var(--b-tint);}
+  tr.key td.vc{background:var(--c-tint);} tr.key td.vd{background:var(--d-tint);}
+  .note{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-faint);margin:18px 0 0;padding-top:12px;border-top:1px solid var(--line);}
+  .note b{color:var(--ink);font-weight:600;} .soft{color:var(--ink-faint);font-style:italic;}
+
+  /* ---- odds-ratio chart ---- */
+  .axis-wrap{margin:14px 0 6px;}
+  .axis-head{display:flex;justify-content:space-between;font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink-faint);margin:0 0 4px;}
+  .axis-head .l{color:var(--a);} .axis-head .r{color:var(--c);}
+  .orrow{display:grid;grid-template-columns:230px 1fr 150px;align-items:center;gap:18px;padding:13px 0;border-bottom:1px solid var(--line);}
+  .orrow:last-child{border-bottom:none;}
+  .orname{font-family:var(--serif);font-weight:600;font-size:18px;}
+  .orname small{display:block;font-family:var(--sans);font-size:12px;font-weight:500;color:var(--ink-faint);}
+  .ca2 .orname{color:var(--a);} .cb2 .orname{color:var(--b);} .cc2 .orname{color:var(--c);} .cd2 .orname{color:var(--d);}
+  .track{position:relative;height:30px;background:linear-gradient(90deg,var(--a-tint),#f3f4f8 43.75%,var(--c-tint));border-radius:6px;}
+  .track .mid{position:absolute;left:43.75%;top:-6px;bottom:-6px;width:2px;background:var(--line-strong);}
+  .dot{position:absolute;top:50%;transform:translate(-50%,-50%);height:18px;border-radius:9px;}
+  .ca2 .dot{background:var(--a);} .cb2 .dot{background:var(--b);} .cc2 .dot{background:var(--c);} .cd2 .dot{background:var(--d);}
+  .orval{font-family:var(--mono);font-weight:600;font-size:19px;text-align:right;}
+  .ca2 .orval{color:var(--a);} .cb2 .orval{color:var(--b);} .cc2 .orval{color:var(--c);} .cd2 .orval{color:var(--d);}
+  .orval small{display:block;font-family:var(--sans);font-size:11.5px;font-weight:500;color:var(--ink-faint);}
+  .scale{position:relative;height:18px;margin:2px 0 0;font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);}
+  .scale span{position:absolute;transform:translateX(-50%);}
+  .caveat{font-family:var(--sans);font-size:13.5px;line-height:1.5;color:var(--ink-faint);margin:20px 0 0;padding-top:13px;border-top:1px solid var(--line);}
+  .caveat b{color:var(--ink);font-weight:700;}
+  .legend{font-family:var(--sans);font-size:13px;color:var(--ink-faint);margin:4px 0 18px;}
+  .legend b{color:var(--ink);}
+</style>
+</head>
+<body>
+
+<!-- ===== CARD A · ADULTS (mirror) ===== -->
+<section class="card" data-n="A">
+  <p class="eyebrow a">Comparative Data · The adults</p>
+  <h2>The same four cases, adults only</h2>
+  <p class="lede">The mirror of the children figure. Rates are <b>within-population</b> — deaths over the population actually exposed (Gaza-only for Palestinians; occupied territories for the Holocaust) — so child and adult rates compare directly.</p>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Measure</th>
+        <th class="ca" scope="col"><span class="cname">Palestinians</span><span class="cunder">Gaza · Oct 2023–Nov 2025</span></th>
+        <th class="cb" scope="col"><span class="cname">Chechens</span><span class="cunder">1994–2009 · soft data</span></th>
+        <th class="cc" scope="col"><span class="cname">European Jews</span><span class="cunder">Holocaust · 1941–1945</span></th>
+        <th class="cd" scope="col"><span class="cname">Tutsi</span><span class="cunder">Rwanda 1994 · soft data</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="sect"><th scope="row" colspan="5">Adults (18+)</th></tr>
+      <tr><th scope="row">Adults killed</th><td>48,211</td><td>~170,000</td><td>~4.5M</td><td>~350,000</td></tr>
+      <tr><th scope="row">Adult population</th><td>~1.17M</td><td>~840K</td><td>~6.7M</td><td>~550K</td></tr>
+      <tr class="key"><th scope="row">Share of adults killed</th><td class="va">1 in 24</td><td class="vb">1 in 5</td><td class="vc">1 in 1.5</td><td class="vd">1 in 1.6</td></tr>
+      <tr class="sect"><th scope="row" colspan="5">Children, for reference</th></tr>
+      <tr><th scope="row">Children killed</th><td>20,633</td><td>~20,000</td><td>~1.5M</td><td>~300,000</td></tr>
+      <tr class="key"><th scope="row">Share of children killed</th><td class="va">1 in 50</td><td class="vb">1 in 18</td><td class="vc">1 in 1.06</td><td class="vd">1 in 1.3</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><b>In Gaza, 74% of the adult dead are male</b> (35,766 of 48,211) — the military-age-male concentration that lifts the adult rate above the child rate. In the Holocaust the order flips: adults died at 1 in 1.5, children at 1 in 1.06. <span class="soft">Chechen and Tutsi splits are soft (wide kill ranges, unstated child cutoffs).</span> Gaza figures are identified deaths; independent studies suggest a ~35–41% undercount, weighted toward adult males under rubble.</p>
+</section>
+
+<!-- ===== CARD B · ODDS RATIO ===== -->
+<section class="card" data-n="B">
+  <p class="eyebrow c">Comparative Data · The age-skew of who died</p>
+  <h2>Was a child or an adult more likely to be killed?</h2>
+  <p class="lede">The <b>odds ratio</b> of a child’s death versus an adult’s, within each population. Below 1, children were relatively spared; above 1, children were killed at higher odds. The odds ratio — not relative risk — is used because at near-total death rates it alone captures <b>how completely child survival collapsed.</b></p>
+  <p class="legend">◗ <b>left</b> = a war’s pattern (fighting-age adults die, children survive) &nbsp;·&nbsp; <b>right</b> = an extermination’s pattern (child survival driven toward zero)</p>
+
+  <div class="axis-wrap">
+    <div class="axis-head"><span class="l">◀ children spared</span><span>odds even (1.0)</span><span class="r">children targeted ▶</span></div>
+
+    <div class="orrow ca2">
+      <div class="orname">Palestinians<small>Gaza · register — firm</small></div>
+      <div class="track"><div class="mid"></div><div class="dot" style="left:23.3%;width:20px;"></div></div>
+      <div class="orval">0.47<small>child survival 2.1× an adult’s</small></div>
+    </div>
+
+    <div class="orrow cb2">
+      <div class="orname">Chechens<small>soft data</small></div>
+      <div class="track"><div class="mid"></div><div class="dot" style="left:3.9%;width:20px;"></div></div>
+      <div class="orval">0.23<small>child survival 4.3× an adult’s</small></div>
+    </div>
+
+    <div class="orrow cd2">
+      <div class="orname">Tutsi<small>soft data</small></div>
+      <div class="track"><div class="mid"></div><div class="dot" style="left:58.5%;width:20px;"></div></div>
+      <div class="orval">1.7<small>child survival 0.58× an adult’s</small></div>
+    </div>
+
+    <div class="orrow cc2">
+      <div class="orname">European Jews<small>Holocaust · USHMM rates</small></div>
+      <div class="track"><div class="mid"></div><div class="dot" style="left:81%;width:18.5%;"></div></div>
+      <div class="orval">4.0–7.7<small>child survival 4–8× lower</small></div>
+    </div>
+
+    <div class="scale">
+      <span style="left:3.9%;">0.2</span><span style="left:23.3%;">0.5</span>
+      <span style="left:43.75%;">1</span><span style="left:64%;">2.5</span><span style="left:90%;">7</span>
+    </div>
+  </div>
+
+  <p class="caveat"><b>This measures the age-pattern of lethality — it is not a legal determination of genocide.</b> Genocide turns on intent to destroy a group, which is multi-factorial; an overwhelmingly adult-male killing can still be genocide (Srebrenica, ~8,000 men and boys). A collapsed child-survival ratio is a strong demographic <i>signature</i> of an eliminationist pattern, not proof of one — and its absence does not rule one out. <b>Data:</b> Gaza firm (identified register, ~35–41% undercount); Holocaust firm-ish (USHMM 6–11% child vs 33% adult survival); Chechnya &amp; Rwanda soft (illustrative).</p>
+</section>
+
+</body>
+</html>
