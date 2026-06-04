@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparison Table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15171d;
+    --ink-soft:#3f4350;
+    --ink-faint:#6e7384;
+    --line:#dcdee6;
+    --line-strong:#c2c5d1;
+    --a:#2f3fc7;          /* indigo — Palestinians */
+    --a-tint:#e9ebfb;
+    --b:#b5630a;          /* amber — Chechens */
+    --b-tint:#fbeed6;
+    --c:#b22a4d;          /* rose — Holocaust */
+    --c-tint:#fbe6ec;
+    --d:#0e8a6e;          /* teal — Rwanda */
+    --d-tint:#dcf4ec;
+    --serif:"Source Serif 4",Georgia,serif;
+    --sans:"Libre Franklin",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:#fff;
+    color:var(--ink);
+    font-family:var(--serif);
+    font-size:15px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    padding:16px 18px;
+  }
+  .wrap{max-width:1040px;margin:0;}
+
+  .eyebrow{
+    font-family:var(--sans);
+    font-size:11px;font-weight:700;
+    letter-spacing:.11em;text-transform:uppercase;
+    color:var(--ink-faint);
+    margin:0 0 3px;
+  }
+  h1{
+    font-family:var(--serif);
+    font-weight:600;font-size:22px;line-height:1.22;
+    letter-spacing:-.01em;margin:0 0 7px;
+    text-wrap:balance;
+  }
+  .lede{
+    margin:0 0 14px;color:var(--ink-soft);
+    font-size:14.5px;line-height:1.48;
+  }
+  .lede b{color:var(--ink);font-weight:600;}
+
+  table{
+    width:auto;border-collapse:collapse;
+    font-family:var(--sans);
+    margin:0 0 4px;
+  }
+  caption{
+    caption-side:top;text-align:left;
+    font-family:var(--sans);font-size:11px;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);
+    padding:0 0 5px;
+  }
+  th,td{padding:3px 13px;text-align:left;vertical-align:baseline;}
+  th:first-child,td:first-child{padding-left:0;}
+  td:last-child,th:last-child{padding-right:0;}
+  thead th.ca,thead th.cb,thead th.cc,thead th.cd,
+  tbody td.va,tbody td.vb,tbody td.vc,tbody td.vd{min-width:140px;}
+
+  thead th{
+    border-bottom:2px solid var(--line-strong);
+    font-size:13px;line-height:1.25;padding-bottom:6px;
+  }
+  thead th.ca{border-bottom-color:var(--a);}
+  thead th.cb{border-bottom-color:var(--b);}
+  thead th.cc{border-bottom-color:var(--c);}
+  thead th.cd{border-bottom-color:var(--d);}
+  .cname{font-family:var(--serif);font-weight:600;font-size:15px;display:block;}
+  .ca .cname{color:var(--a);}
+  .cb .cname{color:var(--b);}
+  .cc .cname{color:var(--c);}
+  .cd .cname{color:var(--d);}
+  .cunder{display:block;font-size:11px;font-weight:500;color:var(--ink-faint);}
+
+  tbody th{
+    font-weight:500;font-size:13.5px;color:var(--ink);
+    border-bottom:1px solid var(--line);
+  }
+  tbody td{
+    font-family:var(--mono);font-size:13px;font-weight:500;
+    color:var(--ink-soft);border-bottom:1px solid var(--line);
+    font-feature-settings:"tnum" 1;white-space:nowrap;
+  }
+  td.va{color:var(--a);}
+  td.vb{color:var(--b);}
+  td.vc{color:var(--c);}
+  td.vd{color:var(--d);}
+
+  tr.sect th{
+    font-family:var(--sans);font-size:10.5px;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);
+    padding-top:11px;padding-bottom:3px;border-bottom:none;
+  }
+  tr.sect td{border-bottom:none;}
+
+  tr.key th{font-weight:700;color:var(--ink);}
+  tr.key td{font-size:14.5px;font-weight:600;}
+  tr.key td.va{background:var(--a-tint);}
+  tr.key td.vb{background:var(--b-tint);}
+  tr.key td.vc{background:var(--c-tint);}
+  tr.key td.vd{background:var(--d-tint);}
+
+  .notes{
+    font-family:var(--sans);font-size:11.5px;line-height:1.5;
+    color:var(--ink-faint);margin:13px 0 0;
+    border-top:1px solid var(--line);padding-top:9px;
+  }
+  .notes p{margin:0 0 4px;}
+  .notes .lab{font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:10.5px;}
+  .notes .la{color:var(--a);}
+  .notes .lb{color:var(--b);}
+  .notes .lc{color:var(--c);}
+  .notes .ld{color:var(--d);}
+
+  /* ---- Bibliography ---- */
+  .biblio{
+    font-family:var(--sans);
+    margin:18px 0 0;
+    border-top:2px solid var(--line-strong);
+    padding-top:12px;
+  }
+  .biblio h2{
+    font-family:var(--sans);font-size:11px;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);
+    margin:0 0 12px;
+  }
+  .src-group{margin:0 0 14px;}
+  .src-group:last-child{margin-bottom:0;}
+  .src-head{
+    display:block;
+    margin:0 0 5px;padding-bottom:4px;
+    border-bottom:1px solid var(--line);
+  }
+  .src-head .lab{
+    font-family:var(--sans);font-weight:700;font-size:11px;
+    letter-spacing:.05em;text-transform:uppercase;
+    display:block;margin-bottom:2px;
+  }
+  .src-head .rng{
+    font-family:var(--mono);font-size:11.5px;font-weight:500;
+    color:var(--ink-soft);font-feature-settings:"tnum" 1;
+    display:block;
+  }
+  .src-head .rng b{color:var(--ink);font-weight:600;}
+  ul.refs{
+    list-style:none;margin:0;padding:0;
+    font-size:11.5px;line-height:1.5;color:var(--ink-soft);
+  }
+  ul.refs li{
+    position:relative;padding:1.5px 0 1.5px 14px;
+  }
+  ul.refs li::before{
+    content:"";position:absolute;left:0;top:8px;
+    width:4px;height:4px;border-radius:50%;background:var(--line-strong);
+  }
+  ul.refs li.la::before{background:var(--a);}
+  ul.refs li.lb::before{background:var(--b);}
+  ul.refs li.lc::before{background:var(--c);}
+  ul.refs li.ld::before{background:var(--d);}
+  ul.refs .org{font-weight:600;color:var(--ink);}
+  ul.refs a{
+    color:inherit;text-decoration:none;
+    border-bottom:1px solid var(--line-strong);
+    transition:border-color .15s,color .15s;
+  }
+  ul.refs a:hover{color:var(--ink);border-bottom-color:currentColor;}
+  .biblio .foot{
+    font-size:11px;line-height:1.5;color:var(--ink-faint);
+    margin:14px 0 0;padding-top:9px;border-top:1px solid var(--line);
+  }
+  .biblio .foot p{margin:0 0 5px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Figure 7.3 · Comparative Data</p>
+    <h1>Civilian death tolls under occupation and genocide: four cases compared</h1>
+    <p class="lede">Absolute counts and per-capita rates across four populations subjected to mass killing. <b>Per-capita figures express the share of the population killed</b> — the most direct measure of lethality across populations of very different size. Cases are ordered by overall lethality.</p>
+
+    <table>
+      <caption>Deaths and rates, by case</caption>
+      <thead>
+        <tr>
+          <th scope="col">Measure</th>
+          <th class="ca" scope="col"><span class="cname">Palestinians</span><span class="cunder">under IDF control · Oct 2023–Jan 2026</span></th>
+          <th class="cb" scope="col"><span class="cname">Chechens</span><span class="cunder">under Russian control · 1994–2009</span></th>
+          <th class="cc" scope="col"><span class="cname">European Jews</span><span class="cunder">the Holocaust · 1941–1945</span></th>
+          <th class="cd" scope="col"><span class="cname">Tutsi</span><span class="cunder">Rwandan genocide · Apr–Jul 1994</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="sect"><th scope="row" colspan="5">Context</th></tr>
+        <tr><th scope="row">Population</th><td>~7.4M</td><td>~1.2M<sup>*</sup></td><td>~9.5M</td><td>~950K<sup>*</sup></td></tr>
+        <tr><th scope="row">Duration</th><td>27 months</td><td>~15 years</td><td>~4 years</td><td>~100 days</td></tr>
+
+        <tr class="sect"><th scope="row" colspan="5">Total population</th></tr>
+        <tr><th scope="row">Total killed</th><td>~74,000</td><td>~190,000<sup>*</sup></td><td>~6M</td><td>~650,000<sup>*</sup></td></tr>
+        <tr class="key"><th scope="row">Per capita killed</th><td class="va">1 in 100</td><td class="vb">1 in 6</td><td class="vc">1 in 1.6</td><td class="vd">1 in 1.5</td></tr>
+
+        <tr class="sect"><th scope="row" colspan="5">Children</th></tr>
+        <tr><th scope="row">Children killed</th><td>20,633<sup>†</sup></td><td>~20,000</td><td>~1.5M</td><td>~300,000</td></tr>
+        <tr><th scope="row">Child population</th><td>~2.97M<sup>*</sup></td><td>~360K<sup>*</sup></td><td>~1.6M</td><td>~400K</td></tr>
+        <tr class="key"><th scope="row">Share of children killed</th><td class="va">1 in 144</td><td class="vb">1 in 18</td><td class="vc">1 in 1.07</td><td class="vd">1 in 1.3</td></tr>
+      </tbody>
+    </table>
+
+    <div class="notes">
+      <p><sup>*</sup>Where sources give a range, the table shows the midpoint; the full range and underlying sources appear in the bibliography below. <b>Share of children killed</b> = children killed ÷ child population, so the figure is comparable across cases regardless of how large each child population was. The Palestinian child population is the <b>river-to-sea</b> total (~40% under 18, ~2.97M), not Gaza's higher 47% share applied to everyone.</p>
+      <p><sup>†</sup><b>The Palestinian child count is a named enumeration, not an estimate.</b> 20,633 is the exact under-18 count from the Gaza MoH identified-fatalities roster (“List 12,” 68,844 names, cutoff 10 Nov 2025) — every record carries an age. Re-cut by threshold: <b>under-15 = 16,243 · under-16 = 17,594 · under-18 = 20,633</b>. Adjusting for the ~35–41% undercount of the official list raises the under-18 figure to ~31,900; the named 20,633 is the firm floor. The earlier ~18,600 (PCBS) sat below an actual under-18 count of the names. At 20,633 ÷ ~2.97M the river-to-sea under-18 share is <b>1 in 144</b> (Gaza-only: ~1 in 50).</p>
+      <p><b>The four columns are not measured on a common basis</b> — read the children rows with three asymmetries in mind. <b>(1) Age cutoff:</b> only the Palestinian count is register-cuttable to a fixed line (under-18); the Chechen denominator is under-15, the Holocaust cutoff is undefined, the Tutsi figure mixes definitions. <b>(2) Numerator basis:</b> the table pairs the Holocaust’s demographic-<i>maximum</i> estimate (~1.5M) with Gaza’s documented-<i>minimum</i> named count (20,633) — symmetric treatment would put both at named-count or both at demographic-estimate level. <b>(3) Population matching:</b> a per-capita rate is only coherent when numerator and denominator describe the same people (Tutsi-killed ÷ Tutsi-population, not all-victims ÷ Tutsi). None of these is an arithmetic error; each is a basis choice that shapes the cross-case comparison.</p>
+    </div>
+
+    <div class="biblio">
+      <h2>Sources &amp; ranges</h2>
+
+      <div class="src-group">
+        <div class="src-head">
+          <span class="lab la">Palestinians — under IDF control</span>
+          <span class="rng">Killed <b>~74,000–110,000+</b> · Children killed <b>20,633 named (under-18) – ~31,900 adj.</b> · Population <b>~7.3–7.5M</b> (children <b>~2.97M</b>, ~40%)</span>
+        </div>
+        <ul class="refs">
+          <li class="la"><span class="org">Gaza MoH identified-fatalities roster (“List 12”)</span> — person-level register of <b>68,844 named dead</b> (covers 7 Oct 2023–10 Nov 2025), deduplicated by national ID, with an age on every record. Direct enumeration of children: under-15 = 16,243 · under-16 = 17,594 · under-18 = <b>20,633</b> — the named numerator used in this table. Surfaced via <i>Haaretz</i> / Gabriel Epstein, Feb 2026. <a href="https://www.haaretz.com/gaza/2026-02-24/ty-article-static/.premium/behind-the-numbers-the-truth-about-gazas-death-list/0000019c-756b-d759-a7bf-fffba5a50000" target="_blank" rel="noopener">haaretz.com — Behind the Numbers</a></li>
+          <li class="la"><span class="org">UN OCHA — Occupied Palestinian Territory</span> — live casualties dataset (Gaza Ministry of Health + West Bank fatalities), updated continuously; ~71,000 Gaza + ~1,000 West Bank as of end-2025. <a href="https://www.ochaopt.org/data/casualties" target="_blank" rel="noopener">ochaopt.org/data/casualties</a></li>
+          <li class="la"><span class="org">Jamaluddine et al., <i>The Lancet</i> (2025)</span> — capture–recapture analysis: 64,260 traumatic-injury deaths to 30 Jun 2024 (95% CI 55,298–78,525), ~41% above the official count for that period. <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)02678-3/fulltext" target="_blank" rel="noopener">doi:10.1016/S0140-6736(24)02678-3</a></li>
+          <li class="la"><span class="org"><i>The Lancet Global Health</i> (2026)</span> — population-representative household survey finding official figures undercount violent deaths by ~35%, converging with the capture–recapture estimate. <a href="https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(25)00522-4/fulltext" target="_blank" rel="noopener">doi:10.1016/S2214-109X(25)00522-4</a></li>
+          <li class="la"><span class="org">PCBS — Palestinian Central Bureau of Statistics</span> — West Bank 3.43M (incl. East Jerusalem) + Gaza 2.13M; under-18 share 41% (West Bank) / 47% (Gaza); 18,592 children killed reported to end-2025. Projection rolled forward from the 2017 census. <a href="https://www.pcbs.gov.ps/statisticsIndicatorsTables.aspx?lang=en&amp;table_id=676" target="_blank" rel="noopener">pcbs.gov.ps — population indicators</a></li>
+          <li class="la"><span class="org">Israel CBS — Central Bureau of Statistics</span> — population register: 2.147M Arabs (21.1% of 10.18M), of whom 747,400 are children under 18 (Sept 2025). Firmest data of the set. <a href="https://www.cbs.gov.il/en/mediarelease/Pages/default.aspx" target="_blank" rel="noopener">cbs.gov.il — media releases</a></li>
+          <li class="la"><span class="org">River-to-sea reconciliation</span> — Israel's 2.147M Arabs + PCBS's 5.56M, less the ~360–400K East Jerusalem residents counted by both agencies, yields ~7.3–7.5M; blended under-18 share ~40% → ~3.0M children (range 2.75–3.05M). </li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <div class="src-head">
+          <span class="lab lb">Chechens — under Russian control</span>
+          <span class="rng">Killed <b>~50,000–300,000</b> · Children <b>~20,000+</b> · Population <b>~1.1–1.3M</b></span>
+        </div>
+        <ul class="refs">
+          <li class="lb"><span class="org">Memorial Human Rights Centre</span> — conservative civilian-death estimates for both wars (lower bound ~50,000–75,000). <a href="https://memohrc.org/en/" target="_blank" rel="noopener">memohrc.org</a></li>
+          <li class="lb"><span class="org">Human Rights Watch</span> — Russia/Chechnya report archive: abuses, "disappearances" and civilian casualties, 1994–2009. <a href="https://www.hrw.org/europe/central-asia/russia" target="_blank" rel="noopener">hrw.org — Russia/Chechnya reports</a></li>
+          <li class="lb"><span class="org">Amnesty International</span> — Russian Federation document archive (killings, "filtration" camps). <a href="https://www.amnesty.org/en/search/?q=chechnya" target="_blank" rel="noopener">amnesty.org — Chechnya documents</a></li>
+          <li class="lb"><span class="org">Chechen officials / State Council (2004)</span> — upper-bound ~250,000–300,000 dead; 20,000+ children, as reported. <a href="https://www.theguardian.com/world/2005/aug/16/chechnya.russia" target="_blank" rel="noopener">via The Guardian, 2005</a></li>
+          <li class="lb"><span class="org">Soviet Census, 1989</span> — Checheno-Ingush ASSR base population &amp; ~30% under-15 share. <a href="https://www.demoscope.ru/weekly/ssp/rus_nac_89.php?reg=0" target="_blank" rel="noopener">demoscope.ru — 1989 census</a></li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <div class="src-head">
+          <span class="lab lc">European Jews — under Nazi control</span>
+          <span class="rng">Killed <b>~5.7–6M</b> · Children <b>~1–1.5M</b> · Pre-war population <b>~9.5M</b></span>
+        </div>
+        <ul class="refs">
+          <li class="lc"><span class="org">USHMM</span> — "Documenting Numbers of Victims of the Holocaust": ~6 million Jews killed, with country/camp breakdowns. <a href="https://encyclopedia.ushmm.org/content/en/article/documenting-numbers-of-victims-of-the-holocaust-and-nazi-persecution" target="_blank" rel="noopener">encyclopedia.ushmm.org — Documenting Numbers</a></li>
+          <li class="lc"><span class="org">USHMM</span> — "Plight of Jewish Children": ~1.6M Jewish children in soon-to-be-occupied territories in 1939; "more than 1 million and perhaps as many as 1.5 million" killed (the child denominator and range used here). <a href="https://encyclopedia.ushmm.org/content/en/article/plight-of-jewish-children" target="_blank" rel="noopener">encyclopedia.ushmm.org — Plight of Jewish Children</a></li>
+          <li class="lc"><span class="org">Yad Vashem</span> — Central Database of Shoah Victims' Names (~4.8M names recorded). <a href="https://yvng.yadvashem.org/" target="_blank" rel="noopener">yvng.yadvashem.org</a></li>
+          <li class="lc"><span class="org">Raul Hilberg</span>, <i>The Destruction of the European Jews</i> (3rd ed., 2003) — ~5.1M, widely-cited lower bound. </li>
+          <li class="lc"><span class="org">Wolfgang Benz (ed.)</span>, <i>Dimension des Völkermords</i> (1991) — country-by-country toll, ~5.7–6.0M. </li>
+        </ul>
+      </div>
+
+      <div class="src-group">
+        <div class="src-head">
+          <span class="lab ld">Tutsi — under Hutu control</span>
+          <span class="rng">Killed <b>~500,000–800,000+</b> (~¾ of Tutsi) · Population <b>~0.66–1.0M</b></span>
+        </div>
+        <ul class="refs">
+          <li class="ld"><span class="org">Human Rights Watch / Des Forges (1999)</span> — <i>Leave None to Tell the Story</i>, "Numbers" chapter: ≥500,000 killed (~77% of Tutsi), Tutsi population est. 657,000 (Seltzer). <a href="https://www.hrw.org/reports/1999/rwanda/Geno1-3-04.htm" target="_blank" rel="noopener">hrw.org — "Numbers" chapter</a></li>
+          <li class="ld"><span class="org">Human Rights Watch</span> — full report (789 pp.), genocide in Rwanda. <a href="https://www.hrw.org/sites/default/files/media_2020/12/rwanda-leave-none-to-tell-the-story.pdf" target="_blank" rel="noopener">full report PDF</a></li>
+          <li class="ld"><span class="org">UN expert estimate</span> — ~800,000 dead Apr–Jul 1994 (includes non-genocide deaths), cited in the HRW "Numbers" chapter above. </li>
+          <li class="ld"><span class="org">Human Rights Watch (2003)</span> — <i>Lasting Wounds: Consequences of Genocide and War for Rwanda's Children</i>: ~300,000 children killed (no age cutoff specified). <a href="https://www.hrw.org/report/2003/04/03/lasting-wounds/consequences-genocide-and-war-rwandas-children" target="_blank" rel="noopener">hrw.org — Lasting Wounds</a></li>
+          <li class="ld"><span class="org">Government of Rwanda (2002 census)</span> — 1,074,017 victims recorded (upper bound, all victims). <a href="https://www.gov.rw/" target="_blank" rel="noopener">gov.rw</a></li>
+        </ul>
+      </div>
+
+      <div class="foot">
+        <p>All figures are contested and methods differ — direct killings, indirect/excess deaths, and definitions of "victim" vary by source. The table uses midpoints of the ranges above; choosing different bounds shifts the per-capita rates but not their relative ordering.</p>
+        <p><b>Variance.</b> None of these are sample surveys with standard errors; the uncertainty is structural (register coverage, projection assumptions, wartime disruption). The Israeli register is firmest (±1–2%); the PCBS West Bank projection is the softest input, with a fringe critique (Ettinger) claiming up to ~1.75M overstatement — rejected by mainstream demographers but flagged here as the downside scenario. The summed Palestinian child figure is solid to ~±5–8%, skewed downward. For Gaza specifically, independent studies suggest the official death count is undercounted by ~35–41%, so the killed figures here are conservative.</p>
+        <p><b>Definition of "child."</b> The age cutoff is not uniform — only the Palestinian figure is register-based: <b>under 18</b>, per the UN Convention on the Rights of the Child (PCBS / Gaza MoH). The other three are demographic reconstructions with no common boundary: the Jewish-child toll is itself a range (USHMM: "more than 1 million and perhaps as many as 1.5 million," with under-12s and 13–18 "adolescents" treated differently), and the Rwandan ~300,000 and Chechen ~20,000 child tolls carry no stated cutoff. Because a higher boundary enlarges both numerator and denominator, the children-killed rates are only loosely comparable — treat the Palestinian rate as the most precisely defined and the Holocaust child rate as a wide band (~1 in 1.1 to 1 in 1.6).</p>
+        <p>Palestinian citizens of Israel experienced minimal direct killing but are included in the population denominator as people under IDF jurisdiction. East Jerusalem (~360–400K) is counted once. Gaza/West Bank totals are for an ongoing event (through Jan 2026) and continue to change.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
