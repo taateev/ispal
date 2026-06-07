@@ -1,0 +1,1681 @@
+[
+  {
+    "cat": "strike-politics",
+    "n": 1,
+    "date": "Nov 1935",
+    "year": 1935,
+    "location": "Ya'bad hills, near Jenin",
+    "event": "Sheikh Izz al-Din al-Qassam killed in a police shoot-out after his band's first attacks — the proto-revolt that radicalised the rural base and supplied the revolt's commander elite.",
+    "quote": "One of al-Qassam's eleven men could not resist the temptation and killed the Police sergeant.",
+    "src": "Porath vol. 2 p. 136",
+    "srcType": "secondary",
+    "srcNote": "Qassamites supplied 14 band + 2 regional commanders",
+    "actor": "British police / Qassamite band",
+    "actorType": [
+      "british",
+      "qassamite"
+    ],
+    "scale": "Qassam + several killed",
+    "scaleBig": "~4",
+    "scaleNote": "Triggered the Qassamite martyr-cult",
+    "links": [],
+    "searchTerms": [
+      "Qassam",
+      "Ya'bad",
+      "1935",
+      "Qassamite"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "One of al-Qassam’s people could not resist the temptation and killed the Police sergeant."
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
+    "n": 1,
+    "date": "15 Apr 1936",
+    "year": 1936,
+    "location": "Nablus–Tulkarm road",
+    "event": "Qassamite band under Farhan al-Sa'di stops a bus and kills two Jews — the spark of the revolt.",
+    "quote": "A group of armed Arabs killed two Jews who were taken off a bus passing through that area.",
+    "src": "Porath vol. 2 p. 162",
+    "srcType": "secondary",
+    "srcNote": "Sa'di later hanged Nov 1937",
+    "actor": "Qassamite band (Farhan al-Sa'di)",
+    "actorType": [
+      "qassamite"
+    ],
+    "scale": "2 Jews killed",
+    "scaleBig": "2",
+    "scaleNote": "Trigger incident; reprisal cycle followed",
+    "links": [],
+    "searchTerms": [
+      "Farhan al-Sa'di",
+      "1936",
+      "Tulkarm",
+      "trigger",
+      "bus"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "On 15th April 1936 a group of armed Arabs killed two Jews who were taken off a bus passing through that area.! In all probability, this act of murder was committed by Farhan al-Sa‘adi’s people, although some Arab authors attributed it to non- political robbers? Two days later, memb"
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
+    "n": 2,
+    "date": "19 Apr 1936",
+    "year": 1936,
+    "location": "Jaffa",
+    "event": "Jaffa mobs — largely Hawran and Trans-Jordan day-labourers, incited by false rumours — attack Jews; the riot that opened the revolt.",
+    "quote": "Day labourers from the Hawran and Trans-Jordan… attacked many Jews… killing nine and wounding about ten.",
+    "src": "Porath vol. 2 p. 162",
+    "srcType": "secondary",
+    "srcNote": "Rumour of Arabs killed in Tel Aviv",
+    "actor": "Jaffa rioters (migrant labourers)",
+    "actorType": [
+      "local"
+    ],
+    "scale": "9 Jews killed",
+    "scaleBig": "9",
+    "scaleNote": "~10 wounded",
+    "links": [],
+    "searchTerms": [
+      "Jaffa",
+      "1936",
+      "Hawran",
+      "riot"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "The climax was reached when on 19th April Arab mobs in Jaffa, mainly composed of day labourers from the Hawran and Trans-Jordan,® incited by unfounded rumours about Arabs having been killed in neighbouring Tel Aviv, attacked many Jews who happened to be there, killing nine and wounding about ten."
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
+    "n": 3,
+    "date": "May–Aug 1936",
+    "year": 1936,
+    "location": "Mandate-wide",
+    "event": "First-phase campaign of individual anti-Jewish terror — ambushes of isolated settlements and road traffic; not pogrom-style but distributed killing.",
+    "quote": "In all these instances about 80 Jews were killed and 400 injured.",
+    "src": "Porath vol. 2 pp. 178–179",
+    "srcType": "secondary",
+    "srcNote": "Per STH / Haganah survey files",
+    "actor": "Rebel bands",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "~80 Jews killed",
+    "scaleBig": "80",
+    "scaleNote": "~400 wounded (Apr–Oct 1936)",
+    "links": [],
+    "searchTerms": [
+      "1936",
+      "anti-Jewish",
+      "terror",
+      "settlements"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "the Government hospital in Jaffa.l2® In all these instances about 80 Jews were killed and 400 injured."
+      }
+    ]
+  },
+  {
+    "cat": "british-reprisal",
+    "n": 1,
+    "date": "Jun–Jul 1936",
+    "year": 1936,
+    "location": "Jaffa",
+    "event": "British demolish a large part of old Jaffa under a 'public health' pretext — collective-punishment urban clearance.",
+    "quote": "The demolition of a large part of old Jaffa… on a public health pretext.",
+    "src": "Porath vol. 2 p. 181",
+    "srcType": "secondary",
+    "srcNote": "Operation Anchor / Operation Cauldron",
+    "actor": "British Army / Mandate government",
+    "actorType": [
+      "british"
+    ],
+    "scale": "~6,000 displaced",
+    "scaleBig": "Mass",
+    "scaleNote": "Homes dynamited",
+    "links": [],
+    "searchTerms": [
+      "Jaffa",
+      "demolition",
+      "1936",
+      "collective punishment"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "Therefore the Government decided to bring this cat-and-mouse game to an end by demolishing a large part of old Jaffa, on a public health pretext."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 1,
+    "date": "1936",
+    "year": 1936,
+    "location": "Northern hills",
+    "event": "Qawuqji's 'Court of the Revolt' executes Arabs as spies — the earliest organised intra-Arab rebel justice.",
+    "quote": "Three other Arabs who had been indicted as spies were executed, two of them by beating.",
+    "src": "Porath vol. 2 pp. 190–191",
+    "srcType": "secondary",
+    "srcNote": "Qawuqji communiqués via Te'udot / al-Nimr",
+    "actor": "Qawuqji 'Court of the Revolt'",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "3+ executed",
+    "scaleBig": "3",
+    "scaleNote": "Plus floggings, house demolition",
+    "links": [],
+    "searchTerms": [
+      "Court of the Revolt",
+      "spies",
+      "1936",
+      "Qawuqji"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "It was composed of Munir al-Rayis (President), Muhammad al-Ashmar, Fakhri ‘Abd al-Hadi, and ‘Abd al-Rahim al-Hajj Muhammad.?32 This court sentenced one Arab to 100 lashes and ordered that his home be demolished because he had stolena rifle from the rebels 233 Three other Arabs who had been indicted as spies were executed, two of them by beating.?3* Also ‘ordinary’ thieves and other petty criminals were tried by this ‘court’ whose harsh ‘sentences’ were carried out following their approval by the Commander-in-Chief."
+      }
+    ]
+  },
+  {
+    "cat": "strike-politics",
+    "n": 2,
+    "date": "Apr–Oct 1936",
+    "year": 1936,
+    "location": "Mandate-wide",
+    "event": "The six-month general strike — the longest anti-colonial strike of the period — mobilising Palestinians across all classes; the Arab Higher Committee forms under Amin al-Husayni.",
+    "quote": "Everybody was involved, from port workers to railroad workers to newspapers.",
+    "src": "Survey of Palestine 1946",
+    "srcType": "primary",
+    "srcNote": "Mandate government record",
+    "actor": "Arab Higher Committee / national strike",
+    "actorType": [
+      "arab-opposition",
+      "rebel-husayni"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Strike called off Oct 1936 pending Peel",
+    "links": [],
+    "searchTerms": [
+      "general strike",
+      "1936",
+      "Arab Higher Committee",
+      "Husayni"
+    ],
+    "passages": [
+      {
+        "file": "survey_of_palestine_1946",
+        "text": "The Arab Executive called for a general strike and organized a demonstration outside the Government Offices in Jerusalem: the mob was dispersed after repeated baton charges by the police."
+      }
+    ]
+  },
+  {
+    "cat": "strike-politics",
+    "n": 3,
+    "date": "Sep–Oct 1936",
+    "year": 1936,
+    "location": "Northern hills",
+    "event": "Fawzi al-Qawuqji, Tripoli-born ex-Ottoman officer, enters with a volunteer force; on 2 Sep 1936 six band commanders sign assurance of his overall command — the only attempt at unified rebel hierarchy.",
+    "quote": "They gave him a written assurance of his position as overall commander.",
+    "src": "Hughes 2019",
+    "srcType": "secondary",
+    "srcNote": "Commanders incl. al-Hajj Muhammad, 'Abd al-Raziq, 'Abd al-Hadi",
+    "actor": "Qawuqji volunteer force",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Withdrew to Iraq Oct 1936; hierarchy collapsed",
+    "links": [],
+    "searchTerms": [
+      "Qawuqji",
+      "1936",
+      "commander",
+      "volunteers"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "On 2 September 1936, he had met six commanders of bands – Fakhri ‘Abd al-Hadi, ‘Abd al-Rahim al-Hajj Muhammad, ‘Arif ‘Abd al-Raziq, Shaykh Farhan al-Sa‘di, Shaykh ‘Atiyya Muhammad ‘Awad, and Muhammad al-Salih (the last three were Qassamites) – and they gave him a written assurance of his position as overall commander.74 His departure in late October 1936 meant the collapse of rebel hierarchical military structures."
+      }
+    ]
+  },
+  {
+    "cat": "anti-british",
+    "n": 1,
+    "date": "26 Sep 1937",
+    "year": 1937,
+    "location": "Nazareth",
+    "event": "Lewis Andrews, acting District Commissioner of the Galilee, assassinated by Qassamites under Muhammad al-Salih — the declaration of the second-phase revolt.",
+    "quote": "The first successful assault on the life of a high-ranking British civil servant.",
+    "src": "Porath vol. 2 pp. 234–235",
+    "srcType": "secondary",
+    "srcNote": "Hughes p. 377 confirms bodyguard",
+    "actor": "Qassamite band (Muhammad al-Salih)",
+    "actorType": [
+      "qassamite"
+    ],
+    "scale": "Andrews + bodyguard killed",
+    "scaleBig": "2",
+    "scaleNote": "Triggered AHC ban + Mufti's exile",
+    "links": [],
+    "searchTerms": [
+      "Andrews",
+      "Nazareth",
+      "1937",
+      "assassination"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "It was the first successful assault on the life of a high-ranking British civil servant and was regarded as an outright declaration of rebellion against British rule."
+      }
+    ]
+  },
+  {
+    "cat": "druze",
+    "n": 1,
+    "date": "5 Dec 1937",
+    "year": 1937,
+    "location": "Suwayda, Jabal Druze",
+    "event": "Abba Hushi formalises Jewish–Druze relations with Sultan al-Atrash; Jabal Druze notables agree to keep the Druze out of the Palestine revolt.",
+    "quote": "Sultan al-Atrash's attitude was approved at a general meeting… on 5th December 1937 in Suwayda'.",
+    "src": "Porath vol. 2 pp. 271–272",
+    "srcType": "secondary",
+    "srcNote": "Abu Hushi files HA",
+    "actor": "Druze leadership / Jewish Agency",
+    "actorType": [
+      "druze",
+      "jewish"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Druze volunteers to the revolt curtailed",
+    "links": [],
+    "searchTerms": [
+      "Druze",
+      "Sultan al-Atrash",
+      "Suwayda",
+      "1937",
+      "Abu Hushi"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "Sultan al-Atrash’s attitude was approved at a general meeting of the Jabal Druze’s notables and leaders held on 5th December 1937 in Suwayda’.3®3 Consequently the Druze leadership launched a propaganda campaign among their brethren in Jabal Druze in Syria and in Lebanon not to join the Arab rebels in Palestine."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 2,
+    "date": "Winter 1937",
+    "year": 1937,
+    "location": "Haifa–Lower Galilee",
+    "event": "Three prominent Arab police officers — active in the 1932 Nahalal-murder trial — killed by the Qassamite 'Haifa murder gang'; the opening of the systematic anti-policeman campaign.",
+    "quote": "Three prominent Arab Police officers… were murdered. The homes of others were attacked with bombs.",
+    "src": "Porath vol. 2 p. 234",
+    "srcType": "secondary",
+    "srcNote": "Battershill's 'Haifa murder gang'",
+    "actor": "Qassamite band",
+    "actorType": [
+      "qassamite"
+    ],
+    "scale": "3 Arab police killed",
+    "scaleBig": "3",
+    "scaleNote": "Anti-collaborator campaign opens",
+    "links": [],
+    "searchTerms": [
+      "Haifa",
+      "police",
+      "Nahalal",
+      "1937",
+      "collaborator"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "Three prominent Arab Police officers, who had been active in 1932 in the trial of Khalil Muhammad ‘Isa and his associates in connection with the Nahalal murder, were murdered."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 3,
+    "date": "Nov 1937",
+    "year": 1937,
+    "location": "near Haifa",
+    "event": "Farhan al-Sa'di, Qassamite veteran and trigger-man of the revolt, captured and hanged — betrayed by the Irshayid family whose police informer he had earlier killed. The first link in a vengeance chain.",
+    "quote": "Captured, tried and hanged… as a result of information given by the Irshayid family.",
+    "src": "Porath vol. 2 p. 257",
+    "srcType": "secondary",
+    "srcNote": "MacKereth to Eden CO 733/368",
+    "actor": "British (on Irshayid information)",
+    "actorType": [
+      "british",
+      "arab-opposition"
+    ],
+    "scale": "Sa'di hanged",
+    "scaleBig": "1",
+    "scaleNote": "Irshayid revenge → later betray al-Hajj Muhammad",
+    "links": [],
+    "searchTerms": [
+      "Farhan al-Sa'di",
+      "Irshayid",
+      "hanged",
+      "1937",
+      "vengeance"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": ": Farhan al-Sa‘di one of the Tkhwan al-Qassam veterans, was captured, tried and hanged in November 1937 by the authorities, as a result of information given by the Irshayid family, since he had previously killed a police informer of that family.?2°¢ ‘Abd al-Rahim al-Hajj Muhammad, the Commander-in-Chief of the Revolt, was besieged by the Army on 26th March 1939 in the Saniir v"
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 1,
+    "date": "Oct 1937",
+    "year": 1937,
+    "location": "Nablus",
+    "event": "Nablus opposition leaders hand the authorities information leading to the arrest of important rebel commanders — an early opposition–government cooperation that deepened the factional split.",
+    "quote": "The Opposition leaders of Nablus… handed over to the authorities important information.",
+    "src": "Porath vol. 2 p. 250",
+    "srcType": "secondary",
+    "srcNote": "ZA S/25 10097",
+    "actor": "Nablus opposition (anti-Husayni)",
+    "actorType": [
+      "arab-opposition"
+    ],
+    "scale": "Rebel commanders arrested",
+    "scaleBig": "—",
+    "scaleNote": "Intensified Husayni–Nashashibi antagonism",
+    "links": [],
+    "searchTerms": [
+      "Nablus",
+      "opposition",
+      "informers",
+      "1937"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "As a reaction to the campaign of terror and intimidation against them, the Opposition leaders of Nablus, in October 1937, handed over to the authorities important information which led to the arrest of some important rebel commanders."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 2,
+    "date": "Mid-Dec 1937",
+    "year": 1937,
+    "location": "Jerusalem",
+    "event": "Raghib al-Nashashibi asks the Jewish Agency to fund a counter-terror force; Sharett is willing but Ben-Gurion refuses — the first opposition bid for Yishuv backing.",
+    "quote": "M. Shertok was inclined to support this request, Ben-Gurion refused.",
+    "src": "Porath vol. 2 p. 251",
+    "srcType": "secondary",
+    "srcNote": "BG Memoirs IV p. 473",
+    "actor": "Nashashibi opposition → JA",
+    "actorType": [
+      "arab-opposition"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Renewed March 1938 (P£5,000 loan request)",
+    "links": [],
+    "searchTerms": [
+      "Nashashibi",
+      "Jewish Agency",
+      "Ben-Gurion",
+      "1937",
+      "funding"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "Shertok [Sharett] was inclined to support this request, Ben-Gurion refused and the suggestion was temporarily dropped.!*® Three months later, Raghib al-Nashashibi repeated his suggestion and this time in a more detailed manner."
+      }
+    ]
+  },
+  {
+    "cat": "strike-politics",
+    "n": 4,
+    "date": "Jul 1937",
+    "year": 1937,
+    "location": "London / Jerusalem",
+    "event": "The Peel Commission reports, recommending partition and the first Zionist transfer proposal — radicalising the second phase.",
+    "quote": "The new flare-up… was directed against moderate Arabs suspected of supporting Partition.",
+    "src": "Porath vol. 2 pp. 249–250",
+    "srcType": "secondary",
+    "srcNote": "Cmd. 5479",
+    "actor": "Palestine Royal Commission",
+    "actorType": [
+      "british"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Partition split the Arab camp",
+    "links": [],
+    "searchTerms": [
+      "Peel",
+      "partition",
+      "1937",
+      "transfer"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "The new flare-up of terrorist activity in Spring/Summer 1937 was directed against moderate Arabs suspected of supporting Partition, more than against the British or the Jews.!3¢ And, indeed, unlike the 250 THE PALESTINIAN ARAB NATIONAL MOVEMENT 1936 phase, the Nashashibis and their allies throughout the country this time had nothing to do with the rebels (see p."
+      }
+    ]
+  },
+  {
+    "cat": "strike-politics",
+    "n": 5,
+    "date": "1 Oct 1937",
+    "year": 1937,
+    "location": "Jerusalem",
+    "event": "Britain outlaws the Arab Higher Committee, deposes Amin al-Husayni from the Supreme Muslim Council, and deports leaders to the Seychelles; the Mufti flees on 12 Oct disguised as a Bedouin.",
+    "quote": "The Mufti flees al-Haram al-Sharif disguised as a Bedouin… granted French asylum.",
+    "src": "Porath vol. 2 p. 235",
+    "srcType": "secondary",
+    "srcNote": "Central Committee formed in Damascus",
+    "actor": "Mandate government",
+    "actorType": [
+      "british"
+    ],
+    "scale": "Leadership exiled",
+    "scaleBig": "—",
+    "scaleNote": "Revolt command relocates to Damascus",
+    "links": [],
+    "searchTerms": [
+      "Mufti",
+      "Seychelles",
+      "1937",
+      "exile",
+      "AHC"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "ad not been arrested called upon the people to react to the dissolution of the HAC and the deportations by a renewed General Strike."
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
+    "n": 4,
+    "date": "2 Oct 1938",
+    "year": 1938,
+    "location": "Tiberias (Kiryat Shmuel)",
+    "event": "A rebel band raids the Jewish residential quarter of Tiberias, killing 19 Jews including 11 children; the mayor Zaki Alhadif is assassinated weeks later.",
+    "quote": "Small settlements were fiercely attacked… killing the residents of the houses which they captured.",
+    "src": "Porath vol. 2 p. 238",
+    "srcType": "secondary",
+    "srcNote": "Morris Righteous Victims corroborates",
+    "actor": "Rebel band",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "19 Jews killed",
+    "scaleBig": "19",
+    "scaleNote": "11 children among the dead",
+    "links": [],
+    "searchTerms": [
+      "Tiberias",
+      "Kiryat Shmuel",
+      "1938",
+      "children",
+      "raid"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "In some cases, the bands succeeded in breaking through, killing the residents of the houses which they captured."
+      }
+    ]
+  },
+  {
+    "cat": "british-reprisal",
+    "n": 2,
+    "date": "Mar 1938",
+    "year": 1938,
+    "location": "near Jenin",
+    "event": "British troops machine-gun some sixty surrendering rebels near Jenin — a field killing kept from the press; one of the unofficial killings behind Hughes's upward casualty revision.",
+    "quote": "Troops machine-gunned 60 surrendering rebels near Jenin and it was kept from the press.",
+    "src": "Hughes 2019 pp. 378–381",
+    "srcType": "primary",
+    "srcNote": "Policeman Burr's letter home, March 1938",
+    "actor": "British Army",
+    "actorType": [
+      "british"
+    ],
+    "scale": "~60 rebels killed",
+    "scaleBig": "~60",
+    "scaleNote": "Suppressed from death registration",
+    "links": [],
+    "searchTerms": [
+      "Jenin",
+      "surrendering",
+      "field killing",
+      "1938",
+      "Burr"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "Rebels and Palestinians: Deaths 379 presumably to keep the incident quiet.’16 Policeman Burr wrote home of troops machine-gunning sixty surrendering rebels in one battle near Jenin and it being kept from the press.17 Policeman Harry Arrigonie tells comparable stories in his memoir.18 Official reports noted ‘very heavy’ casualties of ‘60–80 dead and many"
+      }
+    ]
+  },
+  {
+    "cat": "british-reprisal",
+    "n": 3,
+    "date": "Oct 1938",
+    "year": 1938,
+    "location": "Old City, Jerusalem",
+    "event": "Rebels occupy the Old City for five days; the British retake it using Arab civilians as human shields, and impose collective fines, house demolitions, and detention across the country.",
+    "quote": "Various units… committed acts of vengeance against Arabs not necessarily connected with the Revolt.",
+    "src": "Porath vol. 2 p. 240",
+    "srcType": "secondary",
+    "srcNote": "E. Danin ZA S/25 3540; CO 733/368",
+    "actor": "British Army",
+    "actorType": [
+      "british"
+    ],
+    "scale": "Collective punishment",
+    "scaleBig": "Mass",
+    "scaleNote": "Human shields; orchards uprooted",
+    "links": [],
+    "searchTerms": [
+      "Old City",
+      "Jerusalem",
+      "human shields",
+      "1938",
+      "collective punishment"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "whose members had been killed, committed acts of vefigeance against Arabs not necessarily connected with the Revolt.°? The trains and sometimes military vehicles were safeguarded by an original device."
+      }
+    ]
+  },
+  {
+    "cat": "british-reprisal",
+    "n": 5,
+    "date": "1936–39",
+    "year": 1938,
+    "location": "Mandate-wide",
+    "event": "British counter-insurgency was the largest single killing instrument of the revolt: Hughes revises Arab dead by security forces upward to 5,748–7,272, citing suppressed registrations and field killings of the wounded.",
+    "quote": "Killed by security forces: 5,748–7,272.",
+    "src": "Hughes 2019 p. 384",
+    "srcType": "secondary",
+    "srcNote": "Upward revision from CO 732/81 fortnightly summaries",
+    "actor": "British security forces",
+    "actorType": [
+      "british"
+    ],
+    "scale": "~4,000–7,272 Arabs killed",
+    "scaleBig": "~5,000+",
+    "scaleNote": "Largest single casualty stream",
+    "links": [],
+    "searchTerms": [
+      "British",
+      "casualties",
+      "pacification",
+      "Hughes",
+      "5748"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "384 Appendix B: Casualties Killed by security forces: 5,748–7,272 Killed in internecine fighting: at least 1,500 Seriously wounded: 21,744–26,316 Total: 28,992–35,088 Jews Police CID assessed that from April to October 1936 eighty Jews died.44 The Surv"
+      }
+    ]
+  },
+  {
+    "cat": "druze",
+    "n": 2,
+    "date": "27 Nov 1938",
+    "year": 1938,
+    "location": "'Usufiya & Daliyat al-Karmil",
+    "event": "Yusuf Abu Durra's band attacks two Carmel Druze villages, desecrating the Druze scriptures and kidnapping headmen — the act that turned the Druze into armed enemies of the revolt.",
+    "quote": "The Druze Holy Scriptures were desecrated and village headmen were kidnapped.",
+    "src": "Porath vol. 2 p. 273",
+    "srcType": "secondary",
+    "srcNote": "ZA S/25 4960",
+    "actor": "Abu Durra's band",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "Druze turned against revolt",
+    "scaleBig": "—",
+    "scaleNote": "Locks in 1948 Druze–Jewish alignment",
+    "links": [],
+    "searchTerms": [
+      "Druze",
+      "Usufiya",
+      "Daliyat al-Karmil",
+      "Abu Durra",
+      "1938"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "During Abi Durrah’s band’s attack on ‘Usufiya and Daliyat al-Karmil on THE REVOLT 273 27th November 1938 the Druze Holy Scriptures were desecrated and village headmen were kidnapped.3°” This episode brought about a very strong reaction in the Druze centres in Syria and relations between the Muslims and Druzes in both Syria and Palestine became very tense."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 4,
+    "date": "1937–39",
+    "year": 1938,
+    "location": "Mandate-wide",
+    "event": "Systematic murder of land-sellers (samasira), informers, policemen and 'those whose nationalism was suspected' — corpses left in the street with a shoe in the mouth as a mark of disgrace.",
+    "quote": "A shoe had been placed in the mouth of the victim as a symbol of disgrace and as a lesson for others.",
+    "src": "Porath vol. 2 p. 250",
+    "srcType": "secondary",
+    "srcNote": "ZA S/25 10098",
+    "actor": "Rebel bands",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "Hundreds (cumulative)",
+    "scaleBig": "Many",
+    "scaleNote": "Pits 'infested with snakes and scorpions'",
+    "links": [],
+    "searchTerms": [
+      "land-sellers",
+      "samasira",
+      "informers",
+      "intra-Arab",
+      "shoe"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "In some cases, the British Police had to perform this duty; in others, the corpses were left in the streets for several days after a shoe had been placed in the mouth of the victim as a symbol of disgrace and as a lesson for others.!4’ It is not always possible to differentiate between the reasons for murders, since in many cases they were interwoven and both campaigns of terror —the anti-Nashashibi a"
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 5,
+    "date": "Late May 1938",
+    "year": 1938,
+    "location": "'Azzun, western Samaria",
+    "event": "Rebels attack a guesthouse of the Radwan family sheltering Arab policemen — six of eleven killed and the rest disarmed; the anti-policeman terror at its height.",
+    "quote": "Eleven Arab policemen staying there; six killed, rebels took rest's weapons.",
+    "src": "Cohen, Army of Shadows p. ~135",
+    "srcType": "secondary",
+    "srcNote": "HA intelligence files",
+    "actor": "Rebel band",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "6 Arab police killed",
+    "scaleBig": "6",
+    "scaleNote": "Part of May 1938 mukhtar/police wave",
+    "links": [],
+    "searchTerms": [
+      "Azzun",
+      "policemen",
+      "Radwan",
+      "1938",
+      "guesthouse"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "At the end of May, rebels attacked the guesthouse (madafah) of the Radwan family of the village of ‘Azzun in western Samaria."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 6,
+    "date": "May 1938",
+    "year": 1938,
+    "location": "Jenin",
+    "event": "Ahmad and Muhammad Irshayid, pro-Nashashibi notables, murdered by rebels — the blood debt that turned their brother Farid into a peace-band commander and informer.",
+    "quote": "The blood of the Irsheid brothers, Ahmad and Muhammad, who were killed in May 1938, still demanded revenge.",
+    "src": "Cohen, Army of Shadows p. 152",
+    "srcType": "secondary",
+    "srcNote": "Farid Irshayid → peace band",
+    "actor": "Rebel band",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "2 opposition notables killed",
+    "scaleBig": "2",
+    "scaleNote": "Part of regional decapitation pattern",
+    "links": [],
+    "searchTerms": [
+      "Irshayid",
+      "Jenin",
+      "1938",
+      "opposition",
+      "blood feud"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "The blood of the Irsheid brothers, Ahmad and Muhammad, who were killed in May 1938, still demanded revenge.29 Their brother Farid, one of the most important local leaders in the Jenin area and a friend of ‘Abd al-Hadi, the Zionists,"
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 7,
+    "date": "14 Aug 1938",
+    "year": 1938,
+    "location": "Jerusalem district",
+    "event": "'Arif 'Abd al-Raziq dispatches the rebel 'Correctional Detachment' against villages 'turned away from their national ideals' by Fakhri Nashashibi — the rebels' counter-move to the peace bands.",
+    "quote": "The Correctional Detachment armed with all of its equipment was sent to these villages.",
+    "src": "Porath vol. 2 p. 252",
+    "srcType": "secondary",
+    "srcNote": "CO 733/372/75156/93",
+    "actor": "Rebel band ('Arif 'Abd al-Raziq)",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "Villages punished",
+    "scaleBig": "—",
+    "scaleNote": "Order of al-Hajj Muhammad al-Hijazi",
+    "links": [],
+    "searchTerms": [
+      "Correctional Detachment",
+      "Abd al-Raziq",
+      "1938",
+      "Nashashibi"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "In a weekly communiqué issued a month later by ‘Arif ‘Abd al-Raziq we read: ‘Certain villages of the Jerusalem district having been turned away from their national ideals by the influence of Fakhri al-Nashashibi and his followers, the Correctional Detachment armed with all of its equipment was sent to these villages by order of al-Hajj Muhammad al-Muslim al-Hijazi’.137 It is safe to assume that the murder by the rebels in that month of Ibrahim ‘Abd al-Raziq, a respected local notable a"
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 8,
+    "date": "12 Oct 1938",
+    "year": 1938,
+    "location": "near Ramallah",
+    "event": "Hasan Sidqi al-Dajani — Cambridge-trained attorney and moderate with Jewish-Agency contacts — assassinated on the Mufti's order after 'Arif 'Abd al-Raziq refused; the keystone political killing of the revolt.",
+    "quote": "Both hands were broken and there were two bullet holes in his forehead.",
+    "src": "Cohen, Army of Shadows pp. 129–131",
+    "srcType": "secondary",
+    "srcNote": "ISA sec. 66 176/56, 190/14",
+    "actor": "al-Hajj Muhammad's band (Mufti order)",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "al-Dajani killed",
+    "scaleBig": "1",
+    "scaleNote": "Funeral attended by all leading families but the Husaynis",
+    "links": [],
+    "searchTerms": [
+      "Hasan Sidqi al-Dajani",
+      "Ramallah",
+      "assassination",
+      "1938",
+      "moderate"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "Both hands were broken and there were two bullet holes in his forehead.* His funeral demonstrated his popularity; representatives of all Jerusalem’s leading *Opinions differ as to the reason for his murder."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 9,
+    "date": "1937–39",
+    "year": 1938,
+    "location": "regional (Nazareth, Acre, Jenin, Jerusalem, Hebron)",
+    "event": "Ihsan al-Nimr's pattern: the rebels killed a leading opposition figure in each region — Rafe' al-Fahoum (Nazareth), Dr Anwar Shuqayri (Acre), the Irshayid brothers (Jenin), al-Dajani (Jerusalem), Nassir al-Din Nassir al-Din (Hebron).",
+    "quote": "They killed a prominent opposition figure in each of the country's regions.",
+    "src": "Cohen, Army of Shadows p. 133",
+    "srcType": "secondary",
+    "srcNote": "Per Ihsan al-Nimr",
+    "actor": "Rebel bands (Husayni faction)",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "Regional decapitation",
+    "scaleBig": "Many",
+    "scaleNote": "Eliminated the moderate-cooperationist class",
+    "links": [],
+    "searchTerms": [
+      "Fahoum",
+      "Shuqayri",
+      "decapitation",
+      "opposition",
+      "regional"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "Ihsan al-Nimer, an oppositionist in Nablus, discerned after the fact that there was a pattern to the rebel actions—they killed a prominent opposition figure in each of the country’s regions: Rafe‘ al- Fahoum in Nazareth, Dr."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 10,
+    "date": "Autumn 1938",
+    "year": 1938,
+    "location": "'Ayn Karem",
+    "event": "'Abd al-Qadir al-Husayni publicly humiliates the attorney Isma'il al-Khatib — bound, flogged, made to carry his shoes in his teeth — before he is later murdered; the cruelty that drove villagers to the peace bands.",
+    "quote": "Whoever asked for mercy for a traitor was himself a traitor.",
+    "src": "Cohen, Army of Shadows p. 131",
+    "srcType": "secondary",
+    "srcNote": "supporter of As'ad al-Shuqayri",
+    "actor": "'Abd al-Qadir al-Husayni's band",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "al-Khatib flogged, later killed",
+    "scaleBig": "1",
+    "scaleNote": "'Abd al-Qadir = Jerusalem Husayni",
+    "links": [],
+    "searchTerms": [
+      "Abd al-Qadir al-Husayni",
+      "Ayn Karem",
+      "Khatib",
+      "1938",
+      "flogging"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "‘Abd al-Qader lined up the members of the delegation and slapped each one, on the grounds that whoever asked for mercy for a traitor was himself a traitor."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 11,
+    "date": "18 Dec 1938",
+    "year": 1938,
+    "location": "Mandate-wide",
+    "event": "Seven peace-band members carrying Government-issued weapons are killed by rebels — the only clean count of peace-band combatants killed in the whole revolt.",
+    "quote": "Seven peace-band members killed by rebels on 18 December 1938 having Government-issued weapons.",
+    "src": "Hughes 2019 p. 265",
+    "srcType": "primary",
+    "srcNote": "CID Int Summary 92/38, S25/22732",
+    "actor": "Rebel bands",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "7 peace-band killed",
+    "scaleBig": "7",
+    "scaleNote": "Police CID Intelligence Summary 92/38",
+    "links": [],
+    "searchTerms": [
+      "peace band",
+      "killed",
+      "18 December 1938",
+      "CID"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "Palestinian: Peace Bands 265 and then distributed these weapons to his men fighting rebel bands in the field, seven peace-band members killed by rebels on 18 December 1938 having Government-issued weapons.66 The Army coordinated this in the field, the battalion commander of the Border Regiment arran- ging an ‘interview’ with ‘Abd al-Hadi’s emissary in December 1938 to"
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 3,
+    "date": "~1 Mar 1938",
+    "year": 1938,
+    "location": "St George Hotel, Beirut",
+    "event": "Fakhri al-Nashashibi meets Fakhri 'Abd al-Hadi — Qawuqji's former deputy and a 1936 rebel commander — to recruit him to the opposition; the turning of the revolt's leading defector begins.",
+    "quote": "Fakhri al-Nashashibi met him at the St. George Hotel in Beirut and asked him to join the Opposition ranks.",
+    "src": "Porath vol. 2 pp. 252–253",
+    "srcType": "secondary",
+    "srcNote": "'Abd al-Hadi was Qawuqji's 1936 right-hand",
+    "actor": "Nashashibi opposition",
+    "actorType": [
+      "arab-opposition"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Talks then via Consul MacKereth's payroll",
+    "links": [],
+    "searchTerms": [
+      "Fakhri Abd al-Hadi",
+      "Nashashibi",
+      "Beirut",
+      "1938",
+      "defection"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "At the beginning of March 1938, Fakhri al-Nashashibi met him at the St."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 4,
+    "date": "Mid-1938",
+    "year": 1938,
+    "location": "Damascus",
+    "event": "British Consul Gilbert MacKereth puts Fakhri 'Abd al-Hadi on the British payroll, accelerating the peace-band project; 'Abd al-Hadi turns on the rebel command that had cut his subsidy.",
+    "quote": "British Consul Gilbert MacKereth accelerated peace band operations by paying… Fakhri 'Abd al-Hadi.",
+    "src": "Hughes 2019 p. 261",
+    "srcType": "secondary",
+    "srcNote": "Eshed, Reuven Shiloah p. 32",
+    "actor": "British Consul MacKereth",
+    "actorType": [
+      "british",
+      "peace-band"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Amnesty + monthly salary offered",
+    "links": [],
+    "searchTerms": [
+      "MacKereth",
+      "Abd al-Hadi",
+      "payroll",
+      "1938",
+      "peace band"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "Palestinian: Peace Bands 261 British Consul Gilbert MacKereth accelerated peace band operations by paying and convincing 1936 rebel band leader Fakhri ‘Abd al-Hadi to return in 1938 on the British side.42 Indeed, a Jewish file noted a British connection to ‘Abd al-Hadi as early as July 1936 when a Britis"
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 5,
+    "date": "12 Jul 1938",
+    "year": 1938,
+    "location": "Jerusalem",
+    "event": "Fakhri al-Nashashibi convenes Jerusalem-area village notables at his home to 'fight the Mufti's terrorists' — the organising meeting of the southern peace-band network.",
+    "quote": "Fakhri urged them to fight against the 'Mufti's terrorists'.",
+    "src": "Porath vol. 2 p. 252",
+    "srcType": "secondary",
+    "srcNote": "A.H. Cohen 14 Jul 1938 ZA S/25 10098",
+    "actor": "Fakhri al-Nashashibi",
+    "actorType": [
+      "arab-opposition",
+      "peace-band"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Bands formed in Ramallah area by mid-Sept",
+    "links": [],
+    "searchTerms": [
+      "Fakhri Nashashibi",
+      "Jerusalem",
+      "peace band",
+      "1938",
+      "Mufti"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "Kalvarisky, Director of the Jewish Authorities’ Joint Bureau (the Arab Affairs Department), and proposed to enter into a secret agreement with the Jewish Agency on the following basis: 1) the Party will fight against the Mufti until his dismissal; 2) Mr."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 6,
+    "date": "21 Sep 1938",
+    "year": 1938,
+    "location": "Jabal Druze → 'Arraba",
+    "event": "A British-sponsored Druze escort brings Fakhri 'Abd al-Hadi back into Palestine; on 27 Sep he reaches his home village 'Arraba and the villagers pledge support — the peace-band campaign opens.",
+    "quote": "Most of the villagers there pledged their support.",
+    "src": "Porath vol. 2 p. 253",
+    "srcType": "secondary",
+    "srcNote": "Intel Report 29 Sep 1938 HA 8/GENERAL/2",
+    "actor": "Fakhri 'Abd al-Hadi / British",
+    "actorType": [
+      "peace-band",
+      "british"
+    ],
+    "scale": "~30 followers",
+    "scaleBig": "—",
+    "scaleNote": "Centre of the Nablus–Jenin–Tulkarm triangle",
+    "links": [],
+    "searchTerms": [
+      "Abd al-Hadi",
+      "Arraba",
+      "Druze escort",
+      "1938",
+      "peace band"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "A few days later he reached his native village, ‘Ardbah in the Jenin area, and most of the villagers there pledged their support.!”® With his people, Fakhri ‘Abd al-Hadi began to attack villages supporting the rebels and the rebels themselves."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 7,
+    "date": "Winter 1938",
+    "year": 1938,
+    "location": "Sheikh Jarrah, Jerusalem",
+    "event": "The Haganah (Ya'akov Pat, Eliahu Sasson, Eliahu Elyashar) delivers weapons crates to Fakhri Nashashibi's force — and within 24 hours three of the Mufti's men are assassinated. The opposition turns from target to combatant.",
+    "quote": "Three of the mufti's men in Jerusalem and its environs had been assassinated by their opponents.",
+    "src": "Cohen, Army of Shadows pp. 145–146",
+    "srcType": "secondary",
+    "srcNote": "Elyashar memoir",
+    "actor": "Nashashibi force (Haganah-armed)",
+    "actorType": [
+      "peace-band",
+      "jewish"
+    ],
+    "scale": "3 rebels killed",
+    "scaleBig": "3",
+    "scaleNote": "First armed opposition counter-strike",
+    "links": [],
+    "searchTerms": [
+      "Sheikh Jarrah",
+      "Haganah",
+      "weapons",
+      "Nashashibi",
+      "1938"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "Not 24 hours had passed and the entire communications media was reporting that three of the mufti’s men in Jerusalem and its environs had been assassinated by their opponents."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 8,
+    "date": "Nov 1938",
+    "year": 1938,
+    "location": "Bani Na'im, near Hebron",
+    "event": "On supplied information the Army crushes 'Abd al-Qadir al-Husayni's band at Bani Na'im — 16 killed including his two deputies, and 'Abd al-Qadir seriously wounded.",
+    "quote": "The band lost 16 members, including the two deputies… he himself was seriously wounded.",
+    "src": "Porath vol. 2 p. 257",
+    "srcType": "secondary",
+    "srcNote": "Information supplied by Arabs",
+    "actor": "British Army (on informer intel)",
+    "actorType": [
+      "british",
+      "peace-band"
+    ],
+    "scale": "16 rebels killed",
+    "scaleBig": "16",
+    "scaleNote": "'Abd al-Qadir wounded; killed at Castel 1948",
+    "links": [],
+    "searchTerms": [
+      "Bani Na'im",
+      "Abd al-Qadir",
+      "Hebron",
+      "1938",
+      "informers"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "In this attack the band lost 16 members, including the two deputies of ‘Abd al-Qadir and he himself was seriously wounded.??® Also Yiisuf Sa‘id Abii Durrah barely escaped a Police search squad acting according to information supplied by the family of the Rummanah vil"
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 9,
+    "date": "5 Dec 1938",
+    "year": 1938,
+    "location": "'Arraba / Damascus",
+    "event": "A British report finds Fakhri 'Abd al-Hadi commands 60 permanent men and is 'a thorn in the side of the Rebel Forces'; Britain pays each peace-band man £P.6/month against the rebels' 30 shillings–£P.4.",
+    "quote": "Fakhri has under his command a permanent force of 60 men and… has been a thorn in the side of the Rebel Forces.",
+    "src": "Hughes 2019 p. 267",
+    "srcType": "primary",
+    "srcNote": "British Report Armed Gangs 60/38, S25/22732",
+    "actor": "Fakhri 'Abd al-Hadi (British-paid)",
+    "actorType": [
+      "peace-band",
+      "british"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Damascus debating buy-off vs crushing him",
+    "links": [],
+    "searchTerms": [
+      "Abd al-Hadi",
+      "60 men",
+      "thorn",
+      "1938",
+      "pay"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "Palestinian: Peace Bands 267 between Rebel Headquarters in Damascus and Palestine with a view to making peace with Fakhri Abdul Hadi or on the other hand crushing him altogether … Fakhri has under his command a permanent force of 60 men and that for the past week he has been a thorn in the side of the Rebel Forces … in the meantime they will do all in their power to crush him.80 The peace units irked the insurgents – or the ‘professional rebels’ as the British put it – with one European captive of theirs obser"
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 10,
+    "date": "18 Dec 1938",
+    "year": 1938,
+    "location": "Yatta, Hebron hills",
+    "event": "Fakhri Nashashibi's set-piece rally at Yatta: some 3,000 villagers, a speech by the 'Sheikh of Sheikhs of Hebron Mountain', and General O'Connor present in person.",
+    "quote": "About 3,000 villagers were present… the presence of General O'Connor… was significant in itself.",
+    "src": "Porath vol. 2 p. 254",
+    "srcType": "secondary",
+    "srcNote": "HC Secret A 16 Jan 1939 CO 733/398",
+    "actor": "Nashashibi peace-band network",
+    "actorType": [
+      "peace-band",
+      "arab-opposition"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Crowd resolves to fight the Mufti's terror",
+    "links": [],
+    "searchTerms": [
+      "Yatta",
+      "O'Connor",
+      "Nashashibi",
+      "1938",
+      "rally"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "About 3,000 villagers were present and heard the sheikh’s speech, which had been written by Fakhri al-Nashashibi."
+      }
+    ]
+  },
+  {
+    "cat": "zionist-reprisal",
+    "n": 1,
+    "date": "6–25 Jul 1938",
+    "year": 1938,
+    "location": "Haifa",
+    "event": "Irgun bombs in the Haifa Arab market (milk-can and disguised devices) kill scores of Arab civilians — the Jewish counter-terror cycle Porath says drove moderates into the rebels' fold.",
+    "quote": "These Irgun reprisals further incited the Arab bands… a fact from which the leaders of the Arab terror derived much satisfaction.",
+    "src": "Porath vol. 2 p. 238",
+    "srcType": "secondary",
+    "srcNote": "E. Sasson reports ZA S/25 10098",
+    "actor": "Irgun (Etzel)",
+    "actorType": [
+      "jewish"
+    ],
+    "scale": "~60+ Arabs killed",
+    "scaleBig": "~60",
+    "scaleNote": "25 Jul Haifa market ~39 killed",
+    "links": [],
+    "searchTerms": [
+      "Irgun",
+      "Haifa",
+      "market",
+      "bomb",
+      "1938",
+      "reprisal"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "These Irgun reprisals further incited the Arab bands to attack Jews and drove more moderate elements to their fold; a fact from which the leaders of the Arab terror derived much satisfaction.*’ In Summer 1938, the rebels were in control of most of the mountainous parts of the country."
+      }
+    ]
+  },
+  {
+    "cat": "zionist-reprisal",
+    "n": 2,
+    "date": "Mid-1938",
+    "year": 1938,
+    "location": "Lower Galilee / Jezreel",
+    "event": "Captain Orde Wingate's Special Night Squads — British soldiers plus Haganah supernumeraries — ambush and kill Arabs along the IPC pipeline; the seedbed of later IDF cadres.",
+    "quote": "During the first month of their activity the SNS ambushed and killed about sixty Arabs.",
+    "src": "Morris, Righteous Victims",
+    "srcType": "secondary",
+    "srcNote": "Wingage is a real figure in the film",
+    "actor": "Special Night Squads (Wingate)",
+    "actorType": [
+      "british",
+      "jewish"
+    ],
+    "scale": "~60 Arabs killed (first month)",
+    "scaleBig": "~60",
+    "scaleNote": "Retaliatory strikes on villages",
+    "links": [],
+    "searchTerms": [
+      "Wingate",
+      "Special Night Squads",
+      "1938",
+      "pipeline",
+      "Haganah"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "The hard-edged manoeuvres of the anti-rebel British–Jewish Special Night Squads in Galilee in 1938 were the most visible collaboration between the two sides but day-to-day, low- level training and joint action endured throughout Palestine, and secured the country.120 The Yishuv carried over coloni"
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
+    "n": 5,
+    "date": "1939",
+    "year": 1939,
+    "location": "Mandate-wide",
+    "event": "Year-end totals: rebel attacks in 1939 claimed 94 Jewish lives — closing a revolt whose Jewish dead converge at roughly 430–550 across five sources.",
+    "quote": "In 1939 rebel attacks claimed 37 British, 94 Jewish, and 414 Arab lives.",
+    "src": "Morris, Righteous Victims",
+    "srcType": "secondary",
+    "srcNote": "Survey 429; Kolinsky 547; Rose 495",
+    "actor": "Rebel bands",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "94 Jews killed (1939)",
+    "scaleBig": "94",
+    "scaleNote": "Full-revolt Jewish dead ~430–550",
+    "links": [],
+    "searchTerms": [
+      "1939",
+      "casualties",
+      "Jewish dead",
+      "totals"
+    ],
+    "passages": []
+  },
+  {
+    "cat": "british-reprisal",
+    "n": 4,
+    "date": "1937–39",
+    "year": 1939,
+    "location": "Mandate-wide",
+    "event": "British military courts hang over a hundred Arabs and impose tens of life sentences; some 5,900 are in detention by the end of the revolt.",
+    "quote": "The number of Arabs hanged during the years 1937-9 exceeded 100.",
+    "src": "Porath vol. 2 p. 239",
+    "srcType": "secondary",
+    "srcNote": "Zu'aytir p. 121; Yasin",
+    "actor": "British military courts",
+    "actorType": [
+      "british"
+    ],
+    "scale": "100+ hanged",
+    "scaleBig": "100+",
+    "scaleNote": "~5,900 detained (1939)",
+    "links": [],
+    "searchTerms": [
+      "hanged",
+      "military courts",
+      "detention",
+      "1939",
+      "executions"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "The District Commissioners were energetically using their powers to inflict the punitive measures.>! The Military Courts inflicted severe punishments including tens of life sentences, which were immediately carried out, and they had a ‘terrifying effect’.>? The number of Arabs hanged during the years 1937-9 exceeded 100.53 Thus one of the most tragic aspects of the Revolt period was created, namely the pressures exerted on the peasants by the bands, on the one hand, and by the Army, on the other."
+      }
+    ]
+  },
+  {
+    "cat": "druze",
+    "n": 3,
+    "date": "Late 1938–1939",
+    "year": 1939,
+    "location": "Carmel / Galilee",
+    "event": "After repeated rebel attacks, the Druze arm themselves and fight the rebels — alone or alongside the peace bands.",
+    "quote": "The Druze reacted by arming themselves and fighting the rebels… in cooperation with the 'peace bands'.",
+    "src": "Porath vol. 2 p. 273",
+    "srcType": "secondary",
+    "srcNote": "Brought relations to 'point of no return'",
+    "actor": "Druze villagers",
+    "actorType": [
+      "druze"
+    ],
+    "scale": "Inter-communal combat",
+    "scaleBig": "—",
+    "scaleNote": "Jan 1940 peace arrangement did not heal it",
+    "links": [],
+    "searchTerms": [
+      "Druze",
+      "peace bands",
+      "1939",
+      "Carmel"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "The Druze reacted by arming themselves and fighting the rebels, either on their own or in cooperation with the ‘peace bands’."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 12,
+    "date": "Late Jan 1939",
+    "year": 1939,
+    "location": "between al-Mazra'a al-Sharqiyya and Khirbat Abu Falah",
+    "event": "A rebel named 'Abdul Fattah is murdered in a cave 'by one of Nashashibi's followers' — recorded in a British unit war diary as a severe blow to the rebels.",
+    "quote": "ABDUL FATTAH was murdered in a cave… by one of NASHASHIBI'S followers.",
+    "src": "Hughes 2019 p. 264",
+    "srcType": "primary",
+    "srcNote": "2nd Bn W. Yorks Int Summary No. 16, RYM",
+    "actor": "Nashashibi follower",
+    "actorType": [
+      "peace-band"
+    ],
+    "scale": "1 rebel killed",
+    "scaleBig": "1",
+    "scaleNote": "Combatant-on-combatant killing",
+    "links": [],
+    "searchTerms": [
+      "Abdul Fattah",
+      "cave",
+      "Nashashibi",
+      "1939",
+      "killing"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "‘A very severe blow was suffered by the Rebels when ABDUL FATTAH was murdered in a cave between MAZRA‘A ASH SHARQIYA and KH ABU FALAH [al-Mazra‘a al-Sharqiyya and Khirbat Abu Falah] last Sunday morning by one of NASHASHIBI’S followers,’ noted one Army unit war diary.63 Hunger and stress"
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 13,
+    "date": "1936–40",
+    "year": 1939,
+    "location": "Galilee / Jenin",
+    "event": "Inter-rebel killings over money and turf — 'Isa al-Battat murdered in a personal feud, Abu al-Nujaym al-Shanti executed by 'Arif 'Abd al-Raziq — fracture the bands from within.",
+    "quote": "'Isa al-Battat… was murdered as a result of such a personal conflict.",
+    "src": "Porath vol. 2 pp. 256–257",
+    "srcType": "secondary",
+    "srcNote": "Yasin; Te'udot",
+    "actor": "Rival rebel bands",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "Commanders killed",
+    "scaleBig": "Several",
+    "scaleNote": "Money-extortion mistrust",
+    "links": [],
+    "searchTerms": [
+      "Battat",
+      "Shanti",
+      "inter-rebel",
+      "feud",
+      "1939"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "der in the southern region, who had been active since 1936, was murdered as a result of such a personal conflict.?%4 The combined effect of these quarrels, jealousies and murders, either caused by political or personal motives, was twofold: readiness bordering on eagerness to help the authorities by volunteering information, and the creation of long-term blood feuds with all the hatred and wrath which these involved."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 16,
+    "date": "1936–39",
+    "year": 1939,
+    "location": "Mandate-wide",
+    "event": "The accounting: Cohen's triangulated count puts Arabs killed by rebels at about 1,000 — substantial but less than half the ~4,000+ killed by the British, inverting the popular 'more Arabs killed by Arabs' claim.",
+    "quote": "The number of Arabs killed by the rebels was less than half the number killed by the British.",
+    "src": "Cohen, Army of Shadows pp. 143–144",
+    "srcType": "secondary",
+    "srcNote": "Rebuts Arnon-Ohana 3,000–4,500",
+    "actor": "Rebel bands (intra-Arab)",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "~1,000 Arabs killed by rebels",
+    "scaleBig": "~1,000",
+    "scaleNote": "1938: 1,138 rebels killed by British vs 498 by rebels",
+    "links": [],
+    "searchTerms": [
+      "intra-Arab",
+      "casualties",
+      "1000",
+      "Cohen",
+      "accounting"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "In other words, the number of Arabs killed by the rebels was less than half the number killed by the British."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 11,
+    "date": "Early 1939",
+    "year": 1939,
+    "location": "'Arraba, Jenin",
+    "event": "The Border Regiment garrisons 'Abd al-Hadi's village; he holds Wild-West pistol-draw contests with British officers in the Jenin police mess, nicknamed 'the butcher' for his toughness.",
+    "quote": "'Abd al-Hadi nicknamed 'the butcher' because of his toughness.",
+    "src": "Hughes 2019 pp. 263–266",
+    "srcType": "secondary",
+    "srcNote": "Border Regt war diaries; Ted Horne interview",
+    "actor": "Fakhri 'Abd al-Hadi / British Army",
+    "actorType": [
+      "peace-band",
+      "british"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Platoon then full company posted to 'Arraba",
+    "links": [],
+    "searchTerms": [
+      "Abd al-Hadi",
+      "butcher",
+      "Arraba",
+      "1939",
+      "Border Regiment"
+    ],
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "This alone outweighed their disadvantages.78 Peace bands were flexible and rapid, using the tactics of the rebels, fighting violence with violence in a way that Government forces could not easily or visibly do, with ‘Abd al-Hadi nicknamed ‘the butcher’ because of his toughness.79 The impact of the peace bands was felt back in Damascus with the rebel high command and on 5 December 1938 a British military report concluded that negotiations were now taking place 75 School Year Diary, Spring Term 1939, Wilson Papers, GB165-0302, p."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 12,
+    "date": "26 Mar 1939",
+    "year": 1939,
+    "location": "Sanur, Samaria",
+    "event": "Farid Irshayid's peace-band intelligence locates Commander-in-Chief 'Abd al-Rahim al-Hajj Muhammad; Irshayid joins the British siege and al-Hajj Muhammad is killed — the decisive payoff of the counter-rebellion.",
+    "quote": "Farid Irshayid, the 'peace band' commander, even took part in the siege and the battle which ensued.",
+    "src": "Porath vol. 2 p. 257",
+    "srcType": "secondary",
+    "srcNote": "Cohen p. 152; Hughes p. 265",
+    "actor": "British Army + Farid Irshayid",
+    "actorType": [
+      "british",
+      "peace-band"
+    ],
+    "scale": "Rebel C-in-C killed",
+    "scaleBig": "1",
+    "scaleNote": "Porath elsewhere gives 23 March",
+    "links": [],
+    "searchTerms": [
+      "al-Hajj Muhammad",
+      "Sanur",
+      "Irshayid",
+      "1939",
+      "commander-in-chief"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "yid family, and Farid Irshayid, the ‘peace band’ commander, even took part in the siege and the battle which ensued.??” Information which had been supplied to the Army by Arabs on the whereabouts of ‘Abd al-Qadir al-Husayni’s band brought about a crushing attack on his band in Bani Na‘im village near Hebron in November 1938."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 13,
+    "date": "Beg. Aug 1939",
+    "year": 1939,
+    "location": "Jenin",
+    "event": "Farid Irshayid hosts Abba Hushi: he now commands 200 men, has defeated most of the rebel bands in his area, and proposes joint Jewish–opposition action to thwart the 1939 White Paper.",
+    "quote": "Irsheid had at his service a force of 200 men and had defeated most of the rebel bands in his area.",
+    "src": "Cohen, Army of Shadows p. 155",
+    "srcType": "secondary",
+    "srcNote": "Abba Hushi, Haifa intelligence",
+    "actor": "Farid Irshayid peace band",
+    "actorType": [
+      "peace-band"
+    ],
+    "scale": "—",
+    "scaleBig": "200 men",
+    "scaleNote": "Proposes selling land to Jews against the White Paper",
+    "links": [],
+    "searchTerms": [
+      "Farid Irshayid",
+      "Abba Hushi",
+      "200 men",
+      "1939",
+      "White Paper"
+    ],
+    "passages": [
+      {
+        "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+        "text": "At that juncture, Irsheid had at his service a force of 200 men and had defeated most of the rebel bands in his area."
+      }
+    ]
+  },
+  {
+    "cat": "strike-politics",
+    "n": 6,
+    "date": "May 1939",
+    "year": 1939,
+    "location": "London / Jerusalem",
+    "event": "Britain's White Paper caps Jewish immigration and land sales — an Arab gain narrowly rejected by the terror-narrowed Higher Committee; the intra-Arab killing had eliminated the moderates who would have accepted it.",
+    "quote": "Streams of blood are now dividing the two factions.",
+    "src": "Porath vol. 2 pp. 257–258",
+    "srcType": "secondary",
+    "srcNote": "E. Sasson to Shertok 11 Apr 1939",
+    "actor": "Mandate government / AHC",
+    "actorType": [
+      "british",
+      "arab-opposition"
+    ],
+    "scale": "—",
+    "scaleBig": "—",
+    "scaleNote": "Narrow AHC rejection; no unified leadership by 1946",
+    "links": [],
+    "searchTerms": [
+      "White Paper",
+      "1939",
+      "rejection",
+      "moderates",
+      "factions"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "‘Streams of blood are now dividing 258 THE PALESTINIAN ARAB NATIONAL MOVEMENT the two factions’, wrote E."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 14,
+    "date": "1941",
+    "year": 1941,
+    "location": "Baghdad",
+    "event": "Fakhri al-Nashashibi, the chief organiser of the peace bands, is assassinated in Baghdad — the post-revolt reckoning begins.",
+    "quote": "Fakhri al-Nashashibi was murdered in 1941 in Baghdad.",
+    "src": "Porath vol. 2 p. 258",
+    "srcType": "secondary",
+    "srcNote": "Blood feuds continued years after",
+    "actor": "Husayni-aligned assassins",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "Nashashibi killed",
+    "scaleBig": "1",
+    "scaleNote": "Damascus HQ had sent assassins in Dec 1938",
+    "links": [],
+    "searchTerms": [
+      "Fakhri Nashashibi",
+      "Baghdad",
+      "1941",
+      "assassination"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "Indeed, also after the end of the revolt the mutual acts of revenge continued for several years, including the murders of the two organisers of the ‘peace bands’: Fakhri al-Nashashibi was murdered in 1941 in Baghdad and Fakhri ‘Abd al-Hadi, in 1943, in his village."
+      }
+    ]
+  },
+  {
+    "cat": "intra-arab",
+    "n": 15,
+    "date": "1943",
+    "year": 1943,
+    "location": "'Arraba, Jenin",
+    "event": "Fakhri 'Abd al-Hadi, the leading peace-band field commander, is murdered at a wedding in his home village — closing the civil war that outlived the revolt.",
+    "quote": "Fakhri 'Abd al-Hadi, in 1943, in his village. 'Arabah.",
+    "src": "Porath vol. 2 p. 258",
+    "srcType": "secondary",
+    "srcNote": "Mutual revenge continued for years",
+    "actor": "Husayni-aligned assassins",
+    "actorType": [
+      "rebel-husayni"
+    ],
+    "scale": "'Abd al-Hadi killed",
+    "scaleBig": "1",
+    "scaleNote": "Murdered at a wedding (Hughes p. 264)",
+    "links": [],
+    "searchTerms": [
+      "Abd al-Hadi",
+      "Arraba",
+      "1943",
+      "wedding",
+      "assassination"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "Indeed, also after the end of the revolt the mutual acts of revenge continued for several years, including the murders of the two organisers of the ‘peace bands’: Fakhri al-Nashashibi was murdered in 1941 in Baghdad and Fakhri ‘Abd al-Hadi, in 1943, in his village."
+      }
+    ]
+  }
+]
