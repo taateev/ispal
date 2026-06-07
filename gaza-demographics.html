@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaza demographic growth under three administrations — data tables</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --muted:#5b5b5b; --rule:#cfc8ba; --rule-strong:#8a8275;
+    --paper:#f7f4ee; --band:#efe9dd; --accent:#7a2e2e;
+    --warn-bg:#f6e7e2; --warn-ink:#7a2e2e; --good:#2c5a3f;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#e7e2d8; color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    line-height:1.5; padding:32px 16px;
+  }
+  .sheet{
+    max-width:1040px; margin:0 auto; background:var(--paper);
+    border:1px solid var(--rule-strong); box-shadow:0 2px 18px rgba(0,0,0,.12);
+    padding:40px 44px 56px;
+  }
+  header.masthead{border-bottom:3px double var(--rule-strong); padding-bottom:14px; margin-bottom:8px}
+  .kicker{font-variant:small-caps; letter-spacing:.12em; color:var(--accent); font-size:.82rem; font-weight:700}
+  h1{font-size:2.0rem; line-height:1.12; margin:.18em 0 .12em; font-weight:700}
+  .dek{color:var(--muted); font-size:1.02rem; font-style:italic; margin:0}
+  .meta{font-size:.78rem; color:var(--muted); margin-top:10px; letter-spacing:.02em}
+  h2{font-size:1.18rem; margin:38px 0 4px; padding-bottom:5px; border-bottom:1px solid var(--rule-strong); font-weight:700}
+  h2 .num{color:var(--accent); font-variant:small-caps; letter-spacing:.08em; margin-right:.5em; font-size:.92rem}
+  .note{font-size:.86rem; color:var(--muted); margin:6px 0 14px}
+  .masterwarn{
+    background:var(--band); border-left:3px solid var(--rule-strong);
+    padding:10px 14px; font-size:.86rem; color:#403a30; margin:14px 0 4px;
+  }
+  table{border-collapse:collapse; width:100%; font-size:.9rem; margin:8px 0 6px; background:#fffdf9}
+  caption{caption-side:top; text-align:left; font-size:.82rem; color:var(--muted); padding:0 0 6px; font-style:italic}
+  th,td{border:1px solid var(--rule); padding:6px 9px; vertical-align:top; text-align:left}
+  thead th{background:#2b2b2b; color:#f4efe6; font-weight:700; font-size:.82rem; letter-spacing:.02em; border-color:#2b2b2b}
+  thead th.grp{background:#444; text-align:center}
+  tbody tr:nth-child(even){background:var(--paper)}
+  th[scope=row]{background:#efeadf; font-weight:700; white-space:nowrap}
+  td.num,th.num{text-align:right; font-variant-numeric:tabular-nums; font-feature-settings:"tnum"}
+  .sub{color:var(--muted); font-size:.82em}
+  tr.warn td, tr.warn th[scope=row]{background:var(--warn-bg)}
+  .flag{color:var(--warn-ink); font-weight:700}
+  .up{color:var(--warn-ink); font-weight:700}
+  .dn{color:var(--good); font-weight:700}
+  .legend{font-size:.8rem; color:var(--muted); margin:4px 0 0}
+  footer{margin-top:40px; border-top:3px double var(--rule-strong); padding-top:14px; font-size:.8rem; color:var(--muted)}
+  footer h3{font-size:.92rem; color:var(--ink); margin:0 0 6px}
+  footer ul{margin:0; padding-left:18px}
+  footer li{margin:3px 0}
+  a{color:var(--accent)}
+  @media (max-width:640px){ .sheet{padding:24px 16px} h1{font-size:1.5rem} table{font-size:.82rem} th,td{padding:5px 6px} }
+  /* charts */
+  .charts{display:grid; grid-template-columns:1fr 1fr; gap:24px 28px; margin:14px 0 8px}
+  @media (max-width:760px){ .charts{grid-template-columns:1fr} }
+  figure.chart{margin:0}
+  figure.chart figcaption{font-size:.95rem; font-weight:700; margin-bottom:3px}
+  .chart svg{width:100%; height:auto; display:block; background:#fffdf9; border:1px solid var(--rule)}
+  .cnote{font-size:.76rem; color:var(--muted); margin-top:4px; font-style:italic}
+  .key{margin-right:12px; white-space:nowrap; font-style:normal}
+  .sw{display:inline-block; width:11px; height:11px; border-radius:2px; margin-right:4px; vertical-align:-1px}
+  .chart .grid{stroke:#e9e2d4; stroke-width:1}
+  .chart .axis{stroke:#8a8275; stroke-width:1.2}
+  .chart text.ylab{fill:#5b5b5b; font-size:11px; text-anchor:end}
+  .chart text.xlab{fill:#5b5b5b; font-size:11px; text-anchor:middle}
+  .chart text.mark{fill:#b3271e; font-size:10px; font-weight:700; text-anchor:middle}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header class="masthead">
+  <div class="kicker">Israel / Palestine research project · demographic series</div>
+  <h1>Gazan demographic growth under three administrations, 1917–2008</h1>
+  <p class="dek">Population, natural increase, mortality, fertility and life expectancy across British Mandate, Egyptian, and Israeli administration — with an Egypt benchmark.</p>
+  <p class="meta">Compiled 2026-06-06 · Sources: UNCTAD 1994; McCarthy 1990; Friedlander &amp; Goldscheider 1979; Roy 1995/2016; Filiu 2014; World Bank WDI (PSE, EGY). Full provenance in <code>gaza-demographic-growth-by-administration.md</code>.</p>
+</header>
+
+<div class="masterwarn">
+  <strong>Master caveat.</strong> Birth/death registration in Gaza was incomplete before 1967, and deaths were under-registered worse than births under <em>both</em> the Egyptian and the early Israeli administrations — so recorded crude death rates run too low and recorded natural increase too high. Recorded-vs-corrected is shown where sources allow. "Muslim" = all-Palestine Muslim benchmark (no Gaza-only series exists for that cell). Modern World Bank figures are <em>modeled</em> estimates for <em>West Bank + Gaza combined</em>, not Gaza-only.
+</div>
+
+<h2><span class="num">Figures</span>The data as charts</h2>
+<p class="note">Self-contained SVG (no external libraries). Dots mark data points; the red dot marks 2023 (the war year). Time axes are to scale, so uneven gaps between observations are real.</p>
+<div class="charts">
+  <figure class="chart">
+    <figcaption>1 · Infant mortality, Gaza (1944–2008)</figcaption>
+    <div id="c1"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#7a2e2e"></span>whole-population estimate</span><span class="key"><span class="sw" style="background:#2c5a3f"></span>UNRWA-registered refugees</span><br>The gap = measurement basis (UNRWA clinics + better registration). Note the near-flat high level to 1967, then decline.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>2 · Life expectancy, Gaza / WB+Gaza (1925–2023)</figcaption>
+    <div id="c2"></div>
+    <div class="cnote">Flat ~48–50 from the late Mandate through 1967, steep rise after, then the 2023 war drop. Pre-1967 = Muslim/Israel-MoH estimate; 1990+ = World Bank (WB+Gaza).</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>3 · Gaza population, thousands (1922–1993)</figcaption>
+    <div id="c3"></div>
+    <div class="cnote">The 1948 refugee influx (one-time jump) and the 1966→1967 dip (June-war flight, 455k→355k) are both visible. Mandate points are the larger sub-district.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>4 · Infant mortality — Egypt vs Palestine (1967–2023)</figcaption>
+    <div id="c4"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Near-identical start (~150), then Palestine falls faster and lower.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>5 · Life expectancy — Egypt vs Palestine (1967–2023)</figcaption>
+    <div id="c5"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Same ~48-year start; Palestine pulls ahead, then the 2023 war drops it below Egypt.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>6 · Under-5 mortality — Egypt vs Palestine (1990–2023)</figcaption>
+    <div id="c6"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>The 2023 war reverses three decades: Palestine (41.9) jumps above Egypt (22.9) in one year.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>7 · Total fertility — Egypt vs Palestine (1990–2022)</figcaption>
+    <div id="c7"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Both decline; Palestine's transition lags Egypt by ~1.3 children, sustaining higher natural increase.</div>
+  </figure>
+</div>
+
+<h2><span class="num">Figures · growth components</span>Natural increase vs. immigration vs. emigration</h2>
+<p class="note">Population change = natural increase (births − deaths) + net migration (immigration − emigration). <strong>Charts 8–9 are by-year lines, 1950–2023.</strong> <strong>Solid = measured</strong> (World Bank: birth/death rates from 1990, net migration from 1960); <strong>dashed = UN WPP modeled estimates</strong> extending back to 1950 (combined WB+Gaza). The small seam at 1990 is the source change. The Mandate and Egyptian eras still have no <em>measured</em> annual Gaza vital data — so <strong>charts 10–13 (period/decade/event bars)</strong> carry the registration-based view, with the dashed modeled line as the only continuous pre-1990 estimate. Chart 13 bins the whole era into decade totals (absolute people added), starting at the 1940s.</p>
+<div class="charts">
+  <figure class="chart">
+    <figcaption>8 · Birth rate, death rate &amp; natural increase — 1950–2023</figcaption>
+    <div id="cy1"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#1f6f8b"></span>birth rate</span><span class="key"><span class="sw" style="background:#2c5a3f"></span>death rate</span><span class="key"><span class="sw" style="background:#7a2e2e"></span>natural increase</span><br>Per 1,000/yr, WB+Gaza. <strong>Solid = World Bank (measured, 1990+); dashed = UN WPP modeled (1950–90).</strong> The gap between the birth and death lines <em>is</em> natural increase: death rate fell 21→5 (1950–90) while births stayed ~46–51, so natural increase <em>rose</em> 27→41. The 2023 war spikes the death rate (3.0→7.2) and drops natural increase to 19.9. Measured annual rates don't exist before 1990; the dashed line is modeled, combined-territory.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>9 · Components of annual change: natural increase vs. net migration (thousands/yr)</figcaption>
+    <div id="cy2"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#2c5a3f"></span>natural increase</span><span class="key"><span class="sw" style="background:#b3271e"></span>net migration (WB+Gaza)</span><span class="key"><span class="sw" style="background:#9b5a2a"></span>net migration (Gaza only)</span><br>Absolute persons, WB+Gaza (World Bank, modeled). <strong>Natural increase (births − deaths) is the overwhelming driver</strong> (~80–125k/yr); net migration is small and almost always <em>negative</em> (emigration). The green natural-increase line is <strong>dashed 1950–90 (UN WPP modeled)</strong> and <strong>solid 1990+ (World Bank measured)</strong>. <strong>Migration from 1948 is now shown:</strong> the brown dashed line is <em>Gaza-only</em> net migration from Egyptian records (1951–64), tiny swings (±5k); the red line is <em>WB+Gaza combined</em> (1960+), far more negative because West Bank emigration ran ~3× Gaza's (≈−18k/yr combined vs ≈−5k/yr Gaza, 1960–62), so it <strong>overstates Gaza's own outflow</strong>. The 1948 refugee influx (+197k) is off this scale — chart 12. The 1967 trough (−55k) is the war flight; the 1984–87 swings are census-rebasing artifacts; the 2023 war cuts natural increase (deaths up) and deepens net outflow. Gross immigration and emigration are not published separately — only the net.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>10 · What drove growth: natural increase vs. migration (per 1,000/yr)</figcaption>
+    <div id="c8"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#2c5a3f"></span>natural increase</span><span class="key"><span class="sw" style="background:#b3271e"></span>net migration</span><span class="key"><span class="sw" style="background:#1a1a1a"></span>net growth</span><br>Natural increase is the engine in every period; emigration is the drag, never mortality. Approximate; Egyptian natural increase is the recorded figure (death under-registration inflates it). Israeli-era net migration was negative every year but 1973 (~103,100 net emigrants), nearly offsetting births in the early 1970s.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>11 · Net migration under Egyptian rule, by sub-period (thousands)</figcaption>
+    <div id="c9"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#2c5a3f"></span>net inflow</span><span class="key"><span class="sw" style="background:#b3271e"></span>net outflow</span><br>Documented swings: −12.2k (1951–55), +10.6k (1956–58), −21.0k (1959–62), +0.2k (1963–64) → net −22.5k over 14 years (≈ −0.45%/yr). The 1956–58 inflow follows the 1956 Suez war. Source: UNCTAD.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>12 · The immigration that built Gaza: 1948 (thousands)</figcaption>
+    <div id="c10"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#1f6f8b"></span>indigenous residents</span><span class="key"><span class="sw" style="background:#b3271e"></span>1948 refugees</span><br>~197k refugees arrived onto ~80k residents — refugees became ~71% of the Strip (settled total ~242k by 1950). The one-time immigration shock that roughly tripled the population. Source: UNCTAD / Abu-Lughod.</div>
+  </figure>
+  <figure class="chart">
+    <figcaption>13 · People added per decade: natural growth vs. net migration (thousands, Gaza only)</figcaption>
+    <div id="c13"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#2c5a3f"></span>natural increase (estimated)</span><span class="key"><span class="sw" style="background:#b3271e"></span>net migration (+ into Gaza / − out)</span><br>Thousands of people added per decade, Gaza only. <strong>Migration into Gaza was essentially one event</strong> — the <strong>1948 refugee influx (+197k)</strong>, the tall red 1940s bar. After that, net migration was <em>negative</em> every decade. <strong>The 1960s (−108k) was strongly negative</strong>: small Egyptian-era labor out-migration (~−21k) plus the <strong>1967 war flight (~−87k)</strong> — and no meaningful immigration into Gaza after 1948 (the only inflow blip, +10.5k post-Suez 1956–58, nets into the 1950s). Natural increase grows in absolute terms simply because the population keeps growing — it dominates every decade. Natural increase is <em>estimated</em> (Gaza population × natural-increase rate); net migration is documented (1948 census; UNCTAD 1951–64; Roy ~103k emigrants 1967–93). 2000s–2020s net migration is omitted — no Gaza-only series exists (combined trend in chart 9).</div>
+  </figure>
+</div>
+
+<!-- 1 -->
+<h2><span class="num">Table 1</span>Vital statistics by administration</h2>
+<p class="note">Per 1,000 unless noted. Bold = the load-bearing figure for that cell.</p>
+<table>
+  <caption>Gaza Strip (Mandate unit = Gaza sub-district). Sources: McCarthy, F&amp;G 1979, Roy, UNCTAD.</caption>
+  <thead>
+    <tr><th>Indicator</th><th>Pre-Nakba (Mandate ~1922–47)</th><th>Egyptian admin (1948–67)</th><th>Israeli admin (1967–~2005)</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">Crude birth rate</th><td>~50–54 <span class="sub">(Muslim)</span></td><td>~46–50 <span class="sub">(rec. 46.4, 1961–64; rose 41.3→46.7)</span></td><td>~50 late-60s → falling, still ~45 through 80s</td></tr>
+    <tr><th scope="row">Crude death rate</th><td>~24 → 15 <span class="sub">(falling)</span></td><td>rec. <strong>9.7</strong> (1961–64) — <span class="flag">not credible</span>; corrected ~18–21</td><td>20.2 (1968) → 13.6 (1975) → 5.9 (1987); PLO-corr. ~18 (1970s)</td></tr>
+    <tr><th scope="row">Natural increase</th><td>~22 → 31 <span class="sub">(≈2.2%→3.1%)</span></td><td>rec. <strong>36.7</strong> (≈3.7%); corrected ~30–34 (≈3.0–3.4%)</td><td>~34 → high; Roy "≈4%" — net emigration offset it until 1979</td></tr>
+    <tr><th scope="row">Infant mortality</th><td>Gaza town <strong>158</strong>, villages <strong>156</strong> (1944)</td><td>UNRWA refugees <strong>127 (1960) → 82 (1967)</strong>; whole-pop ~150–152</td><td>whole-pop <strong>152 (1967) → 132 (1974) → ~55 (1985)</strong>; → 20.2 (2008)</td></tr>
+    <tr><th scope="row">Life expectancy <span class="sub">(yrs)</span></th><td>~35 (1920s) → <strong>~50</strong> (1945, Muslim)</td><td><strong>~48</strong> at 1967 (WB+Gaza) — i.e. ~flat</td><td>48 (1967) → <strong>55</strong> (mid-70s) → <strong>62</strong> (early 80s) → ~70+ (2000s)</td></tr>
+    <tr><th scope="row">Total fertility <span class="sub">(births/woman)</span></th><td>~7 <span class="sub">(Muslim, GRR×2)</span></td><td>~7–8 <span class="sub">(WB proxy 7.48/7.64; no Gaza-only)</span></td><td>~7–8 → declining; 6.8 (1990) → 3.3 (2023) <span class="sub">(WB+Gaza)</span></td></tr>
+    <tr><th scope="row">Population</th><td>sub-district 73,885 (1922) → 137,180 (1945)</td><td>~240–245k (1948) → ~355–455k (1966–67)</td><td>~356k (1967) → ~633k (1990) → 830k (1993)</td></tr>
+  </tbody>
+</table>
+
+<!-- 2 -->
+<h2><span class="num">Table 2</span>The population spine</h2>
+<table>
+  <caption>Unit changes at 1948 (sub-district → Strip) and the June-1967 war flight explain the apparent discontinuities.</caption>
+  <thead><tr><th>Date</th><th>Gaza population</th><th>Unit / note</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td class="num">1922</td><td class="num"><strong>73,885</strong></td><td>Gaza sub-district</td><td class="sub">Census 1922 (via Roy)</td></tr>
+    <tr><td class="num">1931</td><td class="num"><strong>94,634</strong></td><td>Gaza sub-district</td><td class="sub">Mills, Census 1931</td></tr>
+    <tr><td class="num">1944–45</td><td class="num"><strong>137,180</strong></td><td>Gaza sub-district</td><td class="sub">Survey of Palestine</td></tr>
+    <tr><td class="num">end-1948</td><td class="num">~80,000</td><td>Strip residents, pre-influx</td><td class="sub">Abu-Lughod (UNCTAD)</td></tr>
+    <tr><td class="num">1948–50</td><td class="num"><strong>240,300–245,000</strong></td><td>Strip, after ~197,000 refugees</td><td class="sub">UNCTAD</td></tr>
+    <tr><td class="num">1953</td><td class="num">prewar +288%</td><td>Strip</td><td class="sub">Roy</td></tr>
+    <tr><td class="num">1966</td><td class="num"><strong>454,900</strong></td><td>Strip (Egyptian estimate)</td><td class="sub">Khlousi 1967</td></tr>
+    <tr><td class="num">May 1967</td><td class="num">385,000–450,000</td><td>Strip, pre-war (~442,100)</td><td class="sub">UNCTAD</td></tr>
+    <tr><td class="num">Sep 1967</td><td class="num"><strong>354,700</strong></td><td>Strip, <em>after</em> June-war flight</td><td class="sub">Israeli 1967 census</td></tr>
+    <tr><td class="num">~1990</td><td class="num">~633,000</td><td>Strip</td><td class="sub">Roy / UNCTAD</td></tr>
+    <tr><td class="num">1993</td><td class="num">~830,000</td><td>Strip (99% Sunni Muslim; ~70% refugees)</td><td class="sub">Roy</td></tr>
+  </tbody>
+</table>
+
+<!-- 3 -->
+<h2><span class="num">Table 3</span>Growth decomposition by administration</h2>
+<p class="note">Annual growth = natural increase + net migration. Natural increase was the engine in every period; the brake was always emigration, never mortality.</p>
+<table>
+  <thead><tr><th>Period</th><th>Span</th><th>Pop start → end</th><th class="num">Annual growth</th><th>Natural increase</th><th>Net migration</th><th>Limiting factor</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Mandate</th><td>1922–45</td><td>73,885 → 137,180 <span class="sub">(sub-dist.)</span></td><td class="num"><strong>~2.7%</strong></td><td>high (~2.5–3%)</td><td>small, positive</td><td>—</td></tr>
+    <tr><th scope="row">1948 rupture</th><td>1948</td><td>~80k → ~242k</td><td class="num">one-time <strong>+200%</strong></td><td>n/a</td><td>+~197k refugees</td><td>the exodus <em>into</em> Gaza</td></tr>
+    <tr><th scope="row">Egyptian</th><td>1950–67</td><td>~242k → ~442–455k</td><td class="num"><strong>~2.8–3.7%</strong></td><td>~3.4–3.7% (rec.)</td><td>−0.45%/yr</td><td>emigration + 1967 flight</td></tr>
+    <tr><th scope="row">Israeli</th><td>1967–93</td><td>354,700 → ~830k</td><td class="num"><strong>~3.0–3.3%</strong></td><td>~4% (Roy)</td><td>negative every yr but 1973</td><td>emigration (offset NI only after 1979)</td></tr>
+  </tbody>
+</table>
+
+<!-- 4 -->
+<h2><span class="num">Table 4</span>The post-1985 modeled series</h2>
+<p class="note">World Bank modeled estimates, West Bank + Gaza combined (not Gaza-only). Continues the record where the corpus figures end (mid-1980s).</p>
+<table>
+  <caption>The 2023 row carries the Gaza war. <span class="legend">↑ red = worsening, ↓ green = improving vs. prior row.</span></caption>
+  <thead>
+    <tr><th>Year</th><th class="num">TFR <span class="sub">b/woman</span></th><th class="num">Infant mort. <span class="sub">/1,000</span></th><th class="num">Under-5 mort. <span class="sub">/1,000</span></th><th class="num">Maternal mort. <span class="sub">/100k</span></th><th class="num">Life exp. <span class="sub">yrs</span></th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">1990</th><td class="num">6.81</td><td class="num">39.2</td><td class="num">45.1</td><td class="num">78</td><td class="num">67.8</td></tr>
+    <tr><th scope="row">2000</th><td class="num">5.46</td><td class="num">26.3</td><td class="num">30.3</td><td class="num">59</td><td class="num">70.3</td></tr>
+    <tr><th scope="row">2010</th><td class="num">4.43</td><td class="num">19.0</td><td class="num">21.9</td><td class="num">42</td><td class="num">73.3</td></tr>
+    <tr><th scope="row">2020</th><td class="num">3.51</td><td class="num">13.2</td><td class="num">15.2</td><td class="num">20</td><td class="num">75.0</td></tr>
+    <tr><th scope="row">2022</th><td class="num">3.38</td><td class="num">12.3</td><td class="num">14.1</td><td class="num">17</td><td class="num">76.7</td></tr>
+    <tr class="warn"><th scope="row">2023 <span class="sub">(war)</span></th><td class="num">3.31</td><td class="num"><span class="up">16.8</span></td><td class="num"><span class="up">41.9</span></td><td class="num">16</td><td class="num"><span class="up">65.2</span></td></tr>
+  </tbody>
+</table>
+<p class="note">2023 figures are provisional and will be revised; the modeled MMR (16) lags and does not yet capture war maternal deaths.</p>
+
+<!-- 5 -->
+<h2><span class="num">Table 5</span>Comparison with Egypt, post-1967</h2>
+<p class="note">World Bank modeled. Same starting line ~1967–70 (infant mortality ~150 both; life expectancy ~48–49 both), then two divergences in opposite directions. <strong>Egy</strong> = Egypt · <strong>PSE</strong> = West Bank + Gaza.</p>
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Indicator</th>
+      <th class="grp" colspan="2">1990</th><th class="grp" colspan="2">2000</th><th class="grp" colspan="2">2010</th><th class="grp" colspan="2">2022</th>
+    </tr>
+    <tr>
+      <th class="num">Egy</th><th class="num">PSE</th><th class="num">Egy</th><th class="num">PSE</th><th class="num">Egy</th><th class="num">PSE</th><th class="num">Egy</th><th class="num">PSE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">TFR <span class="sub">b/woman</span></th><td class="num">4.5</td><td class="num">6.8</td><td class="num">3.5</td><td class="num">5.5</td><td class="num">3.3</td><td class="num">4.4</td><td class="num">2.8</td><td class="num">3.4</td></tr>
+    <tr><th scope="row">Infant mort. <span class="sub">/1,000</span></th><td class="num">67.7</td><td class="num">39.2</td><td class="num">40.1</td><td class="num">26.3</td><td class="num">27.2</td><td class="num">19.0</td><td class="num">21.8</td><td class="num">12.3</td></tr>
+    <tr><th scope="row">Under-5 mort. <span class="sub">/1,000</span></th><td class="num">86</td><td class="num">45.1</td><td class="num">47.3</td><td class="num">30.3</td><td class="num">30.5</td><td class="num">21.9</td><td class="num">23.5</td><td class="num">14.1</td></tr>
+    <tr><th scope="row">Maternal mort. <span class="sub">/100k</span></th><td class="num">107</td><td class="num">78</td><td class="num">53</td><td class="num">59</td><td class="num">32</td><td class="num">42</td><td class="num">24</td><td class="num">17</td></tr>
+    <tr><th scope="row">Life expectancy <span class="sub">yrs</span></th><td class="num">62.5</td><td class="num">67.8</td><td class="num">67.3</td><td class="num">70.3</td><td class="num">69.1</td><td class="num">73.3</td><td class="num">71.0</td><td class="num">76.7</td></tr>
+    <tr><th scope="row">Crude birth <span class="sub">/1,000</span></th><td class="num">33.5</td><td class="num">45.2</td><td class="num">27.4</td><td class="num">40.9</td><td class="num">27.5</td><td class="num">34.5</td><td class="num">21.1</td><td class="num">27.6</td></tr>
+    <tr><th scope="row">Crude death <span class="sub">/1,000</span></th><td class="num">8.7</td><td class="num">6.7</td><td class="num">6.3</td><td class="num">4.5</td><td class="num">6.1</td><td class="num">3.5</td><td class="num">5.7</td><td class="num">3.0</td></tr>
+  </tbody>
+</table>
+<p class="note"><strong>Read:</strong> Palestine (PSE) ran lower infant/under-5 mortality and higher life expectancy than Egypt throughout 1990–2022 despite occupation/blockade, while keeping higher fertility (slower transition). The 2023 war reversed the survival edge in one year (PSE under-5 14.1→41.9, above Egypt's 22.9; life expectancy 76.7→65.2, below Egypt's 71.6).</p>
+
+<!-- density -->
+<h2><span class="num">Density</span>Population density — growth crushed into a fixed strip</h2>
+<p class="note">All of Gaza's ~9× growth since 1948 was absorbed into a fixed ~365 km² (141 sq mi) — the borders never moved. So density tracks population exactly: from ~670 to ~6,100 people/km².</p>
+<div class="charts">
+  <figure class="chart">
+    <figcaption>14 · Population density, Gaza Strip (people per km², 1948–2023)</figcaption>
+    <div id="c14"></div>
+    <div class="cnote">Population ÷ ~365 km². Same shape as the population spine — that <em>is</em> the point: a tripling at 1948 (refugees) then a 9× rise, all packed into an area that never grew. Refugee camps run several times denser than the Strip-wide average shown here.</div>
+  </figure>
+</div>
+<table>
+  <caption>Gaza Strip area ≈ 365 km² (141 sq mi). Density = population ÷ area. Population from the spine (Table 2); 2020–23 from PCBS.</caption>
+  <thead><tr><th>Year</th><th class="num">Population</th><th class="num">per km²</th><th class="num">per sq mi</th></tr></thead>
+  <tbody>
+    <tr><td class="num">1948</td><td class="num">~245,000</td><td class="num">671</td><td class="num">1,738</td></tr>
+    <tr><td class="num">1967</td><td class="num">~380,000</td><td class="num">1,041</td><td class="num">2,695</td></tr>
+    <tr><td class="num">1990</td><td class="num">~633,000</td><td class="num">1,734</td><td class="num">4,489</td></tr>
+    <tr><td class="num">2000</td><td class="num">~1,138,000</td><td class="num">3,118</td><td class="num">8,071</td></tr>
+    <tr><td class="num">2010</td><td class="num">~1,600,000</td><td class="num">4,384</td><td class="num">11,348</td></tr>
+    <tr><td class="num">2020</td><td class="num">~2,100,000</td><td class="num">5,753</td><td class="num">14,894</td></tr>
+    <tr><td class="num">2023</td><td class="num">~2,230,000</td><td class="num">6,110</td><td class="num">15,816</td></tr>
+  </tbody>
+</table>
+<p class="note"><strong>Context — the average understates the crush.</strong> Roy records the 1948 refugee shock spiking density from ~500/sq mi (1944) to ~2,300/sq mi (1948), and the camps far higher: <strong>Jabalya ≈ 133,400/sq mi (~51,500/km²) — over twice Manhattan</strong>. For scale, Manhattan ≈ 28,000/km²; Gaza's Strip-wide ~6,100/km² (2023) is a dense-city average spread across an entire territory, with camps several times that.</p>
+
+<footer>
+  <h3>Sources &amp; notes</h3>
+  <ul>
+    <li>UNCTAD, <em>Population and Demographic Developments in the West Bank and Gaza Strip until 1990</em> (UNCTAD/ECDC/SEU/1, 1994) — compiling source for post-1948 cells.</li>
+    <li>McCarthy, <em>The Population of Palestine</em> (1990); Friedlander &amp; Goldscheider, <em>The Population of Israel</em> (1979); Roy, <em>The Gaza Strip</em> (1995/2016); Filiu, <em>Gaza: A History</em> (2014).</li>
+    <li>World Bank World Development Indicators (West Bank &amp; Gaza = PSE; Egypt = EGY), pulled 2026-06-06 — modeled estimates; PSE is combined territory.</li>
+    <li>UN World Population Prospects (State of Palestine = WB+Gaza), via Our World in Data, pulled 2026-06-06 — the dashed 1950–1990 segments in charts 8–9 (modeled estimates; WB has no measured pre-1990 vital rates).</li>
+    <li>Evidentiary levels, the under-registration audit, and the unfillable cells (maternal mortality before ~1985, neonatal, under-5 before 1975) are documented in <code>gaza-demographic-growth-by-administration.md</code> and <code>RESEARCH_NOTES.md</code> (<code>topic.gaza_demographic_transition_3periods</code>).</li>
+  </ul>
+</footer>
+</div>
+<script>
+(function(){
+  function mkChart(o){
+    var W=520,H=300,m={t:16,r:16,b:34,l:46};
+    var iw=W-m.l-m.r, ih=H-m.t-m.b;
+    function X(x){return m.l+(x-o.xmin)/(o.xmax-o.xmin)*iw;}
+    function Y(y){return m.t+ih-(y-o.ymin)/(o.ymax-o.ymin)*ih;}
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" preserveAspectRatio="xMidYMid meet">';
+    o.yticks.forEach(function(t){var y=Y(t).toFixed(1);
+      s+='<line class="grid" x1="'+m.l+'" y1="'+y+'" x2="'+(m.l+iw)+'" y2="'+y+'"/>';
+      s+='<text class="ylab" x="'+(m.l-6)+'" y="'+(Y(t)+3).toFixed(1)+'">'+t+'</text>';});
+    o.xticks.forEach(function(t){var x=X(t).toFixed(1);
+      s+='<text class="xlab" x="'+x+'" y="'+(m.t+ih+15)+'">'+t+'</text>';});
+    s+='<line class="axis" x1="'+m.l+'" y1="'+(m.t+ih)+'" x2="'+(m.l+iw)+'" y2="'+(m.t+ih)+'"/>';
+    s+='<line class="axis" x1="'+m.l+'" y1="'+m.t+'" x2="'+m.l+'" y2="'+(m.t+ih)+'"/>';
+    o.series.forEach(function(se){
+      var d=se.pts.map(function(p,i){return (i?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1);}).join(' ');
+      s+='<path d="'+d+'" fill="none" stroke="'+se.color+'" stroke-width="2.2"'+(se.dash?' stroke-dasharray="5 4"':'')+'/>';
+      if(!se.nodots){se.pts.forEach(function(p){s+='<circle cx="'+X(p[0]).toFixed(1)+'" cy="'+Y(p[1]).toFixed(1)+'" r="2.8" fill="'+se.color+'"/>';});}
+    });
+    if(o.mark){var mx=o.mark[0],my=o.mark[1],tx=o.mark[2];
+      s+='<circle cx="'+X(mx).toFixed(1)+'" cy="'+Y(my).toFixed(1)+'" r="4.6" fill="#b3271e" stroke="#fffdf9" stroke-width="1.5"/>';
+      s+='<text class="mark" x="'+X(mx).toFixed(1)+'" y="'+(Y(my)-9).toFixed(1)+'">'+tx+'</text>';}
+    if(o.notes){o.notes.forEach(function(n){s+='<text class="mark" x="'+X(n[0]).toFixed(1)+'" y="'+Y(n[1]).toFixed(1)+'" text-anchor="middle">'+n[2]+'</text>';});}
+    return s+'</svg>';
+  }
+  function put(id,o){var el=document.getElementById(id); if(el) el.innerHTML=mkChart(o);}
+
+  function mkBars(o){
+    var W=520,H=300,m={t:16,r:16,b:46,l:48};
+    var iw=W-m.l-m.r, ih=H-m.t-m.b;
+    function Y(v){return m.t+ih-(v-o.ymin)/(o.ymax-o.ymin)*ih;}
+    var n=o.cats.length, slot=iw/n, ns=o.series.length, gw=slot*0.64, bw=gw/ns;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" preserveAspectRatio="xMidYMid meet">';
+    o.yticks.forEach(function(t){var y=Y(t).toFixed(1);
+      s+='<line class="grid" x1="'+m.l+'" y1="'+y+'" x2="'+(m.l+iw)+'" y2="'+y+'"/>';
+      s+='<text class="ylab" x="'+(m.l-6)+'" y="'+(Y(t)+3).toFixed(1)+'">'+t+'</text>';});
+    o.cats.forEach(function(cat,ci){
+      var cx=m.l+slot*ci+slot/2, x0=cx-gw/2;
+      o.series.forEach(function(se,si){
+        var v=se.vals[ci]; if(v==null) return;
+        var bx=x0+si*bw, yTop=Y(Math.max(v,0)), yBot=Y(Math.min(v,0));
+        var col=(se.colors&&se.colors[ci])||se.color;
+        s+='<rect x="'+bx.toFixed(1)+'" y="'+yTop.toFixed(1)+'" width="'+(bw*0.84).toFixed(1)+'" height="'+Math.max(0.5,(yBot-yTop)).toFixed(1)+'" fill="'+col+'"/>';
+      });
+      s+='<text class="xlab" x="'+cx.toFixed(1)+'" y="'+(m.t+ih+16)+'">'+cat+'</text>';
+    });
+    if(o.dots){o.dots.vals.forEach(function(v,ci){if(v==null)return;var cx=m.l+slot*ci+slot/2;
+      s+='<circle cx="'+cx.toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.6" fill="'+o.dots.color+'" stroke="#fffdf9" stroke-width="1.2"/>';});}
+    s+='<line class="axis" x1="'+m.l+'" y1="'+Y(0).toFixed(1)+'" x2="'+(m.l+iw)+'" y2="'+Y(0).toFixed(1)+'"/>';
+    s+='<line class="axis" x1="'+m.l+'" y1="'+m.t+'" x2="'+m.l+'" y2="'+(m.t+ih)+'"/>';
+    if(o.topnote){s+='<text class="mark" x="'+(m.l+10)+'" y="'+(m.t+5)+'" text-anchor="start">'+o.topnote+'</text>';}
+    return s+'</svg>';
+  }
+  function putB(id,o){var el=document.getElementById(id); if(el) el.innerHTML=mkBars(o);}
+
+  put('c1',{xmin:1940,xmax:2010,ymin:0,ymax:180,xticks:[1950,1970,1990,2010],yticks:[0,40,80,120,160],series:[
+    {color:'#7a2e2e',pts:[[1944,158],[1967,152],[1974,132],[1985,55]]},
+    {color:'#2c5a3f',pts:[[1960,127],[1967,82],[1970,86],[1975,69],[2008,20.2]]}
+  ]});
+  put('c2',{xmin:1920,xmax:2026,ymin:30,ymax:80,xticks:[1930,1950,1970,1990,2010],yticks:[30,40,50,60,70,80],series:[
+    {color:'#1f6f8b',pts:[[1925,35],[1945,50],[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7],[2023,65.2]]}
+  ],mark:[2023,65.2,'2023']});
+  put('c3',{xmin:1920,xmax:2000,ymin:0,ymax:900,xticks:[1930,1950,1970,1990],yticks:[0,200,400,600,800],series:[
+    {color:'#1f6f8b',pts:[[1922,73.9],[1931,94.6],[1945,137.2],[1950,242.5],[1966,454.9],[1967,354.7],[1990,633],[1993,830]]}
+  ]});
+  put('c4',{xmin:1965,xmax:2026,ymin:0,ymax:160,xticks:[1970,1985,2000,2015],yticks:[0,40,80,120,160],series:[
+    {color:'#b07d2b',pts:[[1970,150],[1980,120],[1990,67.7],[2000,40.1],[2010,27.2],[2020,22.6],[2023,21.3]]},
+    {color:'#1f6f8b',pts:[[1967,152],[1980,69.5],[1990,39.2],[2000,26.3],[2010,19],[2020,13.2],[2023,16.8]]}
+  ]});
+  put('c5',{xmin:1965,xmax:2026,ymin:40,ymax:80,xticks:[1970,1985,2000,2015],yticks:[40,50,60,70,80],series:[
+    {color:'#b07d2b',pts:[[1970,49],[1980,55.7],[1990,62.5],[2000,67.3],[2010,69.1],[2022,71],[2023,71.6]]},
+    {color:'#1f6f8b',pts:[[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7],[2023,65.2]]}
+  ],mark:[2023,65.2,'war']});
+  put('c6',{xmin:1988,xmax:2026,ymin:0,ymax:90,xticks:[1990,2000,2010,2020],yticks:[0,30,60,90],series:[
+    {color:'#b07d2b',pts:[[1990,86],[2000,47.3],[2010,30.5],[2022,23.5],[2023,22.9]]},
+    {color:'#1f6f8b',pts:[[1990,45.1],[2000,30.3],[2010,21.9],[2020,15.2],[2022,14.1],[2023,41.9]]}
+  ],mark:[2023,41.9,'war']});
+  put('c7',{xmin:1988,xmax:2024,ymin:0,ymax:8,xticks:[1990,2000,2010,2020],yticks:[0,2,4,6,8],series:[
+    {color:'#b07d2b',pts:[[1990,4.5],[2000,3.5],[2010,3.3],[2020,2.9],[2022,2.8]]},
+    {color:'#1f6f8b',pts:[[1990,6.81],[2000,5.46],[2010,4.43],[2020,3.51],[2022,3.38]]}
+  ]});
+
+  var CBR=[[1990,45.2],[1991,44.9],[1992,44.5],[1993,44.1],[1994,43.8],[1995,43.4],[1996,43.1],[1997,42.7],[1998,42.1],[1999,41.4],[2000,40.9],[2001,40.2],[2002,39.6],[2003,38.8],[2004,38.1],[2005,37.3],[2006,36.7],[2007,35.9],[2008,33.9],[2009,34.0],[2010,34.5],[2011,34.1],[2012,33.4],[2013,32.9],[2014,32.8],[2015,32.9],[2016,32.3],[2017,31.4],[2018,30.5],[2019,29.7],[2020,28.9],[2021,28.2],[2022,27.6],[2023,27.1]];
+  var CDR=[[1990,6.7],[1991,6.5],[1992,6.2],[1993,5.9],[1994,5.7],[1995,5.4],[1996,5.2],[1997,4.9],[1998,4.8],[1999,4.6],[2000,4.5],[2001,4.4],[2002,4.3],[2003,4.2],[2004,4.1],[2005,4.0],[2006,3.9],[2007,3.7],[2008,3.7],[2009,3.7],[2010,3.5],[2011,3.4],[2012,3.4],[2013,3.3],[2014,3.9],[2015,3.3],[2016,3.3],[2017,3.2],[2018,3.2],[2019,3.1],[2020,3.4],[2021,3.8],[2022,3.0],[2023,7.2]];
+  var NIa=[[1990,38.5],[1991,38.4],[1992,38.3],[1993,38.2],[1994,38.1],[1995,38.0],[1996,37.9],[1997,37.8],[1998,37.3],[1999,36.8],[2000,36.4],[2001,35.8],[2002,35.3],[2003,34.6],[2004,34.0],[2005,33.3],[2006,32.8],[2007,32.2],[2008,30.2],[2009,30.3],[2010,31.1],[2011,30.7],[2012,29.9],[2013,29.6],[2014,28.9],[2015,29.6],[2016,29.0],[2017,28.2],[2018,27.3],[2019,26.6],[2020,25.5],[2021,24.5],[2022,24.6],[2023,19.9]];
+  var NETM=[[1960,-17.7],[1961,-18.2],[1962,-19.0],[1963,-21.2],[1964,-31.1],[1965,-36.4],[1966,-47.8],[1967,-55.3],[1968,-55.0],[1969,-45.6],[1970,-31.4],[1971,-17.2],[1972,-7.8],[1973,-6.7],[1974,-8.7],[1975,-11.6],[1976,-14.5],[1977,-16.4],[1978,-16.7],[1979,-16.1],[1980,-15.1],[1981,-13.9],[1982,-9.8],[1983,0.7],[1984,9.1],[1985,-31.6],[1986,-21.1],[1987,50.7],[1988,-3.0],[1989,-3.0],[1990,-0.5],[1991,2.1],[1992,4.4],[1993,6.0],[1994,7.4],[1995,8.8],[1996,9.8],[1997,10.4],[1998,-13.1],[1999,-13.9],[2000,-11.5],[2001,-25.7],[2002,-35.0],[2003,-36.0],[2004,-32.9],[2005,-28.2],[2006,-23.4],[2007,-20.3],[2008,-24.0],[2009,-25.9],[2010,-26.4],[2011,-26.7],[2012,-26.9],[2013,-27.0],[2014,-27.1],[2015,-22.9],[2016,-22.8],[2017,-25.5],[2018,-25.1],[2019,-24.7],[2020,-12.4],[2021,-12.4],[2022,-5.0],[2023,-25.0]];
+  var CBRm=[[1950,48.4],[1951,48.6],[1952,48.8],[1953,49.1],[1954,49.4],[1955,49.6],[1956,49.9],[1957,50.1],[1958,50.3],[1959,50.5],[1960,50.6],[1961,50.6],[1962,50.7],[1963,50.7],[1964,50.9],[1965,50.9],[1966,51.1],[1967,51.2],[1968,51.0],[1969,50.6],[1970,50.1],[1971,49.6],[1972,49.2],[1973,49.0],[1974,48.9],[1975,48.7],[1976,48.5],[1977,48.2],[1978,47.8],[1979,47.5],[1980,46.9],[1981,46.7],[1982,46.5],[1983,46.1],[1984,45.9],[1985,46.2],[1986,46.0],[1987,45.1],[1988,45.8],[1989,45.9],[1990,46.0]];
+  var CDRm=[[1950,21.2],[1951,20.9],[1952,20.6],[1953,20.3],[1954,20.0],[1955,19.7],[1956,19.4],[1957,19.0],[1958,18.6],[1959,18.2],[1960,17.7],[1961,17.3],[1962,16.8],[1963,16.3],[1964,15.8],[1965,15.3],[1966,14.9],[1967,15.6],[1968,13.8],[1969,13.3],[1970,12.7],[1971,12.1],[1972,11.6],[1973,11.0],[1974,10.7],[1975,10.2],[1976,9.8],[1977,9.3],[1978,8.9],[1979,8.4],[1980,8.0],[1981,7.6],[1982,7.3],[1983,6.9],[1984,6.6],[1985,6.4],[1986,6.1],[1987,5.7],[1988,5.6],[1989,5.4],[1990,5.2]];
+  var NIm=[[1950,27.2],[1951,27.7],[1952,28.2],[1953,28.7],[1954,29.3],[1955,29.9],[1956,30.5],[1957,31.1],[1958,31.7],[1959,32.3],[1960,32.8],[1961,33.3],[1962,33.9],[1963,34.4],[1964,35.0],[1965,35.6],[1966,36.2],[1967,35.6],[1968,37.1],[1969,37.4],[1970,37.4],[1971,37.5],[1972,37.6],[1973,38.1],[1974,38.2],[1975,38.5],[1976,38.8],[1977,38.9],[1978,38.9],[1979,39.1],[1980,38.9],[1981,39.1],[1982,39.2],[1983,39.2],[1984,39.3],[1985,39.8],[1986,39.9],[1987,39.4],[1988,40.2],[1989,40.5],[1990,40.8]];
+  var NIABSm=[[1950,25.7],[1951,26.4],[1952,27.2],[1953,28.0],[1954,28.9],[1955,29.8],[1956,30.8],[1957,31.8],[1958,33.0],[1959,34.1],[1960,35.2],[1961,36.4],[1962,37.7],[1963,38.8],[1964,40.0],[1965,40.9],[1966,41.5],[1967,40.4],[1968,41.7],[1969,41.6],[1970,41.8],[1971,42.5],[1972,43.9],[1973,45.8],[1974,47.4],[1975,49.2],[1976,51.0],[1977,52.6],[1978,54.1],[1979,55.9],[1980,57.2],[1981,59.1],[1982,61.2],[1983,63.5],[1984,66.4],[1985,69.5],[1986,71.3],[1987,73.9],[1988,79.5],[1989,83.2],[1990,87.2]];
+  put('cy1',{xmin:1948,xmax:2024,ymin:0,ymax:55,xticks:[1950,1960,1970,1980,1990,2000,2010,2020],yticks:[0,10,20,30,40,50],series:[
+    {color:'#1f6f8b',nodots:true,dash:true,pts:CBRm},
+    {color:'#2c5a3f',nodots:true,dash:true,pts:CDRm},
+    {color:'#7a2e2e',nodots:true,dash:true,pts:NIm},
+    {color:'#1f6f8b',nodots:true,pts:CBR},
+    {color:'#2c5a3f',nodots:true,pts:CDR},
+    {color:'#7a2e2e',nodots:true,pts:NIa}
+  ],mark:[2023,19.9,'war']});
+  var NIABS=[[1990,76.2],[1991,79.4],[1992,82.9],[1993,86.4],[1994,90.2],[1995,94.0],[1996,98.1],[1997,102.3],[1998,103.6],[1999,104.8],[2000,106.4],[2001,107.3],[2002,108.6],[2003,109.2],[2004,110.0],[2005,110.6],[2006,111.7],[2007,112.5],[2008,108.4],[2009,111.7],[2010,117.7],[2011,119.0],[2012,119.2],[2013,120.5],[2014,120.7],[2015,126.2],[2016,126.7],[2017,125.7],[2018,124.8],[2019,124.5],[2020,122.4],[2021,120.4],[2022,124.0],[2023,102.6]];
+  var TOTABS=[[1990,75.7],[1991,81.5],[1992,87.3],[1993,92.4],[1994,97.6],[1995,102.8],[1996,107.9],[1997,112.7],[1998,90.5],[1999,90.9],[2000,94.9],[2001,81.6],[2002,73.6],[2003,73.2],[2004,77.1],[2005,82.4],[2006,88.3],[2007,92.2],[2008,84.4],[2009,85.8],[2010,91.3],[2011,92.3],[2012,92.3],[2013,93.5],[2014,93.6],[2015,103.3],[2016,103.9],[2017,100.2],[2018,99.7],[2019,99.8],[2020,110.0],[2021,108.0],[2022,119.0],[2023,77.6]];
+  var NMGAZA=[[1951,-2.4],[1952,-2.4],[1953,-2.4],[1954,-2.4],[1955,-2.4],[1956,3.5],[1957,3.5],[1958,3.5],[1959,-5.3],[1960,-5.3],[1961,-5.3],[1962,-5.3],[1963,0.1],[1964,0.1]];
+  put('cy2',{xmin:1946,xmax:2025,ymin:-60,ymax:135,xticks:[1950,1960,1970,1980,1990,2000,2010,2020],yticks:[-60,-30,0,30,60,90,120],series:[
+    {color:'#2c5a3f',nodots:true,dash:true,pts:NIABSm},
+    {color:'#2c5a3f',nodots:true,pts:NIABS},
+    {color:'#b3271e',nodots:true,pts:NETM},
+    {color:'#9b5a2a',nodots:true,dash:true,pts:NMGAZA}
+  ],mark:[1967,-55.3,'1967 war'],notes:[[1962,127,'1948 influx: +197k (off scale ↑)']]});
+
+  putB('c8',{cats:['Mandate','Egyptian','Israeli'],ymin:-15,ymax:45,yticks:[-10,0,10,20,30,40],series:[
+    {color:'#2c5a3f',vals:[27,35,40]},
+    {color:'#b3271e',vals:[1,-5,-7]}
+  ],dots:{color:'#1a1a1a',vals:[28,30,33]}});
+  putB('c9',{cats:['1951–55','1956–58','1959–62','1963–64'],ymin:-24,ymax:14,yticks:[-20,-10,0,10],series:[
+    {color:'#b3271e',vals:[-12.17,10.56,-21.03,0.16],colors:['#b3271e','#2c5a3f','#b3271e','#2c5a3f']}
+  ]});
+  putB('c10',{cats:['Residents','Refugees'],ymin:0,ymax:220,yticks:[0,50,100,150,200],series:[
+    {color:'#1f6f8b',vals:[80,197],colors:['#1f6f8b','#b3271e']}
+  ]});
+  putB('c13',{cats:['1940s','1950s','1960s','1970s','1980s','1990s','2000s','2010s','2020s'],ymin:-130,ymax:560,yticks:[-100,0,100,200,300,400,500],series:[
+    {color:'#2c5a3f',vals:[null,80,125,157,215,333,433,538,206]},
+    {color:'#b3271e',vals:[197,-7,-108,-40,-40,-15,null,null,null]}
+  ],topnote:'1940s red bar = 1948 refugee influx (+197k into Gaza)'});
+  put('c14',{xmin:1945,xmax:2026,ymin:0,ymax:6500,xticks:[1950,1970,1990,2010],yticks:[0,1500,3000,4500,6000],series:[
+    {color:'#1f6f8b',pts:[[1948,671],[1960,849],[1967,1041],[1980,1249],[1990,1734],[2000,3118],[2010,4384],[2020,5753],[2023,6110]]}
+  ]});
+})();
+</script>
+</body>
+</html>
