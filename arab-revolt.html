@@ -881,7 +881,8 @@ function colLabel(cat, col) {
 
 const MONTHS = { jan:0, feb:1, mar:2, apr:3, may:4, jun:5, jul:6, aug:7, sep:8, oct:9, nov:10, dec:11 };
 function fracYear(ev) {
-  const d = (ev.date || "").toLowerCase();
+  const d = String(ev.date || "").toLowerCase();
+  const yr = parseInt(String(ev.year).replace(/[^0-9]/g, ""), 10) || 1936;
   let mon = null;
   for (const k in MONTHS) { if (d.includes(k)) { mon = MONTHS[k]; break; } }
   if (mon === null) {
@@ -891,11 +892,11 @@ function fracYear(ev) {
     else if (d.includes("autumn") || d.includes("fall")) mon = 9.5;
   }
   if (mon === null) mon = 6;
-  return ev.year + (mon + 0.5) / 12;
+  return yr + (mon + 0.5) / 12;
 }
 function mag(ev) {
-  const s = (ev.scaleBig || "") + " " + (ev.scaleNote || "");
-  let n = parseInt((ev.scaleBig || "").replace(/[^0-9]/g, ""), 10);
+  const s = String(ev.scaleBig || "") + " " + String(ev.scaleNote || "");
+  let n = parseInt(String(ev.scaleBig || "").replace(/[^0-9]/g, ""), 10);
   if (isNaN(n)) n = 0;
   if (/many|mass/i.test(s)) n = Math.max(n, 45);
   if (n >= 1000) return 6.5; if (n >= 100) return 5.2; if (n >= 20) return 4.2;
