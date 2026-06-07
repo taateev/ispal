@@ -91,9 +91,9 @@
     <div class="cnote"><span class="key"><span class="sw" style="background:#7a2e2e"></span>whole-population estimate</span><span class="key"><span class="sw" style="background:#2c5a3f"></span>UNRWA-registered refugees</span><br>The gap = measurement basis (UNRWA clinics + better registration). Note the near-flat high level to 1967, then decline.</div>
   </figure>
   <figure class="chart">
-    <figcaption>2 · Life expectancy, Gaza / WB+Gaza (1925–2023)</figcaption>
+    <figcaption>2 · Life expectancy, Gaza / WB+Gaza (1925–2022)</figcaption>
     <div id="c2"></div>
-    <div class="cnote">Flat ~48–50 from the late Mandate through 1967, steep rise after, then the 2023 war drop. Pre-1967 = Muslim/Israel-MoH estimate; 1990+ = World Bank (WB+Gaza).</div>
+    <div class="cnote">Flat ~48–50 from the late Mandate through 1967, steep rise after, to ~77 by 2022. Pre-1967 = Muslim/Israel-MoH estimate; 1990+ = World Bank (WB+Gaza). <strong>2023 omitted:</strong> period life expectancy in a mass-casualty year is a mortality-spike artifact — it reflects that year's deaths, not survivors' longevity — so it doesn't belong on a longevity trend.</div>
   </figure>
   <figure class="chart">
     <figcaption>3 · Gaza population, thousands (1922–1993)</figcaption>
@@ -108,7 +108,7 @@
   <figure class="chart">
     <figcaption>5 · Life expectancy — Egypt vs Palestine (1967–2023)</figcaption>
     <div id="c5"></div>
-    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Same ~48-year start; Palestine pulls ahead, then the 2023 war drops it below Egypt.</div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Same ~48-year start; Palestine pulls ahead and stays ahead. (Palestine's 2023 omitted — period life expectancy in a war year is a mortality-spike artifact; Egypt, not at war, continues.)</div>
   </figure>
   <figure class="chart">
     <figcaption>6 · Under-5 mortality — Egypt vs Palestine (1990–2023)</figcaption>
@@ -223,10 +223,10 @@
     <tr><th scope="row">2010</th><td class="num">4.43</td><td class="num">19.0</td><td class="num">21.9</td><td class="num">42</td><td class="num">73.3</td></tr>
     <tr><th scope="row">2020</th><td class="num">3.51</td><td class="num">13.2</td><td class="num">15.2</td><td class="num">20</td><td class="num">75.0</td></tr>
     <tr><th scope="row">2022</th><td class="num">3.38</td><td class="num">12.3</td><td class="num">14.1</td><td class="num">17</td><td class="num">76.7</td></tr>
-    <tr class="warn"><th scope="row">2023 <span class="sub">(war)</span></th><td class="num">3.31</td><td class="num"><span class="up">16.8</span></td><td class="num"><span class="up">41.9</span></td><td class="num">16</td><td class="num"><span class="up">65.2</span></td></tr>
+    <tr class="warn"><th scope="row">2023 <span class="sub">(war)</span></th><td class="num">3.31</td><td class="num"><span class="up">16.8</span></td><td class="num"><span class="up">41.9</span></td><td class="num">16</td><td class="num">—</td></tr>
   </tbody>
 </table>
-<p class="note">2023 figures are provisional and will be revised; the modeled MMR (16) lags and does not yet capture war maternal deaths.</p>
+<p class="note">2023 figures are provisional and will be revised; the modeled MMR (16) lags and does not yet capture war maternal deaths. <strong>Life expectancy for 2023 is omitted</strong> — period LE in a mass-casualty year is a mortality-spike artifact (it reflects that year's deaths, not survivors' longevity), so it isn't comparable to the other years.</p>
 
 <!-- 5 -->
 <h2><span class="num">Table 5</span>Comparison with Egypt, post-1967</h2>
@@ -251,7 +251,7 @@
     <tr><th scope="row">Crude death <span class="sub">/1,000</span></th><td class="num">8.7</td><td class="num">6.7</td><td class="num">6.3</td><td class="num">4.5</td><td class="num">6.1</td><td class="num">3.5</td><td class="num">5.7</td><td class="num">3.0</td></tr>
   </tbody>
 </table>
-<p class="note"><strong>Read:</strong> Palestine (PSE) ran lower infant/under-5 mortality and higher life expectancy than Egypt throughout 1990–2022 despite occupation/blockade, while keeping higher fertility (slower transition). The 2023 war reversed the survival edge in one year (PSE under-5 14.1→41.9, above Egypt's 22.9; life expectancy 76.7→65.2, below Egypt's 71.6).</p>
+<p class="note"><strong>Read:</strong> Palestine (PSE) ran lower infant/under-5 mortality and higher life expectancy than Egypt throughout 1990–2022 despite occupation/blockade, while keeping higher fertility (slower transition). The 2023 war spiked child mortality (PSE under-5 14.1→41.9, above Egypt's 22.9). (Period life expectancy for 2023 is omitted as a war-year mortality-spike artifact, not a real change in survivors' longevity.)</p>
 
 <!-- density -->
 <h2><span class="num">Density</span>Population density — growth crushed into a fixed strip</h2>
@@ -350,8 +350,8 @@
     {color:'#2c5a3f',pts:[[1960,127],[1967,82],[1970,86],[1975,69],[2008,20.2]]}
   ]});
   put('c2',{xmin:1920,xmax:2026,ymin:30,ymax:80,xticks:[1930,1950,1970,1990,2010],yticks:[30,40,50,60,70,80],series:[
-    {color:'#1f6f8b',pts:[[1925,35],[1945,50],[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7],[2023,65.2]]}
-  ],mark:[2023,65.2,'2023']});
+    {color:'#1f6f8b',pts:[[1925,35],[1945,50],[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7]]}
+  ]});
   put('c3',{xmin:1920,xmax:2000,ymin:0,ymax:900,xticks:[1930,1950,1970,1990],yticks:[0,200,400,600,800],series:[
     {color:'#1f6f8b',pts:[[1922,73.9],[1931,94.6],[1945,137.2],[1950,242.5],[1966,454.9],[1967,354.7],[1990,633],[1993,830]]}
   ]});
@@ -361,8 +361,8 @@
   ]});
   put('c5',{xmin:1965,xmax:2026,ymin:40,ymax:80,xticks:[1970,1985,2000,2015],yticks:[40,50,60,70,80],series:[
     {color:'#b07d2b',pts:[[1970,49],[1980,55.7],[1990,62.5],[2000,67.3],[2010,69.1],[2022,71],[2023,71.6]]},
-    {color:'#1f6f8b',pts:[[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7],[2023,65.2]]}
-  ],mark:[2023,65.2,'war']});
+    {color:'#1f6f8b',pts:[[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7]]}
+  ]});
   put('c6',{xmin:1988,xmax:2026,ymin:0,ymax:90,xticks:[1990,2000,2010,2020],yticks:[0,30,60,90],series:[
     {color:'#b07d2b',pts:[[1990,86],[2000,47.3],[2010,30.5],[2022,23.5],[2023,22.9]]},
     {color:'#1f6f8b',pts:[[1990,45.1],[2000,30.3],[2010,21.9],[2020,15.2],[2022,14.1],[2023,41.9]]}
