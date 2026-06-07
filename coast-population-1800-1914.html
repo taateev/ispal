@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Population of the Palestine Coast, 1800–1914 — Compiled Inventories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* ── evidence-tradition pills (this sheet's own evidence vocabulary) ─── */
+  .pill.register  { border-color: var(--accent-2); color: var(--accent-2); background: #f2efe3; }
+  .pill.consular  { border-color: var(--accent);   color: var(--accent);   background: #faf0eb; }
+  .pill.traveler  { border-color: var(--accent-5); color: #6f4416;         background: #f7efe2; }
+  .pill.synthesis { border-color: var(--accent-4); color: var(--accent-4); background: #eef0f5; }
+  .pill.inference { border-color: var(--rule); color: var(--ink-3); background: var(--paper); border-style: dashed; }
+  .col-src .pill { margin: 0 4px 4px 0; }
+
+  /* ── source-tradition legend ────────────────────────────────────────── */
+  .tradlegend {
+    display: flex; flex-wrap: wrap; gap: 7px 20px;
+    margin: 6px 0 22px; padding: 13px 16px;
+    background: var(--paper-2); border: 1px solid var(--rule-soft); border-radius: 6px;
+    font-family: var(--sans); font-size: 12px;
+  }
+  .tradlegend .lg { display: inline-flex; align-items: baseline; gap: 7px; }
+  .tradlegend b { color: var(--ink-2); font-weight: 600; }
+
+  /* ── chart frame ────────────────────────────────────────────────────── */
+  .chartwrap {
+    background: #f4efe4; border: 1px solid #ddd4c2; border-radius: 6px;
+    padding: 20px 20px 14px; margin: 4px 0 10px;
+    box-shadow: 0 18px 44px -32px rgba(40, 30, 18, 0.45);
+  }
+  .chartwrap h3 {
+    font-family: var(--serif); font-weight: 600; font-size: 17px; color: var(--ink);
+    margin: 0 0 2px;
+  }
+  .chartwrap .csub { font-family: var(--sans); font-size: 12px; color: var(--ink-3); margin: 0 0 10px; }
+  .chartlegend {
+    display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 8px;
+    font-family: var(--sans); font-size: 11.5px; color: var(--ink-3);
+  }
+  .chartlegend span { display: inline-flex; align-items: center; gap: 6px; }
+  .chartlegend i { width: 22px; height: 0; display: inline-block; }
+  .cl-est  i { border-top: 2.4px dashed #a89e8d; }
+  .cl-doc  i { border-top: 2.4px solid var(--accent); }
+  .cl-band i { height: 11px; width: 16px; background: rgba(122,44,30,0.10); border-radius: 2px; }
+
+  /* ── data tables ────────────────────────────────────────────────────── */
+  table.t .big { font-family: var(--serif); font-weight: 600; font-size: 15px; color: var(--ink); display: block; }
+  table.t .scale-note { display: block; font-family: var(--sans); font-size: 11px; color: var(--ink-3); margin-top: 2px; }
+  .conf { font-family: var(--label); font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .conf.low  { color: var(--ink-4); }
+  .conf.mod  { color: var(--accent-5); }
+  .conf.good { color: var(--accent-3); }
+  .num-cell { font-variant-numeric: tabular-nums; font-family: var(--serif); }
+  tr.era td {
+    background: var(--paper-3); font-family: var(--label); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); padding: 7px 14px;
+  }
+
+  /* ── retrojection caveat banner ─────────────────────────────────────── */
+  .retronote {
+    margin: 4px 0 18px; padding: 14px 18px;
+    background: rgba(122,44,30,0.06); border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent); border-radius: 5px;
+    font-family: var(--sans); font-size: 13px; line-height: 1.55; color: var(--ink-2);
+  }
+  .retronote .rl {
+    display: block; font-family: var(--label); font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px;
+  }
+  .retronote b { color: var(--ink); font-weight: 600; }
+
+  /* ── Peel in/out stacked bars ───────────────────────────────────────── */
+  .splitbars { margin: 14px 0 6px; font-family: var(--sans); }
+  .splitbars .sb-row { display: flex; align-items: center; gap: 12px; margin-bottom: 9px; }
+  .splitbars .sb-yr { width: 42px; font-family: var(--mono); font-size: 12px; color: var(--ink-3); font-weight: 500; }
+  .splitbars .sb-track { flex: 1; display: flex; height: 22px; border-radius: 3px; overflow: hidden; border: 1px solid var(--rule-soft); }
+  .splitbars .sb-in  { background: var(--accent-3); display: flex; align-items: center; justify-content: flex-end; padding-right: 7px; color: #eef3ee; font-size: 11px; font-weight: 600; min-width: 24px; }
+  .splitbars .sb-out { background: var(--paper-3); display: flex; align-items: center; padding-left: 7px; color: var(--ink-3); font-size: 11px; font-weight: 600; }
+  .splitbars .sb-cap { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); margin-top: 4px; }
+  .sb-key { display: flex; gap: 16px; font-size: 11.5px; color: var(--ink-3); margin: 2px 0 2px; }
+  .sb-key span { display: inline-flex; align-items: center; gap: 6px; }
+  .sb-key i { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+
+  @media (max-width: 620px) {
+    .splitbars .sb-out { display: none; }
+  }
+  @media print {
+    html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .chartwrap, table, .retronote { break-inside: avoid; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── Masthead ───────────────────────────────────────────────────── -->
+  <header class="mast">
+    <div>
+      <div class="eyebrow">Compiled Inventories · Ottoman Palestine</div>
+      <h1>Population of the Palestine Coast, <em>1800–1914</em></h1>
+      <p class="crosslinks">
+        <a href="index.html">‹&nbsp;Topics</a> &nbsp;·&nbsp; A demographic reconstruction of the coastal plain
+      </p>
+    </div>
+    <div class="meta">
+      <b>Scope</b> · the coastal plain (Gaza · Jaffa · Haifa · Acre districts)<br />
+      <b>Window</b> · 1800–1914 (late-Ottoman, to the&nbsp;Mandate threshold)<br />
+      <span class="faint">Every figure is a range with its evidence marked.<br />Early dates are estimates; later dates rest on registers.</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    No Ottoman source counts <em>“the coast”</em> as a unit — population was registered by district (<em>qada</em>)
+    or by town, and each district mixes coastal plain with interior hinterland. This sheet reconstructs the
+    population of the <em>four coastal districts — Gaza, Jaffa, Haifa and Acre</em> — at four benchmarks across the
+    long nineteenth century, from travellers’ counts and European consular estimates through the Ottoman registers
+    that Justin McCarthy corrected for undercount. The numbers are <em>order-of-magnitude ranges</em>, not points:
+    the 1800 and 1840 figures are largely inference, while 1880 and 1914 rest on registers.
+  </p>
+
+  <!-- ── Headline stats ─────────────────────────────────────────────── -->
+  <div class="stats">
+    <div class="stat"><div class="n">~65,000</div><div class="l">Coast c. 1800 <span style="opacity:.7">(low confidence)</span></div></div>
+    <div class="stat"><div class="n">~160,000</div><div class="l">Coast c. 1880</div></div>
+    <div class="stat"><div class="n">~245,000</div><div class="l">Coast c. 1914</div></div>
+    <div class="stat"><div class="n">2.4×</div><div class="l">Growth 1800→1880, back-loaded post-1860</div></div>
+  </div>
+
+  <!-- ── Source-tradition legend ────────────────────────────────────── -->
+  <div class="tradlegend">
+    <span class="lg"><span class="pill register">Register</span> <b>Ottoman register / salname / census</b></span>
+    <span class="lg"><span class="pill consular">Consular</span> <b>European consular estimate</b></span>
+    <span class="lg"><span class="pill traveler">Traveller</span> <b>Contemporary traveller’s count</b></span>
+    <span class="lg"><span class="pill synthesis">Synthesis</span> <b>Modern reconstruction</b></span>
+    <span class="lg"><span class="pill inference">Inference</span> <b>Structural inference only</b></span>
+  </div>
+
+  <!-- ── Chart: population curve ────────────────────────────────────── -->
+  <div class="chartwrap">
+    <h3>Coastal-plain population, 1800–1914</h3>
+    <p class="csub">Total of the Gaza + Jaffa + Haifa + Acre districts. Shaded band = the estimate range; the line runs its mid-point.</p>
+    <div id="coast-plot"></div>
+    <div class="chartlegend">
+      <span class="cl-band"><i></i> estimate range (low–high)</span>
+      <span class="cl-est"><i></i> mid-point, estimate (1800–1880)</span>
+      <span class="cl-doc"><i></i> mid-point, register-anchored (1880–1914)</span>
+    </div>
+  </div>
+
+  <!-- ── Section 1: the reconstruction ──────────────────────────────── -->
+  <h2 class="section">The reconstruction — towns, countryside, total</h2>
+  <p class="dek" style="margin-top:0">
+    Built from two halves: the <em>coastal towns</em> (Gaza, Jaffa, Acre, Haifa, Ramla, Lydda, Majdal — Ben-Arieh’s
+    series of traveller/consular estimates) and the <em>rural coastal plain</em> (the district countryside, from the
+    1871/72 Ottoman <em>salname</em> and McCarthy’s corrected census figures). The 1800 town anchor is the weakest
+    cell — Volney counted Gaza at only ~2,000 in 1783–85, against Ben-Arieh’s 8,000 for 1800, a fourfold clash.
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Coastal towns</th>
+          <th>Rural coastal plain</th>
+          <th>Total coast</th>
+          <th>Confidence</th>
+          <th>Evidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num-cell"><b>~1800</b></td>
+          <td class="num-cell">~22,000</td>
+          <td class="num-cell">~33,000–53,000</td>
+          <td class="num-cell"><span class="big">~55,000–75,000</span></td>
+          <td><span class="conf low">Low</span></td>
+          <td class="col-src"><span class="pill traveler">Traveller</span><span class="pill synthesis">Synthesis</span><span class="pill inference">Inference</span></td>
+        </tr>
+        <tr>
+          <td class="num-cell"><b>~1840</b></td>
+          <td class="num-cell">~32,000–35,000</td>
+          <td class="num-cell">~55,000–85,000</td>
+          <td class="num-cell"><span class="big">~90,000–120,000</span></td>
+          <td><span class="conf mod">Moderate</span></td>
+          <td class="col-src"><span class="pill consular">Consular</span><span class="pill register">Register</span><span class="pill inference">Inference</span></td>
+        </tr>
+        <tr>
+          <td class="num-cell"><b>~1880</b></td>
+          <td class="num-cell">~50,000–56,000</td>
+          <td class="num-cell">~95,000–115,000</td>
+          <td class="num-cell"><span class="big">~150,000–170,000</span></td>
+          <td><span class="conf good">Mod.–good</span></td>
+          <td class="col-src"><span class="pill register">Register</span><span class="pill synthesis">Synthesis</span></td>
+        </tr>
+        <tr>
+          <td class="num-cell"><b>~1914</b></td>
+          <td class="num-cell">~110,000–125,000</td>
+          <td class="num-cell">~120,000–135,000</td>
+          <td class="num-cell"><span class="big">~230,000–255,000</span></td>
+          <td><span class="conf good">Good</span></td>
+          <td class="col-src"><span class="pill register">Register</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="dek" style="font-size:13px">
+    <b>Why ranges, not points.</b> The household multiplier (×6 vs ×5) swings every rural total ±15%; the 1849/1852
+    registers count male subjects, doubled to a total; Ottoman registers under-record women, children and Bedouin,
+    so every raw figure is a <em>floor</em>; and the Gaza district carries a Negev/Bedouin tail while Acre and Haifa
+    carry western-Galilee foothill villages, so the zone is coast <em>plus immediate hinterland</em> by necessity.
+  </p>
+
+  <!-- ── Section 2: who lived there ─────────────────────────────────── -->
+  <h2 class="section">Who lived there — the confessional mix</h2>
+  <p class="dek" style="margin-top:0">
+    The registers carry a Muslim / Christian / Jewish breakdown. Two features stand out on the
+    <em>northern</em> coast (the Haifa + Acre districts): an unusually <em>large Christian minority</em> — Greek
+    Orthodox and Melkite — and a <em>negligible Jewish presence until the 1900s</em>. Haifa town was ~46% Christian
+    in 1905; Acre town ~23%. By contrast the southern coast was lopsided the other way — <em>Gaza district was ~99%
+    Muslim</em> (11 Jews recorded in 1886).
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr><th>Northern coast (Haifa + Acre)</th><th>Muslim</th><th>Christian</th><th>Jewish</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num-cell">1852 <span class="scale-note">male-based shares</span></td><td class="num-cell">~85%</td><td class="num-cell">~14%</td><td class="num-cell">~1%</td><td class="col-src"><span class="pill register">Register</span></td></tr>
+        <tr><td class="num-cell">1886–92</td><td class="num-cell">~79% <span class="scale-note">~34,000</span></td><td class="num-cell">~20% <span class="scale-note">~8,400</span></td><td class="num-cell">~1.5% <span class="scale-note">~600</span></td><td class="col-src"><span class="pill register">Register</span></td></tr>
+        <tr><td class="num-cell">1912–13</td><td class="num-cell">~78% <span class="scale-note">~55,200</span></td><td class="num-cell">~19% <span class="scale-note">~13,300</span></td><td class="num-cell">~3.6% <span class="scale-note">~2,545</span></td><td class="col-src"><span class="pill register">Register</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="dek" style="font-size:13.5px;margin-bottom:6px">
+    <b>Where the coast’s Jews actually were — inland, not on the shore.</b> The Jewish population of this whole
+    northern zone sat in the Old-Yishuv anchors of the interior Galilee — Safed and Tiberias — not on its coast.
+    (Community estimates below are fuller than the registers, which badly undercounted Galilee Jews.)
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr><th>Date</th><th>Inland Galilee Jews <span class="scale-note" style="display:inline;font-weight:400">Safed + Tiberias</span></th><th>Coastal-arm Jews <span class="scale-note" style="display:inline;font-weight:400">Haifa + Acre</span></th><th>Ratio</th><th>Source</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num-cell"><b>1800</b></td><td class="num-cell">~2,250</td><td class="num-cell">~0</td><td class="num-cell">—</td><td class="col-src"><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell"><b>1840</b></td><td class="num-cell">~2,500 <span class="scale-note">post-1837 quake</span></td><td class="num-cell">&lt;100</td><td class="num-cell">—</td><td class="col-src"><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell"><b>1880</b></td><td class="num-cell">~6,700</td><td class="num-cell">~600</td><td class="num-cell"><b>~11 : 1</b></td><td class="col-src"><span class="pill synthesis">Synthesis</span><span class="pill register">Register</span></td></tr>
+        <tr><td class="num-cell"><b>1914</b></td><td class="num-cell">~13,250</td><td class="num-cell">~2,545</td><td class="num-cell"><b>~5 : 1</b></td><td class="col-src"><span class="pill synthesis">Synthesis</span><span class="pill register">Register</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Section 3: the Peel line (secondary, clearly labeled) ──────── -->
+  <h2 class="section">The coast split by the 1937 Peel partition line</h2>
+  <div class="retronote">
+    <span class="rl">Read this first — an anachronistic retrojection, not a partition argument</span>
+    The Peel Commission drew its 1937 line around the <b>1937 distribution of Jewish land purchase</b>, not around
+    any nineteenth-century population. Laying that line over 1800–1914 population is a <b>demographic curiosity</b>,
+    offered only to show <em>where people lived relative to a much later boundary</em>. The 1800 and 1840 in/out
+    figures are structural inference; nothing here is a claim for or against partition.
+  </div>
+  <p class="dek" style="margin-top:0">
+    Peel assigned the <em>northern</em> coastal arm (Haifa, Acre, and the near-empty Sharon flat) to the Jewish
+    state and left the populous <em>southern and central</em> coast (Gaza, Jaffa city as an Arab enclave, Ramla,
+    Lydda) to the Arab state. So for most of the century, roughly <em>four-fifths of the coast’s people lived on
+    what Peel marked as the Arab side</em>.
+  </p>
+
+  <div class="splitbars">
+    <div class="sb-key">
+      <span><i style="background:var(--accent-3)"></i> inside the proposed Jewish state</span>
+      <span><i style="background:var(--paper-3);border:1px solid var(--rule)"></i> Arab state / enclave</span>
+    </div>
+    <div class="sb-row"><span class="sb-yr">1800</span><div class="sb-track"><div class="sb-in" style="width:20%">20%</div><div class="sb-out" style="width:80%">80%</div></div></div>
+    <div class="sb-row"><span class="sb-yr">1840</span><div class="sb-track"><div class="sb-in" style="width:20%">20%</div><div class="sb-out" style="width:80%">80%</div></div></div>
+    <div class="sb-row"><span class="sb-yr">1880</span><div class="sb-track"><div class="sb-in" style="width:33%">33%</div><div class="sb-out" style="width:67%">67%</div></div></div>
+    <div class="sb-row"><span class="sb-yr">1914</span><div class="sb-track"><div class="sb-in" style="width:32%">32%</div><div class="sb-out" style="width:68%">68%</div></div></div>
+    <p class="sb-cap">Share of the total coastal population falling inside the proposed Peel Jewish-state boundary.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr><th>Date</th><th>Coast inside Peel <span class="scale-note" style="display:inline;font-weight:400">Haifa + Acre + Sharon</span></th><th>Coast outside <span class="scale-note" style="display:inline;font-weight:400">Gaza + Jaffa city + Ramla/Lydda</span></th><th>In-Peel share</th><th>Evidence</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num-cell"><b>~1800</b></td><td class="num-cell">~12,000–16,000</td><td class="num-cell">~40,000–55,000</td><td class="num-cell">~20%</td><td class="col-src"><span class="pill inference">Inference</span></td></tr>
+        <tr><td class="num-cell"><b>~1840</b></td><td class="num-cell">~18,000–24,000</td><td class="num-cell">~70,000–95,000</td><td class="num-cell">~20%</td><td class="col-src"><span class="pill inference">Inference</span></td></tr>
+        <tr><td class="num-cell"><b>~1880</b></td><td class="num-cell">~50,000–60,000</td><td class="num-cell">~95,000–110,000</td><td class="num-cell">~33%</td><td class="col-src"><span class="pill register">Register</span></td></tr>
+        <tr><td class="num-cell"><b>~1914</b></td><td class="num-cell">~70,000–85,000</td><td class="num-cell">~150,000–175,000</td><td class="num-cell">~32%</td><td class="col-src"><span class="pill register">Register</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="dek" style="font-size:13.5px">
+    <b>The full proposed Jewish state was carried by the Galilee interior, not the coast.</b> The coastal arm above
+    was a minority of the whole — whose demographic body was the <em>liwa’ of Acre</em> (the Galilee plus its
+    northern coast). Even by population, Peel’s would-be Jewish state was a <em>Galilee-interior state with a
+    northern coastal margin</em> — and it was <em>~90% Arab through 1914</em>. Jewish near-parity inside the lines
+    arrived only with the post-1933 Fifth Aliyah, in the few years just before partition was proposed.
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr><th>Date</th><th>Galilee (liwa’ of Acre)</th><th>Sharon + Jezreel</th><th>Peel Jewish-state total</th><th>of which coastal</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num-cell"><b>~1800</b></td><td class="num-cell">~55,000–62,000</td><td class="num-cell">~5,000–9,000</td><td class="num-cell"><span class="big">~60,000–70,000</span></td><td class="num-cell">~22%</td></tr>
+        <tr><td class="num-cell"><b>~1840</b></td><td class="num-cell">~65,000–70,000</td><td class="num-cell">~7,000–11,000</td><td class="num-cell"><span class="big">~72,000–82,000</span></td><td class="num-cell">~27%</td></tr>
+        <tr><td class="num-cell"><b>~1880</b></td><td class="num-cell">~85,000–95,000</td><td class="num-cell">~11,000–19,000</td><td class="num-cell"><span class="big">~95,000–115,000</span></td><td class="num-cell">~50%</td></tr>
+        <tr><td class="num-cell"><b>~1914</b></td><td class="num-cell">~145,000–152,000</td><td class="num-cell">~25,000–40,000</td><td class="num-cell"><span class="big">~170,000–190,000</span></td><td class="num-cell">~40–45%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── Endnotes ───────────────────────────────────────────────────── -->
+  <div class="endnotes">
+    <h2 class="section">Note on method &amp; sources</h2>
+    <p>
+      This is a <b>reconstruction, not a recall</b>: no source reports “the Palestine coast” as a population unit
+      at these dates. The zone is operationalised as the four Ottoman coastal districts — <b>Gaza</b> (Gaza,
+      Majdal, Khan Yunis), <b>Jaffa</b> (with Ramla and Lydda), <b>Haifa</b> and <b>Acre</b> — the closest
+      administrative match to “the coast.” Each district folds in some interior hinterland (the Gaza Negev tail,
+      the western-Galilee foothills behind Acre/Haifa), so this is coastal plain <em>plus immediate hinterland</em>.
+    </p>
+    <p>
+      <b>The four benchmarks rest on different evidence, and are tagged accordingly.</b> 1880 and 1914 are the
+      firmest — Ottoman registers (the 1871/72 <em>salname</em>; the 1886–92 and 1911–13 counts), undercount-corrected
+      with McCarthy’s own factors. 1840 leans on the 1847 French-consular district estimates and the 1849 Ottoman
+      <em>Defter-i Nüfus</em> (cross-checking each other ~75,000 vs ~104,000 for the southern coast). 1800 is the
+      softest — Volney’s 1783–85 town counts and structural inference from the depopulated-frontier baseline. All
+      figures are <b>order-of-magnitude ranges</b>; the early dates especially should be read as brackets, not points.
+    </p>
+    <p>
+      <b>The Peel section is an explicit retrojection</b> — the 1937 boundary laid over nineteenth-century population
+      to locate people relative to a later line. It is a descriptive curiosity, held to the same evidentiary tagging
+      as the rest of the sheet, and is not an argument about the merits of partition.
+    </p>
+    <p>
+      <b>Drawn from</b> · McCarthy, <i>The Population of Palestine</i> (1990) · Schölch, <i>Palestine in
+      Transformation 1856–1882</i> (1993), Tables 1–13 · Karpat, <i>Ottoman Population 1830–1914</i> (1985) ·
+      Volney, <i>Travels through Syria and Egypt</i> (1788) · Ben-Arieh’s town series (via Schölch) ·
+      Bartal &amp; Ben-Arieh (eds.), <i>History of Eretz Israel</i> vol. 8, for the Safed/Tiberias series ·
+      Peel Commission, Cmd 5479 (1937), Appendix 4, for the partition boundary.
+    </p>
+  </div>
+
+  <!-- ── Colophon ───────────────────────────────────────────────────── -->
+  <div class="colophon">
+    <span>Compiled Inventories — Ottoman Palestine</span>
+    <span><b>Demographic reconstruction</b> · the coastal plain · 1800–1914</span>
+    <span>Ranges with evidence marked · register · consular · traveller · synthesis · inference</span>
+  </div>
+
+</div>
+
+<!-- ── population curve (self-contained, data-driven SVG) ───────────── -->
+<script>
+(function () {
+  // values in thousands; doc=true → register-anchored (solid)
+  var COAST = [
+    { y: 1800, lo: 55,  mid: 65,  hi: 75,  doc: false },
+    { y: 1840, lo: 90,  mid: 105, hi: 120, doc: false },
+    { y: 1880, lo: 150, mid: 160, hi: 170, doc: true  },
+    { y: 1914, lo: 230, mid: 245, hi: 255, doc: true  }
+  ];
+  var W = 720, GL = 58, GR = 18, T = 24, CH = 248;
+  var Y0 = 1800, Y1 = 1914, MAXP = 260;
+  var px = function (y) { return GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0); };
+  var cy = function (v) { return T + CH * (1 - v / MAXP); };
+  var H = T + CH + 30;
+  var ACCENT = "#7a2c1e", EST = "#a89e8d", CREAM = "#f4efe4";
+  var s = [];
+  s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="Coastal-plain population of Palestine, 1800 to 1914">');
+
+  // y gridlines + labels (0,50,100,150,200,250 thousand)
+  [0, 50, 100, 150, 200, 250].forEach(function (v) {
+    s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + cy(v).toFixed(1) + '" y2="' + cy(v).toFixed(1) + '" stroke="rgba(28,24,21,0.07)" stroke-width="1"/>');
+    s.push('<text x="' + (GL - 8) + '" y="' + (cy(v) + 4).toFixed(1) + '" text-anchor="end" font-size="11" fill="#8c8270">' + (v === 0 ? "0" : v + "K") + '</text>');
+  });
+  s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + cy(0).toFixed(1) + '" y2="' + cy(0).toFixed(1) + '" stroke="rgba(28,24,21,0.4)" stroke-width="1"/>');
+
+  // Tanzimat band 1839–1858 (house signature)
+  var TZ0 = px(1839), TZ1 = px(1858);
+  s.push('<rect x="' + TZ0.toFixed(1) + '" y="' + T + '" width="' + (TZ1 - TZ0).toFixed(1) + '" height="' + CH + '" fill="#7d7259" fill-opacity="0.08"/>');
+  s.push('<line x1="' + TZ0.toFixed(1) + '" x2="' + TZ0.toFixed(1) + '" y1="' + T + '" y2="' + (T + CH) + '" stroke="#7d7259" stroke-width="1" stroke-dasharray="3 4"/>');
+  s.push('<line x1="' + TZ1.toFixed(1) + '" x2="' + TZ1.toFixed(1) + '" y1="' + T + '" y2="' + (T + CH) + '" stroke="#7d7259" stroke-width="1" stroke-dasharray="3 4"/>');
+  s.push('<text x="' + ((TZ0 + TZ1) / 2).toFixed(1) + '" y="' + (T - 8) + '" text-anchor="middle" font-size="9" font-weight="700" fill="#8a7e62" style="letter-spacing:0.16em">TANZIMAT</text>');
+
+  // estimate range band (high edge forward, low edge back)
+  var band = "M";
+  COAST.forEach(function (d, i) { band += " " + px(d.y).toFixed(1) + " " + cy(d.hi).toFixed(1) + (i ? " L" : ""); });
+  for (var i = COAST.length - 1; i >= 0; i--) { band += " L " + px(COAST[i].y).toFixed(1) + " " + cy(COAST[i].lo).toFixed(1); }
+  band += " Z";
+  s.push('<path d="' + band + '" fill="rgba(122,44,30,0.10)" stroke="none"/>');
+
+  // mid-point line: dashed (estimate) up to 1880, solid after
+  var splitIdx = COAST.findIndex(function (d) { return d.doc; }); // first documented = 1880
+  var pts = COAST.map(function (d) { return [px(d.y), cy(d.mid)]; });
+  var path = function (seg) { return "M " + seg.map(function (p) { return p[0].toFixed(1) + " " + p[1].toFixed(1); }).join(" L "); };
+  s.push('<path d="' + path(pts.slice(0, splitIdx + 1)) + '" fill="none" stroke="' + EST + '" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 6"/>');
+  s.push('<path d="' + path(pts.slice(splitIdx)) + '" fill="none" stroke="' + ACCENT + '" stroke-width="2.6" stroke-linecap="round"/>');
+
+  // dots + value labels
+  COAST.forEach(function (d) {
+    var x = px(d.y), y = cy(d.mid);
+    s.push('<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="4.5" fill="' + (d.doc ? ACCENT : EST) + '" stroke="' + CREAM + '" stroke-width="1.5"/>');
+    s.push('<text x="' + x.toFixed(1) + '" y="' + (y - 11).toFixed(1) + '" text-anchor="middle" font-size="11.5" font-weight="700" fill="' + (d.doc ? ACCENT : "#6f654f") + '" style="font-variant-numeric:tabular-nums">~' + d.mid + 'K</text>');
+  });
+
+  // x axis ticks
+  [1800, 1820, 1840, 1860, 1880, 1900, 1914].forEach(function (y) {
+    s.push('<text x="' + px(y).toFixed(1) + '" y="' + (T + CH + 18) + '" text-anchor="middle" font-size="11.5" fill="#7a6f5b" style="font-variant-numeric:tabular-nums">' + y + '</text>');
+  });
+  s.push('</svg>');
+  var host = document.getElementById("coast-plot");
+  if (host) host.innerHTML = s.join("");
+})();
+</script>
+</body>
+</html>
