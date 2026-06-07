@@ -67,6 +67,7 @@
   .chart text.ylab{fill:#5b5b5b; font-size:11px; text-anchor:end}
   .chart text.xlab{fill:#5b5b5b; font-size:11px; text-anchor:middle}
   .chart text.mark{fill:#b3271e; font-size:10px; font-weight:700; text-anchor:middle}
+  .band-key{display:inline-block; padding:1px 7px; margin:2px 4px 2px 0; border:1px solid var(--rule-strong); border-radius:2px; font-size:.78rem; color:#3a352c}
 </style>
 </head>
 <body>
@@ -79,11 +80,12 @@
 </header>
 
 <div class="masterwarn">
-  <strong>Master caveat.</strong> Birth/death registration in Gaza was incomplete before 1967, and deaths were under-registered worse than births under <em>both</em> the Egyptian and the early Israeli administrations — so recorded crude death rates run too low and recorded natural increase too high. Recorded-vs-corrected is shown where sources allow. "Muslim" = all-Palestine Muslim benchmark (no Gaza-only series exists for that cell). Modern World Bank figures are <em>modeled</em> estimates for <em>West Bank + Gaza combined</em>, not Gaza-only.
+  <strong>Master caveat.</strong> Birth/death registration in Gaza was incomplete before 1967, and deaths were under-registered worse than births under <em>both</em> the Egyptian and the early Israeli administrations — so recorded crude death rates run too low and recorded natural increase too high. Recorded-vs-corrected is shown where sources allow. "Muslim" = all-Palestine Muslim benchmark (no Gaza-only series exists for that cell). <strong>On "West Bank + Gaza":</strong> the continuous modern lines use the World Bank / UN series, which publish only the <em>combined</em> territory — neither breaks out Gaza. PCBS does report Gaza separately, but as periodic benchmarks (3-year averages, census years), not a clean annual series. Those benchmarks show Gaza ≈ West Bank on <em>life expectancy</em> (so the combined line ≈ Gaza), slightly <em>worse</em> on infant/child mortality (2014: Gaza IMR 19.6 vs WB 17.1; under-5 23.7 vs 20.0), and notably <em>higher</em> on fertility (2011–13: Gaza TFR 4.5 vs WB 3.7) — so combined slightly understates Gaza's mortality and understates its fertility. The Gaza-only charts (1, 3, 14) and all pre-1990 figures use Gaza-specific data.
 </div>
 
 <h2><span class="num">Figures</span>The data as charts</h2>
 <p class="note">Self-contained SVG (no external libraries). Dots mark data points; the red dot marks 2023 (the war year). Time axes are to scale, so uneven gaps between observations are real.</p>
+<p class="note" style="margin-bottom:6px">Shaded bands mark <strong>who controlled Gaza</strong>: <span class="band-key" style="background:#e8e3d9">British Mandate</span><span class="band-key" style="background:#efe9d6">Egyptian 1948–67</span><span class="band-key" style="background:#e0e8f1">Israeli 1967–2007</span><span class="band-key" style="background:#dfeadd">Hamas 2007–</span> &nbsp;(Israeli = direct occupation to the 2005 disengagement, then external blockade; Hamas = internal government under continued Israeli blockade. On the Egypt-comparison charts the bands mark Gaza's governance, not Egypt's.)</p>
 <div class="charts">
   <figure class="chart">
     <figcaption>1 · Infant mortality, Gaza (1944–2008)</figcaption>
@@ -93,7 +95,7 @@
   <figure class="chart">
     <figcaption>2 · Life expectancy, Gaza / WB+Gaza (1925–2022)</figcaption>
     <div id="c2"></div>
-    <div class="cnote">Flat ~48–50 from the late Mandate through 1967, steep rise after, to ~77 by 2022. Pre-1967 = Muslim/Israel-MoH estimate; 1990+ = World Bank (WB+Gaza). <strong>2023 omitted:</strong> period life expectancy in a mass-casualty year is a mortality-spike artifact — it reflects that year's deaths, not survivors' longevity — so it doesn't belong on a longevity trend.</div>
+    <div class="cnote">Flat ~48–50 from the late Mandate through 1967, steep rise after, to ~77 by 2022. Pre-1967 = Muslim/Israel-MoH estimate; 1990+ = World Bank (WB+Gaza). The dashed grey line is the <strong>world average</strong> (World Bank, from 1960). <strong>2023 omitted:</strong> period life expectancy in a mass-casualty year is a mortality-spike artifact — it reflects that year's deaths, not survivors' longevity — so it doesn't belong on a longevity trend.</div>
   </figure>
   <figure class="chart">
     <figcaption>3 · Gaza population, thousands (1922–1993)</figcaption>
@@ -103,22 +105,22 @@
   <figure class="chart">
     <figcaption>4 · Infant mortality — Egypt vs Palestine (1967–2023)</figcaption>
     <div id="c4"></div>
-    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Near-identical start (~150), then Palestine falls faster and lower.</div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><span class="key"><span class="sw" style="background:#7a2e2e"></span>Gaza only (PCBS 2014)</span><span class="key"><span class="sw" style="background:#777067"></span>World (dashed)</span><br>Near-identical start (~150), then Palestine falls faster and lower. The lone red marker is the one Gaza-only benchmark available (19.6 in 2014) — it sits just above the combined line, i.e. Gaza ran ~1–2 points higher than the WB+Gaza average. No annual Gaza-only series exists.</div>
   </figure>
   <figure class="chart">
     <figcaption>5 · Life expectancy — Egypt vs Palestine (1967–2023)</figcaption>
     <div id="c5"></div>
-    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Same ~48-year start; Palestine pulls ahead and stays ahead. (Palestine's 2023 omitted — period life expectancy in a war year is a mortality-spike artifact; Egypt, not at war, continues.)</div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>WB+Gaza (World Bank)</span><span class="key"><span class="sw" style="background:#7a2e2e"></span>Gaza (PCBS)</span><span class="key"><span class="sw" style="background:#2c5a3f"></span>West Bank (PCBS)</span><span class="key"><span class="sw" style="background:#777067"></span>World (dashed)</span><br>Same ~48-year start; Palestine pulls ahead of Egypt. <strong>PCBS regional curves</strong> (both sexes, the available benchmark years): Gaza 71.9 (2009) → 73.4 (2017) → 73.5 (2018); West Bank 73.9 (2017) → 74.4 (2020) — <strong>Gaza runs ~0.5–1y below West Bank</strong> (their true average is between them, ~73.7 in 2017). <strong>The blue line is not that average</strong> — it's the World Bank's separate combined-territory series, which runs ~1.5y <em>above</em> both PCBS curves because World Bank modeled life expectancy sits higher than PCBS's life-table figures. So compare blue to Egypt (same World Bank source) and red-vs-green to each other (same PCBS source); don't read across the two sources. (2023 omitted — war-year period-LE artifact.)</div>
   </figure>
   <figure class="chart">
     <figcaption>6 · Under-5 mortality — Egypt vs Palestine (1990–2023)</figcaption>
     <div id="c6"></div>
-    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>The 2023 war reverses three decades: Palestine (41.9) jumps above Egypt (22.9) in one year.</div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><span class="key"><span class="sw" style="background:#7a2e2e"></span>Gaza only (PCBS 2014)</span><span class="key"><span class="sw" style="background:#777067"></span>World (dashed)</span><br>The 2023 war reverses three decades: Palestine (41.9) jumps above Egypt (22.9) in one year. The lone red marker is the one Gaza-only benchmark (23.7 in 2014) — just above the combined line (Gaza ~2–3 points higher). No annual Gaza-only series exists.</div>
   </figure>
   <figure class="chart">
     <figcaption>7 · Total fertility — Egypt vs Palestine (1990–2022)</figcaption>
     <div id="c7"></div>
-    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><br>Both decline; Palestine's transition lags Egypt by ~1.3 children, sustaining higher natural increase.</div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b07d2b"></span>Egypt</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>West Bank+Gaza</span><span class="key"><span class="sw" style="background:#7a2e2e"></span>Gaza only (PCBS)</span><span class="key"><span class="sw" style="background:#777067"></span>World (dashed)</span><br>Both decline; Palestine's transition lags Egypt. The red Gaza-only PCBS points (4.5 in 2011–13, 3.9 in 2017–19) sit <em>above</em> the combined blue line — Gaza's fertility runs ~0.5–0.8 higher than the WB+Gaza average, the one indicator where the combined figure materially understates Gaza.</div>
   </figure>
 </div>
 
@@ -254,13 +256,13 @@
 <p class="note"><strong>Read:</strong> Palestine (PSE) ran lower infant/under-5 mortality and higher life expectancy than Egypt throughout 1990–2022 despite occupation/blockade, while keeping higher fertility (slower transition). The 2023 war spiked child mortality (PSE under-5 14.1→41.9, above Egypt's 22.9). (Period life expectancy for 2023 is omitted as a war-year mortality-spike artifact, not a real change in survivors' longevity.)</p>
 
 <!-- density -->
-<h2><span class="num">Density</span>Population density — growth crushed into a fixed strip</h2>
+<h2><span class="num">Density</span>Population density</h2>
 <p class="note">All of Gaza's ~9× growth since 1948 was absorbed into a fixed ~365 km² (141 sq mi) — the borders never moved. So density tracks population exactly: from ~670 to ~6,100 people/km².</p>
 <div class="charts">
   <figure class="chart">
     <figcaption>14 · Population density, Gaza Strip (people per km², 1948–2023)</figcaption>
     <div id="c14"></div>
-    <div class="cnote">Population ÷ ~365 km². Same shape as the population spine — that <em>is</em> the point: a tripling at 1948 (refugees) then a 9× rise, all packed into an area that never grew. Refugee camps run several times denser than the Strip-wide average shown here.</div>
+    <div class="cnote">Population ÷ ~365 km². Same shape as the population spine, because the area is fixed: a tripling at 1948 (refugees) then a ~9× rise within borders that never moved. Refugee camps and the city cores run denser than the Strip-wide average shown here (see below).</div>
   </figure>
 </div>
 <table>
@@ -276,7 +278,45 @@
     <tr><td class="num">2023</td><td class="num">~2,230,000</td><td class="num">6,110</td><td class="num">15,816</td></tr>
   </tbody>
 </table>
-<p class="note"><strong>Context — the average understates the crush.</strong> Roy records the 1948 refugee shock spiking density from ~500/sq mi (1944) to ~2,300/sq mi (1948), and the camps far higher: <strong>Jabalya ≈ 133,400/sq mi (~51,500/km²) — over twice Manhattan</strong>. For scale, Manhattan ≈ 28,000/km²; Gaza's Strip-wide ~6,100/km² (2023) is a dense-city average spread across an entire territory, with camps several times that.</p>
+<p class="note"><strong>Context — the average understates built-up density.</strong> Roy records the 1948 refugee influx raising density from ~500/sq mi (1944) to ~2,300/sq mi (1948); densities within the camps run higher — <strong>Jabalya ≈ 133,400/sq mi (~51,500/km²)</strong>. For scale, Manhattan ≈ 28,000/km²; Gaza's Strip-wide ~6,100/km² (2023) is a dense-city figure averaged across the whole territory (including farmland), so where people actually live is denser than that.</p>
+
+<h2><span class="num">By area</span>How density varies across the Strip</h2>
+<p class="note">The Strip-wide average hides a steep internal gradient: Gaza City and the refugee camps are far denser than the larger southern governorates. (This is the tabular version of the gridded density map — a true 2D raster surface, e.g. WorldPop, isn't reproduced here.)</p>
+<div class="charts">
+  <figure class="chart">
+    <figcaption>15 · Population density by governorate (people per km², 2017 census)</figcaption>
+    <div id="c15"></div>
+    <div class="cnote">Gaza governorate (Gaza City) is densest; Khan Yunis the least, because it has the largest area. These are governorate <em>averages</em> — they fold in farmland, so they understate the city cores and camps, which run ~10–20× higher (≈76,000/km² in the camps, off this scale).</div>
+  </figure>
+</div>
+<table>
+  <caption>Gaza Strip governorates — 2017 PCBS census population; areas from standard governorate boundaries (total ≈ 365 km²). Density = population ÷ area.</caption>
+  <thead><tr><th>Governorate</th><th class="num">Area km²</th><th class="num">Population (2017)</th><th class="num">per km²</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Gaza (Gaza City)</th><td class="num">74</td><td class="num">652,597</td><td class="num">8,819</td></tr>
+    <tr><th scope="row">North Gaza (Jabalya)</th><td class="num">61</td><td class="num">368,978</td><td class="num">6,049</td></tr>
+    <tr><th scope="row">Deir al-Balah</th><td class="num">58</td><td class="num">273,200</td><td class="num">4,710</td></tr>
+    <tr><th scope="row">Rafah</th><td class="num">64</td><td class="num">233,878</td><td class="num">3,654</td></tr>
+    <tr><th scope="row">Khan Yunis</th><td class="num">108</td><td class="num">370,638</td><td class="num">3,432</td></tr>
+    <tr><th scope="row">Strip total</th><td class="num">365</td><td class="num">1,899,291</td><td class="num">5,203</td></tr>
+  </tbody>
+</table>
+<p class="note"><strong>Camps are denser still.</strong> Roy's camp-vs-non-camp split (1993): refugee camps ≈ <strong>197,070/sq mi (~76,000/km²)</strong> vs non-camp ≈ 20,500/sq mi (~7,900/km²) — camps <strong>9.6×</strong> the non-camp figure; <strong>Jabalya</strong> ≈ 133,400/sq mi (~51,500/km²). Camps held <strong>28.7%</strong> of the population on <strong>7.2%</strong> of built-up land (1986). So measured density across the Strip ranges from ~3,400/km² (Khan Yunis governorate) to ~76,000/km² (camps) — a ~22× range the single average doesn't show.</p>
+<div class="charts">
+  <figure class="chart">
+    <figcaption>16 · Governorate density by census (people per km², 1997 / 2007 / 2017)</figcaption>
+    <div id="c16"></div>
+    <div class="cnote"><span class="key"><span class="sw" style="background:#b8d0db"></span>1997</span><span class="key"><span class="sw" style="background:#5e9bb0"></span>2007</span><span class="key"><span class="sw" style="background:#1f6f8b"></span>2017</span><br>Every governorate's density roughly <strong>doubled across two decades</strong>; Gaza City stayed densest throughout (4,965 → 8,819/km²). Governorate-level data exists only from 1997 (PCBS censuses) — there's <em>no</em> Gaza governorate breakdown for the Egyptian or Israeli periods, so pre-1997 we have only the Strip-wide series (chart 14 / Table 6) and Mandate-era town sizes.</div>
+  </figure>
+</div>
+<p class="note"><strong>Land use.</strong> Most of the non-built-up Strip is agricultural, not vacant. Roughly <strong>half the Strip (~180 of 365 km²) was cultivated</strong> in the mid-20th century (Roy); agricultural land has since fallen to <strong>~100 km²</strong> (ARIJ/FAO) as urban area expanded (~6 km²/yr, 2002–13). This farmland is also why the Strip-wide <em>average</em> density understates the built-up figure: the population is spread statistically across cropland it doesn't live on. (Land use here is a measurement and land-cover point, not a claim about crowding.)</p>
+<div class="charts">
+  <figure class="chart">
+    <figcaption>17 · Cultivated land in Gaza (km², of 365 km² total — approximate)</figcaption>
+    <div id="c17"></div>
+    <div class="cnote">~Half the Strip was farmland in the mid-20th century (~180 km²); ~a quarter today (~100 km²). <strong>Approximate and multi-source</strong> — Roy for mid-century cultivated area, ARIJ/FAO for recent agricultural area; definitions and years differ, so read it as the <em>scale</em> of the decline, not a precise series. A true land-cover time series (built-up vs agricultural vs open) would need PCBS/ARIJ or satellite classification — not in the corpus.</div>
+  </figure>
+</div>
 
 <footer>
   <h3>Sources &amp; notes</h3>
@@ -297,6 +337,7 @@
     function X(x){return m.l+(x-o.xmin)/(o.xmax-o.xmin)*iw;}
     function Y(y){return m.t+ih-(y-o.ymin)/(o.ymax-o.ymin)*ih;}
     var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" preserveAspectRatio="xMidYMid meet">';
+    if(o.bands){o.bands.forEach(function(b){var bx0=Math.max(b.x0,o.xmin),bx1=Math.min(b.x1,o.xmax);if(bx1<=bx0)return;s+='<rect x="'+X(bx0).toFixed(1)+'" y="'+m.t+'" width="'+(X(bx1)-X(bx0)).toFixed(1)+'" height="'+ih+'" fill="'+b.color+'"/>';});}
     o.yticks.forEach(function(t){var y=Y(t).toFixed(1);
       s+='<line class="grid" x1="'+m.l+'" y1="'+y+'" x2="'+(m.l+iw)+'" y2="'+y+'"/>';
       s+='<text class="ylab" x="'+(m.l-6)+'" y="'+(Y(t)+3).toFixed(1)+'">'+t+'</text>';});
@@ -345,31 +386,47 @@
   }
   function putB(id,o){var el=document.getElementById(id); if(el) el.innerHTML=mkBars(o);}
 
-  put('c1',{xmin:1940,xmax:2010,ymin:0,ymax:180,xticks:[1950,1970,1990,2010],yticks:[0,40,80,120,160],series:[
+  var BANDS=[
+    {x0:1900,x1:1948,color:'#e8e3d9'},
+    {x0:1948,x1:1967,color:'#efe9d6'},
+    {x0:1967,x1:2007,color:'#e0e8f1'},
+    {x0:2007,x1:2030,color:'#dfeadd'}
+  ];
+  put('c1',{bands:BANDS,xmin:1940,xmax:2010,ymin:0,ymax:180,xticks:[1950,1970,1990,2010],yticks:[0,40,80,120,160],series:[
     {color:'#7a2e2e',pts:[[1944,158],[1967,152],[1974,132],[1985,55]]},
     {color:'#2c5a3f',pts:[[1960,127],[1967,82],[1970,86],[1975,69],[2008,20.2]]}
   ]});
-  put('c2',{xmin:1920,xmax:2026,ymin:30,ymax:80,xticks:[1930,1950,1970,1990,2010],yticks:[30,40,50,60,70,80],series:[
-    {color:'#1f6f8b',pts:[[1925,35],[1945,50],[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7]]}
+  put('c2',{bands:BANDS,xmin:1920,xmax:2026,ymin:30,ymax:80,xticks:[1930,1950,1970,1990,2010],yticks:[30,40,50,60,70,80],series:[
+    {color:'#1f6f8b',pts:[[1925,35],[1945,50],[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7]]},
+    {color:'#777067',nodots:true,dash:true,pts:[[1960,50.9],[1970,57.9],[1980,62.2],[1990,65.1],[2000,67.6],[2010,70.7],[2020,72.2],[2022,73]]}
   ]});
-  put('c3',{xmin:1920,xmax:2000,ymin:0,ymax:900,xticks:[1930,1950,1970,1990],yticks:[0,200,400,600,800],series:[
+  put('c3',{bands:BANDS,xmin:1920,xmax:2000,ymin:0,ymax:900,xticks:[1930,1950,1970,1990],yticks:[0,200,400,600,800],series:[
     {color:'#1f6f8b',pts:[[1922,73.9],[1931,94.6],[1945,137.2],[1950,242.5],[1966,454.9],[1967,354.7],[1990,633],[1993,830]]}
   ]});
-  put('c4',{xmin:1965,xmax:2026,ymin:0,ymax:160,xticks:[1970,1985,2000,2015],yticks:[0,40,80,120,160],series:[
+  put('c4',{bands:BANDS,xmin:1965,xmax:2026,ymin:0,ymax:160,xticks:[1970,1985,2000,2015],yticks:[0,40,80,120,160],series:[
     {color:'#b07d2b',pts:[[1970,150],[1980,120],[1990,67.7],[2000,40.1],[2010,27.2],[2020,22.6],[2023,21.3]]},
-    {color:'#1f6f8b',pts:[[1967,152],[1980,69.5],[1990,39.2],[2000,26.3],[2010,19],[2020,13.2],[2023,16.8]]}
+    {color:'#1f6f8b',pts:[[1967,152],[1980,69.5],[1990,39.2],[2000,26.3],[2010,19],[2020,13.2],[2023,16.8]]},
+    {color:'#7a2e2e',pts:[[2014,19.6]]},
+    {color:'#777067',nodots:true,dash:true,pts:[[1990,64],[2000,53.3],[2010,36.7],[2020,29.1],[2023,28.4]]}
   ]});
-  put('c5',{xmin:1965,xmax:2026,ymin:40,ymax:80,xticks:[1970,1985,2000,2015],yticks:[40,50,60,70,80],series:[
+  put('c5',{bands:BANDS,xmin:1965,xmax:2026,ymin:40,ymax:80,xticks:[1970,1985,2000,2015],yticks:[40,50,60,70,80],series:[
     {color:'#b07d2b',pts:[[1970,49],[1980,55.7],[1990,62.5],[2000,67.3],[2010,69.1],[2022,71],[2023,71.6]]},
-    {color:'#1f6f8b',pts:[[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7]]}
+    {color:'#1f6f8b',pts:[[1967,48],[1975,55],[1982,62],[1990,67.8],[2000,70.3],[2010,73.3],[2022,76.7]]},
+    {color:'#7a2e2e',pts:[[2009,71.9],[2017,73.4],[2018,73.5]]},
+    {color:'#2c5a3f',pts:[[2017,73.9],[2020,74.4]]},
+    {color:'#777067',nodots:true,dash:true,pts:[[1970,57.9],[1980,62.2],[1990,65.1],[2000,67.6],[2010,70.7],[2020,72.2],[2022,73]]}
   ]});
-  put('c6',{xmin:1988,xmax:2026,ymin:0,ymax:90,xticks:[1990,2000,2010,2020],yticks:[0,30,60,90],series:[
+  put('c6',{bands:BANDS,xmin:1988,xmax:2026,ymin:0,ymax:100,xticks:[1990,2000,2010,2020],yticks:[0,25,50,75,100],series:[
     {color:'#b07d2b',pts:[[1990,86],[2000,47.3],[2010,30.5],[2022,23.5],[2023,22.9]]},
-    {color:'#1f6f8b',pts:[[1990,45.1],[2000,30.3],[2010,21.9],[2020,15.2],[2022,14.1],[2023,41.9]]}
+    {color:'#1f6f8b',pts:[[1990,45.1],[2000,30.3],[2010,21.9],[2020,15.2],[2022,14.1],[2023,41.9]]},
+    {color:'#7a2e2e',pts:[[2014,23.7]]},
+    {color:'#777067',nodots:true,dash:true,pts:[[1990,93.5],[2000,76.7],[2010,50.6],[2020,39.2],[2023,38.3]]}
   ],mark:[2023,41.9,'war']});
-  put('c7',{xmin:1988,xmax:2024,ymin:0,ymax:8,xticks:[1990,2000,2010,2020],yticks:[0,2,4,6,8],series:[
+  put('c7',{bands:BANDS,xmin:1988,xmax:2024,ymin:0,ymax:8,xticks:[1990,2000,2010,2020],yticks:[0,2,4,6,8],series:[
     {color:'#b07d2b',pts:[[1990,4.5],[2000,3.5],[2010,3.3],[2020,2.9],[2022,2.8]]},
-    {color:'#1f6f8b',pts:[[1990,6.81],[2000,5.46],[2010,4.43],[2020,3.51],[2022,3.38]]}
+    {color:'#1f6f8b',pts:[[1990,6.81],[2000,5.46],[2010,4.43],[2020,3.51],[2022,3.38]]},
+    {color:'#7a2e2e',pts:[[2012,4.5],[2018,3.9]]},
+    {color:'#777067',nodots:true,dash:true,pts:[[1990,3.3],[2000,2.7],[2010,2.6],[2020,2.3],[2022,2.2]]}
   ]});
 
   var CBR=[[1990,45.2],[1991,44.9],[1992,44.5],[1993,44.1],[1994,43.8],[1995,43.4],[1996,43.1],[1997,42.7],[1998,42.1],[1999,41.4],[2000,40.9],[2001,40.2],[2002,39.6],[2003,38.8],[2004,38.1],[2005,37.3],[2006,36.7],[2007,35.9],[2008,33.9],[2009,34.0],[2010,34.5],[2011,34.1],[2012,33.4],[2013,32.9],[2014,32.8],[2015,32.9],[2016,32.3],[2017,31.4],[2018,30.5],[2019,29.7],[2020,28.9],[2021,28.2],[2022,27.6],[2023,27.1]];
@@ -380,7 +437,7 @@
   var CDRm=[[1950,21.2],[1951,20.9],[1952,20.6],[1953,20.3],[1954,20.0],[1955,19.7],[1956,19.4],[1957,19.0],[1958,18.6],[1959,18.2],[1960,17.7],[1961,17.3],[1962,16.8],[1963,16.3],[1964,15.8],[1965,15.3],[1966,14.9],[1967,15.6],[1968,13.8],[1969,13.3],[1970,12.7],[1971,12.1],[1972,11.6],[1973,11.0],[1974,10.7],[1975,10.2],[1976,9.8],[1977,9.3],[1978,8.9],[1979,8.4],[1980,8.0],[1981,7.6],[1982,7.3],[1983,6.9],[1984,6.6],[1985,6.4],[1986,6.1],[1987,5.7],[1988,5.6],[1989,5.4],[1990,5.2]];
   var NIm=[[1950,27.2],[1951,27.7],[1952,28.2],[1953,28.7],[1954,29.3],[1955,29.9],[1956,30.5],[1957,31.1],[1958,31.7],[1959,32.3],[1960,32.8],[1961,33.3],[1962,33.9],[1963,34.4],[1964,35.0],[1965,35.6],[1966,36.2],[1967,35.6],[1968,37.1],[1969,37.4],[1970,37.4],[1971,37.5],[1972,37.6],[1973,38.1],[1974,38.2],[1975,38.5],[1976,38.8],[1977,38.9],[1978,38.9],[1979,39.1],[1980,38.9],[1981,39.1],[1982,39.2],[1983,39.2],[1984,39.3],[1985,39.8],[1986,39.9],[1987,39.4],[1988,40.2],[1989,40.5],[1990,40.8]];
   var NIABSm=[[1950,25.7],[1951,26.4],[1952,27.2],[1953,28.0],[1954,28.9],[1955,29.8],[1956,30.8],[1957,31.8],[1958,33.0],[1959,34.1],[1960,35.2],[1961,36.4],[1962,37.7],[1963,38.8],[1964,40.0],[1965,40.9],[1966,41.5],[1967,40.4],[1968,41.7],[1969,41.6],[1970,41.8],[1971,42.5],[1972,43.9],[1973,45.8],[1974,47.4],[1975,49.2],[1976,51.0],[1977,52.6],[1978,54.1],[1979,55.9],[1980,57.2],[1981,59.1],[1982,61.2],[1983,63.5],[1984,66.4],[1985,69.5],[1986,71.3],[1987,73.9],[1988,79.5],[1989,83.2],[1990,87.2]];
-  put('cy1',{xmin:1948,xmax:2024,ymin:0,ymax:55,xticks:[1950,1960,1970,1980,1990,2000,2010,2020],yticks:[0,10,20,30,40,50],series:[
+  put('cy1',{bands:BANDS,xmin:1948,xmax:2024,ymin:0,ymax:55,xticks:[1950,1960,1970,1980,1990,2000,2010,2020],yticks:[0,10,20,30,40,50],series:[
     {color:'#1f6f8b',nodots:true,dash:true,pts:CBRm},
     {color:'#2c5a3f',nodots:true,dash:true,pts:CDRm},
     {color:'#7a2e2e',nodots:true,dash:true,pts:NIm},
@@ -391,7 +448,7 @@
   var NIABS=[[1990,76.2],[1991,79.4],[1992,82.9],[1993,86.4],[1994,90.2],[1995,94.0],[1996,98.1],[1997,102.3],[1998,103.6],[1999,104.8],[2000,106.4],[2001,107.3],[2002,108.6],[2003,109.2],[2004,110.0],[2005,110.6],[2006,111.7],[2007,112.5],[2008,108.4],[2009,111.7],[2010,117.7],[2011,119.0],[2012,119.2],[2013,120.5],[2014,120.7],[2015,126.2],[2016,126.7],[2017,125.7],[2018,124.8],[2019,124.5],[2020,122.4],[2021,120.4],[2022,124.0],[2023,102.6]];
   var TOTABS=[[1990,75.7],[1991,81.5],[1992,87.3],[1993,92.4],[1994,97.6],[1995,102.8],[1996,107.9],[1997,112.7],[1998,90.5],[1999,90.9],[2000,94.9],[2001,81.6],[2002,73.6],[2003,73.2],[2004,77.1],[2005,82.4],[2006,88.3],[2007,92.2],[2008,84.4],[2009,85.8],[2010,91.3],[2011,92.3],[2012,92.3],[2013,93.5],[2014,93.6],[2015,103.3],[2016,103.9],[2017,100.2],[2018,99.7],[2019,99.8],[2020,110.0],[2021,108.0],[2022,119.0],[2023,77.6]];
   var NMGAZA=[[1951,-2.4],[1952,-2.4],[1953,-2.4],[1954,-2.4],[1955,-2.4],[1956,3.5],[1957,3.5],[1958,3.5],[1959,-5.3],[1960,-5.3],[1961,-5.3],[1962,-5.3],[1963,0.1],[1964,0.1]];
-  put('cy2',{xmin:1946,xmax:2025,ymin:-60,ymax:135,xticks:[1950,1960,1970,1980,1990,2000,2010,2020],yticks:[-60,-30,0,30,60,90,120],series:[
+  put('cy2',{bands:BANDS,xmin:1946,xmax:2025,ymin:-60,ymax:135,xticks:[1950,1960,1970,1980,1990,2000,2010,2020],yticks:[-60,-30,0,30,60,90,120],series:[
     {color:'#2c5a3f',nodots:true,dash:true,pts:NIABSm},
     {color:'#2c5a3f',nodots:true,pts:NIABS},
     {color:'#b3271e',nodots:true,pts:NETM},
@@ -412,8 +469,19 @@
     {color:'#2c5a3f',vals:[null,80,125,157,215,333,433,538,206]},
     {color:'#b3271e',vals:[197,-7,-108,-40,-40,-15,null,null,null]}
   ],topnote:'1940s red bar = 1948 refugee influx (+197k into Gaza)'});
-  put('c14',{xmin:1945,xmax:2026,ymin:0,ymax:6500,xticks:[1950,1970,1990,2010],yticks:[0,1500,3000,4500,6000],series:[
+  put('c14',{bands:BANDS,xmin:1945,xmax:2026,ymin:0,ymax:6500,xticks:[1950,1970,1990,2010],yticks:[0,1500,3000,4500,6000],series:[
     {color:'#1f6f8b',pts:[[1948,671],[1960,849],[1967,1041],[1980,1249],[1990,1734],[2000,3118],[2010,4384],[2020,5753],[2023,6110]]}
+  ]});
+  putB('c15',{cats:['Gaza','N. Gaza','Deir Balah','Rafah','Khan Yunis'],ymin:0,ymax:9500,yticks:[0,2000,4000,6000,8000],series:[
+    {color:'#1f6f8b',vals:[8819,6049,4710,3654,3432]}
+  ]});
+  putB('c16',{cats:['Gaza','N. Gaza','Deir Balah','Rafah','Khan Yunis'],ymin:0,ymax:9500,yticks:[0,2000,4000,6000,8000],series:[
+    {color:'#b8d0db',vals:[4965,3006,2550,1920,1858]},
+    {color:'#5e9bb0',vals:[6708,4430,3544,2709,2509]},
+    {color:'#1f6f8b',vals:[8819,6049,4710,3654,3432]}
+  ]});
+  putB('c17',{cats:['mid-1900s','recent'],ymin:0,ymax:200,yticks:[0,50,100,150,200],series:[
+    {color:'#2c5a3f',vals:[180,100]}
   ]});
 })();
 </script>
