@@ -756,8 +756,21 @@
   .tl-wrap svg{display:block}
   .tl-title{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);font-weight:700;margin:0 0 2px}
   .tl-sub{font-family:var(--serif);font-style:italic;color:var(--ink-3);font-size:13px;margin:0 0 10px;max-width:900px}
-  .tl-dot{cursor:pointer;transition:r .1s}
-  .tl-dot:hover{stroke:#1a1714;stroke-width:1.4}
+  .tl-dot{cursor:pointer;}
+  .tl-plot{position:relative;}
+  .tl-tip{position:absolute;z-index:6;background:#211d18;color:#f1ece2;border-radius:8px;padding:11px 13px 12px;box-shadow:0 14px 34px -12px rgba(0,0,0,0.6);pointer-events:none;width:268px;max-width:82vw;}
+  .tl-tip.above{transform:translate(-50%,calc(-100% - 13px));}
+  .tl-tip.below{transform:translate(-50%,13px);}
+  .tl-tip .arw{position:absolute;left:50%;margin-left:-7px;border:7px solid transparent;}
+  .tl-tip.above .arw{bottom:-7px;border-top-color:#211d18;border-bottom:0;}
+  .tl-tip.below .arw{top:-7px;border-bottom-color:#211d18;border-top:0;}
+  .tl-tip .cat{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;gap:7px;}
+  .tl-tip .cat .sw{width:9px;height:9px;border-radius:50%;flex:none;}
+  .tl-tip .yp{font-family:var(--serif);font-size:15px;font-weight:600;margin:5px 0 4px;display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;}
+  .tl-tip .yp .pl{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:0.03em;text-transform:uppercase;color:#a89e8d;}
+  .tl-tip .tx{font-size:13px;line-height:1.44;color:#d9d2c5;}
+  .tl-tip .meta{font-family:var(--sans);font-size:10.5px;color:#b9b09d;margin-top:6px;font-style:italic;}
+  .tl-tip .src{font-family:var(--sans);font-size:10px;letter-spacing:0.02em;color:#8f8675;margin-top:5px;}
 </style>
 </head>
 <body>
@@ -904,6 +917,7 @@ function mag(ev) {
 }
 
 function Timeline({ onSelect }) {
+  const [hi, setHi] = useState(null);
   const W = 1140, GL = 168, GR = 20, T = 14, LH = 40, AX = 26;
   const lanes = CAT_ORDER;
   const H = T + lanes.length * LH + AX;
@@ -913,8 +927,8 @@ function Timeline({ onSelect }) {
   const years = []; for (let y = 1935; y <= 1943; y++) years.push(y);
 
   const dots = window.DATA.map((e) => {
-    const k = lanes.indexOf(e.cat);
-    return { e, id: `${e.cat}-${e.n}`, cat: e.cat, x: px(fracYear(e)), y0: laneY(k < 0 ? 0 : k), r: mag(e), y: laneY(k < 0 ? 0 : k) };
+    const k = lanes.indexOf(e.cat); const kk = k < 0 ? 0 : k;
+    return { e, id: `${e.cat}-${e.n}`, cat: e.cat, k: kk, x: px(fracYear(e)), y0: laneY(kk), r: mag(e), y: laneY(kk) };
   });
   // light per-lane vertical dodge so clustered dots stay legible
   const byLane = {};
@@ -929,32 +943,58 @@ function Timeline({ onSelect }) {
     });
   });
 
+  const hv = hi != null ? dots[hi] : null;
+  const tip = hv ? { leftPct: Math.max(17, Math.min(83, (hv.x / W) * 100)), topPct: (hv.y / H) * 100, below: hv.k < 4 } : null;
+
   return (
     <div className="tl-wrap">
       <div className="tl-title">Timeline · {window.DATA.length} events across eight registers</div>
-      <div className="tl-sub">Each dot is one ledger entry, placed by date and coloured by who acted; size tracks scale. The red <b>intra-Arab</b> lane is the civil war inside the revolt. Click a dot to open its row below.</div>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: "780px" }} role="img" aria-label="Timeline of revolt events by category">
-        {years.map((y) => (
-          <g key={"y" + y}>
-            <line x1={px(y)} x2={px(y)} y1={T} y2={T + lanes.length * LH} stroke="rgba(28,24,21,0.07)" strokeWidth="1" />
-            <text x={px(y)} y={H - 8} textAnchor="middle" fontSize="11" fontFamily="var(--mono)" fill="#9a9080">{y}</text>
-          </g>
-        ))}
-        {lanes.map((cat, k) => (
-          <g key={"l" + cat}>
-            <line x1={GL} x2={W - GR} y1={laneY(k)} y2={laneY(k)} stroke="rgba(28,24,21,0.05)" strokeWidth="1" />
-            <circle cx={9} cy={laneY(k)} r="4.5" fill={CAT_COLOR[cat]} />
-            <text x={21} y={laneY(k) + 4} fontSize="11.5" fontFamily="var(--sans)" fontWeight="600" fill="#3a352d">{CAT_TAB[cat]}</text>
-          </g>
-        ))}
-        {dots.map((d, i) => (
-          <circle key={i} className="tl-dot" cx={d.x} cy={d.y} r={d.r}
-            fill={CAT_COLOR[d.cat]} fillOpacity="0.82" stroke="#f5f1e8" strokeWidth="0.8"
-            onClick={() => onSelect(d.id)}>
-            <title>{`${d.e.date} · ${d.e.location} — ${d.e.event}`}</title>
-          </circle>
-        ))}
-      </svg>
+      <div className="tl-sub">Each dot is one ledger entry, placed by date and coloured by who acted; size tracks scale. The red <b>intra-Arab</b> lane is the civil war inside the revolt. Hover a dot for its card; click to open its row below.</div>
+      <div className="tl-plot">
+        <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ minWidth: "780px" }} role="img" aria-label="Timeline of revolt events by register">
+          {years.map((y) => (
+            <g key={"y" + y}>
+              <line x1={px(y)} x2={px(y)} y1={T} y2={T + lanes.length * LH} stroke="rgba(28,24,21,0.07)" strokeWidth="1" />
+              <text x={px(y)} y={H - 8} textAnchor="middle" fontSize="11" fontFamily="var(--mono)" fill="#9a9080">{y}</text>
+            </g>
+          ))}
+          {lanes.map((cat, k) => (
+            <g key={"l" + cat}>
+              <line x1={GL} x2={W - GR} y1={laneY(k)} y2={laneY(k)} stroke="rgba(28,24,21,0.05)" strokeWidth="1" />
+              <circle cx={9} cy={laneY(k)} r="4.5" fill={CAT_COLOR[cat]} />
+              <text x={21} y={laneY(k) + 4} fontSize="11.5" fontFamily="var(--sans)" fontWeight="600" fill="#3a352d">{CAT_TAB[cat]}</text>
+            </g>
+          ))}
+          {dots.map((d, i) => {
+            const on = hi === i;
+            return (
+              <g key={i}>
+                <circle cx={d.x} cy={d.y} r={on ? d.r + 1.6 : d.r} fill={CAT_COLOR[d.cat]}
+                  fillOpacity={hi != null && !on ? 0.3 : 0.85} stroke={on ? "#1a1714" : "#f5f1e8"}
+                  strokeWidth={on ? 1.6 : 0.8} style={{ pointerEvents: "none" }} />
+                <circle cx={d.x} cy={d.y} r={d.r + 6} fill="transparent" className="tl-dot"
+                  onMouseEnter={() => setHi(i)} onMouseLeave={() => setHi((p) => (p === i ? null : p))}
+                  onClick={() => onSelect(d.id)} />
+              </g>
+            );
+          })}
+        </svg>
+        {hv && (
+          <div className={"tl-tip " + (tip.below ? "below" : "above")} style={{ left: tip.leftPct + "%", top: tip.topPct + "%" }}>
+            <span className="arw"></span>
+            <div className="cat" style={{ color: CAT_COLOR[hv.cat] }}>
+              <span className="sw" style={{ background: CAT_COLOR[hv.cat] }}></span>
+              <span style={{ color: "#f1ece2" }}>{CAT_TAB[hv.cat]}</span>
+            </div>
+            <div className="yp">{hv.e.date}<span className="pl">{hv.e.location}</span></div>
+            <div className="tx">{hv.e.event}</div>
+            {(hv.e.actor || (hv.e.scaleBig && hv.e.scaleBig !== "—")) && (
+              <div className="meta">{hv.e.actor}{hv.e.actor && hv.e.scaleBig && hv.e.scaleBig !== "—" ? " · " : ""}{hv.e.scaleBig && hv.e.scaleBig !== "—" ? hv.e.scaleBig : ""}</div>
+            )}
+            <div className="src">{hv.e.src}</div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
