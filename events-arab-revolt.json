@@ -308,7 +308,12 @@
       "strike",
       "palestine"
     ],
-    "passages": []
+    "passages": [
+      {
+        "file": "survey_of_palestine_1946",
+        "text": "During May and June the strike was effectively imposed; Jaffa port was put out of action; there were intermittant local demon- strations and assaults on Jews; there was destruction of Jewish property and sniping at Jewish settlements; sporadic attacks were made on the railway lines, two trains were derailed, roads barri- caded and telephone wires cut; and armed bands, swelled by volunteers from Syria and Iraq, made their appearance in the hills."
+      }
+    ]
   },
   {
     "cat": "anti-jewish",
@@ -1740,7 +1745,12 @@
       "unsuccessful",
       "attempt"
     ],
-    "passages": []
+    "passages": [
+      {
+        "file": "survey_of_palestine_1946",
+        "text": "Public security conditions gradually deteriorated throughout 1937 ; during the first five months lawlessness was generally confined to the North- ern District and the Jerusalem municipal area; on 13th June an unsuccessful attempt was made on the life of the Inspector-General of Police, and from that time a campaign of murder, intimidation and sabotage conducted by Arab law-breakers became widespread and occasionally provoked retaliatory acts by Jews."
+      }
+    ]
   },
   {
     "cat": "anti-british",
@@ -3265,7 +3275,12 @@
       "rebel",
       "bands"
     ],
-    "passages": []
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "Rebel bands had pushed into other towns prior to taking the old city, such as Nazareth for a few hours on 6–7 July 1938 or Hebron on 20 August 1938 – where they burnt out the post office and tried to blow the Barclay's Bank safe, after which they burnt down the bank, too – but they raided as outlaws r"
+      }
+    ]
   },
   {
     "cat": "anti-british",
@@ -3355,7 +3370,12 @@
       "rebels",
       "raided"
     ],
-    "passages": []
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "Rebel bands had pushed into other towns prior to taking the old city, such as Nazareth for a few hours on 6–7 July 1938 or Hebron on 20 August 1938 – where they burnt out the post office and tried to blow the Barclay's Bank safe, after which they burnt down the bank, too – but they raided as outlaws robbing banks and never consolidated as guerri"
+      }
+    ]
   },
   {
     "cat": "anti-british",
@@ -3663,7 +3683,12 @@
       "northern",
       "frontier"
     ],
-    "passages": []
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "ltaneously, the British fined six villages for compli- city in destruction to the Tegart fence and when rebels twice blocked 102 Official Communique 240/36, 31 August 1936, Official Communiques, M/567/4, ISA."
+      }
+    ]
   },
   {
     "cat": "british-reprisal",
@@ -6252,7 +6277,12 @@
       "ambush",
       "hanita"
     ],
-    "passages": []
+    "passages": [
+      {
+        "file": "hughes_britains_pacification_of_palestine_2019",
+        "text": "The hard-edged manoeuvres of the anti-rebel British–Jewish Special Night Squads in Galilee in 1938 were the most visible collaboration between the two sides but day-to-day, low- level training and joint action endured throughout Palestine, and secured the country.120 The Yishuv carried over coloni"
+      }
+    ]
   },
   {
     "cat": "zionist-reprisal",
@@ -7222,7 +7252,12 @@
       "official",
       "totals"
     ],
-    "passages": []
+    "passages": [
+      {
+        "file": "survey_of_palestine_1946",
+        "text": "The number of incidents of violence during 1939 was 3,315 (compared with 5,708 in 1938) ; of these 230 were attacks on police or military, 136 attacks on Jewish settlements and quarters, 82 bomb throwings, 135 abductions, 245 attacks on telegraph communicat"
+      }
+    ]
   },
   {
     "cat": "strike-politics",
