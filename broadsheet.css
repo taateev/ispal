@@ -623,6 +623,9 @@ table.t tbody tr.expanded:hover { background: var(--paper-2); }
 .pill.eyewitness { border-color: var(--accent-3); color: var(--accent-3); background: #ebf0ec; }
 .pill.chronicle  { border-color: var(--accent-5); color: #6f4416;         background: #f7efe2; }
 .pill.secondary  { border-color: var(--rule);     color: var(--ink-3); }
+.pill.corpus      { border-color: var(--accent-3); color: var(--accent-3); background: #ebf0ec; }
+.pill.established { border-color: var(--rule);     color: var(--ink-3); }
+.pill.external    { border-color: var(--accent);   color: var(--accent);   background: var(--paper); border-style: dashed; }
 
 /* in-table section heads (when grouped by category) */
 table.t tbody tr.sec td {

@@ -25,6 +25,9 @@ const EVID_LABEL = {
   eyewitness: "Eyewitness",
   chronicle: "Community chronicle",
   secondary: "Secondary",
+  corpus: "Corpus",
+  established: "Established",
+  external: "External",
 };
 
 function catColor(cat) { return (CATS[cat] || {}).color || "#6b6358"; }

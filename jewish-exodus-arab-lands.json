@@ -1,0 +1,1622 @@
+{
+ "meta": {
+  "title": "The Jewish Communities of the Middle East & North Africa",
+  "subtitle": "A demographic event log, 1870–1992 — census, laws, pogroms, and departures",
+  "lead": "Just before 1948 some 858,600 Jews lived in the Arab world and Turkey. Within a generation almost all were gone. This log leads with the census figures and records, in order, the laws, pogroms, and organised departures that moved them — country by country, each entry tagged by evidentiary source.",
+  "compiled": "2026-06-07",
+  "framing_note": "Leads with demographic facts. 'Ethnic cleansing' is deliberately not used as the organising frame: the entries are census counts and dated events, each carrying a provenance tag; readers draw the characterisation. Drivers differed by country (state pogrom, denaturalisation law, decolonisation pull to France, religious-traditional aliyah) and the log keeps them distinct rather than flattening them into one cause.",
+  "unit_note": "Population values are absolute persons. Courbage & Fargues Table 7.3 is published in thousands; values here are ×1000 with that source's rounding.",
+  "event_types": {
+   "census": "A population count or demographic data point (the spine).",
+   "law": "A statute, decree, or formal state measure (citizenship, emigration, property, sequestration).",
+   "pogrom": "Anti-Jewish mob violence or killing.",
+   "operation": "An organised mass emigration / airlift.",
+   "political": "A war, coup, independence, or diplomatic event that drove migration.",
+   "end": "The effective extinction or present-day remnant of a community."
+  },
+  "srcType_legend": {
+   "corpus": "Figure or event sourced from a book in this project's corpus (Courbage & Fargues, Morris, Beinin, Laskier, Klorman, Shenhav, Meir-Glitzenstein, Harel).",
+   "established": "Well-attested dated event (pogrom, law, independence, operation) not requiring a corpus extract.",
+   "external": "Sourced outside the corpus; needs a citation before publication (chiefly present-day remnant figures)."
+  },
+  "methodological_flags": [
+   "EGYPT: the commonly-circulated 'before' of 100,000 is high; corpus is 67,000 (Courbage) to 75,000-80,000 (Beinin). The census event uses the sourced figure.",
+   "TUNISIA: Courbage census series 60k(1936) -> 71k(1946) -> 58k(1956); the popular ~105,000 (JVL/Wikipedia) does not fit the trajectory and is logged only as an alt-estimate, not the headline.",
+   "SYRIA: an emigration-BAN case — only ~8,500 of ~31,000 reached Israel; the community left chiefly after the 1992 travel-ban lift, mostly to the USA. Israel-immigration badly understates disappearance here.",
+   "LIBYA: main exodus was 1949-51 (31k of 38k), not 1967; 1967 was the final remnant fleeing to Italy.",
+   "ALGERIA: the destination was FRANCE, ~13:1 over Israel (1962) — disappearance from Algeria and aliyah are very different magnitudes; the corpus reads this as the strongest counter-case to a conviction-driven aliyah (Laskier).",
+   "TURKEY: not an Arab land and the RETENTION OUTLIER (~14,500 survive). Logged as the contrast case.",
+   "'TODAY' remnant figures are external ~2020s approximations (srcType external) — none is corpus-sourced; Courbage Table 7.3 ends in the 1980s."
+  ],
+  "sources": {}
+ },
+ "communities": [
+  {
+   "country": "Morocco",
+   "region": "Maghreb",
+   "before": {
+    "value": 265000,
+    "year": 1948
+   },
+   "to_israel_total": 265700,
+   "other_destinations": [
+    "France",
+    "Canada",
+    "Spain"
+   ],
+   "today": {
+    "value": 2100
+   },
+   "pattern": "gradual",
+   "note": "Largest Arab-world community; ~1/3 of departures chose France/Canada (Laskier)."
+  },
+  {
+   "country": "Algeria",
+   "region": "Maghreb",
+   "before": {
+    "value": 130000,
+    "year": 1941
+   },
+   "to_israel_total": 23700,
+   "other_destinations": [
+    "France"
+   ],
+   "today": {
+    "value": 0
+   },
+   "pattern": "sudden",
+   "note": "~130,000 went to France in 1962, ~13:1 over Israel (Crémieux citizenship since 1870)."
+  },
+  {
+   "country": "Tunisia",
+   "region": "Maghreb",
+   "before": {
+    "value": 74000,
+    "year": 1946
+   },
+   "alt_before": {
+    "value": 105000,
+    "note": "popular upper-bound (JVL/Wikipedia); inconsistent with census series — not the headline"
+   },
+   "to_israel_total": 52200,
+   "other_destinations": [
+    "France"
+   ],
+   "today": {
+    "value": 1000
+   },
+   "pattern": "gradual",
+   "note": "Today concentrated on Djerba."
+  },
+  {
+   "country": "Libya",
+   "region": "Maghreb",
+   "before": {
+    "value": 38000,
+    "year": 1948
+   },
+   "to_israel_total": 35800,
+   "other_destinations": [
+    "Italy"
+   ],
+   "today": {
+    "value": 0
+   },
+   "pattern": "sudden+remnant",
+   "note": "Community extinct; main wave 1949-51, remnant 1967 to Italy."
+  },
+  {
+   "country": "Egypt",
+   "region": "Mashriq",
+   "before": {
+    "value": 67000,
+    "year": 1947
+   },
+   "alt_before": {
+    "value": 75000,
+    "note": "Beinin range 75,000-80,000"
+   },
+   "to_israel_total": 30000,
+   "other_destinations": [
+    "France",
+    "Italy",
+    "Brazil",
+    "USA"
+   ],
+   "today": {
+    "value": 5
+   },
+   "pattern": "two-wave",
+   "note": "~45/55 Israel/diaspora; cosmopolitan elite to Europe & Americas (Beinin)."
+  },
+  {
+   "country": "Iraq",
+   "region": "Mashriq",
+   "before": {
+    "value": 120000,
+    "year": 1947
+   },
+   "alt_before": {
+    "value": 135000,
+    "note": "~1950 (Shenhav)"
+   },
+   "to_israel_total": 129400,
+   "other_destinations": [
+    "Iran (transit)",
+    "UK",
+    "USA"
+   ],
+   "today": {
+    "value": 4
+   },
+   "pattern": "sudden",
+   "note": "Near-total compressed exodus 1950-51."
+  },
+  {
+   "country": "North Yemen",
+   "region": "Arabian Peninsula",
+   "before": {
+    "value": 46000,
+    "year": 1948
+   },
+   "alt_before": {
+    "value": 65000,
+    "note": "whole of Yemen ~1947 (Klorman)"
+   },
+   "to_israel_total": 46400,
+   "other_destinations": [],
+   "today": {
+    "value": 4
+   },
+   "pattern": "sudden",
+   "note": "Magic Carpet evacuated ~77% in 1949-50; corpus's strongest religious-traditional (not political-Zionist) case (Klorman)."
+  },
+  {
+   "country": "South Yemen (Aden)",
+   "region": "Arabian Peninsula",
+   "before": {
+    "value": 5000,
+    "year": 1948
+   },
+   "to_israel_total": 4200,
+   "other_destinations": [
+    "UK"
+   ],
+   "today": {
+    "value": 0
+   },
+   "pattern": "sudden",
+   "note": "British Aden Protectorate; counted separately by Courbage."
+  },
+  {
+   "country": "Syria",
+   "region": "Mashriq",
+   "before": {
+    "value": 31000,
+    "year": 1948
+   },
+   "to_israel_total": 8500,
+   "other_destinations": [
+    "USA (esp. Brooklyn)",
+    "Israel (post-1992)",
+    "Latin America"
+   ],
+   "today": {
+    "value": 9
+   },
+   "pattern": "ban→1992",
+   "note": "Emigration banned 1948-1992; most left after Assad lifted the ban, mostly to the USA."
+  },
+  {
+   "country": "Lebanon",
+   "region": "Mashriq",
+   "before": {
+    "value": 5200,
+    "year": 1948
+   },
+   "to_israel_total": 4000,
+   "other_destinations": [
+    "France",
+    "USA",
+    "Brazil"
+   ],
+   "today": {
+    "value": 30
+   },
+   "pattern": "grew-then-fell",
+   "note": "The only Arab-state community that briefly GREW after 1948 before declining."
+  },
+  {
+   "country": "Jordan",
+   "region": "Mashriq",
+   "before": {
+    "value": 200,
+    "year": 1948
+   },
+   "to_israel_total": 100,
+   "other_destinations": [],
+   "today": {
+    "value": 0
+   },
+   "pattern": "negligible",
+   "note": "Tiny base; from Courbage Table 7.3."
+  },
+  {
+   "country": "Saudi Arabia",
+   "region": "Arabian Peninsula",
+   "before": {
+    "value": 200,
+    "year": 1948
+   },
+   "to_israel_total": 200,
+   "other_destinations": [],
+   "today": {
+    "value": 0
+   },
+   "pattern": "negligible",
+   "note": "Najran-area remnant; from Courbage Table 7.3."
+  },
+  {
+   "country": "Turkey",
+   "region": "Anatolia (non-Arab)",
+   "is_contrast_case": true,
+   "before": {
+    "value": 77000,
+    "year": 1945
+   },
+   "to_israel_total": 60400,
+   "other_destinations": [
+    "USA",
+    "Europe"
+   ],
+   "today": {
+    "value": 14200
+   },
+   "pattern": "partial — community survives",
+   "note": "RETENTION OUTLIER: substantial emigration but a surviving community, unlike every Arab-world community."
+  }
+ ],
+ "totals": {
+  "source": "corpus: Courbage & Fargues, Table 7.3 (sub-total row)",
+  "before_arab_plus_turkey_c1948": 858600,
+  "before_arab_only_excl_turkey": 781600,
+  "to_israel_arab_plus_turkey_1948_86": 660600,
+  "all_immigrants_to_israel_every_origin_1948_86": 1250300,
+  "corpus_working_figure_arab_lands_exodus": 850000
+ },
+ "events": [
+  {
+   "n": 1,
+   "year": 1870,
+   "date": "24 Oct 1870",
+   "cat": "law",
+   "location": "Algeria",
+   "event": "Crémieux Decree grants automatic French citizenship to Algeria's ~35,000 indigenous Jews, pulling them legally out of native (indigène) status and orienting the community toward France. Sets up the 1962 path-dependency to France over Israel.",
+   "actor": "Colonial power",
+   "actorType": [
+    "colonial"
+   ],
+   "scale": "citizenship",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Laskier, North African Jewry (1994)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 2,
+   "year": 1934,
+   "date": "Jun–Jul 1934",
+   "cat": "pogrom",
+   "location": "Turkey",
+   "event": "Thrace pogroms: anti-Jewish riots and looting drive thousands of Jews from eastern Thrace toward Istanbul.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~15,000 displaced",
+   "scaleBig": "~15,000",
+   "scaleNote": "displaced",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 3,
+   "year": 1934,
+   "date": "Aug 1934",
+   "cat": "pogrom",
+   "location": "Algeria",
+   "event": "Constantine pogrom: anti-Jewish riots leave 23 Jews and 3 Muslims dead.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "23 Jews killed",
+   "scaleBig": "23",
+   "scaleNote": "Jews killed",
+   "intensity": 2,
+   "links": [],
+   "src": "Laskier, North African Jewry (1994)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 4,
+   "year": 1940,
+   "date": "7 Oct 1940",
+   "cat": "law",
+   "location": "Algeria",
+   "event": "Vichy France abrogates the Crémieux Decree, stripping Algerian Jews of French citizenship; antisemitic statutes applied. Restored 1943 after the Allied landing.",
+   "actor": "Colonial power",
+   "actorType": [
+    "colonial"
+   ],
+   "scale": "citizenship revoked",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "Laskier, North African Jewry (1994)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 5,
+   "year": 1941,
+   "date": "1–2 Jun 1941",
+   "cat": "pogrom",
+   "location": "Iraq",
+   "event": "The Farhud — a two-day Baghdad pogrom over Shavuot as the pro-Axis Rashid Ali coup collapsed: ~180 Jews killed (Iraqi inquiry; Morris gives ~120), hundreds injured, property looted. A hinge in Iraqi-Jewish security perceptions — but the community stayed and largely recovered through the 1940s; the mass exodus came only with the 1950–51 denaturalisation law. Meir-Glitzenstein cautions against a simple Farhud→exodus chain.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~180 killed",
+   "scaleBig": "~180",
+   "scaleNote": "killed (Iraqi inquiry)",
+   "intensity": 4,
+   "links": [],
+   "src": "Morris; Meir-Glitzenstein",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 6,
+   "year": 1942,
+   "date": "Nov 1942",
+   "cat": "law",
+   "location": "Turkey",
+   "event": "Varlık Vergisi (wealth tax) imposes ruinous, discriminatory assessments on non-Muslims; defaulters sent to labour camps.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "discriminatory tax",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 7,
+   "year": 1945,
+   "date": "1945",
+   "cat": "census",
+   "location": "Turkey",
+   "event": "Jewish population recorded at ~77,000 — the c.1948 baseline used by Courbage Table 7.3.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "77,000",
+   "scaleBig": "77,000",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 8,
+   "year": 1945,
+   "date": "2–3 Nov 1945",
+   "cat": "pogrom",
+   "location": "Egypt",
+   "event": "Balfour Day riots in Cairo: a synagogue, Jewish hospital and old-age home attacked; several killed.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~5–10 killed",
+   "scaleBig": "~5–10",
+   "scaleNote": "killed",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 9,
+   "year": 1945,
+   "date": "4–7 Nov 1945",
+   "cat": "pogrom",
+   "location": "Libya",
+   "event": "Tripoli pogrom: three days of violence across Tripolitania kill roughly 130–140 Jews and destroy synagogues and homes.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~130+ killed",
+   "scaleBig": "~130+",
+   "scaleNote": "killed",
+   "intensity": 4,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 10,
+   "year": 1946,
+   "date": "1946",
+   "cat": "census",
+   "location": "Tunisia",
+   "event": "Census records ~71,000 Jews (Courbage Table 6.4); Table 7.3 rounds the c.1948 figure to 74,000. The popular ~105,000 estimate does not fit the 60k(1936)→71k(1946)→58k(1956) series.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "71,000–74,000",
+   "scaleBig": "71,000–74,000",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues, Tables 6.4 / 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 11,
+   "year": 1947,
+   "date": "1947",
+   "cat": "law",
+   "location": "Egypt",
+   "event": "Company (Egyptianisation) Law requires firms to employ 75% Egyptian nationals — striking the largely stateless / foreign-passport Jewish commercial class.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "75% nationals required",
+   "scaleBig": "75%",
+   "scaleNote": "nationals required",
+   "intensity": 3,
+   "links": [],
+   "src": "Beinin, Dispersion of Egyptian Jewry (1998)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 12,
+   "year": 1947,
+   "date": "1947",
+   "cat": "census",
+   "location": "Egypt",
+   "event": "Jewish population ~67,000 (Courbage). Beinin's range is 75,000–80,000, of whom only 5,000–10,000 held Egyptian citizenship; ~40,000 stateless, ~30,000 foreign-passport.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "67,000–80,000",
+   "scaleBig": "67,000–80,000",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues T.7.3 / Beinin",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 13,
+   "year": 1947,
+   "date": "1947",
+   "cat": "census",
+   "location": "Iraq",
+   "event": "Jewish population ~120,000 (Courbage). Pre-exodus organised Zionists numbered only ~2,000 of ~135,000 — about 1.5%.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "120,000",
+   "scaleBig": "120,000",
+   "scaleNote": "",
+   "intensity": 4,
+   "links": [],
+   "src": "Courbage & Fargues T.7.3 / Shenhav",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 14,
+   "year": 1947,
+   "date": "29 Nov 1947",
+   "cat": "political",
+   "location": "Region-wide",
+   "event": "UN General Assembly Resolution 181 (Partition) passes; anti-Jewish violence follows across the Arab world.",
+   "actor": "International",
+   "actorType": [
+    "intl"
+   ],
+   "scale": "partition vote",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 5,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 15,
+   "year": 1947,
+   "date": "Dec 1947",
+   "cat": "pogrom",
+   "location": "Syria",
+   "event": "Aleppo pogrom after the partition vote: synagogues, schools and shops burned; the medieval Great Synagogue ransacked and the Aleppo Codex damaged. Much of Aleppo's community flees.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "community uprooted",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 16,
+   "year": 1947,
+   "date": "Dec 1947",
+   "cat": "pogrom",
+   "location": "South Yemen (Aden)",
+   "event": "Aden riots following the partition vote leave ~80+ Jews dead and gut the community's economic base.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~80+ killed",
+   "scaleBig": "~80+",
+   "scaleNote": "killed",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 17,
+   "year": 1948,
+   "date": "1948",
+   "cat": "census",
+   "location": "Syria",
+   "event": "Jewish population ~31,000 (Aleppo, Damascus, Qamishli) — the Courbage baseline.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "31,000",
+   "scaleBig": "31,000",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 18,
+   "year": 1948,
+   "date": "1948",
+   "cat": "census",
+   "location": "Libya",
+   "event": "Jewish population ~38,000 (~32,000 Tripolitania, ~6,000 Cyrenaica).",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "38,000",
+   "scaleBig": "38,000",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 19,
+   "year": 1948,
+   "date": "1948",
+   "cat": "census",
+   "location": "Morocco",
+   "event": "Jewish population ~265,000 — the largest community in the Arab world. (Courbage's nationality table gives 224,000 in 1947 / 222,000 in 1951.)",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "265,000",
+   "scaleBig": "265,000",
+   "scaleNote": "",
+   "intensity": 5,
+   "links": [],
+   "src": "Courbage & Fargues, Tables 7.3 / 6.5",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 20,
+   "year": 1948,
+   "date": "1948",
+   "cat": "census",
+   "location": "Algeria",
+   "event": "Jewish population ~130,000–140,000, French citizens since 1870 and the most assimilated Maghrebi community.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "130,000",
+   "scaleBig": "130,000",
+   "scaleNote": "",
+   "intensity": 4,
+   "links": [],
+   "src": "Courbage & Fargues T.7.3 / Laskier",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 21,
+   "year": 1948,
+   "date": "1948",
+   "cat": "census",
+   "location": "North Yemen",
+   "event": "Jewish population ~46,000 (North Yemen) plus ~5,000 in Aden; Klorman puts the whole of Yemen at ~65,000 c.1947.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "46,000 (+5,000 Aden)",
+   "scaleBig": "46,000",
+   "scaleNote": "(+5,000 Aden)",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues T.7.3 / Klorman",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 22,
+   "year": 1948,
+   "date": "1948",
+   "cat": "census",
+   "location": "Region-wide",
+   "event": "Across the Arab world and Turkey, ~858,600 Jews on the eve of Israel's creation (Courbage sub-total). Arab-lands only, excluding Turkey: ~781,600.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "858,600 total",
+   "scaleBig": "858,600",
+   "scaleNote": "total",
+   "intensity": 5,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 23,
+   "year": 1948,
+   "date": "May 1948",
+   "cat": "law",
+   "location": "Iraq",
+   "event": "Zionism made a criminal offence; martial law, dismissals, fines and arrests of Jews. Wealthy merchant Shafiq Ades publicly hanged in Basra (Sept 1948).",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "Zionism criminalised",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 24,
+   "year": 1948,
+   "date": "Jun 1948",
+   "cat": "pogrom",
+   "location": "Morocco",
+   "event": "Riots in Oujda and Jerada kill ~40+ Jews — the deadliest anti-Jewish violence in Morocco around independence-era tensions.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~40+ killed",
+   "scaleBig": "~40+",
+   "scaleNote": "killed",
+   "intensity": 3,
+   "links": [],
+   "src": "Laskier, North African Jewry (1994)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 25,
+   "year": 1948,
+   "date": "Jun 1948",
+   "cat": "pogrom",
+   "location": "Libya",
+   "event": "Second Tripoli pogrom; this time the better-organised community defends itself and casualties (~14) are far lower than 1945.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~14 killed",
+   "scaleBig": "~14",
+   "scaleNote": "killed",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 26,
+   "year": 1948,
+   "date": "Jun–Aug 1948",
+   "cat": "pogrom",
+   "location": "Egypt",
+   "event": "Bombings in Cairo's Jewish quarter (Karaite quarter, Hara), arrests and sequestration of Jewish-owned property during the 1948 war.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "bombings + sequestration",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 27,
+   "year": 1949,
+   "date": "Dec 1948 – 1950",
+   "cat": "operation",
+   "location": "North Yemen",
+   "event": "Operation On Wings of Eagles ('Magic Carpet'): ~49,000–50,000 Yemenite Jews — about 77% of the community — airlifted to Israel via Aden transit camps.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "~49,000 (77%)",
+   "scaleBig": "~49,000",
+   "scaleNote": "(77%)",
+   "intensity": 5,
+   "links": [],
+   "src": "Klorman, Traditional Society in Transition (2014)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 28,
+   "year": 1949,
+   "date": "1949",
+   "cat": "law",
+   "location": "Libya",
+   "event": "Emigration legalised under British administration; the community begins to leave en masse.",
+   "actor": "Colonial power",
+   "actorType": [
+    "colonial"
+   ],
+   "scale": "emigration legalised",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 29,
+   "year": 1949,
+   "date": "1949–1951",
+   "cat": "operation",
+   "location": "Libya",
+   "event": "Mass emigration to Israel: ~31,000 of 38,000 Libyan Jews leave — the community's main exodus, years before the 1967 remnant flight.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "~31,000",
+   "scaleBig": "~31,000",
+   "scaleNote": "",
+   "intensity": 4,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 30,
+   "year": 1949,
+   "date": "5 Aug 1949",
+   "cat": "pogrom",
+   "location": "Syria",
+   "event": "Grenade attack on the Menarsha synagogue in Damascus kills ~12, including children.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~12 killed",
+   "scaleBig": "~12",
+   "scaleNote": "killed",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 31,
+   "year": 1949,
+   "date": "1948 →",
+   "cat": "law",
+   "location": "Syria",
+   "event": "Syria bars Jewish emigration and freezes Jewish assets; identity papers stamped 'Musawi', movement restricted. The ban will hold until 1992. Why only ~8,500 ever reached Israel despite a ~31,000 community.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "emigration banned",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 32,
+   "year": 1950,
+   "date": "5 Jul 1950",
+   "cat": "law",
+   "location": "Region-wide",
+   "event": "Israel's Law of Return grants every Jew the right to immigrate — the legal receiving end of the mass departures.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "right of immigration",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 33,
+   "year": 1950,
+   "date": "Mar 1950",
+   "cat": "law",
+   "location": "Iraq",
+   "event": "Denaturalisation Law (the Tasqit): Jews may emigrate only by renouncing Iraqi citizenship. 86,000 register before the Jan 1951 synagogue bombing — so the bombs cannot explain the bulk of departures (Meir-Glitzenstein).",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "citizenship-for-exit",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 4,
+   "links": [],
+   "src": "Meir-Glitzenstein, Zionism in an Arab Country (2004)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 34,
+   "year": 1950,
+   "date": "1950–1951",
+   "cat": "operation",
+   "location": "Iraq",
+   "event": "Operations Ezra & Nehemiah airlift ~120,000–130,000 Iraqi Jews to Israel via Cyprus and Tehran; 60,000 leave in the final three months alone.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "~120,000–130,000",
+   "scaleBig": "~120,000–130,000",
+   "scaleNote": "",
+   "intensity": 5,
+   "links": [],
+   "src": "Shenhav, The Arab Jews (2006)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 35,
+   "year": 1951,
+   "date": "Mar 1951",
+   "cat": "law",
+   "location": "Iraq",
+   "event": "A follow-on law freezes the property and assets of all Jews who renounced citizenship — converting departure into dispossession.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "assets frozen",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 36,
+   "year": 1951,
+   "date": "14 Jan 1951",
+   "cat": "pogrom",
+   "location": "Iraq",
+   "event": "Bombing at the Mas'uda Shemtob synagogue, a registration/departure point, kills and wounds several. Causation debated; 86,000 had already registered to leave.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "synagogue bombing",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "Meir-Glitzenstein (2004)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 37,
+   "year": 1951,
+   "date": "1948–1951",
+   "cat": "operation",
+   "location": "Turkey",
+   "event": "~34,500 Turkish Jews emigrate to Israel in the first post-statehood wave — but, unlike Arab-world communities, a large community remains.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "~34,500",
+   "scaleBig": "~34,500",
+   "scaleNote": "",
+   "intensity": 4,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 38,
+   "year": 1952,
+   "date": "1948–1956",
+   "cat": "operation",
+   "location": "Morocco",
+   "event": "Steady emigration to Israel (Operations Cadima / Goshen) draws tens of thousands before independence; ~95,900 leave in 1952–60 alone.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "~95,900 (1952–60)",
+   "scaleBig": "~95,900",
+   "scaleNote": "(1952–60)",
+   "intensity": 5,
+   "links": [],
+   "src": "Courbage & Fargues, Table 7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 39,
+   "year": 1954,
+   "date": "Jul 1954",
+   "cat": "political",
+   "location": "Egypt",
+   "event": "The Lavon Affair (Operation Susannah): an Israeli-run sabotage cell of Egyptian Jews is exposed, converting ambiguous communal status into 'suspected disloyalty'.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "sabotage cell exposed",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Beinin, Dispersion of Egyptian Jewry (1998)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 40,
+   "year": 1956,
+   "date": "20 Mar 1956",
+   "cat": "political",
+   "location": "Tunisia",
+   "event": "Tunisian independence. Emigration to Israel and France continues; the community begins its long decline.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "independence",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 41,
+   "year": 1956,
+   "date": "2 Mar 1956",
+   "cat": "political",
+   "location": "Morocco",
+   "event": "Moroccan independence. Emigration to Israel is soon officially halted/restricted, pushing departures underground.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "independence",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 42,
+   "year": 1956,
+   "date": "1956",
+   "cat": "census",
+   "location": "Tunisia",
+   "event": "Census records ~58,000 Jews — down from ~71,000 in 1946 as emigration takes hold.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "58,000",
+   "scaleBig": "58,000",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues, Table 6.4",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 43,
+   "year": 1956,
+   "date": "Nov 1956 – 1957",
+   "cat": "law",
+   "location": "Egypt",
+   "event": "Suez Crisis: ~25,000 Jews expelled or pressured out (especially British and French nationals); property sequestered, citizenship stripped. The first of Egypt's two waves.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "~25,000 expelled",
+   "scaleBig": "~25,000",
+   "scaleNote": "expelled",
+   "intensity": 4,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 44,
+   "year": 1960,
+   "date": "1948–1962",
+   "cat": "census",
+   "location": "Morocco",
+   "event": "Census shows ~160,000 Jews by 1960 (from ~265,000), reflecting the pre-Yachin departures.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "160,000 (1960)",
+   "scaleBig": "160,000",
+   "scaleNote": "(1960)",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues, Table 6.5",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 45,
+   "year": 1961,
+   "date": "10 Jan 1961",
+   "cat": "political",
+   "location": "Morocco",
+   "event": "The Pisces ('Egoz') sinks off the Moroccan coast carrying clandestine emigrants; 44 drown. The disaster pressures the regime into a tacit emigration deal.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "44 drowned",
+   "scaleBig": "44",
+   "scaleNote": "drowned",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 46,
+   "year": 1961,
+   "date": "1961–1964",
+   "cat": "operation",
+   "location": "Morocco",
+   "event": "Operation Yachin: ~80,000 Moroccan Jews evacuated to Israel under a secret arrangement — Israel's largest single airlift; ~100,400 leave in the 1961–64 window overall.",
+   "actor": "Israel / Zionist",
+   "actorType": [
+    "israel"
+   ],
+   "scale": "~80,000",
+   "scaleBig": "~80,000",
+   "scaleNote": "",
+   "intensity": 5,
+   "links": [],
+   "src": "Laskier (1994) / Courbage T.7.3",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 47,
+   "year": 1961,
+   "date": "Jul 1961",
+   "cat": "political",
+   "location": "Tunisia",
+   "event": "The Bizerte crisis (Franco-Tunisian fighting) accelerates Jewish departures to France and Israel.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "departures spike",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 48,
+   "year": 1962,
+   "date": "5 Jul 1962",
+   "cat": "political",
+   "location": "Algeria",
+   "event": "Algerian independence. Nearly the entire Jewish community (~130,000) leaves with the pieds-noirs — for FRANCE, not Israel, by roughly 13:1. The single strongest corpus counter-case to a conviction-driven aliyah.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "~130,000 to France",
+   "scaleBig": "~130,000",
+   "scaleNote": "to France",
+   "intensity": 5,
+   "links": [],
+   "src": "Laskier, North African Jewry (1994)",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 49,
+   "year": 1967,
+   "date": "Jun 1967",
+   "cat": "political",
+   "location": "Region-wide",
+   "event": "The Six-Day War triggers a second round of riots, internments and departures across Egypt, Libya, Tunisia and the remaining communities.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "war + reprisals",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 4,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 50,
+   "year": 1967,
+   "date": "Jun 1967",
+   "cat": "pogrom",
+   "location": "Libya",
+   "event": "Anti-Jewish riots after the Six-Day War; the remaining ~4,000–6,000 Jews flee, almost all to Italy. The community effectively ends.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "~4,000–6,000 flee",
+   "scaleBig": "~4,000–6,000",
+   "scaleNote": "flee",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 51,
+   "year": 1967,
+   "date": "Jun 1967",
+   "cat": "pogrom",
+   "location": "Tunisia",
+   "event": "Six-Day-War riots in Tunis; the Great Synagogue is set ablaze and looted, prompting a further emigration wave.",
+   "actor": "Mob / rioters",
+   "actorType": [
+    "mob"
+   ],
+   "scale": "synagogue burned",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 52,
+   "year": 1967,
+   "date": "Jun 1967",
+   "cat": "law",
+   "location": "Egypt",
+   "event": "Egyptian Jewish men interned; the second wave departs. The community falls toward the low thousands.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "internment",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 2,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 53,
+   "year": 1969,
+   "date": "27 Jan 1969",
+   "cat": "pogrom",
+   "location": "Iraq",
+   "event": "Nine Jews among 14 men publicly hanged in Baghdad's Liberation Square on spying charges, drawing huge crowds; the tiny remnant community is terrorised into final flight.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "9 Jews hanged",
+   "scaleBig": "9",
+   "scaleNote": "Jews hanged",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 54,
+   "year": 1970,
+   "date": "1969–1970",
+   "cat": "law",
+   "location": "Libya",
+   "event": "After Qaddafi's 1969 coup, Jewish property is confiscated and debts owed to Jews cancelled; the last Jews depart. Community extinct.",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "property confiscated",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 55,
+   "year": 1971,
+   "date": "1971",
+   "cat": "census",
+   "location": "Morocco",
+   "event": "Census records ~31,000 Jews — the long decline from ~265,000 nearly complete.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "31,000 (1971)",
+   "scaleBig": "31,000",
+   "scaleNote": "(1971)",
+   "intensity": 3,
+   "links": [],
+   "src": "Courbage & Fargues, Table 6.5",
+   "srcType": "corpus",
+   "passages": []
+  },
+  {
+   "n": 56,
+   "year": 1992,
+   "date": "Apr 1992",
+   "cat": "law",
+   "location": "Syria",
+   "event": "Hafez al-Assad lifts the 44-year emigration ban. Most of the remaining ~4,000 Jews leave within a few years, predominantly to the United States (Brooklyn).",
+   "actor": "Host state",
+   "actorType": [
+    "state"
+   ],
+   "scale": "ban lifted",
+   "scaleBig": "",
+   "scaleNote": "",
+   "intensity": 3,
+   "links": [],
+   "src": "established history",
+   "srcType": "established",
+   "passages": []
+  },
+  {
+   "n": 57,
+   "year": 2021,
+   "date": "2021",
+   "cat": "end",
+   "location": "Iraq",
+   "event": "Around four Jews remain in Baghdad (Edwin Shuker, 2021); the ~2,600-year-old community is effectively extinct.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~4 remain",
+   "scaleBig": "~4",
+   "scaleNote": "remain",
+   "intensity": 1,
+   "links": [],
+   "src": "France 24 / Times of Israel, Mar 2021",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 58,
+   "year": 2022,
+   "date": "2022",
+   "cat": "end",
+   "location": "Egypt",
+   "event": "Around five elderly Jews remain in Cairo, all women; the community is effectively extinct (a handful more in Alexandria).",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~3 remain",
+   "scaleBig": "~5",
+   "scaleNote": "remain",
+   "intensity": 1,
+   "links": [],
+   "src": "Times of Israel, Dec 2022",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 59,
+   "year": 2024,
+   "date": "Dec 2024",
+   "cat": "end",
+   "location": "Syria",
+   "event": "After the 2011–24 war and the fall of Assad, around nine Jews remain (Damascus and Qamishli); estimates range 4–9.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~30 remain",
+   "scaleBig": "~9",
+   "scaleNote": "remain",
+   "intensity": 1,
+   "links": [],
+   "src": "Times of Israel / Jerusalem Post, Dec 2024",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 60,
+   "year": 2021,
+   "date": "Mar 2021",
+   "cat": "end",
+   "location": "North Yemen",
+   "event": "After the Houthis expelled the last Jewish families (Mar 2021, in a prisoner deal), around four elderly Jews remain.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~6 remain",
+   "scaleBig": "~4",
+   "scaleNote": "remain",
+   "intensity": 1,
+   "links": [],
+   "src": "Asharq Al-Awsat / Times of Israel, Mar 2021",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 61,
+   "year": 2003,
+   "date": "2003",
+   "cat": "end",
+   "location": "Libya",
+   "event": "No Jews remain in Libya; the last, Rina Debach, left in 2003 — ending a ~2,000-year presence.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "0",
+   "scaleBig": "0",
+   "scaleNote": "",
+   "intensity": 1,
+   "links": [],
+   "src": "Jewish Virtual Library / Wikipedia",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 62,
+   "year": 2023,
+   "date": "~2020s",
+   "cat": "end",
+   "location": "Algeria",
+   "event": "No functioning Jewish community remains in Algeria — a handful of individuals at most.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~0",
+   "scaleBig": "~0",
+   "scaleNote": "remain",
+   "intensity": 1,
+   "links": [],
+   "src": "DellaPergola, World Jewish Population 2023",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 63,
+   "year": 2023,
+   "date": "2023",
+   "cat": "end",
+   "location": "Morocco",
+   "event": "~2,100 Jews remain — the largest surviving community in the Arab world, mostly in Casablanca.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~2,000 remain",
+   "scaleBig": "~2,100",
+   "scaleNote": "remain",
+   "intensity": 2,
+   "links": [],
+   "src": "DellaPergola, World Jewish Population 2023",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 64,
+   "year": 2023,
+   "date": "2023",
+   "cat": "end",
+   "location": "Tunisia",
+   "event": "~1,000 Jews remain, concentrated on the island of Djerba.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~1,000 remain",
+   "scaleBig": "~1,000",
+   "scaleNote": "remain",
+   "intensity": 2,
+   "links": [],
+   "src": "DellaPergola, World Jewish Population 2023",
+   "srcType": "external",
+   "passages": []
+  },
+  {
+   "n": 65,
+   "year": 2023,
+   "date": "2023",
+   "cat": "end",
+   "location": "Turkey",
+   "event": "~14,200 Jews remain, mostly in Istanbul — the contrast case: substantial emigration, but a community that survived.",
+   "actor": "The community",
+   "actorType": [
+    "community"
+   ],
+   "scale": "~14,500 remain",
+   "scaleBig": "~14,200",
+   "scaleNote": "remain",
+   "intensity": 3,
+   "links": [],
+   "src": "DellaPergola, World Jewish Population 2023",
+   "srcType": "external",
+   "passages": []
+  }
+ ],
+ "sources": {
+  "primary_corpus": {
+   "authors": "Youssef Courbage & Philippe Fargues",
+   "title": "Christians and Jews under Islam",
+   "year": 1998,
+   "corpus_file": "courbage_fargues_christians_and_jews_under_islam_1998.pdf",
+   "tables_used": [
+    "Table 7.3 (Jewish population of Arab countries + Turkey c.1948 & immigration to Israel 1948-86)",
+    "Table 6.4 (Tunisia by religion/nationality)",
+    "Table 6.5 (Morocco by religion/nationality)"
+   ]
+  },
+  "corpus_secondary": [
+   "Morris, Righteous Victims — Farhud; 1948",
+   "Beinin, The Dispersion of Egyptian Jewry (1998)",
+   "Shenhav, The Arab Jews (2006); Meir-Glitzenstein, Zionism in an Arab Country (2004) — Iraq",
+   "Laskier, North African Jewry in the Twentieth Century (1994) — Morocco/Tunisia/Algeria",
+   "Klorman, Traditional Society in Transition (2014) — Yemen",
+   "Harel — Syria"
+  ],
+  "external_to_verify": [
+   "Tunisia ~105,000 upper-bound alt-estimate"
+  ],
+  "present_day_remnants": "DellaPergola, World Jewish Population 2023 (Berman Jewish DataBank / American Jewish Year Book) for Morocco/Tunisia/Turkey/Algeria; recent reporting (France 24, Times of Israel, Asharq Al-Awsat, Jerusalem Post 2021–2024) for the near-extinct Iraq/Egypt/Syria/Yemen/Libya communities."
+ },
+ "build_notes": {
+  "renders_to": "jewish-exodus-arab-lands.html (broadsheet light-page, ottoman-palestine-table/ style)",
+  "page_reads": ".communities (lead demographic table + stats), .events (filterable event log), .meta (framing + flags)",
+  "not_yet_done": [
+   "external sourcing of present-day remnant figures",
+   "index.html nav wiring"
+  ]
+ }
+}

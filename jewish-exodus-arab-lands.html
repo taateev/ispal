@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Jewish Communities of the Middle East &amp; North Africa, 1870–1992 — A Demographic Event Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="broadsheet.css" rel="stylesheet" />
+<style>
+  /* page-scoped: by-community demographic table (multi-community analog; uses shared tokens) */
+  .demo-sec { margin: 0 0 44px; }
+  table.demo { width: 100%; border-collapse: collapse; font-family: var(--serif); font-size: 14px; }
+  table.demo thead th { text-align: right; font-family: var(--sans); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; padding: 8px 10px 10px; border-bottom: 1px solid var(--rule); }
+  table.demo thead th.l { text-align: left; }
+  table.demo tbody td { padding: 9px 10px; border-bottom: 1px solid var(--rule-soft); text-align: right; vertical-align: middle; }
+  table.demo tbody td.l { text-align: left; }
+  table.demo tbody tr.contrast { background: rgba(58,74,107,0.05); }
+  .demo .cty { font-weight: 600; color: var(--ink); }
+  .demo .reg { font-family: var(--sans); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-4); }
+  .demo .bar { position: relative; height: 15px; background: var(--paper-3); min-width: 54px; }
+  .demo .bar > span { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink-2); }
+  .demo .num { font-family: var(--mono); font-size: 12px; color: var(--ink-2); white-space: nowrap; }
+  .demo .dest { font-family: var(--sans); font-size: 11px; color: var(--ink-3); text-align: left; }
+  .demo .pct { font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--accent); }
+  .demo .pct.kept { color: var(--accent-3); }
+  .demo tr.totalrow td { border-top: 2px solid var(--ink); border-bottom: 0; font-weight: 700; padding-top: 11px; }
+  .demo tr.totalrow .num { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Demographic Event Log · Corpus-Connected</div>
+      <h1>The Jewish Communities of the Arab World<br /><em>Census, Laws, Pogroms &amp; Departures, 1870–1992</em></h1>
+    </div>
+    <div class="meta">
+      <b>Span</b> 1870 → 1992 (remnants to date)<br />
+      <b>Geography</b> Maghreb · Mashriq · Arabian Peninsula · Turkey<br />
+      <b>Primary source</b> Courbage &amp; Fargues, Table 7.3<br />
+      <span class="faint">Israel CBS · Encyclopaedia Judaica · national censuses</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;Topics</a>
+  </nav>
+
+  <p class="dek">
+    Just before 1948, some <em>858,600</em> Jews lived across the Arab world and Turkey. Within a generation almost all
+    were gone. This page leads with the <em>census figures</em> and then records, in order, the laws, pogroms, and
+    organised departures that moved them — each entry tagged by its evidentiary source. The drivers were not uniform:
+    a state pogrom in Iraq, a denaturalisation law, a decolonisation pull toward France in Algeria, a religious-traditional
+    airlift from Yemen, a four-decade emigration ban in Syria. The log keeps them distinct rather than flattening them into one cause.
+  </p>
+
+  <div id="stats-root"></div>
+
+  <section class="bcard">
+    <div class="bcard-head">
+      <div class="bcard-rail">
+        <span>1870 – 1992 · the documented record</span>
+        <span data-event-count>documented events</span>
+      </div>
+      <h2 class="bcard-title">Jewish Population of the Arab World &amp; Turkey <span class="sep">·</span> and the record that moved it</h2>
+      <p class="bcard-dek">Estimated souls over a category-by-category record of census, law, pogrom, organised emigration, and political rupture — compiled from a multi-source corpus, with Courbage &amp; Fargues' 1948 baseline as the anchor.</p>
+    </div>
+    <div class="bcard-body">
+      <p class="figttl">Population &amp; the documented record, by year</p>
+      <div id="plot"></div>
+      <div class="legend" id="legend"></div>
+      <p class="bcard-cap">A gentle rise to the <b>~858,600 peak of 1948</b>, then an order-of-magnitude collapse over a single generation. The pre-1948 pogroms — the <b>Farhud</b> (1941), <b>Tripoli</b> (1945) — shook the communities and grew the Zionist underground, but did not yet move the numbers: populations held or grew until the post-1948 cascade. The steepest fall is inside the <b>1948–1967 exodus band</b> — Iraq and Yemen emptied by 1951, Algeria's community left for France in 1962, the rest drained gradually. Syria, held by a 44-year emigration ban, is the late tail (1992). Turkey, not an Arab land, is the one community that did not collapse.</p>
+      <div id="compare-root"></div>
+    </div>
+  </section>
+  <p class="fignote">
+    Each dot is a documented event (hover for the record); dot size tracks intensity. Pre-1948 population figures are
+    estimates (dashed) — no synchronized year-by-year count exists; the 1948 peak and the post-1948 decline are reconstructed
+    from Courbage &amp; Fargues' census and emigration tables (solid).
+  </p>
+
+  <h2 class="section">By community</h2>
+  <div class="demo-sec"><div style="overflow-x:auto;"><table class="demo" id="demo-root"></table></div></div>
+
+  <h2 class="section">The documented record</h2>
+  <div id="app-root"></div>
+
+  <div class="endnotes">
+    <p>
+      <b>Sources.</b> Youssef Courbage &amp; Philippe Fargues, <i>Christians and Jews under Islam</i> (1998), Table 7.3
+      (Jewish population of the Arab countries &amp; Turkey c.1948 &amp; immigration to Israel 1948–86) and the Tunisia /
+      Morocco nationality tables; Benny Morris, <i>Righteous Victims</i>; Joel Beinin, <i>The Dispersion of Egyptian
+      Jewry</i> (1998); Michael Laskier, <i>North African Jewry in the Twentieth Century</i> (1994); Bat-Zion Klorman,
+      <i>Traditional Society in Transition</i> (2014); Yehouda Shenhav, <i>The Arab Jews</i> (2006); Esther
+      Meir-Glitzenstein, <i>Zionism in an Arab Country</i> (2004); Yaron Harel on Syria.
+    </p>
+    <p>
+      <b>Scope &amp; provenance.</b> Each row is tagged: <i>corpus</i> = sourced from a book in the project corpus;
+      <i>established</i> = a well-attested dated event; <i>external</i> = sourced outside the corpus — chiefly the
+      present-day remnant figures, from DellaPergola's <i>World Jewish Population 2023</i> (Morocco, Tunisia, Turkey, Algeria)
+      and recent reporting (France 24, Times of Israel, Asharq Al-Awsat, Jerusalem Post, 2021–2024) for the near-extinct
+      Iraq, Egypt, Syria, Yemen and Libya communities. <b>Reading caveats:</b> the popular Egypt "before" of 100,000
+      runs high (corpus 67,000–80,000); Tunisia's ~105,000 does not fit the census series (74,000 used); Syria's small
+      Israel-immigration badly understates its disappearance (emigration was banned until 1992); Libya's main exodus was
+      1949–51, not 1967; Algeria's Jews went to France, ~13:1 over Israel. "Ethnic cleansing" is deliberately not used as
+      the organising frame — the entries are census counts and dated events, and readers draw the characterisation.
+    </p>
+  </div>
+
+  <footer class="colophon">
+    <div><b>The Jewish Communities of the Arab World, 1870–1992</b> · Demographic event log · Corpus-connected</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono</div>
+  </footer>
+
+</div>
+
+<script>
+window.COMMUNITY_CFG = {
+  title: "Jewish population of the Arab world & Turkey, and the documented record",
+  eventsUrl: "jewish-exodus-arab-lands.json",
+  locations: ["Morocco", "Algeria", "Tunisia", "Libya", "Egypt", "Iraq", "North Yemen", "South Yemen (Aden)", "Syria", "Lebanon", "Jordan", "Saudi Arabia", "Turkey", "Region-wide"],
+  stats: [
+    { n: "858,600", l: "Jews c. 1948 · Arab world + Turkey" },
+    { n: "660,600", l: "Emigrated to Israel · 1948–86" },
+    { n: "~17,400", l: "Remain today" },
+    { n: "99.6%",   l: "Gone · Arab lands only" }
+  ],
+  cats: {
+    census:    { label: "Census",    color: "#3a4a6b" },
+    law:       { label: "Law",       color: "#5a4a2e" },
+    pogrom:    { label: "Pogrom",    color: "#7a2c1e" },
+    operation: { label: "Operation", color: "#2d4a3a" },
+    political: { label: "Political", color: "#6b7280" },
+    end:       { label: "Remnant",   color: "#8a5a2b" }
+  },
+  actors: {
+    state:     { label: "Host state",      color: "#5a4a2e" },
+    mob:       { label: "Mob / rioters",   color: "#7a2c1e" },
+    israel:    { label: "Israel / Zionist", color: "#2d4a3a" },
+    colonial:  { label: "Colonial power",  color: "#3a4a6b" },
+    intl:      { label: "International",    color: "#6b7280" },
+    community: { label: "The community",   color: "#6b6358" }
+  },
+  compare: {
+    pre: {
+      label: "On the eve of 1948",
+      span: "13 communities · Arab world + Turkey",
+      rows: [
+        { k: "Population", v: "858,600", big: true },
+        { k: "Largest", v: "Morocco · 265,000" },
+        { k: "Then Iraq", v: "120,000" },
+        { k: "Communities", v: "13" }
+      ]
+    },
+    post: {
+      label: "By the 1990s",
+      span: "exodus largely complete",
+      rows: [
+        { k: "Remaining", v: "~17,400", big: true },
+        { k: "Arab lands only", v: "~3,150" },
+        { k: "Emigrated to Israel", v: "660,600" },
+        { k: "Turkey (survives)", v: "~14,200" }
+      ]
+    },
+    foot: "The drivers differed — a state pogrom in Iraq, a denaturalisation law, a decolonisation pull to France in Algeria (~13:1 over Israel), a religious-traditional airlift from Yemen, a 44-year emigration ban in Syria — but the outcome converged. Turkey, not an Arab land, is the one community that survived."
+  },
+  chart: {
+    title: "Jewish population of the Arab world & Turkey, and the documented record",
+    knots: [[1870,430,1],[1900,560,1],[1920,660,1],[1940,800,1],
+            [1948,858],[1951,565],[1960,330],[1967,165],[1972,95],[1980,52],[1992,32],[2000,26],[2023,18]],
+    maxP: 1000, popUnit: "K", curveColor: "#7a2c1e", curveColorEst: "#8c8270",
+    peakLabel: "~858K", peakYear: 1948,
+    yTicks: [0, 250, 500, 750, 1000], yearRange: [1860, 2030],
+    band: [1948, 1967], bandLabel: "EXODUS",
+    xTicks: [1870, 1900, 1948, 1967, 2000, 2023]
+  }
+};
+</script>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script src="broadsheet-chart.js"></script>
+<script type="text/babel" src="broadsheet-app.jsx"></script>
+
+<script>
+(function () {
+  const fmt = (n) => n.toLocaleString("en-US");
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+  function renderDemo(communities, totals) {
+    const host = document.getElementById("demo-root");
+    if (!host || !communities) return;
+    const rows = communities.slice().sort((a, b) => {
+      if (!!a.is_contrast_case !== !!b.is_contrast_case) return a.is_contrast_case ? 1 : -1;
+      return b.before.value - a.before.value;
+    });
+    const max = Math.max.apply(null, rows.map((r) => r.before.value));
+    const head = `<thead><tr>
+      <th class="l">Community</th><th class="l">Region</th>
+      <th>c. 1948</th><th class="l"></th><th>→ Israel</th><th class="l">Other destinations</th>
+      <th>Today</th><th>Remaining</th></tr></thead>`;
+    const body = rows.map((r) => {
+      const w = Math.max(2, 100 * r.before.value / max);
+      const remain = 100 * r.today.value / r.before.value;
+      const remTxt = remain >= 1 ? remain.toFixed(1) + "%" : remain >= 0.01 ? remain.toFixed(2) + "%" : remain > 0 ? "<0.01%" : "0%";
+      const dest = (r.other_destinations || []).join(", ") || "—";
+      return `<tr class="${r.is_contrast_case ? "contrast" : ""}">
+        <td class="l"><span class="cty">${esc(r.country)}</span></td>
+        <td class="l"><span class="reg">${esc(r.region)}</span></td>
+        <td><span class="num">${fmt(r.before.value)}</span></td>
+        <td class="l"><div class="bar"><span style="width:${w}%"></span></div></td>
+        <td><span class="num">${fmt(r.to_israel_total)}</span></td>
+        <td class="dest">${esc(dest)}</td>
+        <td><span class="num">${r.today.value === 0 ? "0" : "~" + fmt(r.today.value)}</span></td>
+        <td><span class="pct ${remain >= 5 ? "kept" : ""}">${remTxt}</span></td>
+      </tr>`;
+    }).join("");
+    const t = totals || {};
+    const total = `<tr class="totalrow">
+      <td class="l">Total</td><td></td>
+      <td><span class="num">${fmt(t.before_arab_plus_turkey_c1948 || 0)}</span></td><td></td>
+      <td><span class="num">${fmt(t.to_israel_arab_plus_turkey_1948_86 || 0)}</span></td>
+      <td class="dest">Arab lands only: ${fmt(t.before_arab_only_excl_turkey || 0)} before</td>
+      <td></td><td></td></tr>`;
+    host.innerHTML = head + "<tbody>" + body + total + "</tbody>";
+  }
+
+  function boot(d) {
+    const events = Array.isArray(d) ? d : (d.events || []);
+    window.DATA = events;
+    document.querySelectorAll("[data-event-count]").forEach((el) => {
+      el.textContent = events.length + " documented events";
+    });
+    if (window.drawBroadsheetChart) window.drawBroadsheetChart(events);
+    if (!Array.isArray(d)) renderDemo(d.communities, d.totals);
+    (function mount() {
+      if (window.renderBroadsheet) window.renderBroadsheet();
+      else setTimeout(mount, 40);
+    })();
+  }
+
+  fetch(window.COMMUNITY_CFG.eventsUrl)
+    .then((r) => r.json())
+    .then(boot)
+    .catch(() => {
+      const el = document.getElementById("app-root");
+      if (el) el.innerHTML =
+        '<p class="empty">Could not load ' + window.COMMUNITY_CFG.eventsUrl +
+        ' — serve over http (e.g. python -m http.server 8080), not file://.</p>';
+    });
+})();
+</script>
+</body>
+</html>

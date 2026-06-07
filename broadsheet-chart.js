@@ -29,7 +29,8 @@
   const px = (y) => GL + (W - GL - GR) * (y - Y0) / SPAN;
   const cy = (v) => T + CH * (1 - v / maxP);
   const laneY = (k) => LY + LH * k + LH / 2;
-  const TZ = ch.tanzimat || [1839, 1858];
+  const TZ = ch.band || ch.tanzimat || [1839, 1858];
+  const BAND_LABEL = ch.bandLabel || "TANZIMAT";
   const DIVX = px(TZ[0]), BANDX1 = px(TZ[1]);
   const magR = (m) => 2.6 + 1.5 * Math.sqrt(m || 1);
   const CREAM = "#f4efe4";
@@ -123,7 +124,7 @@
     s.push(`<rect x="${DIVX}" y="${T}" width="${BANDX1 - DIVX}" height="${LANES_BOTTOM - T}" fill="#7d7259" fill-opacity="0.1"/>`);
     s.push(`<line x1="${DIVX}" x2="${DIVX}" y1="${T}" y2="${LANES_BOTTOM}" stroke="#7d7259" stroke-width="1.25" stroke-dasharray="3 4"/>`);
     s.push(`<line x1="${BANDX1}" x2="${BANDX1}" y1="${T}" y2="${LANES_BOTTOM}" stroke="#7d7259" stroke-width="1.25" stroke-dasharray="3 4"/>`);
-    s.push(`<text x="${(DIVX + BANDX1) / 2}" y="${T - 19}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#8a7e62" style="letter-spacing:0.16em">TANZIMAT</text>`);
+    s.push(`<text x="${(DIVX + BANDX1) / 2}" y="${T - 19}" text-anchor="middle" font-size="9.5" font-weight="700" fill="#8a7e62" style="letter-spacing:0.16em">${esc(BAND_LABEL)}</text>`);
     s.push(`<text x="${DIVX - 3}" y="${T - 6}" text-anchor="end" font-size="10.5" font-weight="700" fill="#6f654f">${TZ[0]} ›</text>`);
     s.push(`<text x="${BANDX1 + 3}" y="${T - 6}" text-anchor="start" font-size="10.5" font-weight="700" fill="#6f654f">‹ ${TZ[1]}</text>`);
 
