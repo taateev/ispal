@@ -2192,7 +2192,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 29,
+    "n": 26,
     "date": "Winter 1937",
     "year": 1937,
     "location": "Haifa / Lower Galilee",
@@ -2223,7 +2223,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 30,
+    "n": 27,
     "date": "May 1937",
     "year": 1937,
     "location": "Jenin",
@@ -2255,7 +2255,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 31,
+    "n": 28,
     "date": "Jun-Jul 1937",
     "year": 1937,
     "location": "Palestine",
@@ -2287,7 +2287,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 32,
+    "n": 29,
     "date": "mid-June 1937",
     "year": 1937,
     "location": "Jerusalem",
@@ -2318,7 +2318,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 33,
+    "n": 30,
     "date": "30 June 1937",
     "year": 1937,
     "location": "Jerusalem",
@@ -2349,7 +2349,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 34,
+    "n": 31,
     "date": "early July 1937",
     "year": 1937,
     "location": "Bethlehem",
@@ -2380,7 +2380,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 35,
+    "n": 32,
     "date": "late July 1937",
     "year": 1937,
     "location": "Lifta",
@@ -2411,7 +2411,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 36,
+    "n": 33,
     "date": "19 July 1937",
     "year": 1937,
     "location": "Haifa",
@@ -2442,7 +2442,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 37,
+    "n": 34,
     "date": "20 July 1937",
     "year": 1937,
     "location": "Jaffa",
@@ -2473,7 +2473,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 38,
+    "n": 35,
     "date": "mid-August 1937",
     "year": 1937,
     "location": "Tulkarem",
@@ -2504,7 +2504,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 39,
+    "n": 36,
     "date": "late September 1937",
     "year": 1937,
     "location": "Dammun, Western Galilee",
@@ -2535,7 +2535,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 40,
+    "n": 37,
     "date": "mid-September 1937",
     "year": 1937,
     "location": "Haifa",
@@ -2566,7 +2566,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 41,
+    "n": 38,
     "date": "~10 September 1937",
     "year": 1937,
     "location": "Jenin district",
@@ -2597,7 +2597,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 42,
+    "n": 39,
     "date": "mid-October 1937",
     "year": 1937,
     "location": "Acre",
@@ -2628,7 +2628,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 43,
+    "n": 40,
     "date": "mid-October 1937",
     "year": 1937,
     "location": "Ja'uni",
@@ -2659,7 +2659,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 44,
+    "n": 41,
     "date": "early 1937 (post-Nov 1935 window)",
     "year": 1937,
     "location": "Haifa",
@@ -2690,7 +2690,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 45,
+    "n": 42,
     "date": "early November 1937",
     "year": 1937,
     "location": "Jerusalem",
@@ -2721,7 +2721,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 46,
+    "n": 43,
     "date": "December 1937",
     "year": 1937,
     "location": "Acre",
@@ -2752,7 +2752,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 47,
+    "n": 44,
     "date": "December 1937",
     "year": 1937,
     "location": "Wadi 'Ara",
@@ -2783,7 +2783,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 48,
+    "n": 45,
     "date": "late December 1937",
     "year": 1937,
     "location": "Taybe",
@@ -4128,37 +4128,6 @@
   {
     "cat": "british-reprisal",
     "n": 28,
-    "date": "Nov 1938",
-    "year": 1938,
-    "location": "Bani Na'im, near Hebron",
-    "event": "Acting on Arab-supplied information, the Army crushed 'Abd al-Qadir al-Husayni's band at Bani Na'im, killing 16 including his two deputies, with 'Abd al-Qadir seriously wounded.",
-    "quote": "a crushing attack on his band in Bani Na'im village near Hebron in November 1938. In this attack the band lost 16 members",
-    "src": "Porath vol. 2 p. 257",
-    "srcType": "secondary",
-    "srcNote": "",
-    "actor": "British Army (Arab informers)",
-    "actorType": [
-      "british"
-    ],
-    "scale": "16 rebels killed",
-    "scaleBig": "16",
-    "scaleNote": "incl. 2 deputies; 'Abd al-Qadir wounded",
-    "links": [],
-    "searchTerms": [
-      "husayni",
-      "hebron",
-      "informer"
-    ],
-    "passages": [
-      {
-        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
-        "text": "-Husayni's band brought about a crushing attack on his band in Bani Na'im village near Hebron in November 1938."
-      }
-    ]
-  },
-  {
-    "cat": "british-reprisal",
-    "n": 29,
     "date": "November 1938",
     "year": 1938,
     "location": "Irtah village south of Tulkarm",
@@ -4189,7 +4158,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 30,
+    "n": 29,
     "date": "1 Nov 1938",
     "year": 1938,
     "location": "Palestine",
@@ -4220,7 +4189,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 31,
+    "n": 30,
     "date": "Late Dec 1938",
     "year": 1938,
     "location": "Jerusalem-Lydda railway",
@@ -4251,7 +4220,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 32,
+    "n": 31,
     "date": "December 1938",
     "year": 1938,
     "location": "Sindiana area",
@@ -4283,7 +4252,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 33,
+    "n": 32,
     "date": "16 December 1938",
     "year": 1938,
     "location": "Palestine",
@@ -4309,37 +4278,6 @@
       {
         "file": "hughes_britains_pacification_of_palestine_2019",
         "text": "The figure of 5,748 also acknowledges official orders to shoot those who failed to halt when challenged and the qualitative accounts in Chapter 6 of how soldiers readily shot 'anything that moved' and used Palestinians for 'target practice.'33 British fortnightly secret intelligence reports noted 101 Arabs 'definitely killed' in battle against 'armed bands' in a two-week period in December 1938 (and twenty-eight 'known' wounded) that if multiplied by seventy-two (thirty-six months doubled) equals 7,272 official battle dead but this figure excludes villa"
-      }
-    ]
-  },
-  {
-    "cat": "british-reprisal",
-    "n": 34,
-    "date": "18 Dec 1938",
-    "year": 1938,
-    "location": "Palestine",
-    "event": "On information supplied by Arabs, the Army liquidated a whole band on 18 December 1938, killing 30 and capturing 15, and caught 12 of an 'Abd al-Raziq lieutenant's band with a large arms cache.",
-    "quote": "enabled the Army on 18th December 1938 to liquidate a whole band killing 30 of its people and capturing 15",
-    "src": "Porath vol. 2 p. 257",
-    "srcType": "secondary",
-    "srcNote": "",
-    "actor": "British Army (Arab informers)",
-    "actorType": [
-      "british"
-    ],
-    "scale": "30 killed, 15 + 12 captured",
-    "scaleBig": "30",
-    "scaleNote": "",
-    "links": [],
-    "searchTerms": [
-      "informer",
-      "abd al-raziq",
-      "palestine"
-    ],
-    "passages": [
-      {
-        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
-        "text": "information supplied enabled the Army on 18th December 1938 to liquidate a whole band killing 30 of its people and capturing 15; to catch 12 members of 'Abd al-Raziq lieutenant's band and to discover a large amount of arms.?!° An outstanding example of the villagers' eagerness to assist the authorities in fighting the rebels"
       }
     ]
   },
@@ -4408,7 +4346,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 26,
+    "n": 46,
     "date": "1936-39 (during)",
     "year": 1938,
     "location": "Tulkarm area",
@@ -4439,7 +4377,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 27,
+    "n": 47,
     "date": "1936-39 (during)",
     "year": 1938,
     "location": "southern region",
@@ -4470,7 +4408,7 @@
   },
   {
     "cat": "intra-arab",
-    "n": 28,
+    "n": 48,
     "date": "1936-39 (during)",
     "year": 1938,
     "location": "under 'Arif 'Abd al-Raziq",
@@ -5877,6 +5815,38 @@
   {
     "cat": "peace-band",
     "n": 15,
+    "date": "Nov 1938",
+    "year": 1938,
+    "location": "Bani Na'im, near Hebron",
+    "event": "Acting on Arab-supplied information, the Army crushed 'Abd al-Qadir al-Husayni's band at Bani Na'im, killing 16 including his two deputies, with 'Abd al-Qadir seriously wounded.",
+    "quote": "a crushing attack on his band in Bani Na'im village near Hebron in November 1938. In this attack the band lost 16 members",
+    "src": "Porath vol. 2 p. 257",
+    "srcType": "secondary",
+    "srcNote": "",
+    "actor": "British Army (Arab informers)",
+    "actorType": [
+      "peace-band",
+      "british"
+    ],
+    "scale": "16 rebels killed",
+    "scaleBig": "16",
+    "scaleNote": "incl. 2 deputies; 'Abd al-Qadir wounded",
+    "links": [],
+    "searchTerms": [
+      "husayni",
+      "hebron",
+      "informer"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "-Husayni's band brought about a crushing attack on his band in Bani Na'im village near Hebron in November 1938."
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 16,
     "date": "~December 1938",
     "year": 1938,
     "location": "al-Mazra'a al-Sharqiyya area",
@@ -5908,7 +5878,7 @@
   },
   {
     "cat": "peace-band",
-    "n": 16,
+    "n": 17,
     "date": "5 December 1938",
     "year": 1938,
     "location": "Damascus / Palestine",
@@ -5939,7 +5909,7 @@
   },
   {
     "cat": "peace-band",
-    "n": 17,
+    "n": 18,
     "date": "18 Dec 1938",
     "year": 1938,
     "location": "Hebron area (Yatah)",
@@ -5971,7 +5941,39 @@
   },
   {
     "cat": "peace-band",
-    "n": 18,
+    "n": 19,
+    "date": "18 Dec 1938",
+    "year": 1938,
+    "location": "Palestine",
+    "event": "On information supplied by Arabs, the Army liquidated a whole band on 18 December 1938, killing 30 and capturing 15, and caught 12 of an 'Abd al-Raziq lieutenant's band with a large arms cache.",
+    "quote": "enabled the Army on 18th December 1938 to liquidate a whole band killing 30 of its people and capturing 15",
+    "src": "Porath vol. 2 p. 257",
+    "srcType": "secondary",
+    "srcNote": "",
+    "actor": "British Army (Arab informers)",
+    "actorType": [
+      "peace-band",
+      "british"
+    ],
+    "scale": "30 killed, 15 + 12 captured",
+    "scaleBig": "30",
+    "scaleNote": "",
+    "links": [],
+    "searchTerms": [
+      "informer",
+      "abd al-raziq",
+      "palestine"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "information supplied enabled the Army on 18th December 1938 to liquidate a whole band killing 30 of its people and capturing 15; to catch 12 members of 'Abd al-Raziq lieutenant's band and to discover a large amount of arms.?!° An outstanding example of the villagers' eagerness to assist the authorities in fighting the rebels"
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 20,
     "date": "18 December 1938",
     "year": 1938,
     "location": "field (Nashashibi bands)",
@@ -6382,7 +6384,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 35,
+    "n": 33,
     "date": "various, mid-Gilboa, 1938-39",
     "year": 1939,
     "location": "Mt. Gilboa / Beit Alfa",
@@ -6414,7 +6416,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 36,
+    "n": 34,
     "date": "1 March 1939",
     "year": 1939,
     "location": "village near Haifa",
@@ -6445,7 +6447,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 37,
+    "n": 35,
     "date": "6 March 1939",
     "year": 1939,
     "location": "Palestine",
@@ -6476,7 +6478,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 38,
+    "n": 36,
     "date": "10 March 1939",
     "year": 1939,
     "location": "Lydda area",
@@ -6507,41 +6509,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 39,
-    "date": "23 Mar 1939",
-    "year": 1939,
-    "location": "Sanur, Samaria",
-    "event": "Supreme rebel commander 'Abd al-Rahim al-Hajj Muhammad was located by Farid Irshayid's peace unit and besieged and killed by the Army at Sanur on information from the Irshayid family.",
-    "quote": "'Abd al-Rahim al-Hajj Muhammad, the Commander-in-Chief of the Revolt, was besieged by the Army on 26th March 1939 in the Saniir village",
-    "src": "Porath vol. 2 p. 257",
-    "srcType": "secondary",
-    "srcNote": "Corroborated: Hughes 2019 p. 263; Cohen, Army of Shadows p. 152; Survey of Palestine 1946 p. 48.",
-    "actor": "British Army (Irshayid info) + peace band",
-    "actorType": [
-      "british",
-      "peace-band"
-    ],
-    "scale": "1 C-in-C killed",
-    "scaleBig": "1",
-    "scaleNote": "date given as both 23rd and 26th March in text",
-    "links": [],
-    "searchTerms": [
-      "hajj muhammad",
-      "samaria",
-      "peace band",
-      "irshayid",
-      "sanur"
-    ],
-    "passages": [
-      {
-        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
-        "text": "al-Hajj Muhammad, the Commander-in-Chief of the Revolt, was besieged by the Army on 26th March 1939 in the Saniir village in Samaria and killed, following information received by the Army concerning his hiding-place, again from the Irshayid family, and Farid Irshayid, the 'peace band' commander, even took part in the si"
-      }
-    ]
-  },
-  {
-    "cat": "british-reprisal",
-    "n": 40,
+    "n": 37,
     "date": "23 March 1939",
     "year": 1939,
     "location": "Palestine",
@@ -6572,7 +6540,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 41,
+    "n": 38,
     "date": "April 1936-December 1939",
     "year": 1939,
     "location": "Palestine",
@@ -6604,7 +6572,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 42,
+    "n": 39,
     "date": "May 1939",
     "year": 1939,
     "location": "Halhul village",
@@ -6635,7 +6603,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 43,
+    "n": 40,
     "date": "15 June 1939",
     "year": 1939,
     "location": "Dajani hospital, Jaffa",
@@ -6666,7 +6634,7 @@
   },
   {
     "cat": "british-reprisal",
-    "n": 44,
+    "n": 41,
     "date": "July 1939",
     "year": 1939,
     "location": "near Nablus",
@@ -7100,7 +7068,7 @@
   },
   {
     "cat": "peace-band",
-    "n": 19,
+    "n": 21,
     "date": "March 1939",
     "year": 1939,
     "location": "'Arraba village near Jenin",
@@ -7131,7 +7099,41 @@
   },
   {
     "cat": "peace-band",
-    "n": 20,
+    "n": 22,
+    "date": "23 Mar 1939",
+    "year": 1939,
+    "location": "Sanur, Samaria",
+    "event": "Supreme rebel commander 'Abd al-Rahim al-Hajj Muhammad was located by Farid Irshayid's peace unit and besieged and killed by the Army at Sanur on information from the Irshayid family.",
+    "quote": "'Abd al-Rahim al-Hajj Muhammad, the Commander-in-Chief of the Revolt, was besieged by the Army on 26th March 1939 in the Saniir village",
+    "src": "Porath vol. 2 p. 257",
+    "srcType": "secondary",
+    "srcNote": "Corroborated: Hughes 2019 p. 263; Cohen, Army of Shadows p. 152; Survey of Palestine 1946 p. 48.",
+    "actor": "British Army (Irshayid info) + peace band",
+    "actorType": [
+      "peace-band",
+      "british"
+    ],
+    "scale": "1 C-in-C killed",
+    "scaleBig": "1",
+    "scaleNote": "date given as both 23rd and 26th March in text",
+    "links": [],
+    "searchTerms": [
+      "hajj muhammad",
+      "samaria",
+      "peace band",
+      "irshayid",
+      "sanur"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "al-Hajj Muhammad, the Commander-in-Chief of the Revolt, was besieged by the Army on 26th March 1939 in the Saniir village in Samaria and killed, following information received by the Army concerning his hiding-place, again from the Irshayid family, and Farid Irshayid, the 'peace band' commander, even took part in the si"
+      }
+    ]
+  },
+  {
+    "cat": "peace-band",
+    "n": 23,
     "date": "late May 1939",
     "year": 1939,
     "location": "rebel hideout near Sindiana",
@@ -7163,7 +7165,7 @@
   },
   {
     "cat": "peace-band",
-    "n": 21,
+    "n": 24,
     "date": "6 Jun 1939",
     "year": 1939,
     "location": "Burqin, near Jenin",
@@ -7195,7 +7197,7 @@
   },
   {
     "cat": "peace-band",
-    "n": 22,
+    "n": 25,
     "date": "Aug 1939",
     "year": 1939,
     "location": "'Arabah, Samaria",
