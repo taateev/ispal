@@ -3,99 +3,12 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Life in Ottoman Palestine, 1516–1917 — Compiled Inventories</title>
+<title>Life in Palestine — A Compiled Research Index, 1516–present</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="broadsheet.css" />
-<style>
-  /* ── Topic landing grid ─────────────────────────────────────────────── */
-  .topics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 18px;
-    margin: 8px 0 12px;
-  }
-  .topic {
-    display: flex;
-    flex-direction: column;
-    background: #f4efe4;
-    border: 1px solid #ddd4c2;
-    border-radius: 6px;
-    padding: 22px 24px 20px;
-    box-shadow: 0 18px 44px -30px rgba(40, 30, 18, 0.45);
-  }
-  .topic .tnum {
-    font-family: var(--label);
-    font-size: 10.5px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .topic h3 {
-    font-family: var(--serif);
-    font-weight: 600;
-    font-size: clamp(20px, 2.4vw, 25px);
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin: 0 0 9px;
-    color: var(--ink);
-  }
-  .topic h3 em { font-style: italic; font-weight: 500; color: var(--ink-2); }
-  .topic p {
-    font-family: var(--sans);
-    font-size: 13px;
-    line-height: 1.55;
-    color: var(--ink-2);
-    margin: 0 0 16px;
-    text-wrap: pretty;
-  }
-  .topic .tlinks {
-    margin-top: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .topic .tlinks a {
-    font-family: var(--label);
-    font-size: 12.5px;
-    font-weight: 600;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    padding: 4px 13px;
-    background: var(--paper);
-    transition: background 0.15s, color 0.15s, border-color 0.15s;
-  }
-  .topic .tlinks a:hover {
-    background: var(--accent);
-    color: var(--paper);
-    border-color: var(--accent);
-  }
-  .topic.soon { opacity: 0.72; }
-  .topic.soon h3 { color: var(--ink-2); }
-  .topic .badge {
-    font-family: var(--label);
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--ink-3);
-    border: 1px dashed var(--rule);
-    border-radius: 999px;
-    padding: 3px 11px;
-    margin-top: auto;
-    align-self: flex-start;
-  }
-
-  @media print {
-    html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .topic { break-inside: avoid; box-shadow: none; }
-  }
-</style>
+<link rel="stylesheet" href="landing.css" />
 </head>
 <body>
 <div class="wrap">
@@ -104,175 +17,72 @@
   <header class="mast">
     <div>
       <div class="eyebrow">Compiled Inventories · Corpus-Connected</div>
-      <h1>Life in Ottoman Palestine<br /><em>A compiled research index, 1516–1917</em></h1>
+      <h1>Life in Palestine<br /><em>A compiled research index, 1516–present</em></h1>
     </div>
     <div class="meta">
-      <b>Scope</b> · the full Ottoman period<br />
-      <b>Window</b> · 1516–1917 (conquest to the&nbsp;Mandate threshold)<br />
+      <b>Scope</b> · Ottoman conquest to the present<br />
+      <b>Window</b> · 1516–present, in four parts<br />
       <span class="faint">Each topic is an independent, source-tagged ledger,<br />tabulated from a multi-source corpus.</span>
     </div>
   </header>
 
   <p class="dek">
-    A set of descriptive inventories of life in Ottoman Palestine, drawn from a multi-source historical corpus.
-    Each topic is tabulated as a <em>neutral, source-tagged ledger</em> — rows surface the underlying passages,
-    and connected events are cross-linked across sheets. Choose a topic below.
+    A set of descriptive inventories of life in Palestine and the wider region, drawn from a multi-source historical
+    corpus. Each topic is tabulated as a <em>neutral, source-tagged ledger</em> — rows surface the underlying passages,
+    and connected events are cross-linked. Choose a period to enter.
   </p>
 
-  <!-- ── Headline stats ─────────────────────────────────────────────── -->
-  <div class="stats">
-    <div class="stat"><div class="n">3</div><div class="l">Live topics</div></div>
-    <div class="stat"><div class="n">7</div><div class="l">Inventory sheets</div></div>
-    <div class="stat"><div class="n">1516–1917</div><div class="l">Ottoman period</div></div>
-    <div class="stat"><div class="n">3</div><div class="l">Communities tracked</div></div>
-  </div>
+  <!-- ── Period chooser ─────────────────────────────────────────────── -->
+  <h2 class="section">Periods</h2>
+  <div class="periods">
 
-  <!-- ── Topics ─────────────────────────────────────────────────────── -->
-  <h2 class="section">Topics</h2>
-  <div class="topics">
-
-    <!-- 1 — Communities -->
-    <div class="topic">
-      <div class="tnum">01 · Live</div>
-      <h3>Communities</h3>
+    <a class="period" href="ottoman.html">
+      <div class="pspan">Part I · 1516–1917</div>
+      <h2>Ottoman Palestine</h2>
       <p>
-        Documented events by register — coercion (violence, extortion, expulsion), natural disaster, and
-        construction (immigration, halukah, institutions) — for each community of Ottoman Palestine. Click any
-        row to surface the underlying source passages; connected events are cross-linked.
+        The full Ottoman period — communities, in-migration cohorts, and population reconstruction across four
+        centuries, from the conquest to the Mandate threshold.
       </p>
-      <div class="tlinks">
-        <a href="jewish.html">Jewish</a>
-        <a href="samaritan.html">Samaritan</a>
-        <a href="christian.html">Christian</a>
-      </div>
-    </div>
+      <span class="enter">Enter →</span>
+    </a>
 
-    <!-- 2 — Immigration -->
-    <div class="topic">
-      <div class="tnum">02 · Live</div>
-      <h3>Immigration</h3>
+    <a class="period" href="mandate.html">
+      <div class="pspan">Part II · 1917–1948</div>
+      <h2>Mandatory Palestine</h2>
       <p>
-        In-migration cohorts across the full Ottoman period — each cohort's period, estimated scale, legal
-        status and land tenure, principal reception zones, and the evidentiary tradition behind it. Three matched
-        ledgers, ordered by start date and grouped into era bands.
+        The British Mandate — beginning with the Arab Revolt of 1936–39 as a multi-sided event ledger, held to the
+        same source-tagged discipline.
       </p>
-      <div class="tlinks">
-        <a href="muslim-migration-1516-1917.html">Muslim</a>
-        <a href="jewish-migration-1516-1917.html">Jewish</a>
-        <a href="christian-migration-1516-1917.html">Christian</a>
-      </div>
-    </div>
+      <span class="enter">Enter →</span>
+    </a>
 
-    <!-- 3 — Population & demography -->
-    <div class="topic">
-      <div class="tnum">03 · Live</div>
-      <h3>Population &amp; demography</h3>
+    <a class="period" href="contemporary.html">
+      <div class="pspan">Part III · 1948–present</div>
+      <h2>Contemporary</h2>
       <p>
-        How many people lived where, and of which community — rebuilt from Ottoman registers, European consular
-        estimates and travellers’ counts. The opening sheet reconstructs the population of the coastal plain across
-        the long nineteenth century, with every figure a range and its evidence marked.
+        After 1948 — Gaza's demography and casualty record, comparative atrocity figures, and the long run of
+        Palestinian &amp; Israeli survey opinion.
       </p>
-      <div class="tlinks">
-        <a href="coast-population-1800-1914.html">The coast · 1800–1914</a>
-      </div>
-    </div>
+      <span class="enter">Enter →</span>
+    </a>
 
-    <!-- 4 — Violence & coercion (in preparation) -->
-    <div class="topic soon">
-      <div class="tnum">04 · In preparation</div>
-      <h3>Violence &amp; coercion</h3>
+    <a class="period" href="wider-region.html">
+      <div class="pspan">Beyond Palestine · 1870–1992</div>
+      <h2>The wider region</h2>
       <p>
-        Extortion, expulsion, and communal violence as a distinct register — disaggregated by actor, period, and
-        target, and held to the same evidentiary tagging as the live sheets.
+        Jewish communities across the Middle East and North Africa — the near-total disappearance of a world after
+        1948, recorded as a demographic event log.
       </p>
-      <span class="badge">Coming soon</span>
-    </div>
-
-    <!-- 5 — Land & tenure (in preparation) -->
-    <div class="topic soon">
-      <div class="tnum">05 · In preparation</div>
-      <h3>Land &amp; tenure</h3>
-      <p>
-        How land was held and transferred — endowments and tax-farms, the 1858 Land Code, the 1867
-        foreign-ownership law, and the muhajir state grants — across the Ottoman centuries.
-      </p>
-      <span class="badge">Coming soon</span>
-    </div>
-
-    <!-- 6 — Halukah & extraction (in preparation) -->
-    <div class="topic soon">
-      <div class="tnum">06 · In preparation</div>
-      <h3>Halukah &amp; extraction</h3>
-      <p>
-        The halukah charity network and fiscal extraction rendered in human-scale terms — couple-years of
-        subsistence rather than obscure currency — from the corpus's cost-of-living anchors.
-      </p>
-      <span class="badge">Coming soon</span>
-    </div>
-
-  </div>
-
-  <!-- ── Mandatory Palestine era (1917–1948) ──────────────────────────── -->
-  <h2 class="section">Mandatory Palestine · 1917–1948</h2>
-  <div class="topics">
-
-    <!-- The Arab Revolt -->
-    <div class="topic">
-      <div class="tnum">Live · 1936–1939</div>
-      <h3>The Arab Revolt <em>· 1936–1939</em></h3>
-      <p>
-        The revolt as a multi-sided event ledger — an anti-colonial rising against Britain, a campaign against the
-        Yishuv, and the Palestinian civil war beneath both: Husayni-led rebels against the Nashashibi opposition and
-        the British-funded peace bands (<em>fasa'il al-salam</em>). 51 events across eight registers, an event
-        timeline, and click-to-expand corpus passages.
-      </p>
-      <div class="tlinks">
-        <a href="arab-revolt.html">The Arab Revolt · 1936–39</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ── Beyond the Ottoman period ──────────────────────────────────── -->
-  <h2 class="section">Beyond the Ottoman period</h2>
-  <div class="topics">
-
-    <!-- Jewish communities of the Arab world -->
-    <div class="topic">
-      <div class="tnum">Live · 1870–1992</div>
-      <h3>Jewish communities of the Arab world <em>· 1870–1992</em></h3>
-      <p>
-        The near-total disappearance of the Jewish communities of the Arab world and Turkey after 1948 — a demographic
-        event log that leads with the census figures, then records the laws, pogroms, and organised departures that moved
-        them. 65 events across six registers, a population curve, a by-community table, and click-to-read sources.
-      </p>
-      <div class="tlinks">
-        <a href="jewish-exodus-arab-lands.html">Jewish exodus · 1870–1992</a>
-      </div>
-    </div>
-
-    <!-- Gaza demographics — contemporary companion -->
-    <div class="topic">
-      <div class="tnum">Live · Contemporary</div>
-      <h3>Gaza demographics</h3>
-      <p>
-        Vital statistics and population growth in Gaza across three administrations — Mandate, Egyptian
-        (1948–67), and Israeli&nbsp;/&nbsp;Hamas (1967–) — natural increase, migration, mortality, fertility,
-        life expectancy, and density, charted against Egypt and world averages. Measured, modeled, and
-        estimated figures are tagged distinctly.
-      </p>
-      <div class="tlinks">
-        <a href="gaza-demographics.html">Tables &amp; charts</a>
-      </div>
-    </div>
+      <span class="enter">Enter →</span>
+    </a>
 
   </div>
 
   <!-- ── Colophon ───────────────────────────────────────────────────── -->
   <div class="colophon">
-    <span>Compiled Inventories — Ottoman Palestine</span>
-    <span><b>Research index</b> · 1516–1917 · corpus-connected</span>
-    <span>Communities · Immigration · more in preparation</span>
+    <span>Compiled Inventories — Palestine &amp; the wider region</span>
+    <span><b>Research index</b> · 1516–present · corpus-connected</span>
+    <span>Ottoman · Mandate · Contemporary · Wider region</span>
   </div>
 
 </div>

@@ -1,0 +1,153 @@
+/* landing.css — shared styles for the period chooser (index.html) and the period
+   sub-index pages (ottoman/mandate/contemporary/wider-region). Pairs with broadsheet.css
+   for the base tokens (--accent/--ink/--serif/--paper/--rule) and .wrap/.mast/.dek/etc. */
+
+/* ── breadcrumb back-link (sub-index pages) ─────────────────────────────── */
+.crumb {
+  font-family: var(--label);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 18px;
+}
+.crumb a { color: var(--accent); text-decoration: none; }
+.crumb a:hover { text-decoration: underline; }
+
+/* ── top-level period chooser (index.html) ──────────────────────────────── */
+.periods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 20px;
+  margin: 14px 0 12px;
+}
+.period {
+  display: flex;
+  flex-direction: column;
+  background: #f4efe4;
+  border: 1px solid #ddd4c2;
+  border-radius: 8px;
+  padding: 26px 28px 24px;
+  box-shadow: 0 18px 44px -30px rgba(40, 30, 18, 0.45);
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.period:hover {
+  border-color: var(--accent);
+  box-shadow: 0 22px 52px -28px rgba(40, 30, 18, 0.5);
+  transform: translateY(-2px);
+}
+.period .pspan {
+  font-family: var(--label);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.period h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 31px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: 0 0 10px;
+  color: var(--ink);
+  border: 0;
+  padding: 0;
+}
+.period h2 em { font-style: italic; font-weight: 500; color: var(--ink-2); }
+.period p {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 0 0 18px;
+  text-wrap: pretty;
+}
+.period .enter {
+  margin-top: auto;
+  font-family: var(--label);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.period.soon { opacity: 0.66; pointer-events: none; }
+
+/* ── topic grid (period sub-index pages) ────────────────────────────────── */
+.topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+  margin: 8px 0 12px;
+}
+.topic {
+  display: flex;
+  flex-direction: column;
+  background: #f4efe4;
+  border: 1px solid #ddd4c2;
+  border-radius: 6px;
+  padding: 22px 24px 20px;
+  box-shadow: 0 18px 44px -30px rgba(40, 30, 18, 0.45);
+}
+.topic .tnum {
+  font-family: var(--label);
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.topic h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(20px, 2.4vw, 25px);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0 0 9px;
+  color: var(--ink);
+}
+.topic h3 em { font-style: italic; font-weight: 500; color: var(--ink-2); }
+.topic p {
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 0 0 16px;
+  text-wrap: pretty;
+}
+.topic .tlinks { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; }
+.topic .tlinks a {
+  font-family: var(--label);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 4px 13px;
+  background: var(--paper);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.topic .tlinks a:hover { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+.topic.soon { opacity: 0.72; }
+.topic.soon h3 { color: var(--ink-2); }
+.topic .badge {
+  font-family: var(--label);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-3);
+  border: 1px dashed var(--rule);
+  border-radius: 999px;
+  padding: 3px 11px;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+@media print {
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .topic, .period { break-inside: avoid; box-shadow: none; }
+}
