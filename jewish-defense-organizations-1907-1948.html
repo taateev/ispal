@@ -43,6 +43,31 @@
   figure.plate .pc { font-size:11.5px; line-height:1.45; color:var(--ink-2); }
   figure.plate .pc b { color:var(--ink); font-weight:600; }
   figure.plate .ps { font-size:9.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-4); margin-top:3px; }
+
+  .tl-legend { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 14px; font-family:var(--sans); }
+  .tl-legend .lg { font-size:10.5px; font-weight:600; letter-spacing:.02em; padding:4px 10px; border-radius:6px; border:1px solid var(--rule-soft); display:inline-flex; align-items:center; gap:6px; color:var(--ink-2); }
+  .tl-legend .sw { width:10px; height:10px; border-radius:3px; display:inline-block; }
+  .tlsub { font-family:var(--sans); font-size:13px; font-style:italic; color:var(--ink-3); margin:6px 0 10px; }
+  table.tl { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13.5px; margin:2px 0 26px; }
+  table.tl thead th { text-align:left; font-family:var(--sans); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-4); font-weight:600; padding:7px 10px 9px; border-bottom:1px solid var(--rule); }
+  table.tl tbody td { padding:11px 10px; border-bottom:1px solid var(--rule-soft); vertical-align:top; line-height:1.45; }
+  table.tl tbody tr { border-left:4px solid var(--rule); }
+  tr.c-vio { border-left-color:var(--accent); }
+  tr.c-def { border-left-color:var(--accent-4); }
+  tr.c-pol { border-left-color:var(--accent-5); }
+  tr.c-hol { border-left-color:#6b5b7a; }
+  tr.c-ship{ border-left-color:var(--accent-3); }
+  tr.c-def td:first-child, tr.c-def td:nth-child(4) { background:rgba(58,74,107,0.045); }
+  .tl .ev { font-weight:700; color:var(--ink); }
+  .tl .dt { font-family:var(--mono); font-size:11.5px; color:var(--ink-3); white-space:nowrap; }
+  .tl .resp { color:var(--ink-2); }
+  .tl .resp b { color:var(--ink); font-weight:600; }
+  .tl .arrow { color:var(--accent-4); font-weight:700; }
+  .caus { font-family:var(--sans); font-size:9px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; white-space:nowrap; display:inline-flex; align-items:center; gap:5px; padding:3px 8px; border-radius:11px; border:1px solid var(--rule-soft); }
+  .caus .d { font-size:11px; letter-spacing:1px; line-height:1; }
+  .caus.direct, .caus.direct .d { color:var(--accent-3); }
+  .caus.catalyst, .caus.catalyst .d { color:var(--accent-5); }
+  .caus.context, .caus.context .d { color:var(--ink-4); }
 </style>
 </head>
 <body>
@@ -149,14 +174,64 @@
   </table>
   </div>
 
-  <h2 class="section">The cycle, event by event</h2>
-  <div class="chain">
-    <div class="ch"><div class="ev">1908 · Arab militancy</div><div class="arr">→ <b>HaShomer</b> (1909)</div></div>
-    <div class="ch"><div class="ev">1920 · Tel Hai + Nebi Musa</div><div class="arr">→ <b>Haganah</b> (1920)</div></div>
-    <div class="ch"><div class="ev">1929 · Hebron / Buraq riots</div><div class="arr">→ <b>Irgun</b> (1930–31)</div></div>
-    <div class="ch"><div class="ev">1936–39 · the Arab Revolt</div><div class="arr">→ <b>Notrim · FOSH · Night Squads</b></div></div>
-    <div class="ch exc"><div class="ev">1940 · against Britain</div><div class="arr">→ <b>Lehi</b> — the break in the pattern</div></div>
+  <h2 class="section">The full causal timeline · 1907–1947</h2>
+  <p class="tlsub">Violence, defense organizations, British policy, the Holocaust, and the refugee ships — figures corrected to the corpus (both-sides casualties), the causation column marked <em>interpretation, not fact</em>.</p>
+  <div class="tl-legend">
+    <span class="lg"><span class="sw" style="background:var(--accent)"></span>Attack / violence</span>
+    <span class="lg"><span class="sw" style="background:var(--accent-4)"></span>Defense org / split</span>
+    <span class="lg"><span class="sw" style="background:var(--accent-5)"></span>British policy</span>
+    <span class="lg"><span class="sw" style="background:#6b5b7a"></span>Holocaust / genocide</span>
+    <span class="lg"><span class="sw" style="background:var(--accent-3)"></span>Refugee ship</span>
+    <span class="lg"><span class="caus direct"><span class="d">●●●</span> Direct cause</span></span>
+    <span class="lg"><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></span>
+    <span class="lg"><span class="caus context"><span class="d">●○○</span> Context</span></span>
   </div>
+
+  <h3 style="font-family:var(--serif);font-weight:600;font-size:19px;margin:16px 0 2px;color:var(--ink);">Pre-1939 · attacks and the defense response</h3>
+  <p class="tlsub">Each wave of violence exposed the inadequacy of the current defense structure, spawning a more militant successor.</p>
+  <div style="overflow-x:auto;">
+  <table class="tl">
+    <thead><tr><th>Event</th><th>Date</th><th>Impact</th><th>Response</th><th>Causation</th></tr></thead>
+    <tbody>
+      <tr class="c-vio"><td><span class="ev">Early settlement raids</span></td><td><span class="dt">pre-1907</span></td><td>Ongoing Bedouin / Arab theft and assaults on the colonies</td><td class="resp"><span class="arrow">→</span> <b>Bar-Giora founded</b> (Sept 1907) — fused with the conquest-of-guarding program</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-def"><td><span class="ev">Bar-Giora too small to scale</span></td><td><span class="dt">1908–09</span></td><td>~12 members; could not cover the settlements</td><td class="resp"><span class="arrow">→</span> <b>HaShomer founded</b> (Apr 1909), amid post-1908 Arab militancy</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-vio"><td><span class="ev">Battle of Tel Hai</span></td><td><span class="dt">Mar 1920</span></td><td><b>6 defenders killed</b> (incl. Trumpeldor); dozens of Arab attackers also died</td><td class="resp">Became a cornerstone of Zionist myth</td><td><span class="caus context"><span class="d">●○○</span> Context</span></td></tr>
+      <tr class="c-vio"><td><span class="ev">Nebi Musa / Jerusalem riots</span></td><td><span class="dt">Apr 1920</span></td><td>5 Jews + 4 Arabs killed, ~240 wounded</td><td class="resp"><span class="arrow">→</span> <b>Haganah founded</b> (Jun 1920) — "a sobering awakening" re British protection</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-vio"><td><span class="ev">Jaffa riots</span></td><td><span class="dt">May 1921</span></td><td>~47 Jews + ~48 Arabs killed</td><td class="resp">Haganah expands; adopts <i>havlagah</i> (restraint)</td><td><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></td></tr>
+      <tr class="c-vio"><td><span class="ev">Hebron / Buraq riots</span></td><td><span class="dt">Aug 1929</span></td><td><b>133 Jews + 116 Arabs killed</b> (most Arabs by British forces suppressing the riots); 67 Jews massacred at Hebron</td><td class="resp"><i>Havlagah</i> increasingly seen as a failure</td><td><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></td></tr>
+      <tr class="c-def"><td><span class="ev">Frustration with Haganah restraint</span></td><td><span class="dt">1930–31</span></td><td>An ideological + tactical split</td><td class="resp"><span class="arrow">→</span> <b>Irgun</b> (Irgun Bet) founded, rejecting <i>havlagah</i></td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-vio"><td><span class="ev">The Arab Revolt</span></td><td><span class="dt">1936–39</span></td><td>~500 Jews killed — and <b>far more Arabs</b> (≈5,000+: British suppression + intra-Arab killing)</td><td class="resp"><span class="arrow">→</span> <b>Notrim, FOSH, Wingate's Night Squads</b>; Britain → the 1939 White Paper</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 style="font-family:var(--serif);font-weight:600;font-size:19px;margin:18px 0 2px;color:var(--ink);">Post-1939 · White Papers, the Holocaust, and the blockade</h3>
+  <p class="tlsub">Three White Papers ratcheted down immigration; then the Holocaust began and the door was shut.</p>
+  <div style="overflow-x:auto;">
+  <table class="tl">
+    <thead><tr><th>Event</th><th>Date</th><th>Impact</th><th>Response</th><th>Causation</th></tr></thead>
+    <tbody>
+      <tr class="c-pol"><td><span class="ev">Churchill White Paper</span></td><td><span class="dt">Jun 1922</span></td><td>Tied immigration to "economic absorptive capacity"</td><td class="resp">The first formal restriction</td><td><span class="caus context"><span class="d">●○○</span> Context</span></td></tr>
+      <tr class="c-pol"><td><span class="ev">Passfield White Paper</span></td><td><span class="dt">Oct 1930</span></td><td>Restricted immigration + land purchase, after the 1929 riots</td><td class="resp">Reversed under Zionist pressure (the 1931 MacDonald "Black Letter")</td><td><span class="caus context"><span class="d">●○○</span> Context</span></td></tr>
+      <tr class="c-pol"><td><span class="ev">MacDonald White Paper</span></td><td><span class="dt">May 1939</span></td><td>Capped immigration at 75,000 over 5 yrs; an Arab veto thereafter</td><td class="resp">On the eve of WWII — shut the door at the worst possible moment</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-def"><td><span class="ev">Irgun declares a wartime truce</span></td><td><span class="dt">Sept 1939</span></td><td>Irgun suspends anti-British operations for WWII</td><td class="resp">Stern rejects it <span class="arrow">→</span> <b>Lehi founded</b> (Aug 1940)</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-ship"><td><span class="ev">SS Patria</span></td><td><span class="dt">Nov 1940</span></td><td><b>252 refugees killed by a Haganah sabotage</b> that miscalculated the charge — an attempt to stop the deportation of 1,700 to Mauritius</td><td class="resp">— (not a British killing, despite the deportation policy behind it)</td><td><span class="caus context"><span class="d">●○○</span> Context</span></td></tr>
+      <tr class="c-def"><td><span class="ev">Axis threat to Palestine</span></td><td><span class="dt">1941</span></td><td>Rommel advancing through North Africa</td><td class="resp"><span class="arrow">→</span> <b>Palmach founded</b> (1941), with British cooperation</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-hol"><td><span class="ev">Wannsee Conference</span></td><td><span class="dt">Jan 1942</span></td><td>The "Final Solution" formalized</td><td class="resp">The British immigration quota left unchanged</td><td><span class="caus context"><span class="d">●○○</span> Context</span></td></tr>
+      <tr class="c-ship"><td><span class="ev">MV Struma</span></td><td><span class="dt">Feb 1942</span></td><td><b>769 aboard, 1 survivor</b> — torpedoed by a Soviet submarine, traceable to a British transshipment veto</td><td class="resp">Britain ends the policy of returning caught refugees to Europe</td><td><span class="caus context"><span class="d">●○○</span> Context</span></td></tr>
+      <tr class="c-hol"><td><span class="ev">Extermination camps at peak</span></td><td><span class="dt">1942–44</span></td><td>Auschwitz, Treblinka, Sobibor at full capacity</td><td class="resp">Only ~51,000 of the 75,000 certificates were ever used</td><td><span class="caus context"><span class="d">●○○</span> Context</span></td></tr>
+      <tr class="c-hol"><td><span class="ev">WWII ends</span></td><td><span class="dt">May 1945</span></td><td>~6 million Jews dead</td><td class="resp">~250,000 survivors in DP camps; the White Paper still enforced</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-pol"><td><span class="ev">The blockade / Aliyah Bet</span></td><td><span class="dt">1945–48</span></td><td>~50,000 refugees intercepted, interned in Cyprus camps</td><td class="resp">Drove the post-war illegal-immigration campaign</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-ship"><td><span class="ev">SS Exodus 1947</span></td><td><span class="dt">Jul 1947</span></td><td>4,500 survivors; 3 killed — rammed, then returned all the way to DP camps in Germany</td><td class="resp">Global outrage <span class="arrow">→</span> momentum toward the UN partition vote</td><td><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="fignote">
+    <b>On the figures.</b> Casualty counts are corpus-corrected and given <b>both-sides</b> where that is what the number is — the
+    1929 "249" is 133 Jews + 116 Arabs (most Arabs killed by British forces); the Revolt killed far more Arabs than Jews; the
+    <i>Patria</i>'s 252 dead were caused by a Haganah sabotage, not Britain. The <b>causation column is interpretation, not fact</b>
+    — it marks the author's read of how directly each event drove the next, and is the most contestable part of the table.
+  </p>
 
   <h2 class="section">The verdict — largely true, with two caveats</h2>
   <p class="dek" style="margin-top:6px">
