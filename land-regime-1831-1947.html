@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Law of the Land — the Land Regime as a Derivation Graph, 1831–1947</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* page-scoped — uses shared tokens from broadsheet.css */
+  .lede-epi { font-family: var(--serif); font-style: italic; font-size: clamp(17px,2vw,21px); line-height:1.5; color: var(--ink); border-left: 3px solid var(--accent); padding: 4px 0 4px 18px; margin: 26px 0 8px; max-width: 760px; }
+  .lede-epi span { display:block; font-style: normal; font-family: var(--sans); font-size: 12.5px; color: var(--ink-3); margin-top: 8px; letter-spacing:0.01em; }
+
+  .note { font-family:var(--sans); font-size:12.5px; line-height:1.6; color:var(--ink-3); background: rgba(0,0,0,0.018); border-left:2px solid var(--rule); padding:12px 16px; margin:16px 0; max-width:880px; }
+  .note b { color: var(--ink-2); }
+
+  .reg-split { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:8px 0; }
+  .reg-split > div { background:var(--paper); padding:13px 14px; }
+  .reg-split .place { font-family:var(--sans); font-size:11px; font-weight:600; color:var(--ink); text-transform:uppercase; letter-spacing:.05em; }
+  .reg-split .big { font-family:var(--mono); font-size:20px; font-weight:600; color:var(--accent); margin:3px 0 1px; }
+  .reg-split .sm { font-family:var(--sans); font-size:11px; color:var(--ink-3); }
+
+  /* ── DAG canvas ── */
+  .dagwrap { border:1px solid var(--rule); background: rgba(255,255,255,0.42); margin:14px 0 6px; overflow-x:auto; }
+  .dagwrap svg { display:block; }
+  .dag-node { cursor:pointer; }
+  .dag-node rect { fill: var(--paper); stroke-width:1.2; rx:3; }
+  .dag-node text { font-family: var(--sans); font-size:9.6px; fill: var(--ink-2); pointer-events:none; }
+  .dag-node .nd-date { font-family: var(--mono); font-size:8.2px; fill: var(--ink-4); }
+  .dag-node.dim { opacity: 0.18; }
+  .dag-edge { fill:none; stroke-width:1.25; opacity:0.55; }
+  .dag-edge.lv-stat { stroke: var(--accent); stroke-width:1.7; opacity:0.8; }
+  .dag-edge.lv-doc  { stroke: var(--accent-3); }
+  .dag-edge.lv-int  { stroke: #8a8576; stroke-dasharray: 4 3; }
+  .dag-edge.dim { opacity: 0.05; }
+  .dag-edge.hot { opacity: 1; stroke-width: 2.4; }
+  .lane-label { font-family: var(--sans); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; }
+  .lane-band { opacity: 0.05; }
+  .year-tick { font-family: var(--mono); font-size:9px; fill: var(--ink-4); }
+  .year-line { stroke: var(--rule-soft); stroke-width:1; }
+
+  .dag-legend { display:flex; flex-wrap:wrap; gap:18px; font-family:var(--sans); font-size:11px; color:var(--ink-3); margin:10px 2px 0; align-items:center; }
+  .dag-legend .sw { display:inline-block; width:22px; height:0; border-top:2px solid; vertical-align:middle; margin-right:6px; }
+  .dag-legend .sw.dash { border-top-style:dashed; }
+
+  #dag-detail { border:1px solid var(--rule); border-left:4px solid var(--accent); background:rgba(255,255,255,0.5); padding:14px 18px; margin:12px 0 4px; font-family:var(--sans); font-size:12.5px; line-height:1.55; color:var(--ink-2); min-height:20px; }
+  #dag-detail .dn { font-weight:700; color:var(--ink); font-size:13.5px; }
+  #dag-detail .dd { font-family:var(--mono); font-size:11px; color:var(--ink-4); margin-left:8px; }
+  #dag-detail .erow { padding:4px 0 4px 12px; border-left:2px solid var(--rule-soft); margin-top:6px; }
+  #dag-detail .et { color:var(--accent); font-weight:600; }
+  #dag-detail .ev { color:var(--ink-4); font-size:11px; }
+  #dag-tip { position:fixed; pointer-events:none; background:var(--ink); color:var(--paper); font-family:var(--sans); font-size:11px; line-height:1.45; padding:7px 10px; border-radius:3px; max-width:300px; opacity:0; transition:opacity .08s; z-index:50; }
+
+  /* findings */
+  .findings { margin:14px 0 8px; }
+  .fv { display:grid; grid-template-columns: 30px 1fr; gap:14px; padding:13px 0; border-bottom:1px solid var(--rule-soft); }
+  .fv .fn { font-family:var(--mono); font-size:13px; color:var(--ink-4); font-weight:500; }
+  .fv .fh { font-family:var(--sans); font-size:12px; font-weight:700; color:var(--ink); letter-spacing:.01em; }
+  .fv .ft { font-family:var(--serif); font-size:14.5px; line-height:1.55; color:var(--ink-2); margin-top:4px; }
+  .fv .ft em { color:var(--accent); font-style:normal; font-weight:600; }
+
+  /* event-log tables */
+  table.dt { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13.5px; margin: 4px 0 8px; }
+  table.dt thead th { text-align:left; font-family:var(--sans); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); font-weight:600; padding:8px 10px 10px; border-bottom:1px solid var(--rule); }
+  table.dt tbody td { padding:9px 10px; border-bottom:1px solid var(--rule-soft); text-align:left; vertical-align:top; }
+  .dt .lab { font-weight:600; color:var(--ink); }
+  .dt .date { font-family:var(--mono); font-size:11.5px; color:var(--ink-3); white-space:nowrap; }
+  .dt .src { font-family:var(--sans); font-size:11px; color:var(--ink-3); }
+  .lvl { display:inline-block; font-family:var(--sans); font-size:8.6px; letter-spacing:.09em; text-transform:uppercase; font-weight:700; padding:2px 7px; border-radius:10px; white-space:nowrap; }
+  .lvl.stat { background: var(--accent); color: var(--paper); }
+  .lvl.doc  { background: var(--accent-3); color: var(--paper); }
+  .lvl.inst { background: #7a6a4f; color: var(--paper); }
+  .lvl.int  { background: var(--paper-3); color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Corpus Synthesis · Law &amp; Land</div>
+      <h1>The Law of the Land<br /><em>The land regime as a derivation graph, 1831–1947</em></h1>
+    </div>
+    <div class="meta">
+      <b>Question</b> · how did the land regime's instruments and ideas derive from one another?<br />
+      <b>Method</b> · a directed acyclic graph — 53 dated artifacts, 66 documented-derivation edges<br />
+      <span class="faint">Ongley · Young · Fisher · Bentwich · <i>Survey of Palestine</i> ·<br />Granott · Stein · Bunton · Schölch · Cohen</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;All periods</a> &nbsp;·&nbsp; <a href="ottoman.html">Ottoman Palestine</a> &nbsp;·&nbsp; <a href="mandate.html">Mandatory Palestine</a>
+  </nav>
+
+  <p class="lede-epi">
+    "This Ordinance applies to all immovable property the subject of the Land Law of 7th Ramadan, 1274 A.H."
+    <span>— Transfer of Land Ordinance, 1920: a British statute defining its own scope by a Hijri-dated Ottoman code. The Mandate never replaced Ottoman land law.</span>
+  </p>
+
+  <p class="dek">
+    Every statute, translation, register, commission report, transaction and fatwa in the land regime is a <em>dated artifact</em> —
+    so their citation and derivation relations form a directed acyclic graph. Drawn that way, the system's structure becomes
+    computable: the 1858 Ottoman Land Code is the hub <em>and</em> the single point of failure; the deepest derivation chain runs
+    through transactions and reactions, not legal doctrine; and the British administered the whole edifice through a two-step
+    translation chain, Turkish&nbsp;→&nbsp;French&nbsp;→&nbsp;English. Edges are <em>documented derivations only</em> — verbatim citation down to
+    historian attribution, each marked.
+  </p>
+
+  <h2 class="section">The graph · six tracks, 1831–1947</h2>
+  <p class="fignote">Time runs left to right; pre-1800 doctrine roots sit in the left gutter. Click a node to trace its derivations; hover an edge for its evidence. Solid dark edges are verbatim statute citations; dashed edges are historian-attributed.</p>
+
+  <div class="dagwrap"><svg id="dag" role="img" aria-label="Derivation graph of the Palestine land regime, 1831 to 1947"></svg></div>
+  <div class="dag-legend">
+    <span><span class="sw" style="border-color:var(--accent)"></span>verbatim statute/document citation</span>
+    <span><span class="sw" style="border-color:var(--accent-3)"></span>primary-document derivation</span>
+    <span><span class="sw dash" style="border-color:#8a8576"></span>historian-attributed</span>
+    <span style="margin-left:auto" class="faint">click empty space to reset</span>
+  </div>
+  <div id="dag-detail">Click a node to list its documented derivations.</div>
+  <div id="dag-tip"></div>
+
+  <h2 class="section">Computed structure</h2>
+  <div class="reg-split">
+    <div><div class="place">Hub</div><div class="big">15 : 3</div><div class="sm">out-degree of the 1858 Land Code vs. the next-highest node in the graph</div></div>
+    <div><div class="place">Cut vertex</div><div class="big">13</div><div class="sm">nodes stranded if the 1858 Code is removed — incl. three Mandate ordinances</div></div>
+    <div><div class="place">Longest path</div><div class="big">8 edges</div><div class="sm">1856 → 1867 law → purchase waves → 1935 fatwa → Revolt → WP 1939 → LTR 1940 → Survey 1946</div></div>
+    <div><div class="place">Shape</div><div class="big">53 · 66</div><div class="sm">nodes · edges; validated acyclic, every node reachable from a root</div></div>
+  </div>
+
+  <h2 class="section">Seven findings</h2>
+  <div class="findings">
+    <div class="fv"><div class="fn">01</div><div>
+      <div class="fh">The Mandate never replaced Ottoman land law — structurally, not impressionistically</div>
+      <div class="ft">Every Mandate land instrument with a doctrinal parent has the 1858 Code as that parent. The Transfer of Land Ordinance defines its scope by "the Land Law of 7th Ramadan, 1274"; the Mewat Land Ordinance opens by citing <em>Article 103</em> of the Code; Settlement of Title classifies parcels by the Code's own categories. British innovation is procedural (cadastre, settlement of title) — the substance stays Ottoman. The Code is simultaneously the graph's hub and its single point of failure.</div>
+    </div></div>
+    <div class="fv"><div class="fn">02</div><div>
+      <div class="fh">The deepest chain is action–reaction across tracks, not doctrine-elaboration within one</div>
+      <div class="ft">The longest path runs <em>legal enablement → market behavior → religious-political counter-mobilization → imperial policy reversal → restriction law</em>: the 1856 reform pledge, the 1867 foreigners' law, two purchase waves, the 1935 fatwa, the Revolt, the 1939 White Paper, the 1940 Land Transfers Regulations, the 1946 Survey. Every purely legal chain is shorter. Responses to transactions, not legal development, propel the system.</div>
+    </div></div>
+    <div class="fv"><div class="fn">03</div><div>
+      <div class="fh">A two-step translation bottleneck, attested at each hop</div>
+      <div class="ft">The Mandate administered Ottoman law through English texts derived from French texts derived from the Turkish: the Code → Young's <i>Corps de droit ottoman</i> (1905–06) → Fisher's <i>Ottoman Land Laws</i> (1919) — <em>"based on the French translations in Mr. George Young's Corps,"</em> by Fisher's own preface. Two translators stand between the operative statute and every British land officer who applied it for thirty years.</div>
+    </div></div>
+    <div class="fv"><div class="fn">04</div><div>
+      <div class="fh">The commission cascade mutates its central concept at every hop</div>
+      <div class="ft">1929 violence → Shaw → Hope Simpson (cites Shaw) → Passfield (walked back by the MacDonald Letter) → the French Reports → Peel → Woodhead → White Paper → LTR 1940. Along the chain, "landless Arab" narrows from Hope Simpson's structural <em>29.4%</em> estimate to French's operationalized register — 3,271 claims, 899 accepted, ~74 families resettled — to Peel's reuse, to the White Paper's premise. Same label, four referents: a paraphrase chain running through official documents.</div>
+    </div></div>
+    <div class="fv"><div class="fn">05</div><div>
+      <div class="fh">The doctrinal and empirical tracks first merge in 1928</div>
+      <div class="ft">Before the Mandate, the empirical track's only node is the tabu register record — which the Survey of Palestine itself calls <em>"the merest guess."</em> The Land (Settlement of Title) Ordinance 1928 is the first node with parents in both tracks (the Code's categories + Dowson's tenure studies + the cadastral survey) — which is exactly why parcel-level tenure becomes knowable only from that decade, and then for only ~18% of Palestine by 1945.</div>
+    </div></div>
+    <div class="fv"><div class="fn">06</div><div>
+      <div class="fh">The Arab response track derives from transactions, never from statutes</div>
+      <div class="ft">Every node in the response track is parented by a <em>sale</em> — the Fula transfer → the al-ʿIsa petition to Istanbul; the sales waves → the 1925 and 1935 fatwas — and none by a British instrument. The registers engaged are Ottoman-constitutional (a mukhtar petitioning the capital) and Islamic-legal (the 1925 Gaza fatwa ruling that sellers' Jewish buyers had <em>"ceased to be ahl al-dhimma"</em>). Two decades into British administration, the land conflict's Arab-side intellectual history still ran in Ottoman and Islamic registers. <i>(A structural observation on documented edges — not a claim about Arab engagement with Mandate institutions generally.)</i></div>
+    </div></div>
+    <div class="fv"><div class="fn">07</div><div>
+      <div class="fh">The only non-state roots are the Zionist institutions — and they head the longest chain</div>
+      <div class="ft">Every other root is a state decree, a doctrine, or a shock. The JNF (1901) and Ruppin's Palestine Office (1907–08) enter with no in-window parents, connect to the state system almost solely through the 1867 enablement edge, and stand at the head of the system's longest derivation chain. Privately-rooted institutional initiative, legally enabled in 1867, is what the rest of the graph spends 1910–1940 responding to.</div>
+    </div></div>
+  </div>
+
+  <div class="note">
+    <b>Discipline.</b> Edges record documented derivation only — each carries a relation type and an evidence grade, from verbatim
+    citation inside a statute text down to historian attribution; no "influence" edges without a documentary basis. Behavioral
+    feedback (fatwa enforcement suppressing sales; restrictions reshaping purchase strategy) is real but lives outside the
+    formalism: it surfaces as <i>later dated nodes</i>, never as back-edges — which is what keeps the graph acyclic by construction.
+    Excluded for want of corpus attestation: Tute's 1927 commentary, a JNF-inalienability doctrine edge, and the muhajir grant
+    regime (demographically minor west of the Jordan).
+  </div>
+
+  <h2 class="section">Event log · the Ottoman reform era, 1831–1914</h2>
+  <p class="fignote">Statute rows marked <span class="lvl stat">statute</span> are in-corpus at full text — Ongley's 1892 English Code, Young's French texts, Fisher's 1919 compilation. Hijri dates as in the originals.</p>
+  <div class="tablewrap"><table class="dt">
+    <thead><tr><th>Date</th><th>Instrument / event</th><th>Operative content</th><th>Source</th><th>Level</th></tr></thead>
+    <tbody>
+      <tr><td class="date">1831–40</td><td class="lab">Egyptian occupation</td><td>Extraction reorganized — <i>ferde</i> poll-tax, direct collection, tax-farming abrogated, monopolies, corvée, conscription census. <b>Land tenure untouched</b>: no title or category change in any era source.</td><td class="src">Maʿoz; Doumani; Fahmy; Rustum</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">3 Nov 1839</td><td class="lab">Hatt-i Şerif of Gülhane</td><td>Security of life, honor and <b>property</b>; regularized taxation and conscription.</td><td class="src">Hurewitz I, doc. 83 (full text)</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1845</td><td class="lab">Werry consular survey</td><td>Tenure-mode proxy on the eve of reform (500 Aleppo-region villages): ~60% tax-farmed miri, 12% malikâne, 10% waqf, 2% timar.</td><td class="src">Werry via Maʿoz</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">18 Feb 1856</td><td class="lab">Hatt-i Hümayun</td><td>The foreign-ownership <b>promise</b>: "lawful for foreigners to possess landed property… after arrangements."</td><td class="src">Hurewitz I, doc. 104 (full text)</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">Apr 1858</td><td class="lab">Ottoman Land Code <span class="date">(7 Ram. 1274)</span></td><td>Five categories — mulk / miri / waqf / metruke / mewat; the miri cultivator holds usufruct (<i>tasarruf</i>) only; Art. 68 three-year reversion; Art. 8 against communal (<i>musha'</i>) forms.</td><td class="src">Ongley 1892 (Eng.); Young VI (Fr.)</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">14 Dec 1858</td><td class="lab">Tapu Law</td><td>Obligatory title-deeds for state land — the registration regime's birth.</td><td class="src">Fisher 1919; Granott</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1860</td><td class="lab">Tapu Seneds Regulations</td><td>Deed forms, fees, registration machinery.</td><td class="src">Fisher 1919</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">21 May 1867</td><td class="lab">Inheritance-extension law</td><td>Widened heir classes on miri — raising heritability of usufruct toward de-facto ownership.</td><td class="src">Fisher 1919</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">16 Jun 1867</td><td class="lab">Foreigners' property law <span class="date">(7 Safer 1284)</span></td><td>Foreigners admitted to immovable property "on the same footing as Ottoman subjects," the Hejaz excepted — executing the 1856 promise; the legal basis of the entire pre-1914 foreign-vehicle purchase footprint.</td><td class="src">Young I, Titre XX (full Fr. text); Fisher 1919</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1869</td><td class="lab">Sursuq purchase</td><td>~230,000 dunams of the Jezreel plain from the Ottoman state to a Beirut absentee family.</td><td class="src">Granott 1952</td><td><span class="lvl inst">institutional</span></td></tr>
+      <tr><td class="date">26 Dec 1869</td><td class="lab">Forced-sale law</td><td>Court-ordered sale of immovables for debt — the statutory machinery of the debt-to-effendi concentration pathway.</td><td class="src">Fisher 1919</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">10 Sep 1874</td><td class="lab">Pure-mulk deeds law</td><td>Deed regime for existing freehold; paired with the bar on miri→mulk conversion — <b>freezing the freehold pool</b> at the urban/garden stock.</td><td class="src">Fisher 1919; Granott</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1876</td><td class="lab">Land laws of 1293</td><td>Yoklama regularization; deeds for undocumented possession.</td><td class="src">Fisher 1919</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1878</td><td class="lab">Petah Tikva purchase</td><td>First new-Yishuv rural colony land.</td><td class="src">Frumkin chronicle</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1881–1908</td><td class="lab">Hamidian restrictions</td><td>Administrative restrictions on Jewish immigration and purchase — the reform era's qualifier.</td><td class="src">Mandel</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">1883</td><td class="lab">Emlak law</td><td>Properties-and-land registration follow-up, incl. persons excluded under the 1867 law.</td><td class="src">Fisher 1919</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1882–1914</td><td class="lab">Purchase aggregate</td><td>Jewish landholding 25,000 → 420,600 dunams (16,400 JNF + 404,200 PICA/private at 1914).</td><td class="src">Survey of Palestine 1946, Table 4</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1910–11</td><td class="lab">Fula / Sursuq transfer</td><td>~10,000 dunams of Marj ibn ʿAmir to the JNF; the mukhtar al-ʿIsa's May 1910 petition to Istanbul — the canonical late-Ottoman transaction and a rare unfiltered rural voice.</td><td class="src">Fishman; Mandel</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1913</td><td class="lab">Provisional laws of 1331</td><td>Nine laws, incl. general mortgageability of immovables and possession reform — miri rendered freely mortgageable and sellable; functional privatization of usufruct.</td><td class="src">Fisher 1919 (contemporary digest)</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1917–18</td><td class="lab">Register destruction</td><td>"The Turkish authorities took away or destroyed many of the books before they evacuated Palestine."</td><td class="src">Mandate report via Bunton</td><td><span class="lvl doc">primary</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section">Event log · the Mandate, 1918–1947</h2>
+  <div class="tablewrap"><table class="dt">
+    <thead><tr><th>Date</th><th>Instrument / event</th><th>Operative content</th><th>Source</th><th>Level</th></tr></thead>
+    <tbody>
+      <tr><td class="date">18 Nov 1918</td><td class="lab">OETA registry closure</td><td>Land transactions frozen — the exact date attested inside the 1920 Ordinance that cancels it.</td><td class="src">Bentwich I (LTO §3)</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">Aug 1920</td><td class="lab">Transfer of Land Ordinance</td><td>"No disposition of immovable property shall be valid" without prior written Government consent; applies to all categories of "the Land Law of 7th Ramadan, 1274" <i>plus</i> mulk and waqf.</td><td class="src">Bentwich I (full text)</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">1920 / 1921</td><td class="lab">Mahlul &amp; Mewat Land Ordinances</td><td>Escheat notification compelled (three-month window, penalties); the Mewat Ordinance opens by citing Land Code Art. 103 and closes the vivification-by-cultivation route.</td><td class="src">Bentwich I (full texts)</td><td><span class="lvl stat">statute</span></td></tr>
+      <tr><td class="date">Nov 1921</td><td class="lab">Beisan (Ghor Mudawwara) Agreement</td><td>Ottoman jiftlik lands distributed to cultivators on installment terms.</td><td class="src">Stein</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">1921+</td><td class="lab">British cadastral survey</td><td>Torrens-model survey program replacing the Ottoman registers; Dowson's tenure studies (1925) shape the design.</td><td class="src">Bunton; Dowson CO 733/109</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1928</td><td class="lab">Land (Settlement of Title) Ordinance</td><td>Parcel-by-parcel cadastral settlement — <b>the first and only regime ever to record mulk/miri at parcel level</b>; 1.36M dunams settled in the first eight years.</td><td class="src">Survey of Palestine, ch. VIII</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1929 / 1933</td><td class="lab">Protection of Cultivators Ordinances</td><td>Statutory tenancy protections; the 1933 Ordinance's compensation regime.</td><td class="src">Stein; Survey</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">Oct 1930</td><td class="lab">Hope Simpson Report + Passfield WP</td><td>Landlessness finding (29.4% of affected cultivators) drives transfer-restriction policy — walked back by the MacDonald Letter, Feb 1931.</td><td class="src">Hope Simpson Cmd 3686 (full)</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1931–33</td><td class="lab">French Reports + Landless Register</td><td>The register of displaced cultivators: <b>3,271 claims → 899 accepted → ~74 families resettled</b>.</td><td class="src">Stein (reports undigitized)</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">1925 / 1935</td><td class="lab">Land-sale fatwas</td><td>1925 Gaza fatwa: sellers denied Muslim burial, Jews "ceased to be <i>ahl al-dhimma</i>"; the 1935 Husseini fatwa renews the prohibition — a religious enforcement layer on the land market.</td><td class="src">Cohen, <i>Army of Shadows</i></td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">Jul 1936</td><td class="lab">Murder of Muhammad al-Qasem</td><td>Land speculator who petitioned against transfer restrictions, killed in Haifa — the enforcement-by-violence marker; Revolt-era assassination of sellers follows.</td><td class="src">Cohen; Porath II</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1934–36</td><td class="lab">Sales microstructure window</td><td>2,339 sales, 53,000+ dunams in 26 months — 2,134 of them small fellahin parcels: cross-stratum selling at the peak of restriction rhetoric.</td><td class="src">Cohen, <i>Army of Shadows</i></td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">28 Feb 1940</td><td class="lab">Land Transfers Regulations</td><td>Zone A (transfer to non-Arabs prohibited) / Zone B (High Commissioner's discretion) / free zone — "designed to give effect to" White Paper §§16–17.</td><td class="src">Survey (text: Cmd. 6180)</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1945–46</td><td class="lab">Village Statistics + Survey of Palestine</td><td>The Mandate's terminal self-summary: village-by-village community ownership; settlement of title at 4,808,458 dunams ≈ 18% of Palestine — the other 82% never received cadastral category classification.</td><td class="src">Village Statistics 1945; Survey 1946</td><td><span class="lvl doc">primary</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note">
+    <b>What the record can and cannot say.</b> From 1882 the corpus supports decade-resolution quantification of
+    <b>ownership by community</b> (the Survey's Table 4 series, the JNF series, Village Statistics 1945). It supports
+    quantification of <b>tenure by legal category</b> — how much land was freehold mulk versus state-held miri — in
+    <i>no decade whatsoever</i>: no recording instrument existed before 1928, coverage reached ~18% by 1945 and was never
+    published as an aggregate. The qualitative bound is three-source convergent (Survey; Granott; Stein): freehold was a
+    small, mostly urban category; Arab farmland was overwhelmingly miri. Any source asserting a national mulk percentage
+    for any decade is manufacturing precision the recording instruments of that decade cannot support.
+  </div>
+
+  <div class="colophon">
+    <span>Compiled Inventories — The Law of the Land</span>
+    <span><b>Derivation graph</b> · 1831–1947 · corpus-connected</span>
+    <span><a href="ottoman.html" style="color:inherit">Ottoman</a> · <a href="mandate.html" style="color:inherit">Mandate</a> · <a href="index.html" style="color:inherit">All periods</a></span>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  // ── data ──────────────────────────────────────────────────────────────
+  // tracks: O Ottoman statute · T translation · K knowledge · M Mandate · Z Zionist-institutional · A Arab response
+  var NODES = [
+    ["O1","Hanafi raqaba/tasarruf doctrine",null,"O"],["O2","timar→iltizam→malikâne practice",null,"O"],
+    ["O3","Hatt-i Şerif",1839,"O"],["O4","Hatt-i Hümayun",1856,"O"],
+    ["O6","Ottoman Land Code",1858,"O"],["O7","Tapu Law",1858.9,"O"],["O8","Tapu Seneds Regs",1860,"O"],
+    ["O9","Inheritance law",1867,"O"],["O10","Foreigners' property law",1867.5,"O"],
+    ["O11","Forced-sale law",1869,"O"],["O12","Mulk-deeds law + conversion bar",1874,"O"],
+    ["O13","1876 land laws",1876,"O"],["O14","1913 provisional laws",1913,"O"],["O15","Hamidian restrictions",1881,"O"],
+    ["T1","Ongley (English)",1892,"T"],["T2","Young, Corps de droit (French)",1905,"T"],
+    ["T3","Fisher, Ottoman Land Laws",1919,"T"],["T5","Goadby & Doukhan treatise",1935,"T"],
+    ["K1","Tabu / yoklama registers",1862,"K"],["K2","Register destruction",1917,"K"],
+    ["K3","Censuses 1922 · 1931",1926,"K"],["K4","Dowson tenure studies",1925,"K"],
+    ["K5","Shaw Report",1930,"K"],["K6","Hope Simpson Report",1930.7,"K"],["K7","Johnson-Crosbie Report",1930.4,"K"],
+    ["K8","French Reports + Landless Register",1932,"K"],["K9","Peel Report",1937,"K"],
+    ["K10","Woodhead Report",1938,"K"],["K11","Village Statistics",1945,"K"],["K12","Survey of Palestine",1946,"K"],
+    ["M0","OETA registry closure",1918.8,"M"],["M1","Transfer of Land Ord.",1920.6,"M"],
+    ["M2","Mahlul Land Ord.",1920,"M"],["M3","Mewat Land Ord.",1921,"M"],["M4","Beisan Agreement",1921.9,"M"],
+    ["M5","Cadastral survey (Torrens)",1922,"M"],["M6","Settlement of Title Ord.",1928,"M"],
+    ["M7","Protection of Cultivators Ords.",1931,"M"],["P1","Passfield White Paper",1930.8,"M"],
+    ["P2","MacDonald Letter",1931.1,"M"],["M8","White Paper",1939.4,"M"],["M9","Land Transfers Regs.",1940.2,"M"],
+    ["Z1","JNF founding",1901,"Z"],["Z2","Ruppin survey + Palestine Office",1907,"Z"],
+    ["Z3","Purchase wave I",1888,"Z"],["Z4","Purchase wave II",1927,"Z"],["F1","Fula / Sursuq sale",1910.5,"Z"],
+    ["A5","Dhimma-status doctrine",null,"A"],["A1","al-ʿIsa petition to Istanbul",1910,"A"],
+    ["A2","Gaza fatwa",1925,"A"],["A3","Husseini fatwa + enforcement",1935.5,"A"],
+    ["V1","1929 violence",1929,"A"],["A4","Arab Revolt",1936.5,"A"]
+  ];
+  var EDGES = [
+    ["O1","O6","codifies doctrine","stat","raqaba/tasarruf framework restated in the Code; Survey ch. VIII ¶¶6–7"],
+    ["O2","O6","regularizes practice","int","Granott's tenure genealogy: revenue-grants, never ownership"],
+    ["O3","O6","reform pledge → codification","int","Schölch: the Code as the Tanzimat's fiscal program"],
+    ["O4","O10","promise → execution","stat","1856: 'after arrangements…'; executed 16 Jun 1867 (both texts in corpus)"],
+    ["O6","O7","registration machinery","stat","Tapu Law issues deeds for the Code's state land"],
+    ["O7","O8","implementing regulations","stat","Seneds Regulations cite the 1274 Code and 1275 Tapu Law"],
+    ["O6","O9","amends succession on miri","stat","17 Muharrem 1284 law (Fisher)"],
+    ["O6","O11","debt-enforcement machinery","stat","forced sale of tasarruf (Fisher)"],
+    ["O6","O12","deed regime + category freeze","stat","28 Rejeb 1291 law; miri→mulk conversion barred (Granott)"],
+    ["O6","O13","yoklama regularization","stat","7 Muharrem 1293 law (Fisher)"],
+    ["O6","O14","amends — mortgageability of miri","stat","1331 provisional laws (Fisher's digest)"],
+    ["O6","K1","instrument creates record","doc","tabu registers are the Code's paper trail"],
+    ["O7","K1","instrument creates record","doc",""],["O8","K1","instrument creates record","doc",""],
+    ["O13","K1","yoklama feeds registers","doc",""],
+    ["O6","T1","translated","stat","Ongley 1892, from the Turkish"],
+    ["O6","T2","compiled + translated","stat","Young vol VI: the Code in French"],
+    ["O10","T2","compiled","stat","Young vol I, Titre XX: the 1867 law in full"],
+    ["T2","T3","based on","doc","Fisher's preface: 'based on the French translations in Mr. George Young's Corps'"],
+    ["O6","T3","translates Code + later laws","stat",""],
+    ["O14","T3","digests the 1913 laws","stat",""],
+    ["T3","M1","administration's working text","int","Bunton on the British use of Fisher"],
+    ["T3","M6","working text for settlement courts","int",""],
+    ["O6","T5","treatise subject","int","Goadby & Doukhan 1935, cited by Bunton"],
+    ["M1","T5","synthesizes Mandate law","int",""],["M6","T5","synthesizes Mandate law","int",""],
+    ["K2","M0","register chaos → closure","int","Bunton"],
+    ["K2","M5","destroyed registers → fresh cadastre","int","Bunton"],
+    ["M0","M1","cancelled by LTO","stat","LTO §3 cites 'the Ordinance of 18th November, 1918' (Bentwich I)"],
+    ["O6","M1","scope defined by the Code","stat","LTO §3: 'the Land Law of 7th Ramadan, 1274 A.H.'"],
+    ["O6","M2","operationalizes mahlul","stat","escheat category from the Code (Bentwich I)"],
+    ["O6","M3","cites Code Art. 103","stat","Mewat Ordinance §1 (Bentwich I)"],
+    ["O6","M4","jiftlik = Ottoman state-land frame","int","Stein"],
+    ["K1","K4","register record studied","doc","Dowson, 'Preliminary Study of Land Tenure', CO 733/109"],
+    ["K4","M6","Dowson program → Settlement of Title","int","Bunton"],
+    ["M5","M6","survey precondition","int","Bunton"],
+    ["M6","K12","settlement state reported","doc","Survey ¶36: 4,808,458 dunams settled"],
+    ["V1","K5","violence → commission","doc",""],
+    ["K5","K6","Shaw → Hope Simpson","doc","HS cites the Shaw Report directly"],
+    ["K6","P1","findings → policy","doc","Hope Simpson drove the Passfield WP"],
+    ["P1","P2","walked back","int","MacDonald Letter, Feb 1931"],
+    ["K6","K8","HS program → French Reports","int","Stein"],
+    ["K7","K12","debt data carried forward","doc","Johnson-Crosbie figures in the Survey"],
+    ["K3","K6","census data input","doc",""],["K3","K9","census data input","doc",""],
+    ["K8","K9","landless register before Peel","int","Stein"],
+    ["Z3","K9","purchase footprint → Peel lines","int","Stein: boundaries 'mirrored' purchase parameters"],
+    ["Z4","K9","purchase footprint → Peel lines","int",""],
+    ["K9","K10","Peel reviewed","doc","Woodhead Cmd 5854"],
+    ["K10","M8","partition failure → WP 1939","doc",""],
+    ["A4","M8","Revolt drives policy","int",""],
+    ["M8","M9","'gives effect to' WP §§16–17","doc","Survey, 28 Feb 1940 entry"],
+    ["M9","K12","zones documented","doc","Survey p. 243"],
+    ["K11","K12","ownership data summarized","doc",""],
+    ["M1","M7","tenant clause → POCO line","int","Stein"],
+    ["K6","M7","landlessness finding → 1933 POCO","int","Stein"],
+    ["O10","Z3","legal enablement","stat","foreign purchase lawful from 1867; wave from 1882"],
+    ["O15","Z3","restriction overlay","int","Mandel"],
+    ["Z1","F1","JNF executes the purchase","doc","Granott; Fishman"],
+    ["Z2","Z4","Palestine-Office strategy","int",""],
+    ["Z3","Z4","institutional continuity","doc","Survey Table 4 series"],
+    ["F1","A1","petition responds to sale","doc","the mukhtar ʿAbd al-ʿIsa, May 1910 (Fishman)"],
+    ["Z4","A2","sales → fatwa","doc","1925 Gaza fatwa (Cohen p. 51)"],
+    ["Z4","A3","sales wave → fatwa + enforcement","doc","1935 fatwa; al-Qasem murdered Jul 1936"],
+    ["A5","A2","dhimma-status logic","doc","'ceased to be ahl al-dhimma' — the fatwa's own text"],
+    ["A3","A4","enforcement merges into Revolt","int","Porath II"]
+  ];
+
+  var TRACKS = [
+    ["O","Ottoman statute","#2d4a3a"],["T","Translation layer","#7a6a4f"],["K","Knowledge production","#4f6a7a"],
+    ["M","Mandate instruments","#5a4a6a"],["Z","Zionist institutional","#8a6a3f"],["A","Arab response","#7a4a42"]
+  ];
+
+  // ── layout ────────────────────────────────────────────────────────────
+  var GUTTER = 120, LEFT = 56, RIGHT = 30, TOP = 26, LANE_H = 118, ROW_H = 25;
+  var Y0 = 1831, Y1 = 1948, PLOT_W = 1560;
+  var W = LEFT + GUTTER + PLOT_W + RIGHT, H = TOP + TRACKS.length * LANE_H + 34;
+  function xOf(year) {
+    if (year === null) return LEFT + GUTTER * 0.42;
+    return LEFT + GUTTER + (Math.max(year, Y0) - Y0) / (Y1 - Y0) * PLOT_W;
+  }
+  var laneIdx = {}; TRACKS.forEach(function (t, i) { laneIdx[t[0]] = i; });
+  var byId = {};
+  NODES.forEach(function (n) { byId[n[0]] = { id: n[0], label: n[1], year: n[2], track: n[3] }; });
+  // stagger within lanes: sort by x, cycle sub-rows
+  TRACKS.forEach(function (t) {
+    var lane = NODES.filter(function (n) { return n[3] === t[0]; })
+                    .map(function (n) { return byId[n[0]]; })
+                    .sort(function (a, b) { return xOf(a.year) - xOf(b.year); });
+    lane.forEach(function (n, i) {
+      n.x = xOf(n.year);
+      n.y = TOP + laneIdx[n.track] * LANE_H + 22 + (i % 4) * ROW_H;
+    });
+  });
+  var outE = {}, inE = {};
+  EDGES.forEach(function (e) { (outE[e[0]] = outE[e[0]] || []).push(e); (inE[e[1]] = inE[e[1]] || []).push(e); });
+
+  // ── render ────────────────────────────────────────────────────────────
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("dag");
+  svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+  svg.setAttribute("width", W); svg.setAttribute("height", H);
+  function el(name, attrs, parent) {
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    (parent || svg).appendChild(e); return e;
+  }
+  // lane bands + labels
+  TRACKS.forEach(function (t, i) {
+    var y = TOP + i * LANE_H;
+    el("rect", { x: 0, y: y, width: W, height: LANE_H, fill: t[2], "class": "lane-band" });
+    var lab = el("text", { x: 8, y: y + 14, "class": "lane-label", fill: t[2] });
+    lab.textContent = t[1];
+  });
+  // year grid
+  for (var yr = 1840; yr <= 1940; yr += 10) {
+    var gx = xOf(yr);
+    el("line", { x1: gx, y1: TOP, x2: gx, y2: TOP + TRACKS.length * LANE_H, "class": "year-line" });
+    var t = el("text", { x: gx, y: H - 12, "text-anchor": "middle", "class": "year-tick" });
+    t.textContent = yr;
+  }
+  var preT = el("text", { x: LEFT + GUTTER * 0.42, y: H - 12, "text-anchor": "middle", "class": "year-tick" });
+  preT.textContent = "pre-1800";
+  // edges
+  var edgeEls = [];
+  var gE = el("g", {});
+  EDGES.forEach(function (e, i) {
+    var a = byId[e[0]], b = byId[e[1]];
+    var x1 = a.x + 6, y1 = a.y, x2 = b.x - 6, y2 = b.y;
+    var dx = Math.max(34, (x2 - x1) * 0.45);
+    var d = "M" + x1 + "," + y1 + " C" + (x1 + dx) + "," + y1 + " " + (x2 - dx) + "," + y2 + " " + x2 + "," + y2;
+    var cls = e[3] === "stat" ? "lv-stat" : e[3] === "doc" ? "lv-doc" : "lv-int";
+    var p = el("path", { d: d, "class": "dag-edge " + cls, "data-i": i }, gE);
+    edgeEls.push(p);
+  });
+  // nodes
+  var nodeEls = {};
+  var gN = el("g", {});
+  NODES.forEach(function (n) {
+    var nd = byId[n[0]];
+    var g = el("g", { "class": "dag-node", "data-id": nd.id }, gN);
+    var wText = Math.min(nd.label.length * 4.9 + 14, 170);
+    el("rect", { x: nd.x - 5, y: nd.y - 9, width: wText, height: 18, stroke: TRACKS[laneIdx[nd.track]][2] }, g);
+    var t = el("text", { x: nd.x + 2, y: nd.y + 3.5 }, g);
+    t.textContent = nd.label;
+    el("circle", { cx: nd.x - 5, cy: nd.y, r: 2.6, fill: TRACKS[laneIdx[nd.track]][2] }, g);
+    nodeEls[nd.id] = g;
+  });
+
+  // ── interaction ───────────────────────────────────────────────────────
+  var tip = document.getElementById("dag-tip");
+  var detail = document.getElementById("dag-detail");
+  edgeEls.forEach(function (p) {
+    p.addEventListener("mousemove", function (ev) {
+      var e = EDGES[+p.getAttribute("data-i")];
+      tip.innerHTML = "<b>" + byId[e[0]].label + " → " + byId[e[1]].label + "</b><br/>" + e[2] +
+        (e[4] ? "<br/><span style='opacity:.75'>" + e[4] + "</span>" : "");
+      tip.style.left = (ev.clientX + 14) + "px"; tip.style.top = (ev.clientY + 10) + "px"; tip.style.opacity = 1;
+    });
+    p.addEventListener("mouseleave", function () { tip.style.opacity = 0; });
+  });
+  function levelWord(l) { return l === "stat" ? "verbatim citation" : l === "doc" ? "primary document" : "historian-attributed"; }
+  function focusNode(id) {
+    var keep = {}; keep[id] = 1;
+    var hot = [];
+    EDGES.forEach(function (e, i) {
+      if (e[0] === id || e[1] === id) { hot.push(i); keep[e[0]] = 1; keep[e[1]] = 1; }
+    });
+    Object.keys(nodeEls).forEach(function (k) {
+      nodeEls[k].classList.toggle("dim", !keep[k]);
+    });
+    edgeEls.forEach(function (p, i) {
+      var on = hot.indexOf(i) >= 0;
+      p.classList.toggle("dim", !on); p.classList.toggle("hot", on);
+    });
+    var n = byId[id];
+    var html = "<span class='dn'>" + n.label + "</span><span class='dd'>" + (n.year ? ("· " + Math.floor(n.year)) : "· pre-1800 doctrine") + " · " + TRACKS[laneIdx[n.track]][1] + "</span>";
+    (inE[id] || []).forEach(function (e) {
+      html += "<div class='erow'>← <b>" + byId[e[0]].label + "</b> — <span class='et'>" + e[2] + "</span> <span class='ev'>(" + levelWord(e[3]) + (e[4] ? "; " + e[4] : "") + ")</span></div>";
+    });
+    (outE[id] || []).forEach(function (e) {
+      html += "<div class='erow'>→ <b>" + byId[e[1]].label + "</b> — <span class='et'>" + e[2] + "</span> <span class='ev'>(" + levelWord(e[3]) + (e[4] ? "; " + e[4] : "") + ")</span></div>";
+    });
+    detail.innerHTML = html;
+  }
+  function reset() {
+    Object.keys(nodeEls).forEach(function (k) { nodeEls[k].classList.remove("dim"); });
+    edgeEls.forEach(function (p) { p.classList.remove("dim"); p.classList.remove("hot"); });
+    detail.innerHTML = "Click a node to list its documented derivations.";
+  }
+  Object.keys(nodeEls).forEach(function (k) {
+    nodeEls[k].addEventListener("click", function (ev) { ev.stopPropagation(); focusNode(k); });
+  });
+  svg.addEventListener("click", reset);
+})();
+</script>
+</body>
+</html>
