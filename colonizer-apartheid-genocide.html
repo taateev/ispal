@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Colonizer · Apartheid · Genocide — A Genealogy of Three Framings, 1882–2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* page-scoped — uses shared tokens from broadsheet.css */
+  .epi { font-family: var(--serif); font-style: italic; font-size: clamp(17px,2vw,21px); line-height:1.5; color: var(--ink); border-left: 3px solid var(--accent-3); padding: 4px 0 4px 18px; margin: 26px 0 8px; max-width: 780px; }
+  .epi span { display:block; font-style: normal; font-family: var(--sans); font-size: 12.5px; color: var(--ink-3); margin-top: 8px; letter-spacing:0.01em; }
+
+  /* how-to-read key */
+  .key { display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin:16px 0 6px; padding:14px 16px; border:1px solid var(--rule-soft); background:rgba(255,255,255,0.35); }
+  .key .kg { font-family:var(--sans); font-size:11px; color:var(--ink-3); display:flex; align-items:center; gap:7px; }
+  .key .kh { font-family:var(--sans); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--ink-4); width:100%; }
+
+  .sx { font-family:var(--sans); font-size:9px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; padding:2px 7px; border-radius:10px; white-space:nowrap; }
+  .sx.sc  { background:rgba(45,74,58,0.13);  color:var(--accent-3); }
+  .sx.ap  { background:rgba(58,74,107,0.13); color:var(--accent-4); }
+  .sx.gen { background:rgba(122,44,30,0.12); color:var(--accent); }
+  .src { font-family:var(--mono); font-size:9px; letter-spacing:.03em; text-transform:uppercase; color:var(--ink-4); border:1px solid var(--rule-soft); padding:1px 5px; border-radius:2px; white-space:nowrap; }
+  .src.corpus  { color:var(--accent-3); border-color:rgba(45,74,58,0.32); }
+  .src.primary { color:var(--ink-2); }
+  .src.gap { border-style:dashed; color:var(--ink-4); }
+  .rebmark { font-family:var(--mono); font-size:11px; color:var(--accent-5); font-weight:600; }
+
+  /* timeline */
+  .tl { margin:8px 0 6px; }
+  .ev { display:grid; grid-template-columns:62px 1fr; gap:15px; padding:11px 2px 11px 0; border-bottom:1px solid var(--rule-soft); }
+  .ev .yr { font-family:var(--mono); font-size:12.5px; color:var(--ink-3); font-weight:500; padding-top:2px; white-space:nowrap; }
+  .ev .hd { display:flex; flex-wrap:wrap; gap:7px; align-items:baseline; }
+  .ev .ti { font-family:var(--sans); font-size:12.5px; font-weight:700; color:var(--ink); letter-spacing:.01em; }
+  .ev .gl { font-family:var(--serif); font-size:14.5px; line-height:1.5; color:var(--ink-2); margin-top:4px; }
+  .ev .gl b { color:var(--ink); font-weight:600; }
+  .ev.star .ti::before { content:"★ "; color:var(--accent-5); font-weight:700; }
+  .ev.reb { border-left:3px solid var(--accent-5); padding-left:13px; background:rgba(138,90,43,0.035); }
+  .ev.reb .yr::after { content:" ↺"; color:var(--accent-5); font-weight:700; }
+  .ev.warn { border-left:3px solid var(--ink-4); padding-left:13px; background:rgba(0,0,0,0.02); }
+
+  /* South Africa hinge strip */
+  .hinge { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:10px 0 6px; }
+  .hinge > div { background:var(--paper); padding:14px 15px; position:relative; }
+  .hinge .hy { font-family:var(--mono); font-size:18px; font-weight:600; color:var(--accent-4); }
+  .hinge .hw { font-family:var(--sans); font-size:11px; font-weight:600; color:var(--ink); text-transform:uppercase; letter-spacing:.04em; margin:3px 0 2px; }
+  .hinge .hs { font-family:var(--sans); font-size:11.5px; line-height:1.45; color:var(--ink-3); }
+
+  /* four registers grid */
+  .registers { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:10px 0 6px; }
+  .registers > div { background:var(--paper); padding:14px 16px; }
+  .registers .rk { font-family:var(--mono); font-size:11px; font-weight:600; color:var(--accent); }
+  .registers .rt { font-family:var(--sans); font-size:11.5px; font-weight:700; color:var(--ink); margin:2px 0 5px; letter-spacing:.01em; }
+  .registers .rs { font-family:var(--serif); font-size:14px; line-height:1.5; color:var(--ink-2); }
+  .registers .rs b { color:var(--ink); font-weight:600; }
+
+  .panel { border:1px solid var(--rule); border-left:4px solid var(--accent-3); background:rgba(255,255,255,0.4); padding:18px 22px; margin:14px 0 6px; max-width:920px; }
+  .panel p { font-family:var(--serif); font-size:15px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .panel p:last-child { margin-bottom:0; }
+  .panel p b { color:var(--ink); font-weight:600; }
+  .panel .ph { font-family:var(--sans); font-size:10px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent-3); margin-bottom:9px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Corpus Synthesis · The History of an Argument</div>
+      <h1>Colonizer · Apartheid · Genocide<br /><em>A genealogy of three framings, 1882–2025</em></h1>
+    </div>
+    <div class="meta">
+      <b>Question</b> · where did the three framings of Zionism/Israel come from, and when?<br />
+      <b>Method</b> · a dated timeline, each entry evidence-marked, each strand paired with its rebuttal<br />
+      <span class="faint">Jabotinsky · Sayegh · Rodinson · Kimmerling · Wolfe · Khalidi ·<br />Verwoerd · Davis · Tilley · Carter · Pogrund · Shaw · Moses · Kirsch</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;All periods</a> &nbsp;·&nbsp; <a href="contemporary.html">Contemporary</a>
+  </nav>
+
+  <p class="epi">
+    "My readers have a general idea of the history of <strong>colonization</strong> in other countries… Native populations, civilized or uncivilized, have always stubbornly resisted the settlers."
+    <span>— Vladimir Jabotinsky, "The Iron Wall," 1923 — using the word as the movement's own. The valence flipped only after 1960.</span>
+  </p>
+
+  <p class="dek">
+    "Colonizer," "apartheid," and "genocide" are usually heard as one undifferentiated charge. They are not. They entered the
+    argument at different times, by different people, in different registers — and each escalates the one before it in legal weight:
+    <em>colonizer</em> (a structural characterization) → <em>apartheid</em> (a crime defined in 1973) → <em>genocide</em> (the
+    1948 "crime of crimes"). This page lays the three side by side as a dated genealogy. Two threads run through all of it: the word
+    "colonization" was <em>Zionism's own</em>, neutral-to-proud, for the movement's first half-century; and <em>South Africa</em> is
+    the hinge that recurs in every strand. Each framing also carries a live <span class="rebmark">↺ rebuttal</span> track, marked here
+    in the same pass — the empirical test of whether an argument is "resistant to counter-evidence."
+  </p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">1899</div><div class="l">the Jewish <em>Colonial</em> Trust — the Zionist bank's own name</div></div>
+    <div class="stat"><div class="n">1961</div><div class="l">Verwoerd — the architect of apartheid — coins the comparison</div></div>
+    <div class="stat"><div class="n">1965</div><div class="l">Sayegh's founding settler-colonial text · predates Wolfe by 34 yrs</div></div>
+    <div class="stat"><div class="n">2023</div><div class="l">South Africa files the genocide case at the ICJ</div></div>
+  </div>
+
+  <h2 class="section">How to read this</h2>
+  <div class="key">
+    <div class="kh">Strand</div>
+    <span class="kg"><span class="sx sc">Colonizer</span> settler-colonialism</span>
+    <span class="kg"><span class="sx ap">Apartheid</span> the legal-status frame</span>
+    <span class="kg"><span class="sx gen">Genocide</span> the gravest charge</span>
+    <div class="kh">Evidence level (per claim, not per speaker)</div>
+    <span class="kg"><span class="src primary">primary</span> the text/resolution itself</span>
+    <span class="kg"><span class="src">interp</span> a historian's reading</span>
+    <span class="kg"><span class="src corpus">corpus</span> verifiable in a held source</span>
+    <span class="kg"><span class="src gap">gap</span> named, not yet held</span>
+    <div class="kh">Markers</div>
+    <span class="kg"><span class="rebmark">↺</span> a rebuttal / refutation</span>
+    <span class="kg">★ a pivot point</span>
+  </div>
+
+  <h2 class="section">I · Roots — when "colonization" was the movement's own word · 1882–1945</h2>
+  <p class="dek" style="margin-top:6px">
+    Before it was an indictment, "colonization" was a badge. The <em>moshavot</em> were "colonies"; the movement's bank and land
+    funds wore the word. The valence inverts only after global decolonization (c. 1960). The Armenian genocide, meanwhile, enters
+    the discourse first as a <em>Jewish</em> self-reference — fear of the fate awaiting Jews — not as an accusation against Zionism.
+  </p>
+  <div class="tl">
+    <div class="ev"><div class="yr">1882+</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">The movement's own vocabulary</span><span class="src primary">primary</span></div><div class="gl">First Aliyah <em>moshavot</em> are called "colonies"; the Yishuv's institutional language is self-consciously colonial-developmental.</div></div></div>
+    <div class="ev"><div class="yr">1899</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Jewish Colonial Trust chartered</span><span class="src primary">primary</span></div><div class="gl">The Zionist movement's central bank carries "Colonial" in its name; the Jewish National Fund follows in 1901.</div></div></div>
+    <div class="ev"><div class="yr">1915</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">The Armenian fate — invoked about <em>Jews</em></span><span class="src">general</span></div><div class="gl">Aaron Aaronsohn warns that Ottoman policy toward Armenians and Jews alike had "'made in Germany' written all over it"; the Yishuv reads the Armenian catastrophe as a preview of <b>Jewish</b> vulnerability — a self-referential register, not an accusation against Zionism.</div></div></div>
+    <div class="ev star"><div class="yr">1923</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Jabotinsky, "The Iron Wall"</span><span class="src corpus">corpus</span></div><div class="gl">Zionism is "colonization" that "every native population… resists," to proceed "behind an iron wall." Not an indictment from outside — a <b>strategy stated from within</b>.</div></div></div>
+    <div class="ev"><div class="yr">1938</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Antonius, <i>The Arab Awakening</i></span><span class="src">interp</span></div><div class="gl">The foundational Arab-nationalist counter-narrative the later frames build on.</div></div></div>
+    <div class="ev"><div class="yr">1944·48</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">Lemkin coins the word; the Genocide Convention</span><span class="src">general</span></div><div class="gl">"Genocide" is <b>brand-new exactly as Palestine is partitioned</b> — so any late-1940s application is among the term's earliest uses anywhere.</div></div></div>
+  </div>
+
+  <h2 class="section">II · The frame becomes an indictment · 1948–1979</h2>
+  <p class="dek" style="margin-top:6px">
+    After 1948 the vocabulary turns. The settler-colonial thesis is built first in Palestinian-political and French-Marxist circles
+    — for the specifically Israeli case — a generation before the academic theory. The apartheid comparison is <em>born on the
+    apartheid side</em>. And "extermination" enters first as an Arab threat of war, not an accusation — a vector worth keeping straight.
+  </p>
+  <div class="tl">
+    <div class="ev"><div class="yr">1948</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="sx gen">Genocide</span><span class="ti">The Nakba</span><span class="src corpus">corpus</span></div><div class="gl">~750,000 Palestinians displaced — the historical event all three frames later contest the character of.</div></div></div>
+    <div class="ev warn"><div class="yr">1948</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">"Extermination" — as an Arab threat ⚠</span><span class="src">general</span></div><div class="gl">Azzam Pasha: "a war of extermination… spoken of like the Mongol massacres and the Crusades." The <b>opposite vector</b> from the modern frame — and Mongol/Crusader, <em>not</em> Armenian. Kept here so the later genocide-charge doesn't silently absorb it.</div></div></div>
+    <div class="ev"><div class="yr">1961</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">Verwoerd: "an apartheid state"</span><span class="src corpus">corpus</span></div><div class="gl">The <b>architect of South African apartheid</b> tells the <i>Rand Daily Mail</i>: "Israel, like South Africa, is an apartheid state." The comparison is born on the apartheid side, as a claim of kinship.</div></div></div>
+    <div class="ev"><div class="yr">1961</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Fanon, <i>The Wretched of the Earth</i></span><span class="src corpus">corpus</span></div><div class="gl">The anticolonial "Manichaean" frame Sayegh, Said, and Massad all inherit.</div></div></div>
+    <div class="ev star"><div class="yr">1965</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Sayegh, <i>Zionist Colonialism in Palestine</i></span><span class="src corpus">corpus</span></div><div class="gl">The first explicit, systematic "Zionism = settler colonialism" thesis (PLO Research Center). <b>Predates Patrick Wolfe by 34 years.</b></div></div></div>
+    <div class="ev"><div class="yr">1964·67</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">Shukeiri: "Eichmann in a state"</span><span class="src">general</span></div><div class="gl">The first PLO chairman's Nazi-equation — the pre-1982 accusation layer the conventional timeline omits. An <b>epithet</b>, distinct in <em>form</em> (not legitimacy) from the later academic argument.</div></div></div>
+    <div class="ev"><div class="yr">1966</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Jiryis, <i>The Arabs in Israel</i></span><span class="src corpus">corpus</span></div><div class="gl">The legal-administrative apparatus of military government 1948–66, documented by someone who lived under it.</div></div></div>
+    <div class="ev"><div class="yr">1967</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Rodinson, "Israël, fait colonial?"</span><span class="src corpus">corpus</span></div><div class="gl">The French-Marxist application (<i>Les Temps Modernes</i>, ed. Sartre); English as <i>Israel: A Colonial-Settler State?</i> (1973).</div></div></div>
+    <div class="ev"><div class="yr">1970</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="sx ap">Apartheid</span><span class="ti">Jabbour, <i>Settler Colonialism in Southern Africa and the Middle East</i></span><span class="src gap">gap</span></div><div class="gl">First title to <em>name</em> "settler colonialism" and braid the South Africa + Israel comparison — predating Wolfe by ~30 years.</div></div></div>
+    <div class="ev"><div class="yr">1973</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">UN Apartheid Convention</span><span class="src">general</span></div><div class="gl">Makes "apartheid" a defined crime against humanity in law, <b>detachable from South Africa</b> — what later lets the charge be argued as a legal finding, not just an analogy.</div></div></div>
+    <div class="ev star"><div class="yr">1975</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="sx ap">Apartheid</span><span class="ti">UNGA Res 3379: "Zionism is racism"</span><span class="src corpus">corpus</span></div><div class="gl">Sayegh — the 1965 founding author — is the resolution's "principal author" and "chief architect." The colonizer/apartheid/racism strands fuse in UN language.</div></div></div>
+    <div class="ev"><div class="yr">1979</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Said, <i>The Question of Palestine</i></span><span class="src corpus">corpus</span></div><div class="gl">Moves the frame into the Anglo-American academy and literary culture.</div></div></div>
+  </div>
+
+  <h2 class="section">III · Academic institutionalization · 1982–2012</h2>
+  <p class="dek" style="margin-top:6px">
+    The frames move from polemic to social science, law, and inquiry — and the rebuttal track sharpens alongside them: the only UN
+    resolution ever <em>rescinded</em>, a Nobel jurist's refutation, a Holocaust historian's controlled "no."
+  </p>
+  <div class="tl">
+    <div class="ev"><div class="yr">1982</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">UNGA 37/123 D: Sabra &amp; Shatila "an act of genocide"</span><span class="src primary">primary</span></div><div class="gl">The earliest UN use of "genocide" re: Palestinians — but a <b>non-binding</b> resolution, adopted on part D 123–0 with <b>22 abstentions</b> (Western states objecting to the term). A political act, not a juridical determination.</div></div></div>
+    <div class="ev"><div class="yr">1983</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Kimmerling, <i>Zionism and Territory</i></span><span class="src corpus">corpus</span></div><div class="gl">The first rigorous settler-colonial <em>sociology</em> of Israel — the "frontier" thesis Shafir builds on.</div></div></div>
+    <div class="ev"><div class="yr">1987</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">Uri Davis, <i>Israel: An Apartheid State</i></span><span class="src">general</span></div><div class="gl">First book-length deployment of the apartheid frame.</div></div></div>
+    <div class="ev"><div class="yr">1989</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Shafir, <i>Land, Labor and the Origins</i></span><span class="src corpus">corpus</span></div><div class="gl">Classifies the Yishuv a "pure settlement colony" via comparative typology — the rigorous economic-history anchor.</div></div></div>
+    <div class="ev reb"><div class="yr">1991</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">UNGA 46/86 revokes Res 3379</span><span class="src corpus">corpus</span></div><div class="gl">The <b>only UN resolution ever rescinded</b> — the institutional high-water mark of the counter-track.</div></div></div>
+    <div class="ev star"><div class="yr">1999·06</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Patrick Wolfe — "a structure, not an event"</span><span class="src corpus">corpus</span></div><div class="gl">"Settler colonialism is a structure, not an event"; "the logic of elimination" (the field's most-cited article, 2006).</div></div></div>
+    <div class="ev"><div class="yr">2001·02</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">Durban WCAR · Tutu, "Apartheid in the Holy Land"</span><span class="src primary">primary</span></div><div class="gl">The analogy goes activist-global; Desmond Tutu lends the anti-apartheid struggle's moral authority (<i>Guardian</i>, 29 Apr 2002).</div></div></div>
+    <div class="ev star"><div class="yr">2006</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">Carter, <i>Palestine: Peace Not Apartheid</i></span><span class="src corpus">corpus</span></div><div class="gl">A former US president forces "apartheid" into mainstream US debate — and the backlash that defines the next decade.</div></div></div>
+    <div class="ev"><div class="yr">2009</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">HSRC (South Africa) study</span><span class="src corpus">corpus</span></div><div class="gl"><i>Occupation, Colonialism, Apartheid?</i> — the detailed legal precursor to the 2017 ESCWA report.</div></div></div>
+    <div class="ev"><div class="yr">2010</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">Shaw's genocide framing of 1948 — <span class="rebmark">↺ &amp; Bartov's refutation</span></span><span class="src corpus">corpus</span></div><div class="gl">The first sustained <em>academic</em> argument that 1948 fits "genocide," and its first sustained refutation, in the same journal. A concept-application with stated criteria, <b>exposed to disconfirmation</b> — the form that distinguishes it from an epithet.</div></div></div>
+    <div class="ev reb"><div class="yr">2011</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">Goldstone, "Israel and the Apartheid Slander"</span><span class="src">general</span></div><div class="gl">A high-profile refutation from a Jewish South African jurist (<i>NYT</i>).</div></div></div>
+    <div class="ev"><div class="yr">2012</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">"Past is Present" (<i>Settler Colonial Studies</i>)</span><span class="src gap">gap</span></div><div class="gl">Declares Palestine the paradigm case of the sub-discipline.</div></div></div>
+  </div>
+
+  <h2 class="section">IV · Mainstreaming &amp; the genocide turn · 2014–2025</h2>
+  <p class="dek" style="margin-top:6px">
+    The apartheid frame reaches the major human-rights institutions; the genocide frame moves from isolated scholarship to the
+    International Court of Justice. The rebuttal track moves with it — a book-length refutation, a concept-critique from within
+    genocide studies, a charge that the settler-colonial paradigm is itself unfalsifiable.
+  </p>
+  <div class="tl">
+    <div class="ev reb"><div class="yr">2014</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">Pogrund, <i>Drawing Fire</i></span><span class="src corpus">corpus</span></div><div class="gl">The principal book-length refutation of the apartheid charge — by an <b>anti-apartheid South African journalist</b>.</div></div></div>
+    <div class="ev star"><div class="yr">2017</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">ESCWA (Falk &amp; Tilley): "the crime of apartheid"</span><span class="src corpus">corpus</span></div><div class="gl">A UN report concluding apartheid — <b>withdrawn under US/Israel pressure within days</b>; ESCWA's chief resigned. The suppression became part of the story.</div></div></div>
+    <div class="ev"><div class="yr">2020</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Khalidi, <i>The Hundred Years' War on Palestine</i></span><span class="src corpus">corpus</span></div><div class="gl">"A History of Settler Colonialism" — the frame in a mass-market bestseller.</div></div></div>
+    <div class="ev"><div class="yr">2021</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">B'Tselem + HRW adopt the apartheid frame</span><span class="src corpus">corpus</span></div><div class="gl">B'Tselem (Jan) is the first major <em>Israeli</em> rights org to adopt it; HRW's <i>A Threshold Crossed</i> follows (Apr).</div></div></div>
+    <div class="ev reb"><div class="yr">2021</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">Moses, <i>The Problems of Genocide</i></span><span class="src corpus">corpus</span></div><div class="gl">A critique from <em>within</em> genocide studies: the concept "explains too much." Complicates rather than confirms the genocide frame for 1948.</div></div></div>
+    <div class="ev"><div class="yr">2022</div><div><div class="hd"><span class="sx ap">Apartheid</span><span class="ti">Amnesty, <i>Israel's Apartheid Against Palestinians</i></span><span class="src corpus">corpus</span></div><div class="gl">The most comprehensive NGO apartheid dossier.</div></div></div>
+    <div class="ev"><div class="yr">2023</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Sabbagh-Khoury, <i>Colonizing Palestine</i></span><span class="src corpus">corpus</span></div><div class="gl">Kibbutz-archival application of the settler-colonial frame.</div></div></div>
+    <div class="ev star"><div class="yr">2023</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">South Africa files the genocide case at the ICJ</span><span class="src">general</span></div><div class="gl">The country whose name anchored the <em>apartheid</em> comparison since 1961 now brings the <em>genocide</em> charge — the three strands converge in one courtroom.</div></div></div>
+    <div class="ev"><div class="yr">2024</div><div><div class="hd"><span class="sx gen">Genocide</span><span class="ti">ICJ provisional measures · Albanese, <i>Anatomy of a Genocide</i></span><span class="src corpus">corpus</span></div><div class="gl">The frame at the level of the world court and a UN mandate-holder's report.</div></div></div>
+    <div class="ev reb"><div class="yr">2024</div><div><div class="hd"><span class="sx sc">Colonizer</span><span class="ti">Kirsch, <i>On Settler Colonialism</i></span><span class="src corpus">corpus</span></div><div class="gl">The paradigm's rebuttal: settler-colonial theory as an <b>unfalsifiable ideology</b> — which loops the whole argument back to the question of what can and can't be tested.</div></div></div>
+  </div>
+
+  <h2 class="section">The hinge · South Africa runs through all three</h2>
+  <p class="dek" style="margin-top:6px">
+    The single thread tying the strands together is not an accident of rhetoric — the comparison originates with apartheid's own
+    architect and ends with apartheid's successor state at the world court.
+  </p>
+  <div class="hinge">
+    <div><div class="hy">1961</div><div class="hw">Verwoerd</div><div class="hs">Apartheid's architect calls Israel "an apartheid state."</div></div>
+    <div><div class="hy">1970</div><div class="hw">Jabbour</div><div class="hs">First book braiding settler-colonialism across Southern Africa &amp; the Middle East.</div></div>
+    <div><div class="hy">2009</div><div class="hw">HSRC study</div><div class="hs">South Africa's research council assesses the colonialism + apartheid charges in law.</div></div>
+    <div><div class="hy">2023</div><div class="hw">ICJ filing</div><div class="hs">Post-apartheid South Africa brings the genocide case against Israel.</div></div>
+  </div>
+
+  <h2 class="section">The word "genocide" has four registers</h2>
+  <p class="dek" style="margin-top:6px">
+    The single label hides four different vectors. Conflating them — reading an epithet as a court brief, or dismissing a scholarly
+    argument as an epithet — is the error on <em>every</em> side. These mark <b>vector and venue</b> (who, at whom, in what setting) —
+    <em>not</em> a ranking of legitimacy or truth.
+  </p>
+  <div class="registers">
+    <div><div class="rk">R1 · 1915+</div><div class="rt">Self-referential</div><div class="rs">The Armenian fate invoked by Jews about <b>Jews</b> (Aaronsohn). Not an accusation against Zionism — and the dominant pre-1948 register.</div></div>
+    <div><div class="rk">R2 · 1948</div><div class="rt">Wartime threat</div><div class="rs">Azzam Pasha's "war of extermination" — vector points <b>at</b> the Jews. The opposite of the modern frame.</div></div>
+    <div><div class="rk">R3 · 1948–70s</div><div class="rt">Accusation (epithet)</div><div class="rs">Deir Yassin-as-genocide; Shukeiri's "Eichmann in a state"; the Soviet–Arab "Zionism = racism" push. The real pre-1982 accusation layer.</div></div>
+    <div><div class="rk">R4 · 2010+</div><div class="rt">Academic argument</div><div class="rs">Shaw, Moses, Albanese — a Convention/Lemkinian concept argued with stated criteria, <b>exposed to refutation</b> (Bartov).</div></div>
+  </div>
+
+  <h2 class="section">How to read these framings</h2>
+  <div class="panel">
+    <div class="ph">A reading key, not a verdict</div>
+    <p><b>The three are an escalation ladder, not one charge.</b> They arrive at different times and carry different legal weight; collapsing "colonizer / apartheid / genocide" into a single bloc is itself an analytic error the genealogy corrects.</p>
+    <p><b>Each strand has a live rebuttal track</b> — the 1991 revocation, Goldstone, Pogrund, Bartov, Moses, Kirsch. That is the empirical test of "resistant to counter-evidence": a frame whose proponents cannot say what would change their minds fits the charge; one in vigorous internal contest does not. The same falsifiability test applies to the counter-frame — closure cuts both ways.</p>
+    <p><b>The honest unit is the claim, not the speaker.</b> There is no rhetoric-free zone to stand on — scholarly prose is its own rhetoric of objectivity, and "genocide" is a loaded word whichever register uses it. What survives is a narrow, defeasible test, run per claim and symmetrically: can <em>this specific</em> statement be checked against evidence both sides would recognize — a document, a date, a quoted line? That certifies nothing as non-rhetorical; it only sorts what can be tested from what cannot. It is why every entry above is tagged by <em>evidence level</em>, not by who said it.</p>
+    <p style="color:var(--ink-3);font-size:13.5px"><b>This page documents the history of an argument — it does not endorse or refute any of the three framings.</b> The genealogy is the finding; the verdicts belong to the reader.</p>
+  </div>
+
+  <div class="endnotes">
+    <p>
+      <b>Sources.</b> Jabotinsky, <i>The Iron Wall</i> (1923); Fayez Sayegh, <i>Zionist Colonialism in Palestine</i> (1965); Maxime
+      Rodinson, <i>Israel: A Colonial-Settler State?</i> (1973); Baruch Kimmerling, <i>Zionism and Territory</i> (1983); Gershon
+      Shafir, <i>Land, Labor and the Origins</i> (1989); Patrick Wolfe, "Settler Colonialism and the Elimination of the Native"
+      (2006); Rashid Khalidi, <i>The Hundred Years' War on Palestine</i> (2020); Areej Sabbagh-Khoury, <i>Colonizing Palestine</i>
+      (2023). Apartheid: Uri Davis (1987, 2003); HSRC, <i>Occupation, Colonialism, Apartheid?</i> (2009); Virginia Tilley, ed.,
+      <i>Beyond Occupation</i> (2012); Jimmy Carter (2006); ESCWA / Falk &amp; Tilley (2017); HRW (2021); Amnesty (2022); B'Tselem
+      (2021); and the rebuttal, Benjamin Pogrund, <i>Drawing Fire</i> (2014). Genocide: UNGA 37/123 D (1982); Martin Shaw &amp; Omer
+      Bartov, <i>Journal of Genocide Research</i> (2010); A. Dirk Moses, <i>The Problems of Genocide</i> (2021); Francesca Albanese,
+      <i>Anatomy of a Genocide</i> (2024); Adam Kirsch, <i>On Settler Colonialism</i> (2024).
+    </p>
+    <p>
+      <b>Scope &amp; caveats.</b> The pre-1982 genocide-register entries (R1–R3) rest on general scholarship, not the corpus, and are
+      marked accordingly; the load-bearing sources (Auron on the Armenian self-reference; Achcar; Litvak &amp; Webman) are
+      acquisition gaps. "Principal author / chief architect" of Res 3379 is an attributed characterization (Levin), not an archival
+      assertion. The four-register scheme marks vector and venue, not legitimacy. Full memo, evidence chains, and the methodological
+      discussion: <i>colonizer-apartheid-genocide-genealogy</i> in the research repository.
+    </p>
+  </div>
+
+  <footer class="colophon">
+    <div><b>Colonizer · Apartheid · Genocide — A Genealogy of Three Framings, 1882–2025</b> · Corpus synthesis</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono · <a href="index.html" style="color:inherit">← All periods</a></div>
+  </footer>
+
+</div>
+</body>
+</html>

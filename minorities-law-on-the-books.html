@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Law on the Books — Religious Minorities &amp; the State Across the Region</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* page-scoped — uses shared tokens from broadsheet.css */
+  .key { display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin:16px 0 6px; padding:14px 16px; border:1px solid var(--rule-soft); background:rgba(255,255,255,0.35); }
+  .key .kg { font-family:var(--sans); font-size:11px; color:var(--ink-3); display:flex; align-items:center; gap:7px; }
+  .key .kh { font-family:var(--sans); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--ink-4); width:100%; }
+
+  /* evidence-level chips */
+  .lv { font-family:var(--mono); font-size:9px; letter-spacing:.03em; text-transform:uppercase; color:var(--ink-4); border:1px solid var(--rule-soft); padding:1px 5px; border-radius:2px; white-space:nowrap; }
+  .sc { font-family:var(--sans); font-size:9px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; padding:2px 8px; border-radius:10px; white-space:nowrap; vertical-align:middle; }
+  .sc.im  { background:rgba(138,90,43,0.12); color:var(--accent-5); }
+  .sc.cit { background:rgba(45,74,58,0.12);  color:var(--accent-3); }
+  .sc.res { background:rgba(58,74,107,0.12); color:var(--accent-4); }
+  h2.section .sc { float:right; margin-top:2px; }
+  .lv.conv { color:var(--accent-4); border-color:rgba(58,74,107,0.35); }
+  .lv.prac { color:var(--accent-5); border-color:rgba(138,90,43,0.4); }
+  .lv.gen  { border-style:dashed; }
+  .lv.unv  { border-style:dashed; color:var(--accent); border-color:rgba(122,44,30,0.35); }
+
+  table.t { min-width: 1000px; }
+  table.t tbody td { font-size:13.5px; line-height:1.5; }
+  table.t tbody td q { quotes:"“" "”"; color:var(--ink); }
+  table.t td .ref { font-family:var(--mono); font-size:10px; color:var(--ink-4); white-space:nowrap; }
+  td.pol { font-family:var(--sans); font-weight:700; font-size:12.5px; color:var(--ink); white-space:nowrap; }
+  td.pol .cd { display:block; font-family:var(--mono); font-weight:400; font-size:10px; color:var(--ink-4); margin-top:2px; }
+  td.neg { color:var(--ink-4); }
+  td.hot { background:rgba(122,44,30,0.04); }
+  tr.il td { border-top:2px solid var(--ink); background:rgba(58,74,107,0.045); }
+
+  /* paired verbatim cards */
+  .qpair { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin:14px 0 8px; }
+  .qcard { border:1px solid var(--rule); border-top:3px solid var(--accent-3); background:var(--paper); padding:16px 18px 14px; }
+  .qcard.b { border-top-color:var(--accent-4); }
+  .qcard .qh { font-family:var(--sans); font-size:10px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--ink-3); margin-bottom:8px; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .qcard blockquote { margin:0 0 8px; font-family:var(--serif); font-size:14.5px; line-height:1.55; color:var(--ink); }
+  .qcard blockquote b { background:rgba(122,44,30,0.08); }
+  .qcard .qs { font-family:var(--sans); font-size:11px; color:var(--ink-3); line-height:1.5; }
+
+  .panel { border:1px solid var(--rule); border-left:4px solid var(--accent-3); background:rgba(255,255,255,0.4); padding:18px 22px; margin:14px 0 6px; max-width:940px; }
+  .panel p { font-family:var(--serif); font-size:15px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .panel p:last-child { margin-bottom:0; }
+  .panel p b { color:var(--ink); font-weight:600; }
+  .panel .ph { font-family:var(--sans); font-size:10px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent-3); margin-bottom:9px; }
+
+  /* two-framings strip */
+  .duel { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:12px 0 6px; }
+  @media (max-width:640px) { .duel { grid-template-columns:1fr; } }
+  .duel > div { background:var(--paper); padding:15px 17px; }
+  .duel .dh { font-family:var(--sans); font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; margin-bottom:7px; }
+  .duel .a .dh { color:var(--accent); }
+  .duel .b .dh { color:var(--accent-4); }
+  .duel p { font-family:var(--serif); font-size:13.5px; line-height:1.55; color:var(--ink-2); margin:0 0 8px; }
+  .duel p:last-child { margin-bottom:0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Legal Reference · Compiled Inventories</div>
+      <h1>The law on the books<br /><em>religious minorities &amp; the state across the region · 2025</em></h1>
+    </div>
+    <div class="meta">
+      <b>Question</b> · what do the region's constitutions and statutes actually say about religious minorities — including Jews — and how does Israeli law read under the same scrutiny?<br />
+      <b>Method</b> · verbatim instrument text only; constitution / statute / convention / practice marked apart; both directions in one pass<br />
+      <span class="faint">19 polities · 16 Arab states + Palestinian Authority + Iran + Israel<br />verified against primary texts &amp; official translations, June 2026</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;All periods</a> &nbsp;·&nbsp; <a href="wider-region.html">The wider region</a> &nbsp;·&nbsp; <a href="colonizer-apartheid-genocide.html">Colonizer · apartheid · genocide</a>
+  </nav>
+
+  <p class="dek">
+    "Apartheid" is a <em>legal-structure</em> claim — an argument about what is written into law. So the honest test set is the law
+    as written, on all sides of the region at once. This page lays out, clause by clause, what nineteen legal systems put on the
+    books about religion and the citizen: state-religion and sharia clauses, religion-gated nationality, apostasy and blasphemy
+    statutes, worship and marriage restrictions, the legal standing of each surviving Jewish community — and Israeli law held to
+    <em>identical</em> scrutiny, including the West Bank's dual legal regime that the apartheid charge principally rests on.
+    Everything quoted is instrument text; everything that is convention, practice, or unverified is marked as such.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">17 of 19</div><div class="l">constitutions carry an Islam clause — the exceptions are Lebanon and Israel (whose clause is a Jewish-state clause)</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">states where leaving Islam can carry the death penalty on the books</div></div>
+    <div class="stat"><div class="n">3</div><div class="l">nationality laws with an explicit religion clause — Jordan ("not being Jewish"), Kuwait, Yemen</div></div>
+    <div class="stat"><div class="n">1</div><div class="l">full civil-marriage regime among the nineteen — Tunisia, since 1956</div></div>
+  </div>
+
+  <h2 class="section">How to read this</h2>
+  <div class="key">
+    <div class="kh">Evidence level — unmarked entries are verbatim-verified instrument text (constitution or statute)</div>
+    <span class="kg"><span class="lv conv">convention</span> unwritten rule (e.g. Lebanon's Maronite presidency)</span>
+    <span class="kg"><span class="lv prac">practice</span> administrative reality without statutory text</span>
+    <span class="kg"><span class="lv gen">general</span> standing scholarship, not re-verified this pass</span>
+    <span class="kg"><span class="lv unv">unverified</span> circulating claim we could not confirm — treat with care</span>
+    <div class="kh">Scope — who the instrument binds. Comparisons are only valid within a scope; converting one into another is the page's cardinal category error</div>
+    <span class="kg"><span class="sc im">immigration</span> outsiders — who may enter &amp; become a citizen</span>
+    <span class="kg"><span class="sc cit">citizens</span> the state's own citizens</span>
+    <span class="kg"><span class="sc res">residents</span> non-citizen residents &amp; subjects under the state's rule</span>
+    <div class="kh">Discipline</div>
+    <span class="kg">On-the-books ≠ practice — both gaps cut both ways and are flagged where known</span>
+    <span class="kg">The unit is the clause, not the country's virtue</span>
+  </div>
+
+  <h2 class="section">I · The constitutional layer</h2>
+  <p class="dek" style="margin-top:6px">
+    Every clause below is quoted from the in-force text — including Syria's <em>2025 transitional declaration</em> (which
+    <b>strengthened</b> the sharia clause from "a major source" to "the principal source") and Tunisia's 2022 constitution
+    (which <b>dropped</b> the state-religion article). The gradient matters: "the source of all legislation" (Yemen) and
+    "a main source" (Kuwait) are different legal machines.
+  </p>
+  <div class="tablewrap">
+  <table class="t">
+    <thead><tr><th>Polity</th><th>State religion</th><th>Sharia &amp; legislation</th><th>Head of state</th><th>Belief &amp; worship clause</th><th>Minorities named</th></tr></thead>
+    <tbody>
+      <tr class="sec"><td colspan="6">The Arab states</td></tr>
+      <tr><td class="pol">Egypt<span class="cd">const. 2014/19</span></td><td><q>Islam is the religion of the state</q> <span class="ref">art 2</span></td><td>Sharia principles <q>the principal source of legislation</q> <span class="ref">art 2</span></td><td class="neg">no religion requirement</td><td><q>Freedom of belief is absolute</q> — but worship &amp; places of worship only for <q>revealed religions</q>, <q>organized by law</q> <span class="ref">art 64</span></td><td>Christians <b>and Jews</b>: personal-status autonomy <span class="ref">art 3</span></td></tr>
+      <tr><td class="pol">Jordan<span class="cd">const. 1952</span></td><td><q>Islam is the religion of the State</q> <span class="ref">art 2</span></td><td class="neg">no source clause; sharia courts constitutionalized <span class="ref">arts 104–106</span></td><td>King a Muslim, of Muslim parents <span class="ref">art 28(e)</span></td><td>Free exercise <q>in accordance with the customs observed in the Kingdom</q>, public order &amp; morality <span class="ref">art 14</span></td><td>recognized non-Muslim community tribunals <span class="ref">art 108</span></td></tr>
+      <tr><td class="pol">Lebanon<span class="cd">const. 1926</span></td><td class="neg">none</td><td class="neg">none</td><td class="neg">no clause — Maronite presidency is the National Pact <span class="lv conv">convention</span></td><td><q>Freedom of conscience is absolute</q>; each sect's personal-status system guaranteed <span class="ref">art 9</span></td><td>18 recognized confessions incl. Jewish <span class="ref">decree 60 L.R./1936</span>; confessional quotas <span class="ref">arts 24, 95</span></td></tr>
+      <tr><td class="pol">Syria<span class="cd">2025 declaration</span></td><td class="neg">none (attaches to presidency)</td><td class="hot"><q>Islamic jurisprudence is <b>the principal source</b> of legislation</q> <span class="ref">art 3(1)</span> — 2012 text read <q>a major source</q></td><td><q>The religion of the President of the Republic is Islam</q> <span class="ref">art 3(1)</span></td><td><q>Freedom of belief is protected</q>; <q>divine religions</q>, public order <span class="ref">art 3(2)</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Iraq<span class="cd">const. 2005</span></td><td><q>Islam is the official religion of the State</q> <span class="ref">art 2</span></td><td><q>a foundation source</q>; no law may contradict <q>the established provisions of Islam</q> — nor democracy, nor constitutional rights <span class="ref">art 2 A–C</span></td><td class="neg">no religion requirement</td><td>thought, conscience, belief; worship guaranteed <span class="ref">arts 42–43</span></td><td>Christians, Yazidis, Sabean-Mandeans <span class="ref">art 2</span> — <b>Jews not named</b></td></tr>
+      <tr><td class="pol">Saudi Arabia<span class="cd">basic law 1992</span></td><td><q>Constitution: The Holy Qur'an and the Prophet's Sunnah</q> <span class="ref">art 1</span></td><td class="hot">Qur'an &amp; Sunnah <q>rule over this and all other State Laws</q> <span class="ref">art 7</span></td><td>Al Saud dynastic rule <q>in accordance with the Book of God</q> <span class="ref">arts 5, 55</span></td><td class="hot"><b>No freedom-of-religion clause exists in the text.</b> Nearest: human rights <q>in accordance with Islamic Shari'ah</q> <span class="ref">art 26</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Yemen<span class="cd">const. 1991</span></td><td><q>Islam is the religion of the state</q> <span class="ref">art 2</span></td><td class="hot"><q>Islamic Shari'ah is <b>the source of all</b> legislation</q> <span class="ref">art 3</span> — the region's strongest formulation</td><td>candidate must <q>practice his Islamic duties</q> <span class="ref">art 107</span></td><td class="hot"><b>no general belief-freedom clause</b>; sanctity of places of worship only <span class="ref">art 52</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Kuwait<span class="cd">const. 1962</span></td><td><q>The religion of the State is Islam</q> <span class="ref">art 2</span></td><td><q>a main source</q> — deliberately non-exclusive <span class="ref">art 2</span></td><td>heir a legitimate son of Muslim parents <span class="ref">art 4</span></td><td><q>Freedom of belief is unrestricted</q>; rites per custom, morals, public order <span class="ref">art 35</span>; equality clause omits religion <span class="ref">art 29</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Bahrain<span class="cd">const. 2002</span></td><td><q>The religion of the State is Islam</q> <span class="ref">art 2</span></td><td><q>a principal source</q> <span class="ref">art 2</span></td><td>King <q>the loyal protector of the religion</q> <span class="ref">art 33(a)</span></td><td><q>Freedom of conscience is absolute</q> <span class="ref">art 22</span>; expression bounded by <q>fundamental beliefs of Islamic doctrine</q> <span class="ref">art 23</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Qatar<span class="cd">const. 2003</span></td><td><q>Its religion is Islam</q> <span class="ref">art 1</span></td><td><q>the main source</q> <span class="ref">art 1</span></td><td>heir <q>must be a Moslem, from a Qatari Moslem mother</q> <span class="ref">art 9</span></td><td>worship guaranteed <q>according to the law</q>, public order &amp; morals <span class="ref">art 50</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">UAE<span class="cd">const. 1971</span></td><td><q>Islam is the official religion</q> <span class="ref">art 7</span></td><td><q>a main source</q> <span class="ref">art 7</span></td><td class="neg">no clause (Supreme Council of rulers)</td><td>worship per <q>generally-accepted traditions</q>, public policy &amp; morals <span class="ref">art 32</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Oman<span class="cd">basic statute 2021</span></td><td><q>The religion of the state is Islam</q> <span class="ref">art 2</span></td><td><q>the Islamic Sharia is the basis of legislation</q> <span class="ref">art 2</span></td><td>Sultan a Muslim son of Muslim Omani parents <span class="ref">art 5</span></td><td>rituals per <q>recognised customs</q>, public order <span class="ref">art 34</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Morocco<span class="cd">const. 2011</span></td><td><q>Islam is the religion of the State, which guarantees to all the free exercise of beliefs</q> <span class="ref">art 3</span></td><td class="neg">no source clause; religion provisions unamendable <span class="ref">art 175</span></td><td>King = Commander of the Faithful <span class="ref">art 41</span></td><td>art 3 guarantee (above)</td><td class="hot">preamble: national identity <q>nourished and enriched by its African, Andalusian, <b>Hebraic</b> and Mediterranean influences</q> — the only Arab-League constitution naming a Jewish strand</td></tr>
+      <tr><td class="pol">Algeria<span class="cd">const. 2020</span></td><td><q>Islam shall be the religion of the State</q> <span class="ref">art 2, entrenched 234</span></td><td class="neg">no source clause (advisory High Islamic Council, art 217)</td><td>candidate <q>shall: … be Muslim</q> <span class="ref">art 91</span></td><td>conscience inviolable; worship guaranteed per law <span class="ref">art 51</span></td><td class="neg">none confessional</td></tr>
+      <tr><td class="pol">Tunisia<span class="cd">const. 2022</span></td><td class="hot"><b>none — the 2022 text dropped 2014's</b> <q>its religion is Islam</q></td><td>Tunisia <q>part of the Islamic Ummah</q>; the state realizes <q>the purposes of true Islam</q> (life, honour, property, religion, liberty) <span class="ref">art 5</span></td><td>President: <q>His religion is Islam</q> <span class="ref">art 88</span></td><td>belief &amp; conscience guaranteed; worship limited by public security <span class="ref">arts 27–28</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Libya<span class="cd">2011 declaration</span></td><td><q>Islam shall be its religion</q> <span class="ref">art 1</span></td><td><q>Islamic Shari'a shall be the main source of legislation</q> <span class="ref">art 1</span></td><td class="neg">no clause</td><td>state <q>shall guarantee for non-Muslims the freedom to practice their religious rituals</q> <span class="ref">art 1</span></td><td>Amazigh, Tebu, Touareg — ethnolinguistic <span class="ref">art 1</span></td></tr>
+      <tr class="sec"><td colspan="6">Palestinian Authority &amp; Iran</td></tr>
+      <tr><td class="pol">Palestinian Auth.<span class="cd">basic law 2003</span></td><td><q>Islam is the official religion in Palestine</q> <span class="ref">art 4(1)</span></td><td>sharia principles <q>a principal source of legislation</q> <span class="ref">art 4(2)</span></td><td class="neg">no religion requirement</td><td>belief &amp; worship guaranteed, public order &amp; morals <span class="ref">art 18</span>; sharia courts for personal status <span class="ref">art 101</span></td><td class="neg">none</td></tr>
+      <tr><td class="pol">Iran<span class="cd">const. 1979/89</span></td><td>Twelver Ja'fari Islam, <q>eternally immutable</q> <span class="ref">art 12</span></td><td class="hot">all laws <q>must be based on Islamic criteria… absolutely and generally</q>, Guardian Council judges <span class="ref">art 4</span></td><td>Leader: the <q>just and pious faqih</q> <span class="ref">arts 5, 109</span>; President: official madhhab <span class="ref">art 115</span></td><td>no investigation of beliefs <span class="ref">art 23</span> — but recognition is a closed list <q>within the limits of the law</q> <span class="ref">arts 13–14</span></td><td class="hot">Zoroastrians, <b>Jews</b>, Christians — <q>the only recognized religious minorities</q> <span class="ref">art 13</span>; 5 reserved Majlis seats incl. 1 Jewish <span class="ref">art 64</span>; Baha'is outside the list</td></tr>
+      <tr class="sec"><td colspan="6">Israel — the same scrutiny</td></tr>
+      <tr class="il"><td class="pol">Israel<span class="cd">basic laws 1992/2018</span></td><td class="hot">no state-religion clause — instead <q>the nation state of the Jewish People</q>; self-determination <q>exclusive to the Jewish People</q> <span class="ref">2018 §1</span></td><td class="neg">no sharia-type clause; religious-court jurisdiction statutory (millet, see §IV)</td><td class="neg">no religion requirement</td><td>no constitutional belief clause; dignity &amp; liberty as <q>a Jewish and democratic state</q> <span class="ref">1992 §1a</span>; <b>no textual equality clause</b> — equality judicially derived <span class="ref">HCJ 6698/95</span></td><td>~14 recognized communities (Jewish, Muslim, Druze, Baha'i, 9 Christian); Arabic downgraded from official language to <q>special status</q> <span class="ref">2018 §4</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section">II · Nationality &amp; immigration — laws on outsiders, not on citizens <span class="sc im">scope: immigration</span></h2>
+  <p class="dek" style="margin-top:6px">
+    Everything in this section governs <em>acquisition</em> — who may enter and become a member. None of it touches the rights of
+    anyone already a citizen: the Law of Return confers nothing on Israel's existing citizens, Jewish or Arab, and Jordan's
+    art 3(2) sorted who was incorporated in 1954, not how Jordanian citizens are treated. Immigration is also the domain where
+    states well beyond this region openly sort by ethnicity or religion — co-ethnic return and preference laws operate in Germany,
+    Greece, Hungary, Armenia, Ireland. So the mirror below is like-for-like <em>within this scope only</em>: two acquisition laws
+    keyed to Jewishness in opposite directions. Reading either as evidence about the treatment of <em>citizens</em> — in either
+    direction — is a category error. The citizen-scope comparison is §§III–V; the non-citizen-resident scope, where the apartheid
+    charge actually lives, is §§VI–VII.
+  </p>
+  <div class="qpair">
+    <div class="qcard">
+      <div class="qh">Jordan · Nationality Law No. 6 of 1954, art 3(2) · in force</div>
+      <blockquote>"The following shall be deemed to be Jordanian nationals: … Any person who, <b>not being Jewish</b>, possessed Palestinian nationality before 15 May 1948 and was a regular resident in the Hashemite Kingdom of Jordan between 20 December 1949 and 16 February 1954."</blockquote>
+      <div class="qs">The clause that naturalized the Palestinian refugee cohort — minus Jews. A one-time incorporation clause, not a continuing bar (the ordinary naturalization articles have no religion condition), but never repealed through the 2023 consolidations.</div>
+    </div>
+    <div class="qcard b">
+      <div class="qh">Israel · Law of Return 1950 §1 + Citizenship Law 1952 §2 · in force</div>
+      <blockquote>"<b>Every Jew</b> has the right to come to this country as an oleh." … "Every 'oleh under the Law of Return shall become an Israel national."</blockquote>
+      <div class="qs">Automatic and unconditional for Jews, their children, grandchildren and spouses (1970 §4A); everyone else passes through six cumulative naturalization conditions <em>plus</em> ministerial discretion — §5(b): the minister grants citizenship "if he thinks fit to do so." An acquisition law throughout: it neither adds to nor subtracts from the rights of any existing citizen.</div>
+    </div>
+  </div>
+  <div class="qpair">
+    <div class="qcard">
+      <div class="qh">Kuwait · Nationality Law 1959, art 4(5) · added 1981 · in force</div>
+      <blockquote>"…that he be an original Muslim by birth, or that he has converted to Islam… Nationality thus acquired is <b>ipso facto lost</b>… if the naturalized person expressly renounces Islam…"</blockquote>
+      <div class="qs">Naturalization is Muslim-only, and a convert's citizenship — and his dependants' — is void on apostasy. 300+ non-Muslim citizens naturalized before 1981 remain. Survived the 2024 amendments.</div>
+    </div>
+    <div class="qcard">
+      <div class="qh">Yemen · Nationality Law 6/1990, art 5 · in force</div>
+      <blockquote>"The Yemeni Nationality may be granted… <b>to any Moslem Arab or foreigner</b>…"</blockquote>
+      <div class="qs">The third explicit statutory religion gate. Saudi Arabia, by contrast, has <em>no</em> religion clause in its nationality statute — the gate is an executive-regulation file requirement (imam's certificate) plus practice the state itself acknowledged in 1938: "actually a non-Moslem has never been naturalized." <span class="lv prac">practice</span></div>
+    </div>
+  </div>
+  <div class="tablewrap">
+  <table class="t">
+    <thead><tr><th>Polity</th><th>Religion in nationality law</th><th>Israeli passports</th><th>Movement &amp; land instruments</th></tr></thead>
+    <tbody>
+      <tr><td class="pol">Jordan</td><td>art 3(2) "not being Jewish" (above); naturalization arts: Arab preference, no religion clause</td><td>admitted — 1994 treaty</td><td>1973 enemy-land-sale law (death penalty) <b>repealed 1995</b>; 2016 Petra law bars sale/rental to Israelis; PA still applies the 1973 law in its areas</td></tr>
+      <tr><td class="pol">Kuwait</td><td>art 4(5) Muslim-only + apostasy revocation</td><td>banned; prior Israel travel also disqualifying</td><td>boycott framework (Law 21/1964 <span class="lv unv">unverified №</span>)</td></tr>
+      <tr><td class="pol">Yemen</td><td>art 5 Muslim-only</td><td>banned + prior-travel bar</td><td class="neg">—</td></tr>
+      <tr><td class="pol">Saudi Arabia</td><td>no statutory clause; imam-certificate file requirement <span class="lv prac">practice</span></td><td>no general admission (category exceptions)</td><td>Mecca &amp; Medina entry religion-gated (Muslims only) by standing law</td></tr>
+      <tr><td class="pol">Egypt</td><td>facilitation only: foreigner from a country <q>whose language is Arabic, or religion is Islam</q> <span class="ref">L26/1975 art 4</span></td><td>admitted — 1979 treaty</td><td class="neg">—</td></tr>
+      <tr><td class="pol">Algeria</td><td>origin proven via ancestors <q>who lived there under the status of Muslims</q> <span class="ref">art 32</span> — the device that left Algeria's Jews (French citizens via Crémieux 1870) outside the nation at independence</td><td>banned</td><td class="neg">—</td></tr>
+      <tr><td class="pol">Lebanon · Syria · Iraq · Libya</td><td class="neg">no religion clause found (Iraq/Syria/Lebanon not directly examined <span class="lv gen">general</span>)</td><td>banned; Lebanon/Syria/Libya also bar prior Israel travel</td><td>Lebanon: Boycott Law 1955; <b>Iraq: Law 1/2022</b> — life imprisonment for travel to Israel, death or life for "establishing relations" (gazette-verified)</td></tr>
+      <tr><td class="pol">UAE · Bahrain · Morocco</td><td class="neg">no religion clause (Bahrain: sectarian naturalization <span class="lv prac">practice</span>)</td><td>admitted — 2020 normalization</td><td class="neg">—</td></tr>
+      <tr><td class="pol">Qatar · Oman · Tunisia</td><td class="neg">no religion clause</td><td>no general admission (event/transit exceptions)</td><td class="neg">—</td></tr>
+      <tr><td class="pol">Iran</td><td class="neg">no nationality gate; non-Muslims barred from senior office <span class="ref">const. 115</span></td><td>banned + prior-travel bar</td><td>Jewish families generally denied simultaneous exit <span class="lv prac">practice</span> (IRF)</td></tr>
+      <tr class="il"><td class="pol">Israel</td><td>return is Jewish-keyed (§4B: born of a Jewish mother or converted, "not a member of another religion"); naturalization for others discretionary §5(b)</td><td class="neg">—</td><td><span class="sc res">residents</span> <b>Citizenship &amp; Entry Law 2003/2022</b>: no citizenship or residence for West Bank/Gaza spouses (age-gated permit exceptions; marriage + children "not in itself" humanitarian grounds) + Iran/Lebanon/Syria/Iraq nationals; lapsed 2021, re-enacted 2022, extended since</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="dek" style="margin-top:8px">
+    <b>A distinction the page preserves throughout:</b> the entry bans target <em>Israeli citizenship and travel documents</em>, not
+    Jewish identity as such — Jewish citizens of third countries are not barred by these instruments. Where religion itself has
+    surfaced in visa policy (the Saudi tourism authority's 2004 "Jewish people" notice, disavowed after press coverage; mid-century
+    ARAMCO postings), it is marked as practice, not statute. Symmetrically: Israel's entry-side restrictions key to <em>territory
+    and nationality</em> (West Bank/Gaza residence, enemy-state citizenship), not to Islam.
+  </p>
+
+  <h2 class="section">III · The statutory layer — belief, speech, worship <span class="sc cit">scope: citizens</span></h2>
+  <p class="dek" style="margin-top:6px">
+    These statutes bind the state's own citizens (and everyone present). <b>This — not immigration law — is the scope where
+    "how does a state treat its religious minorities" is actually answered</b>, and it is where the two profiles diverge most:
+    Israel's row is the thin one here, the region's rows are not.
+  </p>
+  <div class="tablewrap">
+  <table class="t">
+    <thead><tr><th>Polity</th><th>Leaving Islam</th><th>Blasphemy / religious insult (max)</th><th>Non-Muslim public worship</th><th>Proselytizing Muslims</th></tr></thead>
+    <tbody>
+      <tr><td class="pol">Egypt</td><td>not criminal; marriage dissolved &amp; inheritance lost via hisba doctrine (Abu Zayd 1996)</td><td>5 yrs — "contempt of heavenly religions" <span class="ref">PC 98(f)</span></td><td>church building by governor permit, size per "need" <span class="ref">L80/2016</span>; no mosque equivalent</td><td>prosecuted via 98(f)</td></tr>
+      <tr><td class="pol">Jordan</td><td>not criminal; sharia court may declare apostasy on any citizen's complaint → marriage annulled, inheritance &amp; custody lost</td><td>3 yrs — insulting prophets <span class="ref">PC 273</span></td><td>recognized churches operate; new registrations discretionary</td><td class="neg">no express statute</td></tr>
+      <tr><td class="pol">Lebanon</td><td class="neg">legal — conversion in any direction registrable (regional outlier)</td><td>1–3 yrs <span class="ref">PC 473–474</span></td><td class="neg">free for recognized sects</td><td class="neg">no express statute</td></tr>
+      <tr><td class="pol">Syria</td><td>not criminal; personal-status effects</td><td>2 yrs <span class="ref">PC 462</span></td><td>recognized communities; post-2024 framework unsettled <span class="lv unv">unverified</span></td><td class="neg">no express statute</td></tr>
+      <tr><td class="pol">Iraq</td><td>not criminal — but children registered Muslim on a parent's conversion <em>to</em> Islam; conversion out unregistrable <span class="ref">ID law 2016 §26</span></td><td>3 yrs <span class="ref">PC 372</span></td><td>constitutionally protected; security reality differs</td><td class="neg">no express statute</td></tr>
+      <tr><td class="pol hot">Saudi Arabia</td><td class="hot"><b>death</b> — uncodified sharia; "calling for atheist thought" defined as terrorism <span class="ref">2014 regs art 1</span></td><td>death possible (uncodified)</td><td class="hot"><b>prohibited entirely</b> — no churches ever permitted; private worship tolerated as policy, unprotected in law <span class="lv prac">practice</span></td><td>criminal (uncodified)</td></tr>
+      <tr><td class="pol hot">Yemen</td><td class="hot"><b>death</b> after chance to repent <span class="ref">PC 259</span></td><td>5 yrs if against Islam <span class="ref">PC 194–195</span></td><td>permission required; no new church approved</td><td>prohibited <span class="lv unv">article unverified</span></td></tr>
+      <tr><td class="pol">Kuwait</td><td>not criminal (civil effects); naturalized citizens lose citizenship</td><td>1 yr + KD 20k fines <span class="ref">PC 111; Press L 19</span> — the 2012 death-penalty amendment was <b>vetoed, never enacted</b></td><td>licensed churches exist</td><td>"not permitted" via press/licensing <span class="lv prac">practice</span></td></tr>
+      <tr><td class="pol">Bahrain</td><td>not criminal</td><td>1 yr <span class="ref">PC 309–310</span></td><td>licensed churches &amp; the Manama synagogue</td><td class="neg">no express statute</td></tr>
+      <tr><td class="pol hot">Qatar</td><td class="hot"><b>death</b> — apostasy a hudud crime by reference <span class="ref">PC art 1</span>; never enforced</td><td>7–10 yrs <span class="ref">PC 256–257</span></td><td>licensed church compound</td><td>up to 10 yrs <span class="ref">PC 257–259</span></td></tr>
+      <tr><td class="pol">UAE</td><td>statutory basis removed 2020–21 (hudud reference deleted); no affirmative decriminalization</td><td>min. 1 yr <span class="ref">PC 2021 art 312</span></td><td>licensed churches, synagogue (Abrahamic Family House 2023)</td><td>penalized <span class="lv unv">article unverified</span></td></tr>
+      <tr><td class="pol">Oman</td><td>not criminal</td><td>3–10 yrs <span class="ref">PC 269</span></td><td>licensed sites (Christian, Hindu)</td><td class="neg"><span class="lv unv">unverified</span></td></tr>
+      <tr><td class="pol">Morocco</td><td>not criminal (2017 religious-establishment retreat from a 2013 fatwa)</td><td>2–5 yrs public <span class="ref">PC 267-5</span></td><td>churches &amp; synagogues operate; rabbinical courts in the state judiciary</td><td>6 mo–3 yrs — "shaking the faith of a Muslim" <span class="ref">PC 220</span></td></tr>
+      <tr><td class="pol">Algeria</td><td>not criminal</td><td>3–5 yrs <span class="ref">PC 144 bis 2</span></td><td>non-Muslim worship only in state-designated buildings <span class="ref">Ord. 06-03 art 5</span>; approval commission rarely functions → church closures <span class="lv prac">practice</span></td><td>2–5 yrs + fines <span class="ref">06-03 art 11</span></td></tr>
+      <tr><td class="pol">Tunisia</td><td class="neg">not criminal</td><td class="neg">no dedicated statute</td><td class="neg">free; state pays the Grand Rabbi's salary</td><td class="neg">no express statute</td></tr>
+      <tr><td class="pol hot">Libya</td><td class="hot"><b>death</b> <span class="ref">PC 291 as amended 2016</span> — legally contested, still applied in the west</td><td>2 yrs <span class="ref">PC 291</span></td><td>policy limits; enforcement via security agencies</td><td>capital exposure via PC 207 (2023 cases)</td></tr>
+      <tr><td class="pol">Palestinian Auth.</td><td>not criminal; sharia personal-status effects</td><td>3 yrs (WB, Jordanian PC); Mandate code in Gaza</td><td>recognized churches operate</td><td class="neg">no express statute</td></tr>
+      <tr><td class="pol hot">Iran</td><td class="hot"><b>death</b> — uncodified, convicted via const. art 167 + PC 220, or as "corruption on earth" / insulting the Prophet <span class="ref">PC 286, 262</span></td><td>death if <em>sabb al-nabi</em> <span class="ref">PC 262, 513</span>; "deviant proselytizing" 2–5 yrs <span class="ref">500 bis</span></td><td>recognized minorities' worship within closed list; Baha'i worship criminalized in effect</td><td>2–5 yrs <span class="ref">500 bis</span></td></tr>
+      <tr class="il"><td class="pol">Israel</td><td class="neg">not criminal; conversion in any direction legal</td><td>insult to religion / religious sentiment on the books, rarely enforced <span class="ref">Penal L 170–173</span> <span class="lv gen">general</span></td><td class="neg">protected; Protection of Holy Places Law 1967 <span class="lv gen">general</span></td><td>legal — except material inducement to convert &amp; converting minors <span class="ref">Penal L 174A–B</span> <span class="lv gen">general</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section">IV · Marriage &amp; the family — the shared Ottoman inheritance <span class="sc cit">scope: citizens</span></h2>
+  <div class="panel">
+    <div class="ph">One millet system, many heirs</div>
+    <p><b>No polity on this page except Tunisia performs civil marriage for all its citizens.</b> Israel, Lebanon, Jordan, Syria, Egypt, the PA — all run marriage through religious-community courts, because all inherited the same Ottoman millet architecture (in Israel's case via the Palestine Order in Council 1922). Israel and Lebanon even share the workaround: neither performs civil marriage, both register foreign civil marriages (Israel: HCJ 143/62 <i>Funk-Schlesinger</i>; Lebanon: Decree 60 L.R./1936 — hence the Cyprus circuit from both Beirut and Tel Aviv). This column of the comparison is a <em>shared regional legacy</em>, not a distinguishing feature of either side.</p>
+    <p><b>Where the asymmetry is real:</b> in every surveyed state but Tunisia, a Muslim woman's marriage to a non-Muslim man is void on the books (Jordan PSL art 33(1); Morocco art 39; Syria art 48(2); Iran CC 1059; Iraq PSL; Egypt via Hanafi default) — Tunisia abolished its bar (a 1973 ministerial circular, not a statute) in September 2017, the region's only abolition. Iran adds an inheritance rule with no Israeli analogue: Civil Code art 881 bis — a single heir who converts to Islam takes the <em>entire</em> estate of a Jewish or Christian decedent, excluding all other heirs. Israel's religious-court system carries its own bars — halakhic refusal of intermarriage, the <i>agunah</i> problem — but conversion, non-marriage cohabitation, and foreign civil marriage are all legal and state-registered, and a 2010 civil-union track exists for the religiously unaffiliated.</p>
+  </div>
+
+  <h2 class="section">V · The Jewish communities today — population &amp; legal standing <span class="sc cit">scope: citizens</span></h2>
+  <div class="tablewrap">
+  <table class="t">
+    <thead><tr><th>Country</th><th>Jews today</th><th>Legal standing on the books</th></tr></thead>
+    <tbody>
+      <tr><td class="pol">Iran</td><td>~9,100 (largest in the region outside Israel)</td><td>constitutionally recognized (art 13) + 1 reserved Majlis seat (art 64) — <b>and</b> unequal in blood-money until 2004, still unequal in retribution (a Muslim is not subject to qisas for killing a non-Muslim), barred from senior office, subject to art 881 bis inheritance capture; family exit restricted <span class="lv prac">practice</span></td></tr>
+      <tr><td class="pol">Morocco</td><td>~2,100</td><td>rabbinical courts <b>inside the state judiciary</b> (Family Code art 2: Jews governed by "Moroccan Hebraic family law"; judgments issued in the King's name) — the only state-integrated Jewish courts outside Israel; "Hebraic" in the constitutional preamble</td></tr>
+      <tr><td class="pol">Tunisia</td><td>~1,000–1,500 (Djerba, Tunis)</td><td>state-supervised religious associations (Law 58-78); state pays the Grand Rabbi's salary and secures the Ghriba pilgrimage; rabbinical courts abolished 1957 — Jews under the uniform civil code</td></tr>
+      <tr><td class="pol">UAE</td><td>~500 + expatriates</td><td>licensed community (Abu Dhabi licence S.J. 001; Moses Ben Maimon Synagogue 2023) — administrative licensing, not constitutional recognition</td></tr>
+      <tr><td class="pol">Bahrain</td><td>~36 citizens</td><td>citizens with full civil-political rights; synagogue in Manama; Jewish ambassador to the US 2008–13; no separate recognition instrument</td></tr>
+      <tr><td class="pol">Lebanon</td><td>a few dozen</td><td>still one of the 18 recognized confessions (community council renamed "Jewish Community Council") — but allocated no parliamentary seat; communal courts non-operational for lack of clergy</td></tr>
+      <tr><td class="pol">Algeria</td><td>~200 at most</td><td>no functioning synagogue; worship subject to Ordinance 06-03 designation regime</td></tr>
+      <tr><td class="pol">Egypt</td><td>&lt; 10</td><td>"heavenly religion" with constitutional personal-status autonomy (art 3) — but community property administered as state <em>antiquities</em> (registrations since 2017), over the remnant community's objection</td></tr>
+      <tr><td class="pol">Syria · Iraq</td><td>3–7 · &lt; 10</td><td>Syria: recognition on paper, post-2024 framework unsettled. Iraq: not among the constitution's named minorities; the 1981 law transferring "departed" Jews' property to the state remains in effect <span class="lv unv">instrument unverified</span></td></tr>
+      <tr><td class="pol">Yemen</td><td>~0–1</td><td>community expelled/exited by 2021 under Houthi rule; last known Jew imprisoned since 2016 despite a release order; no legal recognition</td></tr>
+      <tr><td class="pol">Libya · Jordan · Saudi · Kuwait · Qatar · Oman</td><td>0 / none resident</td><td>no community, no synagogue, no recognition instrument (Libya: confiscations of 1970 never restored)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="dek" style="margin-top:8px">
+    The fuller story of how communities of 850,000+ became these remnants is its own page:
+    <a href="jewish-exodus-arab-lands.html">the Jewish exodus from Arab lands, 1948–1974</a>.
+  </p>
+
+  <h2 class="section">VI · Non-citizens — where the region's hardest exclusions live <span class="sc res">scope: residents</span></h2>
+  <p class="dek" style="margin-top:6px">
+    The harshest on-the-books exclusions in the region run on the <em>citizen / non-citizen</em> line rather than the confessional
+    one — the same line the West Bank regime runs on. This scope, not §II's immigration preferences, is the load-bearing
+    comparison set for the apartheid question, in both directions: Israel's entries here are the family-unification bar and the
+    West Bank dual regime (§VII), not the Law of Return.
+  </p>
+  <div class="qpair">
+    <div class="qcard">
+      <div class="qh">Lebanon · Law 296/2001, art 1 · Palestinians &amp; property</div>
+      <blockquote>"No real property right of any kind may be acquired by any person <b>who does not hold a nationality issued by a recognized State</b>, or where such acquisition contradicts the provisions of the Constitution with respect to the rejection of permanent settlement [tawteen]."</blockquote>
+      <div class="qs">Names no nationality; describes exactly one population. Heirs of pre-2001 Palestinian owners cannot register inheritance. Alongside it: exclusion from ~36 syndicated professions (law, medicine, engineering) via nationality/reciprocity conditions a stateless person can never meet — the 2010 labor amendments did not touch the syndicates, and a 2021 ministerial opening was suspended by the Shura Council in 2022.</div>
+    </div>
+    <div class="qcard b">
+      <div class="qh">Israel · Citizenship &amp; Entry Law 2003 / 2022 · in force</div>
+      <blockquote>"…the Interior Minister shall not grant an inhabitant of an area [West Bank/Gaza — <b>excluding the inhabitant of an Israeli settlement</b>]… citizenship… and shall not give him a license to reside in Israel…"</blockquote>
+      <div class="qs">The family-unification bar on Palestinian spouses (+ Iran, Lebanon, Syria, Iraq nationals), age-gated permit exceptions only; the 2022 re-enactment's purpose clause cites Israel as "a Jewish and democratic state." Lapsed 2021, re-enacted 2022, renewed since; petitions pending at the HCJ.</div>
+    </div>
+  </div>
+  <div class="tablewrap">
+  <table class="t">
+    <thead><tr><th>Regime</th><th>Population</th><th>Instruments &amp; effects on the books</th></tr></thead>
+    <tbody>
+      <tr><td class="pol">Palestinians in Jordan</td><td>~158k ex-Gazans + descendants; 2,700+ documented withdrawals 2004–08</td><td>West Bank cohort naturalized 1954 (art 3(2)); Gazans never naturalized — temporary passports without national ID numbers: no public-sector work, most syndicates closed; 1988 West Bank denaturalization en bloc by executive instruction, no published legal basis (HRW)</td></tr>
+      <tr><td class="pol">Kuwait's bidoon</td><td>~100,000</td><td>excluded at the 1959 nationality cut; reclassified "illegal residents" 1986 by administrative decision — no statute confers any status; documentation, schooling, employment all discretionary</td></tr>
+      <tr><td class="pol">Syria's census Kurds</td><td>~120k denaturalized 1962 → 500k+ by 2011</td><td>Decree 93/1962 one-day census, hereditary statelessness (<i>ajanib</i> / <i>maktumin</i>); Decree 49/2011 restored only the registered tier; post-2024 status unresolved</td></tr>
+      <tr><td class="pol">Gulf kafala</td><td>tens of millions of migrant workers</td><td>residence tied to employer-sponsor across the GCC; Qatar (2018–20) and Saudi (2021) reforms eased exit/job-change, domestic workers largely excluded</td></tr>
+      <tr class="il"><td class="pol">West Bank Palestinians under Israeli rule</td><td>~2.7–3m</td><td>see §VII — military-court jurisdiction (Order 1651) for one population, extraterritorial Israeli civil law for the other, in the same territory</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section">VII · Israel under the same lens — the two regimes <span class="sc cit">citizens</span> <span class="sc res">residents</span></h2>
+  <p class="dek" style="margin-top:6px">
+    Israel's instruments sort into the two scopes that matter: <b>citizen-scope</b> — the Nation-State clause, land-allocation
+    structures, religious personal-status courts, and the equality statutes — and <b>resident-scope</b> — the regime over
+    non-citizen Palestinians in the West Bank, which is where the apartheid characterization is actually pitched.
+    Inside the Green Line, Israeli statute books carry both the Jewish-preference instruments quoted above <em>and</em> a body of
+    anti-discrimination law with no regional counterpart (Women's Equal Rights 1951; Employment Equal Opportunities 1988 — race,
+    religion, nationality among forbidden grounds; Products &amp; Services 2000). The Admissions Committees Law 2011 carries both
+    in one statute: §6C(C) forbids rejection "for reasons of race, religion, gender, nationality…" while §6C(A)(4)–(5) permit
+    rejection for "social suitability" and "social-cultural fabric" — the open texture critics argue does the filtering the explicit
+    clause forbids (upheld, HCJ 2311/11). The apartheid charge, though, principally rests across the Green Line — on a dual legal
+    regime that is not in dispute as <em>fact</em>, only as <em>characterization</em>:
+  </p>
+  <div class="qpair">
+    <div class="qcard">
+      <div class="qh">The structure · not in dispute</div>
+      <blockquote>"A military court is authorized to adjudicate any offense defined in security legislation and law." <span style="font-family:var(--mono);font-size:10px">— Order 1651 §10(A), the regime for West Bank Palestinians</span></blockquote>
+      <blockquote>"…the Knesset applied Israeli laws to settlers on a personal and extraterritorial basis… as well as to Jews to whom the Law of Return applies… even if they are not Israeli citizens. The national identity of a suspect or defendant determines which law will apply." <span style="font-family:var(--mono);font-size:10px">— ACRI, One Rule, Two Legal Systems (2014)</span></blockquote>
+      <div class="qs">Two bodies of law, two court systems, one territory, sorted by identity — the black-letter core both sides argue from.</div>
+    </div>
+  </div>
+  <div class="duel">
+    <div class="a">
+      <div class="dh">The apartheid characterization</div>
+      <p>B'Tselem (2021): "one regime governing the entire area… based on a single organizing principle" of Jewish supremacy. HRW <i>A Threshold Crossed</i> (2021): the elements of "the crimes against humanity of apartheid and persecution" are met. Amnesty (2022): "a system of oppression and domination… wherever it has control over their rights."</p>
+    </div>
+    <div class="b">
+      <div class="dh">The rebuttal</div>
+      <p>Occupation law itself (Hague Reg. 43; GC IV art 64) requires the occupant to keep the local law in force rather than extend its own — separate systems are what the law of occupation <em>mandates</em>. Oslo II art XVII(2)(c), signed by the PLO: Palestinian Council jurisdiction covers "all persons, except for Israelis." Kontorovich (2021): "since 1993 the Palestinians have had their own government, which regulates almost every aspect of their lives."</p>
+    </div>
+    <div class="a">
+      <div class="dh">The counter-rejoinder</div>
+      <p>Extending Israeli <em>civil</em> law personally and extraterritorially to one population — settlers — is precisely what occupation law does <em>not</em> require; a 58-year "temporary" occupation with state-encouraged settlement (Basic Law 2018 §7) strains the belligerent-occupation frame the rebuttal stands on.</p>
+    </div>
+    <div class="b">
+      <div class="dh">What this page adjudicates</div>
+      <p>Nothing. It establishes the clauses. Whether the dual regime is occupation-law compliance or apartheid is the contested characterization — argued at <a href="colonizer-apartheid-genocide.html" style="color:inherit">the genealogy page</a>, not here.</p>
+    </div>
+  </div>
+
+  <h2 class="section">What the comparison shows — and what it cannot</h2>
+  <div class="panel">
+    <div class="ph">A reading key, not a verdict</div>
+    <p><b>What it shows — kept to scope.</b> A law is evidence only about the population it binds. <b>On citizens</b> <span class="sc cit">citizens</span>, the regional baseline is a religion-constituted order enforced against the state's own people: capital apostasy in five states, blasphemy statutes nearly everywhere, religion-gated office, worship confined to licensed buildings, every marriage code but Tunisia's voiding a Muslim woman's marriage out of the faith. Israel's citizen-scope instruments are of a different kind — a nation-state clause with no equality clause, land-allocation structures, religious personal-status courts (the shared millet inheritance) — alongside religious-practice freedom and anti-discrimination statutes without regional parallel. <b>On immigration</b> <span class="sc im">immigration</span>, both sides discriminate openly — return for Jews, Muslim-only naturalization — in a domain where states far beyond this region sort entrants by ethnicity and religion; <em>no clause in §II binds or burdens any existing citizen</em>. <b>On non-citizen residents</b> <span class="sc res">residents</span>, the region's hardest exclusions (Lebanon's Palestinians, the bidoon, the census Kurds) sit beside Israel's hardest: the West Bank dual regime and the family-unification bar. The three scopes do not convert into one another — an immigration preference is not a citizens-rights violation, and a clean citizens-rights record does not answer a resident-scope charge.</p>
+    <p><b>What it cannot show.</b> A regional baseline does not adjudicate the apartheid claim. "Others discriminate too" is a tu-quoque — the charge against Israel stands or falls on the West Bank's legal architecture, not on Jordan's nationality law. Symmetrically: indicting Israel's legal order while passing over Jordan's art 3(2), Kuwait's art 4(5), Lebanon's Law 296, or Iran's art 881 bis is a selection effect, not an analysis. And the scope discipline cuts both ways: citing the Law of Return as proof of apartheid against Israel's citizens is the same category error as citing Egypt's apostasy doctrine to excuse the West Bank regime. The comparison's legitimate work is calibration — establishing the regional legal vocabulary, scope by scope, so that neither "uniquely racist state" nor "freest state in the region" is argued from an empty comparison set.</p>
+    <p><b>On-the-books is half the picture.</b> Law-in-practice diverges in both directions: Qatar's capital apostasy clause has never been enforced; Saudi Arabia's church ban has no statute behind it yet is absolute in practice; Israel's equality statutes coexist with documented allocation gaps; Kuwait's constitution promises unrestricted belief over a Muslim-only citizenship. This page fixes the de-jure layer only — the layer the apartheid claim itself is pitched at.</p>
+    <p style="color:var(--ink-3);font-size:13.5px"><b>This page documents what the laws say. It does not rank states or settle the characterization dispute</b> — the clauses are the finding; the verdicts belong to the reader.</p>
+  </div>
+
+  <div class="endnotes">
+    <p>
+      <b>Sources.</b> Constitutional texts: Constitute Project (in-force English translations); DCAF/JORT for Tunisia 2022 (official French);
+      decree.om for Oman 2021; ConstitutionNet for Syria's 2025 Constitutional Declaration (unofficial translation). Statutes: official
+      gazettes and portals where retrievable (Qatar Al-Meezan; Iraqi Official Gazette No. 4680 for Law 1/2022; Lebanese LPDC for Law 296/2001;
+      UAE legislation portal; Knesset English texts and Adalah's translations for Israeli law), Library of Congress legal reports, UN
+      Legislative Series (Jordan 1954; the Saudi 1938 note), GLOBALCIT country reports, HRW translations (Kuwait art 4(5)), Refworld/NATLEX
+      (Yemen, Iran civil code), US State Dept International Religious Freedom reports 2016–2023 for current-status confirmation. Population
+      figures: DellaPergola, <i>World Jewish Population</i> (AJYB 2024), with community self-counts noted where divergent. Apartheid-question
+      texts: B'Tselem (2021), HRW (2021), Amnesty (2022); ACRI, <i>One Rule, Two Legal Systems</i> (2014); Kontorovich, EJIL:Talk! (2021);
+      Oslo II Accord, art XVII.
+    </p>
+    <p>
+      <b>Scope &amp; caveats.</b> Compiled June 2026 from contemporary legal sources, not the project's book corpus. De-jure survey only;
+      enforcement practice is flagged but not systematically scored. Items the verification pass could not confirm to instrument level are
+      marked <span class="lv unv">unverified</span> in place — among them: the Kuwait 1981 amending-law number, the Iraqi 1981
+      Jewish-property law's citation, Jordan's blasphemy-amendment enactment status, the Israeli family-unification ban's extension status
+      after March 2025, and the Israeli religion-offense / proselytism provisions (marked <span class="lv gen">general</span> — standing
+      knowledge, not re-verified). Hamas-run Gaza's internal legal practice is outside this survey. Full verification memos with verbatim
+      texts, URLs, and flag tables: <i>minorities-law-on-the-books</i> in the research repository.
+    </p>
+  </div>
+
+  <footer class="colophon">
+    <div><b>The Law on the Books — Religious Minorities &amp; the State Across the Region · 2025</b> · Legal reference</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono · <a href="index.html" style="color:inherit">← All periods</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
