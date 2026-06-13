@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Population of Palestine by Community, 1878–present — Compiled Inventories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* ── evidence-tradition pills (this sheet's own evidence vocabulary) ─── */
+  .pill.register  { border-color: var(--accent-2); color: var(--accent-2); background: #f2efe3; }
+  .pill.census    { border-color: var(--accent);   color: var(--accent);   background: #faf0eb; }
+  .pill.official  { border-color: var(--accent-4); color: var(--accent-4); background: #eef0f5; }
+  .pill.synthesis { border-color: var(--accent-3); color: var(--accent-3); background: #eaf0ec; }
+  .pill.estimate  { border-color: var(--rule); color: var(--ink-3); background: var(--paper); border-style: dashed; }
+  .col-src .pill { margin: 0 4px 4px 0; }
+
+  /* ── source-tradition legend ────────────────────────────────────────── */
+  .tradlegend {
+    display: flex; flex-wrap: wrap; gap: 7px 20px;
+    margin: 6px 0 22px; padding: 13px 16px;
+    background: var(--paper-2); border: 1px solid var(--rule-soft); border-radius: 6px;
+    font-family: var(--sans); font-size: 12px;
+  }
+  .tradlegend .lg { display: inline-flex; align-items: baseline; gap: 7px; }
+  .tradlegend b { color: var(--ink-2); font-weight: 600; }
+
+  /* ── chart frame ────────────────────────────────────────────────────── */
+  .chartwrap {
+    background: #f4efe4; border: 1px solid #ddd4c2; border-radius: 6px;
+    padding: 20px 20px 14px; margin: 4px 0 10px;
+    box-shadow: 0 18px 44px -32px rgba(40, 30, 18, 0.45);
+  }
+  .chartwrap h3 {
+    font-family: var(--serif); font-weight: 600; font-size: 17px; color: var(--ink);
+    margin: 0 0 2px;
+  }
+  .chartwrap .csub { font-family: var(--sans); font-size: 12px; color: var(--ink-3); margin: 0 0 10px; }
+  .chartlegend {
+    display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 8px;
+    font-family: var(--sans); font-size: 11.5px; color: var(--ink-3);
+  }
+  .chartlegend span { display: inline-flex; align-items: center; gap: 6px; }
+  .chartlegend i { width: 22px; height: 0; display: inline-block; }
+  .cl-mus i { border-top: 2.6px solid #7a2c1e; }
+  .cl-jew i { border-top: 2.6px solid #3a4a6b; }
+  .cl-chr i { border-top: 2.6px solid #2d4a3a; }
+  .cl-dru i { border-top: 2.6px solid #8a5a2b; }
+  .cl-rup i { border-top: 2.6px dashed #9a9080; }
+  .cl-pop i { border-top: 2.8px solid #9a6a1a; }
+  .cl-pgr i { background: rgba(45,74,58,0.32); height: 11px; width: 16px; border-radius: 2px; }
+  .cl-glob i { border-top: 2.4px dashed #6b7280; }
+  .cl-gaza i { border-top: 3px solid #c1272d; }
+  .cl-wb i   { border-top: 3px solid #e08214; }
+  .cl-isr i  { border-top: 3px solid #1b7837; }
+  .cl-jor i  { border-top: 3px dashed #2c6fbb; }
+  .cl-egy i  { border-top: 3px dashed #8e44ad; }
+
+  /* ── data tables ────────────────────────────────────────────────────── */
+  table.t .big { font-family: var(--serif); font-weight: 600; font-size: 15px; color: var(--ink); display: block; }
+  table.t .scale-note { display: block; font-family: var(--sans); font-size: 11px; color: var(--ink-3); margin-top: 2px; }
+  .conf { font-family: var(--label); font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .conf.low  { color: var(--ink-4); }
+  .conf.mod  { color: var(--accent-5); }
+  .conf.good { color: var(--accent-3); }
+  .num-cell { font-variant-numeric: tabular-nums; font-family: var(--serif); }
+  tr.era td {
+    background: var(--paper-3); font-family: var(--label); font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); padding: 7px 14px;
+  }
+  td.mus { color: #7a2c1e; font-weight: 600; }
+
+  /* ── rupture / caveat banner ────────────────────────────────────────── */
+  .retronote {
+    margin: 4px 0 18px; padding: 14px 18px;
+    background: rgba(122,44,30,0.06); border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent); border-radius: 5px;
+    font-family: var(--sans); font-size: 13px; line-height: 1.55; color: var(--ink-2);
+  }
+  .retronote .rl {
+    display: block; font-family: var(--label); font-size: 10.5px; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px;
+  }
+  .retronote b { color: var(--ink); font-weight: 600; }
+
+  /* ── regime timeline strip ──────────────────────────────────────────── */
+  .regimes { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 24px; }
+  .regimes .rg {
+    flex: 1 1 150px; padding: 10px 12px; border: 1px solid var(--rule-soft); border-radius: 5px;
+    background: var(--paper-2); border-top: 3px solid var(--ink-4);
+  }
+  .regimes .rg .yr { font-family: var(--mono); font-size: 10.5px; color: var(--ink-4); letter-spacing: 0.04em; }
+  .regimes .rg .nm { font-family: var(--sans); font-weight: 700; font-size: 13px; color: var(--ink); margin: 2px 0 1px; }
+  .regimes .rg .ds { font-family: var(--serif); font-size: 12px; color: var(--ink-3); line-height: 1.4; }
+  .regimes .rg.ott { border-top-color: var(--accent-2); }
+  .regimes .rg.man { border-top-color: var(--accent); }
+  .regimes .rg.spl { border-top-color: var(--accent-5); }
+  .regimes .rg.occ { border-top-color: var(--accent-4); }
+  .regimes .rg.aut { border-top-color: var(--accent-3); }
+
+  /* ── growth-rate horizontal bars ────────────────────────────────────── */
+  .grates { font-family: var(--sans); margin: 6px 0 4px; }
+  .grates .gr { display: grid; grid-template-columns: 178px 1fr; gap: 12px; align-items: center; margin-bottom: 10px; }
+  .grates .gl { text-align: right; }
+  .grates .gl b { font-size: 12.5px; color: var(--ink); font-weight: 700; display: block; }
+  .grates .gl span { font-family: var(--mono); font-size: 10px; color: var(--ink-4); }
+  .grates .gtrack { position: relative; height: 26px; }
+  .grates .gbar { height: 26px; border-radius: 3px; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; color: #f5f1e8; font-weight: 700; font-size: 12px; min-width: 30px; }
+  .grates .gnote { font-size: 11px; color: var(--ink-3); margin-top: 1px; line-height: 1.4; }
+  .grates .gaxis { font-family: var(--mono); font-size: 10px; color: var(--ink-4); display: flex; justify-content: space-between; border-top: 1px solid var(--rule-soft); padding-top: 3px; margin-top: 2px; }
+  .grates .gtick { position: absolute; top: 0; height: 26px; border-left: 2px dotted var(--ink); opacity: 0.6; }
+  .grates .gtcap { position: absolute; top: -12px; transform: translateX(-50%); font-family: var(--mono); font-size: 9px; color: var(--ink-3); white-space: nowrap; }
+  @media (max-width: 620px) {
+    .grates .gr { grid-template-columns: 1fr; gap: 2px; }
+    .grates .gl { text-align: left; }
+  }
+
+  @media print {
+    html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .chartwrap, table, .retronote { break-inside: avoid; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ── Masthead ───────────────────────────────────────────────────── -->
+  <header class="mast">
+    <div>
+      <div class="eyebrow">Compiled Inventories · 1516–present</div>
+      <h1>The population of Palestine by community, <em>1878–present</em></h1>
+      <p class="crosslinks">
+        <a href="index.html">‹&nbsp;Topics</a> &nbsp;·&nbsp; Arab Muslim · Arab Christian · Jewish · Druze · Samaritan · others, across five regimes
+      </p>
+    </div>
+    <div class="meta">
+      <b>Scope</b> · the whole territory of Mandatory Palestine, then its three successor pieces (Israel · West Bank · Gaza)<br />
+      <b>Window</b> · 1878 (late-Ottoman census) → 2023, with a war-era estimate to 2026, by religious community and Jewish origin<br />
+      <span class="faint">The Arab-Muslim majority is the spine; every other community<br />is tracked against it. Figures are ranges with their evidence marked.</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    One question runs through this sheet: <em>how did each community of Palestine grow — and under which government?</em>
+    The Arab-Muslim population is the demographic body of the country and the focus here; it is tracked alongside the
+    Arab-Christian, Jewish (decomposed by origin and <em>aliyah</em>), Druze, Samaritan, and non-Arab Christian communities.
+    The frame is <em>regime by regime</em> — late Ottoman, British Mandate, the 1948 rupture, the 1948–67 three-way
+    split, Israeli occupation, and the Palestinian Authority — because the single largest fact about this population is
+    that it grew at <em>very different rates under different governments</em>, and that 1948 was a <em>displacement</em>,
+    not a demographic event. Every figure carries its evidentiary character: Ottoman register, census, official
+    statistics, modern synthesis, or estimate.
+  </p>
+
+  <!-- ── Headline stats ─────────────────────────────────────────────── -->
+  <div class="stats">
+    <div class="stat"><div class="n">~386K → ~7.1M</div><div class="l">Arab-Muslim population, 1878 → 2023 <span style="opacity:.7">(≈ ×18)</span></div></div>
+    <div class="stat"><div class="n">~441K → ~14M</div><div class="l">Total population of the territory, 1878 → today</div></div>
+    <div class="stat"><div class="n">~1.2% → ~3.8%/yr</div><div class="l">Muslim growth rate: slowest (late-Ottoman) to fastest (Israeli Arabs)</div></div>
+    <div class="stat"><div class="n">~7.3M : ~7.2M</div><div class="l">Arabs : Jews in the whole territory today — near parity</div></div>
+  </div>
+
+  <!-- ── Regime timeline strip ──────────────────────────────────────── -->
+  <h2 class="section">Five regimes</h2>
+  <div class="regimes">
+    <div class="rg ott"><div class="yr">1878–1917</div><div class="nm">Late Ottoman</div><div class="ds">One territory, counted by <em>millet</em>. Growth ≈ natural increase.</div></div>
+    <div class="rg man"><div class="yr">1917–1948</div><div class="nm">British Mandate</div><div class="ds">Three censuses (1922, 1931, ’45). Mortality falls; Jewish immigration surges.</div></div>
+    <div class="rg spl"><div class="yr">1948–1967</div><div class="nm">The split</div><div class="ds">Israel · Jordanian West Bank · Egyptian Gaza — one people, three governments.</div></div>
+    <div class="rg occ"><div class="yr">1967–1993</div><div class="nm">Israeli occupation</div><div class="ds">WB + Gaza under military rule; mortality collapses, growth peaks.</div></div>
+    <div class="rg aut"><div class="yr">1993–present</div><div class="nm">Palestinian Authority</div><div class="ds">PCBS counts WB + Gaza; fertility begins its long decline.</div></div>
+  </div>
+
+  <!-- ── Master chart ───────────────────────────────────────────────── -->
+  <div class="chartwrap">
+    <h3>Population by community, 1878–2023</h3>
+    <p class="csub">
+      Whole single territory through 1946 (McCarthy, corrected); recombined Israel&nbsp;+&nbsp;West&nbsp;Bank&nbsp;+&nbsp;Gaza after 1948.
+      <b>Ratio (log) vertical scale</b> — a steeper line means faster growth; parallel lines grow at the same rate.
+      The dashed bridge across 1948 marks the rupture, where the territory fragments and the Christian line drops on Nakba emigration.
+    </p>
+    <div id="pop-plot"></div>
+    <div class="chartlegend">
+      <span class="cl-mus"><i></i> Muslim (Arab)</span>
+      <span class="cl-jew"><i></i> Jewish</span>
+      <span class="cl-chr"><i></i> Christian</span>
+      <span class="cl-dru"><i></i> Druze</span>
+      <span class="cl-rup"><i></i> across the 1948 rupture</span>
+    </div>
+  </div>
+
+  <!-- ── Source-tradition legend ────────────────────────────────────── -->
+  <div class="tradlegend">
+    <span class="lg"><span class="pill register">Register</span> <b>Ottoman register / salname</b></span>
+    <span class="lg"><span class="pill census">Census</span> <b>Mandate / Jordanian / Israeli / PCBS census</b></span>
+    <span class="lg"><span class="pill official">Official</span> <b>CBS / PCBS / UN current statistics</b></span>
+    <span class="lg"><span class="pill synthesis">Synthesis</span> <b>Modern demographic reconstruction</b></span>
+    <span class="lg"><span class="pill estimate">Estimate</span> <b>Inference; wide error bars</b></span>
+  </div>
+
+  <!-- ══ SECTION 1 — the whole-territory ledger ═════════════════════════ -->
+  <h2 class="section">The whole-territory ledger, 1878–1946</h2>
+  <p class="dek" style="margin-top:0">
+    While Palestine was a single territory, the authoritative count is <b>Justin McCarthy, <i>The Population of
+    Palestine</i> (1990)</b> — the Ottoman registers and the three Mandate censuses, corrected for undercount, by
+    religion. Ottoman figures are <em>Ottoman citizens</em>: they undercount foreign-passport Jews (most First- and
+    Second-<em>Aliyah</em> olim held foreign nationality), so the 1914 Jewish total is ~39,000 <em>citizens</em> but
+    ~60,000 <em>residents</em>. The Christian column is little affected by the citizen distinction.
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr><th>Year</th><th>Muslim</th><th>Jewish</th><th>Christian</th><th>Druze / other</th><th>Total</th><th>Evidence</th></tr>
+      </thead>
+      <tbody>
+        <tr class="era"><td colspan="7">Late Ottoman — one territory, counted by millet</td></tr>
+        <tr><td class="num-cell"><b>1878</b></td><td class="num-cell mus">386,320</td><td class="num-cell">13,942 <span class="scale-note">~25,000 incl. foreigners</span></td><td class="num-cell">40,588</td><td class="num-cell">—</td><td class="num-cell"><span class="big">440,850</span></td><td class="col-src"><span class="pill register">Register</span><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell"><b>1890</b></td><td class="num-cell mus">445,728</td><td class="num-cell">17,991</td><td class="num-cell">52,412</td><td class="num-cell">—</td><td class="num-cell"><span class="big">516,131</span></td><td class="col-src"><span class="pill register">Register</span><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell"><b>1900</b></td><td class="num-cell mus">499,110</td><td class="num-cell">23,662</td><td class="num-cell">63,809</td><td class="num-cell">—</td><td class="num-cell"><span class="big">586,581</span></td><td class="col-src"><span class="pill register">Register</span><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell"><b>1914</b></td><td class="num-cell mus">602,377</td><td class="num-cell">38,754 <span class="scale-note">~60,000 incl. foreigners</span></td><td class="num-cell">81,012</td><td class="num-cell">—</td><td class="num-cell"><span class="big">722,143</span></td><td class="col-src"><span class="pill register">Register</span></td></tr>
+        <tr class="era"><td colspan="7">British Mandate — corrected (McCarthy Tables 2.14 / 2.15, end-of-year)</td></tr>
+        <tr><td class="num-cell"><b>1922</b> <span class="scale-note">census</span></td><td class="num-cell mus">638,407</td><td class="num-cell">93,360</td><td class="num-cell">75,875</td><td class="num-cell">~8,500</td><td class="num-cell"><span class="big">816,123</span></td><td class="col-src"><span class="pill census">Census</span></td></tr>
+        <tr><td class="num-cell"><b>1931</b> <span class="scale-note">census</span></td><td class="num-cell mus">775,181</td><td class="num-cell">175,936</td><td class="num-cell">92,802</td><td class="num-cell">~10,300</td><td class="num-cell"><span class="big">1,054,189</span></td><td class="col-src"><span class="pill census">Census</span></td></tr>
+        <tr><td class="num-cell"><b>1940</b></td><td class="num-cell mus">976,119</td><td class="num-cell">479,872</td><td class="num-cell">124,482</td><td class="num-cell">~12,000</td><td class="num-cell"><span class="big">1,593,204</span></td><td class="col-src"><span class="pill census">Census</span><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell"><b>1946</b></td><td class="num-cell mus">1,175,196</td><td class="num-cell">602,586</td><td class="num-cell">148,910</td><td class="num-cell">~14,000</td><td class="num-cell"><span class="big">1,942,349</span></td><td class="col-src"><span class="pill census">Census</span><span class="pill synthesis">Synthesis</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="dek" style="font-size:13px">
+    <b>The one census that names every community.</b> The Mandate end-of-year series folds the small communities into
+    a single “other.” Only the raw <b>1922 census</b> (Barron’s <i>General Abstract</i>) lists them discretely — the
+    high-water mark of confessional granularity, before everything after aggregates:
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>1922 census, by religion (raw, enumerated)</th><th>Count</th><th>Share</th></tr></thead>
+      <tbody>
+        <tr><td class="num-cell">Muslims</td><td class="num-cell mus">590,890</td><td class="num-cell">78.0%</td></tr>
+        <tr><td class="num-cell">Jews</td><td class="num-cell">83,794</td><td class="num-cell">11.1%</td></tr>
+        <tr><td class="num-cell">Christians <span class="scale-note">all churches</span></td><td class="num-cell">73,024</td><td class="num-cell">9.6%</td></tr>
+        <tr><td class="num-cell">Druze</td><td class="num-cell">7,028</td><td class="num-cell">0.9%</td></tr>
+        <tr><td class="num-cell">Bahá’í</td><td class="num-cell">265</td><td class="num-cell">0.04%</td></tr>
+        <tr><td class="num-cell">Samaritans</td><td class="num-cell">163</td><td class="num-cell">0.02%</td></tr>
+        <tr><td class="num-cell">Metawileh <span class="scale-note">Shiʿa</span></td><td class="num-cell">156</td><td class="num-cell">0.02%</td></tr>
+        <tr><td class="num-cell">Hindus / Sikhs <span class="scale-note">British-Indian Army</span></td><td class="num-cell">1,862</td><td class="num-cell">0.25%</td></tr>
+        <tr><td class="num-cell"><b>Total enumerated</b></td><td class="num-cell"><b>757,182</b></td><td class="num-cell">100%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="dek" style="font-size:13px">
+    Census <em>raw</em> totals run below McCarthy’s <em>corrected</em> figures above (1922 Muslims 590,890 raw vs.
+    638,407 corrected) because Ottoman and British counts under-recorded women, infants, and — above all — the
+    <b>Negev Bedouin, who “would not agree to be counted”</b> and were carried as a flat ~55,000 estimate. Every
+    Muslim figure on this sheet is therefore a <em>floor</em>.
+  </p>
+
+  <!-- ══ SECTION 2 — the 1948 rupture ═══════════════════════════════════ -->
+  <h2 class="section">1948 — the rupture</h2>
+  <div class="retronote">
+    <span class="rl">Read this first — a displacement, not a demographic event</span>
+    The drop in the Arab population of the territory between 1946 and 1950 is <b>not</b> births and deaths — it is
+    <b>flight and expulsion</b>. Of ~1.3&nbsp;million Arabs in Mandatory Palestine, <b>~700,000–750,000 were displaced</b>
+    in 1947–49; roughly <b>156,000 remained</b> inside the new state of Israel. The refugees did not vanish from the
+    count — most reappear in the West Bank and Gaza tallies below (and in Jordan, Lebanon, Syria). Where the lines on
+    this sheet jump or drop at 1948 and again at 1967, that is people <em>moving</em>, and it is marked, never smoothed.
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="n">~1.3M</div><div class="l">Arabs in Mandatory Palestine, 1947</div></div>
+    <div class="stat"><div class="n">~700–750K</div><div class="l">displaced in 1947–49 (Morris)</div></div>
+    <div class="stat"><div class="n">~156K</div><div class="l">Arabs remaining in Israel, 1949 <span style="opacity:.7">(19% of the state)</span></div></div>
+    <div class="stat"><div class="n">~650K</div><div class="l">Jews in Israel, mid-1948 (pre-mass-aliyah)</div></div>
+  </div>
+
+  <!-- ══ SECTION 3 — three regimes 1948–1967 ════════════════════════════ -->
+  <h2 class="section">Three regimes, 1948–1967 — one people, three governments</h2>
+  <p class="dek" style="margin-top:0">
+    For nineteen years the Palestinian Arab population lived under <em>three</em> separate states, each with its own
+    statistics and its own demographic regime: a Jewish-majority Israel, the Jordanian-annexed West Bank, and the
+    Egyptian-administered Gaza Strip. The contrast is the cleanest natural experiment on the sheet — <em>same people,
+    different governments, different growth.</em>
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>Israel — by religion</th><th>Jewish</th><th>Muslim</th><th>Christian</th><th>Druze</th><th>Arab total</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr><td class="num-cell"><b>1949</b></td><td class="num-cell">~716,700</td><td class="num-cell mus">~111,000</td><td class="num-cell">~34,000</td><td class="num-cell">~14,000</td><td class="num-cell"><span class="big">~156,000</span> <span class="scale-note">19% of state</span></td><td class="col-src"><span class="pill synthesis">Synthesis</span><span class="pill official">Official</span></td></tr>
+        <tr><td class="num-cell"><b>1961</b> <span class="scale-note">census</span></td><td class="num-cell">~1,932,000</td><td class="num-cell mus">~166,000</td><td class="num-cell">~51,000</td><td class="num-cell">~26,000</td><td class="num-cell"><span class="big">~243,000</span></td><td class="col-src"><span class="pill census">Census</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>The two occupied-to-be territories</th><th>Total</th><th>Muslim</th><th>Christian</th><th>Regime</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr class="era"><td colspan="6">West Bank — Jordanian rule</td></tr>
+        <tr><td class="num-cell"><b>1949</b></td><td class="num-cell">~720,000 <span class="scale-note">incl. ~300K refugees in</span></td><td class="num-cell mus">~680,000</td><td class="num-cell">~40,000</td><td>Jordan</td><td class="col-src"><span class="pill estimate">Estimate</span></td></tr>
+        <tr><td class="num-cell"><b>1961</b> <span class="scale-note">census</span></td><td class="num-cell">~805,000</td><td class="num-cell mus">~763,000</td><td class="num-cell">~42,000</td><td>Jordan</td><td class="col-src"><span class="pill census">Census</span></td></tr>
+        <tr class="era"><td colspan="6">Gaza Strip — Egyptian administration</td></tr>
+        <tr><td class="num-cell"><b>1948</b></td><td class="num-cell">~240,000 <span class="scale-note">~80K residents + ~197K refugees</span></td><td class="num-cell mus">~237,000</td><td class="num-cell">~3,000</td><td>Egypt</td><td class="col-src"><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell"><b>1966</b></td><td class="num-cell">~455,000</td><td class="num-cell mus">~452,000</td><td class="num-cell">~3,000</td><td>Egypt</td><td class="col-src"><span class="pill synthesis">Synthesis</span><span class="pill official">Official</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="dek" style="font-size:13px">
+    <b>Why the West Bank grew so slowly under Jordan.</b> Fertility was just as high there as in Gaza, but the
+    West Bank had an <em>open hinterland</em> — Jordanians could move east to Amman and the East Bank for work — so net
+    growth ran only ~0.5–1.4%/yr. Gaza, sealed against Egypt, had nowhere to send its surplus, and so its registered
+    population climbed ~3%/yr <em>despite</em> stagnant mortality (life expectancy stuck near 48–50 across the whole
+    Egyptian period). The 1948 refugee shock — Gaza’s population <em>tripled</em> in months — is displacement, kept
+    distinct from this natural growth.
+  </p>
+
+  <!-- ══ SECTION 4 — 1967 to present ════════════════════════════════════ -->
+  <h2 class="section">Occupation &amp; Authority, 1967–present</h2>
+  <p class="dek" style="margin-top:0">
+    In June 1967 Israel took the West Bank and Gaza; the immediate census drops below are <em>war flight</em>
+    (~250–300K from the West Bank to the East Bank; ~90–100K from Gaza), not slowed growth. Then came the demographic
+    signature of the occupation: Israeli health infrastructure <em>collapsed mortality</em> — Gaza’s life expectancy
+    rose ~14 years in 15 — while fertility stayed very high, driving natural increase toward ~4%/yr. After 1995 the
+    Palestinian Authority’s own bureau (PCBS) takes over the count, and fertility at last begins its decline.
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>West Bank</th><th>Total</th><th>Regime</th><th></th><th>Gaza Strip</th><th>Total</th><th>Regime</th></tr></thead>
+      <tbody>
+        <tr><td class="num-cell"><b>1967</b> <span class="scale-note">census</span></td><td class="num-cell">~600,000</td><td>Israel (mil.)</td><td></td><td class="num-cell"><b>1967</b> <span class="scale-note">census</span></td><td class="num-cell">~355,000</td><td>Israel (mil.)</td></tr>
+        <tr><td class="num-cell"><b>1997</b> <span class="scale-note">census</span></td><td class="num-cell">~1,873,000</td><td>PA / Israel</td><td></td><td class="num-cell"><b>1997</b> <span class="scale-note">census</span></td><td class="num-cell">~1,023,000</td><td>PA</td></tr>
+        <tr><td class="num-cell"><b>2007</b> <span class="scale-note">census</span></td><td class="num-cell">~2,345,000</td><td>PA / Israel</td><td></td><td class="num-cell"><b>2007</b> <span class="scale-note">census</span></td><td class="num-cell">~1,417,000</td><td>Hamas</td></tr>
+        <tr><td class="num-cell"><b>2017</b> <span class="scale-note">census</span></td><td class="num-cell">~2,882,000</td><td>PA / Israel</td><td></td><td class="num-cell"><b>2017</b> <span class="scale-note">census</span></td><td class="num-cell">~1,899,000</td><td>Hamas</td></tr>
+        <tr><td class="num-cell"><b>~2023</b></td><td class="num-cell">~3,200,000</td><td>PA / Israel</td><td></td><td class="num-cell"><b>~2023</b></td><td class="num-cell">~2,200,000</td><td>Hamas</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>Israel — by religion (current)</th><th>Jewish</th><th>Muslim</th><th>Christian <span class="scale-note" style="display:inline;font-weight:400">Arab</span></th><th>Druze</th><th>Arab total</th></tr></thead>
+      <tbody>
+        <tr><td class="num-cell"><b>1972</b></td><td class="num-cell">~2,687,000</td><td class="num-cell mus">~352,000</td><td class="num-cell">~73,000</td><td class="num-cell">~38,000</td><td class="num-cell"><span class="big">~463,000</span></td></tr>
+        <tr><td class="num-cell"><b>1995</b></td><td class="num-cell">~4,520,000</td><td class="num-cell mus">~810,000</td><td class="num-cell">~120,000</td><td class="num-cell">~95,000</td><td class="num-cell"><span class="big">~1,030,000</span></td></tr>
+        <tr><td class="num-cell"><b>2023</b></td><td class="num-cell">~7,180,000</td><td class="num-cell mus">~1,750,000</td><td class="num-cell">~145,000</td><td class="num-cell">~150,000</td><td class="num-cell"><span class="big">~2,070,000</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="dek" style="font-size:13px">
+    Recombine the three pieces and the territory holds today <b>~7.2M Jews</b> and <b>~7.3M Arabs</b> (Muslim ~7.1M,
+    Christian ~0.2M, Druze ~0.15M) — rough demographic parity, the headline number of the whole sheet, reached
+    along three different statistical paths under five different governments.
+  </p>
+
+  <!-- ══ SECTION 5 — Arab-Muslim growth by regime (the focus) ═══════════ -->
+  <h2 class="section">Arab-Muslim growth, regime by regime</h2>
+  <p class="dek" style="margin-top:0">
+    This is the question the sheet is built around. Population growth is <em>natural increase</em> (births minus
+    deaths) <em>plus or minus migration</em>. The Arab-Muslim population grew by natural increase in <em>every</em>
+    period — but the realized <em>rate</em> swung from ~1% to nearly 4% a year, and the swing tracks the
+    <b>government</b>: what it did to mortality (health infrastructure) and what it allowed for migration (an open or
+    sealed hinterland). 1948 itself is absent here — it was displacement, not growth.
+  </p>
+  <div class="chartwrap">
+    <h3>Palestinian Arab population vs. the world average, 1878–2026</h3>
+    <p class="csub">
+      The total Arab population of the territory (Muslim ~95%, with Christian and Druze) on the left axis; the
+      <b>Arab growth rate</b> by era (green bars) and the contemporaneous <b>world-average</b> growth rate (dashed)
+      on the right. The gap between bar and dashed line is the point — Arab growth ran well above the world rate for
+      ~145 years. The 1948 dip on the population line is displacement; the 2023–26 tail is a war estimate.
+    </p>
+    <div id="arab-global-plot"></div>
+    <div class="chartlegend">
+      <span class="cl-pop"><i></i> Arab population (left)</span>
+      <span class="cl-pgr"><i></i> Arab growth %, by era (right)</span>
+      <span class="cl-glob"><i></i> world-average growth % (right)</span>
+    </div>
+  </div>
+  <p class="dek" style="font-size:13px">
+    The same comparison, broken out <b>government by government</b> — each bar one regime over one stretch of years,
+    with a dark tick marking the <span style="color:var(--ink-2)">world-average</span> rate for the same period.
+    Every bar clears its tick but one — the <b>Jordanian West Bank</b>, where emigration to the East Bank pulled
+    realized growth below even the world average; everywhere else, Arab growth ran well above the global rate.
+  </p>
+  <div class="chartwrap">
+    <h3>Compound annual growth of the Arab-Muslim population, by regime</h3>
+    <p class="csub">Realized rate (natural increase ± migration), not fertility. The dark tick on each bar is the contemporaneous world-average growth rate.</p>
+    <div id="growth-plot" class="grates"></div>
+  </div>
+  <p class="dek" style="font-size:13px">
+    The pattern: the <b>Jordanian West Bank</b> is the low outlier — identical fertility to Gaza, but an open border
+    bled its growth into Amman. <b>Israeli Arabs</b> are the high outlier — ~3.8%/yr for three-quarters of a century,
+    almost pure natural increase with negligible migration, among the fastest sustained rates ever recorded for any
+    population. The <b>occupation-era</b> West Bank and Gaza peak when Israeli health infrastructure crushed infant
+    mortality while fertility stayed high. Only under the <b>Palestinian Authority</b> does the rate finally bend down,
+    as fertility falls — fastest in the West Bank, slowest in Gaza.
+  </p>
+
+  <!-- ══ SECTION 6 — community deep-dives ═══════════════════════════════ -->
+  <!-- ══ SECTION — the demographic inputs ═══════════════════════════════ -->
+  <h2 class="section">The inputs — fertility, mortality, and the engine of growth</h2>
+  <p class="dek" style="margin-top:0">
+    Growth is a subtraction: <em>births minus deaths</em>. The Arab population grew so fast because, for decades,
+    that subtraction stayed wide — fertility held near its biological maximum while mortality fell away beneath it.
+    This section opens the engine. The natural comparators are <b>Jordan</b> and <b>Egypt</b> — the states that
+    administered the West Bank and Gaza from 1948 to 1967, and the region's two demographic baselines. They ran the
+    same transition; the Palestinian populations are its <em>laggards</em>, Gaza most of all.
+  </p>
+
+  <div class="chartwrap">
+    <h3>Total fertility rate — births per woman, 1970–2023</h3>
+    <p class="csub">The <b>births</b> input. Every line starts near 6–9 and falls; the gap between them is timing — Gaza is the last to turn down. Palestinian populations solid; comparator states dashed. Replacement ≈ 2.1.</p>
+    <div id="tfr-plot"></div>
+    <div class="chartlegend">
+      <span class="cl-gaza"><i></i> Gaza</span>
+      <span class="cl-wb"><i></i> West Bank</span>
+      <span class="cl-isr"><i></i> Israeli Arabs</span>
+      <span class="cl-jor"><i></i> Jordan</span>
+      <span class="cl-egy"><i></i> Egypt</span>
+    </div>
+  </div>
+
+  <div class="chartwrap">
+    <h3>Life expectancy at birth, 1970–2022</h3>
+    <p class="csub">The <b>mortality</b> input, read as longevity. The climb is the demographic transition; for the West Bank and Gaza the sharpest gains follow 1967, as Israeli health infrastructure cut infant and child death. Pre-1990 Gaza / West Bank values are estimates.</p>
+    <div id="le-plot"></div>
+    <div class="chartlegend">
+      <span class="cl-gaza"><i></i> Gaza</span>
+      <span class="cl-wb"><i></i> West Bank</span>
+      <span class="cl-isr"><i></i> Israeli Arabs</span>
+      <span class="cl-jor"><i></i> Jordan</span>
+      <span class="cl-egy"><i></i> Egypt</span>
+    </div>
+  </div>
+
+  <p class="dek" style="margin-top:2px">
+    The same story as four numbers — where each population <em>started</em> its transition and where it stands now.
+    Infant mortality is deaths per 1,000 live births; maternal mortality per 100,000.
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead>
+        <tr><th>Population</th><th>Fertility <span class="scale-note" style="display:inline;font-weight:400">TFR, peak → now</span></th><th>Infant mortality <span class="scale-note" style="display:inline;font-weight:400">peak → now</span></th><th>Life expectancy <span class="scale-note" style="display:inline;font-weight:400">mid-c. → now</span></th><th>Maternal mort. <span class="scale-note" style="display:inline;font-weight:400">latest</span></th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mandate Palestine <span class="scale-note">Muslims, to 1948</span></td><td class="num-cell">~7</td><td class="num-cell">199 → 91</td><td class="num-cell">35 → 50</td><td class="num-cell">—</td></tr>
+        <tr><td class="mus">Gaza</td><td class="num-cell">~7–8 → 3.4</td><td class="num-cell">152 → ~18</td><td class="num-cell">~48 → ~74</td><td class="num-cell">~16*</td></tr>
+        <tr><td class="mus">West Bank</td><td class="num-cell">~7.5 → 3.1</td><td class="num-cell">~150 → ~12</td><td class="num-cell">~50 → ~74</td><td class="num-cell">~16*</td></tr>
+        <tr><td class="mus">Israeli Arabs <span class="scale-note">Muslims</span></td><td class="num-cell">~9 → 2.9</td><td class="num-cell">~66 → 5.3</td><td class="num-cell">~68 → ~80</td><td class="num-cell">n/a</td></tr>
+        <tr class="era"><td colspan="5">Comparators — the powers that administered the West Bank &amp; Gaza, 1948–67</td></tr>
+        <tr><td>Jordan</td><td class="num-cell">8.2 → 2.6</td><td class="num-cell">71 → 12</td><td class="num-cell">60 → 78</td><td class="num-cell">31</td></tr>
+        <tr><td>Egypt</td><td class="num-cell">6.1 → 2.75</td><td class="num-cell">150 → 21</td><td class="num-cell">49 → 72</td><td class="num-cell">17</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="dek" style="font-size:13px">
+    <b>The mechanism.</b> Two mortality declines bracket the story — a Mandate-era halving of infant deaths (Muslim
+    IMR 199→91, 1924–46) under British anti-malaria and public-health work, then a <em>stall</em> through the
+    Egyptian period in Gaza (life expectancy ~48–50, infant mortality ~120–150, 1948–67), then a steep
+    <b>post-1967 collapse</b> under occupation (Gaza life expectancy +14 years in fifteen). Fertility barely moved
+    until the 1990s — so natural increase stayed at ~3–3.7%/yr. On the <em>timing of the fertility decline</em> the
+    Palestinian populations are the regional laggards: Egypt, Jordan and Israeli Arabs are now near replacement
+    (~2.6–2.9), while <b>Gaza was still ~3.9 as late as 2017–19</b> — the last of the region to begin falling, which
+    is exactly why its growth stayed exceptional. <span style="color:var(--ink-4)">*West Bank &amp; Gaza maternal mortality is reported jointly (~16 per 100,000, 2023). The October-2023 war sharply reversed Gaza's mortality figures — a shock, not a trend; not plotted here.</span>
+  </p>
+
+  <h2 class="section">The communities, one by one</h2>
+
+  <h3 style="font-family:var(--serif);font-size:18px;color:var(--ink);margin:18px 0 4px">Jewish — by origin and <em>aliyah</em></h3>
+  <p class="dek" style="margin-top:0;font-size:13.5px">
+    The Jewish curve is the one driven by <em>immigration</em>, not natural increase — and its <em>origin mix</em>
+    inverts twice. The Old Yishuv of 1878 was Sephardi/Mizrahi-majority and Ottoman-subject; European religious
+    immigration made it Ashkenazi-majority by 1914. Then the great waves — overwhelmingly European — built the Yishuv,
+    though <em>arrivals</em> badly overstate <em>residents</em> (yerida ran 50–80% in the early waves). After 1948 the
+    mass <em>aliyah</em> of ~700,000–800,000 Jews from Arab and North-African lands turned a European-majority society
+    roughly even by 1961; the post-1990 Soviet wave (~1M) tilted it back; and the Israeli-born “sabra” share climbed to
+    ~78% by 2023.
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th><em>Aliyah</em> wave</th><th>Years</th><th>Gross arrivals</th><th>Dominant origin</th><th>Yerida (left)</th></tr></thead>
+      <tbody>
+        <tr><td>Zero Aliyah</td><td class="num-cell">1838–82</td><td class="num-cell">~25–45,000</td><td>Russian + continuous Sephardi/Mizrahi; consular-protected</td><td>high</td></tr>
+        <tr><td>First</td><td class="num-cell">1882–1903</td><td class="num-cell">~25–35,000</td><td>Russian Pale; ~10K Yemenite</td><td>50–60%</td></tr>
+        <tr><td>Second</td><td class="num-cell">1904–14</td><td class="num-cell">~35,000</td><td>84% Eastern Europe</td><td><b>70–80%</b></td></tr>
+        <tr><td>Third</td><td class="num-cell">1919–23</td><td class="num-cell">~35,100</td><td>93% Europe (USSR, Poland)</td><td>30–40%</td></tr>
+        <tr><td>Fourth</td><td class="num-cell">1924–31</td><td class="num-cell">~81,600</td><td>85% Europe (49% Poland)</td><td>~25%</td></tr>
+        <tr><td>Fifth</td><td class="num-cell">1932–38</td><td class="num-cell">~197,200</td><td>89% Europe; 18% Germany</td><td>20–30%</td></tr>
+        <tr><td>Aliyah Bet + war</td><td class="num-cell">1939–48</td><td class="num-cell">~200,000+</td><td>Europe; DP-camp survivors</td><td>low</td></tr>
+        <tr><td><b>Mizrahi mass aliyah</b></td><td class="num-cell">1948–60</td><td class="num-cell">~700–800,000</td><td>Morocco, Iraq, Yemen, Egypt, Tunisia/Algeria/Libya, Iran</td><td>low</td></tr>
+        <tr><td>Soviet / FSU</td><td class="num-cell">1989–2000</td><td class="num-cell">~1,000,000</td><td>former Soviet Union</td><td>low</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="dek" style="font-size:12.5px">
+    Israeli Jews by continent of birth: Israel-born ~35% (1948) → 46% (1970) → <b>~78% (2023)</b>; the
+    Asia–Africa (Mizrahi) and Europe–America shares each near ~30% after the 1948–60 wave, the European share rising
+    again with the FSU influx. <span style="color:var(--ink-4)">Arrivals ≠ population: the Second Aliyah’s ~35,000 left a net of perhaps ~7–10,000 after yerida.</span>
+  </p>
+
+  <h3 style="font-family:var(--serif);font-size:18px;color:var(--ink);margin:22px 0 4px">Arab Christian — the share that fell while the number rose</h3>
+  <p class="dek" style="margin-top:0;font-size:13.5px">
+    Christianity in Palestine <em>rose</em> across the late Ottoman period in both number and share — ~27,000 / 7.9%
+    (1850) → ~81,000 / 11.2% (1914) — the Tanzimat-era recovery of urban, great-power-patronised Christian communities.
+    The absolute number kept climbing through the Mandate to ~149,000 (1946), but the <em>share</em> fell to 7.7%
+    because the Jewish denominator exploded. The absolute <em>collapse</em> comes only after 1948: Nakba emigration
+    halved the count, and steady out-migration from Bethlehem and Ramallah has kept the West Bank Christian total flat
+    (~40–50,000) ever since, while the Muslim total around it grew ~×4½. Today Christians are ~1.5% of the West Bank,
+    ~0.05% of Gaza, and rising only inside Israel (~145,000 Arab Christians; ~185,000 counting non-Arab Christians).
+  </p>
+
+  <h3 style="font-family:var(--serif);font-size:18px;color:var(--ink);margin:22px 0 4px">Druze</h3>
+  <p class="dek" style="margin-top:0;font-size:13.5px">
+    Counted discretely only in 1922 (7,028) and 1931 (~9,148); Ben-Gurion’s November-1948 diary gives “18 villages,
+    approximately 12,000 souls.” The community held full Israeli citizenship and compulsory IDF conscription from
+    1956, and grew to ~150,000 by 2023 — but that figure is <em>not</em> continuous with the Mandate count: it
+    absorbs the <b>~25,000 Golan Druze who came under Israeli control only in 1967</b>. The genuine Galilee-and-Carmel
+    continuation is closer to ~125,000.
+  </p>
+
+  <h3 style="font-family:var(--serif);font-size:18px;color:var(--ink);margin:22px 0 4px">Samaritan — collapse, then recovery</h3>
+  <p class="dek" style="margin-top:0;font-size:13.5px">
+    The clearest case of an indigenous community ground to near-extinction: from ~1,400 in the 16th-century tax
+    registers (Nablus, Gaza, Damascus, Cairo) to a single endogamous remnant of <b>~140–150 at Nablus by 1900</b> — the
+    lowest point in their recorded history — by dhimmi extraction, forced-conversion ratchets, and a documented
+    1841 extirpation crisis survived only by the intervention of the Sephardi Chief Rabbi of Jerusalem. The 1922 census
+    counted 163; the 1931, ~182. The 20th-century recovery — American philanthropy from ~1900, then state protection —
+    has brought them to <b>~800 today</b>, split between Kiryat Luza on Mount Gerizim (West Bank) and Holon (Israel):
+    one community straddling two regimes.
+  </p>
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>Samaritans</th><th>Count</th><th>Where</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td class="num-cell">16th c.</td><td class="num-cell">~1,400</td><td>Nablus · Gaza · Safed · Cairo · Damascus</td><td class="col-src"><span class="pill register">Register</span></td></tr>
+        <tr><td class="num-cell">~1900 <span class="scale-note">nadir</span></td><td class="num-cell"><b>~140–150</b></td><td>Nablus only</td><td class="col-src"><span class="pill synthesis">Synthesis</span></td></tr>
+        <tr><td class="num-cell">1922 / 1931</td><td class="num-cell">163 / ~182</td><td>Nablus (Mandate)</td><td class="col-src"><span class="pill census">Census</span></td></tr>
+        <tr><td class="num-cell">~2023</td><td class="num-cell"><b>~800</b></td><td>Mt. Gerizim (WB) + Holon (Israel)</td><td class="col-src"><span class="pill official">Official</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="font-family:var(--serif);font-size:18px;color:var(--ink);margin:22px 0 4px">Non-Arab Christians — Templers, Armenians, the foreign communities</h3>
+  <p class="dek" style="margin-top:0;font-size:13.5px">
+    Distinct from the indigenous Arab Christians, the censuses also held European and other foreign Christians, never
+    broken out by nationality. The <b>German Templers</b> (Württemberg Pietists) settled six colonies — Haifa, Jaffa,
+    Sarona, Wilhelma, Jerusalem, Bethlehem-of-Galilee, all inside the future Israel — peaking at ~800 settlers
+    pre-WWI and ~2,200 by the interwar years, before the British interned and expelled them as enemy aliens in 1939–48;
+    Sarona is today the HaKirya government complex in Tel Aviv. The <b>Armenians</b> of the Jerusalem Armenian Quarter,
+    swelled by survivors of the 1915 genocide, were subsumed in the “Christian” total (no discrete census count;
+    rough estimates ~3,000–15,000 interwar, ~1,000–2,000 today). Russian Orthodox, Greek and Latin clergy, and other
+    Europeans make up the rest — and the 1,862 Hindus and Sikhs of 1922 were the British-Indian Army garrison, not settlers.
+  </p>
+
+  <!-- ── Method & sources ───────────────────────────────────────────── -->
+  <div class="endnotes">
+    <h2 class="section">Note on method &amp; sources</h2>
+    <p>
+      <b>The series breaks at 1948, and the break is the point.</b> Through 1946 this is a single territory with a
+      single authoritative count (McCarthy, corrected). After 1948 it is three territories under three governments;
+      the “whole-territory” figures from 1950 on are the three pieces <em>recombined</em>, and are approximate sums
+      across benchmark years that do not perfectly align. The chart bridges the gap with a dashed line precisely so
+      the discontinuity is visible rather than smoothed.
+    </p>
+    <p>
+      <b>Three things are kept analytically separate.</b> (1) <em>Displacement</em> — the ~700,000 refugees of 1948
+      and the ~350,000 of 1967 — from <em>natural</em> demographic change. (2) <em>Arrivals</em> (gross immigration)
+      from <em>resident population</em> (yerida removed most early olim). (3) <em>Citizens</em> from <em>residents</em>
+      (the Ottoman Jewish count excludes foreign-passport olim). Each is flagged where it bites.
+    </p>
+    <p>
+      <b>Known soft spots.</b> The Negev Bedouin were never enumerated — a flat ~55,000 estimate — so every Muslim
+      figure is a floor. The Egyptian-period (1948–67) Gaza vital series barely exists; deaths were under-registered
+      under both Egyptian and early-Israeli administration, so recorded growth runs high. Post-1990 West Bank/Gaza
+      religion splits are thin (PCBS publishes little by religion). Modern Druze and Samaritan counts, and all
+      post-1990 totals, rest on official statistics, not corpus primaries. The <b>world-average growth line</b> is
+      period-binned from UN DESA / Our World in Data; the <b>2023–26 Arab figures are an estimate</b> (war deaths per
+      Gaza Ministry of Health and <i>Lancet</i> ranges, emigration, and reduced births), shown dashed and carrying
+      wide error bars.
+    </p>
+    <p>
+      <b>Drawn from</b> · McCarthy, <i>The Population of Palestine</i> (1990) · Friedlander &amp; Goldscheider,
+      <i>The Population of Israel</i> (1979) · Barron, <i>Census of Palestine 1922</i> · Mills, <i>Census of
+      Palestine 1931</i> · Pummer, <i>The Samaritans: A Profile</i> (2016) · Carmel, <i>Die Siedlungen der
+      württembergischen Templer</i> (1973) · Roy, <i>The Gaza Strip</i> (1995) and the UNCTAD Gaza synthesis ·
+      Alroey and Lavsky on aliyah composition · Jordanian (1961), Israeli (1961/67/72) and Palestinian (PCBS
+      1997/2007/2017) censuses · Israel CBS and PCBS current statistics · world-average growth rates from UN DESA /
+      Our World in Data.
+    </p>
+  </div>
+
+  <!-- ── Colophon ───────────────────────────────────────────────────── -->
+  <div class="colophon">
+    <span>Compiled Inventories — Palestine &amp; the wider region</span>
+    <span><b>Population by community</b> · 1878–present · under five regimes</span>
+    <span>Ranges with evidence marked · register · census · official · synthesis · estimate</span>
+  </div>
+
+</div>
+
+<!-- ── master population curve (self-contained, data-driven SVG, log scale) ── -->
+<script>
+(function () {
+  // values in THOUSANDS. pre = single territory (McCarthy); post = recombined Israel+WB+Gaza.
+  var SERIES = [
+    { key:"muslim", label:"Muslim", color:"#7a2c1e",
+      pre:[[1878,386],[1890,446],[1900,499],[1914,602],[1922,638],[1931,775],[1940,976],[1946,1175]],
+      post:[[1950,1060],[1970,1300],[1995,3180],[2023,7100]], ldy:13 },
+    { key:"jewish", label:"Jewish", color:"#3a4a6b",
+      pre:[[1878,14],[1890,18],[1900,24],[1914,39],[1922,93],[1931,176],[1940,480],[1946,603]],
+      post:[[1950,1200],[1970,2560],[1995,4520],[2023,7180]], ldy:-5 },
+    { key:"christian", label:"Christian", color:"#2d4a3a",
+      pre:[[1878,41],[1890,52],[1900,64],[1914,81],[1922,76],[1931,93],[1940,124],[1946,149]],
+      post:[[1950,77],[1970,106],[1995,173],[2023,200]], ldy:4 },
+    { key:"druze", label:"Druze", color:"#8a5a2b",
+      pre:[[1922,8],[1931,9],[1946,14]],
+      post:[[1950,15],[1970,38],[1995,95],[2023,150]], ldy:4 }
+  ];
+  var W = 720, GL = 46, GR = 56, T = 30, CH = 282;
+  var Y0 = 1878, Y1 = 2023;
+  var LMIN = 1, LMAX = 4; // log10 of 10K .. 10,000K (10K..10M people)
+  var px = function (y) { return GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0); };
+  var cy = function (v) { return T + CH * (1 - (Math.log10(v) - LMIN) / (LMAX - LMIN)); };
+  var H = T + CH + 26;
+  var CREAM = "#f4efe4";
+  var s = [];
+  s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="Population of Palestine by community on a log scale, 1878 to 2023">');
+
+  // regime bands (subtle alternating tints + top labels)
+  var BANDS = [
+    { a:1878, b:1917, c:"rgba(90,74,46,0.06)",  t:"OTTOMAN" },
+    { a:1917, b:1948, c:"rgba(122,44,30,0.06)", t:"MANDATE" },
+    { a:1948, b:1967, c:"rgba(138,90,43,0.07)", t:"SPLIT" },
+    { a:1967, b:1993, c:"rgba(58,74,107,0.06)", t:"OCCUPATION" },
+    { a:1993, b:2023, c:"rgba(45,74,58,0.06)",  t:"PA" }
+  ];
+  BANDS.forEach(function (bd) {
+    var x0 = px(bd.a), x1 = px(bd.b);
+    s.push('<rect x="' + x0.toFixed(1) + '" y="' + T + '" width="' + (x1 - x0).toFixed(1) + '" height="' + CH + '" fill="' + bd.c + '"/>');
+    s.push('<text x="' + ((x0 + x1) / 2).toFixed(1) + '" y="' + (T - 9) + '" text-anchor="middle" font-size="8.5" font-weight="700" fill="#9a9080" style="letter-spacing:0.14em">' + bd.t + '</text>');
+  });
+
+  // y gridlines (decades) + minor lines
+  [10, 100, 1000, 10000].forEach(function (v) {
+    s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + cy(v).toFixed(1) + '" y2="' + cy(v).toFixed(1) + '" stroke="rgba(28,24,21,0.13)" stroke-width="1"/>');
+    var lbl = v >= 1000 ? (v / 1000) + "M" : v + "K";
+    s.push('<text x="' + (GL - 7) + '" y="' + (cy(v) + 4).toFixed(1) + '" text-anchor="end" font-size="11" fill="#8c8270">' + lbl + '</text>');
+  });
+  [20,50,200,500,2000,5000].forEach(function (v) {
+    s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + cy(v).toFixed(1) + '" y2="' + cy(v).toFixed(1) + '" stroke="rgba(28,24,21,0.05)" stroke-width="1"/>');
+  });
+
+  // 1948 rupture rule
+  var xr = px(1948);
+  s.push('<line x1="' + xr.toFixed(1) + '" x2="' + xr.toFixed(1) + '" y1="' + T + '" y2="' + (T + CH) + '" stroke="#7a2c1e" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.7"/>');
+  s.push('<text x="' + (xr + 3).toFixed(1) + '" y="' + (T + 12) + '" font-size="9" font-weight="700" fill="#7a2c1e">1948</text>');
+
+  var pathOf = function (pts) {
+    return "M " + pts.map(function (p) { return px(p[0]).toFixed(1) + " " + cy(p[1]).toFixed(1); }).join(" L ");
+  };
+
+  SERIES.forEach(function (S) {
+    // pre-1948 solid
+    s.push('<path d="' + pathOf(S.pre) + '" fill="none" stroke="' + S.color + '" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>');
+    // post-1948 solid
+    s.push('<path d="' + pathOf(S.post) + '" fill="none" stroke="' + S.color + '" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>');
+    // dashed bridge across the rupture
+    var last = S.pre[S.pre.length - 1], first = S.post[0];
+    s.push('<path d="M ' + px(last[0]).toFixed(1) + ' ' + cy(last[1]).toFixed(1) + ' L ' + px(first[0]).toFixed(1) + ' ' + cy(first[1]).toFixed(1) + '" fill="none" stroke="' + S.color + '" stroke-width="1.8" stroke-dasharray="4 4" opacity="0.6"/>');
+    // end label (right)
+    var ep = S.post[S.post.length - 1];
+    s.push('<circle cx="' + px(ep[0]).toFixed(1) + '" cy="' + cy(ep[1]).toFixed(1) + '" r="3.4" fill="' + S.color + '" stroke="' + CREAM + '" stroke-width="1.4"/>');
+    s.push('<text x="' + (px(ep[0]) + 6).toFixed(1) + '" y="' + (cy(ep[1]) + (S.ldy || 3.5)).toFixed(1) + '" font-size="10.5" font-weight="700" fill="' + S.color + '">' + S.label + '</text>');
+  });
+
+  // x axis ticks
+  [1878, 1900, 1922, 1948, 1967, 1993, 2023].forEach(function (y) {
+    s.push('<text x="' + px(y).toFixed(1) + '" y="' + (T + CH + 16) + '" text-anchor="middle" font-size="10.5" fill="#7a6f5b" style="font-variant-numeric:tabular-nums">' + y + '</text>');
+  });
+  s.push('</svg>');
+  var host = document.getElementById("pop-plot");
+  if (host) host.innerHTML = s.join("");
+})();
+</script>
+
+<!-- ── Arab population vs. world-average growth (dual axis) ─────────────── -->
+<script>
+(function () {
+  var W = 760, GL = 48, GR = 46, T = 44, CH = 244;
+  var Y0 = 1878, Y1 = 2026, POPMAX = 8000, GMAX = 4;
+  var px  = function (y) { return GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0); };
+  var lcy = function (v) { return T + CH * (1 - v / POPMAX); };   // left: population (thousands)
+  var rcy = function (g) { return T + CH * (1 - g / GMAX); };     // right: growth %
+  var H = T + CH + 26;
+  var GOLD = "#9a6a1a", GREEN = "#2d4a3a", GLOB = "#5d6470", CREAM = "#f4efe4";
+
+  // total Arab population (Muslim+Christian+Druze), thousands. 1948 dip = displacement.
+  var POP = [[1878,427],[1890,498],[1900,563],[1914,683],[1922,722],[1931,878],[1940,1112],[1946,1338],[1949,1120],[1961,1430],[1967,1560],[1972,1600],[1983,2250],[1995,3450],[2007,4900],[2017,6350],[2023,7450]];
+  var POPEST = [[2023,7450],[2026,7300]]; // war-era estimate (dashed)
+  // growth bins: pa = Arab realized %/yr; g = contemporaneous world-average %/yr
+  var BINS = [
+    { a:1878, b:1917, pa:1.2, g:0.7, t:"OTTOMAN" },
+    { a:1917, b:1948, pa:2.6, g:0.9, t:"MANDATE" },
+    { a:1948, b:1967, pa:2.3, g:1.8, t:"SPLIT" },
+    { a:1967, b:2005, pa:3.2, g:1.8, t:"OCCUPATION" },
+    { a:2005, b:2026, pa:2.3, g:1.1, t:"POST-’05" }
+  ];
+  var EVENTS = [
+    { y:1897, t:"Zionist Congr." }, { y:1917, t:"Balfour" }, { y:1948, t:"Nakba" },
+    { y:1967, t:"Six-Day War" }, { y:1993, t:"Oslo" }, { y:2005, t:"Disengage." }, { y:2023, t:"Oct 7" }
+  ];
+  var pathOf = function (pts, yfn) {
+    return "M " + pts.map(function (p) { return px(p[0]).toFixed(1) + " " + yfn(p[1]).toFixed(1); }).join(" L ");
+  };
+  var s = [];
+  s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="Palestinian Arab population and growth rate versus the world average, 1878 to 2026">');
+
+  // era bands + top labels
+  BINS.forEach(function (b, i) {
+    var x0 = px(b.a), x1 = px(b.b);
+    if (i % 2 === 1) s.push('<rect x="' + x0.toFixed(1) + '" y="' + T + '" width="' + (x1 - x0).toFixed(1) + '" height="' + CH + '" fill="rgba(28,24,21,0.03)"/>');
+    s.push('<text x="' + ((x0 + x1) / 2).toFixed(1) + '" y="' + (T - 24) + '" text-anchor="middle" font-size="8.5" font-weight="700" fill="#9a9080" style="letter-spacing:0.1em">' + b.t + '</text>');
+  });
+
+  // left gridlines + labels (population)
+  [0, 2000, 4000, 6000, 8000].forEach(function (v) {
+    s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + lcy(v).toFixed(1) + '" y2="' + lcy(v).toFixed(1) + '" stroke="rgba(28,24,21,0.08)" stroke-width="1"/>');
+    s.push('<text x="' + (GL - 6) + '" y="' + (lcy(v) + 3.5).toFixed(1) + '" text-anchor="end" font-size="10" fill="#9a6a1a">' + (v / 1000) + 'M</text>');
+  });
+  // right axis labels (growth %)
+  [0, 1, 2, 3, 4].forEach(function (g) {
+    s.push('<text x="' + (W - GR + 7) + '" y="' + (rcy(g) + 3.5).toFixed(1) + '" font-size="10" fill="#5d6470">' + g + '%</text>');
+  });
+
+  // growth bars (green)
+  BINS.forEach(function (b) {
+    var x0 = px(b.a) + 3, x1 = px(b.b) - 3, yt = rcy(b.pa), yb = rcy(0);
+    s.push('<rect x="' + x0.toFixed(1) + '" y="' + yt.toFixed(1) + '" width="' + (x1 - x0).toFixed(1) + '" height="' + (yb - yt).toFixed(1) + '" fill="' + GREEN + '" fill-opacity="0.20"/>');
+    s.push('<text x="' + ((x0 + x1) / 2).toFixed(1) + '" y="' + (yt - 4).toFixed(1) + '" text-anchor="middle" font-size="10" font-weight="700" fill="' + GREEN + '">' + b.pa.toFixed(1) + '%</text>');
+  });
+
+  // world-average stepped dashed line (right axis)
+  var gp = "";
+  BINS.forEach(function (b, i) { gp += (i ? "L " : "M ") + px(b.a).toFixed(1) + " " + rcy(b.g).toFixed(1) + " L " + px(b.b).toFixed(1) + " " + rcy(b.g).toFixed(1) + " "; });
+  s.push('<path d="' + gp + '" fill="none" stroke="' + GLOB + '" stroke-width="2" stroke-dasharray="5 4"/>');
+
+  // event ticks + labels
+  EVENTS.forEach(function (e) {
+    var x = px(e.y);
+    s.push('<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="' + T + '" y2="' + (T + CH) + '" stroke="#b9af97" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.65"/>');
+    s.push('<text x="' + x.toFixed(1) + '" y="' + (T - 9) + '" text-anchor="middle" font-size="8" fill="#7a6f5b">' + e.t + '</text>');
+  });
+
+  // population line (gold), solid then dashed estimate
+  s.push('<path d="' + pathOf(POP, lcy) + '" fill="none" stroke="' + GOLD + '" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>');
+  s.push('<path d="' + pathOf(POPEST, lcy) + '" fill="none" stroke="' + GOLD + '" stroke-width="2.2" stroke-dasharray="4 4" opacity="0.75"/>');
+  POP.forEach(function (p) { s.push('<circle cx="' + px(p[0]).toFixed(1) + '" cy="' + lcy(p[1]).toFixed(1) + '" r="2.1" fill="' + GOLD + '"/>'); });
+  var ep = POPEST[POPEST.length - 1];
+  s.push('<circle cx="' + px(ep[0]).toFixed(1) + '" cy="' + lcy(ep[1]).toFixed(1) + '" r="3.4" fill="' + GOLD + '" stroke="' + CREAM + '" stroke-width="1.3"/>');
+  s.push('<text x="' + (px(ep[0]) - 5).toFixed(1) + '" y="' + (lcy(ep[1]) - 7).toFixed(1) + '" text-anchor="end" font-size="11" font-weight="700" fill="' + GOLD + '">~7.3M</text>');
+
+  // x axis ticks
+  [1878, 1900, 1922, 1948, 1967, 1993, 2026].forEach(function (y) {
+    s.push('<text x="' + px(y).toFixed(1) + '" y="' + (T + CH + 16) + '" text-anchor="middle" font-size="10" fill="#7a6f5b" style="font-variant-numeric:tabular-nums">' + y + '</text>');
+  });
+  s.push('</svg>');
+  var host = document.getElementById("arab-global-plot");
+  if (host) host.innerHTML = s.join("");
+})();
+</script>
+
+<!-- ── growth-rate-by-regime horizontal bars ───────────────────────────── -->
+<script>
+(function () {
+  var MAXR = 4.0;
+  var RATES = [
+    { label:"Late Ottoman", span:"1878–1914", rate:1.2, g:0.7, color:"#a89e8d", note:"≈ all natural increase" },
+    { label:"British Mandate", span:"1922–1946", rate:2.6, g:0.9, color:"#7a2c1e", note:"mortality falls; +5–10% in-migration" },
+    { label:"Egyptian Gaza", span:"1948–1966", rate:3.2, g:1.8, color:"#8a5a2b", note:"high fertility, sealed — no outlet" },
+    { label:"Jordanian West Bank", span:"1948–1967", rate:1.0, g:1.8, color:"#6b7280", note:"high fertility, but emigration to the East Bank" },
+    { label:"Israeli Arabs", span:"1949–2023", rate:3.8, g:1.4, color:"#2d4a3a", note:"near-pure natural increase — among the highest on record" },
+    { label:"Occupied WB + Gaza", span:"1967–1993", rate:3.2, g:1.8, color:"#3a4a6b", note:"mortality collapses under Israeli health infrastructure" },
+    { label:"PA — West Bank", span:"1995–2023", rate:2.7, g:1.2, color:"#5a4a2e", note:"fertility now falling" },
+    { label:"PA — Gaza", span:"1995–2023", rate:3.4, g:1.2, color:"#7a2c1e", note:"fertility stays very high" }
+  ];
+  var s = [];
+  RATES.forEach(function (r, i) {
+    var w = (r.rate / MAXR * 100).toFixed(1);
+    var gx = (r.g / MAXR * 100).toFixed(1);
+    s.push('<div class="gr">');
+    s.push('<div class="gl"><b>' + r.label + '</b><span>' + r.span + '</span></div>');
+    s.push('<div><div class="gtrack"><div class="gbar" style="width:' + w + '%;background:' + r.color + '">' + r.rate.toFixed(1) + '%</div>');
+    s.push('<div class="gtick" style="left:' + gx + '%"></div>');
+    if (i === 0) s.push('<div class="gtcap" style="left:' + gx + '%">world avg</div>');
+    s.push('</div>');
+    s.push('<div class="gnote">' + r.note + ' <span style="color:var(--ink-4)">· world ' + r.g.toFixed(1) + '%</span></div></div>');
+    s.push('</div>');
+  });
+  s.push('<div class="gr"><div class="gl"></div><div class="gaxis"><span>0</span><span>1%/yr</span><span>2%</span><span>3%</span><span>4%</span></div></div>');
+  var host = document.getElementById("growth-plot");
+  if (host) host.innerHTML = s.join("");
+})();
+</script>
+
+<!-- ── vital-rate multi-line charts: TFR + life expectancy ─────────────── -->
+<script>
+(function () {
+  function multiline(hostId, opts) {
+    var W = 720, GL = 42, GR = 18, T = 18, CH = 210, Y0 = 1970, Y1 = 2024;
+    var px = function (y) { return GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0); };
+    var cy = function (v) { return T + CH * (1 - (v - opts.vmin) / (opts.vmax - opts.vmin)); };
+    var H = T + CH + 24, s = [];
+    s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="' + opts.aria + '">');
+    opts.ticks.forEach(function (v) {
+      s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + cy(v).toFixed(1) + '" y2="' + cy(v).toFixed(1) + '" stroke="rgba(28,24,21,0.07)" stroke-width="1"/>');
+      s.push('<text x="' + (GL - 6) + '" y="' + (cy(v) + 3.5).toFixed(1) + '" text-anchor="end" font-size="10" fill="#8c8270">' + v + '</text>');
+    });
+    if (opts.refline != null) {
+      s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + cy(opts.refline).toFixed(1) + '" y2="' + cy(opts.refline).toFixed(1) + '" stroke="#9a9080" stroke-width="1" stroke-dasharray="2 3"/>');
+      s.push('<text x="' + (GL + 5) + '" y="' + (cy(opts.refline) - 4).toFixed(1) + '" font-size="9" fill="#9a9080">' + opts.reflabel + '</text>');
+    }
+    opts.series.forEach(function (S) {
+      var d = "M " + S.pts.map(function (p) { return px(p[0]).toFixed(1) + " " + cy(p[1]).toFixed(1); }).join(" L ");
+      s.push('<path d="' + d + '" fill="none" stroke="' + S.color + '" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"' + (S.dash ? ' stroke-dasharray="6 4"' : '') + '/>');
+      var ep = S.pts[S.pts.length - 1];
+      s.push('<circle cx="' + px(ep[0]).toFixed(1) + '" cy="' + cy(ep[1]).toFixed(1) + '" r="3.2" fill="' + S.color + '" stroke="#f4efe4" stroke-width="1.3"/>');
+    });
+    opts.xticks.forEach(function (y) {
+      s.push('<text x="' + px(y).toFixed(1) + '" y="' + (T + CH + 16) + '" text-anchor="middle" font-size="10" fill="#7a6f5b" style="font-variant-numeric:tabular-nums">' + y + '</text>');
+    });
+    s.push('</svg>');
+    var host = document.getElementById(hostId);
+    if (host) host.innerHTML = s.join("");
+  }
+  var COL = { gaza:"#c1272d", wb:"#e08214", isr:"#1b7837", jor:"#2c6fbb", egy:"#8e44ad" };
+  multiline("tfr-plot", {
+    vmin:0, vmax:10, ticks:[0,2,4,6,8,10], refline:2.1, reflabel:"replacement ≈ 2.1",
+    xticks:[1970,1980,1990,2000,2010,2023], aria:"Total fertility rate by population, 1970 to 2023",
+    series:[
+      { label:"Gaza", color:COL.gaza, pts:[[1970,7.5],[1990,7.7],[2000,6.4],[2010,4.9],[2019,3.9],[2023,3.4]] },
+      { label:"West Bank", color:COL.wb, pts:[[1970,7.5],[1990,6.5],[2000,5.4],[2010,4.1],[2019,3.8],[2023,3.1]] },
+      { label:"Israeli Arabs", color:COL.isr, pts:[[1970,8.9],[1990,4.7],[2000,4.6],[2010,3.5],[2022,2.9]] },
+      { label:"Jordan", color:COL.jor, dash:true, pts:[[1970,8.2],[1990,5.5],[2000,4.3],[2010,3.8],[2023,2.6]] },
+      { label:"Egypt", color:COL.egy, dash:true, pts:[[1970,6.1],[1990,4.5],[2000,3.5],[2010,3.3],[2023,2.75]] }
+    ]
+  });
+  multiline("le-plot", {
+    vmin:40, vmax:85, ticks:[40,50,60,70,80],
+    xticks:[1970,1980,1990,2000,2010,2022], aria:"Life expectancy at birth by population, 1970 to 2022",
+    series:[
+      { label:"Gaza", color:COL.gaza, pts:[[1970,49],[1985,62],[2000,70],[2010,72],[2022,75]] },
+      { label:"West Bank", color:COL.wb, pts:[[1970,53],[1990,68],[2000,71],[2010,73],[2022,74]] },
+      { label:"Israeli Arabs", color:COL.isr, pts:[[1970,67.7],[1990,73],[2010,76],[2022,79.8]] },
+      { label:"Jordan", color:COL.jor, dash:true, pts:[[1970,59.8],[1990,70.1],[2010,73.8],[2022,77.5]] },
+      { label:"Egypt", color:COL.egy, dash:true, pts:[[1970,49],[1990,62.5],[2010,69.1],[2022,71.6]] }
+    ]
+  });
+})();
+</script>
+</body>
+</html>
