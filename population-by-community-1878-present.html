@@ -459,6 +459,43 @@
     is exactly why its growth stayed exceptional. <span style="color:var(--ink-4)">*West Bank &amp; Gaza maternal mortality is reported jointly (~16 per 100,000, 2023). The October-2023 war sharply reversed Gaza's mortality figures — a shock, not a trend; not plotted here.</span>
   </p>
 
+  <!-- ══ SECTION — population density by region ═════════════════════════ -->
+  <h2 class="section">Where they lived — population density by region</h2>
+  <p class="dek" style="margin-top:0">
+    The people of Palestine were never spread evenly across it. The late-Ottoman map is a steep gradient: a densely
+    terraced <b>highland spine</b> — Hebron, Jerusalem, Nablus — carrying ~25 people per km²; a thinly-settled
+    <b>coastal plain and inland valleys</b> at ~8–10, much of it malarial swamp; and a near-empty <b>Negev</b>, half
+    the country by area, at ~4. That uneven map is the hinge of the settlement story: the highland villages were
+    peasant-owned and not for sale, while the thin lowland zones held the large absentee estates that were — so
+    Zionist land purchase concentrated there, in the under-settled coast, Jezreel and Galilee lowlands (Grossman).
+    For the coast reconstructed town by town, see
+    <a href="coast-population-1800-1914.html">Population of the Palestine coast, 1800–1914</a>.
+  </p>
+
+  <div class="chartwrap">
+    <h3>Population density by region, c. 1870</h3>
+    <p class="csub">People per km², from the Ottoman Syrian Provincial Yearbook (H 1288) as reduced by Grossman (Table 4.1). The drop from the highland spine to the Negev is the settlement map in one picture.</p>
+    <div id="dens-hist-plot"></div>
+  </div>
+
+  <p class="dek" style="font-size:13.5px">
+    Grossman's verdict on the lowland zone is blunt — <em>"a density of eight to ten persons per square kilometre is
+    undeniably under-settled land."</em> Palestine-wide, the average climbed as the population grew: ~9/km² at the
+    1596 tax register, ~18 by 1872, then <b>29 (1922) → 39 (1931) → 75 (1947)</b> across the Mandate — the same growth
+    the charts above track, now read against the land.
+  </p>
+
+  <div class="chartwrap">
+    <h3>Population density today, 2023</h3>
+    <p class="csub">People per km². The one place the old map inverted: the Gaza coast, ~9/km² in 1870, is now among the densest territories on earth — ~200,000 refugees packed into 365 km² after 1948, then generations of the region's highest natural increase.</p>
+    <div id="dens-now-plot"></div>
+  </div>
+  <p class="dek" style="font-size:13px">
+    The inversion is the displacement story written into the land: the thinly-settled southern coast of the
+    nineteenth century became <b>~11× the density of the West Bank</b> — the historically <em>dense</em> highland —
+    because the 1948 refugees had nowhere else to go. <span style="color:var(--ink-4)">Densities use pre-war area and population; the Negev pulls Israel's national average (~445/km²) far below its coastal core, where most Israelis actually live.</span>
+  </p>
+
   <h2 class="section">The communities, one by one</h2>
 
   <h3 style="font-family:var(--serif);font-size:18px;color:var(--ink);margin:18px 0 4px">Jewish — by origin and <em>aliyah</em></h3>
@@ -848,6 +885,53 @@
       { label:"Israeli Arabs", color:COL.isr, pts:[[1970,67.7],[1990,73],[2010,76],[2022,79.8]] },
       { label:"Jordan", color:COL.jor, dash:true, pts:[[1970,59.8],[1990,70.1],[2010,73.8],[2022,77.5]] },
       { label:"Egypt", color:COL.egy, dash:true, pts:[[1970,49],[1990,62.5],[2010,69.1],[2022,71.6]] }
+    ]
+  });
+})();
+</script>
+
+<!-- ── population density by region: horizontal bars ───────────────────── -->
+<script>
+(function () {
+  function hbars(hostId, opts) {
+    var W = 720, GL = 200, GR = 16, T = 6, BH = 26, GAP = 14;
+    var n = opts.bars.length, H = T + n * (BH + GAP) + 2;
+    var bx = function (v) { return GL + (W - GL - GR) * v / opts.max; };
+    var fmt = function (v) { return v >= 1000 ? v.toLocaleString() : (v % 1 ? v.toFixed(1) : "" + v); };
+    var s = [];
+    s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="' + opts.aria + '">');
+    opts.bars.forEach(function (b, i) {
+      var y = T + i * (BH + GAP), mid = y + BH / 2;
+      s.push('<text x="' + (GL - 10) + '" y="' + (mid - 1) + '" text-anchor="end" font-size="12.5" font-weight="700" fill="#1a1714">' + b.label + '</text>');
+      if (b.sub) s.push('<text x="' + (GL - 10) + '" y="' + (mid + 11) + '" text-anchor="end" font-size="9" fill="#9a9080">' + b.sub + '</text>');
+      var endx = bx(b.value);
+      s.push('<rect x="' + GL + '" y="' + y + '" width="' + Math.max(endx - GL, 1).toFixed(1) + '" height="' + BH + '" rx="2.5" fill="' + b.color + '"/>');
+      if (endx > W - GR - 58) {
+        s.push('<text x="' + (endx - 8).toFixed(1) + '" y="' + (mid + 4) + '" text-anchor="end" font-size="12" font-weight="700" fill="#f5f1e8">' + fmt(b.value) + opts.unit + '</text>');
+      } else {
+        s.push('<text x="' + (endx + 6).toFixed(1) + '" y="' + (mid + 4) + '" font-size="12" font-weight="700" fill="' + b.color + '">' + fmt(b.value) + opts.unit + '</text>');
+      }
+    });
+    s.push('</svg>');
+    var host = document.getElementById(hostId);
+    if (host) host.innerHTML = s.join("");
+  }
+  hbars("dens-hist-plot", {
+    max: 30, unit: "/km²", aria: "Population density by region around 1870",
+    bars: [
+      { label:"Central highland spine", sub:"Hebron · Jerusalem · Nablus", value:25, color:"#6e2f1a" },
+      { label:"Galilee & national average", sub:"mixed hill and vale", value:18, color:"#9c5a36" },
+      { label:"Coastal plain & valleys", sub:"Sharon · Jezreel · Galilee lowlands", value:9, color:"#c0894e" },
+      { label:"Negev / Beersheba", sub:"~half the country by area", value:4.4, color:"#d6bf94" },
+      { label:"Jordan Valley & Dead Sea", sub:"desert frontier", value:2, color:"#e6d6b4" }
+    ]
+  });
+  hbars("dens-now-plot", {
+    max: 6300, unit: "/km²", aria: "Population density by territory in 2023",
+    bars: [
+      { label:"Gaza Strip", sub:"365 km² · ~2.2M people", value:6000, color:"#c1272d" },
+      { label:"West Bank", sub:"5,655 km² · ~3.2M", value:565, color:"#8a5a2b" },
+      { label:"Israel", sub:"22,072 km² · ~9.8M", value:445, color:"#3a4a6b" }
     ]
   });
 })();
