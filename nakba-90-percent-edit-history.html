@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The 90% That Wasn't — the edit history of one Wikipedia sentence</title>
+<meta name="description" content="A forensic edit-history of one sentence in the English Wikipedia Nakba article: how 'owned about 90% of privately held lands' became 'owned about 90% of the land' in wikivoice — in two edits, by one editor, with no revert. Side-neutral; audits one factual claim against its cited evidence." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* page-scoped — uses shared tokens from broadsheet.css */
+  .epi { font-family: var(--serif); font-style: italic; font-size: clamp(16px,2vw,20px); line-height:1.5; color: var(--ink); border-left: 3px solid var(--accent-2); padding: 4px 0 4px 18px; margin: 26px 0 8px; max-width: 880px; }
+  .epi span { display:block; font-style: normal; font-family: var(--sans); font-size: 12px; color: var(--ink-3); margin-top: 8px; }
+  .note { font-family:var(--sans); font-size:12.5px; line-height:1.6; color:var(--ink-3); background: rgba(0,0,0,0.018); border-left:2px solid var(--rule); padding:12px 16px; margin:14px 0; max-width:940px; }
+  .note b { color: var(--ink-2); }
+
+  /* source clips — the actual page, as it appears, shown inline & always visible */
+  .srcclip { margin:12px 0 4px; }
+  .srcclip .srccap { font-family:var(--sans); font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-3); margin:0 0 6px; }
+  .srcclip img { display:block; width:100%; border:1px solid var(--rule); border-radius:2px; box-shadow:0 1px 6px rgba(0,0,0,.10); background:#fff; }
+  .srcclip.claim img { max-width:760px; }
+  .srcclip.diff img { max-width:940px; }
+  .srcclip .scredit { font-family:var(--sans); font-size:10.5px; color:var(--ink-4); margin:5px 0 0; }
+
+  /* reach stat row */
+  .statrow { display:grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:14px 0 6px; }
+  .statrow > div { background:var(--paper); padding:13px 15px; }
+  .statrow .sn { font-family:var(--mono); font-size:21px; font-weight:600; color:var(--accent-4); }
+  .statrow .sn.hot { color:var(--accent); }
+  .statrow .sl { font-family:var(--sans); font-size:10px; letter-spacing:.03em; text-transform:uppercase; color:var(--ink-3); margin-top:4px; line-height:1.35; }
+
+  /* edit-summary chips */
+  .esum { font-family:var(--mono); font-size:12px; line-height:1.55; color:var(--ink); background:rgba(0,0,0,0.022); border:1px solid var(--rule-soft); border-left:3px solid var(--accent); padding:11px 14px; margin:10px 0; }
+  .esum .who { font-family:var(--sans); font-weight:700; font-size:11px; letter-spacing:.02em; color:var(--accent); text-transform:none; }
+  .esum .rid { color:var(--ink-4); }
+
+  /* timeline */
+  .timeline { margin:16px 0 8px; border-left:2px solid var(--rule); padding-left:0; }
+  .tl { position:relative; padding:0 0 18px 26px; margin-left:8px; }
+  .tl::before { content:""; position:absolute; left:-7px; top:4px; width:12px; height:12px; border-radius:50%; background:var(--paper); border:2px solid var(--accent-4); }
+  .tl.hot::before { border-color:var(--accent); background:var(--accent); }
+  .tl.ok::before { border-color:var(--accent-3); }
+  .tl .when { font-family:var(--mono); font-size:11px; color:var(--ink-4); }
+  .tl .what { font-family:var(--serif); font-size:14px; line-height:1.5; color:var(--ink-2); margin-top:2px; }
+  .tl .what b { color:var(--ink); font-weight:600; }
+  .tl .tag { display:inline-block; font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; padding:2px 7px; border-radius:10px; margin-left:6px; vertical-align:middle; }
+  .tag.q { background:rgba(45,74,58,0.12); color:var(--accent-3); }
+  .tag.s { background:rgba(122,44,30,0.12); color:var(--accent); }
+
+  /* talk quotes */
+  .tq { display:grid; grid-template-columns: 150px 1fr; gap:14px; padding:12px 0; border-bottom:1px solid var(--rule-soft); align-items:start; }
+  .tq .ed { font-family:var(--sans); font-size:12px; font-weight:700; color:var(--ink); }
+  .tq .ed .role { display:block; font-weight:400; font-size:10px; color:var(--ink-4); margin-top:2px; line-height:1.3; }
+  .tq .said { font-family:var(--serif); font-size:13.5px; line-height:1.55; color:var(--ink-2); }
+  .tq .said q { color:var(--ink); font-style:italic; }
+  .tq .said q::before{content:"\201C";} .tq .said q::after{content:"\201D";}
+  @media (max-width:640px){ .tq { grid-template-columns:1fr; gap:4px; } }
+
+  /* editor footprint bars */
+  .ebars { margin:12px 0 6px; }
+  .ebar { display:grid; grid-template-columns: 160px 1fr 54px; gap:12px; align-items:center; padding:5px 0; }
+  .ebar .name { font-family:var(--sans); font-size:12px; color:var(--ink); }
+  .ebar .name .flag { font-size:9.5px; color:var(--accent); font-weight:600; }
+  .ebar .track { background:var(--rule-soft); height:16px; border-radius:2px; overflow:hidden; }
+  .ebar .fill { height:100%; background:var(--accent-4); }
+  .ebar .fill.flagged { background:var(--accent); }
+  .ebar .val { font-family:var(--mono); font-size:12px; color:var(--ink-2); text-align:right; }
+
+  /* evidentiary-ladder cards (shared with the closed-worldview specimen) */
+  .reg-split { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:10px 0 4px; }
+  .reg-split > div { background:var(--paper); padding:13px 14px; }
+  .reg-split .place { font-family:var(--sans); font-size:11px; font-weight:600; color:var(--ink); text-transform:uppercase; letter-spacing:.05em; }
+  .reg-split .big { font-family:var(--mono); font-size:20px; font-weight:600; color:var(--accent); margin:3px 0 1px; }
+  .reg-split .sm { font-family:var(--sans); font-size:11px; color:var(--ink-3); line-height:1.45; }
+
+  .srcline { font-family:var(--sans); font-size:10.5px; color:var(--ink-4); line-height:1.5; margin:4px 0 8px; }
+  .srcline a, .note a, .dek a { color:var(--accent-3); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Corpus Synthesis · Wikipedia &amp; the Source-Laundering Mechanism · Worked Case</div>
+      <h1>The 90% That Wasn't<br /><em>How one Wikipedia sentence lost the four words that made it true</em></h1>
+    </div>
+    <div class="meta">
+      <b>Article</b> · English Wikipedia, <i>Nakba</i> · 1,228 revisions (2021–2026)<br />
+      <b>The sentence</b> · "Arabs… owned about 90% of the land"<br />
+      <span class="faint">primary base: <i>Survey of Palestine 1946</i> · Hadawi 1957 · UNSCOP A/364</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;All periods</a> &nbsp;·&nbsp; <a href="closed-worldview-anatomy.html">The closed-worldview mechanism</a> &nbsp;·&nbsp; <a href="colonizer-the-data.html">The data behind a framing</a> &nbsp;·&nbsp; <a href="land-regime-1831-1947.html">The law of the land</a>
+  </nav>
+
+  <p class="epi">
+    "Abu-Laban and Bakan say… 'owned' 90% of 'the land' (not 'private'). But Manna says… 'possessed'… 90% of 'privately-owned land.' …maybe it's better to just remove the 90% figure altogether."
+    <span>— the editor <b>Levivich</b>, on <i>Talk:Nakba</i>, December 2023 — four weeks before stripping the qualifier from the article and anchoring the figure to a total-land source.</span>
+  </p>
+
+  <p class="dek">
+    This is the life of a <em>single sentence</em>. On the English Wikipedia's <i>Nakba</i> article, the line "Arabs… owned about
+    <em>90% of the land</em>" is stated in the encyclopedia's own voice and carries <b>five</b> stacked academic citations. It did not
+    always read that way. Two years ago it carried four more words — <em>"privately held lands"</em> — that made it defensible. This page
+    follows the edit trail by which those words were removed: who, when, in which revision, with what edit summary, and against what
+    primary record. It is a worked case in the project's Wikipedia source-laundering thread — companion to the
+    <a href="closed-worldview-anatomy.html">citation-provenance specimen</a>. It does <em>not</em> adjudicate whether the 1947 partition
+    was just; it audits one factual claim against its own cited evidence.
+  </p>
+
+  <!-- ============================================================= -->
+  <h2 class="section">1 · The sentence today</h2>
+  <p class="dek" style="margin-top:6px">As it stands in the live article — in wikivoice, with a stack of five citations behind the bracketed&nbsp;[54].</p>
+
+  <figure class="srcclip claim">
+    <div class="srccap">English Wikipedia, "Nakba" — the 1947-partition paragraph (live article, as printed)</div>
+    <img src="src-wikipedia-nakba-90.png" alt="Screenshot of the live English Wikipedia Nakba article. Highlighted: 'Arabs made up about two-thirds of the population[53] and owned about 90% of the land,[54]'. Surrounding text reads 'On 29 November 1947, the General Assembly passed Resolution 181 (II)… while Jews made up between a quarter and a third of the population[55] and owned about 7% of the land.[56]'" loading="lazy" />
+    <p class="scredit">en.wikipedia.org/wiki/Nakba · the figure has stood in this unqualified wikivoice form since 14 January 2024.</p>
+  </figure>
+
+  <div class="statrow">
+    <div><div class="sn">4.05M</div><div class="sl">article pageviews since 2022</div></div>
+    <div><div class="sn hot">2.29M</div><div class="sl">views since the qualifier was stripped (Feb&nbsp;2024+)</div></div>
+    <div><div class="sn">349</div><div class="sl">editors watching the page</div></div>
+    <div><div class="sn">1,228</div><div class="sl">total revisions (Apr&nbsp;2021–Jun&nbsp;2026)</div></div>
+    <div><div class="sn">0</div><div class="sl">reverts of the qualifier-strip in ~2&nbsp;years</div></div>
+  </div>
+  <p class="srcline">Reach: Wikimedia REST pageviews API (en.wikipedia, user traffic), monthly 2022-01 → 2026-06; peak month Oct&nbsp;2023 = 728,841. Watchers: <code>action=query&amp;prop=info&amp;inprop=watchers</code>. Revisions: full <code>prop=revisions</code> pull, saved to the research repo.</p>
+
+  <!-- ============================================================= -->
+  <h2 class="section">2 · The edit that changed it</h2>
+  <p class="dek" style="margin-top:6px">
+    On <b>14 January 2024</b>, in two consecutive edits 51 minutes apart, the editor <b>Levivich</b> removed the denominator that framed
+    the figure and then changed the figure's object — <em>"privately held lands"</em> → <em>"the&nbsp;land"</em> — while adding a source
+    whose own wording is "94 percent of the <em>total land area</em>." Here is the second edit, as Wikipedia renders the diff:
+  </p>
+
+  <figure class="srcclip diff">
+    <div class="srccap">Wikipedia diff — rev 1195663622 vs parent 1195658087 (the wikitext citation template), as rendered</div>
+    <img src="src-wiki-diff-qualifier-strip.png" alt="Wikipedia source-diff. Left (removed): 'owned about 90% of privately held lands' with 'privately held lands' highlighted; Manna 2013's 'privately-owned land' quote sits at citation slot 2. Right (added): 'owned about 90% of the land' with 'the land' highlighted; Rogan 2017 is inserted at slot 2 ('Arabs owned 94 percent of the total land area of Palestine…'), and Manna's privately-owned-land quote is demoted to slot 3." loading="lazy" />
+    <p class="scredit">Three moves in one edit: the qualifier <b>"privately held lands" → "the land"</b>; Rogan 2017's <i>"94 percent of the total land area"</i> <b>inserted</b> at citation slot 2; Manna's precise <i>"privately-owned land"</i> quote <b>demoted</b> to slot 3.</p>
+  </figure>
+
+  <p>The two edit summaries, verbatim:</p>
+  <div class="esum"><span class="who">Levivich</span> · 14 Jan 2024, 19:30 UTC · <span class="rid">rev&nbsp;1195655034</span><br />
+    "/* Prior to 1948 */ rmving line about private lands being 25%: not a great source; fails verificiation… even if true, I'm not sure this fact is [[WP:DUE]] for inclusion here"</div>
+  <div class="esum"><span class="who">Levivich</span> · 14 Jan 2024, 20:21 UTC · <span class="rid">rev&nbsp;1195663622</span><br />
+    "/* Prior to 1948 */ +Rogan 2017 and ce sentence to match sources"</div>
+  <p class="note"><b>"ce sentence to match sources."</b> The copy-edit made the sentence match the <em>newly added</em> source (Rogan's total-land figure) — not the source already in the stack that the editor had, weeks earlier, identified as the precise one (Manna's "privately-owned"). The denominator sentence removed first — "privately held lands amounted to approximately 25% of the total territory" — was the frame that told a reader what "90% of" was 90% <em>of</em>. With it gone and the qualifier gone, "90%" now reads against <em>all</em> of Palestine.</p>
+
+  <!-- ============================================================= -->
+  <h2 class="section">3 · The life of the sentence</h2>
+  <div class="timeline">
+    <div class="tl ok">
+      <div class="when">throughout 2023 → 13 Jan 2024 · rev 1193262767 (2 Jan 2024)</div>
+      <div class="what"><b>The qualified form stands.</b> "Palestinian Arabs… owned about 90% of <b>privately held lands</b>," paired with a sentence noting privately-held land was "approximately 25% of the total territory." Defensible: it states its own denominator.<span class="tag q">qualifier present</span></div>
+    </div>
+    <div class="tl">
+      <div class="when">May–Sept 2023 · Talk:Nakba/Archive 2 §5</div>
+      <div class="what"><b>Challenged on talk.</b> <b>TFighterPilot</b> questions whether Arabs "owned the empty desert"; <b>Nishidani</b> defends the figure by redefining "owned" as usufruct/land-rights; <b>PresidentCoriolanus</b> dismantles it from <i>Village Statistics 1945</i> (Arab-owned ≈ 29.5% nationally; the Negev is public land), calling the conflation "deliberately deceptive."</div>
+    </div>
+    <div class="tl">
+      <div class="when">December 2023 · Talk:Nakba/Archive 3 §11</div>
+      <div class="what"><b>The arithmetic is caught — and acknowledged.</b> <b>Mistamystery</b>: the 90%-private vs 7%-of-total figures can't share a denominator. <b>Levivich</b> spells out the exact source split (Abu-Laban &amp; Bakan say "the land"; Manna says "privately-owned land") and floats removing the figure. <b>SJ</b>: stating land "went from 7% to 78%" "would definitely be misinformation."</div>
+    </div>
+    <div class="tl hot">
+      <div class="when">14 Jan 2024, 19:30 UTC · rev 1195655034 · Levivich</div>
+      <div class="what"><b>The denominator sentence is deleted</b> — "not a great source… not… [[WP:DUE]]." The "25% of the territory" frame is gone.</div>
+    </div>
+    <div class="tl hot">
+      <div class="when">14 Jan 2024, 20:21 UTC · rev 1195663622 · Levivich</div>
+      <div class="what"><b>The qualifier is stripped.</b> "privately held lands" → "<b>the land</b>"; Rogan 2017's "94 percent of the total land area" added; Manna's "privately-owned" quote demoted down the stack.<span class="tag s">qualifier gone</span></div>
+    </div>
+    <div class="tl">
+      <div class="when">15 Jan 2024 → present (Jun 2026)</div>
+      <div class="what"><b>No revert. No edit-war.</b> The unqualified wikivoice form has stood for ~2 years and ~2.3 million reads. The one revert in the window touched the lead's <em>definition</em>, not the land figure.</div>
+    </div>
+  </div>
+
+  <!-- ============================================================= -->
+  <h2 class="section">4 · The debate came before the break</h2>
+  <p class="dek" style="margin-top:6px">The distinction was not missed and then lost. It was argued out on the talk page — including by the editor who later removed it. Verbatim:</p>
+
+  <div class="tq"><div class="ed">PresidentCoriolanus<span class="role">challenger · May–Sept 2023</span></div><div class="said"><q>It equivocates state and vacant land… with Palestinian land… That is deliberately deceptive.</q> Cites <i>Village Statistics 1945</i>: Arab-owned ≈&nbsp;29.5% nationally; the Negev ≈&nbsp;10.57M dunums of non-cultivable public land.</div></div>
+  <div class="tq"><div class="ed">Nishidani<span class="role">defender · later indef. topic-banned, ArbCom PIA5 (Jan 2025)</span></div><div class="said"><q>'owned by Palestinians' probably refers to 'land accessible to, and with user rights exercised by, Palestinians'</q> — defending the figure by substituting usufruct for ownership; calls the partition <q>one of the great land swindles in history.</q></div></div>
+  <div class="tq"><div class="ed">Mistamystery<span class="role">challenger · Dec 2023</span></div><div class="said"><q>There is no way that Palestinian Arabs owned 90% of privately held lands, while Jews owned 25% of that same category.</q></div></div>
+  <div class="tq"><div class="ed">Levivich<span class="role">acknowledged the split, Dec 2023 · made the strip, 14 Jan 2024</span></div><div class="said"><q>Abu-Laban and Bakan say… 'owned' 90% of 'the land' (not 'private'). But Manna says… 'possessed'… 90% of 'privately-owned land.'</q> Floated <q>maybe it's better to just remove the 90% figure altogether</q> — then four weeks later removed the qualifier instead.</div></div>
+  <div class="tq"><div class="ed">SJ<span class="role">third opinion · Dec 2023</span></div><div class="said">Stating the figure "went from 7% to 78%" <q>would definitely be misinformation; the combination of (Jewish private + state-held land) was around 80% in 1947.</q></div></div>
+  <p class="srcline">Full verbatim threads preserved in the research repo (<code>ninety-percent-arab-ownership-talk-evidence.md</code>): Talk:Nakba/Archive&nbsp;2 §5 (oldid 1190156988), Archive&nbsp;3 §11 (oldid 1201506579).</p>
+
+  <!-- ============================================================= -->
+  <h2 class="section">5 · Why the stripped form is unsupported</h2>
+  <p class="dek" style="margin-top:6px">No primary statistical source contains "90%" or "94%" as the Arab-owned figure. The Mandate Land Registry (<i>Village Statistics 1945</i>, compiled in Hadawi 1957) splits Palestine four ways — and "90%" is reached only by folding the 46% State Domain (mostly the never-surveyed Negev) into "Arab":</p>
+  <div class="statrow">
+    <div><div class="sn">47.79%</div><div class="sl">Arab · held (mixed tenure)</div></div>
+    <div><div class="sn hot">46.00%</div><div class="sl">State Domain (mostly the Negev)</div></div>
+    <div><div class="sn">5.67%</div><div class="sl">Jewish · registered purchase</div></div>
+    <div><div class="sn">0.54%</div><div class="sl">Others</div></div>
+  </div>
+  <p class="dek" style="margin-top:12px;font-size:13.5px">And the 47.79% itself is three evidentiary rungs of very different strength — only the top one is individual, alienable title. "Owned 90%" flattens all of it:</p>
+  <div class="reg-split">
+    <div><div class="place">Rung 1 · strongest</div><div class="big">22.1%</div><div class="sm">active fiscal categories ex-Negev (town · citrus · fruit · cultivable): parcel-block tax registers, tax assessed and paid annually</div></div>
+    <div><div class="place">Rung 2 · communal</div><div class="big">+18.3%</div><div class="sm">non-cultivable ex-Negev: village commons inside Arab village boundaries — non-taxable, attributed to the village "as a whole," no parcel registration</div></div>
+    <div><div class="place">Rung 3 · estimated</div><div class="big">+7.4%</div><div class="sm">Negev "cultivable": Bedouin attribution, zero registration; the Survey: Beersheba's cultivable area is "unknown; it might be three or four million dunums"</div></div>
+    <div><div class="place">Headline</div><div class="big">47.79%</div><div class="sm">the composite — the Jewish 5.67% comes from the same instrument under the same rule</div></div>
+  </div>
+  <p class="srcline">Among the five cited sources, only <b>Manna 2013</b> keeps the load-bearing "privately-owned" qualifier — under which ~88.5% is defensible. Rogan's "94% of total area" is the arithmetic complement of Smith's "Jews&nbsp;~6%" (100&nbsp;−&nbsp;6), eliding State Domain. The full five-citation provenance graph: <a href="closed-worldview-anatomy.html">the citation-provenance specimen →</a>. Land data with full line-item derivation: <a href="land-regime-1831-1947.html">The Law of the Land →</a>.</p>
+
+  <!-- ============================================================= -->
+  <h2 class="section">6 · The editor footprint</h2>
+  <p class="dek" style="margin-top:6px">Editing on this article is concentrated and contested. One editor made nearly a third of all 1,228 revisions; several of the most active were later sanctioned by Wikipedia's Arbitration Committee. (Sanction ≠ a judgment on any specific edit; the qualifier-strip itself was made by a prolific, <em>un</em>sanctioned editor.)</p>
+  <div class="ebars">
+    <div class="ebar"><div class="name">Levivich</div><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">373</div></div>
+    <div class="ebar"><div class="name">Onceinawhile <span class="flag">⚑ topic-ban</span></div><div class="track"><div class="fill flagged" style="width:20.4%"></div></div><div class="val">76</div></div>
+    <div class="ebar"><div class="name">Makeandtoss <span class="flag">⚑ topic-ban</span></div><div class="track"><div class="fill flagged" style="width:13.9%"></div></div><div class="val">52</div></div>
+    <div class="ebar"><div class="name">IOHANNVSVERVS</div><div class="track"><div class="fill" style="width:12.6%"></div></div><div class="val">47</div></div>
+    <div class="ebar"><div class="name">Iskandar323 <span class="flag">⚑ site-ban</span></div><div class="track"><div class="fill flagged" style="width:8.3%"></div></div><div class="val">31</div></div>
+    <div class="ebar"><div class="name">Selfstudier</div><div class="track"><div class="fill" style="width:7.2%"></div></div><div class="val">27</div></div>
+    <div class="ebar"><div class="name">Marokwitz</div><div class="track"><div class="fill" style="width:6.7%"></div></div><div class="val">25</div></div>
+  </div>
+  <p class="srcline">Top editors by revision count on <i>Nakba</i> (full history, n=1,228). Flags: <b>Onceinawhile, Makeandtoss</b> — indefinite topic-bans, ArbCom <i>Palestine-Israel articles 5</i> (Jan 2025); <b>Iskandar323</b> — site-ban (Jan 2026); <b>Nishidani</b> (who defended the figure on talk) — also indef. topic-banned in PIA5. The same forum that sanctioned several of these editors is the one whose own contributors (PresidentCoriolanus, Mistamystery, SJ, TFighterPilot) raised the substantive objection that was then overridden. The mechanism here is not a banned editor; it is a single qualifier-strip surviving unchallenged.</p>
+
+  <!-- ============================================================= -->
+  <h2 class="section">7 · The other flattened figure — still live</h2>
+  <p>The same article carries a second land claim in wikivoice, sourced to Sa'di 2007: that inside the proposed Jewish state, "80% of the land… was already owned by Palestinians [and] 11% had a Jewish owner." It was challenged on talk in 2023 and survived. Hadawi's own partition cross-tabulation (Table B(b), built from <i>Village Statistics 1945</i>) gives, <em>inside the Jewish-state polygon</em>:</p>
+  <div class="statrow">
+    <div><div class="sn">9.4%</div><div class="sl">Jewish-owned (of gross area)</div></div>
+    <div><div class="sn">24.2%</div><div class="sl">Arab-owned (of gross area)</div></div>
+    <div><div class="sn hot">66.0%</div><div class="sl">State Domain — mostly the Negev</div></div>
+    <div><div class="sn">0.3%</div><div class="sl">Others</div></div>
+  </div>
+  <p class="srcline">11 + 80 = 91 implies only ~9% State Domain inside the polygon — impossible, since the Negev sat inside it (66%). The genuinely well-grounded fact the figure gestures at: <b>Jews owned under 10% of the land in the state allotted to them</b> (92.8% of all Jewish-owned land in Palestine fell inside that line). By <em>privately-owned</em> land the polygon is Arab&nbsp;~71% · Jewish&nbsp;~28%; by <em>cultivable</em> land the Jewish share rises toward parity. None of these is "11 vs 80." Full reconciliation in the research file <code>ninety-percent-arab-ownership-audit.md</code>, Addendum.</p>
+
+  <!-- ============================================================= -->
+  <h2 class="section">8 · What this does and doesn't say</h2>
+  <div class="note" style="max-width:940px">
+    <b>It does not adjudicate the partition.</b> Whether the 1947 allocation was just is a separate, contested normative question. This page
+    audits one factual claim — "Arabs owned 90% of the land" — against its own cited evidence. The finding: the unqualified form is
+    unsupported by the primary statistics; the chain conflates State Domain with Arab ownership; the qualifier that rescues it survives in
+    one of five citations (Manna's "privately-owned") but was removed from the body text in a single editorial pass — by an editor who had
+    demonstrably understood the distinction. <b>The same standard cuts both ways:</b> Wikipedia's own editors raised the objection, and the
+    symmetric counter-frame (Jews owned a near-equitable share of the <em>best cultivable</em> land; <10% of the Jewish-state polygon overall)
+    is recorded by the same Palestinian-side compiler, Hadawi. The unit audited is the <em>edit</em> and the <em>citation</em>, not the cause.
+  </div>
+
+  <footer class="colophon">
+    <div><b>The 90% That Wasn't</b> · the edit history of one Wikipedia sentence · the Wikipedia source-laundering thread</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono · <a href="index.html" style="color:inherit">← All periods</a> · <a href="closed-worldview-anatomy.html" style="color:inherit">The mechanism →</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
