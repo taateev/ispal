@@ -96,6 +96,16 @@
   .lnode .lb b { color:var(--ink); font-weight:600; }
   .lnode .lb .ok { color:var(--accent-3); font-weight:700; }
   .lnode .lb .bad { color:var(--accent); font-weight:700; }
+  /* source clip — the cited page, as printed (highlighted passage) */
+  .srcclip { margin:9px 0 2px; }
+  .srcclip > summary { font-family:var(--sans); font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent-3); cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:6px; }
+  .srcclip > summary::-webkit-details-marker { display:none; }
+  .srcclip > summary::before { content:"\25B8"; font-size:9px; }
+  .srcclip[open] > summary::before { content:"\25BE"; }
+  .srcclip > summary:hover { color:var(--accent); }
+  .srcclip figure { margin:9px 0 0; }
+  .srcclip img { display:block; width:100%; max-width:560px; border:1px solid var(--rule); border-radius:2px; box-shadow:0 1px 5px rgba(0,0,0,.09); background:#fff; }
+  .srcclip figcaption { font-family:var(--mono); font-size:9px; letter-spacing:.03em; text-transform:uppercase; color:var(--ink-4); margin-top:5px; }
   /* derivation table — show the primary working */
   table.deriv { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13px; margin:8px 0 4px; }
   table.deriv th { text-align:right; font-family:var(--sans); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); font-weight:600; padding:7px 10px; border-bottom:1px solid var(--rule); }
@@ -298,12 +308,12 @@
       </tbody>
     </table>
     </div>
-    <p><b>The chain, by evidentiary tier.</b> Follow it to the root and the break localizes precisely: it is sound all the way down to a named <em>primary</em> source, and snaps at the single most authoritative link in the stack.</p>
+    <p><b>The chain, by evidentiary tier.</b> Follow it to the root and the break localizes precisely: it is sound all the way down to a named <em>primary</em> source, and snaps at the single most authoritative link in the stack. The middle three rungs open to <b>the cited page itself, as printed</b> — highlighted from the actual book, so the break is checkable, not asserted.</p>
     <div class="ladder">
       <div class="lnode"><div class="tier pri">Primary</div><div class="lb"><b>Govt of Palestine, <i>A Survey of Palestine</i></b> — Notes Compiled for UNSCOP, June 1947 (vol.&nbsp;1, p.&nbsp;244) + <i>Village Statistics 1945</i> (compiled in Hadawi 1957). The Land Registry: Jews ~6% of total · Arab-<b>held</b> 47.8% (a mix — ~22% individual + ~18% communal commons + ~7% Bedouin; mostly <i>miri</i>, not freehold) · <b>State Domain 46%</b> (mostly the un-surveyed Negev).</div></div>
-      <div class="lnode"><div class="tier sec">Secondary</div><div class="lb"><b>Charles D. Smith</b>, <i>Palestine and the Arab-Israeli Conflict</i> (university textbook), p.&nbsp;191 — reports "Jews ~6% of total, ~20% of cultivable," <em>and cites the primary above</em>. States no Arab figure. <span class="ok">✓ sound</span></div></div>
-      <div class="lnode"><div class="tier pri">Primary</div><div class="lb"><b>Fraser, <i>The Middle East 1914–1979</i></b>, pp.&nbsp;49–51 = Jamal Husseini's 29 Sep 1947 UN speech. A genuine primary document — containing <b>no land-ownership percentages at all</b>.</div></div>
-      <div class="lnode"><div class="tier brk">Secondary&nbsp;· break</div><div class="lb"><b>Eugene Rogan, <i>The Arabs</i></b>, p.&nbsp;318 — cites Smith + Fraser, then writes "Arabs <b>94%</b> of the total land area." <span class="bad">In neither source.</span> An arithmetic complement (100&nbsp;−&nbsp;6), with the 46% State Domain folded into "Arab."</div></div>
+      <div class="lnode"><div class="tier sec">Secondary</div><div class="lb"><b>Charles D. Smith</b>, <i>Palestine and the Arab-Israeli Conflict</i> (university textbook), p.&nbsp;191 — reports "Jews ~6% of total, ~20% of cultivable," <em>and cites the primary above</em>. States no Arab figure. <span class="ok">✓ sound</span><details class="srcclip"><summary>the page, as printed</summary><figure><img src="src-smith-p191.png" alt="Charles D. Smith, Palestine and the Arab-Israeli Conflict, p. 191 — the highlighted land-ownership passage" loading="lazy" /><figcaption>Smith, <i>Palestine and the Arab-Israeli Conflict</i> (2001), p.&nbsp;191</figcaption></figure></details></div></div>
+      <div class="lnode"><div class="tier pri">Primary</div><div class="lb"><b>Fraser, <i>The Middle East 1914–1979</i></b>, pp.&nbsp;49–51 = Jamal Husseini's 29 Sep 1947 UN speech. A genuine primary document — containing <b>no land-ownership percentages at all</b>.<details class="srcclip"><summary>the page, as printed</summary><figure><img src="src-fraser-husseini-p49.png" alt="Fraser, The Middle East 1914–1979, p. 49 — the heading of the cited Husseini statement, document 24" loading="lazy" /><figcaption>Fraser, <i>The Middle East 1914–1979</i> (1980), p.&nbsp;49 — the cited document's heading (doc.&nbsp;24)</figcaption></figure></details></div></div>
+      <div class="lnode"><div class="tier brk">Secondary&nbsp;· break</div><div class="lb"><b>Eugene Rogan, <i>The Arabs</i></b>, p.&nbsp;318 — cites Smith + Fraser, then writes "Arabs <b>94%</b> of the total land area." <span class="bad">In neither source.</span> An arithmetic complement (100&nbsp;−&nbsp;6), with the 46% State Domain folded into "Arab."<details class="srcclip"><summary>the page, as printed</summary><figure><img src="src-rogan-arabs-p318.png" alt="Eugene Rogan, The Arabs, p. 318 — the highlighted '94 percent of the total land area' claim" loading="lazy" /><figcaption>Rogan, <i>The Arabs</i> (2009), p.&nbsp;318 — the claim that appears in neither cited source</figcaption></figure></details></div></div>
       <div class="lnode"><div class="tier sec">Secondary</div><div class="lb"><b>Abu-Laban &amp; Bakan 2022 · Natour 2016</b> paraphrase 90–94%, qualifier dropped. <b>Manna 2013</b> alone keeps <em>"privately-owned"</em> (under which ~88.5% is defensible).</div></div>
       <div class="lnode"><div class="tier ter">Tertiary</div><div class="lb"><b>Wikipedia, <i>Nakba</i></b> — stacks all five; a single 14&nbsp;Jan&nbsp;2024 edit strips "privately held lands" → "90% of <b>the land</b>" in wikivoice.</div></div>
     </div>
