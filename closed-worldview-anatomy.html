@@ -110,6 +110,21 @@
   table.deriv tr.tot td { border-top:2px solid var(--rule); border-bottom:none; color:var(--ink); }
   table.deriv tr.tot .num, table.deriv tr.tot td.l { font-weight:700; color:var(--ink); }
   .srcline { font-family:var(--sans); font-size:10.5px; color:var(--ink-4); line-height:1.5; margin:2px 0 4px; }
+  /* §4 provenance DAG (inline SVG) — citations as a partial order, not a ladder */
+  .dagwrap { overflow-x:auto; margin:16px 0 4px; }
+  svg.dag { width:100%; min-width:780px; max-width:1010px; height:auto; display:block; }
+  .dag .nt  { font-family:var(--sans); font-weight:700; font-size:12px; fill:var(--ink); }
+  .dag .nti { font-family:var(--sans); font-weight:700; font-size:11px; fill:var(--ink); }
+  .dag .nd  { font-family:var(--serif); font-size:11px; fill:var(--ink-2); }
+  .dag .nds { font-family:var(--serif); font-size:9.5px; fill:var(--ink-3); }
+  .dag .nq  { font-family:var(--mono); font-weight:600; font-size:9px; letter-spacing:.03em; }
+  .dag .el  { font-family:var(--mono); font-size:8.5px; fill:var(--ink-3); }
+  .dag .elok{ font-family:var(--mono); font-size:8.5px; font-weight:600; fill:var(--accent-3); }
+  .dag .surveyt { font-family:var(--serif); font-style:italic; font-size:11px; fill:var(--accent-3); font-weight:600; }
+  .dagcap { font-family:var(--sans); font-size:11px; color:var(--ink-3); line-height:1.55; margin:4px 0 10px; }
+  .clipstrip { display:grid; grid-template-columns:repeat(auto-fit,minmax(238px,1fr)); gap:16px; margin:14px 0 4px; align-items:start; }
+  .clipstrip .srcclip { margin:0; }
+  .clipstrip .srcclip img { max-width:100%; }
 </style>
 </head>
 <body>
@@ -289,29 +304,130 @@
     </table>
     </div>
     <p class="srcline">Derived from Hadawi 1957, reconstructed from <i>Village Statistics 1945</i>; <i>Survey of Palestine</i> ¶¶42, 68–69 + Hadawi footnotes a–c. Shares against the 26.32M-dunum total of Palestine (1 acre ≈ 4.05 dunums). Internal checks: rungs 1+2 = the ex-Negev Arab sub-total 2,659,602 acres exactly; 22.1 + 18.3 + 7.4 ≈ 47.79. <b>This is what paying primary-source rent looks like — line-item, sourced, checkable. The "90%" has none of it.</b></p>
-    <p><b>The five citations — only one is precise.</b> The figure carries five stacked scholarly references; that stack is what makes it look like consensus. Set their actual wordings side by side and the consensus dissolves — four drop the load-bearing qualifier, one keeps it, and one is measuring a different thing entirely:</p>
+    <p><b>The five citations — only one is precise.</b> The figure carries five stacked scholarly references; that stack is what makes it look like consensus. Set their actual wordings side by side and the consensus dissolves into three different quantities — one keeps the load-bearing qualifier, one drops it outright, two state the bare complement of the Jewish share (94% = 100&nbsp;−&nbsp;6), and one is measuring a different thing entirely:</p>
     <div style="overflow-x:auto;">
     <table class="inv">
       <thead><tr><th style="width:25%">The cited source</th><th>What it actually says</th><th style="width:15%">Qualifier?</th></tr></thead>
       <tbody>
         <tr><td class="ev">Abu-Laban &amp; Bakan 2022, p.&nbsp;511</td><td class="claim">"the 'Arabs', who in 1948 owned 90 per cent of the land"</td><td><span class="badge no">dropped</span></td></tr>
-        <tr><td class="ev">Rogan 2017, <i>The Arabs</i>, p.&nbsp;318</td><td class="claim">"Arabs owned 94 percent of the total land area of Palestine and some 80 percent of the arable farmland"</td><td><span class="badge no">dropped</span></td></tr>
-        <tr><td class="ev">Natour 2016, p.&nbsp;89</td><td class="claim">"Arabs with an ownership of … around 94 %"</td><td><span class="badge no">dropped</span></td></tr>
+        <tr><td class="ev">Rogan 2017, <i>The Arabs</i>, p.&nbsp;318</td><td class="claim">"Arabs owned 94 percent of the total land area of Palestine and some 80 percent of the arable farmland"</td><td><span class="badge no">complement</span></td></tr>
+        <tr><td class="ev">Natour 2016, p.&nbsp;89</td><td class="claim">"Arabs with an ownership of … around 94 %"</td><td><span class="badge no">complement</span></td></tr>
         <tr><td class="ev">Manna 2013, p.&nbsp;90</td><td class="claim">"the Arabs of Palestine … possessed about 90% of Palestine's <b>privately-owned</b> land"</td><td><span class="badge yes">kept</span></td></tr>
         <tr><td class="ev">Sa'di 2007, p.&nbsp;291</td><td class="claim">"Jewish holdings in the <em>proposed Jewish State</em> were about 11 percent as compared to the 80 percent … owned by Palestinians"</td><td><span class="badge auth">other frame</span></td></tr>
       </tbody>
     </table>
     </div>
-    <p><b>The chain, by evidentiary tier.</b> Follow it to the root and the break localizes precisely: it is sound all the way down to a named <em>primary</em> source, and snaps at the single most authoritative link in the stack. The middle three rungs open to <b>the cited page itself, as printed</b> — highlighted from the actual book, so the break is checkable, not asserted.</p>
-    <div class="ladder">
-      <div class="lnode"><div class="tier pri">Primary</div><div class="lb"><b>Govt of Palestine, <i>A Survey of Palestine</i></b> — Notes Compiled for UNSCOP, June 1947 (vol.&nbsp;1, p.&nbsp;244) + <i>Village Statistics 1945</i> (compiled in Hadawi 1957). The Land Registry: Jews ~6% of total · Arab-<b>held</b> 47.8% (a mix — ~22% individual + ~18% communal commons + ~7% Bedouin; mostly <i>miri</i>, not freehold) · <b>State Domain 46%</b> (mostly the un-surveyed Negev).</div></div>
-      <div class="lnode"><div class="tier sec">Secondary</div><div class="lb"><b>Charles D. Smith</b>, <i>Palestine and the Arab-Israeli Conflict</i> (university textbook), p.&nbsp;191 — reports "Jews ~6% of total, ~20% of cultivable," <em>and cites the primary above</em>. States no Arab figure. <span class="ok">✓ sound</span><figure class="srcclip"><div class="srccap">Smith, <i>Palestine and the Arab-Israeli Conflict</i> (2001), p.&nbsp;191 — the page, as printed</div><img src="src-smith-p191.png" alt="Charles D. Smith, Palestine and the Arab-Israeli Conflict, p. 191 — the highlighted land-ownership passage" loading="lazy" /></figure></div></div>
-      <div class="lnode"><div class="tier pri">Primary</div><div class="lb"><b>Fraser, <i>The Middle East 1914–1979</i></b>, pp.&nbsp;49–51 = Jamal Husseini's 29 Sep 1947 UN speech. A genuine primary document — containing <b>no land-ownership percentages at all</b>.<figure class="srcclip"><div class="srccap">Fraser, <i>The Middle East 1914–1979</i> (1980), p.&nbsp;49 — the cited document's heading (doc.&nbsp;24), as printed</div><img src="src-fraser-husseini-p49.png" alt="Fraser, The Middle East 1914–1979, p. 49 — the heading of the cited Husseini statement, document 24" loading="lazy" /></figure></div></div>
-      <div class="lnode"><div class="tier brk">Secondary&nbsp;· break</div><div class="lb"><b>Eugene Rogan, <i>The Arabs</i></b>, p.&nbsp;318 — cites Smith + Fraser, then writes "Arabs <b>94%</b> of the total land area." <span class="bad">In neither source.</span> An arithmetic complement (100&nbsp;−&nbsp;6), with the 46% State Domain folded into "Arab."<figure class="srcclip"><div class="srccap">Rogan, <i>The Arabs</i> (2009), p.&nbsp;318 — the claim that appears in neither cited source, as printed</div><img src="src-rogan-arabs-p318.png" alt="Eugene Rogan, The Arabs, p. 318 — the highlighted '94 percent of the total land area' claim" loading="lazy" /></figure></div></div>
-      <div class="lnode"><div class="tier sec">Secondary</div><div class="lb"><b>Abu-Laban &amp; Bakan 2022 · Natour 2016</b> paraphrase 90–94%, qualifier dropped. <b>Manna 2013</b> alone keeps <em>"privately-owned"</em> (under which ~88.5% is defensible).</div></div>
-      <div class="lnode"><div class="tier ter">Tertiary</div><div class="lb"><b>Wikipedia, <i>Nakba</i></b> — stacks all five; a single 14&nbsp;Jan&nbsp;2024 edit strips "privately held lands" → "90% of <b>the land</b>" in wikivoice.</div></div>
+    <p><b>Map the five citations as a graph, not a ladder.</b> They do not pass one fact hand-to-hand down a single chain; they <em>fan out</em> from Wikipedia and then converge on one primary document. Read top-to-bottom — each arrow points from a text to the source <em>it</em> cites. <b>Solid</b> arrows are citations I verified by reading the cited footnote; <b>dashed</b> arrows are links not yet read (the two journal articles; Natour's chapter). Follow them down and the "five-source consensus" collapses into a single registry figure — <em>Jews owned&nbsp;≈&nbsp;6%</em> — restated four times as its complement, and once (Sa'di) as a different quantity entirely.</p>
+    <div class="dagwrap">
+    <svg class="dag" viewBox="0 0 1010 690" role="img" aria-label="Provenance directed graph for the Wikipedia 'Arabs owned about 90% of the land' claim. Wikipedia fans out to five cited sources, which converge on one primary document — the 1946 Survey of Palestine, recording Jews owning about 6 percent of the land. The 90–94% figures are its arithmetic complement.">
+      <defs>
+        <marker id="dagah" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto-start-reverse"><path d="M1,1.2 L8,4.5 L1,7.8 Z" fill="#3a352d"/></marker>
+        <marker id="dagahd" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto-start-reverse"><path d="M1,1.2 L8,4.5 L1,7.8 Z" fill="#9a9080"/></marker>
+      </defs>
+      <!-- ===== EDGES (drawn first, under nodes) ===== -->
+      <!-- Wikipedia -> five cited sources (solid: present in footnote 54) -->
+      <line x1="505" y1="88" x2="100" y2="131" stroke="#6b6358" stroke-width="1.5" marker-end="url(#dagah)"/>
+      <line x1="505" y1="88" x2="302" y2="131" stroke="#6b6358" stroke-width="1.5" marker-end="url(#dagah)"/>
+      <line x1="505" y1="88" x2="504" y2="131" stroke="#6b6358" stroke-width="1.5" marker-end="url(#dagah)"/>
+      <line x1="505" y1="88" x2="706" y2="131" stroke="#6b6358" stroke-width="1.5" marker-end="url(#dagah)"/>
+      <line x1="505" y1="88" x2="908" y2="131" stroke="#6b6358" stroke-width="1.5" marker-end="url(#dagah)"/>
+      <text class="el" x="176" y="106">Wikipedia&nbsp;¶54 — five stacked cites</text>
+      <!-- verified onward citations (solid) -->
+      <line x1="706" y1="224" x2="706" y2="299" stroke="#6b6358" stroke-width="1.6" marker-end="url(#dagah)"/>
+      <text class="elok" x="712" y="263">note 8 ✓</text>
+      <line x1="700" y1="378" x2="560" y2="450" stroke="#6b6358" stroke-width="1.6" marker-end="url(#dagah)"/>
+      <text class="elok" x="648" y="414" text-anchor="middle">cites Survey + Hadawi ✓</text>
+      <line x1="908" y1="224" x2="908" y2="299" stroke="#6b6358" stroke-width="1.6" marker-end="url(#dagah)"/>
+      <text class="elok" x="902" y="263" text-anchor="end">ibid: 13 ✓</text>
+      <!-- unread / inferred links (dashed) -->
+      <line x1="100" y1="224" x2="150" y2="450" stroke="#9a9080" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#dagahd)"/>
+      <text class="el" x="116" y="250">unread</text>
+      <line x1="302" y1="224" x2="300" y2="450" stroke="#9a9080" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#dagahd)"/>
+      <text class="el" x="308" y="250">unread</text>
+      <line x1="504" y1="224" x2="448" y2="450" stroke="#9a9080" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#dagahd)"/>
+      <text class="el" x="452" y="250">unread</text>
+      <line x1="908" y1="378" x2="890" y2="450" stroke="#9a9080" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#dagahd)"/>
+      <text class="el" x="900" y="416" text-anchor="end">unread</text>
+      <line x1="772" y1="505" x2="656" y2="520" stroke="#9a9080" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#dagahd)"/>
+      <text class="el" x="714" y="498" text-anchor="middle">same registry · different cut</text>
+      <!-- ===== NODES ===== -->
+      <!-- Tertiary -->
+      <rect x="355" y="24" width="300" height="64" rx="6" fill="#f1efe9" stroke="#6b7280" stroke-width="1.6"/>
+      <text class="nt" x="505" y="45" text-anchor="middle">Wikipedia · "Nakba" article</text>
+      <text class="nd" x="505" y="63" text-anchor="middle">"owned about <tspan font-weight="700" fill="#1a1714">90% of the land</tspan>"</text>
+      <text class="nq" x="505" y="80" text-anchor="middle" fill="#6b7280">WIKIVOICE — UNQUALIFIED</text>
+      <!-- Five cited sources -->
+      <rect x="12" y="132" width="176" height="92" rx="6" fill="#ebf1ec" stroke="#2d4a3a" stroke-width="1.8"/>
+      <text class="nti" x="100" y="154" text-anchor="middle">Manna 2013</text>
+      <text class="nd" x="100" y="173" text-anchor="middle">"90% of privately-</text>
+      <text class="nd" x="100" y="187" text-anchor="middle">owned land"</text>
+      <text class="nq" x="100" y="210" text-anchor="middle" fill="#2d4a3a">✓ QUALIFIER KEPT</text>
+
+      <rect x="214" y="132" width="176" height="92" rx="6" fill="#fbf9f2" stroke="#7a2c1e" stroke-width="1.4"/>
+      <text class="nti" x="302" y="152" text-anchor="middle">Abu-Laban &amp; Bakan '22</text>
+      <text class="nd" x="302" y="171" text-anchor="middle">"90% of the land"</text>
+      <text class="nds" x="302" y="188" text-anchor="middle">passing line · racism essay</text>
+      <text class="nq" x="302" y="211" text-anchor="middle" fill="#7a2c1e">UNQUALIFIED</text>
+
+      <rect x="416" y="132" width="176" height="92" rx="6" fill="#fbf9f2" stroke="#7a2c1e" stroke-width="1.4"/>
+      <text class="nti" x="504" y="156" text-anchor="middle">Natour 2016</text>
+      <text class="nd" x="504" y="176" text-anchor="middle">"≈ 94%"</text>
+      <text class="nq" x="504" y="211" text-anchor="middle" fill="#7a2c1e">COMPLEMENT · 100 − 6</text>
+
+      <rect x="618" y="132" width="176" height="92" rx="6" fill="#fbf9f2" stroke="#7a2c1e" stroke-width="1.4"/>
+      <text class="nti" x="706" y="156" text-anchor="middle">Rogan 2017 · p.318</text>
+      <text class="nd" x="706" y="176" text-anchor="middle">"94% of total area"</text>
+      <text class="nq" x="706" y="211" text-anchor="middle" fill="#7a2c1e">COMPLEMENT · 100 − 6</text>
+
+      <rect x="820" y="132" width="176" height="92" rx="6" fill="#f3ecdf" stroke="#8a5a2b" stroke-width="1.5"/>
+      <text class="nti" x="908" y="152" text-anchor="middle">Sa'di 2007 · p.291</text>
+      <text class="nd" x="908" y="171" text-anchor="middle">"80% in the</text>
+      <text class="nd" x="908" y="185" text-anchor="middle">proposed Jewish state"</text>
+      <text class="nq" x="908" y="211" text-anchor="middle" fill="#8a5a2b">DIFFERENT QUANTITY</text>
+      <!-- What each cites -->
+      <rect x="618" y="300" width="176" height="78" rx="6" fill="#ebf1ec" stroke="#2d4a3a" stroke-width="1.6"/>
+      <text class="nti" x="706" y="322" text-anchor="middle">Charles Smith 2001 · p.191</text>
+      <text class="nd" x="706" y="341" text-anchor="middle">"Jews ≈ 6% of total area"</text>
+      <text class="nq" x="706" y="362" text-anchor="middle" fill="#2d4a3a">STATES NO ARAB FIGURE</text>
+
+      <rect x="820" y="300" width="176" height="78" rx="6" fill="#eef0f4" stroke="#3a4a6b" stroke-width="1.5"/>
+      <text class="nti" x="908" y="320" text-anchor="middle">Walid Khalidi 1997 (JPS)</text>
+      <text class="nd" x="908" y="338" text-anchor="middle">partition allotment · pp.11,13</text>
+      <text class="nds" x="908" y="356" text-anchor="middle">(≠ Rashid Khalidi 1997)</text>
+      <!-- Primary documents -->
+      <rect x="12" y="452" width="640" height="110" rx="6" fill="#e4efe6" stroke="#2d4a3a" stroke-width="2.6"/>
+      <text class="nt" x="332" y="479" text-anchor="middle" font-size="12.5">A SURVEY OF PALESTINE 1946 · Village Statistics (Hadawi)</text>
+      <text class="nd" x="332" y="501" text-anchor="middle" font-size="12">Jews ≈ 6%&nbsp;&nbsp;·&nbsp;&nbsp;Arab-held 47.8%&nbsp;&nbsp;·&nbsp;&nbsp;State Domain 46%</text>
+      <text class="surveyt" x="332" y="525" text-anchor="middle">The primary fact every readable chain lands on.</text>
+      <text class="surveyt" x="332" y="541" text-anchor="middle">"Arabs owned 90–94%" is its complement (100 − 6).</text>
+
+      <rect x="772" y="452" width="224" height="110" rx="6" fill="#f3ecdf" stroke="#8a5a2b" stroke-width="1.6"/>
+      <text class="nti" x="884" y="483" text-anchor="middle">UN partition data 1947</text>
+      <text class="nds" x="884" y="501" text-anchor="middle">(UNSCOP / Ad-Hoc Cttee)</text>
+      <text class="nds" x="884" y="523" text-anchor="middle">allotment inside the plan —</text>
+      <text class="nds" x="884" y="537" text-anchor="middle">not ownership of Palestine</text>
+      <!-- ===== LEGEND ===== -->
+      <line x1="14" y1="609" x2="46" y2="609" stroke="#6b6358" stroke-width="1.6" marker-end="url(#dagah)"/>
+      <text class="el" x="54" y="613">citation verified (footnote read)</text>
+      <line x1="300" y1="609" x2="332" y2="609" stroke="#9a9080" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#dagahd)"/>
+      <text class="el" x="340" y="613">link unread / inferred</text>
+      <rect x="14" y="632" width="13" height="13" rx="3" fill="#e4efe6" stroke="#2d4a3a"/>
+      <text class="el" x="33" y="642">sound / primary</text>
+      <rect x="180" y="632" width="13" height="13" rx="3" fill="#fbf9f2" stroke="#7a2c1e"/>
+      <text class="el" x="199" y="642">inferential leap · 100 − 6 complement</text>
+      <rect x="470" y="632" width="13" height="13" rx="3" fill="#f3ecdf" stroke="#8a5a2b"/>
+      <text class="el" x="489" y="642">different measure</text>
+      <rect x="640" y="632" width="13" height="13" rx="3" fill="#eef0f4" stroke="#3a4a6b"/>
+      <text class="el" x="659" y="642">verified secondary</text>
+    </svg>
     </div>
-    <p>The figure is well-sourced to <em>primary</em> at Smith's level. The conflation is one inferential leap — introduced by the highest-authority node — <em>away</em> from a clean primary base its own cited source pointed straight at.</p>
+    <p class="dagcap"><b>The cited pages, as printed</b> — highlighted from the actual books, so each link is checkable, not asserted. The first two are the one chain that runs clean to a Mandate primary (Rogan's 94% → Smith's "≈6%" → the <i>Survey</i>); the third is Sa'di's 80%, with its "(ibid: 13)" pointer to Khalidi and the "proposed Jewish State" framing both visible — the partition-internal measure, mis-stacked here as if it meant all of Palestine.</p>
+    <div class="clipstrip">
+      <figure class="srcclip"><div class="srccap">Smith, <i>Palestine and the Arab-Israeli Conflict</i> (2001), p.&nbsp;191</div><img src="src-smith-p191.png" alt="Charles D. Smith, p. 191 — the highlighted land-ownership passage: Jews about 6 percent of the total land area" loading="lazy" /></figure>
+      <figure class="srcclip"><div class="srccap">Rogan, <i>The Arabs</i> (2009), p.&nbsp;318</div><img src="src-rogan-arabs-p318.png" alt="Eugene Rogan, The Arabs, p. 318 — the highlighted '94 percent of the total land area' claim" loading="lazy" /></figure>
+      <figure class="srcclip"><div class="srccap">Sa'di, in <i>Nakba: Memory &amp; Reality</i> (2007), p.&nbsp;291</div><img src="src-sadi-p291.png" alt="Sa'di, p. 291 — the highlighted '80 percent of land then owned by Palestinians' inside the proposed Jewish State, with (ibid: 13) pointing to Khalidi 1997" loading="lazy" /></figure>
+    </div>
+    <p><b>Two chains reach a primary; three stop short; not one of them measures "90% of the land."</b> Rogan's 94% is <em>100&nbsp;−&nbsp;6</em> — his note&nbsp;8 points to Smith, whose own notes point to the <i>Survey of Palestine</i>: a clean chain to a Mandate primary that <em>states no Arab figure at all</em>. Sa'di's 80% reaches Walid Khalidi's partition study (the "ibid:&nbsp;13"), but it counts land <em>inside the territory the plan allotted to the Jewish state</em> — a different quantity, mis-stacked here as ownership of all Palestine. The remaining three (Abu-Laban&nbsp;&amp;&nbsp;Bakan, Natour, Manna) have footnotes I could not yet read, but their numbers are self-evident: two restate the bare complement, and <b>Manna alone keeps the load-bearing qualifier</b> — <em>privately-owned</em> — the one figure that could stand. The unqualified wording Wikipedia chose matches the <em>weakest</em> source in the stack and drops the qualifier from the <em>strongest</em>.</p>
     <p><b>The arming move — appeal to authority.</b> The unqualified claim does not survive contact with the registry. What lets it stand is the citation stack: five scholarly references create the <em>appearance</em> of convergent consensus when only one is precise, and the edit history shows the defensible qualifier being <em>stripped</em> in a single pass (the qualified form had stood since 2 Jan 2024) while a total-land source was added to make the bare figure "verifiable." The number is now true by <em>sourcing</em>, not by the land registry — a model defended as the territory.</p>
     <p style="font-size:13px;color:var(--ink-3)"><b>What this does and doesn't say.</b> It does not adjudicate whether the 1947 partition was just — a separate normative question. It audits one factual claim against its own cited evidence: "Arabs owned 90% of the land" is unsupported by the primary statistics; the chain conflates State Domain with Arab ownership; the qualifier that rescues it survives in one citation but not in the body text. The land data with full provenance: <a href="land-regime-1831-1947.html" style="color:var(--accent-3)">The Law of the Land · 1831–1947 →</a></p>
   </div>
