@@ -125,6 +125,13 @@
   .clipstrip { display:grid; grid-template-columns:repeat(auto-fit,minmax(238px,1fr)); gap:16px; margin:14px 0 4px; align-items:start; }
   .clipstrip .srcclip { margin:0; }
   .clipstrip .srcclip img { max-width:100%; }
+  .srcclip.wide img { max-width:780px; }
+  /* evidentiary-ladder cards — what the 47.79% (and the flattened "90%") is made of */
+  .reg-split { display:grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:10px 0 4px; }
+  .reg-split > div { background:var(--paper); padding:13px 14px; }
+  .reg-split .place { font-family:var(--sans); font-size:11px; font-weight:600; color:var(--ink); text-transform:uppercase; letter-spacing:.05em; }
+  .reg-split .big { font-family:var(--mono); font-size:20px; font-weight:600; color:var(--accent); margin:3px 0 1px; }
+  .reg-split .sm { font-family:var(--sans); font-size:11px; color:var(--ink-3); line-height:1.45; }
 </style>
 </head>
 <body>
@@ -282,7 +289,9 @@
   </p>
   <div class="case">
     <div class="ctags"><span class="badge sim">Simulacrum · noise → signal</span><span class="badge auth">Appeal to authority · citation-laundering</span></div>
-    <p class="cq">"Arabs… owned about 90% of the land, while Jews… owned about 7% of the land." — the English Wikipedia <i>Nakba</i> article, in wikivoice, with <b>five</b> stacked citations.</p>
+    <figure class="srcclip wide" style="margin:4px 0 14px">
+      <div class="srccap">The claim under audit — English Wikipedia, "Nakba", in wikivoice (live article; the 1947-partition paragraph). The "owned about 90% of the land,[54]" carries five stacked citations.</div>
+      <img src="src-wikipedia-nakba-90.png" alt="Screenshot of the English Wikipedia Nakba article. Highlighted: 'Arabs made up about two-thirds of the population[53] and owned about 90% of the land,[54]'. The surrounding text reads: 'On 29 November 1947, the General Assembly passed Resolution 181 (II), the United Nations Partition Plan for Palestine.[52] At the time, … while Jews made up between a quarter and a third of the population[55] and owned about 7% of the land.[56]'" loading="lazy" /></figure>
     <p><b>What the primary record actually says.</b> The Mandate Land Registry (<i>Village Statistics 1945</i>, compiled in Hadawi 1957) attributes <b>47.79%</b> of the land to the Arab community — not 90%. The other ~46% is <b>State Domain</b> — the never-surveyed Negev, Crown land, public pasture and forest — over much of which fellahin nonetheless held customary usufruct. The "90%" reaches its number by folding that State Domain into "Arab."</p>
     <div class="reg">
       <div><div class="rn">47.79%</div><div class="rl">Arab · held (mixed tenure)</div></div>
@@ -290,20 +299,14 @@
       <div><div class="rn">5.67%</div><div class="rl">Jewish · registered purchase</div></div>
       <div><div class="rn">0.54%</div><div class="rl">Others</div></div>
     </div>
-    <p class="note" style="margin-top:10px"><b>And the 47.79% is not "ownership" in any modern sense — it smuggles several land-relationships into one word.</b> Decomposed as shares of all Palestine (same instrument): ~<b>22.1%</b> is individual, fiscally-registered, alienable-ish holding (town · citrus · fruit · cultivable — tax assessed and paid); ~<b>18.3%</b> is <em>communal</em> village commons (<i>metruke</i> — collective pasture/fuel rights <i>ab antiquo</i>, inalienable, <b>no individual shares</b>); ~<b>7.4%</b> is the Negev, attributed to Bedouin cultivation with <b>zero registration</b> (the <i>Survey</i>: "unknown… might be three or four million dunums"). Beneath even the individual rung the legal tenure is overwhelmingly <i>miri</i> (State <i>raqaba</i> + cultivator <i>tasarruf</i>, not freehold <i>mulk</i>), and <i>musha'</i> — communal periodic-redistribution shares — was the plains norm. So for <em>individual, alienable</em> ownership the honest Arab figure is ~22% of Palestine; only by counting communal + tribal-attributed interests do you reach 47.79%. "Owned 90%" doesn't merely fold in state land — it imposes a unitary "ownership" category the land system never had. Full ladder: <a href="land-regime-1831-1947.html" style="color:var(--accent-3)">The Law of the Land →</a>.</p>
-    <p class="dek" style="margin-top:14px;font-size:13.5px"><b>And here is the working — the part the "90%" never shows.</b> Every rung is a line-item from the Mandate registry, convertible and checkable — the derivation, not just the result:</p>
-    <div style="overflow-x:auto;">
-    <table class="deriv">
-      <thead><tr><th class="l">Rung — Hadawi category (ex-/in-Negev)</th><th>acres</th><th>dunums</th><th>% of&nbsp;Palestine</th><th class="l">evidentiary character</th></tr></thead>
-      <tbody>
-        <tr><td class="l">Active fiscal — town · citrus · fruit · cultivable (ex-Negev)</td><td class="num">1,456,280</td><td class="num">5.83M</td><td class="num">22.1%</td><td class="l">tax assessed &amp; paid annually — <b>strong</b></td></tr>
-        <tr><td class="l">Non-cultivable commons (ex-Negev) — <i>metruke</i></td><td class="num">1,203,322</td><td class="num">4.81M</td><td class="num">18.3%</td><td class="l">communal attribution; no parcel registration</td></tr>
-        <tr><td class="l">Negev "cultivable" — Bedouin attribution</td><td class="num">483,712</td><td class="num">1.93M</td><td class="num">7.4%</td><td class="l">estimate; zero registration ("unknown")</td></tr>
-        <tr class="tot"><td class="l">Arab total (Hadawi national table)</td><td class="num">3,143,693</td><td class="num">~12.57M</td><td class="num">47.79%</td><td class="l">— of which only the top rung is individual title</td></tr>
-      </tbody>
-    </table>
+    <p style="margin-top:10px"><b>And that 47.79% is itself three evidentiary rungs of very different strength</b> — not one solid block of "ownership." Only the top rung is individual, alienable title. "Owned 90%" flattens all of this — <em>plus</em> the 46% State Domain — into a single word:</p>
+    <div class="reg-split">
+      <div><div class="place">Rung 1 · strongest</div><div class="big">22.1%</div><div class="sm">of Palestine — active fiscal categories ex-Negev (town · citrus · fruit · cultivable): parcel-block tax registers, tax actually assessed and paid annually</div></div>
+      <div><div class="place">Rung 2 · communal</div><div class="big">+18.3%</div><div class="sm">non-cultivable ex-Negev: hill rock and village commons inside Arab village boundaries — non-taxable, attributed to the village "as a whole," no parcel registration</div></div>
+      <div><div class="place">Rung 3 · estimated</div><div class="big">+7.4%</div><div class="sm">Negev "cultivable": Bedouin cultivation attribution, zero registration; the Survey itself: Beersheba's cultivable area is "unknown; it might be three or four million dunums"</div></div>
+      <div><div class="place">Headline</div><div class="big">47.79%</div><div class="sm">the composite — and the symmetric rule: the Jewish 5.67% comes from the same instrument under the same rule</div></div>
     </div>
-    <p class="srcline">Derived from Hadawi 1957, reconstructed from <i>Village Statistics 1945</i>; <i>Survey of Palestine</i> ¶¶42, 68–69 + Hadawi footnotes a–c. Shares against the 26.32M-dunum total of Palestine (1 acre ≈ 4.05 dunums). Internal checks: rungs 1+2 = the ex-Negev Arab sub-total 2,659,602 acres exactly; 22.1 + 18.3 + 7.4 ≈ 47.79. <b>This is what paying primary-source rent looks like — line-item, sourced, checkable. The "90%" has none of it.</b></p>
+    <p class="srcline">Hadawi 1957, reconstructed from <i>Village Statistics 1945</i>; <i>Survey of Palestine</i> ¶¶42, 68–69. Internal checks: rungs 1+2 = the ex-Negev Arab sub-total 2,659,602 acres exactly; 22.1 + 18.3 + 7.4 ≈ 47.79. Full line-item derivation (acres · dunums · tenure): <a href="land-regime-1831-1947.html" style="color:var(--accent-3)">The Law of the Land →</a>.</p>
     <p><b>The five citations — only one is precise.</b> The figure carries five stacked scholarly references; that stack is what makes it look like consensus. Set their actual wordings side by side and the consensus dissolves into three different quantities — one keeps the load-bearing qualifier, one drops it outright, two state the bare complement of the Jewish share (94% = 100&nbsp;−&nbsp;6), and one is measuring a different thing entirely:</p>
     <div style="overflow-x:auto;">
     <table class="inv">
