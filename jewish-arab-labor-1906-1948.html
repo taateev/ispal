@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jewish–Arab Labor, 1906–1948 — cross-employment, Hebrew Labor, and the roads not taken</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* page-scoped — uses shared tokens from broadsheet.css */
+  .lede-epi { font-family: var(--serif); font-style: italic; font-size: clamp(17px,2vw,21px); line-height:1.5; color: var(--ink); border-left: 3px solid var(--accent); padding: 4px 0 4px 18px; margin: 26px 0 8px; max-width: 820px; }
+  .lede-epi span { display:block; font-style: normal; font-family: var(--sans); font-size: 12.5px; color: var(--ink-3); margin-top: 8px; letter-spacing:0.01em; }
+
+  .note { font-family:var(--sans); font-size:12.5px; line-height:1.6; color:var(--ink-3); background: rgba(0,0,0,0.018); border-left:2px solid var(--rule); padding:12px 16px; margin:16px 0; max-width:920px; }
+  .note b { color: var(--ink-2); }
+
+  .chartwrap { border:1px solid var(--rule); background: rgba(255,255,255,0.42); margin:14px 0 6px; padding:16px 18px 10px; }
+  .chartwrap .ct { font-family:var(--sans); font-size:12px; font-weight:700; color:var(--ink); letter-spacing:.01em; margin:0 0 2px; }
+  .chartwrap .cs { font-family:var(--sans); font-size:11px; color:var(--ink-3); margin:0 0 10px; }
+  .legend { display:flex; flex-wrap:wrap; gap:16px; font-family:var(--sans); font-size:11px; color:var(--ink-3); margin:8px 2px 2px; align-items:center; }
+  .legend .sw { display:inline-block; width:18px; height:0; border-top:3px solid; vertical-align:middle; margin-right:6px; }
+  .legend .sw.dash { border-top-style:dashed; }
+  .legend .dot { display:inline-block; width:9px; height:9px; border-radius:50%; vertical-align:middle; margin-right:6px; }
+
+  .reg-split { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:14px 0; }
+  .reg-split > div { background:var(--paper); padding:13px 15px; }
+  .reg-split .place { font-family:var(--sans); font-size:11px; font-weight:600; color:var(--ink); text-transform:uppercase; letter-spacing:.05em; }
+  .reg-split .big { font-family:var(--mono); font-size:21px; font-weight:600; color:var(--accent); margin:3px 0 1px; }
+  .reg-split .sm { font-family:var(--sans); font-size:11px; color:var(--ink-3); line-height:1.45; }
+
+  /* findings */
+  .findings { margin:14px 0 8px; }
+  .fv { display:grid; grid-template-columns: 30px 1fr; gap:14px; padding:13px 0; border-bottom:1px solid var(--rule-soft); }
+  .fv .fn { font-family:var(--mono); font-size:13px; color:var(--ink-4); font-weight:500; }
+  .fv .fh { font-family:var(--sans); font-size:12px; font-weight:700; color:var(--ink); letter-spacing:.01em; }
+  .fv .ft { font-family:var(--serif); font-size:14.5px; line-height:1.55; color:var(--ink-2); margin-top:4px; }
+  .fv .ft em { color:var(--accent); font-style:normal; font-weight:600; }
+
+  /* streams grid */
+  .streams { display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:12px 0; }
+  .streams > div { background:var(--paper); padding:14px 15px; }
+  .streams .sh { font-family:var(--sans); font-size:12.5px; font-weight:700; color:var(--ink); }
+  .streams .sp { font-family:var(--mono); font-size:10.5px; color:var(--ink-4); margin:2px 0 7px; }
+  .streams .sd { font-family:var(--serif); font-size:13px; line-height:1.5; color:var(--ink-2); }
+  .streams .so { font-family:var(--sans); font-size:11px; color:var(--accent-3); margin-top:7px; font-weight:600; }
+
+  /* tables */
+  table.dt { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13.5px; margin: 4px 0 8px; }
+  table.dt thead th { text-align:left; font-family:var(--sans); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); font-weight:600; padding:8px 10px 10px; border-bottom:1px solid var(--rule); }
+  table.dt tbody td { padding:9px 10px; border-bottom:1px solid var(--rule-soft); text-align:left; vertical-align:top; }
+  .dt .lab { font-weight:600; color:var(--ink); }
+  .dt .date { font-family:var(--mono); font-size:11.5px; color:var(--ink-3); white-space:nowrap; }
+  .dt .src { font-family:var(--sans); font-size:11px; color:var(--ink-3); }
+  .dt .num { font-family:var(--mono); font-size:12px; color:var(--ink-2); white-space:nowrap; text-align:right; }
+  .lvl { display:inline-block; font-family:var(--sans); font-size:8.6px; letter-spacing:.09em; text-transform:uppercase; font-weight:700; padding:2px 7px; border-radius:10px; white-space:nowrap; }
+  .lvl.stat { background: var(--accent); color: var(--paper); }
+  .lvl.doc  { background: var(--accent-3); color: var(--paper); }
+  .lvl.inst { background: #7a6a4f; color: var(--paper); }
+  .lvl.int  { background: var(--paper-3); color: var(--ink-3); }
+
+  .srcs { font-family:var(--sans); font-size:12px; line-height:1.7; color:var(--ink-3); margin:10px 0 0; max-width:920px; }
+  .srcs b { color:var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Corpus Synthesis · Labor &amp; Economy</div>
+      <h1>Jewish–Arab Labor<br /><em>Cross-employment, Hebrew Labor, and the roads not taken, 1906–1948</em></h1>
+    </div>
+    <div class="meta">
+      <b>Question</b> · how much did Jews and Arabs work together — and what happened to the attempts to organize them together?<br />
+      <b>Method</b> · census-benchmarked cross-employment figures + a Haifa annual deep-dive, every number source-tagged<br />
+      <span class="faint">Lockman · Bernstein · Metzer ·<br />Shafir · Shapira · Cohen</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;All periods</a> &nbsp;·&nbsp; <a href="mandate.html">Mandatory Palestine</a> &nbsp;·&nbsp; <a href="land-regime-1831-1947.html">The law of the land</a> &nbsp;·&nbsp; <a href="zionist-conviction-1880-1948.html">Who was a Zionist?</a>
+  </nav>
+
+  <p class="lede-epi">
+    "We must take the longer and more difficult path — the path toward the Arab worker… only an alliance of Jewish and Arab workers will establish and maintain an alliance of the Jewish and Arab peoples in Palestine."
+    <span>— David Ben-Gurion, Aḥdut Ha‘avoda congress, Ein Harod, May 1924 (Lockman, <i>Comrades and Enemies</i>). The same Ben-Gurion was the architect of Hebrew Labor / Avoda Ivrit, the campaign to replace Arab workers with Jews. Both were his — and the data below is the gap between the aspiration and the institution.</span>
+  </p>
+
+  <p class="dek">
+    Two facts sit awkwardly together. <em>Hebrew Labor</em> — the drive to staff the Jewish economy with Jews only — was real, organized, and central to Labor Zionism. And yet through the whole inter-war period Jews and Arabs worked side by side in large numbers, the campaign largely failed on its own terms until 1936, and Jewish-led efforts to build joint Arab–Jewish unions ran alongside the displacement drive the entire time. This page holds both: the <em>numbers</em> of cross-employment (where the famous "35%" turns out to mean three different things), and the <em>institutions</em> — four competing streams of labor politics, only some of them Zionist, and what defeated the cross-communal ones. Figures are benchmark points, not a continuous series; the densest annual data exists only for Haifa, and is treated separately as such.
+  </p>
+
+  <!-- ════════════════════ 1 · THE DENOMINATOR PROBLEM ════════════════════ -->
+  <h2 class="section">The number everyone cites means three different things</h2>
+  <p class="fignote">"Arab labor was still ~35%" is true — <em>of Jewish agriculture, at the beginning of 1936</em>. Across the whole Jewish economy the share was far lower and falling. Three different denominators, three different answers. Points are actual census/survey benchmarks; lines connect them but do not imply annual readings between.</p>
+
+  <div class="chartwrap">
+    <div class="ct">Arab labor as a share of the Jewish economy — by denominator</div>
+    <div class="cs">% Arab, three measures · sources: Metzer pp. 130–32 (whole-economy &amp; wage-earners, from Census of Jewish Workers 1926/1937 + Sussman 1974); Lockman fn 46 (within-sector, beginning of 1936)</div>
+    <div id="denom-plot"></div>
+    <div class="legend">
+      <span><span class="sw" style="border-color:#7a2c1e"></span>within Jewish <b>agriculture</b> (1936)</span>
+      <span><span class="sw" style="border-color:#8a5a2b"></span>of Jewish-economy <b>wage earners</b></span>
+      <span><span class="sw" style="border-color:#2d4a3a"></span>of <b>all persons</b> in the Jewish economy</span>
+    </div>
+  </div>
+
+  <div class="reg-split">
+    <div><div class="place">Within agriculture</div><div class="big">≈ 35%</div><div class="sm">Arab share of the labor force in <b>Jewish farming</b>, beginning 1936 (transport 20%, construction 12%) — Lockman fn 46</div></div>
+    <div><div class="place">Of wage earners</div><div class="big">15–23%</div><div class="sm">Arab share of <b>all wage earners</b> in the Jewish economy: 20–23% (1931) → 15–17% (1935) — Metzer</div></div>
+    <div><div class="place">Of all persons</div><div class="big">8.5–14%</div><div class="sm">Arab share of <b>everyone employed</b> in the Jewish economy: 14% (1921) → 10% (1931) → 8.5% (1935) — Metzer</div></div>
+    <div><div class="place">No 1933 point</div><div class="big">1921·31·35</div><div class="sm">the national data is census-anchored; a 1933 figure must be <b>interpolated</b> (~9–10% of persons; ~35%+ within agriculture)</div></div>
+  </div>
+
+  <div class="note">
+    <b>Why the gap.</b> Arab labor in the Jewish sector was <i>concentrated in agriculture</i> — in 1935, 7,000 of the 12,000 Arabs employed by Jews were in "mostly citrus" agriculture (Metzer). So <i>within</i> that sector the share ran ~35%, while spread across the whole Jewish economy — by the mid-1930s dominated by urban Jewish immigrant labor — it was about one in ten. Both numbers are correct; they answer different questions. Treating the within-agriculture 35% as the economy-wide figure overstates Arab presence by roughly two-to-three-fold.
+  </div>
+
+  <!-- ════════════════════ 2 · SHARE DOWN, NUMBERS UP ════════════════════ -->
+  <h2 class="section">The share fell while the head-count rose</h2>
+  <p class="fignote">The two movements look contradictory and aren't. The Fifth-Aliya immigration boom (1932–35) swelled the Jewish labor force far faster than Arab employment could be pushed out — so the Arab <em>share</em> dropped even as the absolute <em>number</em> of Arabs working for Jews climbed to an all-time peak in 1935.</p>
+
+  <div class="chartwrap">
+    <div class="ct">Jewish immigration vs. Arabs employed in the Jewish economy</div>
+    <div class="cs">bars: Jewish immigrants per year (left axis); line: Arabs employed by Jews (right axis) · sources: Survey of Palestine (immigration); Metzer pp. 130–31 (cross-employment benchmarks 1931, 1935)</div>
+    <div id="boom-plot"></div>
+    <div class="legend">
+      <span><span class="dot" style="background:#3a4a6b"></span>Jewish immigration (persons/yr)</span>
+      <span><span class="sw" style="border-color:#7a2c1e"></span>Arabs employed by Jews (persons)</span>
+    </div>
+  </div>
+
+  <div class="reg-split">
+    <div><div class="place">Immigration surge</div><div class="big">4k → 62k</div><div class="sm">Jewish immigrants/yr, 1931 → 1935 (peak); the Fifth Aliya more than doubled the Yishuv 1932–35</div></div>
+    <div><div class="place">Arabs employed by Jews</div><div class="big">7k → 12k</div><div class="sm">1931 → 1935 — "more than in any other year"; absolute Arab employment <b>rose</b> through the boom (Metzer)</div></div>
+    <div><div class="place">Labor-force growth</div><div class="big">14.6% : 1.9%</div><div class="sm">annual growth of the Jewish vs. Arab labor force, 1922–35 — why the Arab <i>share</i> fell (Metzer &amp; Kaplan, via Bernstein)</div></div>
+    <div><div class="place">Then the rupture</div><div class="big">1936–39</div><div class="sm">the Arab Revolt boycott "halted most inter-war Arab–Jewish economic relations" — the real break point (Metzer)</div></div>
+  </div>
+
+  <!-- ════════════════════ 3 · FINDINGS ════════════════════ -->
+  <h2 class="section">Six findings</h2>
+  <div class="findings">
+    <div class="fv"><div class="fn">01</div><div>
+      <div class="fh">"Still 35% Arab" is a sectoral figure wearing an economy-wide costume</div>
+      <div class="ft">The ~35% is the Arab share of <em>Jewish agriculture</em> at the start of 1936. Economy-wide the share was ~10% of all persons, ~15–20% of wage earners. The three numbers diverge because Arab labor clustered in citrus farming. Quoting the agricultural figure for the whole economy is the single most common error here.</div>
+    </div></div>
+    <div class="fv"><div class="fn">02</div><div>
+      <div class="fh">Share and head-count moved in opposite directions — both real</div>
+      <div class="ft">From 1931 to 1935 the absolute number of Arabs employed by Jews rose <em>7,000 → 12,000</em> (a peak), while their share of the Jewish economy fell. The Jewish labor force was growing at <em>14.6% a year</em> against the Arab labor force's 1.9%. The boom pulled Arab workers in faster than Hebrew Labor pushed them out.</div>
+    </div></div>
+    <div class="fv"><div class="fn">03</div><div>
+      <div class="fh">Hebrew Labor largely failed until the Revolt did its work for it</div>
+      <div class="ft">After three decades of campaigning, Arab labor was still ~35% of Jewish agriculture in 1936. Anita Shapira titled her book on the campaign <em>The Futile Struggle</em>; Metzer concludes "the unskilled labor market was far from segregated." Economic separation arrived not by doctrine but by the <em>1936–39 Arab Revolt boycott</em> — Arab workers withdrew, and wartime substitution made it stick.</div>
+    </div></div>
+    <div class="fv"><div class="fn">04</div><div>
+      <div class="fh">There were genuine cross-communal alternatives — defeated internally by 1927</div>
+      <div class="ft">Four labor-politics streams competed: the Hebrew Labor mainstream, the <em>anti-Zionist</em> Communist Party's joint organizing, the Brit Shalom binationalists, and operational joint workforces in British industries. The maximal Labor-Zionist reach-out (Ben-Gurion's 1924 "path toward the Arab worker," Kaplansky's binational parliament) lost the internal fight at the <em>1927 Histadrut congress</em> — before the 1929 riots, which then removed the remaining rationale.</div>
+    </div></div>
+    <div class="fv"><div class="fn">05</div><div>
+      <div class="fh">The market was segmented, not segregated — a wage ceiling, not a wall</div>
+      <div class="ft">Arab and Jewish workers met constantly, but at structurally different wages: in 1932 an unskilled urban European Jew earned a 250-mil minimum, a town Arab 100–120, a rural Arab 80. The abundant supply of cheap Arab (and Hourani migrant) labor set an effective <em>ceiling</em> on unskilled Jewish wages — which is the economic engine that produced Hebrew Labor in the first place (Shafir's matched-wage-competition origin).</div>
+    </div></div>
+    <div class="fv"><div class="fn">06</div><div>
+      <div class="fh">Only Haifa has continuous annual data — and the government sector stayed ~90% Arab</div>
+      <div class="ft">National figures are benchmark snapshots; Bernstein's Haifa micro-history is the one place with year-by-year series. There the British-run railways and port stayed overwhelmingly Arab (railway Jews 8–13% across 1933–37); the sharp Judaization that did occur — Haifa port Jews <em>10% (1934) → 39% (1937)</em>, citrus porterage handed to Jewish labor — happened during and after the Revolt, not before.</div>
+    </div></div>
+  </div>
+
+  <!-- ════════════════════ 4 · FOUR STREAMS ════════════════════ -->
+  <h2 class="section">Four streams of labor politics</h2>
+  <p class="fignote">Within the Yishuv the displacement-oriented mainstream competed with at least three Jewish-led streams that tried to build <em>cross-communal</em> organization. Hebrew Labor consolidated its dominance only after these alternatives were politically defeated — not from the start (Lockman, Bernstein, Cohen <i>Year Zero</i>).</p>
+  <div class="streams">
+    <div>
+      <div class="sh">Hebrew Labor mainstream</div>
+      <div class="sp">Aḥdut Ha‘avoda → Mapai · Histadrut · 1905+</div>
+      <div class="sd">Jewish self-labor + displacement of Arab labor from Jewish enterprises. The "separate but equal" model: cooperate on wages, bar Arabs from full Histadrut membership.</div>
+      <div class="so">→ consolidated dominance after 1929</div>
+    </div>
+    <div>
+      <div class="sh">Palestine Communist Party (PKP)</div>
+      <div class="sp">anti-Zionist · 1923–29 core</div>
+      <div class="sd">"Jewish and Arab workers unite" — the genuinely egalitarian joint-organizing, but explicitly anti-Zionist. Jewish leadership Arabized under Comintern pressure after 1929.</div>
+      <div class="so">→ defeated 1929; persisted marginal to 1944</div>
+    </div>
+    <div>
+      <div class="sh">Brit Shalom binationalists</div>
+      <div class="sp">Magnes · Buber · Scholem · 1925–33</div>
+      <div class="sd">Zionist-binationalist intellectuals favoring a unitary state of equals. Not labor organizers as such; dissolved after Hebron 1929.</div>
+      <div class="so">→ dissolved by 1933</div>
+    </div>
+    <div>
+      <div class="sh">Operational joint workforces</div>
+      <div class="sp">Haifa rail / port / IPC · citrus · 1906–48</div>
+      <div class="sd">Day-to-day cooperation in British-administered and private industries; repeated joint strikes (1932 lightermen, 1935–36 IPC) despite Histadrut ambivalence.</div>
+      <div class="so">→ persisted, politically isolated, to 1948</div>
+    </div>
+  </div>
+
+  <!-- ════════════════════ 5 · EVENT LOG ════════════════════ -->
+  <h2 class="section">Event log · the arc of joint labor, 1906–1948</h2>
+  <p class="fignote">Evidence grade per row: <span class="lvl stat">data/quant</span> figures from census or survey · <span class="lvl doc">primary</span> participant speech or document · <span class="lvl inst">institutional</span> organizational act · <span class="lvl int">interp</span> historian framing.</p>
+  <div class="tablewrap"><table class="dt">
+    <thead><tr><th>Date</th><th>Event</th><th>What happened</th><th>Source</th><th>Grade</th></tr></thead>
+    <tbody>
+      <tr><td class="date">1882–1903</td><td class="lab">First Aliya moshavot</td><td>Jewish-owned plantation colonies are built largely on Arab wage labor — the baseline the later campaign reacts against.</td><td class="src">Shafir</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">1905+</td><td class="lab">"Conquest of labor" emerges</td><td>Second-Aliya workers lose matched-wage competition with cheaper Arab labor; Hebrew Labor doctrine forms as the political response to economic defeat.</td><td class="src">Shafir</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">1920</td><td class="lab">Histadrut founded</td><td>The unified labor federation — kept exclusively Jewish, with the Arab question deferred from the start.</td><td class="src">Lockman</td><td><span class="lvl inst">institutional</span></td></tr>
+      <tr><td class="date">1922</td><td class="lab">Bakery workers go "international"</td><td>Radical Jewish bakery workers open their union to Arabs and register members; the Histadrut leadership swiftly suppresses it.</td><td class="src">Lockman</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">May 1924</td><td class="lab">Ein Harod — the high-water mark</td><td>Ben-Gurion argues for "the path toward the Arab worker"; Kaplansky's proposal for an elected (Arab-majority) parliament and a deal with the Arab leadership is voted down.</td><td class="src">Lockman</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1925</td><td class="lab">Outreach machinery + a rival</td><td><i>Ittihad al-‘Ummal</i> (Arabic labor paper, ed. Ben-Tzvi) and the Haifa General Workers' Club launch; the independent Palestinian Arab Workers' Society (PAWS) is founded.</td><td class="src">Lockman · Bernstein</td><td><span class="lvl inst">institutional</span></td></tr>
+      <tr><td class="date">Jul 1927</td><td class="lab">The reversal — 3rd Histadrut congress</td><td>Petitions from hundreds of Arab workers to join the Histadrut are rejected; "the Jewish workers in Palestine are the Zionists" (applauded). Arab organizing drops to a "sideshow."</td><td class="src">Lockman</td><td><span class="lvl doc">primary</span></td></tr>
+      <tr><td class="date">1928–29</td><td class="lab">Decay</td><td><i>Ittihad al-‘Ummal</i> folds; the Haifa club closes; only one Arab strike sees Histadrut involvement, and only after it erupts.</td><td class="src">Lockman</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">Aug 1929</td><td class="lab">Riots reset the frame</td><td>133 Jews and 116 Arabs killed; Ben-Gurion turns toward dealing with Arab <i>nationalism</i>, abandoning the "Arab worker as natural ally" thesis.</td><td class="src">Lockman</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">May 1932</td><td class="lab">Palestine Labor League founded</td><td>Brit Po‘alei Eretz Yisra’el — an Arab-only auxiliary (lower dues, no Histadrut vote), given the grand name once meant for a binational federation. Run by Jewish officials.</td><td class="src">Lockman</td><td><span class="lvl inst">institutional</span></td></tr>
+      <tr><td class="date">Oct 1933</td><td class="lab">Haifa deep-water port opens</td><td>The port labor force more than doubles (720 → 1,670 in a season); the arena where Jewish labor will break into a mixed government workforce.</td><td class="src">Bernstein</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="date">1935</td><td class="lab">Boom peak</td><td>~62,000 Jewish immigrants; <b>12,000 Arabs employed by Jews</b> — "more than in any other year." Cross-employment at its absolute height.</td><td class="src">Metzer · Survey</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="date">1936–39</td><td class="lab">Arab Revolt boycott</td><td>Arab workers withdraw from Jewish enterprises; the HLC takes over ~85% of Jewish citrus porterage; the two economies separate under wartime conditions.</td><td class="src">Lockman · Bernstein · Metzer</td><td><span class="lvl int">interp</span></td></tr>
+      <tr><td class="date">1948 · 1959</td><td class="lab">Aftermath</td><td>The PLL becomes the Israel Labor League; Arabs are admitted to full Histadrut membership only in <b>1959</b>.</td><td class="src">Lockman</td><td><span class="lvl inst">institutional</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <!-- ════════════════════ 6 · WAGE STRUCTURE ════════════════════ -->
+  <h2 class="section">The wage structure underneath it all</h2>
+  <p class="fignote">Hebrew Labor was a response to a wage gap, not its cause. The 1932 government Labor Legislation Committee's minimum daily wage tiers show the split labor market directly — and that unskilled <em>Oriental (Mizrahi) Jews earned the same as Arabs</em>, marking their peripheral position in the European-led labor movement.</p>
+
+  <div class="chartwrap">
+    <div class="ct">Minimum daily wage by worker category, 1932 (mils/day)</div>
+    <div class="cs">government Labor Legislation Committee tiers · source: Bernstein, <i>Constructing Boundaries</i></div>
+    <div id="wage-plot"></div>
+  </div>
+
+  <div class="note">
+    <b>And it held into the 1940s, skilled work included.</b> In 1943 a Jewish carpenter earned 764 mils/day against an Arab carpenter's 425; a Jewish machine printer 900 vs 395; a Jewish fitter 836 vs 525 (Bernstein, from Gertz). The supply of cheap Arab and Hourani migrant labor — Vashitz put non-Palestinian Arab workers at 25,000–30,000 in 1934, ~25% of Arab wage labor — imposed an effective ceiling on unskilled Jewish wages (Sussman). That ceiling, not ideology alone, is what made the displacement campaign economically intelligible.
+  </div>
+
+  <!-- ════════════════════ 7 · HAIFA DEEP-DIVE ════════════════════ -->
+  <h2 class="section">Haifa · the one place with annual data</h2>
+  <p class="fignote">National cross-employment is census-benchmarked; Bernstein's Haifa study is the only continuous year-by-year window. It is one city, and the port and railways were <em>government-owned</em> mixed workplaces — so "Jewish share" here tracks Jewish penetration of an Arab-majority workforce, the inverse of the Jewish-sector framing above.</p>
+
+  <div class="chartwrap">
+    <div class="ct">Jewish share of the workforce — Haifa port &amp; Palestine Railways</div>
+    <div class="cs">% Jewish of total workers · sources: Bernstein (port); Lockman (railway, with end-1935 absolute breakdown 3,171 Arab / 345 Jewish / 1,307 other)</div>
+    <div id="haifa-plot"></div>
+    <div class="legend">
+      <span><span class="sw" style="border-color:#3a4a6b"></span>Haifa port (Jewish %)</span>
+      <span><span class="sw" style="border-color:#8a5a2b"></span>Palestine Railways (Jewish %)</span>
+    </div>
+  </div>
+
+  <div class="reg-split">
+    <div><div class="place">Haifa port</div><div class="big">10% → 39%</div><div class="sm">Jewish share of port labor, 1934 (168 workers) → 1937 (1,147) — the Revolt-era break-in</div></div>
+    <div><div class="place">Railways stayed Arab</div><div class="big">~90%</div><div class="sm">Jewish share only 8–13% across 1933–37 despite a Histadrut "conquest" drive; a government workforce</div></div>
+    <div><div class="place">Citrus porterage</div><div class="big">70 → 400</div><div class="sm">Jewish porters in Jewish-owned citrus export: a handful early-1930s → near-total control by 1938–39 (HLC)</div></div>
+    <div><div class="place">Citrus groves (dunams)</div><div class="big">155k : 144k</div><div class="sm">Jewish vs Arab citrus area by 1939 (from 10k:19k in 1922) — the sector that absorbed most cross-employment</div></div>
+  </div>
+
+  <!-- ════════════════════ 8 · EVIDENTIARY LADDER ════════════════════ -->
+  <h2 class="section">The cross-employment figures · an evidentiary ladder</h2>
+  <p class="fignote">What each headline number actually rests on, from census tabulation down to interpolation.</p>
+  <div class="tablewrap"><table class="dt">
+    <thead><tr><th>Claim</th><th>Value</th><th>Basis</th><th>Source chain</th><th>Grade</th></tr></thead>
+    <tbody>
+      <tr><td class="lab">Arabs employed by Jews</td><td class="num">7,000 (1931)<br/>12,000 (1935)</td><td>direct count from the Jewish-workers censuses</td><td class="src">Census of Jewish Workers 1926/1937 → Sussman 1974 → Metzer</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="lab">% of all persons in Jewish economy</td><td class="num">14 / 10 / 8.5</td><td>cross-employment ÷ total Jewish employment</td><td class="src">Metzer pp. 130–31, table A.5</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="lab">% of Jewish-economy wage earners</td><td class="num">20–23 (1931)<br/>15–17 (1935)</td><td>ranged on self-employment assumptions</td><td class="src">Sussman 1974 + Taqqu 1980 → Metzer</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="lab">Arab % of Jewish agriculture</td><td class="num">35 (1936)</td><td>sectoral labor-force estimate, single date</td><td class="src">Lockman, <i>Comrades and Enemies</i>, fn 46</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="lab">Arab % of Jewish transport / construction</td><td class="num">20 / 12 (1936)</td><td>same source, same date</td><td class="src">Lockman, fn 46</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="lab">Haifa port Jewish share</td><td class="num">10 → 39</td><td>workforce counts, busy seasons 1934 &amp; 1937</td><td class="src">Bernstein, ch. 5</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="lab">Railway Jewish share</td><td class="num">12.6 / 8.2 / ~10</td><td>employee returns 1933 / 1934 / 1937</td><td class="src">Lockman, ch. 6 (Palestine Railways returns)</td><td><span class="lvl stat">data/quant</span></td></tr>
+      <tr><td class="lab">Any 1933 national figure</td><td class="num">—</td><td>no census year; interpolated only</td><td class="src">between Metzer's 1931 &amp; 1935 benchmarks</td><td><span class="lvl int">interp</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note">
+    <b>Discipline.</b> National cross-employment is <i>census-benchmarked</i> (1921 / 1931 / 1935), not annual — the connecting lines above are visual aids, not interpolated readings. The within-agriculture 35% is a single 1936 datum and must not be read as the economy-wide share. Haifa annual data is genuine but is one city and skews to a government-owned (railway/port) and citrus-export labor scene. Wage tiers are statutory minima, not observed averages. The four-streams account records documented organizational alternatives only; it does not claim any of them commanded majority support — the Hebrew Labor mainstream did.
+  </div>
+
+  <p class="srcs">
+    <b>Sources.</b> Zachary Lockman, <i>Comrades and Enemies: Arab and Jewish Workers in Palestine, 1906–1948</i> (1996) — joint organization, the railway workers, the 1924/1927 turns, PLL.
+    Deborah Bernstein, <i>Constructing Boundaries: Jewish and Arab Workers in Mandatory Palestine</i> (2000) — Haifa port, railways, citrus, wages.
+    Jacob Metzer, <i>The Divided Economy of Mandatory Palestine</i> (1998) — cross-employment benchmarks, labor-force growth, wage segmentation.
+    Gershon Shafir, <i>Land, Labor and the Origins of the Israeli–Palestinian Conflict</i> — the matched-wage origin of Hebrew Labor.
+    Anita Shapira, <i>The Futile Struggle</i> — the Hebrew Labor campaign. Hillel Cohen, <i>Year Zero of the Arab–Israeli Conflict 1929</i> — the PKP and the 1929 break.
+  </p>
+
+</div>
+
+<!-- ════════════════════ CHARTS ════════════════════ -->
+<script>
+(function () {
+  // ── shared multiline helper ───────────────────────────────────────────
+  function multiline(hostId, opts) {
+    var W = 760, GL = 44, GR = (opts.gr || 150), T = 18, CH = 232,
+        Y0 = opts.x0, Y1 = opts.x1;
+    var px = function (y) { return GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0); };
+    var cy = function (v) { return T + CH * (1 - (v - opts.vmin) / (opts.vmax - opts.vmin)); };
+    var H = T + CH + 28, s = [];
+    s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="' + opts.aria + '">');
+    opts.ticks.forEach(function (v) {
+      s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + cy(v).toFixed(1) + '" y2="' + cy(v).toFixed(1) + '" stroke="rgba(28,24,21,0.07)" stroke-width="1"/>');
+      s.push('<text x="' + (GL - 6) + '" y="' + (cy(v) + 3.5).toFixed(1) + '" text-anchor="end" font-size="10" fill="#8c8270">' + v + (opts.ysuffix || '') + '</text>');
+    });
+    opts.xticks.forEach(function (y) {
+      s.push('<text x="' + px(y).toFixed(1) + '" y="' + (T + CH + 17) + '" text-anchor="middle" font-size="10" fill="#7a6f5b" style="font-variant-numeric:tabular-nums">' + y + '</text>');
+    });
+    opts.series.forEach(function (S) {
+      if (S.pts.length > 1) {
+        var d = "M " + S.pts.map(function (p) { return px(p[0]).toFixed(1) + " " + cy(p[1]).toFixed(1); }).join(" L ");
+        s.push('<path d="' + d + '" fill="none" stroke="' + S.color + '" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"' + (S.dash ? ' stroke-dasharray="6 4"' : '') + '/>');
+      }
+      S.pts.forEach(function (p) {
+        s.push('<circle cx="' + px(p[0]).toFixed(1) + '" cy="' + cy(p[1]).toFixed(1) + '" r="3.6" fill="' + S.color + '" stroke="#f4efe4" stroke-width="1.4"/>');
+        if (p[2] !== "") s.push('<text x="' + px(p[0]).toFixed(1) + '" y="' + (cy(p[1]) - 8).toFixed(1) + '" text-anchor="middle" font-size="9.6" font-weight="700" fill="' + S.color + '">' + (p[2] != null ? p[2] : p[1]) + '</text>');
+      });
+      var ep = S.pts[S.pts.length - 1];
+      s.push('<text x="' + (px(ep[0]) + 9).toFixed(1) + '" y="' + (cy(ep[1]) + 3.5).toFixed(1) + '" font-size="10.5" font-weight="600" fill="' + S.color + '">' + S.label + '</text>');
+    });
+    s.push('</svg>');
+    var host = document.getElementById(hostId);
+    if (host) host.innerHTML = s.join("");
+  }
+
+  // 1 · denominator chart ────────────────────────────────────────────────
+  multiline("denom-plot", {
+    x0: 1920, x1: 1937, gr: 158, vmin: 0, vmax: 40, ticks: [0, 10, 20, 30, 40], ysuffix: "%",
+    xticks: [1921, 1925, 1929, 1931, 1933, 1935, 1936], aria: "Arab share of the Jewish economy by three denominators, 1921 to 1936",
+    series: [
+      { label: "agriculture", color: "#7a2c1e", pts: [[1936, 35]] },
+      { label: "wage earners", color: "#8a5a2b", pts: [[1931, 21.5, "20–23"], [1935, 16, "15–17"]] },
+      { label: "all persons", color: "#2d4a3a", pts: [[1921, 14], [1931, 10], [1935, 8.5]] }
+    ]
+  });
+
+  // 2 · boom combo chart (bars + line, dual axis) ─────────────────────────
+  (function () {
+    var IMM = [[1931, 4075], [1932, 9553], [1933, 30327], [1934, 42359], [1935, 61854], [1936, 29727]];
+    var ARAB = [[1931, 7000], [1935, 12000]];
+    var W = 760, GL = 46, GR = 54, T = 18, CH = 232, Y0 = 1930.4, Y1 = 1936.6;
+    var IMAX = 65000, AMAX = 14000;
+    var px = function (y) { return GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0); };
+    var iy = function (v) { return T + CH * (1 - v / IMAX); };
+    var ay = function (v) { return T + CH * (1 - v / AMAX); };
+    var H = T + CH + 28, s = [], bw = 30;
+    s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="Jewish immigration versus Arabs employed by Jews, 1931 to 1936">');
+    [0, 20000, 40000, 60000].forEach(function (v) {
+      s.push('<line x1="' + GL + '" x2="' + (W - GR) + '" y1="' + iy(v).toFixed(1) + '" y2="' + iy(v).toFixed(1) + '" stroke="rgba(28,24,21,0.07)"/>');
+      s.push('<text x="' + (GL - 6) + '" y="' + (iy(v) + 3.5).toFixed(1) + '" text-anchor="end" font-size="10" fill="#8c8270">' + (v / 1000) + 'k</text>');
+    });
+    // right axis (Arab employed)
+    [0, 7000, 14000].forEach(function (v) {
+      s.push('<text x="' + (W - GR + 8) + '" y="' + (ay(v) + 3.5).toFixed(1) + '" text-anchor="start" font-size="10" fill="#7a2c1e">' + (v / 1000) + 'k</text>');
+    });
+    IMM.forEach(function (p) {
+      s.push('<rect x="' + (px(p[0]) - bw / 2).toFixed(1) + '" y="' + iy(p[1]).toFixed(1) + '" width="' + bw + '" height="' + (CH + T - iy(p[1])).toFixed(1) + '" fill="#3a4a6b" opacity="0.82" rx="1.5"/>');
+      s.push('<text x="' + px(p[0]).toFixed(1) + '" y="' + (iy(p[1]) - 5).toFixed(1) + '" text-anchor="middle" font-size="9.2" fill="#3a4a6b" font-weight="600">' + (p[1] / 1000).toFixed(p[1] < 10000 ? 1 : 0) + 'k</text>');
+      s.push('<text x="' + px(p[0]).toFixed(1) + '" y="' + (T + CH + 17) + '" text-anchor="middle" font-size="10" fill="#7a6f5b">' + p[0] + '</text>');
+    });
+    var d = "M " + ARAB.map(function (p) { return px(p[0]).toFixed(1) + " " + ay(p[1]).toFixed(1); }).join(" L ");
+    s.push('<path d="' + d + '" fill="none" stroke="#7a2c1e" stroke-width="2.8" stroke-linecap="round"/>');
+    ARAB.forEach(function (p) {
+      s.push('<circle cx="' + px(p[0]).toFixed(1) + '" cy="' + ay(p[1]).toFixed(1) + '" r="4" fill="#7a2c1e" stroke="#f4efe4" stroke-width="1.4"/>');
+      s.push('<text x="' + px(p[0]).toFixed(1) + '" y="' + (ay(p[1]) - 9).toFixed(1) + '" text-anchor="middle" font-size="9.6" font-weight="700" fill="#7a2c1e">' + (p[1] / 1000) + 'k</text>');
+    });
+    s.push('</svg>');
+    var host = document.getElementById("boom-plot");
+    if (host) host.innerHTML = s.join("");
+  })();
+
+  // 4 · wage horizontal bars (1932) ───────────────────────────────────────
+  (function () {
+    var BARS = [
+      { label: "Jewish · urban (European)", v: 250, color: "#7a2c1e" },
+      { label: "Jewish · moshavot", v: 200, color: "#8a5a2b" },
+      { label: "Jewish · other rural / small town", v: 150, color: "#5a4a2e" },
+      { label: "Arab / Oriental Jew · large town", v: 120, color: "#2d4a3a" },
+      { label: "Arab · small town", v: 100, color: "#3a4a6b" },
+      { label: "Arab · rural", v: 80, color: "#6b7280" },
+      { label: "Arab · nomad", v: 60, color: "#9a9080" }
+    ];
+    var W = 760, GL = 232, GR = 40, T = 6, BH = 24, GAP = 12, MAX = 260;
+    var n = BARS.length, H = T + n * (BH + GAP) + 4;
+    var bx = function (v) { return GL + (W - GL - GR) * v / MAX; };
+    var s = [];
+    s.push('<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="display:block;overflow:visible" font-family="Inter, sans-serif" role="img" aria-label="Minimum daily wage by worker category, 1932">');
+    BARS.forEach(function (b, i) {
+      var y = T + i * (BH + GAP), mid = y + BH / 2;
+      s.push('<text x="' + (GL - 10) + '" y="' + (mid + 4) + '" text-anchor="end" font-size="11.5" font-weight="600" fill="#1a1714">' + b.label + '</text>');
+      s.push('<rect x="' + GL + '" y="' + y + '" width="' + Math.max(bx(b.v) - GL, 1).toFixed(1) + '" height="' + BH + '" rx="2.5" fill="' + b.color + '"/>');
+      s.push('<text x="' + (bx(b.v) + 6).toFixed(1) + '" y="' + (mid + 4) + '" font-size="11" font-weight="700" fill="' + b.color + '">' + b.v + '</text>');
+    });
+    s.push('</svg>');
+    var host = document.getElementById("wage-plot");
+    if (host) host.innerHTML = s.join("");
+  })();
+
+  // 7 · Haifa Jewish-share chart ─────────────────────────────────────────
+  multiline("haifa-plot", {
+    x0: 1932, x1: 1938, gr: 70, vmin: 0, vmax: 45, ticks: [0, 15, 30, 45], ysuffix: "%",
+    xticks: [1933, 1934, 1935, 1936, 1937], aria: "Jewish share of Haifa port and railway workforce, 1933 to 1937",
+    series: [
+      { label: "port", color: "#3a4a6b", pts: [[1934, 10], [1937, 39]] },
+      { label: "railway", color: "#8a5a2b", pts: [[1933, 12.6], [1934, 8.2], [1937, 9.8]] }
+    ]
+  });
+})();
+</script>
+</body>
+</html>

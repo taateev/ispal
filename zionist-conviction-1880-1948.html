@@ -67,6 +67,24 @@
   .attest .asrc b { color:var(--ink); font-weight:600; }
   .attest .gloss { font-family:var(--sans); font-size:12.5px; line-height:1.6; color:var(--ink-3); margin-top:13px; border-top:1px solid var(--rule-soft); padding-top:12px; }
   .attest .gloss b { color:var(--ink-2); font-weight:600; }
+
+  .litstrip { display:grid; grid-template-columns: repeat(auto-fit, minmax(272px,1fr)); gap:16px; margin:14px 0 8px; }
+  .litcard { border:1px solid var(--rule-soft); border-top:3px solid var(--accent-3); padding:15px 17px 14px; background:rgba(255,255,255,0.40); display:flex; flex-direction:column; }
+  .litcard.c1 { border-top-color:var(--accent); }
+  .litcard.c2 { border-top-color:var(--accent-3); }
+  .litcard.c3 { border-top-color:var(--accent-4); }
+  .litcard .reg { font-family:var(--sans); font-size:9.5px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent-3); }
+  .litcard.c1 .reg { color:var(--accent); }
+  .litcard.c3 .reg { color:var(--accent-4); }
+  .litcard .ttl { font-family:var(--sans); font-size:11px; font-weight:600; color:var(--ink-2); margin:3px 0 11px; letter-spacing:.01em; }
+  .litcard blockquote { margin:0; font-family:var(--serif); font-size:15px; line-height:1.55; color:var(--ink); }
+  .litcard blockquote.verse { font-style:italic; }
+  .litcard blockquote + blockquote { margin-top:11px; font-size:13.5px; color:var(--ink-2); padding-top:11px; border-top:1px dotted var(--rule-soft); }
+  .litcard .by { font-family:var(--sans); font-size:11px; color:var(--ink-2); margin-top:11px; }
+  .litcard .by b { color:var(--ink); font-weight:600; }
+  .litcard .gl { font-family:var(--sans); font-size:11.5px; line-height:1.55; color:var(--ink-3); margin-top:auto; padding-top:11px; border-top:1px solid var(--rule-soft); }
+  .litcard .gl b { color:var(--ink-2); font-weight:600; }
+  .litcard .gl em { font-style:normal; color:var(--accent); font-weight:600; }
 </style>
 </head>
 <body>
@@ -234,6 +252,46 @@
     <div class="vq"><div class="tag">The yerida paradox</div><div class="q">"Life is beautiful from a distance, but I've lost all distance."</div><div class="a">Rachel Maisel · Second-Aliyah pioneer, before her 1910 suicide</div></div>
   </div>
 
+  <h2 class="section">Voices · in literature</h2>
+  <p class="dek" style="margin-top:6px">The same three registers, in the period's published literature rather than its migrant letters. The pioneer
+    poem is genuine — but the movement's <em>own</em> novelists wrote the disillusionment, and the far larger migrant
+    stream's verse was written in Yiddish, in New York. <span style="color:var(--accent)">Red</span> = the conviction
+    self-image · <span style="color:var(--accent-3)">green</span> = the documented reality · <span style="color:var(--accent-4)">blue</span>
+    = the destination most olim chose instead.</p>
+  <div class="litstrip">
+
+    <div class="litcard c1">
+      <div class="reg">The conviction — set to verse</div>
+      <div class="ttl">Abraham Shlonsky · "Toil" (Amal), from the <i>Gilboa</i> sequence, 1927</div>
+      <blockquote class="verse">"Dress me, good mother, in a glorious coat of many colours<br />and with dawn lead me to toil.<br />My country wraps itself in light as in a prayer-shawl …<br />and like phylactery-straps, the highways that palms have paved glide down."</blockquote>
+      <div class="by"><b>Abraham Shlonsky</b> — emigrated 1922 as a young pioneer; paved roads in the Valley of Jezreel.</div>
+      <div class="gl">The self-image as liturgy: the pioneer is the beloved son and <b>"the altar is toil."</b> It is sincere — and
+        it belongs to the <em>one</em> wave (the Third Aliyah) the migration data says the conviction-image actually fits.</div>
+    </div>
+
+    <div class="litcard c2">
+      <div class="reg">The reality — by the vanguard's own writers</div>
+      <div class="ttl">S. Y. Agnon · <i>Only Yesterday</i> (1945) &nbsp;·&nbsp; Y. H. Brenner · <i>Breakdown and Bereavement</i> (1920)</div>
+      <blockquote>Isaac Kumer "ascended to the Land of Israel to build it … and to be rebuilt by it" — then, instead of tilling the soil, paints houses in Jaffa and signboards in Jerusalem.</blockquote>
+      <blockquote>"What never failed to crush him was the utter pointlessness of it all … as a Jewish 'farm-hand' always looking for work."</blockquote>
+      <div class="by"><b>Agnon</b> (Nobel, 1966) &amp; <b>Brenner</b> (murdered near Jaffa, 1921) — both Second-Aliyah immigrants.</div>
+      <div class="gl">The movement's greatest novelists wrote the <b>gap</b>, not the dream: the believer who comes to redeem
+        the soil and ends a sign-painter. <em>~50–80%</em> of their Second Aliyah left Palestine again.</div>
+    </div>
+
+    <div class="litcard c3">
+      <div class="reg">The road not taken</div>
+      <div class="ttl">Morris Rosenfeld · sweatshop poems, New York, 1898</div>
+      <blockquote>"I am a machine. I work, and work, and work without end … For what? and for whom? I know not, I ask not."</blockquote>
+      <blockquote>"Only rarely … I see him, my little son, when he is awake; I find him always asleep."</blockquote>
+      <div class="by"><b>Morris Rosenfeld</b> — the Yiddish "sweatshop poet" of the Lower East Side.</div>
+      <div class="gl">Same Pale, same years — but the larger stream wrote in <b>Yiddish, from New York</b>, not Hebrew from Jaffa.
+        Pre-1914, of aided emigrants <em>~73%</em> chose America and <em>~6%</em> Palestine. The verse followed the migrant,
+        not the ideology.</div>
+    </div>
+
+  </div>
+
   <h2 class="section">A dozen olim, one form</h2>
   <p class="note">
     <b>A dramatization, not evidence</b> — but each voice is built from the documented attitudes above. The exercise: run a dozen
@@ -288,8 +346,7 @@
       proxies; <i>general sympathy</i> (as distinct from membership) is genuinely unmeasured, so this is a <b>minority-organizationally-through-1939</b>
       argument, not a claim about majority sentiment. Conviction shares are ranges, not point estimates. The ~1913 shekel mid-point is
       soft (Fraenkel's "doubled" ≈ 230k vs. a ~1% reading ≈ 130k); the 1921, 1935 and 1939 anchors are firm. The "<i>dozen olim</i>"
-      gallery is <b>grounded imaginative reconstruction</b>, clearly distinct from the primary quotes above it. Full memo and footnotes:
-      <i>political-zionist-sentiment-1880-1940</i> in the research repository.
+      gallery is <b>grounded imaginative reconstruction</b>, clearly distinct from the primary quotes above it. Full memo and footnotes are in the research repository.
     </p>
   </div>
 

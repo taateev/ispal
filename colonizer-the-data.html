@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Colonizer Claim — The Data · 1882–1948</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* page-scoped — uses shared tokens from broadsheet.css */
+  .epi { font-family: var(--serif); font-style: italic; font-size: clamp(17px,2vw,21px); line-height:1.5; color: var(--ink); border-left: 3px solid var(--accent-3); padding: 4px 0 4px 18px; margin: 26px 0 8px; max-width: 800px; }
+  .epi span { display:block; font-style: normal; font-family: var(--sans); font-size: 12.5px; color: var(--ink-3); margin-top: 8px; letter-spacing:0.01em; }
+
+  table.dt { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:14px; margin: 4px 0 8px; }
+  table.dt thead th { text-align:right; font-family:var(--sans); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); font-weight:600; padding:8px 10px 10px; border-bottom:1px solid var(--rule); }
+  table.dt thead th.l { text-align:left; }
+  table.dt tbody td { padding:9px 10px; border-bottom:1px solid var(--rule-soft); text-align:right; vertical-align:middle; }
+  table.dt tbody td.l { text-align:left; }
+  table.dt tbody tr.hi { background: rgba(45,74,58,0.06); }
+  .dt .lab { font-weight:600; color:var(--ink); }
+  .dt .sub { font-family:var(--sans); font-size:10px; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-4); }
+  .dt .num { font-family:var(--mono); font-size:12.5px; color:var(--ink-2); white-space:nowrap; }
+  .dt .pct { font-family:var(--mono); font-size:12.5px; font-weight:600; color:var(--accent-3); }
+  .dt .bar { position:relative; height:14px; background:var(--paper-3); min-width:40px; border-radius:1px; display:inline-block; width:100%; }
+  .dt .bar > span { position:absolute; left:0; top:0; bottom:0; background:var(--accent-3); border-radius:1px; }
+  .dt .src { font-family:var(--mono); font-size:9.5px; letter-spacing:.02em; color:var(--ink-4); text-transform:uppercase; }
+
+  /* the signature: rests-on / complicates */
+  .dual { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:10px 0 6px; }
+  .dual > div { background:var(--paper); padding:15px 17px; }
+  .dual .dh { font-family:var(--sans); font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; font-weight:700; margin-bottom:8px; display:flex; align-items:center; gap:6px; }
+  .dual .for .dh { color:var(--accent-3); }
+  .dual .against .dh { color:var(--accent-5); }
+  .dual .dh::before { content:""; width:8px; height:8px; border-radius:50%; }
+  .dual .for .dh::before { background:var(--accent-3); }
+  .dual .against .dh::before { background:var(--accent-5); }
+  .dual p { font-family:var(--serif); font-size:14px; line-height:1.55; color:var(--ink-2); margin:0 0 9px; }
+  .dual p:last-child { margin-bottom:0; }
+  .dual p b { color:var(--ink); font-weight:600; }
+  @media (max-width:640px){ .dual { grid-template-columns:1fr; } }
+
+  .note { font-family:var(--sans); font-size:12.5px; line-height:1.6; color:var(--ink-3); background: rgba(0,0,0,0.018); border-left:2px solid var(--rule); padding:12px 16px; margin:14px 0; max-width:900px; }
+  .note b { color: var(--ink-2); }
+  .xlink { font-family:var(--sans); font-size:11.5px; }
+  .xlink a { color:var(--accent-3); text-decoration:none; border-bottom:1px solid rgba(45,74,58,0.3); }
+
+  .panel { border:1px solid var(--rule); border-left:4px solid var(--accent-3); background:rgba(255,255,255,0.4); padding:18px 22px; margin:14px 0 6px; max-width:920px; }
+  .panel p { font-family:var(--serif); font-size:15px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .panel p:last-child { margin-bottom:0; }
+  .panel p b { color:var(--ink); font-weight:600; }
+  .panel .ph { font-family:var(--sans); font-size:10px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent-3); margin-bottom:9px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Corpus Synthesis · The Data Behind a Framing · 1 of 3</div>
+      <h1>The Colonizer Claim<br /><em>What the settler-colonial framing rests on — and what complicates it</em></h1>
+    </div>
+    <div class="meta">
+      <b>Companion to</b> · <a href="colonizer-apartheid-genocide.html">the genealogy of three framings</a><br />
+      <b>Method</b> · the empirical bedrock, each figure source-tagged, paired with the data that complicates it<br />
+      <span class="faint">Survey of Palestine · Granott · Stein · Shafir ·<br />Barron 1922 · Mills 1931 · Khalidi · Morris</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;All periods</a> &nbsp;·&nbsp; <a href="contemporary.html">Contemporary</a> &nbsp;·&nbsp; <a href="colonizer-apartheid-genocide.html">The genealogy</a>
+  </nav>
+
+  <p class="epi">
+    "Modernization undertaken by the Zionist movement… was embedded in a colonial relationship."
+    <span>— Gershon Shafir, <i>Land, Labor and the Origins of the Israeli-Palestinian Conflict, 1882–1914</i> (1989) — a Zionist-Israeli sociologist classifying the Yishuv a "pure settlement colony."</span>
+  </p>
+
+  <p class="dek">
+    The <a href="colonizer-apartheid-genocide.html" style="color:var(--accent-3)">genealogy page</a> traces the <em>argument</em> that
+    Zionism is settler colonialism. This page lays out the <em>data</em> beneath it — land, population, who came and why, the labor
+    market, and 1948 — and, beside each, the figures and arguments that <em>complicate</em> the framing. The aim is not to settle the
+    question. It is to put the numbers, with their provenance, where a reader can weigh them. Two things recur: the raw magnitudes
+    (land, population) are <em>smaller</em> than the rhetoric implies, while the <em>structural</em> features (an exclusive land-and-labor
+    regime, and the 1948 outcome) are the framing's strongest ground.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">~6.6%</div><div class="l">of Palestine in Jewish ownership · 1945 (Survey of Palestine)</div></div>
+    <div class="stat"><div class="n">~33%</div><div class="l">Jewish share of the population · 1946 (up from 11% in 1922)</div></div>
+    <div class="stat"><div class="n">~10–15%</div><div class="l">of immigrants by pre-arrival ideological conviction</div></div>
+    <div class="stat"><div class="n">~700k</div><div class="l">Palestinians displaced in 1948 · ~400+ villages depopulated</div></div>
+  </div>
+
+  <h2 class="section">How to read this</h2>
+  <p class="note">
+    Each dimension below is shown <b>twice</b>: <b style="color:var(--accent-3)">what the settler-colonial framing rests on</b> and
+    <b style="color:var(--accent-5)">what complicates it</b> — held to the same standard, with sources named per row. Where the evidence
+    genuinely points one way, it is <em>not</em> artificially balanced. The page <b>documents</b> the empirical question; it does not
+    adjudicate the framing. Figures are corpus-sourced; ranges are ranges, not point estimates.
+  </p>
+
+  <h2 class="section">1 · Land — how much, and how acquired</h2>
+  <p class="dek" style="margin-top:6px">
+    Jewish land ownership grew steeply in relative terms but stayed small in absolute terms: by the 1945 anchor it was about
+    <em>6.6%</em> of mandate Palestine. Almost all of it was acquired by <em>market purchase</em>, not conquest — the pre-1948
+    mechanism is sale, often by absentee owners, not expropriation.
+  </p>
+  <div style="overflow-x:auto;">
+  <table class="dt">
+    <thead><tr><th class="l">Year</th><th>Jewish-owned</th><th class="l">Share of Palestine</th><th>%</th><th class="l">Source</th></tr></thead>
+    <tbody>
+      <tr><td class="l"><span class="lab">1882</span></td><td><span class="num">~25,000 dunam</span></td><td class="l"><div class="bar"><span style="width:1.5%"></span></div></td><td><span class="pct">&lt;0.2%</span></td><td class="l"><span class="src">Granott</span></td></tr>
+      <tr><td class="l"><span class="lab">~1914</span></td><td><span class="num">~420,600 dunam</span></td><td class="l"><div class="bar"><span style="width:24%"></span></div></td><td><span class="pct">~1.6%</span></td><td class="l"><span class="src">Granott</span></td></tr>
+      <tr class="hi"><td class="l"><span class="lab">1945</span></td><td><span class="num">1,731,300 dunam</span></td><td class="l"><div class="bar"><span style="width:100%"></span></div></td><td><span class="pct">~6.6%</span></td><td class="l"><span class="src">Survey of Palestine</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="xlink">Full breakdown by ownership category &amp; confession: <a href="land-regime-1831-1947.html">The Law of the Land · 1831–1947 →</a></p>
+  <div class="dual">
+    <div class="for"><div class="dh">Rests on</div>
+      <p>By 1945 a single community held <b>exclusive, inalienable</b> title to its land: the Jewish National Fund's land was, by charter, <b>never to be resold or leased to non-Jews</b>. It is the <em>structure</em> — a closed, expanding land regime — not the raw 6.6%, that the framing points to.</p>
+      <p>Purchases concentrated on the most fertile coastal plain and valleys, and dislocated <b>tenant cultivators</b> (the 1930 Hope Simpson and Lewis French inquiries documented landless fellahin).</p>
+    </div>
+    <div class="against"><div class="dh">Complicates</div>
+      <p>The magnitude is <b>small</b>: ~6.6% by 1945, ~9% of the land in the proposed 1947 Jewish state. The "Jews took the land" image overstates the pre-1948 footprint.</p>
+      <p>The mechanism was <b>legal market purchase</b> (Stein), much of it from <b>absentee non-Palestinian owners</b> (Beirut/Damascus effendis) — not conquest or state seizure. That changes only after 1948.</p>
+    </div>
+  </div>
+
+  <h2 class="section">2 · Population — the demographic transformation</h2>
+  <p class="dek" style="margin-top:6px">
+    The Jewish share of Palestine's population rose from a small minority to roughly a third in two generations — the demographic
+    fact the framing reads as colonization, and the immigration data reads as something more mixed.
+  </p>
+  <div style="overflow-x:auto;">
+  <table class="dt">
+    <thead><tr><th class="l">Year</th><th>Jews</th><th>Total</th><th class="l">Jewish share</th><th>%</th><th class="l">Source</th></tr></thead>
+    <tbody>
+      <tr><td class="l"><span class="lab">~1878</span></td><td><span class="num">~15–25k</span></td><td><span class="num">~462k</span></td><td class="l"><div class="bar"><span style="width:9%"></span></div></td><td><span class="pct">~3–5%</span></td><td class="l"><span class="src">McCarthy / Ottoman</span></td></tr>
+      <tr><td class="l"><span class="lab">1922</span></td><td><span class="num">83,790</span></td><td><span class="num">752,048</span></td><td class="l"><div class="bar"><span style="width:33%"></span></div></td><td><span class="pct">11.1%</span></td><td class="l"><span class="src">Barron census</span></td></tr>
+      <tr><td class="l"><span class="lab">1931</span></td><td><span class="num">174,606</span></td><td><span class="num">1,035,154</span></td><td class="l"><div class="bar"><span style="width:51%"></span></div></td><td><span class="pct">16.9%</span></td><td class="l"><span class="src">Mills census</span></td></tr>
+      <tr class="hi"><td class="l"><span class="lab">1946</span></td><td><span class="num">608,230</span></td><td><span class="num">1,845,560</span></td><td class="l"><div class="bar"><span style="width:100%"></span></div></td><td><span class="pct">~33%</span></td><td class="l"><span class="src">Survey of Palestine</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="dual">
+    <div class="for"><div class="dh">Rests on</div>
+      <p>A <b>5% → 33% shift in ~65 years</b>, driven overwhelmingly by external immigration — the textbook demographic signature of a settlement project.</p>
+      <p>The growth was deliberate and organized: the WZO, the Jewish Agency, and the immigration certificates were instruments aimed explicitly at building a Jewish majority.</p>
+    </div>
+    <div class="against"><div class="dh">Complicates</div>
+      <p>The Arab population <b>also grew sharply</b> — from ~670k (1922) to ~1.2M (1946) — by natural increase <em>and</em> in-migration drawn by the mandate economy. It was not a static native population being replaced.</p>
+      <p>Jews remained a <b>minority (33%) at the end</b> of the mandate; this is not a demographic conquest in the sense of a settler majority achieved before 1948.</p>
+    </div>
+  </div>
+
+  <h2 class="section">3 · Who came, and why</h2>
+  <p class="dek" style="margin-top:6px">
+    The word "colonizer" implies a settler arriving to settle. The migration-motive data — examined in full on the companion page —
+    finds the <em>opposite</em> for most waves: only a minority came by pre-arrival ideological conviction; the majority were
+    economic, refugee, family, or constraint-driven migrants.
+  </p>
+  <div class="stats">
+    <div class="stat"><div class="n">~10–15%</div><div class="l">came by pre-arrival Zionist conviction · all waves</div></div>
+    <div class="stat"><div class="n">73 : 6</div><div class="l">migrant destination inquiries · U.S. vs. Palestine, 1905</div></div>
+    <div class="stat"><div class="n">50–80%</div><div class="l">yerida — left again · Second Aliyah</div></div>
+  </div>
+  <p class="xlink">The two measurement windows, the waves, and the voices: <a href="zionist-conviction-1880-1948.html">Who Was a Zionist? →</a></p>
+  <div class="dual">
+    <div class="for"><div class="dh">Rests on</div>
+      <p>Motive may not matter to <b>structure</b>: a refugee who joins an exclusive land-and-labor regime still functions inside a settlement project, whatever drove the boat. "Settler colonialism is a <em>structure</em>, not an event" (Wolfe).</p>
+      <p>The <b>vanguard</b> — Bilu, the labour halutzim, the Third Aliyah — that built the institutions did arrive by conviction, and set the terms.</p>
+    </div>
+    <div class="against"><div class="dh">Complicates</div>
+      <p>For most waves the migrant was a <b>refugee or economic migrant</b>, the destination substitutable (73:6 chose America). Reading the demographic mass as ideological "colonists" mistakes the cohort for its vanguard.</p>
+      <p>A people fleeing pogrom and, later, extermination fits the "<b>refugee</b>" category as much as the "settler" one — the two are not mutually exclusive, and the framing tends to collapse them.</p>
+    </div>
+  </div>
+
+  <h2 class="section">4 · The labor market — the strongest structural ground</h2>
+  <p class="dek" style="margin-top:6px">
+    Shafir's <em>Land, Labor and the Origins</em> (1989) is the load-bearing empirical case <em>for</em> the framing — and it comes
+    from inside Israeli sociology. His finding: the Second Aliyah's "<em>conquest of labor</em>" (kibbush avoda / Avoda Ivrit) built a
+    <em>deliberately segregated</em> labor market, excluding Arab workers from the Jewish sector by design.
+  </p>
+  <div class="dual">
+    <div class="for"><div class="dh">Rests on</div>
+      <p>Shafir classifies the Yishuv a "<b>pure settlement colony</b>" (vs. an exploitation colony): the goal was not to exploit native labor but to <b>replace</b> it with Jewish labor — the exclusionary logic at the heart of the settler-colonial model.</p>
+      <p>"Conquest of labor" → "conquest of land": exclusive Jewish employment and exclusive Jewish land were a single, conscious strategy (the JNF charter, the Histadrut's picketing of Arab labor).</p>
+    </div>
+    <div class="against"><div class="dh">Complicates</div>
+      <p>Avoda Ivrit was contested <em>within</em> the Yishuv and never total — Arab labor persisted in the citrus groves and the private sector throughout the mandate.</p>
+      <p>Its drivers were partly defensive/economic (European Jews could not undersell Arab wages) — though Shafir argues that economic logic is precisely what makes it a <em>settlement</em> rather than an <em>exploitation</em> colony, not a refutation.</p>
+    </div>
+  </div>
+
+  <h2 class="section">5 · 1948 — the outcome the framing points to</h2>
+  <p class="dek" style="margin-top:6px">
+    The "logic of elimination" (Wolfe) is, in the framing, not metaphor but the 1948 record: the displacement of the majority of
+    Palestine's Arabs and the depopulation of their villages during and after the war.
+  </p>
+  <div style="overflow-x:auto;">
+  <table class="dt">
+    <thead><tr><th class="l">Measure</th><th>Figure</th><th class="l">Source / note</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="l"><span class="lab">Palestinians displaced</span></td><td><span class="num">~700,000–750,000</span></td><td class="l"><span class="src">Morris · UN (726k)</span></td></tr>
+      <tr><td class="l"><span class="lab">Arab villages depopulated</span></td><td><span class="num">~400+ (Khalidi 418 · Morris ~369)</span></td><td class="l"><span class="src">Khalidi · Morris</span></td></tr>
+      <tr><td class="l"><span class="lab">Arabs killed</span></td><td><span class="num">~5,000–13,000</span></td><td class="l"><span class="src">range, all 1948 war dead</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="dual">
+    <div class="for"><div class="dh">Rests on</div>
+      <p>The outcome — a <b>majority of the Arab population displaced</b> and barred from return, their villages depopulated and largely razed — is the elimination the structure had been building toward, in the framing's reading.</p>
+      <p>The <b>Absentee Property</b> regime and the bar on refugee return converted wartime flight into permanent demographic transformation — structure, not accident.</p>
+    </div>
+    <div class="against"><div class="dh">Complicates</div>
+      <p>1948 was a <b>war</b>, initiated across a partition both sides contest; displacement in war is not by itself genocide or a pre-set plan — the <em>intent</em> question is exactly what historians (Morris included) dispute.</p>
+      <p>Sabbagh-Khoury and others insist the Nakba was <b>not teleologically inevitable</b> — "at every step, events could have gone differently" — which cuts against reading 1948 as the necessary endpoint of a structure.</p>
+    </div>
+  </div>
+
+  <h2 class="section">The structural question</h2>
+  <div class="panel">
+    <div class="ph">What the data supports — and what it doesn't</div>
+    <p><b>The magnitudes are smaller than the rhetoric; the structure is the stronger ground.</b> On the raw numbers — 6.6% of the land, a 33% minority, a mostly refugee/economic migration — "colonizer" overstates the pre-1948 footprint. The framing's real weight is <em>structural</em>: an exclusive, inalienable land regime; a deliberately segregated labor market (Shafir, from inside Israeli sociology); and the 1948 outcome.</p>
+    <p><b>The hardest disanalogies are also real.</b> There was no metropole sending settlers for its own enrichment; much of the migration was flight from persecution; pre-1948 land was bought, not seized; and the "native" population was itself partly constituted by earlier in-migration — the corpus's own finding is that Ottoman Palestine saw <b>continuous Muslim in-migration</b>, so the pristine-native-vs-colonizer binary is too clean. Comparative scholars (Mamdani) argue the settler/native binary itself breaks down here.</p>
+    <p style="color:var(--ink-3);font-size:13.5px"><b>The defensible reading is narrow:</b> the Yishuv had <em>settler-colonial-adjacent structural features</em> — an exclusive expanding land-and-labor regime with an eliminationist 1948 outcome — alongside <em>real disanalogies</em> (no metropole, refugee-driven, legal purchase, a migration-sedimented "native" category). The data fits neither "just colonialism" nor "not colonialism at all." That ambiguity is the finding.</p>
+  </div>
+
+  <div class="endnotes">
+    <p>
+      <b>Sources.</b> Land: <i>A Survey of Palestine</i> (1946), vol. I; Abraham Granott, <i>The Land System in Palestine</i> (1952);
+      Kenneth Stein, <i>The Land Question in Palestine, 1917–1939</i> (1984); full breakdown at <i>land-regime-1831-1947</i>.
+      Population: Barron, <i>Palestine: Report… Census of 1922</i>; Mills, <i>Census of Palestine 1931</i>; <i>Survey of Palestine</i>
+      (1946); Justin McCarthy, <i>The Population of Palestine</i> (1990). Motive: Gur Alroey; <i>Survey of Palestine</i> 1946 — see
+      <i>zionist-conviction-1880-1948</i>. Labor: Gershon Shafir, <i>Land, Labor and the Origins of the Israeli-Palestinian
+      Conflict, 1882–1914</i> (1989). 1948: Benny Morris, <i>The Birth of the Palestinian Refugee Problem Revisited</i> (2004) &amp;
+      <i>Righteous Victims</i>; Walid Khalidi, <i>All That Remains</i> (1992); Areej Sabbagh-Khoury, <i>Colonizing Palestine</i> (2023).
+    </p>
+    <p>
+      <b>Scope &amp; caveats.</b> "Dunam" = 1,000 m². The 1945 land share is ~6.6% of total mandate area (a lower 5.67% figure counts
+      the uncultivable Beersheba desert differently — see <i>land-regime</i>). Population denominators vary by source; census years
+      (1922, 1931) are firm, the 1878 and 1914 rows are estimates. 1948 killed and refugee figures are contested ranges. The
+      structural reading is an interpretation, not a measurement; the figures are the measurement. Full memo, the settler-colonial
+      canon, and the methodological discussion are in the research repository.
+    </p>
+  </div>
+
+  <footer class="colophon">
+    <div><b>The Colonizer Claim — The Data · 1882–1948</b> · Corpus synthesis · companion to <a href="colonizer-apartheid-genocide.html" style="color:inherit">the genealogy</a></div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono · <a href="index.html" style="color:inherit">← All periods</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
