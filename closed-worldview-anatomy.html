@@ -37,10 +37,12 @@
 
   /* metabolization ledger */
   .ledger { margin:14px 0 8px; }
-  .lr { display:grid; grid-template-columns: 1fr 1fr auto; gap:16px; align-items:start; padding:14px 0; border-bottom:1px solid var(--rule-soft); }
-  .lr .fact { font-family:var(--serif); font-size:14px; line-height:1.5; color:var(--ink); }
+  .lr { display:grid; grid-template-columns: 1.05fr 0.92fr 1.03fr auto; gap:13px; align-items:start; padding:13px 0; border-bottom:1px solid var(--rule-soft); }
+  .lr .fact { font-family:var(--serif); font-size:13px; line-height:1.48; color:var(--ink); }
   .lr .fact .fl { display:block; font-family:var(--sans); font-size:9px; letter-spacing:.11em; text-transform:uppercase; font-weight:700; color:var(--ink-4); margin-bottom:4px; }
-  .lr .move { font-family:var(--serif); font-size:13.5px; line-height:1.5; color:var(--ink-2); }
+  .lr .upd { font-family:var(--serif); font-size:13px; line-height:1.48; color:var(--ink-2); }
+  .lr .upd .ul { display:block; font-family:var(--sans); font-size:9px; letter-spacing:.11em; text-transform:uppercase; font-weight:700; color:var(--accent-3); margin-bottom:4px; }
+  .lr .move { font-family:var(--serif); font-size:13px; line-height:1.48; color:var(--ink-2); }
   .lr .move .ml { display:block; font-family:var(--sans); font-size:9px; letter-spacing:.11em; text-transform:uppercase; font-weight:700; color:var(--ink-4); margin-bottom:4px; }
   .lr .move q { color:var(--ink); font-style:italic; }
   .lr .move q::before { content:"\201C"; } .lr .move q::after { content:"\201D"; }
@@ -49,7 +51,9 @@
   .badge.unr { background: rgba(90,74,46,0.12); color: var(--accent-2); }
   .badge.unf { background: rgba(107,114,128,0.14); color: var(--accent-6); }
   .badge.snd { background: rgba(45,74,58,0.10); color: var(--accent-3); }
-  @media (max-width:720px){ .lr { grid-template-columns:1fr; gap:7px; } .lr .badge { justify-self:start; } }
+  .badge.bord { background: rgba(138,90,43,0.13); color: var(--accent-5); }
+  .lr.ctrl { background: rgba(45,74,58,0.03); }
+  @media (max-width:880px){ .lr { grid-template-columns:1fr; gap:7px; } .lr .badge { justify-self:start; } }
 
   /* inverse table */
   table.inv { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13.5px; margin:6px 0 8px; }
@@ -169,7 +173,7 @@
 
   <h2 class="section">How to read this</h2>
   <p class="note">
-    Three commitments hold the whole page. <b>(1) It scores the FORM of reasoning, which is orthogonal to truth.</b> That a frame is
+    <b>This is a test of a method, not a verdict on a person.</b> The account is anonymized and <em>immaterial</em> — it stands in only as a worked <em>specimen</em>: one frame run through the diagnostic so the instrument itself can be shown working. The finding is a property of a reasoning <em>form</em>, reproducible on any sealed frame (the opposing one included); nothing here turns on who the speaker is or whether you share their politics. With that settled, three commitments hold the page. <b>(1) It scores the FORM of reasoning, which is orthogonal to truth.</b> That a frame is
     closed does <em>not</em> establish that its conclusions are false — a sealed worldview can contain true particulars, and several here
     are defensible. <b>(2) Having a worldview with categories is universal cognition</b> — the finding is not "it has labels" (everyone's
     does) but that this one is <em>sealed against its own evidence base</em>. <b>(3) The combative format selects for closure on every
@@ -229,56 +233,100 @@
 
   <h2 class="section">3 · How it metabolizes the evidence</h2>
   <p class="dek" style="margin-top:6px">
-    The heart of the case. Each row pairs a <em>well-established disconfirming fact</em> — one that, in test-mode, should revise the
-    frame — with the move that <em>absorbs</em> it instead, and the type of that move. Across 553 posts the count of genuine
-    frame-updates is <b>zero</b>; every refuter is re-categorized, absorbed, made unrepresentable, or closed off.
+    The heart of the case — the <b>full ledger</b>, every case auditable. Each row pairs a <em>well-established disconfirming fact</em>
+    with <b>what updating on it would have looked like</b> — stated concretely enough that you could recognize an update if it occurred —
+    and <b>what happened instead</b>. Thirteen disconfirmers met across 553 posts; genuine frame-updates: <b>zero</b>. The bottom two
+    rows are the <em>controls</em>: the cases that show the rubric can score the <em>open</em> direction, so "absorbed everywhere" isn't
+    true by construction. Quotes are short and de-identified; the full coded ledger (anchors, operators, Lakatos type) lives in the repo.
   </p>
   <div class="ledger">
     <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>~150,000 non-Jews <b>remained</b> inside the new state in 1948 — incompatible with a completed "cleansing."</div>
-      <div class="move"><span class="ml">The move that absorbs it</span><q>they presented no demographic threat</q> — the remnant redefined so it no longer counts <em>and</em> is recast as proof of the system.</div>
-      <div><span class="badge deg">monster-barring</span></div>
+      <div class="fact"><span class="fl">The disconfirming fact</span>~150,000 non-Jews <b>remained</b> inside the new state in 1948 — the basis of today's Arab-Israeli citizenry; a completed "cleansing" cannot leave it in place.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>soften "Zionism <em>is</em> ethnic cleansing" from a definition to a scoped claim — "1948 produced large-scale expulsion <em>alongside</em> retention."</div>
+      <div class="move"><span class="ml">What happened instead</span><q>they presented no demographic threat</q> — the remnant redefined out of the category, then recast as proof of the system.</div>
+      <div><span class="badge deg">absorbed</span></div>
     </div>
     <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>Intercommunal violence ran for ~27 years <b>before</b> the 1947 partition (1920, 1921, 1929, 1936–39).</div>
-      <div class="move"><span class="ml">The move that absorbs it</span><q>the war started with the partition</q> — the origin fixed at 1947 so all agency flows one way and prior violence vanishes from the ledger.</div>
-      <div><span class="badge deg">attribution of blame</span></div>
+      <div class="fact"><span class="fl">The disconfirming fact</span>Intercommunal violence ran ~27 years <b>before</b> the 1947 partition — 1920, 1921, 1929, the 1936–39 revolt.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>move the origin back before 1947 and grant that some agency attaches to pre-partition violence.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>the war started with the partition</q> — origin fixed at 1947, so everything prior drops out of the causal ledger.</div>
+      <div><span class="badge deg">absorbed</span></div>
     </div>
     <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>~Half of the country's Jews are <b>Middle-Eastern</b>, from communities older than the Arab conquest — not "settlers from Europe."</div>
-      <div class="move"><span class="ml">The move that absorbs it</span><q>there were Arab Jews and it was erased by Zionism</q> — the counterexample re-absorbed as a <em>fresh</em> indictment of the enemy.</div>
-      <div><span class="badge deg">absorb as confirmation</span></div>
+      <div class="fact"><span class="fl">The disconfirming fact</span>~Half the country's Jews are <b>Middle-Eastern</b>, from communities older than the Arab conquest — not "settlers from Europe."</div>
+      <div class="upd"><span class="ul">What an update would look like</span>drop or qualify the "European settler" class; the colonizer/native binary needs a third category.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>there were Arab Jews and it was erased by Zionism</q> — the counterexample re-absorbed as a <em>fresh</em> indictment.</div>
+      <div><span class="badge deg">absorbed</span></div>
     </div>
     <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>Jewish peoplehood <b>predates</b> the 1880s; emancipation pressed Jews <em>toward</em> a religion-only self-description.</div>
-      <div class="move"><span class="ml">The move that absorbs it</span><q>nationhood was born with Zionism; identity is ancient</q> — concede the safe half, date the load-bearing half so it reads as invented.</div>
-      <div><span class="badge deg">definitional contraction</span></div>
+      <div class="fact"><span class="fl">The disconfirming fact</span>Jewish peoplehood <b>predates</b> the 1880s; 19th-c. emancipation pressed Jews <em>toward</em> a religion-only self-description.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>concede peoplehood predates Zionism; drop the "nationhood born with Zionism" dating.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>nationhood was born with Zionism; identity is ancient</q> — concede the safe half, date the load-bearing half so it reads invented.</div>
+      <div><span class="badge deg">absorbed</span></div>
     </div>
     <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>The movement contained <b>both</b> transfer-advocates <em>and</em> transfer-refusers (and accepted partition twice) — it is not identical to any one pole.</div>
-      <div class="move"><span class="ml">The move that absorbs it</span><em>(never arises)</em> — held as a definition, a non-"cleansing" version of the movement is simply <b>not expressible</b>, so the refuter never surfaces.</div>
+      <div class="fact"><span class="fl">The disconfirming fact</span>Acquisition was mixed: UN Resolution 181 <b>allocated</b> the state, and pre-1948 land was substantially <b>legal purchase</b> (JNF/PICA).</div>
+      <div class="upd"><span class="ul">What an update would look like</span>replace "stole a state" with a mixed mechanism — purchase + UN vote + wartime dispossession — each scored separately.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>stole a state through intimidation and bribery</q> — the legal process recoded as theft, generating no new checkable claim.</div>
+      <div><span class="badge deg">absorbed</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>The Zionist leadership <b>accepted partition</b> into a smaller state twice — Peel 1937, UN 1947; the Arab Higher Committee rejected it.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>replace "all of Palestine, cleansing baked in" with the documented partition-acceptance record.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>the decision at Biltmore was Palestine</q> — the single most maximalist datapoint card-stacked; 1937 and 1947 elided.</div>
+      <div><span class="badge deg">absorbed</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>~800,000–850,000 Jews left or were expelled from <b>Arab and Muslim lands</b> — communities predating the Arab conquest.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>admit a third category — Middle-Eastern Jews who were themselves displaced; the refugee flow ran both ways.</div>
+      <div class="move"><span class="ml">What happened instead</span>the challenge is re-described as a "genocide" claim he can then demand a source for and deny — bar raised, point dropped.</div>
+      <div><span class="badge deg">absorbed</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span><b>Continuous</b> Jewish presence — the Old Yishuv, Tiberias, Safed — independent of Zionist immigration. <span style="color:var(--ink-4)">(His counter, Roman-era exclusion, is <em>also</em> real — flagged.)</span></div>
+      <div class="upd"><span class="ul">What an update would look like</span>hold continuous presence <em>and</em> the exclusion history side by side, instead of letting one fact cancel the other.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>allowed back in by the Muslims — show some gratitude</q> — presence recoded as contingent grace, yielding no claim.</div>
+      <div><span class="badge deg">absorbed</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>A checkable sub-claim — the 1988 Hamas Charter was never rescinded (a 2017 document was <em>added</em>) — is corrected with a source.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>check it and revise — a cheap, peripheral correction that costs the frame nothing.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>I'm not interested in doing sidequests</q> — closure substituted for the one-click check.</div>
+      <div><span class="badge deg">refusal to check</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>The movement held <b>both</b> transfer-advocates <em>and</em> transfer-refusers (and accepted partition twice) — not identical to any single pole.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>demote the identity-claim to a scoped claim about a <em>dominant-but-not-exhaustive</em> strand — which makes a non-"cleansing" Zionism expressible.</div>
+      <div class="move"><span class="ml">What happened instead</span><em>(never arises)</em> — held as a <em>definition</em>, a non-"cleansing" Zionism is <b>not expressible</b>, so the refuter never surfaces.</div>
       <div><span class="badge unr">unrepresentable</span></div>
     </div>
     <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>The signature prediction ("it falls in my lifetime") never arrives, and carries no date or condition.</div>
-      <div class="move"><span class="ml">The move that absorbs it</span>dateless <b>by design</b> — never put at risk — yet an <em>opponent's</em> failed prediction is scored gleefully. The error-meter exists; it is never pointed inward.</div>
+      <div class="fact"><span class="fl">The disconfirming fact</span>The signature prediction — "it falls in my lifetime" (×17) — never arrives and carries no date or condition.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>attach a date/condition that time could score, or lower confidence to a hedge.</div>
+      <div class="move"><span class="ml">What happened instead</span>dateless <b>by design</b>, so non-occurrence never registers — yet an <em>opponent's</em> failed prediction is scored gleefully.</div>
       <div><span class="badge unf">unfalsifiable by design</span></div>
     </div>
-    <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>The population <em>grew</em> over the period — offered against the "genocide" charge.</div>
-      <div class="move"><span class="ml">The move that absorbs it</span><b>correctly rejected</b> — growth doesn't bear on the legal definition of the term. A sound rebuttal, not closure.</div>
-      <div><span class="badge snd">sound rebuttal</span></div>
+    <div class="lr ctrl">
+      <div class="fact"><span class="fl">Control · the disconfirmer is weak</span>The population <em>grew</em> over the period — raised by interlocutors <em>against</em> the "genocide" charge.</div>
+      <div class="upd"><span class="ul">Why this is the calibration</span><em>if</em> growth refuted the charge a test-mode reasoner would update — but it doesn't (the term is defined by intent, not net population), so rejecting it is correct.</div>
+      <div class="move"><span class="ml">What happened</span><b>correctly rejected</b> — "a genocide cannot be offset by births." A sound rebuttal, not closure: proof the rubric <em>can</em> score open.</div>
+      <div><span class="badge snd">valid rebuttal · calibration</span></div>
     </div>
-    <div class="lr">
-      <div class="fact"><span class="fl">The disconfirming fact</span>A checkable factual sub-claim is corrected with a source.</div>
-      <div class="move"><span class="ml">The move that absorbs it</span><q>I'm not interested in doing sidequests</q> — closure substituted for the cheap check, even on a point that costs the frame nothing.</div>
-      <div><span class="badge deg">refusal to check</span></div>
+    <div class="lr ctrl">
+      <div class="fact"><span class="fl">Control · the close call</span>His own principle — "the expelled may return" — applied consistently <em>also</em> licenses the Jewish return it is invoked to deny.</div>
+      <div class="upd"><span class="ul">What an update would look like</span>extend the return-principle symmetrically, or state a principled, non-ad-hoc cutoff.</div>
+      <div class="move"><span class="ml">What happened instead</span><q>it's not the same with Jews… the link doesn't extend hundreds of years</q> — a time-cutoff added just where it spares the Jewish case.</div>
+      <div><span class="badge bord">borderline · flagged</span></div>
     </div>
   </div>
   <p class="note">
-    The seventh row is the <b>calibration case</b>, and it is decisive for fairness: the account reasons <em>validly</em> when a weak
-    argument runs against it. So the finding is not "it cannot reason" — it is sharper and more honest: <b>the capacity for valid
-    reasoning is deployed only to <em>defend</em> the frame, never to <em>revise</em> it.</b> Error is metabolized as fuel, not feedback.
+    <b>The last two rows are the controls that keep the rubric honest.</b> The <em>calibration</em> case is decisive for fairness: the
+    account reasons <em>validly</em> when a weak argument runs against it — proof the coding rule <em>can</em> fire in the open direction,
+    so "update = 0" is not true by construction. The <em>borderline</em> case is <em>flagged, not forced</em>: a metabolization that has a
+    defensible principled version, marked rather than counted as a clean fail. (One calibration row proves the rule isn't degenerate; the
+    repo ledger holds the rest of the close calls.) With both visible, the finding sharpens to its honest form: <b>the capacity for valid
+    reasoning is fully present — and deployed only to <em>defend</em> the frame, never to <em>revise</em> it.</b> Error is metabolized as
+    fuel, not feedback.
   </p>
 
   <h2 class="section">4 · Specimen — a number becomes authority</h2>
@@ -501,9 +549,11 @@
   </p>
   <div class="panel" style="border-left-color:var(--accent)">
     <div class="ph" style="color:var(--accent)">The demonstration, not the assertion</div>
-    <p>This is not claimed; it is <em>measured</em>. Across 553 posts the frame meets a steady stream of well-established disconfirming
-    facts (§3) and updates on <b>none</b>: genuine frame-updates = <b>0</b>, metabolization ratio = <b>0.0</b>. A frame that absorbs every
-    refuter and is moved by no observation is, operationally, one no possible evidence can falsify. The <em>zero</em> is the proof.</p>
+    <p>This is not asserted; it is <em>measured and shown</em>. The full ledger is in §3 — <b>12 disconfirmers of the frame</b>, each with
+    the disconfirmer, what an update would have looked like, and the move that absorbed it instead; plus the two controls that keep the
+    rubric honest. Genuine frame-updates: <b>0 of 12</b> (the thirteenth case isn't a disconfirmer of <em>his</em> frame — it's the weak
+    argument he rightly rebuts). A frame that absorbs every refuter and is moved by no observation is, operationally, one no possible
+    evidence can falsify. <b>The cases are the proof; the zero is just their summary.</b></p>
     <p style="font-size:13px;color:var(--ink-3)"><b>What it claims, and doesn't.</b> This is unfalsifiability of the frame's
     <em>structure and behaviour</em> — which is independent of whether its conclusions are true (an unfalsifiable frame can still contain
     true particulars; §3's seventh row is a sound argument). The finding is "no evidence can move it," not "it is false." And the same
