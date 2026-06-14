@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anatomy of a Closed Worldview — How a Sealed Frame Metabolizes the Evidence Against It</title>
+<meta name="description" content="A worked case in the rhetoric of a closed epistemic worldview: how a self-sealing frame functions as a total world and metabolizes disconfirming evidence. Side-neutral diagnostic; scores reasoning form, not truth." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  /* page-scoped — uses shared tokens from broadsheet.css */
+  .epi { font-family: var(--serif); font-style: italic; font-size: clamp(17px,2vw,21px); line-height:1.5; color: var(--ink); border-left: 3px solid var(--accent-2); padding: 4px 0 4px 18px; margin: 26px 0 8px; max-width: 820px; }
+  .epi span { display:block; font-style: normal; font-family: var(--sans); font-size: 12.5px; color: var(--ink-3); margin-top: 8px; letter-spacing:0.01em; }
+
+  .note { font-family:var(--sans); font-size:12.5px; line-height:1.6; color:var(--ink-3); background: rgba(0,0,0,0.018); border-left:2px solid var(--rule); padding:12px 16px; margin:14px 0; max-width:920px; }
+  .note b { color: var(--ink-2); }
+  .xlink { font-family:var(--sans); font-size:11.5px; }
+  .xlink a { color:var(--accent-3); text-decoration:none; border-bottom:1px solid rgba(45,74,58,0.3); }
+
+  /* totality markers */
+  .markers { display:grid; grid-template-columns: repeat(auto-fill, minmax(250px,1fr)); gap:14px; margin:16px 0 8px; }
+  .mk { border:1px solid var(--rule-soft); border-top:2px solid var(--accent-2); padding:14px 16px; background: rgba(255,255,255,0.35); }
+  .mk .mh { font-family:var(--sans); font-size:11px; letter-spacing:.06em; text-transform:uppercase; font-weight:700; color:var(--accent-2); margin-bottom:7px; }
+  .mk p { font-family:var(--serif); font-size:13.5px; line-height:1.5; color:var(--ink-2); margin:0; }
+  .mk p b { color:var(--ink); font-weight:600; }
+
+  /* the four operations */
+  .ops { display:grid; grid-template-columns: repeat(auto-fit, minmax(230px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:14px 0 8px; }
+  .ops > div { background:var(--paper); padding:15px 16px; }
+  .ops .on { font-family:var(--mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-4); font-weight:500; }
+  .ops .ot { font-family:var(--sans); font-size:13px; font-weight:700; color:var(--ink); margin:3px 0 2px; }
+  .ops .opp { font-family:var(--sans); font-size:10px; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-4); margin-bottom:8px; }
+  .ops .om { font-family:var(--serif); font-size:13px; line-height:1.5; color:var(--ink-2); margin:0; }
+  .ops .om b { color:var(--ink); font-weight:600; }
+
+  /* metabolization ledger */
+  .ledger { margin:14px 0 8px; }
+  .lr { display:grid; grid-template-columns: 1fr 1fr auto; gap:16px; align-items:start; padding:14px 0; border-bottom:1px solid var(--rule-soft); }
+  .lr .fact { font-family:var(--serif); font-size:14px; line-height:1.5; color:var(--ink); }
+  .lr .fact .fl { display:block; font-family:var(--sans); font-size:9px; letter-spacing:.11em; text-transform:uppercase; font-weight:700; color:var(--ink-4); margin-bottom:4px; }
+  .lr .move { font-family:var(--serif); font-size:13.5px; line-height:1.5; color:var(--ink-2); }
+  .lr .move .ml { display:block; font-family:var(--sans); font-size:9px; letter-spacing:.11em; text-transform:uppercase; font-weight:700; color:var(--ink-4); margin-bottom:4px; }
+  .lr .move q { color:var(--ink); font-style:italic; }
+  .lr .move q::before { content:"\201C"; } .lr .move q::after { content:"\201D"; }
+  .badge { font-family:var(--sans); font-size:9px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; padding:3px 9px; border-radius:11px; white-space:nowrap; display:inline-block; }
+  .badge.deg { background: rgba(122,44,30,0.10); color: var(--accent); }
+  .badge.unr { background: rgba(90,74,46,0.12); color: var(--accent-2); }
+  .badge.unf { background: rgba(107,114,128,0.14); color: var(--accent-6); }
+  .badge.snd { background: rgba(45,74,58,0.10); color: var(--accent-3); }
+  @media (max-width:720px){ .lr { grid-template-columns:1fr; gap:7px; } .lr .badge { justify-self:start; } }
+
+  /* inverse table */
+  table.inv { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13.5px; margin:6px 0 8px; }
+  table.inv thead th { text-align:left; font-family:var(--sans); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:600; padding:8px 12px 9px; border-bottom:1px solid var(--rule); }
+  table.inv tbody td { padding:11px 12px; border-bottom:1px solid var(--rule-soft); vertical-align:top; line-height:1.5; }
+  table.inv .claim { color:var(--ink-2); font-style:italic; }
+  table.inv .ev { color:var(--ink); }
+  table.inv .ev b { font-weight:600; }
+  table.inv a { color:var(--accent-3); text-decoration:none; border-bottom:1px solid rgba(45,74,58,0.3); font-family:var(--sans); font-size:11.5px; }
+
+  .panel { border:1px solid var(--rule); border-left:4px solid var(--accent-2); background:rgba(255,255,255,0.4); padding:18px 22px; margin:14px 0 6px; max-width:940px; }
+  .panel p { font-family:var(--serif); font-size:15px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .panel p:last-child { margin-bottom:0; }
+  .panel p b { color:var(--ink); font-weight:600; }
+  .panel .ph { font-family:var(--sans); font-size:10px; letter-spacing:.13em; text-transform:uppercase; font-weight:700; color:var(--accent-2); margin-bottom:9px; }
+
+  /* worked specimen — noise to signal */
+  .badge.sim { background: rgba(58,74,107,0.12); color: var(--accent-4); }
+  .badge.auth { background: rgba(138,90,43,0.13); color: var(--accent-5); }
+  .badge.yes { background: rgba(45,74,58,0.12); color: var(--accent-3); }
+  .badge.no { background: rgba(122,44,30,0.12); color: var(--accent); }
+  .case { border:1px solid var(--rule); border-left:4px solid var(--accent-4); background:rgba(255,255,255,0.45); padding:18px 22px; margin:14px 0 6px; max-width:940px; }
+  .case .ctags { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:13px; }
+  .case .cq { font-family:var(--serif); font-style:italic; font-size:16px; line-height:1.5; color:var(--ink); border-left:3px solid var(--accent); padding-left:14px; margin:0 0 13px; }
+  .case p { font-family:var(--serif); font-size:14.5px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .case p:last-child { margin-bottom:0; }
+  .case p b { color:var(--ink); font-weight:600; }
+  .reg { display:grid; grid-template-columns: repeat(auto-fit,minmax(118px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:12px 0; }
+  .reg > div { background:var(--paper); padding:11px 13px; }
+  .reg .rn { font-family:var(--mono); font-size:18px; font-weight:600; color:var(--accent-3); }
+  .reg .rn.hot { color:var(--accent); }
+  .reg .rl { font-family:var(--sans); font-size:9.5px; letter-spacing:.03em; text-transform:uppercase; color:var(--ink-3); margin-top:3px; line-height:1.3; }
+  .chain { font-family:var(--mono); font-size:11px; line-height:1.7; color:var(--ink-2); background:rgba(0,0,0,0.022); border:1px solid var(--rule-soft); border-left:2px solid var(--accent-5); padding:13px 15px; margin:12px 0; white-space:pre-wrap; overflow-x:auto; }
+  .chain b { color:var(--ink); font-weight:600; }
+  /* provenance ladder, tier-labelled */
+  .ladder { margin:14px 0 6px; }
+  .lnode { display:grid; grid-template-columns: 104px 1fr; gap:14px; align-items:start; padding:11px 0; border-bottom:1px solid var(--rule-soft); }
+  .lnode .tier { font-family:var(--sans); font-size:8.5px; letter-spacing:.09em; text-transform:uppercase; font-weight:700; padding:4px 6px; text-align:center; border-radius:3px; line-height:1.25; }
+  .tier.pri { background:rgba(45,74,58,0.12); color:var(--accent-3); }
+  .tier.sec { background:rgba(58,74,107,0.12); color:var(--accent-4); }
+  .tier.ter { background:rgba(107,114,128,0.14); color:var(--accent-6); }
+  .tier.brk { background:var(--accent); color:var(--paper); }
+  .lnode .lb { font-family:var(--serif); font-size:13.5px; line-height:1.5; color:var(--ink-2); }
+  .lnode .lb b { color:var(--ink); font-weight:600; }
+  .lnode .lb .ok { color:var(--accent-3); font-weight:700; }
+  .lnode .lb .bad { color:var(--accent); font-weight:700; }
+  /* derivation table — show the primary working */
+  table.deriv { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13px; margin:8px 0 4px; }
+  table.deriv th { text-align:right; font-family:var(--sans); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); font-weight:600; padding:7px 10px; border-bottom:1px solid var(--rule); }
+  table.deriv th.l { text-align:left; }
+  table.deriv td { padding:8px 10px; border-bottom:1px solid var(--rule-soft); text-align:right; vertical-align:top; }
+  table.deriv td.l { text-align:left; line-height:1.4; }
+  table.deriv .num { font-family:var(--mono); font-size:12px; color:var(--ink-2); white-space:nowrap; }
+  table.deriv tr.tot td { border-top:2px solid var(--rule); border-bottom:none; color:var(--ink); }
+  table.deriv tr.tot .num, table.deriv tr.tot td.l { font-weight:700; color:var(--ink); }
+  .srcline { font-family:var(--sans); font-size:10.5px; color:var(--ink-4); line-height:1.5; margin:2px 0 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">A Corpus Synthesis · Rhetoric &amp; the Misinformation Mechanism</div>
+      <h1>Anatomy of a Closed Worldview<br /><em>How a sealed epistemic frame metabolizes the evidence against it</em></h1>
+    </div>
+    <div class="meta">
+      <b>Method</b> · one high-volume antizionist account (anonymized), 553 public posts, read as a worked specimen<br />
+      <b>Substrate</b> · predictive processing / active inference · a side-neutral mechanism taxonomy<br />
+      <span class="faint">Orwell · Klemperer · Popper · Arendt ·<br />Lifton · Bourdieu · Bandura</span>
+    </div>
+  </header>
+
+  <nav class="crosslinks">
+    <a href="index.html">‹&nbsp;All periods</a> &nbsp;·&nbsp; <a href="colonizer-apartheid-genocide.html">The genealogy of three framings</a> &nbsp;·&nbsp; <a href="colonizer-the-data.html">The data behind a framing</a> &nbsp;·&nbsp; <a href="attention-analysis.html">The attention gap</a>
+  </nav>
+
+  <p class="epi">
+    "[An ideology] can explain everything and every occurrence by deducing it from a single premise… no experience can teach anything, because everything is comprehended."
+    <span>— Hannah Arendt, <i>The Origins of Totalitarianism</i>, "Ideology and Terror" (1951).</span>
+  </p>
+
+  <p class="dek">
+    This page takes a single, high-volume antizionist social-media account — <em>anonymized</em> — as a worked specimen of a
+    <em>closed epistemic worldview</em>: not a position argued <em>on</em> a topic, but a total, self-sealing world the speaker reasons
+    <em>from inside</em>. It shows three things in turn — that the frame functions as an entire <em>world</em> rather than a claim; the
+    <em>four points</em> at which it refuses to update; and, at the centre, <em>how it metabolizes evidence that should disconfirm it</em>.
+    The same instrument, run on the opposing accounts the subject argues with, finds a <em>mirror-image</em> closed world; that symmetric
+    reading is owed, and flagged throughout.
+  </p>
+
+  <h2 class="section">How to read this</h2>
+  <p class="note">
+    Three commitments hold the whole page. <b>(1) It scores the FORM of reasoning, which is orthogonal to truth.</b> That a frame is
+    closed does <em>not</em> establish that its conclusions are false — a sealed worldview can contain true particulars, and several here
+    are defensible. <b>(2) Having a worldview with categories is universal cognition</b> — the finding is not "it has labels" (everyone's
+    does) but that this one is <em>sealed against its own evidence base</em>. <b>(3) The combative format selects for closure on every
+    side.</b> The diagnostic is bidirectional: the opposing ("Zionist-frame") accounts run the identical structure with inverted content
+    — the symmetric pass is owed and noted, not buried. This is a <em>diagnostic instrument, not an epithet</em>.
+  </p>
+
+  <h2 class="section">1 · A world, not a position</h2>
+  <p class="dek" style="margin-top:6px">
+    What distinguishes a <em>worldview</em> from an <em>opinion</em> is totality: it carves everything, it has a beginning and an end, its
+    morality is built into its nouns, and it is something you see <em>through</em> rather than <em>at</em>. The frame here shows every
+    marker.
+  </p>
+  <div class="markers">
+    <div class="mk"><div class="mh">Exhaustive partition</div><p>A few classes — <b>colonizer · native · the watching world · a mortal state</b> — sort <em>every</em> entity; the leftovers (those who stayed, the non-European Jews, internal diversity) are forced in, never left in a "doesn't fit" bin.</p></div>
+    <div class="mk"><div class="mh">A cosmology, in three tenses</div><p>An <b>origin myth</b> (the founding sin), a <b>fallen present</b> (occupation, atrocity), and an <b>eschaton</b> ("it falls in my lifetime → return"). A redemption arc, not a forecast.</p></div>
+    <div class="mk"><div class="mh">Morality keyed to the labels</div><p>Good and evil are assigned by <b>category membership before observation</b>; the antagonist-noun is a coordinate in a moral cosmos, not a description. The ethics ship inside the ontology.</p></div>
+    <div class="mk"><div class="mh">Unbounded reach</div><p>A bounded theory is silent outside its domain; a worldview has an opinion about <b>everything</b> — other countries, other conflicts, even an interlocutor's very existence — because everything is an instance of its categories.</p></div>
+    <div class="mk"><div class="mh">Identity-constitutive</div><p>"I became an antizionist…" — a world the speaker <b>is</b>, not a hypothesis entertained. (Ellul's <em>integration</em> propaganda: a frame inhabited, not adopted.)</p></div>
+    <div class="mk"><div class="mh">Self-sealing</div><p>The update rate on disconfirming evidence is <b>zero</b> (§3): error never reaches the model because the speaker is standing inside it, looking out.</p></div>
+    <div class="mk"><div class="mh">Its own operative concept</div><p>The tell: the account names the <em>opposing</em> frame a sealed world too — "<b>Zioworld</b>" — experiencing the other side exactly as a total world. The mirror is mutual.</p></div>
+  </div>
+
+  <h2 class="section">2 · The four operations</h2>
+  <p class="dek" style="margin-top:6px">
+    Read as a prediction-error machine, a worldview held in <em>defense-mode</em> can refuse to update at exactly four points in the
+    loop — from rejecting the signal at the senses to mis-reading the minds behind it. Each is ordinary cognition in moderation; the vice
+    is the <em>asymmetry</em> and the <em>immunity</em>, not the operation.
+  </p>
+  <div class="ops">
+    <div><div class="on">OP1 · at the senses</div><div class="ot">Denial</div><div class="opp">reject the observation</div><p class="om">Down-weight the adverse signal so it generates no error. Rarely flat "didn't happen" — the disciplined form is <b>doubt</b> ("testimony can be fabricated," "an article of faith"), which attenuates without the cost of a checkable denial.</p></div>
+    <div><div class="on">OP2 · at the categories</div><div class="ot">Ontology engineering</div><div class="opp">the dominant mode</div><p class="om">Reach for a broad, novel, or ambiguous <em>charged</em> category that <b>subsumes</b> unlike particulars under one label and <b>collapses</b> the distinctions that would test the claim — so the disconfirming specifics are absorbed into the category, not answered. §4 is the worked case: "ownership" swallowing the <i>mulk</i> / <i>miri</i> / state / communal distinction; the same move rides loaded terms-of-art wherever a charged label is <em>stretched</em> to subsume what it can't discriminate. The deepest closure — it acts before any evidence is weighed.</p></div>
+    <div><div class="on">OP3 · at attention</div><div class="ot">Selective attention</div><div class="opp">precision allocation</div><p class="om">Allocate scrutiny asymmetrically. <em>Within</em> the conflict: up-weight one side's faults, zero out the other's — the one-sided ledger, armored by whataboutism when the asymmetry is challenged. <em>Across</em> conflicts: the same attention that fixes on Israel largely passes over cases of comparable or larger scale — Turkey's 1974 expulsion of Greek Cypriots and 50-year occupation; China's mass detention of the Uyghurs. The disproportion <em>is</em> the precision map — now <a href="attention-analysis.html">measured across 22 conflicts</a> (see note).</p></div>
+    <div><div class="on">OP4 · at other minds</div><div class="ot">Agency inflation / deflation</div><div class="opp">asymmetric theory-of-mind</div><p class="om">Over-attribute coordinated, far-sighted intent to the out-group (one founder's line → the universal plan = the conspiracy form), while <b>deflating</b> the in-group/proxy to mechanical reaction with no agency of its own.</p></div>
+  </div>
+  <p class="note">
+    Each operation is armored by a second-order defense — and the most powerful is <b>appeal to authority</b> (citation-laundering):
+    a claim is made unchallengeable not by argument but by <em>sourcing</em> it, so a figure with no support in the primary record can
+    stand as fact because it is "cited." Stack enough citations and the <em>appearance</em> of consensus does the work no single source
+    can. <b>§4 is a worked specimen</b> — a number that begins as noise and is converted, source by source, into authoritative signal.
+  </p>
+  <p class="note">
+    <b>OP3 and the Cyprus / Xinjiang comparison — handled carefully.</b> The cross-conflict asymmetry is measurable, not a slogan — and
+    this project measures it directly: <a href="attention-analysis.html"><b>The Attention Gap</b></a> scores news coverage, public lookups
+    and UN action against conflict death tolls across 22 conflicts, and finds Israel/Palestine the most over-attended conflict that
+    carries a substantial death toll — with the <em>institutional</em> gap the largest of the three: a standing Human Rights Council
+    agenda item for Israel <em>alone</em> (Item 7), more General Assembly resolutions than against every other state combined, the first
+    open-ended Commission of Inquiry — while a 2022 motion merely to <em>debate</em> Xinjiang was voted down. That measurement is
+    <em>disinterested</em> — it scores over- <em>and</em> under-attention symmetrically across all 22 cases — which is why it can sit here
+    at all. <b>A reflexive turn:</b> that same disproportionate institutional record is itself a reservoir of <em>institutional authority</em>
+    the frame draws on — &lsquo;even the UN says so&rsquo; — so OP3's selective attention and the <em>appeal-to-authority</em> defense feed
+    one another. But the page still has to eat its own dog food: invoking Cyprus or Xinjiang to excuse a <em>specific</em> Israeli act is
+    itself <b>whataboutism</b> — OP3's own second-order defense, run in reverse. The legitimate claim is narrow — attention is allocated
+    disproportionately <em>across cases</em> — <em>not</em> that any particular charge is answered by another state's crimes. Measuring
+    the asymmetry ≠ deflecting the charge.
+  </p>
+
+  <h2 class="section">3 · How it metabolizes the evidence</h2>
+  <p class="dek" style="margin-top:6px">
+    The heart of the case. Each row pairs a <em>well-established disconfirming fact</em> — one that, in test-mode, should revise the
+    frame — with the move that <em>absorbs</em> it instead, and the type of that move. Across 553 posts the count of genuine
+    frame-updates is <b>zero</b>; every refuter is re-categorized, absorbed, made unrepresentable, or closed off.
+  </p>
+  <div class="ledger">
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>~150,000 non-Jews <b>remained</b> inside the new state in 1948 — incompatible with a completed "cleansing."</div>
+      <div class="move"><span class="ml">The move that absorbs it</span><q>they presented no demographic threat</q> — the remnant redefined so it no longer counts <em>and</em> is recast as proof of the system.</div>
+      <div><span class="badge deg">monster-barring</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>Intercommunal violence ran for ~27 years <b>before</b> the 1947 partition (1920, 1921, 1929, 1936–39).</div>
+      <div class="move"><span class="ml">The move that absorbs it</span><q>the war started with the partition</q> — the origin fixed at 1947 so all agency flows one way and prior violence vanishes from the ledger.</div>
+      <div><span class="badge deg">attribution of blame</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>~Half of the country's Jews are <b>Middle-Eastern</b>, from communities older than the Arab conquest — not "settlers from Europe."</div>
+      <div class="move"><span class="ml">The move that absorbs it</span><q>there were Arab Jews and it was erased by Zionism</q> — the counterexample re-absorbed as a <em>fresh</em> indictment of the enemy.</div>
+      <div><span class="badge deg">absorb as confirmation</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>Jewish peoplehood <b>predates</b> the 1880s; emancipation pressed Jews <em>toward</em> a religion-only self-description.</div>
+      <div class="move"><span class="ml">The move that absorbs it</span><q>nationhood was born with Zionism; identity is ancient</q> — concede the safe half, date the load-bearing half so it reads as invented.</div>
+      <div><span class="badge deg">definitional contraction</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>The movement contained <b>both</b> transfer-advocates <em>and</em> transfer-refusers (and accepted partition twice) — it is not identical to any one pole.</div>
+      <div class="move"><span class="ml">The move that absorbs it</span><em>(never arises)</em> — held as a definition, a non-"cleansing" version of the movement is simply <b>not expressible</b>, so the refuter never surfaces.</div>
+      <div><span class="badge unr">unrepresentable</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>The signature prediction ("it falls in my lifetime") never arrives, and carries no date or condition.</div>
+      <div class="move"><span class="ml">The move that absorbs it</span>dateless <b>by design</b> — never put at risk — yet an <em>opponent's</em> failed prediction is scored gleefully. The error-meter exists; it is never pointed inward.</div>
+      <div><span class="badge unf">unfalsifiable by design</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>The population <em>grew</em> over the period — offered against the "genocide" charge.</div>
+      <div class="move"><span class="ml">The move that absorbs it</span><b>correctly rejected</b> — growth doesn't bear on the legal definition of the term. A sound rebuttal, not closure.</div>
+      <div><span class="badge snd">sound rebuttal</span></div>
+    </div>
+    <div class="lr">
+      <div class="fact"><span class="fl">The disconfirming fact</span>A checkable factual sub-claim is corrected with a source.</div>
+      <div class="move"><span class="ml">The move that absorbs it</span><q>I'm not interested in doing sidequests</q> — closure substituted for the cheap check, even on a point that costs the frame nothing.</div>
+      <div><span class="badge deg">refusal to check</span></div>
+    </div>
+  </div>
+  <p class="note">
+    The seventh row is the <b>calibration case</b>, and it is decisive for fairness: the account reasons <em>validly</em> when a weak
+    argument runs against it. So the finding is not "it cannot reason" — it is sharper and more honest: <b>the capacity for valid
+    reasoning is deployed only to <em>defend</em> the frame, never to <em>revise</em> it.</b> Error is metabolized as fuel, not feedback.
+  </p>
+
+  <h2 class="section">4 · Specimen — a number becomes authority</h2>
+  <p class="dek" style="margin-top:6px">
+    The deepest operation (OP2), caught in the act, with the factor that arms it. A land-ownership figure <em>unsupported by the
+    primary record</em> is converted — step by step, source by source — into a fact stated in Wikipedia's own voice. Noise into signal;
+    a falsehood smuggled into authority.
+  </p>
+  <div class="case">
+    <div class="ctags"><span class="badge sim">Simulacrum · noise → signal</span><span class="badge auth">Appeal to authority · citation-laundering</span></div>
+    <p class="cq">"Arabs… owned about 90% of the land, while Jews… owned about 7% of the land." — the English Wikipedia <i>Nakba</i> article, in wikivoice, with <b>five</b> stacked citations.</p>
+    <p><b>What the primary record actually says.</b> The Mandate Land Registry (<i>Village Statistics 1945</i>, compiled in Hadawi 1957) attributes <b>47.79%</b> of the land to the Arab community — not 90%. The other ~46% is <b>State Domain</b> — the never-surveyed Negev, Crown land, public pasture and forest — over much of which fellahin nonetheless held customary usufruct. The "90%" reaches its number by folding that State Domain into "Arab."</p>
+    <div class="reg">
+      <div><div class="rn">47.79%</div><div class="rl">Arab · held (mixed tenure)</div></div>
+      <div><div class="rn hot">46.00%</div><div class="rl">State Domain (mostly the Negev)</div></div>
+      <div><div class="rn">5.67%</div><div class="rl">Jewish · registered purchase</div></div>
+      <div><div class="rn">0.54%</div><div class="rl">Others</div></div>
+    </div>
+    <p class="note" style="margin-top:10px"><b>And the 47.79% is not "ownership" in any modern sense — it smuggles several land-relationships into one word.</b> Decomposed as shares of all Palestine (same instrument): ~<b>22.1%</b> is individual, fiscally-registered, alienable-ish holding (town · citrus · fruit · cultivable — tax assessed and paid); ~<b>18.3%</b> is <em>communal</em> village commons (<i>metruke</i> — collective pasture/fuel rights <i>ab antiquo</i>, inalienable, <b>no individual shares</b>); ~<b>7.4%</b> is the Negev, attributed to Bedouin cultivation with <b>zero registration</b> (the <i>Survey</i>: "unknown… might be three or four million dunums"). Beneath even the individual rung the legal tenure is overwhelmingly <i>miri</i> (State <i>raqaba</i> + cultivator <i>tasarruf</i>, not freehold <i>mulk</i>), and <i>musha'</i> — communal periodic-redistribution shares — was the plains norm. So for <em>individual, alienable</em> ownership the honest Arab figure is ~22% of Palestine; only by counting communal + tribal-attributed interests do you reach 47.79%. "Owned 90%" doesn't merely fold in state land — it imposes a unitary "ownership" category the land system never had. Full ladder: <a href="land-regime-1831-1947.html" style="color:var(--accent-3)">The Law of the Land →</a>.</p>
+    <p class="dek" style="margin-top:14px;font-size:13.5px"><b>And here is the working — the part the "90%" never shows.</b> Every rung is a line-item from the Mandate registry, convertible and checkable — the derivation, not just the result:</p>
+    <div style="overflow-x:auto;">
+    <table class="deriv">
+      <thead><tr><th class="l">Rung — Hadawi category (ex-/in-Negev)</th><th>acres</th><th>dunums</th><th>% of&nbsp;Palestine</th><th class="l">evidentiary character</th></tr></thead>
+      <tbody>
+        <tr><td class="l">Active fiscal — town · citrus · fruit · cultivable (ex-Negev)</td><td class="num">1,456,280</td><td class="num">5.83M</td><td class="num">22.1%</td><td class="l">tax assessed &amp; paid annually — <b>strong</b></td></tr>
+        <tr><td class="l">Non-cultivable commons (ex-Negev) — <i>metruke</i></td><td class="num">1,203,322</td><td class="num">4.81M</td><td class="num">18.3%</td><td class="l">communal attribution; no parcel registration</td></tr>
+        <tr><td class="l">Negev "cultivable" — Bedouin attribution</td><td class="num">483,712</td><td class="num">1.93M</td><td class="num">7.4%</td><td class="l">estimate; zero registration ("unknown")</td></tr>
+        <tr class="tot"><td class="l">Arab total (Hadawi national table)</td><td class="num">3,143,693</td><td class="num">~12.57M</td><td class="num">47.79%</td><td class="l">— of which only the top rung is individual title</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="srcline">Derived from Hadawi 1957, reconstructed from <i>Village Statistics 1945</i>; <i>Survey of Palestine</i> ¶¶42, 68–69 + Hadawi footnotes a–c. Shares against the 26.32M-dunum total of Palestine (1 acre ≈ 4.05 dunums). Internal checks: rungs 1+2 = the ex-Negev Arab sub-total 2,659,602 acres exactly; 22.1 + 18.3 + 7.4 ≈ 47.79. <b>This is what paying primary-source rent looks like — line-item, sourced, checkable. The "90%" has none of it.</b></p>
+    <p><b>The five citations — only one is precise.</b> The figure carries five stacked scholarly references; that stack is what makes it look like consensus. Set their actual wordings side by side and the consensus dissolves — four drop the load-bearing qualifier, one keeps it, and one is measuring a different thing entirely:</p>
+    <div style="overflow-x:auto;">
+    <table class="inv">
+      <thead><tr><th style="width:25%">The cited source</th><th>What it actually says</th><th style="width:15%">Qualifier?</th></tr></thead>
+      <tbody>
+        <tr><td class="ev">Abu-Laban &amp; Bakan 2022, p.&nbsp;511</td><td class="claim">"the 'Arabs', who in 1948 owned 90 per cent of the land"</td><td><span class="badge no">dropped</span></td></tr>
+        <tr><td class="ev">Rogan 2017, <i>The Arabs</i>, p.&nbsp;318</td><td class="claim">"Arabs owned 94 percent of the total land area of Palestine and some 80 percent of the arable farmland"</td><td><span class="badge no">dropped</span></td></tr>
+        <tr><td class="ev">Natour 2016, p.&nbsp;89</td><td class="claim">"Arabs with an ownership of … around 94 %"</td><td><span class="badge no">dropped</span></td></tr>
+        <tr><td class="ev">Manna 2013, p.&nbsp;90</td><td class="claim">"the Arabs of Palestine … possessed about 90% of Palestine's <b>privately-owned</b> land"</td><td><span class="badge yes">kept</span></td></tr>
+        <tr><td class="ev">Sa'di 2007, p.&nbsp;291</td><td class="claim">"Jewish holdings in the <em>proposed Jewish State</em> were about 11 percent as compared to the 80 percent … owned by Palestinians"</td><td><span class="badge auth">other frame</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><b>The chain, by evidentiary tier.</b> Follow it to the root and the break localizes precisely: it is sound all the way down to a named <em>primary</em> source, and snaps at the single most authoritative link in the stack.</p>
+    <div class="ladder">
+      <div class="lnode"><div class="tier pri">Primary</div><div class="lb"><b>Govt of Palestine, <i>A Survey of Palestine</i></b> — Notes Compiled for UNSCOP, June 1947 (vol.&nbsp;1, p.&nbsp;244) + <i>Village Statistics 1945</i> (compiled in Hadawi 1957). The Land Registry: Jews ~6% of total · Arab-<b>held</b> 47.8% (a mix — ~22% individual + ~18% communal commons + ~7% Bedouin; mostly <i>miri</i>, not freehold) · <b>State Domain 46%</b> (mostly the un-surveyed Negev).</div></div>
+      <div class="lnode"><div class="tier sec">Secondary</div><div class="lb"><b>Charles D. Smith</b>, <i>Palestine and the Arab-Israeli Conflict</i> (university textbook), p.&nbsp;191 — reports "Jews ~6% of total, ~20% of cultivable," <em>and cites the primary above</em>. States no Arab figure. <span class="ok">✓ sound</span></div></div>
+      <div class="lnode"><div class="tier pri">Primary</div><div class="lb"><b>Fraser, <i>The Middle East 1914–1979</i></b>, pp.&nbsp;49–51 = Jamal Husseini's 29 Sep 1947 UN speech. A genuine primary document — containing <b>no land-ownership percentages at all</b>.</div></div>
+      <div class="lnode"><div class="tier brk">Secondary&nbsp;· break</div><div class="lb"><b>Eugene Rogan, <i>The Arabs</i></b>, p.&nbsp;318 — cites Smith + Fraser, then writes "Arabs <b>94%</b> of the total land area." <span class="bad">In neither source.</span> An arithmetic complement (100&nbsp;−&nbsp;6), with the 46% State Domain folded into "Arab."</div></div>
+      <div class="lnode"><div class="tier sec">Secondary</div><div class="lb"><b>Abu-Laban &amp; Bakan 2022 · Natour 2016</b> paraphrase 90–94%, qualifier dropped. <b>Manna 2013</b> alone keeps <em>"privately-owned"</em> (under which ~88.5% is defensible).</div></div>
+      <div class="lnode"><div class="tier ter">Tertiary</div><div class="lb"><b>Wikipedia, <i>Nakba</i></b> — stacks all five; a single 14&nbsp;Jan&nbsp;2024 edit strips "privately held lands" → "90% of <b>the land</b>" in wikivoice.</div></div>
+    </div>
+    <p>The figure is well-sourced to <em>primary</em> at Smith's level. The conflation is one inferential leap — introduced by the highest-authority node — <em>away</em> from a clean primary base its own cited source pointed straight at.</p>
+    <p><b>The arming move — appeal to authority.</b> The unqualified claim does not survive contact with the registry. What lets it stand is the citation stack: five scholarly references create the <em>appearance</em> of convergent consensus when only one is precise, and the edit history shows the defensible qualifier being <em>stripped</em> in a single pass (the qualified form had stood since 2 Jan 2024) while a total-land source was added to make the bare figure "verifiable." The number is now true by <em>sourcing</em>, not by the land registry — a model defended as the territory.</p>
+    <p style="font-size:13px;color:var(--ink-3)"><b>What this does and doesn't say.</b> It does not adjudicate whether the 1947 partition was just — a separate normative question. It audits one factual claim against its own cited evidence: "Arabs owned 90% of the land" is unsupported by the primary statistics; the chain conflates State Domain with Arab ownership; the qualifier that rescues it survives in one citation but not in the body text. The land data with full provenance: <a href="land-regime-1831-1947.html" style="color:var(--accent-3)">The Law of the Land · 1831–1947 →</a></p>
+  </div>
+
+  <h2 class="section">5 · The inverse — what a test-mode reader would revise toward</h2>
+  <p class="dek" style="margin-top:6px">
+    For each over-claim the frame rests on, the project corpus holds the primary evidence a reasoner <em>not</em> in defense-mode would
+    update toward — much of it already mapped on the companion pages. Tellingly, the same sources <em>also</em> cut against the opposing
+    frame's over-claims: the evidence disconfirms <em>both</em> sides' totalizations, often from one document.
+  </p>
+  <div style="overflow-x:auto;">
+  <table class="inv">
+    <thead><tr><th style="width:34%">The over-claim</th><th>What the evidence shows</th><th style="width:20%">Where</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="claim">"They were all colonist-Zionists."</td>
+        <td class="ev">Only <b>~10–15%</b> came by pre-arrival conviction; in 1905 inquiries migrants chose America over Palestine <b>73 : 6</b>; most waves were majority refugee/economic.</td>
+        <td><a href="zionist-conviction-1880-1948.html">Who Was a Zionist? →</a></td>
+      </tr>
+      <tr>
+        <td class="claim">"Native violence is pure reaction to occupation."</td>
+        <td class="ev">The Jewish defense organizations were <b>founded in response</b> to violence that preceded them — 1907, 1909, 1920 — decades before any state or "occupation."</td>
+        <td><a href="jewish-defense-organizations-1907-1948.html">Defense Organizations →</a></td>
+      </tr>
+      <tr>
+        <td class="claim">"The land was simply stolen."</td>
+        <td class="ev">~<b>6.6%</b> in Jewish ownership by 1945, almost all by <b>market purchase</b>; the state allocated by a UN vote. A mixed mechanism, not flat theft.</td>
+        <td><a href="colonizer-the-data.html">The Data · §1 →</a></td>
+      </tr>
+      <tr>
+        <td class="claim">"European settlers with no connection."</td>
+        <td class="ev">A continuous <b>Old-Yishuv</b> presence long predates 1881; ~<b>850k</b> Middle-Eastern Jews were displaced from communities older than the Arab conquest.</td>
+        <td><a href="jewish-exodus-arab-lands.html">Exodus from Arab Lands →</a></td>
+      </tr>
+      <tr>
+        <td class="claim">"1948 was a one-agent master-plan expulsion."</td>
+        <td class="ev">Morris's village-by-village key: ~<b>60%</b> flight on military advance, "Arab orders" ~<b>1.4%</b>, ~150k stayed — multi-causal in a two-sided war. (The same key sinks "they left on Arab orders.")</td>
+        <td><a href="colonizer-the-data.html">The Data · §5 →</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 class="section">6 · The unfalsifiability engine</h2>
+  <p class="dek" style="margin-top:6px">
+    The operations are not separate tricks. Together they are a single machine with one output: <em>nothing can count against the
+    frame</em>. Each closes a different route by which a piece of evidence could reach the model and falsify it. Close every route and
+    the set of possible disconfirmers is empty — which is the precise, structural meaning of <em>unfalsifiable</em>.
+  </p>
+  <div style="overflow-x:auto;">
+  <table class="inv">
+    <thead><tr><th style="width:40%">How evidence <em>could</em> falsify the frame</th><th>The operation that seals the route</th><th style="width:24%">Result</th></tr></thead>
+    <tbody>
+      <tr><td class="ev">A disconfirming fact reaches perception</td><td><b>OP1 · denial</b> — down-weight it to ~0, or doubt it ("could be fabricated")</td><td class="claim">it generates no error signal</td></tr>
+      <tr><td class="ev">A fact contradicts a category</td><td><b>OP2 · ontology engineering</b> — a broad/charged category subsumes the particulars and collapses the distinction</td><td class="claim">the refuter is absorbed into the label, not weighed</td></tr>
+      <tr><td class="ev">A fact indicts one's own side</td><td><b>OP3 · selective attention</b> — in-group precision set to ~0; whataboutism armors it</td><td class="claim">the fault never enters the ledger</td></tr>
+      <tr><td class="ev">Behavior contradicts the intent attributed to an actor</td><td><b>OP4 · agency inflation / deflation</b> — re-read as the plan (out-group) or pure reaction (in-group)</td><td class="claim">the attribution survives, unrevised</td></tr>
+      <tr><td class="ev">A claim is checkable against an outcome</td><td><b>Appeal to authority</b> — "it's sourced"; and the dateless prophecy carries no date</td><td class="claim">the check is foreclosed before it runs</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">
+    <b>Two senses of unfalsifiable, both present.</b> Some claims are built unfalsifiable <em>by construction</em> — the dateless
+    prophecy ("it falls in my lifetime," with no date), and the master-axiom held as a <em>definition</em>, so a counterexample is
+    inexpressible rather than merely wrong (that is OP2's deepest move). And even the claims that <em>are</em> falsifiable are rendered
+    unfalsifiable <em>in practice</em>, because every disconfirmation that arrives is metabolized (OP1, OP3, OP4). By construction plus by
+    behavior — together, <b>essentially unfalsifiable</b>.
+  </p>
+  <div class="panel" style="border-left-color:var(--accent)">
+    <div class="ph" style="color:var(--accent)">The demonstration, not the assertion</div>
+    <p>This is not claimed; it is <em>measured</em>. Across 553 posts the frame meets a steady stream of well-established disconfirming
+    facts (§3) and updates on <b>none</b>: genuine frame-updates = <b>0</b>, metabolization ratio = <b>0.0</b>. A frame that absorbs every
+    refuter and is moved by no observation is, operationally, one no possible evidence can falsify. The <em>zero</em> is the proof.</p>
+    <p style="font-size:13px;color:var(--ink-3)"><b>What it claims, and doesn't.</b> This is unfalsifiability of the frame's
+    <em>structure and behaviour</em> — which is independent of whether its conclusions are true (an unfalsifiable frame can still contain
+    true particulars; §3's seventh row is a sound argument). The finding is "no evidence can move it," not "it is false." And the same
+    test, turned on this analysis: what would falsify <em>"the frame is closed"</em>? A single genuine frame-update. None is observed — but
+    the test stays live.</p>
+  </div>
+
+  <h2 class="section">The distinction that matters</h2>
+  <div class="panel">
+    <div class="ph">Why this is a finding about closure, not about labels</div>
+    <p><b>It is a world, not a position.</b> Exhaustive categories, an origin-fall-redemption arc, a morality keyed to its nouns, unbounded reach, identity-constitution, and a zero update-rate — together these make it something the speaker reasons <em>from inside</em> and sees <em>through</em>, not a hypothesis held <em>at arm's length</em>.</p>
+    <p><b>But having a total worldview is not the pathology, and not unique.</b> Every developed ideology functions as a total world; the opposing accounts run a mirror one. The <em>labels and categories are not the problem</em> — open worldviews carve the world too. Carving is mandatory cognition.</p>
+    <p style="color:var(--ink-3);font-size:13.5px"><b>The defensible reading is narrow:</b> this is a worldview held in <em>defense-mode</em> — exhaustive partition with a suppressed remainder, a fixed eschatology, a 0.0 update rate — rather than in <em>test-mode</em>, where categories stay porous, anomalies are logged, and the model is adjusted against the world. The difference between <em>a lens you adjust</em> and <em>a world you cannot see out of</em>. That, not the having of a worldview, is the finding — and it is the same finding the mirror pass is expected to return on the other side.</p>
+  </div>
+
+  <div class="endnotes">
+    <p>
+      <b>The mechanism corpus.</b> George Orwell, <i>Politics and the English Language</i> (1946); Victor Klemperer, <i>LTI: The
+      Language of the Third Reich</i> (1947); Karl Popper, <i>Conjectures and Refutations</i> (1963) &amp; <i>The Open Society and Its
+      Enemies</i> (1945); Hannah Arendt, <i>The Origins of Totalitarianism</i> — "Ideology and Terror" (1951); Robert Jay Lifton,
+      <i>Thought Reform and the Psychology of Totalism</i> (1961); Pierre Bourdieu, <i>Language and Symbolic Power</i> (1991); Albert
+      Bandura, <i>Moral Disengagement</i> (2016). Substrate: predictive processing / active inference.
+    </p>
+    <p>
+      <b>Scope &amp; method.</b> One <em>anonymized</em> account, 553 public posts. The analysis scores reasoning <em>form</em>, which is
+      independent of the truth-value of any claim; quotes are de-identified and short. "Metabolization ratio" = genuine frame-updates ÷
+      disconfirmations met. The full machine-readable reconstruction — classes, axioms, the four operations, and both thirteen-record
+      ledgers (disconfirming facts ↔ the primary sources that would revise) — together with the <em>owed symmetric pass</em> on the
+      opposing frame, lives in the research repository. This page <b>documents a structure</b>; it does not adjudicate the underlying
+      historical questions, which the companion pages lay out with sources on both sides.
+    </p>
+  </div>
+
+  <footer class="colophon">
+    <div><b>Anatomy of a Closed Worldview</b> · Corpus synthesis · the rhetoric &amp; misinformation mechanism</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono · <a href="index.html" style="color:inherit">← All periods</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
