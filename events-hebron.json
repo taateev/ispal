@@ -1,0 +1,147 @@
+[
+ {
+  "cat": "presence", "n": 1, "date": "c.638", "year": 638, "location": "Hebron",
+  "event": "At the Muslim conquest, Jews of the Hebron region are permitted to build a synagogue at the entrance to the sanctuary — the earliest evidence of an organized Jewish presence at Hebron.",
+  "quote": "...permit us to build a synagogue in front of the entrance.",
+  "src": "Gil 1992 (Canonicus Hebronensis)", "srcType": "primary", "srcNote": "c.638 conquest tradition, preserved in a 12th-c. Christian manuscript",
+  "actor": "Rāshidūn conquest / Byzantine-era Jews", "actorType": ["muslim-state", "jewish"],
+  "searchTerms": ["638", "conquest", "synagogue", "Machpelah", "Byzantine", "Canonicus Hebronensis", "Eudes", "Arnoul"],
+  "passages": [
+   { "file": "Gil 1992, A History of Palestine 634–1099 — the Canonicus Hebronensis conquest tradition", "text": "When they [the Muslims] came to Hebron they were amazed to see the strong and handsome structures of the walls and they could not find any opening through which to enter; then Jews happened to come, who lived in the area under the former rule of the Greeks [that is, the Byzantines], and they said to the Muslims: give us [a letter of security] that we may continue to live [in our places] under your rule and permit us to build a synagogue in front of the entrance [to the city]. If you will do this, we shall show you where you can break in. And so they did." },
+   { "file": "Gil 1992 (note 59, on the Canonicus Hebronensis)", "text": "This story is further proof that there actually was a synagogue in Hebron during the Muslim occupation. This synagogue existed until the Crusaders' conquest, and this is also confirmed by the Geniza documents… the story is attributed to two monks, Eudes and Arnoul." }
+  ]
+ },
+ {
+  "cat": "presence", "n": 2, "date": "pre-10th c.", "year": 870, "location": "Hebron",
+  "event": "Hebron is almost absent from Muslim literature before the 10th century; the Jewish presence in this period is institutional (the synagogue) but undocumented by name — a community without surviving identities.",
+  "quote": "Hebron is almost never mentioned in Muslim literature before the tenth century, which indicates that it was not rated highly.",
+  "src": "Gil 1992", "srcType": "secondary", "srcNote": "the thin pre-Geniza source base",
+  "actor": "—", "actorType": [],
+  "searchTerms": ["pre-Geniza", "obscurity", "geographers", "Muqaddasi", "Istakhri", "Ibn Hawqal"],
+  "passages": [
+   { "file": "Gil 1992, A History of Palestine 634–1099 (§314)", "text": "Hebron is almost never mentioned in Muslim literature before the tenth century, which indicates that it was not rated highly. This is also suggested by the fact that its name is not mentioned in the Muslim traditions of the conquest. In the tenth century, the Muslim geographers Iṣṭakhrī, Ibn Ḥawqal and Muqaddasī mention Hebron and we find in their writings descriptions of the patriarchs' graves." }
+  ]
+ },
+ {
+  "cat": "presence", "n": 3, "date": "c.1081–83", "year": 1081, "location": "Hebron",
+  "event": "The earliest NAMED Hebron Jew: Saadia he-ḥaver b. Abraham, the academy-appointed head of the Hebron community, who attests daily prayers for the Palestinian Gaon (Abiathar) at the Cave of Machpelah. His son Abraham 'the Hebronite' carried Hebron cheese to Egypt.",
+  "quote": "Saadia he-ḥaver b. Abraham, of Hebron.",
+  "src": "Gil 1992 / Goitein (Cairo Geniza)", "srcType": "primary", "srcNote": "Geniza letters, c.1081–83",
+  "actor": "Old Yishuv (Mustaʿrab)", "actorType": ["jewish"],
+  "searchTerms": ["Saadia", "haver", "chaver", "Abraham", "Hebronite", "Abiathar", "Gaon", "Geniza", "Bilbays", "cheese"],
+  "passages": []
+ },
+ {
+  "cat": "rupture", "n": 4, "date": "1099", "year": 1099, "location": "Hebron",
+  "event": "Hebron is captured by Godfrey of Bouillon and made a Crusader lordship — a capture, NOT a Jerusalem-style massacre. The Haram becomes the Church of St. Abraham; the Muslim population mostly flees and the small Jewish community simply ends.",
+  "quote": "Hebron was captured by the Franks and Godfrey of Bouillon took the sanctuary.",
+  "src": "Frenkel 2014 (al-Maqrīzī) + Prawer 1988", "srcType": "secondary", "srcNote": "no Hebron-Jewish massacre account survives",
+  "actor": "Crusaders (Latin Kingdom)", "actorType": ["crusader"],
+  "scale": "Community ended", "scaleBig": "Community ended", "scaleNote": "Muslims mostly fled; Jewish community ends",
+  "searchTerms": ["1099", "Crusaders", "Godfrey of Bouillon", "Galdemar Carpenel", "St. Abraham", "lordship", "capture", "not a massacre"],
+  "passages": [
+   { "file": "Frenkel 2014, al-Maqrīzī's Ḍawʾ al-sārī (Brill)", "text": "In early 1100 CE, Hebron was captured by the Franks and Godfrey of Bouillon took the sanctuary. During the following decades, the town was garrisoned by a Crusader battalion and a small Latin community resided in the place that became a lordship… the dramatic discovery of the tombs of Abraham (al-Khalīl) and his two sons enhanced the status of the sanctuary (in 513/June 1119). The cathedral church of St. Abraham, which was built within the Herodian precinct, was served by a community of Augustinian canons." },
+   { "file": "Prawer 1988, The History of the Jews in the Latin Kingdom of Jerusalem", "text": "[Hebron was] a city which had already been captured by Godfrey of Bouillon. A Jewish community which had existed there from earliest times had established a modus vivendi with the Muslim population as to the rights of entrance and prayer in the [sanctuary]." }
+  ]
+ },
+ {
+  "cat": "account", "n": 5, "date": "1170", "year": 1170, "location": "Hebron",
+  "event": "Benjamin of Tudela finds NO resident Jewish community at Hebron — only the Machpelah pilgrimage and a fee-charging Latin guardian. The building, he notes, had been 'a Jewish place of worship at the time of the Mahomedan rule.'",
+  "quote": "…a Jewish place of worship at the time of the Mahomedan rule.",
+  "src": "Benjamin of Tudela, Itinerary (Adler 1907) / Prawer 1988", "srcType": "primary", "srcNote": "Hebron passage",
+  "actor": "—", "actorType": [],
+  "searchTerms": ["1170", "Benjamin of Tudela", "no resident community", "St. Abram", "fee", "pilgrimage", "Machpelah"],
+  "passages": []
+ },
+ {
+  "cat": "account", "n": 6, "date": "c.1210", "year": 1210, "location": "Hebron",
+  "event": "The only Jewish trace in the Crusader century after 1170: a lone dyer who smuggles Jewish pilgrims into the Cave — and Prawer flags even his identification as only 'possibly Jewish.'",
+  "quote": "a (Jewish?) dyer.",
+  "src": "Prawer 1988", "srcType": "secondary", "srcNote": "identification hedged",
+  "actor": "—", "actorType": [],
+  "searchTerms": ["c.1210", "dyer", "Crusader century", "pilgrims", "Prawer"],
+  "passages": []
+ },
+ {
+  "cat": "restriction", "n": 7, "date": "1266", "year": 1266, "location": "Hebron",
+  "event": "The Mamluk sultan Baybars bars Jews and Christians from entering the Cave of Machpelah — the most-cited measure of Muslim Hebron, but known ONLY from chronicles: there is no Baybars ban-inscription at the Haram.",
+  "quote": "non-Muslims barred from the Cave — chronicle-only, no inscription.",
+  "src": "al-Maqrīzī / Mujīr al-Dīn (chronicle)", "srcType": "primary", "srcNote": "chronicle-only; not epigraphically attested",
+  "actor": "Mamluk state", "actorType": ["muslim-state"],
+  "searchTerms": ["1266", "Baybars", "Cave of Machpelah", "ban", "exclusion", "Mamluk", "chronicle-only"],
+  "passages": []
+ },
+ {
+  "cat": "gap", "n": 8, "date": "1291–1481", "year": 1350, "location": "Hebron",
+  "event": "The Mamluk hollow: across nearly two centuries NO Hebron Jew is named at all — a ~270-year documentary void between the last Geniza name (c.1210) and the late-15th-century travelers.",
+  "quote": "not a single named Hebron Jew.",
+  "src": "roster synthesis (Conermann; Geniza falls silent)", "srcType": "secondary", "srcNote": "absence, not atrocity",
+  "actor": "—", "actorType": [],
+  "searchTerms": ["Mamluk hollow", "gap", "1291", "1481", "no names", "void"],
+  "passages": []
+ },
+ {
+  "cat": "account", "n": 9, "date": "1481", "year": 1481, "location": "Hebron",
+  "event": "Meshullam of Volterra, passing through, reports roughly twenty Jewish families at Hebron — the community resurfaces as a count, with no names recorded.",
+  "quote": "Hebron's entire Jewish presence reportedly totaled twenty families.",
+  "src": "Yaari, Massaʿot (Meshullam) / David 1999", "srcType": "primary", "srcNote": "traveler count",
+  "actor": "Old Yishuv + new arrivals", "actorType": ["jewish"],
+  "searchTerms": ["1481", "Meshullam of Volterra", "twenty families", "count"],
+  "passages": [
+   { "file": "David 1999, To Come to the Land (reporting Meshullam of Volterra & Obadiah of Bertinoro)", "text": "Hebron belonged to the sanjak of Jerusalem. Its Jewish population was tiny; in the 1480s, Hebron's entire Jewish presence reportedly totaled twenty families." }
+  ]
+ },
+ {
+  "cat": "account", "n": 10, "date": "1488", "year": 1488, "location": "Hebron",
+  "event": "Obadiah of Bertinoro finds about twenty Jewish householders in 'one closed alley,' roughly half of them recently-arrived conversos (anusim) fleeing the Spanish Inquisition — i.e. the community is already substantially NEW, not an unbroken local line.",
+  "quote": "twenty householders in one closed alley… about half recently-arrived conversos.",
+  "src": "Yaari, Iggerot (Bertinoro) / David 1999", "srcType": "primary", "srcNote": "traveler account",
+  "actor": "Old Yishuv + Iberian conversos", "actorType": ["jewish", "sephardi"],
+  "searchTerms": ["1488", "Bertinoro", "Obadiah", "closed alley", "conversos", "anusim", "Inquisition"],
+  "passages": []
+ },
+ {
+  "cat": "rupture", "n": 11, "date": "1517", "year": 1517, "location": "Hebron",
+  "event": "At the Ottoman conquest, Hebron's Jewish community is 'decimated in the course of rioting by the local populace' — David flags the source as uncertain, and the community recovers afterward.",
+  "quote": "Hebron's Jewish community was decimated in the course of rioting by the local populace.",
+  "src": "David 1999", "srcType": "primary", "srcNote": "'a document of uncertain origin'",
+  "actor": "Local populace (Mamluk–Ottoman transition)", "actorType": ["local"],
+  "scale": "Many", "scaleBig": "Many", "scaleNote": "community decimated, then recovered",
+  "searchTerms": ["1517", "Ottoman conquest", "riot", "decimated", "local populace", "transition"],
+  "passages": [
+   { "file": "David 1999, To Come to the Land", "text": "Evidently, with the Ottoman incursion to Eretz-Israel, Hebron's Jewish community was decimated in the course of rioting by the local populace, as a document of uncertain origin indicates. Generally speaking, for Hebron's Jewish community, the postconquest period may be summed up as one of growth and subsequent decline." }
+  ]
+ },
+ {
+  "cat": "account", "n": 12, "date": "1521–23", "year": 1521, "location": "Hebron",
+  "event": "Moses Basola reports 'eight or ten householders' at Hebron, living in the courtyard adjoining the synagogue — the smallest count in the record.",
+  "quote": "eight or ten householders reside there.",
+  "src": "Yaari, Massaʿot (Basola) / David 1999", "srcType": "primary", "srcNote": "traveler account",
+  "actor": "Old Yishuv + Sephardim", "actorType": ["jewish", "sephardi"],
+  "searchTerms": ["1521", "1523", "Moses Basola", "eight or ten", "householders", "synagogue courtyard"],
+  "passages": [
+   { "file": "David 1999, To Come to the Land", "text": "In 1522 Moses Basola reported that 'eight or ten householders reside there'… From Basola's account it appears likely that Hebron's Jews resided in the courtyard that adjoined the synagogue. The location of the town's Jewish quarter has been identified — in close proximity to the northern end of the Kazzāzīn quarter." }
+  ]
+ },
+ {
+  "cat": "demography", "n": 13, "date": "1538–1596", "year": 1538, "location": "Hebron",
+  "event": "The Ottoman tax registers (taḥrīr defters) give the first hard counts of Hebron's Jews: 20 households (1538/39), 8 (1553/54), 11 (1562), 11 (1596/97) — a tiny, fluctuating community, never more than ~20 households.",
+  "quote": "twenty households in 1538/39, eight in 1553/54, eleven in 1562 and 1596/97.",
+  "src": "Lewis & Cohen (defters) / David 1999", "srcType": "primary", "srcNote": "taḥrīr defters; hāne (households)",
+  "actor": "Ottoman state", "actorType": ["muslim-state"],
+  "scale": "≤20 households", "scaleBig": "≤20 hh", "scaleNote": "1–3% of the town",
+  "searchTerms": ["1538", "1553", "1562", "1596", "defter", "tahrir", "households", "hane", "Lewis-Cohen"],
+  "passages": [
+   { "file": "David 1999, To Come to the Land (the taḥrīr registers)", "text": "The relevant taḥrīr registers reflect a total of twenty households in 1538/39, eight in 1553/54, eleven in 1562 and 1596/97. … for Hebron's Jewish community, the postconquest period may be summed up as one of growth and subsequent decline." }
+  ]
+ },
+ {
+  "cat": "revival", "n": 14, "date": "c.1540–1589", "year": 1540, "location": "Hebron",
+  "event": "Named Jewish life resumes only with the Sephardi/kabbalist settlement: Malkiel Ashkenazi (the Avraham Avinu synagogue, 1540), Elijah de Vidas, Solomon Adeni, Menaḥem ha-Bavli and Ḥiyya Rofe; a yeshiva is operating by 1589. These were Safed-trained immigrants — a re-founding, not documented descent.",
+  "quote": "The Avraham Avinu Synagogue dates to 1540.",
+  "src": "David 1999 / Schwartz & Halevi 2024", "srcType": "secondary", "srcNote": "the Sephardi re-founding",
+  "actor": "Sephardi / kabbalist immigrants", "actorType": ["sephardi"],
+  "searchTerms": ["1540", "Avraham Avinu", "Malkiel Ashkenazi", "Elijah de Vidas", "Solomon Adeni", "kabbalists", "1589", "Joseph Trani", "Ezra family"],
+  "passages": []
+ }
+]
