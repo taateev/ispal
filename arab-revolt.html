@@ -771,6 +771,19 @@
   .tl-tip .tx{font-size:13px;line-height:1.44;color:#d9d2c5;}
   .tl-tip .meta{font-family:var(--sans);font-size:10.5px;color:#b9b09d;margin-top:6px;font-style:italic;}
   .tl-tip .src{font-family:var(--sans);font-size:10px;letter-spacing:0.02em;color:#8f8675;margin-top:5px;}
+  /* source clip — the cited page, as printed (highlighted passage), shown inline */
+  .srcclip { margin:11px 0 3px; }
+  .srcclip .srccap { font-family:var(--sans); font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-3); margin:0 0 6px; }
+  .srcclip img { display:block; width:100%; max-width:540px; border:1px solid var(--rule); border-radius:2px; box-shadow:0 1px 5px rgba(0,0,0,.09); background:#fff; }
+  .clipstrip { display:grid; grid-template-columns:repeat(auto-fit,minmax(238px,1fr)); gap:16px; margin:14px 0 4px; align-items:start; }
+  .clipstrip .srcclip { margin:0; }
+  .clipstrip .srcclip img { max-width:100%; }
+  .prelude { margin:6px 0 26px; padding:20px 22px; background:var(--paper-2,#f4efe4); border:1px solid var(--rule); border-left:3px solid var(--accent); border-radius:3px; }
+  .prelude h2 { font-family:var(--serif); font-weight:600; font-size:22px; margin:0 0 4px; color:var(--ink); }
+  .prelude .sub { font-family:var(--sans); font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 12px; }
+  .prelude p { font-family:var(--serif); font-size:15px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .prelude p:last-of-type { margin-bottom:4px; }
+  .prelude .bq { font-family:var(--serif); font-style:italic; color:var(--accent); }
 </style>
 </head>
 <body>
@@ -782,7 +795,7 @@
       <h1>The Arab Revolt<br/><em>Palestine, 1936–1939 — and the civil war within it</em></h1>
     </div>
     <div class="meta">
-      <b>Period</b> 1935 → 1943 · core 1936–39<br/>
+      <b>Period</b> 1931 → 1943 · Qassam prelude 1931–35 · core 1936–39<br/>
       <b>Geography</b> Jenin · Nablus · Tulkarm · Jerusalem · Hebron · Galilee<br/>
       <b>Corpus</b> Porath · Cohen · Hughes · Survey of Palestine · Morris<br/>
       <span style="opacity:0.7;">Primary archive via CID summaries · regimental war diaries · consular cables</span>
@@ -792,6 +805,50 @@
   <p class="dek">
     The 1936–39 revolt was never a single struggle. It was at once an anti-colonial rising against Britain, a campaign against the Yishuv — and, beneath both, a Palestinian <em>civil war</em>: the Husayni-led rebel command against the Nashashibi opposition and the British-funded <em>fasa'il al-salam</em> (&ldquo;peace bands&rdquo;), with land-sellers, mukhtars and informers killed in between. This ledger tags every event by <em>who acted</em> and <em>whom they struck</em> — the intra-Arab register is the spine. Click any row to surface the underlying corpus passage; the timeline and the date sort read the same data two ways.
   </p>
+
+  <section class="prelude">
+    <h2>Prelude — Sheikh ʿIzz al-Din al-Qassam</h2>
+    <div class="sub">The hinge · 1921–1935 · why the revolt has a before</div>
+    <p>
+      The ledger below opens in 1935, but the revolt has a prehistory, and it has a name. <b>Sheikh ʿIzz al-Din
+      al-Qassam</b> — born at Jabla near Latakia (c. 1882), <b>al-Azhar</b>-trained, an ex-Ottoman army chaplain who
+      had fought the French in Syria and reached Haifa in 1920 <b>under a French court-martial death sentence</b> —
+      was the man who first turned grievance into organized armed force. In Haifa he preached at the Istiqlal Mosque,
+      served as the Shariʿa-court <b>marriage registrar</b> (a post that sent him through the villages), and chaired the
+      Haifa Young Men's Muslim Association. From around 1925 he built a network of <b>secret cells</b> — the &ldquo;Black
+      Hand&rdquo; — preaching jihad against &ldquo;the twin infidels, the Jew and the Briton.&rdquo;
+    </p>
+    <p>
+      His base is the analytical core. Al-Qassam recruited among the <b>uprooted Galilee fellahin</b> who had been
+      dispossessed by land sales and the Histadrut's &ldquo;Hebrew-labour&rdquo; exclusion and had drifted into the
+      Haifa slums and the harbour-labour pool — <span class="bq">&ldquo;in many cases the same people who had been
+      dispossessed or displaced by earlier Zionist colonization activity in Galilee&rdquo;</span> (Khalidi). It was, as
+      the British conceded, &ldquo;something new&rdquo; — a cross-class religious-national insurgency reaching the
+      poorest stratum for the first time. His sermon became proverbial: <span class="bq">&ldquo;You are a people of
+      rabbits, who are afraid of death and scaffolds… nothing will save us but our arms.&rdquo;</span>
+    </p>
+    <p>
+      The cells drew first blood well before the strike: the <b>1931–33 raids</b> — three of Kibbutz Yagur's people
+      killed at the Nabi Musa festivities (April 1931), settlers at Balfouriya and Kfar Hasidim (1932), and a father and
+      son bombed at Nahalal (December 1932) — <b>the first organized Palestinian-Arab armed campaign against the
+      Yishuv.</b> Arrests then stalled it for three years. In November 1935 al-Qassam moved to the Jenin hills to begin
+      a rising; the British trapped his band near <b>Yaʿbad</b> and killed him on 20 November. Ben-Gurion called it
+      &ldquo;their Tel Hai.&rdquo;
+    </p>
+    <p>
+      His <b>funeral</b> — Haifa to Balad al-Shaykh, police stoned, schools closed — became a mass demonstration, and the
+      <b>elite's absence from it</b> (neither the Mufti nor the party leaders came) made the martyrdom a standing rebuke.
+      <span class="bq">&ldquo;Al-Qassam achieved more in death than in fifteen years of preaching&rdquo;</span> (Mattar).
+      Five months later his lieutenant Farhan al-Saʿdi's men fired the shots that began the revolt; his followers went on
+      to supply <b>2 regional and 14 band commanders</b> of it. Every dot in this ledger sits downstream of him.
+    </p>
+    <div class="clipstrip">
+      <figure class="srcclip"><div class="srccap">Porath, <i>Palestinian Arab National Movement</i> vol. 2 (1977), p. 133</div><img src="src-qassam-bio-porath-p133.png" alt="Porath vol. 2 p. 133 — al-Qassam's biography: born at Jabla, al-Azhar training, sentenced to death by a French court-martial, fled to Haifa" loading="lazy" /></figure>
+      <figure class="srcclip"><div class="srccap">Khalidi, <i>Palestinian Identity</i> (1997), p. 115</div><img src="src-qassam-socialbase-khalidi-p115.png" alt="Khalidi, Palestinian Identity p. 115 — al-Qassam's social base: uprooted landless peasants who drifted from Galilee into the Haifa slums" loading="lazy" /></figure>
+      <figure class="srcclip"><div class="srccap">Porath vol. 2, p. 134 — the 1931–33 raids</div><img src="src-qassam-raids-porath-p134.png" alt="Porath vol. 2 p. 134 — the 1931-33 campaign: three members of Kibbutz Yagur killed, Balfouriya and Kfar Hasidim, the Nahalal father and son" loading="lazy" /></figure>
+      <figure class="srcclip"><div class="srccap">Porath vol. 2, p. 142 — the funeral</div><img src="src-qassam-funeral-porath-p142.png" alt="Porath vol. 2 p. 142 — al-Qassam's funeral from Haifa to Balad al-Shaykh became a nationalist demonstration" loading="lazy" /></figure>
+    </div>
+  </section>
 
   <div id="stats-root"></div>
   <div id="root"></div>
@@ -921,10 +978,10 @@ function Timeline({ onSelect }) {
   const W = 1140, GL = 168, GR = 20, T = 14, LH = 40, AX = 26;
   const lanes = CAT_ORDER;
   const H = T + lanes.length * LH + AX;
-  const Y0 = 1934.7, Y1 = 1943.4;
+  const Y0 = 1930.6, Y1 = 1943.4;
   const px = (y) => GL + (W - GL - GR) * (y - Y0) / (Y1 - Y0);
   const laneY = (k) => T + LH * k + LH / 2;
-  const years = []; for (let y = 1935; y <= 1943; y++) years.push(y);
+  const years = []; for (let y = 1931; y <= 1943; y++) years.push(y);
 
   const dots = window.DATA.map((e) => {
     const k = lanes.indexOf(e.cat); const kk = k < 0 ? 0 : k;

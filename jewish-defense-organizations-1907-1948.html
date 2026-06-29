@@ -75,6 +75,13 @@
   .ex blockquote b { font-weight:600; }
   .ex .cite { font-family:var(--sans); font-size:11.5px; color:var(--ink-3); margin-top:10px; }
   .ex .cite i { color:var(--ink-2); }
+  /* source clip — the cited page, as printed (highlighted passage), shown inline */
+  .srcclip { margin:11px 0 3px; }
+  .srcclip .srccap { font-family:var(--sans); font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-3,var(--accent)); margin:0 0 6px; }
+  .srcclip img { display:block; width:100%; max-width:540px; border:1px solid var(--rule); border-radius:2px; box-shadow:0 1px 5px rgba(0,0,0,.09); background:#fff; }
+  .clipstrip { display:grid; grid-template-columns:repeat(auto-fit,minmax(238px,1fr)); gap:16px; margin:14px 0 4px; align-items:start; }
+  .clipstrip .srcclip { margin:0; }
+  .clipstrip .srcclip img { max-width:100%; }
 </style>
 </head>
 <body>
@@ -207,6 +214,8 @@
       <tr class="c-vio"><td><span class="ev">Jaffa riots</span></td><td><span class="dt">May 1921</span></td><td><b>~47 Jews</b> killed by Arab mobs — incl. a massacre at an immigrants' hostel (13 dead, the writer Y.&nbsp;H. Brenner among them); the <b>~48 Arab dead</b> fell mostly to British police and military suppressing the riots.</td><td class="resp">Haganah expands; adopts <i>havlagah</i> (restraint)</td><td><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></td></tr>
       <tr class="c-vio"><td><span class="ev">Hebron / Buraq riots</span></td><td><span class="dt">Aug 1929</span></td><td><b>133 Jews murdered by Arab attackers</b> — 67 unarmed at Hebron, plus Safed and Motza; the <b>~116 Arab dead</b> were "many&hellip; caused by rifle fire by the police or military forces" (Shaw, Cmd 3530). The Yishuv killed few — though several Jews, incl. a policeman, murdered four of the 'Awn family in a Jaffa reprisal (see below).</td><td class="resp"><i>Havlagah</i> increasingly seen as a failure</td><td><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></td></tr>
       <tr class="c-def"><td><span class="ev">Frustration with Haganah restraint</span></td><td><span class="dt">1930–31</span></td><td>An ideological + tactical split</td><td class="resp"><span class="arrow">→</span> <b>Irgun</b> (Irgun Bet) founded, rejecting <i>havlagah</i></td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
+      <tr class="c-vio"><td><span class="ev">Qassam's armed campaign</span></td><td><span class="dt">1931–33</span></td><td><b>7 Jews killed</b> by Sheikh <b>ʿIzz al-Din al-Qassam</b>'s cells — 3 at Kibbutz Yagur (Apr 1931), settlers at Balfouriya &amp; Kfar Hasidim (1932), a father &amp; son bombed at Nahalal (Dec 1932). The <b>first organized Palestinian-Arab armed campaign</b> against the Yishuv — insurgency, not a riot.</td><td class="resp">Sharpened the case against <i>havlagah</i>: the threat was now an organized clandestine network, not a mob outbreak</td><td><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></td></tr>
+      <tr class="c-vio"><td><span class="ev">Qassam killed → the spark</span></td><td><span class="dt">Nov 1935 → Apr 1936</span></td><td>Al-Qassam killed by British troops at <b>Yaʿbad</b> (Nov 1935); his funeral a mass nationalist demonstration. His followers' <b>15 Apr 1936 ambush</b> on the Nablus–Tulkarm road (2 Jews killed) — <i>&ldquo;vengeance for the Holy Sheikh&rdquo;</i> — <b>opened the Arab Revolt.</b></td><td class="resp"><span class="arrow">→</span> feeds directly into the Revolt-era escalation below</td><td><span class="caus catalyst"><span class="d">●●○</span> Catalyst</span></td></tr>
       <tr class="c-vio"><td><span class="ev">The Arab Revolt</span></td><td><span class="dt">1936–39</span></td><td><b>~500 Jews</b> killed by Arab rebels (ambush, bombing); the far larger Arab toll (~5,000+) fell <b>mostly to British suppression</b>, plus ~900–1,000 killed <b>intra-Arab</b> (rebels vs. "collaborators") — few by Jews</td><td class="resp"><span class="arrow">→</span> <b>Notrim, FOSH, Wingate's Night Squads</b>; Britain → the 1939 White Paper</td><td><span class="caus direct"><span class="d">●●●</span> Direct</span></td></tr>
     </tbody>
   </table>
@@ -289,6 +298,44 @@
     attackers; the Arab dead were largely <b>"caused by rifle fire by the police or military forces"</b> — i.e. by the British
     suppressing the riots, and only a few by Jews (one a reprisal murder of a family — above). A parallel "133 + 116" body count
     erases all of this — both the asymmetry and the Yishuv's own share of it.
+  </p>
+
+  <h2 class="section">The man behind the trigger · Sheikh ʿIzz al-Din al-Qassam</h2>
+  <p class="tlsub">
+    The Revolt-era forces in the ledger above — Notrim, FOSH, Wingate's Night Squads — were the Yishuv's answer to a rising
+    that one man set in motion. He belongs in the causal record, not just the footnotes.
+  </p>
+  <p class="dek" style="margin-top:6px">
+    <b>Sheikh ʿIzz al-Din al-Qassam</b> (c. 1882–1935) was a Syrian-born, <b>al-Azhar</b>-trained preacher who reached
+    Haifa in 1920 under a French court-martial death sentence, preached at the Istiqlal Mosque, and from about 1925 built
+    a clandestine cell network — the &ldquo;Black Hand.&rdquo; His recruits were the <b>uprooted Galilee fellahin</b>
+    dispossessed by land sales and the &ldquo;Hebrew-labour&rdquo; exclusion who had drifted into the Haifa slums — which
+    is why his movement, unlike the urban-notable politics above it, reached down to the poorest stratum. His cells ran the
+    <b>1931–33 raids</b> (7 Jews killed) — the first organized Palestinian armed campaign against the Yishuv. The British
+    killed him at Yaʿbad in November 1935; his funeral became a mass demonstration, and five months later his followers'
+    road-ambush opened the Revolt. Ben-Gurion called the skirmish that killed him <i>&ldquo;their Tel Hai.&rdquo;</i>
+  </p>
+  <div class="ex">
+    <div class="label">The call to arms · al-Qassam at the Istiqlal Mosque</div>
+    <blockquote>&ldquo;You are a <b>people of rabbits</b>, who are afraid of death and scaffolds and engage in prattle. You must know that <b>nothing will save us but our arms</b>.&rdquo;</blockquote>
+    <div class="cite">— Sheikh ʿIzz al-Din al-Qassam, sermon at Haifa's Istiqlal Mosque, quoted in Benny Morris, <i>Righteous Victims</i>, and Yehoshua Porath, <i>The Palestinian Arab National Movement</i> vol. 2, p. 135.</div>
+  </div>
+  <div class="ex">
+    <div class="label">The spark · the 15 April 1936 ambush, in the gunmen's own words</div>
+    <blockquote>&ldquo;Go and inform the police and the press that we are <b>robbing this money to purchase arms and take vengeance for the murder of the Holy Sheikh, Izza Din El Kassam</b>.&rdquo;</blockquote>
+    <div class="cite">— the Qassamite &ldquo;Black Hand&rdquo; gunmen on the Nablus–Tulkarm road, 15 April 1936, after shooting Zvi Danenberg and Israel Chazan — the act that opened the Arab Revolt. Matthew Hughes, <i>Britain's Pacification of Palestine</i> (2019), pp. 1–2.</div>
+  </div>
+  <div class="clipstrip">
+    <figure class="srcclip"><div class="srccap">Porath vol. 2, p. 135 — the sermon</div><img src="src-qassam-rabbits-porath-p135.png" alt="Porath vol. 2 p. 135 — al-Qassam's 'people of rabbits… nothing will save us but our arms' sermon at the Istiqlal Mosque" loading="lazy" /></figure>
+    <figure class="srcclip"><div class="srccap">Hughes, <i>Britain's Pacification of Palestine</i> (2019), p. 2</div><img src="src-qassam-vengeance-hughes-p2.png" alt="Hughes p. 2 — the 15 April 1936 gunmen: robbing this money to purchase arms and take vengeance for the murder of the Holy Sheikh al-Qassam" loading="lazy" /></figure>
+    <figure class="srcclip"><div class="srccap">Porath vol. 2, p. 142 — the funeral</div><img src="src-qassam-funeral-porath-p142.png" alt="Porath vol. 2 p. 142 — al-Qassam's funeral from Haifa to Balad al-Shaykh became a nationalist demonstration" loading="lazy" /></figure>
+  </div>
+  <p class="fignote">
+    Same evidentiary standard as the rest of this page: al-Qassam's campaign is the Arab-violence node that the Revolt-era
+    Jewish forces formed against — but the corpus also records its <b>social driver</b> (Galilee dispossession, &ldquo;Hebrew
+    labour&rdquo;) and its <b>intra-Arab edge</b> (Qassamites killed land-sellers and &ldquo;collaborators&rdquo; first, the
+    British and Jews after). Full record &amp; the Qassamite afterlife: the companion <a href="arab-revolt.html">Arab Revolt ledger</a>.
+    Primary &amp; secondary: Porath vol. 2; Hughes (2019); Morris, <i>Righteous Victims</i>; Khalidi, <i>Palestinian Identity</i>.
   </p>
 
   <h2 class="section">The verdict — largely true, with two caveats</h2>

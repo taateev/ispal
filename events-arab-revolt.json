@@ -1,6 +1,102 @@
 [
   {
     "cat": "anti-jewish",
+    "n": 15,
+    "date": "5 April 1931",
+    "year": 1931,
+    "location": "Kibbutz Yagur (Haifa–Galilee)",
+    "event": "Al-Qassam's cells opened the first organized Palestinian-Arab armed campaign against the Yishuv: three members of Kibbutz Yagur were killed and a Nahalal member wounded during the Nabi Musa festivities.",
+    "quote": "This action began in April 1931 with the killing of three members of Kibbutz Yagur and the wounding of a member of Nahalal",
+    "src": "Porath vol. 2 p. 134",
+    "srcType": "secondary",
+    "srcNote": "Citing CO 733/204 (Young to Passfield, 30.5.31); corroborated Morris, Righteous Victims.",
+    "actor": "al-Qassam cells (Black Hand)",
+    "actorType": [
+      "qassamite"
+    ],
+    "scale": "3 killed, 1 wounded",
+    "scaleBig": "3",
+    "scaleNote": "Yagur field-workers; Nabi Musa festivities",
+    "links": [],
+    "searchTerms": [
+      "qassam",
+      "yagur",
+      "nahalal",
+      "1931"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "This action began in April 1931 with the killing of three members of Kibbutz Yagur and the wounding of a member of Nahalal."
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
+    "n": 16,
+    "date": "Jan–Mar 1932",
+    "year": 1932,
+    "location": "Balfouriya / Kfar Hasidim",
+    "event": "The campaign continued through 1932: one settler at Balfouriya and one at Kfar Hasidim were killed.",
+    "quote": "one settler in Balfouriya and one in Kfar Hasidim were killed",
+    "src": "Porath vol. 2 p. 134",
+    "srcType": "secondary",
+    "srcNote": "Corroborated Morris, Righteous Victims.",
+    "actor": "al-Qassam cells (Black Hand)",
+    "actorType": [
+      "qassamite"
+    ],
+    "scale": "2 killed",
+    "scaleBig": "2",
+    "scaleNote": "Jewish settlers, Jezreel Valley",
+    "links": [],
+    "searchTerms": [
+      "qassam",
+      "balfouriya",
+      "kfar hasidim",
+      "1932"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "It continued in January and March 1932 when one settleri n Balfouriya and one in Kfar Hasidim were killed and endedin December 1932 with the murder of a father and his son, again in Nahalal!®® There was strong suspicion that the first action had been committed by a politically motivated group,'8® but only when the police had caught those who committed the last Nahalal murder were these suspicions partly confirmed."
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
+    "n": 17,
+    "date": "23 December 1932",
+    "year": 1932,
+    "location": "Moshav Nahalal",
+    "event": "A Qassamite squad threw a bomb into a house at Moshav Nahalal, killing a father and his son — the act that exposed the network. Mustafa 'Ali Ahmad of Safuriyya was tried and hanged for the murder.",
+    "quote": "ended in December 1932 with the murder of a father and his son, again in Nahalal",
+    "src": "Porath vol. 2 p. 134",
+    "srcType": "secondary",
+    "srcNote": "Corroborated Morris, Righteous Victims (23 Dec 1932).",
+    "actor": "al-Qassam cells (Black Hand)",
+    "actorType": [
+      "qassamite"
+    ],
+    "scale": "2 killed",
+    "scaleBig": "2",
+    "scaleNote": "father and son; bomb thrown into a house",
+    "links": [],
+    "searchTerms": [
+      "qassam",
+      "nahalal",
+      "bomb",
+      "1932"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "It continued in January and March 1932 when one settleri n Balfouriya and one in Kfar Hasidim were killed and endedin December 1932 with the murder of a father and his son, again in Nahalal!®® There was strong suspicion that the first action had been committed by a politically motivated group,'8® but only when the police had caught those who committed the last Nahalal murder were these suspicions partly confirmed."
+      }
+    ]
+  },
+  {
+    "cat": "anti-jewish",
     "n": 1,
     "date": "7 November 1935",
     "year": 1935,
@@ -90,6 +186,39 @@
       {
         "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
         "text": "The news about the arms shipments discovered in Jaffa harbour on 18th October 1935 and believed to be destined for the Jews, may have induced him to take this decision.?°® Subhi Yasin writes that he 136 THE PALESTINIAN ARAB NATIONAL MOVEMENT wanted to prepare a solid base for event"
+      }
+    ]
+  },
+  {
+    "cat": "strike-politics",
+    "n": 48,
+    "date": "22 November 1935",
+    "year": 1935,
+    "location": "Haifa → Balad al-Shaykh",
+    "event": "Al-Qassam's funeral became a mass nationalist demonstration — police stoned, Arab government schools suspended. The elite's absence (neither the Mufti nor the party leaders attended) turned his martyrdom into a standing rebuke that pushed the parties toward joint action.",
+    "quote": "became a nationalist demonstration during which fervent nationalist speeches were made",
+    "src": "Porath vol. 2 p. 142",
+    "srcType": "secondary",
+    "srcNote": "Corroborated Mattar p. 68; Khalidi, Palestinian Identity p. 189 (via Zu'aytir diary).",
+    "actor": "Mourners; nationalist parties",
+    "actorType": [
+      "local"
+    ],
+    "scale": "mass demonstration",
+    "scaleBig": "—",
+    "scaleNote": "Haifa to Balad al-Shaykh; police stoned; schools closed",
+    "links": [],
+    "searchTerms": [
+      "qassam",
+      "funeral",
+      "martyr",
+      "balad al-shaykh",
+      "1935"
+    ],
+    "passages": [
+      {
+        "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+        "text": "His funeral, which began in Haifa and continued to Balad al- Shaykh nearby, became a nationalist demonstration during which fervent nationalist speeches were made."
       }
     ]
   },
@@ -308,12 +437,7 @@
       "strike",
       "palestine"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "During May and June the strike was effectively imposed; Jaffa port was put out of action; there were intermittant local demon- strations and assaults on Jews; there was destruction of Jewish property and sniping at Jewish settlements; sporadic attacks were made on the railway lines, two trains were derailed, roads barri- caded and telephone wires cut; and armed bands, swelled by volunteers from Syria and Iraq, made their appearance in the hills."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "anti-jewish",
@@ -340,12 +464,7 @@
       "galilee",
       "hills"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "During July, August and September the bands in the hills steadily increased in strength and underwent training under the leadership of Fawzi ed Din el Kauwakji, a Syrian who had served with distinction in the Turkish Army."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "british-reprisal",
@@ -402,12 +521,7 @@
       "hills",
       "reinforcements"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "The reinforcements began to arrive and extensive military operations were promptly initiated •to round up the Arab gangs."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "intra-arab",
@@ -1243,12 +1357,7 @@
       "official",
       "month"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "16 102 Arabs 195 804 Jews 80 308 Non-Arab Christians 2 19 Total 314 1,337 These are the numbers based on verified deaths and treatment in hospitals."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "strike-politics",
@@ -1305,12 +1414,7 @@
       "palestine",
       "towns"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "The leaders of the five united Arab parties called a general strike of all Arabs engaged in labour, transport or shopkeeping."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "strike-politics",
@@ -1589,12 +1693,7 @@
       "palestine",
       "higher"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "Work was resumed on the following day; the bands in the hills were permitted to disperse; sniping, sabotage and assaults continued but the rebellion as an organized national movement ceased for the time being."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "strike-politics",
@@ -1745,12 +1844,7 @@
       "unsuccessful",
       "attempt"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "Public security conditions gradually deteriorated throughout 1937 ; during the first five months lawlessness was generally confined to the North- ern District and the Jerusalem municipal area; on 13th June an unsuccessful attempt was made on the life of the Inspector-General of Police, and from that time a campaign of murder, intimidation and sabotage conducted by Arab law-breakers became widespread and occasionally provoked retaliatory acts by Jews."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "anti-british",
@@ -1963,12 +2057,7 @@
       "palestine",
       "military"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "Military courts were established under the Emergency Régula- tions** for the trial of offences connected with; (1) the discharge of firearms at any persons (punishable by death), (2) the carrying of arms, bombs etc."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "british-reprisal",
@@ -2899,12 +2988,7 @@
       "palestine",
       "official"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "The total casualties from terrorist or gang activities were 97 killed and 149 wounded. The number of persons interned under Emergency Regulations was 903, of whom 816 were Arabs."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "strike-politics",
@@ -3339,12 +3423,7 @@
       "assistant",
       "district"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "On 24th August the Assistant District Commissioner at Jenin (Mr. Moffat) was murdered in his office and in September the rebel power reached its climax ; there was a large increase in abductions and a studied concentration on the destruction of Government buildings and property and on the seizure of armouries in out- lying police posts."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "anti-british",
@@ -3433,12 +3512,7 @@
       "large",
       "raided"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "On 9th September Beersheba was raided by a large gang which broke into the prison, released the prisoners and raided the police station; later in the month all police and Government buildings in Beersheba were set on fire and destroyed."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "anti-jewish",
@@ -4055,12 +4129,7 @@
       "land",
       "curfew"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "The garrison which had been strengthened in July from Egypt was further reinforced from England at the end of September, and on 19th October the Old City of Jerusalem was re-occupied by troops."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "british-reprisal",
@@ -6028,12 +6097,7 @@
       "official",
       "totals"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "There were 5,708 incidents of violence during the year, of which 986 were attacks on police or military, 651 attacks on Jewish settlements and quarters, 331 bomb throwings, 215 abductions, 720 attacks on telegraph communications, 341 incidents of sabot- age of railways and roads, 104 punctures of the pipeline and 430 assassinations and attempted assassinations."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "strike-politics",
@@ -6247,12 +6311,7 @@
       "bomb",
       "palestine"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "During the first five months of the year the Jews showed re- straint and there were few acts of retaliation, but from the end of June the Jewish attitude in all sections of the community under- went a change following the conviction by a military court of a Revisionist youth, Shlomo Ben Yoseph, who had fired on an Arab bus and was caught in possession of bombs and revolvers; the sentence of death was carried out on 29th June and was the cause of angry Jewish demonstrations in Jerusalem and Tel Aviv; at Tel Aviv the Union flag on the…"
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "zionist-reprisal",
@@ -6312,12 +6371,7 @@
       "reprisal",
       "bomb"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "On 6th and 25th July bomb explosions in the Arab fruit market at Haifa caused the death of 74 Arabs and injury to 129 others; there were other bomb outrages in Jerusalem and Jaffa."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "zionist-reprisal",
@@ -7254,12 +7308,7 @@
       "official",
       "totals"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "The number of incidents of violence during 1939 was 3,315 (compared with 5,708 in 1938) ; of these 230 were attacks on police or military, 136 attacks on Jewish settlements and quarters, 82 bomb throwings, 135 abductions, 245 attacks on telegraph communicat"
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "strike-politics",
@@ -7658,12 +7707,7 @@
       "bomb",
       "palestine"
     ],
-    "passages": [
-      {
-        "file": "survey_of_palestine_1946",
-        "text": "The Jews became despondent and on 27th February there were bomb outrages throughout the country in which 38 Arabs were killed and 44 wounded ; these outrages were interpreted as a Jewish protest against what they believed to be the policy determined."
-      }
-    ]
+    "passages": []
   },
   {
     "cat": "zionist-reprisal",
