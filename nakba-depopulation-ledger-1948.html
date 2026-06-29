@@ -782,6 +782,26 @@
   .prelude p { font-family:var(--serif); font-size:15px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
   .prelude p:last-of-type { margin-bottom:4px; }
   .prelude .bq { font-family:var(--serif); font-style:italic; color:var(--accent); }
+  .bilateral { margin:6px 0 26px; padding:20px 24px; background:#eef2f4; border:1px solid var(--rule); border-left:4px solid #2d5a7a; border-radius:3px; }
+  .bilateral h2 { font-family:var(--serif); font-weight:600; font-size:21px; margin:0 0 4px; color:var(--ink); }
+  .bilateral .sub { font-family:var(--sans); font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:#2d5a7a; margin:0 0 12px; }
+  .bilateral p { font-family:var(--serif); font-size:14.5px; line-height:1.6; color:var(--ink-2); margin:0 0 10px; }
+  .bilateral p:last-child { margin-bottom:0; }
+  .bilateral b { color:var(--ink); }
+  .bilateral i { color:#2d5a7a; }
+  .jsec h2 { font-family:var(--serif); font-weight:600; font-size:21px; margin:30px 0 2px; color:var(--ink); }
+  .jsec .sub { font-family:var(--sans); font-size:13px; font-style:italic; color:var(--ink-3); margin:4px 0 12px; }
+  table.jtbl { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13px; margin:4px 0 8px; }
+  table.jtbl thead th { text-align:left; font-family:var(--sans); font-size:9.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-4); font-weight:600; padding:7px 9px; border-bottom:1px solid var(--rule); }
+  table.jtbl tbody td { padding:9px 9px; border-bottom:1px solid var(--rule-soft); vertical-align:top; line-height:1.42; }
+  table.jtbl tbody tr { border-left:4px solid #5a6a8a; }
+  table.jtbl .comm { font-weight:700; color:var(--ink); white-space:nowrap; }
+  table.jtbl .dt { font-family:var(--mono); font-size:11px; color:var(--ink-3); white-space:nowrap; }
+  table.jtbl b { color:var(--ink); font-weight:600; }
+  table.jtbl .recov { color:#2d7a5a; font-weight:600; }
+  table.jtbl .held { color:var(--accent); font-weight:600; }
+  .jnote { font-family:var(--sans); font-size:12px; line-height:1.6; color:var(--ink-3); margin:8px 0 26px; max-width:920px; }
+  .jnote b { color:var(--ink-2); }
 </style>
 </head>
 <body>
@@ -817,8 +837,10 @@
       explanation of the exodus from most sites is untenable&rdquo;</span> and never sums the codes into population
       percentages. This ledger does the count he withheld — so read it as <em>distribution</em>, with that caveat attached.
       Of the <b>337 displacement events</b> (the 41 retention events sit apart): <b>military assault 36%, expulsion 30%, fear
-      16%, nearby-fall 7%, Arab orders 7%, atrocity-fear 4%</b>. Assault + expulsion together are <b>two-thirds</b> of events;
-      &ldquo;the Arabs were told to leave&rdquo; (code A) is <b>7%</b>.
+      16%, nearby-fall 7%, Arab orders 7%, atrocity-fear 4%</b>. <b>Read the codes separately, not as one bloc</b> — expulsion
+      (30%) is the deliberate driving-out; military assault (36%) is flight when a locality was <em>taken in combat</em> (most
+      had armed defenders), which is a different thing; &ldquo;the Arabs were told to leave&rdquo; (code A) is just <b>7%</b>.
+      The two-sided context for all of this is below.
     </p>
     <p>
       Two honest limits, both live on this page. <b>Event-count is not people:</b> the 70,000-person Lydda–Ramle expulsion
@@ -834,8 +856,61 @@
     </div>
   </section>
 
+  <section class="bilateral">
+    <h2>One direction of a two-sided war</h2>
+    <div class="sub">read the ledger below with this, or it misrepresents 1948</div>
+    <p>
+      A ledger of <em>Arab</em> displacement records only what emptied Arab localities — but 1948 was a <b>bilateral war</b>.
+      Before 15 May, Palestinian irregulars and the Arab Liberation Army were on the offensive: ambushing convoys (the Hadassah
+      medical convoy, the Lamed-Heh relief platoon, the Etzion-bloc convoys), besieging Jewish Jerusalem, attacking settlements.
+      After 15 May the armies of <b>Egypt, Jordan, Syria, Iraq and Lebanon invaded.</b> Many localities in the ledger had armed
+      defenders, ALA garrisons or National Guard firing on Jewish traffic — the &ldquo;military assault&rdquo; lane is
+      <b>combat in that war</b>, not unprovoked attacks on passive villages. (A documented subset of it <em>was</em> fire aimed
+      at civilians to induce flight — Jaffa, Haifa — which is why that lane is annotated, not merged with expulsion.)
+    </p>
+    <p>
+      And displacement ran <b>both ways.</b> Morris: <i>&ldquo;All the Jewish settlements conquered by the invading Jordanian,
+      Syrian, and Egyptian armies — about a dozen in all … were razed after their inhabitants had fled or been incarcerated or
+      expelled.&rdquo;</i> Roughly <b>6,000 Jews died</b> in the war — about <b>1% of the Yishuv</b>. The communities in the
+      table below are the symmetric record, held to the same provenance discipline (Morris, <i>1948</i>). This page measures
+      the <em>Arab-displacement</em> side of the war; it is <b>not</b> a measure of the war's blame.
+    </p>
+  </section>
+
   <div id="stats-root"></div>
   <div id="root"></div>
+
+  <section class="jsec">
+    <h2>Jewish communities overrun &amp; destroyed, 1948 — the symmetric record</h2>
+    <div class="sub">The other side of the displacement: the ~dozen Jewish localities the invading armies overran. Same anchor (Morris, <i>1948</i>).</div>
+    <div style="overflow-x:auto;">
+    <table class="jtbl">
+      <thead><tr><th>Community</th><th>Front</th><th>Date</th><th>Taken by</th><th>Fate of the inhabitants</th><th>The site</th></tr></thead>
+      <tbody>
+        <tr><td class="comm">Kfar Etzion <span style="font-weight:400;color:var(--ink-3)">(Etzion bloc)</span></td><td>Jordanian</td><td class="dt">13 May</td><td>Arab Legion + ~1,000 militiamen</td><td><b>Massacre after surrender</b> — ~150 killed (106 men + 27 women murdered after assembling under a white flag); a handful survived</td><td>Razed — &ldquo;not one stone upon another&rdquo; <span class="dt">M.170</span></td></tr>
+        <tr><td class="comm">Massuot Yitzhak · Ein Tzurim · Revadim</td><td>Jordanian</td><td class="dt">14 May</td><td>Arab Legion</td><td>Orderly surrender; <b>357 Etzion POWs</b> to Transjordan (held to war's end); Legion shielded them from the mob</td><td>Razed <span class="dt">M.171</span></td></tr>
+        <tr><td class="comm">Jewish Quarter, Old City</td><td>Jordanian</td><td class="dt">28 May</td><td>Arab Legion + irregulars</td><td>213 defenders (39 dead, 134 wounded); <b>290 male POWs</b> (⅔ noncombatants) + 51 wounded; ~1,200 civilians escorted out at Zion Gate</td><td>Razed — houses blown up, Hurva &amp; synagogues destroyed, Torah scrolls burned <span class="dt">M.219</span></td></tr>
+        <tr><td class="comm">Atarot</td><td>Jordanian</td><td class="dt">14–16 May</td><td>irregulars + Legion</td><td>Attacked and abandoned; defenders withdrew to Mount Scopus</td><td>Razed <span class="dt">M.217</span></td></tr>
+        <tr><td class="comm">Neve Yaakov</td><td>Jordanian</td><td class="dt">14–16 May</td><td>irregulars + Legion</td><td>Attacked and abandoned; defenders withdrew to Mount Scopus</td><td>Razed <span class="dt">M.217</span></td></tr>
+        <tr><td class="comm">Beit HaArava</td><td>Jordanian</td><td class="dt">17–20 May</td><td>abandoned (untenable)</td><td>Evacuated — women/children by air, the rest by sea to Sodom</td><td>Razed <span class="dt">M.217</span></td></tr>
+        <tr><td class="comm">Kalia</td><td>Jordanian</td><td class="dt">17–20 May</td><td>abandoned (untenable)</td><td>Evacuated south to Sodom</td><td>Razed <span class="dt">M.217</span></td></tr>
+        <tr><td class="comm">Gezer</td><td>Jordanian</td><td class="dt">10 Jun</td><td>Arab Legion + irregulars</td><td>Overrun after a 4-hr fight (&ldquo;Deir Yassin, Abu Shusha&rdquo;); 29 killed, 1–2 executed after surrender, most captured</td><td>Looted, <span class="recov">retaken by Yiftah the same evening</span> <span class="dt">M.230</span></td></tr>
+        <tr><td class="comm">Yad Mordechai</td><td>Egyptian</td><td class="dt">23–24 May</td><td>Egyptian army</td><td>Held 5 days under siege, then broke out on foot; some dead; 2 evacuees + a wounded man bayoneted</td><td>Leveled; <span class="recov">later recovered</span> <span class="dt">M.239</span></td></tr>
+        <tr><td class="comm">Nitzanim</td><td>Egyptian</td><td class="dt">6–7 Jun</td><td>Egyptian army</td><td>Overrun — 33 dead, 16 wounded, then <b>105 surrendered</b>; 3–4 murdered after surrender (incl. radiowoman Mira Ben-Ari)</td><td>Devastated; <span class="recov">later recovered</span> <span class="dt">M.244</span></td></tr>
+        <tr><td class="comm">Kfar Darom</td><td>Egyptian</td><td class="dt">8–9 Jul</td><td>abandoned (earlier assaults repulsed)</td><td>Lone outpost behind Egyptian lines; defenders slipped out by night to Israeli lines</td><td>Razed (ruins only) <span class="dt">M.278</span></td></tr>
+        <tr><td class="comm">Mishmar Hayarden</td><td>Syrian</td><td class="dt">10 Jun</td><td>Syrian army</td><td>Fell after a fierce fight (two earlier assaults repulsed); ~2 dozen taken POW</td><td><span class="held">Held by Syria</span> — the lasting Syrian enclave, kept through the armistice <span class="dt">M.257</span></td></tr>
+        <tr><td class="comm">Masada · Sha'ar Hagolan</td><td>Syrian</td><td class="dt">18–19 May</td><td>abandoned ahead of advance</td><td>Abandoned without HQ permission; members fled to Kibbutz Afikim; sites looted</td><td>Looted, <span class="recov">later recovered</span> <span class="dt">M.253–4</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="jnote">
+      Morris's summary (<i>1948</i>, <b>p. 409</b>): the settlements the invading armies overran — &ldquo;<b>about a dozen in
+      all</b> … were razed after their inhabitants had fled or been incarcerated or expelled.&rdquo; Of them, <b>Mishmar
+      Hayarden</b> stayed Syrian-held; <b>five</b> (Gezer, Yad Mordechai, Nitzanim, Masada, Sha'ar Hagolan) were later recovered
+      by Israel; the rest — the Etzion bloc, the Old City Quarter, Atarot, Neve Yaakov, Kalia, Beit HaArava — stayed on the
+      Jordanian side, and the West Bank held <b>no Jews</b> until 1967. &ldquo;M.&rdquo; = Morris, <i>1948</i>, printed page.
+    </p>
+  </section>
 
   <section class="notes">
     <div>
