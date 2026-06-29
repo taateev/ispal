@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Causes of the 1948 Palestinian displacement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="broadsheet.css" />
+<style>
+  table.tl { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:13.5px; margin:2px 0 26px; }
+  table.tl thead th { text-align:left; font-family:var(--sans); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-4); font-weight:600; padding:7px 10px 9px; border-bottom:1px solid var(--rule); }
+  table.tl tbody td { padding:11px 10px; border-bottom:1px solid var(--rule-soft); vertical-align:top; line-height:1.45; }
+  table.tl tbody tr { border-left:4px solid var(--rule); }
+  tr.w1 { border-left-color:var(--accent-4); }
+  tr.w2 { border-left-color:var(--accent); }
+  tr.w3 { border-left-color:var(--accent-5); }
+  tr.w4 { border-left-color:#6b5b7a; }
+  tr.w5 { border-left-color:var(--ink-4); }
+  .tl .ev { font-weight:700; color:var(--ink); }
+  .tl .dt { font-family:var(--mono); font-size:11.5px; color:var(--ink-3); white-space:nowrap; }
+  .tl .big { font-family:var(--mono); font-weight:600; color:var(--ink); white-space:nowrap; }
+  .tl b { color:var(--ink); font-weight:600; }
+
+  .note { font-family:var(--sans); font-size:13px; line-height:1.6; color:var(--ink-2); border-left:3px solid var(--rule); padding:13px 18px; margin:16px 0; max-width:920px; background:rgba(0,0,0,0.016); }
+  .note b { color:var(--ink); }
+  .note.warn { border-left-color: var(--accent-5); }
+  .note.exc { border-left-color: var(--accent); }
+
+  .codes { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:1px; background:var(--rule-soft); border:1px solid var(--rule-soft); margin:12px 0 6px; }
+  .code { background:var(--paper); padding:13px 16px; }
+  .code .k { font-family:var(--mono); font-weight:700; font-size:15px; color:var(--paper); background:var(--accent); width:24px; height:24px; display:inline-flex; align-items:center; justify-content:center; border-radius:4px; margin-bottom:7px; }
+  .code .k.e { background:var(--accent); } .code .k.m { background:var(--accent-5); }
+  .code .k.a { background:var(--accent-4); } .code .k.cc, .code .k.f, .code .k.w { background:var(--ink-3); }
+  .code .ct { font-family:var(--sans); font-size:13px; font-weight:700; color:var(--ink); }
+  .code .cd { font-family:var(--serif); font-size:13px; line-height:1.5; color:var(--ink-2); margin-top:3px; }
+
+  .ladder { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:14px; margin:14px 0 8px; }
+  .rung { border:1px solid var(--rule-soft); border-top:3px solid var(--accent-3); padding:13px 16px; background:rgba(255,255,255,0.4); }
+  .rung.mid { border-top-color:var(--accent-5); } .rung.hi { border-top-color:var(--accent); }
+  .rung .n { font-family:var(--mono); font-weight:600; font-size:20px; color:var(--ink); }
+  .rung .lbl { font-family:var(--sans); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--accent-3); margin:4px 0 5px; }
+  .rung.mid .lbl { color:var(--accent-5); } .rung.hi .lbl { color:var(--accent); }
+  .rung .d { font-family:var(--serif); font-size:13px; line-height:1.5; color:var(--ink-2); }
+
+  .ex { border:1px solid var(--rule-soft); border-left:4px solid var(--ink-3); background:rgba(255,255,255,0.42); padding:16px 20px; margin:0 0 14px; max-width:920px; }
+  .ex .label { font-family:var(--sans); font-size:10px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+  .ex blockquote { margin:0; font-family:var(--serif); font-size:15px; line-height:1.55; color:var(--ink); }
+  .ex blockquote b { font-weight:600; }
+  .ex .cite { font-family:var(--sans); font-size:11.5px; color:var(--ink-3); margin-top:10px; }
+  .ex .cite i { color:var(--ink-2); }
+
+  /* source clip — the cited page, as printed (highlighted passage), shown inline */
+  .srcclip { margin:11px 0 3px; }
+  .srcclip .srccap { font-family:var(--sans); font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-3,var(--accent)); margin:0 0 6px; }
+  .srcclip img { display:block; width:100%; max-width:540px; border:1px solid var(--rule); border-radius:2px; box-shadow:0 1px 5px rgba(0,0,0,.09); background:#fff; }
+  .clipstrip { display:grid; grid-template-columns:repeat(auto-fit,minmax(238px,1fr)); gap:16px; margin:14px 0 4px; align-items:start; }
+  .clipstrip .srcclip { margin:0; }
+  .clipstrip .srcclip img { max-width:100%; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">Corpus synthesis · 1947–1949</div>
+      <h1>Causes of the 1948 Palestinian displacement</h1>
+    </div>
+    <div class="meta">
+      <b>Headline</b> · there is no honest single &ldquo;% expelled vs. % fled&rdquo;<br />
+      <b>Why</b> · the exodus was phased and multi-causal; the anchor source refuses to aggregate<br />
+      <span class="faint">Benny Morris, <i>Birth of the Palestinian Refugee Problem Revisited</i> (2004)</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    Roughly <b>700,000</b> Palestinian Arabs became refugees in 1947&ndash;49. The natural question &mdash; <em>what share were
+    expelled, what share fled the fighting, what share left on their own?</em> &mdash; has no clean numerical answer, and the
+    reason is itself the finding. The most thorough archival source, Benny Morris, codes the cause of departure
+    <em>village by village</em> but <b>deliberately never adds those codes into population percentages</b>, because for most
+    places a single cause cannot be isolated. What the corpus <em>can</em> give is a phased picture, a documented floor and
+    ceiling for outright expulsion, and a split between places where staying was urged and places where it was not.
+    For the village-level data beneath this summary &mdash; <b>378 datable events, each tagged with Morris's own cause-code</b>
+    &mdash; see the <a href="nakba-depopulation-ledger-1948.html">1948 depopulation ledger</a>.
+  </p>
+
+  <div class="note warn">
+    <b>No percentage is honest at the decimal.</b> Morris's village-level map (Map 2 of <i>Birth Revisited</i>) assigns each
+    depopulated locality one of six cause-codes, but he states flatly that the lines between them &ldquo;are somewhat
+    blurred&rdquo; and that <b>&ldquo;a single-cause explanation of the exodus from most sites is untenable.&rdquo;</b> He never
+    merges the codings into a population-by-cause total. So any source offering a tidy &ldquo;X% expelled, Y% fled&rdquo; pie is
+    manufacturing precision the archive withholds. The figures below are <em>magnitudes and ranges</em>, not a partition that
+    sums to 100%.
+  </div>
+
+  <h2 class="section">Morris's six cause-codes</h2>
+  <p class="tlsub">The village-level vocabulary — what each departure was coded as, not how many people each accounts for.</p>
+  <div class="codes">
+    <div class="code"><span class="k m">M</span><div class="ct">Military assault on the locality</div><div class="cd">The single most common code — flight under or just ahead of an attack on the town or village itself.</div></div>
+    <div class="code"><span class="k e">E</span><div class="ct">Expulsion by Jewish forces</div><div class="cd">Inhabitants ordered out — the category with the firmest documentary floor (Lydda&ndash;Ramle).</div></div>
+    <div class="code"><span class="k cc">C</span><div class="ct">Influence of a nearby town's fall</div><div class="cd">Departure triggered by the collapse of a neighbouring centre, without a direct attack.</div></div>
+    <div class="code"><span class="k f">F</span><div class="ct">Fear / general insecurity</div><div class="cd">Pre-emptive flight in anticipation of attack — no order, no battle at the point of departure.</div></div>
+    <div class="code"><span class="k w">W</span><div class="ct">Whispering-campaign psychological warfare</div><div class="cd">Flight accelerated by deliberate rumour and the exploitation of atrocity-fear (e.g. Deir Yassin).</div></div>
+    <div class="code"><span class="k a">A</span><div class="ct">Abandonment on Arab orders</div><div class="cd">Local Arab commanders / committees ordering specific evacuations — real but never a blanket national order.</div></div>
+  </div>
+  <p class="fignote">Morris: &ldquo;the lines between C, F and M are somewhat blurred&rdquo; — which is exactly why a population
+  partition cannot be built from the codes.</p>
+
+  <h2 class="section">The phased picture · Morris's four waves</h2>
+  <p class="tlsub">The closest thing to a breakdown by cause: each wave has a dominant mechanism and an approximate magnitude. Figures are cumulative through the phase, not a clean partition.</p>
+  <div style="overflow-x:auto;">
+  <table class="tl">
+    <thead><tr><th>Wave</th><th>Period</th><th>Approx. size</th><th>Dominant cause Morris attributes</th></tr></thead>
+    <tbody>
+      <tr class="w1"><td><span class="ev">First wave</span></td><td><span class="dt">Dec 1947 – Mar 1948</span></td><td><span class="big">~100,000</span></td><td><b>Self-evacuation</b> of the urban upper and middle classes (Jaffa, Haifa, Jerusalem) under civil-war conditions. The AHC and National Committees were trying to <em>prevent</em> this departure.</td></tr>
+      <tr class="w2"><td><span class="ev">Second wave</span></td><td><span class="dt">Apr – Jun 1948</span></td><td><span class="big">250,000–300,000</span></td><td><b>Jewish military assault.</b> Morris dates a spring-1948 shift to &ldquo;a primacy of external, compulsive causes: Haganah/IDF attacks and expulsions, fear of Jewish attacks and atrocities.&rdquo; Plan D + the falls of Haifa, Jaffa, Tiberias, Safad. No blanket Arab evacuation order in the archive — but the assaults routinely included fire into civilian quarters <em>to induce flight</em> (below).</td></tr>
+      <tr class="w3"><td><span class="ev">Third wave</span></td><td><span class="dt">Jul – Oct 1948</span></td><td><span class="big">~100,000+</span></td><td>The &ldquo;Ten Days&rdquo; + Second Truce. Includes <b>Lydda&ndash;Ramle</b>, the single largest direct expulsion, carried out under a <em>written</em> order. Operations Dani, Dekel, Brosh.</td></tr>
+      <tr class="w4"><td><span class="ev">Fourth wave</span></td><td><span class="dt">Oct – Nov 1948</span></td><td><span class="big">substantial</span></td><td>Operations Yoav (south) and Hiram (Galilee). Allon: &ldquo;almost no Arab civilians remained.&rdquo; Hiram mixed sharply by community — Druze and Christian largely retained, Muslim villages expelled or fled, with heavy village-level variation.</td></tr>
+      <tr class="w5"><td><span class="ev">Border-clearing tail</span></td><td><span class="dt">Nov 1948 – 1950</span></td><td><span class="big">20,000–40,000</span></td><td>Clearing a 5&ndash;7&nbsp;km strip along the Lebanese border; anti-infiltration sweeps; specific village expulsions (Iqrit, Bir'im — promised return, never permitted).</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="fignote"><b>Read as magnitudes, not a partition.</b> The single largest slice is the second wave's flight under military assault (~40% of the total); urban self-evacuation opens the sequence (~15%); the documented hard core of outright <em>expulsion</em> is concentrated in the third and fourth waves. Total working figure ~700,000 (Morris: &ldquo;~700,000 is probably a fair estimate&rdquo;).</p>
+
+  <h2 class="section">What &ldquo;military assault&rdquo; actually means</h2>
+  <p class="tlsub">The second-wave attribution is read two over-clean ways — pure combat with civilians fleeing incidentally, or pre-planned cleansing from the start. The record sits between, and the attackers put part of it in writing.</p>
+  <div class="ex">
+    <div class="label">Jaffa · the stated objective of the IZL barrage</div>
+    <blockquote>The aim of the three-day, 20-ton mortar barrage was &ldquo;to break the spirit of the enemy troops, [and] <b>to cause chaos among the civilian population in order to create a mass flight</b>.&rdquo;</blockquote>
+    <div class="cite">— IZL operations chief Amihai Paglin's pre-attack briefing, 25&ndash;27 April 1948. High Commissioner Cunningham cabled that the attack was &ldquo;indiscriminate and designed to create panic among the civilian inhabitants.&rdquo; Per Haganah intelligence, most casualties were civilians. Via Morris, <i>Birth Revisited</i>, pp. 212&ndash;214.</div>
+  </div>
+  <div class="note">
+    <b>The synthesis.</b> The bulk of the ~250&ndash;300k fled under or ahead of military assault on their own towns &mdash; but that
+    assault routinely included deliberate fire onto civilian-populated areas and the exploitation of atrocity-fear (Deir Yassin,
+    code&nbsp;W) <em>precisely to induce flight</em>. &ldquo;Against combatants only&rdquo; erases the part the attackers wrote down;
+    &ldquo;cleansing from the start&rdquo; reads the post-July policy back onto April&ndash;June, when no national expulsion policy
+    was yet in force. Jaffa is the cleanest documented case of operational intent to empty a civilian area.
+  </div>
+
+  <h2 class="section">Direct expulsion · a floor and a ceiling, not a point</h2>
+  <p class="tlsub">Where the corpus can be quantitative: the share attributable to outright expulsion orders runs from a hard documented floor to a broad-reading ceiling.</p>
+  <div class="ladder">
+    <div class="rung"><div class="lbl">Hard floor</div><div class="n">~70,000</div><div class="d"><b>Lydda&ndash;Ramle alone</b> — the one case with both a written order at operational-HQ level and a clean population figure.</div></div>
+    <div class="rung mid"><div class="lbl">Defensible mid-range</div><div class="n">~150,000–200,000</div><div class="d">Adds the Ten Days / Operation Hiram villages Morris attributes to &ldquo;expulsive guidelines,&rdquo; plus the 1948&ndash;50 border-clearing.</div></div>
+    <div class="rung hi"><div class="lbl">Broad-reading ceiling</div><div class="n">~700,000</div><div class="d">Morris's late framing: <em>all</em> who ended as refugees, when &ldquo;expulsion&rdquo; is read to include barred return after flight.</div></div>
+  </div>
+  <div class="ex">
+    <div class="label">Lydda · the written expulsion order, 12 July 1948</div>
+    <blockquote>&ldquo;<b>The inhabitants of Lydda must be expelled quickly without attention to age.</b>&rdquo;</blockquote>
+    <div class="cite">— Operation Dani HQ to Yiftah Brigade, written order timed 13:30, 12 July 1948 (two archival copies, IDFA). The largest single expulsion of the war; ~50,000&ndash;70,000 from Lydda and Ramle together. Via Morris, <i>Birth Revisited</i>.</div>
+  </div>
+  <p class="fignote">The gap between the ~70k floor and the ~700k ceiling <em>is</em> the interpretive cleavage between the Morris-archival
+  reading and the Pappé/Masalha &ldquo;predetermined cleansing&rdquo; reading. We apply a standing selection-bias caveat to the
+  upper end (it under-engages the retention evidence below) and to the older British-eyewitness lower end (it over-credits an
+  unrecovered Arab radio &ldquo;evacuation broadcast&rdquo;).</p>
+
+  <h2 class="section">The other half of the question · where staying was urged</h2>
+  <p class="tlsub">Expulsion and flight are only one side. In a large minority of places Jewish authorities actively urged Arabs to stay or refrained from expelling them — with very different results by city and community.</p>
+  <div style="overflow-x:auto;">
+  <table class="tl">
+    <thead><tr><th>City</th><th>Pre-fall Arab pop.</th><th>Retention effort</th><th>Stayed</th><th>Rate</th></tr></thead>
+    <tbody>
+      <tr class="w1"><td><span class="ev">Haifa</span></td><td><span class="big">~70,000</span></td><td>Mayor's plea + a bilingual Histadrut leaflet, 28 Apr (&ldquo;Do not destroy your homes&hellip; stay&hellip; and return to your regular work&rdquo;)</td><td>~4,000</td><td><b>~6%</b></td></tr>
+      <tr class="w1"><td><span class="ev">Tiberias</span></td><td><span class="big">~4,000</span></td><td>Pre-fall non-belligerency pact; no expulsion order; post-fall leaflet promising return</td><td>~0</td><td><b>~0%</b><br><span style="font-size:11px;color:var(--ink-3)">would-stay residents coerced out by an Arab militia leader</span></td></tr>
+      <tr class="w1"><td><span class="ev">Jaffa</span></td><td><span class="big">~70,000</span></td><td>Halting — the IZL assault was harsh, but BG consolidated the remainees in 'Ajami</td><td>~4,000</td><td><b>~6%</b></td></tr>
+      <tr class="w1"><td><span class="ev">Acre</span></td><td><span class="big">~13,000</span></td><td>&ldquo;No expulsion orders&hellip; no pressure&hellip; to leave&rdquo; (Morris)</td><td>~5,000</td><td><b>~30%</b></td></tr>
+      <tr class="w1"><td><span class="ev">Nazareth</span></td><td><span class="big">~15,000</span></td><td>Expulsion order of 17 July <em>countermanded</em> by Dunkelman; BG authorised leaving the population in place</td><td>~15,000</td><td><b>~100%</b></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note exc">
+    <b>The aggregate split (a corpus aggregation, not a Morris number).</b> Pooling the urban centres, the Druze and Christian
+    villages, the strategic-axis exceptions, and the off-operational-path Muslim Galilee villages: roughly <b>40%</b> of the
+    pre-war Arab population was in a category where Jewish authorities urged or allowed staying (retention worked for about half
+    of them); the other <b>~60%</b> was in conditions where retention was never on offer — the rural south, the Lydda&ndash;Ramle
+    corridor, the coastal-plain villages, the Galilee Muslim villages in the operational path, and the borderland clearances.
+    About <b>150,000</b> Arabs remained in Israel at war's end.
+  </div>
+
+  <h2 class="section">In the primary &amp; secondary record</h2>
+  <p class="tlsub">The cited pages of Morris's <i>Birth Revisited</i>, as printed — an expulsion order, a retention appeal, and the conclusion's own multi-causal thesis. Read them side by side: the war ran both ways.</p>
+  <div class="clipstrip">
+    <figure class="srcclip"><div class="srccap">Morris, <i>Birth Revisited</i> (2004) — the Lydda order</div><img src="src-nakba-lydda-order-morris.png" alt="Morris, Birth Revisited — the 12 July 1948 written order: the inhabitants of Lydda must be expelled quickly without attention to age" loading="lazy" /></figure>
+    <figure class="srcclip"><div class="srccap">Morris, <i>Birth Revisited</i> — the Haifa retention leaflet</div><img src="src-nakba-haifa-retention-morris.png" alt="Morris, Birth Revisited p. 206 — the Histadrut leaflet urging Haifa Arabs not to destroy their homes but to stay and return to their regular work" loading="lazy" /></figure>
+    <figure class="srcclip"><div class="srccap">Morris, <i>Birth Revisited</i> — the conclusion's thesis</div><img src="src-nakba-thesis-morris.png" alt="Morris, Birth Revisited conclusion — single-cause explanation untenable; a spring 1948 shift to a primacy of external compulsive causes: Haganah/IDF attacks and expulsions" loading="lazy" /></figure>
+  </div>
+
+  <h2 class="section">Symmetric caveats</h2>
+  <p class="note">
+    <b>Both sides opposed the flight in the first wave.</b> Dec 1947 &ndash; Mar 1948, the AHC and National Committees actively
+    tried to <em>prevent</em> civilian departure — border closures, exit-visa restrictions, taxes on émigré families, an 8 Jan
+    1948 proclamation denying it had ordered evacuations. The early exodus was opposed by <em>both</em> leaderships.
+  </p>
+  <p class="note">
+    <b>No blanket Arab evacuation order — but local ones existed.</b> Morris's archival finding is that there was no AHC general
+    radio broadcast or blanket order (the older &ldquo;the Arabs told them to leave&rdquo; framing rests on a broadcast text never
+    recovered). But local Arab commanders <em>did</em> order specific evacuations, and committees approved removing women,
+    children and the elderly from front-line villages — coded&nbsp;A.
+  </p>
+  <p class="note">
+    <b>The retained population skews Christian and Druze, and the timing inverts.</b> A disproportionate share of those who stayed
+    were Christian or Druze; the IDF &ldquo;related far more benignly to Christians and Druse than to Muslims&rdquo; (Morris). And
+    the retention efforts characterise the <em>first</em> half of the war (Haifa, Acre, Tiberias) while active expulsion
+    characterises the <em>second</em> (Lydda&ndash;Ramle, Hiram, the border clearances) — the policy ran one way, then the other.
+  </p>
+
+  <div class="endnotes">
+    <p>
+      <b>Sources.</b> Benny Morris, <i>The Birth of the Palestinian Refugee Problem Revisited</i> (Cambridge UP, 2004) — the
+      load-bearing archival anchor — read against Walid Khalidi, <i>All That Remains</i>; Yoav Gelber, <i>Palestine 1948</i>; and
+      Hillel Cohen, <i>Army of Shadows</i>. All in the project corpus.
+    </p>
+    <p>
+      <b>Scope &amp; rigor.</b> The percentages here are <em>corpus aggregations across the cases Morris documents</em>, not
+      figures Morris asserts; he declines to merge his village cause-codes into population totals, and that refusal is reported
+      rather than papered over. The same evidentiary standard is applied to both sides: documented Jewish expulsion orders and
+      documented Jewish retention appeals are both recorded; documented Arab anti-flight measures and documented local Arab
+      evacuation orders are both recorded. Full working synthesis (totals, every expulsion-order document, the realized-returns
+      and 1949 repatriation-offer record) in the research repository — <code>topic.1948_refugee_causation</code>.
+    </p>
+  </div>
+
+  <footer class="colophon">
+    <div><b>Causes of the 1948 Palestinian displacement</b> · Corpus synthesis</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono · <a href="index.html" style="color:inherit">← All periods</a></div>
+  </footer>
+
+</div>
+</body>
+</html>
