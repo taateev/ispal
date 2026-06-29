@@ -802,6 +802,27 @@
   table.jtbl .held { color:var(--accent); font-weight:600; }
   .jnote { font-family:var(--sans); font-size:12px; line-height:1.6; color:var(--ink-3); margin:8px 0 26px; max-width:920px; }
   .jnote b { color:var(--ink-2); }
+  /* combatant-presence badges + detail */
+  .milbadge { display:inline-block; font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:1px 6px; border-radius:8px; white-space:nowrap; }
+  .mil-active { background:#b0231a; color:#fff; }
+  .mil-inactive { background:#2d5a7a; color:#fff; }
+  .mil-unknown { background:var(--paper-3,#e6e0d2); color:var(--ink-3); }
+  .col-loc .milbadge { display:inline-block; margin-top:4px; }
+  .combgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:8px 14px; margin:6px 0 8px; font-family:var(--sans); font-size:11.5px; color:var(--ink-2); }
+  .combgrid b { display:block; font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-4); font-weight:700; }
+  .combevid { font-family:var(--serif); font-size:12.5px; line-height:1.5; color:var(--ink-3); margin:2px 0 8px; }
+  .combevid .attsrc { color:var(--accent); font-style:italic; font-weight:600; }
+  .combevid .combconf { color:var(--ink-4); }
+  /* combatant-presence cross-tab */
+  table.xtab { width:100%; border-collapse:collapse; font-family:var(--serif); font-size:14px; margin:6px 0 10px; max-width:760px; }
+  table.xtab thead th { text-align:right; font-family:var(--sans); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-4); font-weight:600; padding:8px 12px; border-bottom:1px solid var(--rule); }
+  table.xtab thead th:first-child { text-align:left; }
+  table.xtab tbody td { padding:9px 12px; border-bottom:1px solid var(--rule-soft); text-align:right; font-family:var(--mono); font-size:13px; color:var(--ink-2); }
+  table.xtab tbody td:first-child { text-align:left; font-family:var(--serif); color:var(--ink); }
+  table.xtab tr.hi-m { background:rgba(176,35,26,0.06); }
+  table.xtab tr.hi-e { background:rgba(45,90,122,0.06); }
+  table.xtab .big-active { color:#b0231a; font-weight:700; }
+  table.xtab .big-inactive { color:#2d5a7a; font-weight:700; }
 </style>
 </head>
 <body>
@@ -874,6 +895,36 @@
       expelled.&rdquo;</i> Roughly <b>6,000 Jews died</b> in the war — about <b>1% of the Yishuv</b>. The communities in the
       table below are the symmetric record, held to the same provenance discipline (Morris, <i>1948</i>). This page measures
       the <em>Arab-displacement</em> side of the war; it is <b>not</b> a measure of the war's blame.
+    </p>
+  </section>
+
+  <section class="jsec">
+    <h2>Were these military targets? — combatant presence by cause</h2>
+    <div class="sub">Each of the 376 localities was re-coded for combatant presence <b>blind to its cause-code</b> (from Morris + Gelber, then adversarially verified), and cross-tabbed. <b>Militarily active</b> = documented garrison/militia, attack-launching, resistance, or arms; <b>no military activity</b> = affirmatively undefended / surrendered / fled-first; <b>unknown</b> = the record is silent — counted as unknown, never assumed either way.</div>
+    <div style="overflow-x:auto;">
+    <table class="xtab">
+      <thead><tr><th>Cause of departure</th><th>events</th><th>militarily active</th><th>no military activity</th><th>unknown</th></tr></thead>
+      <tbody>
+        <tr class="hi-e"><td><b>Expulsion (E)</b></td><td>101</td><td>36%</td><td class="big-inactive">43%</td><td>19%</td></tr>
+        <tr class="hi-m"><td><b>Military assault (M)</b></td><td>120</td><td class="big-active">70%</td><td>20%</td><td>10%</td></tr>
+        <tr><td>Atrocity-fear (W)</td><td>12</td><td>41%</td><td>50%</td><td>8%</td></tr>
+        <tr><td>Nearby-fall (C)</td><td>24</td><td>58%</td><td>37%</td><td>4%</td></tr>
+        <tr><td>Fear (F)</td><td>54</td><td>38%</td><td>44%</td><td>16%</td></tr>
+        <tr><td>Arab-order (A)</td><td>24</td><td>37%</td><td>33%</td><td>29%</td></tr>
+        <tr><td>Retention / kept (R)</td><td>41</td><td>51%</td><td>43%</td><td>4%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="jnote" style="font-size:13.5px;font-family:var(--serif);color:var(--ink-2);line-height:1.6;">
+      <b>The assault lane is mostly combat; the expulsion lane mostly is not — and that contrast is the empirical case for keeping them apart.</b>
+      <span style="color:#b0231a;font-weight:600;">Military assault (M)</span> was <b>70% against militarily-active localities</b> — 62% had documented
+      defenders (35% local militia, 27% an organized force), and 45% were attack-bases firing on traffic or roads. So for the majority,
+      "military assault" genuinely was combat in a two-sided war. But its mirror, <span style="color:#2d5a7a;font-weight:600;">expulsion (E)</span>,
+      runs the opposite way: only <b>36% active vs. 43% affirmatively inactive</b> — roughly <b>44 documented expulsions of villages with no
+      military activity at all.</b> Deliberate removal disproportionately hit the <em>quiet</em> villages. Two honesties kept in view: even where
+      defenders existed, only <b>31%</b> of M-villages actually <em>resisted</em> (most fled rather than fought), and combatant presence explains
+      the operation against the fighters, not the removal of the non-combatants; and only <b>10%</b> of all 376 flags rest on an attacker-sourced
+      claim — the rest are neutrally or independently attested. Filter the ledger by <b>combatant status</b> and open any row for the per-village evidence.
     </p>
   </section>
 
@@ -990,6 +1041,8 @@ const ACTOR_LABEL = {
   "fled": "Fled (self-evacuation)", "arab-cmd": "Arab command", "retained": "Kept in place",
 };
 const ALL_ACTORS = ["idf","palmah","irgun-lehi","jnf","fled","arab-cmd","retained"];
+const MIL_LABEL = { "active":"militarily active", "inactive":"no military activity", "unknown":"no record" };
+const COMB_LABEL = { "organized-force":"organized force (ALA / Holy War Army / regular unit)", "local-militia":"local militia / armed villagers", "none-noted":"none noted (undefended / fled-first / surrendered)", "unknown":"unknown — record silent" };
 const LOCATIONS = ["Safad","Haifa","Acre","Jerusalem","Jaffa","Tiberias","Tulkarm","Nazareth","Ramle","Beisan","Hebron","Gaza","Negev","Galilee","Coastal Plain"];
 
 function colLabel(cat, col) {
@@ -1133,6 +1186,18 @@ function DetailPanel({ event, onNavigate }) {
 
   return (
     <div className={panelClass}>
+      {event.milstatus && (
+        <React.Fragment>
+          <div className="detail-section-head">Combatant presence <span className={`milbadge mil-${event.milstatus}`} style={{marginLeft:6}}>{MIL_LABEL[event.milstatus]}</span></div>
+          <div className="combgrid">
+            <span><b>Harbored combatants</b><br/>{COMB_LABEL[event.harbored]||event.harbored}</span>
+            <span><b>Launched attacks</b><br/>{event.launched}</span>
+            <span><b>Arms documented</b><br/>{event.arms}</span>
+            <span><b>Resisted the attack</b><br/>{event.resisted}</span>
+          </div>
+          {event.combEvidence && <div className="combevid">{event.combEvidence}{event.attackerSourced && <span className="attsrc"> · ⚠ rests on an attacker-sourced claim</span>}{event.combConf && <span className="combconf"> · confidence: {event.combConf}</span>}</div>}
+        </React.Fragment>
+      )}
       {passages.length > 0 && (
         <React.Fragment>
           <div className="detail-section-head">Corpus passage</div>
@@ -1169,6 +1234,7 @@ function App() {
   const [q, setQ] = useState("");
   const [loc, setLoc] = useState("all");
   const [actor, setActor] = useState("all");
+  const [mil, setMil] = useState("all");
   const [evid, setEvid] = useState("all");
   const [sortKey, setSortKey] = useState("year");
   const [sortDir, setSortDir] = useState("asc");
@@ -1187,6 +1253,7 @@ function App() {
     if (cat !== "all") r = r.filter((x) => x.cat === cat);
     if (loc !== "all") r = r.filter((x) => x.location.includes(loc));
     if (actor !== "all") r = r.filter((x) => (x.actorType || []).includes(actor));
+    if (mil !== "all") r = r.filter((x) => x.milstatus === mil);
     if (evid !== "all") r = r.filter((x) => x.srcType === evid);
     if (q.trim()) {
       const t = q.trim().toLowerCase();
@@ -1206,13 +1273,13 @@ function App() {
       return a.year - b.year;
     });
     return r;
-  }, [cat, q, loc, actor, evid, sortKey, sortDir]);
+  }, [cat, q, loc, actor, mil, evid, sortKey, sortDir]);
 
   function setSort(k) {
     if (sortKey === k) setSortDir((d) => d === "asc" ? "desc" : "asc");
     else { setSortKey(k); setSortDir("asc"); }
   }
-  function clearFilters() { setCat("all"); setQ(""); setLoc("all"); setActor("all"); setEvid("all"); }
+  function clearFilters() { setCat("all"); setQ(""); setLoc("all"); setActor("all"); setMil("all"); setEvid("all"); }
   const sortMark = (k) => sortKey === k ? (sortDir === "asc" ? "▲" : "▼") : "·";
   const showSectionHeads = cat === "all" && sortKey === "cat";
 
@@ -1246,12 +1313,18 @@ function App() {
           <option value="all">All actors</option>
           {ALL_ACTORS.map((k) => <option key={k} value={k}>{ACTOR_LABEL[k]||k}</option>)}
         </select>
+        <select className="select" value={mil} onChange={(e)=>setMil(e.target.value)}>
+          <option value="all">Any combatant status</option>
+          <option value="active">Militarily active</option>
+          <option value="inactive">Affirmatively inactive</option>
+          <option value="unknown">Unknown / no record</option>
+        </select>
         <select className="select" value={evid} onChange={(e)=>setEvid(e.target.value)}>
           <option value="all">All evidence</option>
           <option value="primary">Primary</option>
           <option value="secondary">Secondary</option>
         </select>
-        {(cat!=="all"||q||loc!=="all"||actor!=="all"||evid!=="all") &&
+        {(cat!=="all"||q||loc!=="all"||actor!=="all"||mil!=="all"||evid!=="all") &&
           <button className="clearbtn" onClick={clearFilters}>Clear &#10005;</button>}
       </div>
 
@@ -1280,7 +1353,7 @@ function App() {
                 <tr ref={(el) => rowRefs.current[id] = el} className={`clickable ${isOpen ? "expanded" : ""}`} onClick={() => toggleRow(id)}>
                   <td className="num">{String(r.n).padStart(2,"0")}</td>
                   <td className="col-date">{r.date}<span className={`sub sub-${r.cat}`}>{CAT_TAB[r.cat]}</span></td>
-                  <td className="col-loc"><span className="loc-name">{r.location}</span></td>
+                  <td className="col-loc"><span className="loc-name">{r.location}</span><span className={`milbadge mil-${r.milstatus}`}>{MIL_LABEL[r.milstatus]}</span></td>
                   <td className="col-event">{r.event}{r.quote && <blockquote>{r.quote}</blockquote>}</td>
                   <td className="col-actor">
                     {(r.actorType||[]).map((p) => <span key={p} className={`chip ${p}`}>{ACTOR_LABEL[p]||p}</span>)}
