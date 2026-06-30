@@ -1,0 +1,1525 @@
+[
+ {
+  "cat": "settlement",
+  "date": "1919-12-12",
+  "year": 1919,
+  "location": "Tel Hai (Galilee Panhandle)",
+  "event": "One Jewish man killed; same-day they assaulted/looted the Christian village of Abil al-Qamh",
+  "quote": "That day the marauders also fired on the nearby Jewish settlement of Tel Hai and killed a man.",
+  "perp": "Bedouin marauders loosely allied with Faisal's Damascus regime (Mahmud al-Fa'ur's tribesmen)",
+  "actorType": [
+   "bedouin"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "One Jewish man killed; same-day they assaulted/looted the Christian village of Abil al-Qamh",
+  "pretext": "Panhandle no-man's-land contest between British/French zones; Bedouin pressing for regional control, armed by Faisal",
+  "src": "Morris 2001 p.90 (Righteous Victims; page est., extract unpaginated)",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "That day the marauders also fired on the nearby Jewish settlement of Tel Hai and killed a man."
+   }
+  ],
+  "searchTerms": [],
+  "n": 1
+ },
+ {
+  "cat": "ambush",
+  "date": "1920-02 (early)",
+  "year": 1920,
+  "location": "Tel Hai (Galilee Panhandle)",
+  "event": "One Tel Hai man killed, despite Kalvaryski's January assurances from Faisal's tribal chieftain Mahmud al-Fa'ur",
+  "quote": "The remaining settlers resumed work in the fields; but early in February a Tel Hai man was killed by marauders.",
+  "perp": "Bedouin/local marauders",
+  "actorType": [
+   "bedouin"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "One Tel Hai man killed, despite Kalvaryski's January assurances from Faisal's tribal chieftain Mahmud al-Fa'ur",
+  "pretext": "Continued panhandle marauding after settlers resumed fieldwork on the strength of safe-passage promises",
+  "src": "Morris 2001 p.90 (Righteous Victims; page est., extract unpaginated)",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "The remaining settlers resumed work in the fields; but early in February a Tel Hai man was killed by marauders."
+   }
+  ],
+  "searchTerms": [],
+  "n": 1
+ },
+ {
+  "cat": "ambush",
+  "date": "1920-06-10",
+  "year": 1920,
+  "location": "Yesod Hama'ala (Galilee)",
+  "event": "One farmer murdered despite a British army platoon being stationed in the moshava",
+  "quote": "Almost two months later, on June 10, marauders murdered a farmer from Yesod Hama'ala, despite the presence in the moshava of a British army platoon.",
+  "perp": "Arab marauders",
+  "actorType": [
+   "bedouin"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "One farmer murdered despite a British army platoon being stationed in the moshava",
+  "pretext": "Continuation of the Galilee/Jordan Valley border raiding",
+  "src": "Morris 2001 p.94 (Righteous Victims; page est., extract unpaginated)",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Almost two months later, on June 10, marauders murdered a farmer from Yesod Hama'ala, despite the presence in the moshava of a British army platoon.129 But the focus of Arab violence against the Jews in 1920 was to be Jerusalem."
+   }
+  ],
+  "searchTerms": [],
+  "n": 2
+ },
+ {
+  "cat": "riot",
+  "date": "1920-04-04/07",
+  "year": 1920,
+  "location": "Jerusalem (Old City Jewish Quarter & Jaffa Road)",
+  "event": "Three days of pogrom-like rioting; six Jews killed, a number raped, 200+ injured, synagogues & much property destroyed; ~300 isolated Jews evacuated from Old City",
+  "quote": "In a number of cases Arabs protected their Jewish neighbors, but six Jews were killed, a number raped, more than two hundred injured, and much property, including several synagogues, was destroyed.",
+  "perp": "Arab Nabi Musa pilgrims/mob (Hebronite pilgrims led the rampage); organized partly by al-Nadi al-Arabi; incited by Musa Kazim al-Husseini, ‘Arif al-‘Arif, Hajj Amin al-Husseini",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "6 killed, 200+ wounded",
+  "scaleBig": "6",
+  "scaleNote": "Three days of pogrom-like rioting; six Jews killed, a number raped, 200+ injured, synagogues & much property destroyed; ~300 isolated Jews evacuated from Old City",
+  "pretext": "Nabi Musa/Esther/Passover pilgrimage; cheers for 'King' Faisal and Arab independence; cry of 'Itbah al-Yahud'; rumor that 1,600 Jews had died in the northern (Tel Hai) skirmishes; Arab sense that 'the Government is with us'",
+  "src": "Morris 2001 p.96 (Righteous Victims; page est., extract unpaginated)",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "In a number of cases Arabs protected their Jewish neighbors, but six Jews were killed, a number raped, more than two hundred injured, and much property, including several synagogues, was destroyed.137 Several Arabs were also killed and dozens injured by British troops and police and by Jewish defenders.138 The"
+   }
+  ],
+  "searchTerms": [],
+  "n": 1
+ },
+ {
+  "cat": "riot",
+  "date": "1920-03-08",
+  "year": 1920,
+  "location": "Most of Palestine's towns",
+  "event": "Second wave of protests; 'a number of Jews were assaulted' (count unspecified); chants of 'Kill the Jews' (Itbah al-Yahud)",
+  "quote": "A second wave of protests in most of Palestine's towns, in which a number of Jews were assaulted, took place on March 8.",
+  "perp": "Arab demonstrators",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "0 killed",
+  "scaleBig": "0",
+  "scaleNote": "Second wave of protests; 'a number of Jews were assaulted' (count unspecified); chants of 'Kill the Jews' (Itbah al-Yahud)",
+  "pretext": "Bols's 27 Feb statement that Britain would implement the Balfour Declaration; Faisal's 7 Mar proclamation as king of Syria/Palestine; news of the panhandle evacuation",
+  "src": "Morris 2001 p.95 (Righteous Victims; page est., extract unpaginated)",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "At home the announcement prompted coordinated demonstrations, shop closures, petitions, and placards reading “Down with Zionism” and “Death to the Jews.” A second wave of protests in most of Palestine's towns, in which a number of Jews were assaulted, took place on March 8."
+   }
+  ],
+  "searchTerms": [],
+  "n": 2
+ },
+ {
+  "cat": "settlement",
+  "date": "1920-04-27",
+  "year": 1920,
+  "location": "Ayelet HaShahar (Galilee)",
+  "event": "~100 attackers surrounded the ~30-defender settlement and opened fire; withdrew after three hours leaving one of their own dead; no settler hit",
+  "quote": "The Arabs withdrew three hours later, leaving one dead behind; none of the settlers was hit.",
+  "perp": "~100 Arabs of the ‘Arab al-Heib and ‘Arab al-Kirad tribes and from the Golan",
+  "actorType": [
+   "bedouin"
+  ],
+  "scale": "0 killed, 0 wounded",
+  "scaleBig": "0",
+  "scaleNote": "~100 attackers surrounded the ~30-defender settlement and opened fire; withdrew after three hours leaving one of their own dead; no settler hit",
+  "pretext": "Part of the Feb–April 1920 cross-border Bedouin raiding in the Galilee/Jordan Valley",
+  "src": "Morris 2001 p.94 (Righteous Victims; page est., extract unpaginated)",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "A serious attack took place on April 27 against Ayelet HaShahar."
+   }
+  ],
+  "searchTerms": [],
+  "n": 2
+ },
+ {
+  "cat": "settlement",
+  "date": "1920-02/03",
+  "year": 1920,
+  "location": "Jordan Valley / Syrian-Palestinian border S of Lake Hula (Rosh Pina, Yesod Hama'ala)",
+  "event": "SUMMARY/PATTERN row: repeated cross-border raiding — field hands ambushed, livestock killed/stolen, settlements fired upon; no aggregate toll given",
+  "quote": "During February and March there were frequent depredations by Arab villagers and Bedouin bands along the Syrian-Palestinian border south of Lake Hula. Armed marauders regularly crossed the border from the Golan into the Jordan Valley, Jewish field hands were ambushed, farm animals killed or stolen, settlements—Rosh Pina and Yesod Hama'ala—fired upon.",
+  "perp": "Arab villagers and Bedouin bands crossing from the Golan",
+  "actorType": [
+   "bedouin"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "SUMMARY/PATTERN row: repeated cross-border raiding — field hands ambushed, livestock killed/stolen, settlements fired upon; no aggregate toll given",
+  "pretext": "Cross-border raiding amid the Faisal-French struggle and the news of the panhandle evacuation",
+  "src": "Morris 2001 p.94 (Righteous Victims; page est., extract unpaginated)",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": true,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "The Jewish defeat in the panhandle helped fan these winds; in Arab Jerusalem, for example, there was a rumor that sixteen hundred Jews had died in the skirmishes in the North.128 During February and March there were frequent depredations by Arab villagers and Bedouin bands along the Syrian-Palestinian border south of Lake Hula."
+   }
+  ],
+  "searchTerms": [],
+  "n": 3
+ },
+ {
+  "cat": "massacre",
+  "date": "1921-05-01",
+  "year": 1921,
+  "location": "Jaffa (Ajami quarter) — immigrants' hostel",
+  "event": "The worst violence of the day: mob attack on the immigrants' hostel; victims shot, stabbed and bludgeoned; near-simultaneity with the Manshiya outbreak led Zionist leaders to conclude the violence was premeditated; British army arrived only in late afternoon",
+  "quote": "The worst violence that day was a mob attack, in which Arab policemen participated, against an immigrants' hostel in Jaffa's Ajami quarter, where thirteen Jews were killed and twenty-six wounded—shot, stabbed, and bludgeoned.",
+  "perp": "Arab mob, with Arab policemen participating",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "13 killed, 26 wounded",
+  "scaleBig": "13",
+  "scaleNote": "The worst violence of the day: mob attack on the immigrants' hostel; victims shot, stabbed and bludgeoned; near-simultaneity with the Manshiya outbreak led Zionist leaders to conclude the violence was premeditated; British army arrived only in late afternoon",
+  "pretext": "",
+  "src": "Morris 2001 pp.99-104",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "The worst violence that day was a mob attack, in which Arab policemen participated, against an immigrants' hostel in Jaffa's Ajami quarter, where thirteen Jews were killed and twenty-six wounded—shot, stabbed, and bludgeoned.167 The attack occurred more or less simultaneously with the outbreak in Manshiya, which led the Zionist leaders to conclude that the violence had been premeditated."
+   }
+  ],
+  "searchTerms": [],
+  "n": 1
+ },
+ {
+  "cat": "massacre",
+  "date": "1921-05-02",
+  "year": 1921,
+  "location": "Abu Kabir (Jaffa suburb) — orange grove",
+  "event": "Rioters murdered six Jews in an orange grove; among the victims was the Second Aliyah novelist Yosef Chaim Brenner",
+  "quote": "On May 2, in the Jaffa suburb of Abu Kabir, rioters murdered six Jews in an orange grove. One of the victims was Yosef Chaim Brenner.",
+  "perp": "Arab rioters",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "6 killed",
+  "scaleBig": "6",
+  "scaleNote": "Rioters murdered six Jews in an orange grove; among the victims was the Second Aliyah novelist Yosef Chaim Brenner",
+  "pretext": "Continuation/spread of the Jaffa riots, encouraged by the government's weak response and the poor showing of the Jewish self-defense groups",
+  "src": "Morris 2001 pp.99-104",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "On May 2, in the Jaffa suburb of Abu Kabir, rioters murdered six Jews in an orange grove."
+   }
+  ],
+  "searchTerms": [],
+  "n": 2
+ },
+ {
+  "cat": "riot",
+  "date": "1921-11",
+  "year": 1921,
+  "location": "Jerusalem (Balfour Day clashes; locality not named by Morris)",
+  "event": "Clashes during the Jewish celebration of the fourth anniversary of the Balfour Declaration; 5 Jews and 3 Arabs killed",
+  "quote": "Clashes in November during the celebration of the fourth anniversary of the Balfour Declaration left 5 Jews and 3 Arabs dead.",
+  "perp": "Arab rioters",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "5 killed",
+  "scaleBig": "5",
+  "scaleNote": "Clashes during the Jewish celebration of the fourth anniversary of the Balfour Declaration; 5 Jews and 3 Arabs killed",
+  "pretext": "Jewish celebration of the fourth anniversary of the Balfour Declaration (2 November 1917)",
+  "src": "Morris 2001 p.104",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "wounded in the violence.170 Clashes in November during the celebration of the fourth anniversary of the Balfour Declaration left 5 Jews and 3 Arabs dead.171 The massive violence of 1921 left an ineradicable impression on the Zionists, driving home the precariousness of their enterprise."
+   }
+  ],
+  "searchTerms": [],
+  "n": 3
+ },
+ {
+  "cat": "settlement",
+  "date": "1921-05-05",
+  "year": 1921,
+  "location": "Petach Tikva",
+  "event": "Well-organized dawn assault simultaneously from north and south; defenders held off the mostly-unarmed 2,000-3,000 attackers for hours until a British relief column with machine guns, an RAF aircraft and armored cars turned the tide; four Petach Tikva defenders and twenty-eight Arabs died",
+  "quote": "East of Tel Aviv, in Petach Tikva, a well-organized assault by villagers and Bedouin tribesmen came at dawn on May 5, simultaneously from the north and the south.",
+  "perp": "Villagers and Bedouin tribesmen (2,000-3,000 attackers); preplanned, led by militant younger Palestinian leaders",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "4 killed",
+  "scaleBig": "4",
+  "scaleNote": "Well-organized dawn assault simultaneously from north and south; defenders held off the mostly-unarmed 2,000-3,000 attackers for hours until a British relief column with machine guns, an RAF aircraft and armored cars turned the tide; four Petach Tikva defenders and twenty-eight Arabs died",
+  "pretext": "Spread of the Jaffa riots; Morris notes this assault was 'in some measure preplanned'",
+  "src": "Morris 2001 pp.99-104",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "East of Tel Aviv, in Petach Tikva, a well-organized assault by villagers and Bedouin tribesmen came at dawn on May 5, simultaneously from the north and the south."
+   }
+  ],
+  "searchTerms": [],
+  "n": 4
+ },
+ {
+  "cat": "settlement",
+  "date": "1921-05-06",
+  "year": 1921,
+  "location": "Hadera (moshava)",
+  "event": "Hundreds of Arabs advancing from the southeast set alight a few houses before British intervention (two aircraft dropping bombs and strafing, plus an armored car) routed the mob; 'No Jews were hurt'",
+  "quote": "The following day, May 6, hundreds of Arabs from Tulkarm and the surrounding villages attacked the moshava of Hadera... No Jews were hurt.",
+  "perp": "Hundreds of Arabs from Tulkarm and surrounding villages",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "0 killed, 0 wounded",
+  "scaleBig": "0",
+  "scaleNote": "Hundreds of Arabs advancing from the southeast set alight a few houses before British intervention (two aircraft dropping bombs and strafing, plus an armored car) routed the mob; 'No Jews were hurt'",
+  "pretext": "Spread of the Jaffa riots (Hadera-Tulkarm area was the secondary focus of the outbreak)",
+  "src": "Morris 2001 pp.99-104",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "The following day, May 6, hundreds of Arabs from Tulkarm and the surrounding villages attacked the moshava of Hadera."
+   }
+  ],
+  "searchTerms": [],
+  "n": 5
+ },
+ {
+  "cat": "settlement",
+  "date": "1921-05-06",
+  "year": 1921,
+  "location": "Rehovot",
+  "event": "Attack by several thousand Ramle inhabitants repulsed without any Jewish casualties — the only locality where the Haganah (mostly ex-Jewish Legion) was effectively deployed, and the only one repulsed without British help",
+  "quote": "Another attack, by several thousand inhabitants of Ramle shouting, \"Itbah al-Yahud,\" was launched that day against Rehovot.",
+  "perp": "Several thousand inhabitants of Ramle, shouting 'Itbah al-Yahud'",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "0 killed, 0 wounded",
+  "scaleBig": "0",
+  "scaleNote": "Attack by several thousand Ramle inhabitants repulsed without any Jewish casualties — the only locality where the Haganah (mostly ex-Jewish Legion) was effectively deployed, and the only one repulsed without British help",
+  "pretext": "Spread of the Jaffa riots",
+  "src": "Morris 2001 pp.99-104",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Another attack, by several thousand inhabitants of Ramle shouting, “Itbah al-Yahud,” was launched that day against Rehovot."
+   }
+  ],
+  "searchTerms": [],
+  "n": 6
+ },
+ {
+  "cat": "riot",
+  "date": "1921-05-01/1921-05-07",
+  "year": 1921,
+  "location": "Jaffa + five Jewish rural settlements (SUMMARY ROW — aggregate Mandate-government total)",
+  "event": "AGGREGATE 1-7 May 1921 toll (Survey of Palestine official figure): Jaffa town attacks plus Arab raids on five Jewish rural settlements; 47 Jews killed and 146 wounded 'mostly by Arabs', vs 48 Arabs killed and 73 wounded 'mostly by police and military action'. Morris gives the same totals (47 Jews / 48 Arabs killed; 146 / 73 wounded)",
+  "quote": "Arabs of Jaffa murderously attacked Jewish inhabitants of the town and Arab raids were made on five Jewish rural settlements... Forty-seven Jews were killed and 146 wounded, mostly by Arabs, and 48 Arabs were killed and 73 wounded, mostly by police and military action.",
+  "perp": "Arabs of Jaffa and surrounding villages/towns (Tulkarm, Ramle, Bedouin)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "47 killed, 146 wounded",
+  "scaleBig": "47",
+  "scaleNote": "AGGREGATE 1-7 May 1921 toll (Survey of Palestine official figure): Jaffa town attacks plus Arab raids on five Jewish rural settlements; 47 Jews killed and 146 wounded 'mostly by Arabs', vs 48 Arabs killed and 73 wounded 'mostly by police and military action'. Morris gives the same totals (47 Jews / 48 Arabs killed; 146 / 73 wounded)",
+  "pretext": "Haycraft Commission (Cmd. 1540, Oct 1921) found the fundamental cause to be 'a feeling among the Arabs of discontent with, and hostility to, the Jews, due to political and economic causes, and connected with Jewish immigration'; outbreak followed the anti-Zionist resolutions of the Palestinian Congress",
+  "src": "Survey of Palestine 1946 p.18; Morris 2001 p.104",
+  "srcType": "secondary",
+  "wave": "1920–21 riots",
+  "aggregate": true,
+  "passages": [
+   {
+    "file": "survey_of_palestine_complete_edition_1946",
+    "text": "Forty-seven Jews were killed and 146 wounded, mostly by Arabs, and 48 Arabs were killed and 73 wounded, mostly by police and military action."
+   }
+  ],
+  "searchTerms": [],
+  "n": 4
+ },
+ {
+  "cat": "other",
+  "date": "1922-1928",
+  "year": 1922,
+  "location": "Palestine (nationwide)",
+  "event": "CONTEXT ROW (not an attack): the sources attest NO discrete Arab-on-Jewish attack incidents for 1922-1928. Survey of Palestine frames it 'Period III. 1924-1928. A period of consolidation and comparative tranquility... years of political quiescence and of improved security conditions.' Morris: 'years of political tranquillity' (1921-1929). The only break is the Sept 1928 Wall screen incident.",
+  "quote": "Between the summer of 1921 and the summer of 1929 Britain tried to turn Palestine into a unified, working political entity... but these were also years of political tranquillity.",
+  "perp": "—",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "0 killed, 0 wounded",
+  "scaleBig": "0",
+  "scaleNote": "CONTEXT ROW (not an attack): the sources attest NO discrete Arab-on-Jewish attack incidents for 1922-1928. Survey of Palestine frames it 'Period III. 1924-1928. A period of consolidation and comparative tranquility... years of political quiescence and of improved security conditions.' Morris: 'years of political tranquillity' (1921-1929). The only break is the Sept 1928 Wall screen incident.",
+  "pretext": "",
+  "src": "Morris 2001 (Righteous Victims) p.~109; Survey of Palestine 1946 p.22",
+  "srcType": "secondary",
+  "wave": "interwar",
+  "aggregate": true,
+  "passages": [],
+  "searchTerms": [],
+  "n": 1
+ },
+ {
+  "cat": "other",
+  "date": "October 1928 onward",
+  "year": 1928,
+  "location": "Wailing Wall, Old City, Jerusalem",
+  "event": "Husseini's Oct 1928 campaign: new construction next to and atop the Wall; bricks fell on worshippers; mules driven through the prayer area dropping excrement; muezzins amplified calls to prayer to disrupt Jewish worship.",
+  "quote": "Bricks occasionally fell on the Jewish worshippers below; mules were driven through their praying area, often dropping excrement; and the Temple Mount muazzins... turned up the volume on their calls to prayer.",
+  "perp": "Hajj Amin al-Husseini / Supreme Muslim Council",
+  "actorType": [
+   "rebel-husayni"
+  ],
+  "scale": "0 killed",
+  "scaleBig": "0",
+  "scaleNote": "Husseini's Oct 1928 campaign: new construction next to and atop the Wall; bricks fell on worshippers; mules driven through the prayer area dropping excrement; muezzins amplified calls to prayer to disrupt Jewish worship.",
+  "pretext": "Husseini's campaign asserting Muslim ownership of the Wall, in response to the Jewish 'national honor' campaign over the removed screen",
+  "src": "Morris 2001 (Righteous Victims) p.~112",
+  "srcType": "secondary",
+  "wave": "interwar",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Bricks occasionally fell on the Jewish worshippers below; mules were driven through their praying area, often dropping excrement; and the Temple Mount muazzins (criers) turned up the volume on their calls to prayer.227 The government fa"
+   }
+  ],
+  "searchTerms": [],
+  "n": 2
+ },
+ {
+  "cat": "massacre",
+  "date": "1929-08-23/24",
+  "year": 1929,
+  "location": "Hebron",
+  "event": "Aug 23: rioters broke into the yeshiva and murdered the lone student. Aug 24: mob slaughtered inhabitants of Jewish homes; Police Chief Cafferata + a Jewish policeman shot 8 rioters; Arab police fired only into the air. Hundreds of Jews saved by Arab neighbors; survivors evacuated Aug 26. Morris: 'about sixty'; conventional figure ~67.",
+  "quote": "On Friday, August 23, rioters broke into the yeshiva in Hebron and murdered the lone student they found there.",
+  "perp": "Hebron Arab mob; Arab policeman Issa Sherif of Jaffa (in mufti) implicated; convicted ringleaders ʿAta Ahmad al-Zayr & Muhammad Khalil Abu Jumjum (executed 17 Jun 1930, per Porath p.5); per Cohen, Maraqa-clan members involved",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "~60 killed",
+  "scaleBig": "60",
+  "scaleNote": "Aug 23: rioters broke into the yeshiva and murdered the lone student. Aug 24: mob slaughtered inhabitants of Jewish homes; Police Chief Cafferata + a Jewish policeman shot 8 rioters; Arab police fired only into the air. Hundreds of Jews saved by Arab neighbors; survivors evacuated Aug 26. Morris: 'about sixty'; conventional figure ~67.",
+  "pretext": "Western Wall dispute; SMC/Husseini incitement and rumors of Jewish designs on Islamic holy sites. Haganah had offered Aug 20 to defend or evacuate the ~600 Jews; community declined, trusting the town's aʿyan.",
+  "src": "Morris 2001 p.115",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Altogether about sixty Jews were killed."
+   }
+  ],
+  "searchTerms": [],
+  "n": 3
+ },
+ {
+  "cat": "massacre",
+  "date": "1929-08",
+  "year": 1929,
+  "location": "Hebron & Safed — corroboration (Arab-side framing + convicted perpetrators)",
+  "event": "CORROBORATION ROW (no separate toll): Porath records Hebron and Safed as the places 'where defenceless Jews had been butchered mercilessly'; of ~1,300 tried and 28 sentenced to death, 26 were Arabs implicated in the Safed/Hebron massacres; only the 3 named ringleaders were ultimately executed. Tolls captured in the dedicated Hebron and Safed rows above.",
+  "quote": "the AE took pains to avoid any possibility that Arabs would support the Jewish claims ... places such as Hebron and Safed where defenceless Jews had been butchered mercilessly.",
+  "perp": "Arab mobs; the High Commissioner upheld death sentences on three 'most cruel murderers' — ʿAta Ahmad al-Zayr and Muhammad Khalil Abu Jumjum of Hebron, and Fuʾad Hijazi of Safed (hanged 17 Jun 1930)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "CORROBORATION ROW (no separate toll): Porath records Hebron and Safed as the places 'where defenceless Jews had been butchered mercilessly'; of ~1,300 tried and 28 sentenced to death, 26 were Arabs implicated in the Safed/Hebron massacres; only the 3 named ringleaders were ultimately executed. Tolls captured in the dedicated Hebron and Safed rows above.",
+  "pretext": "Western Wall dispute; SMC/Husseini incitement.",
+  "src": "Porath 1977 p.3",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "porath_palestinian_arab_national_movement_vol_2_1929-1939_1977",
+    "text": "f violence (including places such as Hebron and Safed where defenceless Jews had been butchered mercilessly),3° 4 THE PALESTINIAN ARAB NATIONAL MOVEMENT the AE took pains to avoid any possibility that Arabs would support the Jewish claims and ordered that a search should be made for any"
+   }
+  ],
+  "searchTerms": [],
+  "n": 4
+ },
+ {
+  "cat": "massacre",
+  "date": "1929-08-29",
+  "year": 1929,
+  "location": "Safed",
+  "event": "Mob charged the Jewish quarter, killing people and burning houses; attack lasted ~20 minutes; British commander killed 2 rioters. 18 Jews dead, ~80 injured; a further 2 died from British police fire two days later; looting/burning lasted >2 days.",
+  "quote": "Eighteen Jews died and about eighty were injured.",
+  "perp": "Arab mob (town of ~10,000 Arabs / 3,000 Jews); convicted ringleader Fuʾad Hijazi (executed 17 Jun 1930, per Porath p.5)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "18 killed, ~80 wounded",
+  "scaleBig": "18",
+  "scaleNote": "Mob charged the Jewish quarter, killing people and burning houses; attack lasted ~20 minutes; British commander killed 2 rioters. 18 Jews dead, ~80 injured; a further 2 died from British police fire two days later; looting/burning lasted >2 days.",
+  "pretext": "Riots spreading from Jerusalem under the Western Wall dispute; SMC rumors (e.g. al-Khader village told Jews had destroyed the Mosque of Omar and killed 500 Muslims).",
+  "src": "Morris 2001 p.116",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Eighteen Jews died and about eighty were injured."
+   }
+  ],
+  "searchTerms": [],
+  "n": 5
+ },
+ {
+  "cat": "other",
+  "date": "16 Aug 1929",
+  "year": 1929,
+  "location": "Wailing Wall, Old City, Jerusalem",
+  "event": "A mass of SMC-organized demonstrators marched from the haram after an inflammatory sermon to the Wall and burned prayer books and supplicatory notes left in the crevices (desecration; immediate spark for the riot week).",
+  "quote": "On Friday, August 16, a mass of SMC-organized demonstrators marched out of the haram after an inflammatory sermon, to the Western Wall, where they proceeded to burn prayer books, as well as supplicatory notes left in the Wall's crevices.",
+  "perp": "SMC-organized demonstrators",
+  "actorType": [
+   "rebel-husayni"
+  ],
+  "scale": "0 killed",
+  "scaleBig": "0",
+  "scaleNote": "A mass of SMC-organized demonstrators marched from the haram after an inflammatory sermon to the Wall and burned prayer books and supplicatory notes left in the crevices (desecration; immediate spark for the riot week).",
+  "pretext": "Following the Aug 14-15 Jewish demonstrations at the Wall ('The Wall is ours') and a baton-carrying Betar march",
+  "src": "Morris 2001 (Righteous Victims) p.~112",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "am after an inflammatory sermon, to the Western Wall, where they proceeded to burn prayer books, as well as supplicatory notes left in the Wall's crevices.231 Responding to Jewish protests, the acting high commissioner, Chief Secretary Harry Luke, declared that “no prayer bo"
+   }
+  ],
+  "searchTerms": [],
+  "n": 3
+ },
+ {
+  "cat": "riot",
+  "date": "1929-08-23/24",
+  "year": 1929,
+  "location": "Jerusalem (Old City, Jaffa Gate, Jaffa Street, outlying neighborhoods)",
+  "event": "Jews killed at Jaffa Gate (British made only half-hearted rescue, none opened fire); shops burned on Jaffa Street; simultaneous sniping on outlying neighborhoods. By the 24th, 17 Jews dead in and around Jerusalem.",
+  "quote": "By the 24th, seventeen Jews had been killed in and around Jerusalem.",
+  "perp": "Several thousand rioters emerging from al-Haram al-Sharif after Friday prayers; Arab villagers armed with sticks/knives; some Arab policemen joining the mobs; gunmen sniping outlying neighborhoods",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "17 killed",
+  "scaleBig": "17",
+  "scaleNote": "Jews killed at Jaffa Gate (British made only half-hearted rescue, none opened fire); shops burned on Jaffa Street; simultaneous sniping on outlying neighborhoods. By the 24th, 17 Jews dead in and around Jerusalem.",
+  "pretext": "Western Wall dispute; SMC/Husseini incitement; orchestrated rumors that Jews intended to march on the haram and had attacked Arabs ('raped the women and murdered widows and babies').",
+  "src": "Morris 2001 p.114",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "By the 24th, seventeen Jews had been killed in and around Jerusalem.239 Outside the area horrible massacres took place in the two most devout Muslim towns, Hebron and Safad, which had small, Orthodox (and unarmed) Jewish communities."
+   }
+  ],
+  "searchTerms": [],
+  "n": 5
+ },
+ {
+  "cat": "riot",
+  "date": "1929-08-25",
+  "year": 1929,
+  "location": "Tel Aviv-Jaffa (southern neighborhoods)",
+  "event": "Attack on Tel Aviv's southern neighborhoods; British police killed 6 rioters, wounded dozens; Haganah exchanged fire with snipers along the southern seam — in one incident 4 Haganah men killed, 5 wounded. (A Haganah unit then raided an Arab house killing 4 — a Jewish reprisal, excluded.)",
+  "quote": "In one incident four Haganah men were killed and five wounded.",
+  "perp": "A couple of thousand Arab youngsters; Arab snipers",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "4 killed, 5 wounded",
+  "scaleBig": "4",
+  "scaleNote": "Attack on Tel Aviv's southern neighborhoods; British police killed 6 rioters, wounded dozens; Haganah exchanged fire with snipers along the southern seam — in one incident 4 Haganah men killed, 5 wounded. (A Haganah unit then raided an Arab house killing 4 — a Jewish reprisal, excluded.)",
+  "pretext": "Western Wall dispute; countrywide spread of the riots. Local aʿyan, aware of Jewish strength, had warned against trouble (one notable beaten by zealots for urging calm).",
+  "src": "Morris 2001 p.116",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "In one incident four Haganah men were killed and five wounded."
+   }
+  ],
+  "searchTerms": [],
+  "n": 6
+ },
+ {
+  "cat": "riot",
+  "date": "1929-08-25/27",
+  "year": 1929,
+  "location": "Haifa",
+  "event": "Clashes Aug 25, peaking Aug 26-27; rioters attacked a Jewish neighborhood Aug 27; much Jewish property burned. Haganah squads blocked most encroachments; British sailors separated the communities. Jewish toll not specified.",
+  "quote": "On August 27, rioters attacked a Jewish neighborhood. Four hundred British sailors took up positions along the seams between the two communities and put an end to the attacks, though much Jewish property was burned.",
+  "perp": "Haifa Arab rioters + villagers from Tira",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Clashes Aug 25, peaking Aug 26-27; rioters attacked a Jewish neighborhood Aug 27; much Jewish property burned. Haganah squads blocked most encroachments; British sailors separated the communities. Jewish toll not specified.",
+  "pretext": "Nationwide spread of the 1929 Wall-crisis riots.",
+  "src": "Morris 2001 p.116",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "On August 27, rioters attacked a Jewish neighborhood."
+   }
+  ],
+  "searchTerms": [],
+  "n": 7
+ },
+ {
+  "cat": "riot",
+  "date": "17 Aug 1929",
+  "year": 1929,
+  "location": "Bukharan Quarter, Jerusalem",
+  "event": "First fatality of the crisis: a brawl left one Jew dead; the Aug 20 funeral became a mass demonstration punctuated by cries for vengeance.",
+  "quote": "The following day, a brawl in Jerusalem's Bukharan Quarter left one Jew dead.",
+  "perp": "Arab crowd",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "First fatality of the crisis: a brawl left one Jew dead; the Aug 20 funeral became a mass demonstration punctuated by cries for vengeance.",
+  "pretext": "Tension following the Aug 16 prayer-book burning at the Wall",
+  "src": "Morris 2001 (Righteous Victims) p.~112",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "urnt but only pages of prayer books.”232 The following day, a brawl in Jerusalem's Bukharan Quarter left one Jew dead."
+   }
+  ],
+  "searchTerms": [],
+  "n": 8
+ },
+ {
+  "cat": "settlement",
+  "date": "1929-08",
+  "year": 1929,
+  "location": "Motza (west of Jerusalem)",
+  "event": "Settlement raided; the Makleff family on the settlement's edge largely killed (son Mordechai survived); other houses looted after inhabitants fled. Neighboring Emeq Arazim, Migdal-Eder, Kfar Uriah, Har-Tuv also abandoned (Har-Tuv after a fight), homes burned.",
+  "quote": "Motza, west of Jerusalem, was raided by Arabs who killed most of the Makleff family, whose house was on the edge of the settlement... and looted other houses after the inhabitants fled.",
+  "perp": "Arabs from surrounding area",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "most of Makleff family (count not given by source) killed",
+  "scaleBig": "—",
+  "scaleNote": "Settlement raided; the Makleff family on the settlement's edge largely killed (son Mordechai survived); other houses looted after inhabitants fled. Neighboring Emeq Arazim, Migdal-Eder, Kfar Uriah, Har-Tuv also abandoned (Har-Tuv after a fight), homes burned.",
+  "pretext": "1929 Wall-crisis riots spreading to rural Judean Hills settlements.",
+  "src": "Morris 2001 p.116",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Motza, west of Jerusalem, was raided by Arabs who killed most of the Makleff family, whose house was on the edge of the settlement (though one son, Mordechai, survived to become, twenty-three years later, the third chief of the general staff of the IDF), and looted other houses after the inhabitants fled."
+   }
+  ],
+  "searchTerms": [],
+  "n": 7
+ },
+ {
+  "cat": "settlement",
+  "date": "1929-08-23/29",
+  "year": 1929,
+  "location": "Har-Tuv (Judean Hills)",
+  "event": "Settlement attacked and abandoned 'after a fight'; homes burned to the ground. Cohen (from Battir mukhtar 'Naʿaman' testimony to the Shaw Commission) names Sami al-Husseini as planner/executor.",
+  "quote": "He reported, among other things, that the planner and executor of the attack was Sami al-Husseini, the son of the chairman of the Arab Executive Committee, Musa Kazem al-Husseini.",
+  "perp": "Arab villagers; per Cohen, planned and executed by Sami al-Husseini, son of Arab Executive chairman Musa Kazem al-Husseini",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "0 killed",
+  "scaleBig": "0",
+  "scaleNote": "Settlement attacked and abandoned 'after a fight'; homes burned to the ground. Cohen (from Battir mukhtar 'Naʿaman' testimony to the Shaw Commission) names Sami al-Husseini as planner/executor.",
+  "pretext": "Western Wall dispute; SMC/Husseini incitement of the villages.",
+  "src": "Cohen 2008 p.22",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+    "text": "He reported, among other things, that the planner and executor of the attack was Sami al-Husseini, the son of the chairman of the Arab Executive Committee, Musa Kazem al-Husseini."
+   }
+  ],
+  "searchTerms": [],
+  "n": 8
+ },
+ {
+  "cat": "settlement",
+  "date": "~Aug 1929",
+  "year": 1929,
+  "location": "Emeq Arazim, Migdal-Eder, Kfar Uriah, Har-Tuv (Judean Hills); Be'er Tuvia (south)",
+  "event": "Four small Judean Hills settlements abandoned (Har-Tuv after a fight); homes of Emeq Arazim, Migdal-Eder and Kfar Uriah burned to the ground; Be'er Tuvia also abandoned. Inhabitants of three were protected by friendly Arab neighbors. No Jewish death toll specified.",
+  "quote": "Four other small Judean Hills settlements—Emeq Arazim, next to Motza, Migdal-Eder, Kfar Uriah, and Har-Tuv—were also abandoned, Har-Tuv after a fight.",
+  "perp": "Arab villagers",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Four small Judean Hills settlements abandoned (Har-Tuv after a fight); homes of Emeq Arazim, Migdal-Eder and Kfar Uriah burned to the ground; Be'er Tuvia also abandoned. Inhabitants of three were protected by friendly Arab neighbors. No Jewish death toll specified.",
+  "pretext": "Spread of the nationwide riots",
+  "src": "Morris 2001 (Righteous Victims) p.~115",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Four other small Judean Hills settlements—Emeq Arazim, next to Motza, Migdal-Eder, Kfar Uriah, and Har-Tuv—were also abandoned, Har-Tuv after a fight; the inhabitants of the other three were protected by friendly Arab neighbors, but their homes were burned to the ground.246 To the west, Kibbutz Khulda put up a spirited defense"
+   }
+  ],
+  "searchTerms": [],
+  "n": 9
+ },
+ {
+  "cat": "settlement",
+  "date": "1929-08",
+  "year": 1929,
+  "location": "Kibbutz Khulda (Hulda)",
+  "event": "Kibbutz mounted a defense against several thousand attackers; members evacuated by British army convoy, homes torched. More than 40 of the Arab attackers killed (by defenders). Jewish toll not specified by source.",
+  "quote": "To the west, Kibbutz Khulda put up a spirited defense against an onslaught of several thousand Arabs, but the members were eventually evacuated by a British army convoy, and their homes were torched.",
+  "perp": "Several thousand Arab attackers",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Kibbutz mounted a defense against several thousand attackers; members evacuated by British army convoy, homes torched. More than 40 of the Arab attackers killed (by defenders). Jewish toll not specified by source.",
+  "pretext": "1929 Wall-crisis riots spreading west to the coastal-plain/Judean settlements.",
+  "src": "Morris 2001 p.116",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "e west, Kibbutz Khulda put up a spirited defense against an onslaught of several thousand Arabs, but the members were eventually evacuated by a British army convoy, and their homes were torched."
+   }
+  ],
+  "searchTerms": [],
+  "n": 10
+ },
+ {
+  "cat": "settlement",
+  "date": "1929-08",
+  "year": 1929,
+  "location": "Be'er Tuvia (Be'er Tuviya)",
+  "event": "Settlement abandoned under attack. (Nearby Gedera saved by timely British arrival Aug 27 as hundreds of villagers assembled 'for the kill.') Jewish toll not specified.",
+  "quote": "Be'er Tuvia was also abandoned. Gedera was saved by the timely arrival on August 27 of British troops as hundreds of villagers assembled for the kill.",
+  "perp": "Arab attackers (southern coastal plain)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Settlement abandoned under attack. (Nearby Gedera saved by timely British arrival Aug 27 as hundreds of villagers assembled 'for the kill.') Jewish toll not specified.",
+  "pretext": "1929 Wall-crisis riots reaching southern settlements.",
+  "src": "Morris 2001 p.116",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Be'er Tuvia was also abandoned."
+   }
+  ],
+  "searchTerms": [],
+  "n": 11
+ },
+ {
+  "cat": "settlement",
+  "date": "1929-08-23/29",
+  "year": 1929,
+  "location": "Jezreel, Jordan & Beisan Valley settlements",
+  "event": "Settlements in the Jezreel, Jordan, and Beisan Valleys came under similar attacks (no per-locality tolls given). Arab police protected Jews in Acre, Lydda and Gaza, restraining hotheads from attacking neighboring settlements.",
+  "quote": "Settlements in the Jezreel, Jordan, and Beisan Valleys came under similar attacks.",
+  "perp": "Arab attackers (general)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Settlements in the Jezreel, Jordan, and Beisan Valleys came under similar attacks (no per-locality tolls given). Arab police protected Jews in Acre, Lydda and Gaza, restraining hotheads from attacking neighboring settlements.",
+  "pretext": "Western Wall dispute; countrywide spread.",
+  "src": "Morris 2001 p.117",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Gedera was saved by the timely arrival on August 27 of British troops as hundreds of villagers assembled for the kill.247 Settlements in the Jezreel, Jordan, and Beisan Valleys came under similar attacks."
+   }
+  ],
+  "searchTerms": [],
+  "n": 12
+ },
+ {
+  "cat": "settlement",
+  "date": "1929-08-23/29",
+  "year": 1929,
+  "location": "Kfar Uriah (Judean Hills)",
+  "event": "One of the small Judean Hills settlements abandoned; inhabitants protected by friendly Arab neighbors, but their homes were burned to the ground.",
+  "quote": "Four other small Judean Hills settlements—Emeq Arazim, next to Motza, Migdal-Eder, Kfar Uriah, and Har-Tuv—were also abandoned.",
+  "perp": "Arab villagers",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "0 killed",
+  "scaleBig": "0",
+  "scaleNote": "One of the small Judean Hills settlements abandoned; inhabitants protected by friendly Arab neighbors, but their homes were burned to the ground.",
+  "pretext": "Western Wall dispute; countrywide spread.",
+  "src": "Morris 2001 p.117",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Four other small Judean Hills settlements—Emeq Arazim, next to Motza, Migdal-Eder, Kfar Uriah, and Har-Tuv—were also abandoned, Har-Tuv after a fight; the inhabitants of the other three were protected by friendly Arab neighbors, but their homes were burned to the ground.246 To the west, Kibbutz Khulda put"
+   }
+  ],
+  "searchTerms": [],
+  "n": 13
+ },
+ {
+  "cat": "settlement",
+  "date": "27 Aug 1929",
+  "year": 1929,
+  "location": "Gedera",
+  "event": "Attempted assault: hundreds of villagers assembled 'for the kill' but Gedera was saved by the timely arrival of British troops on Aug 27.",
+  "quote": "Gedera was saved by the timely arrival on August 27 of British troops as hundreds of villagers assembled for the kill.",
+  "perp": "Hundreds of Arab villagers",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "0 killed",
+  "scaleBig": "0",
+  "scaleNote": "Attempted assault: hundreds of villagers assembled 'for the kill' but Gedera was saved by the timely arrival of British troops on Aug 27.",
+  "pretext": "Spread of the nationwide riots",
+  "src": "Morris 2001 (Righteous Victims) p.~115",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Gedera was saved by the timely arrival on August 27 of British troops as hundreds of villagers assembled for the kill.247 Settlements in the Jezreel, Jordan, and Beisan Valleys came under similar attacks."
+   }
+  ],
+  "searchTerms": [],
+  "n": 14
+ },
+ {
+  "cat": "settlement",
+  "date": "1929-08",
+  "year": 1929,
+  "location": "Ein Zeitim (near Safed)",
+  "event": "Three Jews murdered in the settlement adjacent to Safed during the Safed phase of the riots.",
+  "quote": "Another three Jews were murdered in the nearby settlement of Ein Zeitim.",
+  "perp": "Arab attackers (Safed-area)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "3 killed",
+  "scaleBig": "3",
+  "scaleNote": "Three Jews murdered in the settlement adjacent to Safed during the Safed phase of the riots.",
+  "pretext": "1929 Wall-crisis riots spreading from Safed to nearby settlements.",
+  "src": "Morris 2001 p.116",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Another three Jews were murdered in the nearby settlement of Ein Zeitim.243 In Tel Aviv-Jaffa the Arabs struck on August 25."
+   }
+  ],
+  "searchTerms": [],
+  "n": 15
+ },
+ {
+  "cat": "other",
+  "date": "1929-08-23/29",
+  "year": 1929,
+  "location": "Palestine (countrywide) — SUMMARY ROW",
+  "event": "AGGREGATE TOTAL for the week of disturbances: 133 Jews killed and 339 wounded; 116 Arabs killed and at least 232 wounded (most Arab casualties inflicted by British police/military, not Jews). DO NOT sum with the locality rows above — this is the countrywide total that subsumes them.",
+  "quote": "Altogether, in the week of disturbances, 133 Jews and 116 Arabs were killed and 339 Jews and at least 232 Arabs were wounded.",
+  "perp": "Arab rioting mobs countrywide (SMC/Husseini-incited)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "133 killed, 339 wounded",
+  "scaleBig": "133",
+  "scaleNote": "AGGREGATE TOTAL for the week of disturbances: 133 Jews killed and 339 wounded; 116 Arabs killed and at least 232 wounded (most Arab casualties inflicted by British police/military, not Jews). DO NOT sum with the locality rows above — this is the countrywide total that subsumes them.",
+  "pretext": "Western Wall dispute (Sept 1928 screen incident → Aug 1929 escalation); SMC/Husseini incitement; rumors of Jewish designs on al-Haram al-Sharif.",
+  "src": "Morris 2001 p.117",
+  "srcType": "secondary",
+  "wave": "1929",
+  "aggregate": true,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Arab police officers protected Jews in Acre, Lydda, and Gaza, prevailing on hotheads not to attack neighboring settlements.248 Altogether, in the week of disturbances, 133 Jews and 116 Arabs were killed and 339 Jews and at least 232 Arabs were wounded.249 The Yishuv emerged profoundly shocked: Their shield, the British government, for a long moment had lost control; the Arabs had bared their true feelings and their teeth."
+   }
+  ],
+  "searchTerms": [],
+  "n": 4
+ },
+ {
+  "cat": "ambush",
+  "date": "1931-04-05",
+  "year": 1931,
+  "location": "Kibbutz Yagur (Haifa–Lower Galilee)",
+  "event": "Three Yagur members coming home from the fields killed, four more wounded, during the Nabi Musa festivities. Porath adds a Nahalal member also wounded in this April 1931 opening action. First action of the Qassam/Black Hand raid campaign.",
+  "quote": "On April 5, 1931, during the Nabi Musa festivities, they killed three members of Kibbutz Yagur coming home from the fields and wounded four more.",
+  "perp": "Sheikh 'Izz al-Din al-Qassam's 'Black Hand' network",
+  "actorType": [
+   "qassamite"
+  ],
+  "scale": "3 killed, 4 wounded",
+  "scaleBig": "3",
+  "scaleNote": "Three Yagur members coming home from the fields killed, four more wounded, during the Nabi Musa festivities. Porath adds a Nahalal member also wounded in this April 1931 opening action. First action of the Qassam/Black Hand raid campaign.",
+  "pretext": "Qassamite jihad against the Yishuv; Morris notes many of al-Qassam's men were poor peasants, 'some had lost land or jobs to Jews'; timed to the Nabi Musa festival.",
+  "src": "Morris 2001 p.123 (cf. Porath 1977 pp.134–135)",
+  "srcType": "secondary",
+  "wave": "1930–35",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 3
+ },
+ {
+  "cat": "ambush",
+  "date": "1932-01",
+  "year": 1932,
+  "location": "Balfouriya (Jezreel Valley)",
+  "event": "One settler murdered. Porath dates the Balfouriya and Kfar Hasidim killings to January and March 1932 (does not specify which to which month); part of the 1931-32 Qassamite campaign against Jezreel Valley settlements, field-guards and travellers.",
+  "quote": "The following year, two settlers, one from Balfouriya and the other from Kfar Hassidim, were murdered.",
+  "perp": "Qassam / 'Black Hand' raiders",
+  "actorType": [
+   "qassamite"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "One settler murdered. Porath dates the Balfouriya and Kfar Hasidim killings to January and March 1932 (does not specify which to which month); part of the 1931-32 Qassamite campaign against Jezreel Valley settlements, field-guards and travellers.",
+  "pretext": "Continuation of the Qassamite anti-Yishuv raid campaign in the Shafa-'Amr–Safuriyya / Jezreel area.",
+  "src": "Morris 2001 p.123 (date: Porath 1977 p.134)",
+  "srcType": "secondary",
+  "wave": "1930–35",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 4
+ },
+ {
+  "cat": "ambush",
+  "date": "1932-03",
+  "year": 1932,
+  "location": "Kfar Hasidim (Kfar Hassidim, Haifa area)",
+  "event": "One settler murdered. Paired with Balfouriya in Jan/March 1932 per Porath; part of the 1931-32 Qassamite raid campaign on settlements, field-guards and travellers.",
+  "quote": "The following year, two settlers, one from Balfouriya and the other from Kfar Hassidim, were murdered.",
+  "perp": "Qassam / 'Black Hand' raiders",
+  "actorType": [
+   "qassamite"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "One settler murdered. Paired with Balfouriya in Jan/March 1932 per Porath; part of the 1931-32 Qassamite raid campaign on settlements, field-guards and travellers.",
+  "pretext": "Continuation of the Qassamite anti-Yishuv raid campaign.",
+  "src": "Morris 2001 p.123 (date: Porath 1977 p.134)",
+  "srcType": "secondary",
+  "wave": "1930–35",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 5
+ },
+ {
+  "cat": "bombing",
+  "date": "1932-12-23",
+  "year": 1932,
+  "location": "Moshav Nahalal (western Jezreel Valley)",
+  "event": "A squad penetrated the moshav and threw a bomb into a house, killing a father and son. Arrests/confessions first exposed al-Qassam's organization (he himself was not named); the campaign then went quiet for ~3 years.",
+  "quote": "On December 23, 1932, a squad penetrated Moshav Nahalal at the western edge of the Jezreel Valley, and threw a bomb into a house, killing a father and son.",
+  "perp": "Qassam 'Black Hand' squad (Mustafa Ali Ahmad of Safuriyya hanged; Khalil Muhammad 'Isa / Abu Ibrahim al-Kabir implicated, acquitted)",
+  "actorType": [
+   "qassamite"
+  ],
+  "scale": "2 killed",
+  "scaleBig": "2",
+  "scaleNote": "A squad penetrated the moshav and threw a bomb into a house, killing a father and son. Arrests/confessions first exposed al-Qassam's organization (he himself was not named); the campaign then went quiet for ~3 years.",
+  "pretext": "Culminating action of the 1931-32 Qassamite raid campaign against Jezreel Valley settlements.",
+  "src": "Morris 2001 p.123 (cf. Porath 1977 pp.134–135)",
+  "srcType": "secondary",
+  "wave": "1930–35",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 1
+ },
+ {
+  "cat": "ambush",
+  "date": "1935-11-07",
+  "year": 1935,
+  "location": "Gilboa area (near Kibbutz Ein Harod, Jezreel Valley)",
+  "event": "Qassam's band, having failed to provoke a clash with Ein Harod guards, encountered and killed a Jewish police sergeant in the Gilboa area, triggering a manhunt; al-Qassam and associates killed near Ya'bad Nov 19-21 1935. Immediate lead-up to the Arab Revolt.",
+  "quote": "On November 6 his group killed a Jewish police sergeant in the Gilboa area, triggering a massive manhunt.",
+  "perp": "Sheikh 'Izz al-Din al-Qassam's band (11 men out of Haifa)",
+  "actorType": [
+   "qassamite"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "Qassam's band, having failed to provoke a clash with Ein Harod guards, encountered and killed a Jewish police sergeant in the Gilboa area, triggering a manhunt; al-Qassam and associates killed near Ya'bad Nov 19-21 1935. Immediate lead-up to the Arab Revolt.",
+  "pretext": "al-Qassam's renewal of activity, spurred (per Morris) by the Oct 16 1935 'cement-barrel incident' — discovery at Jaffa port of 800 rifles + 400,000 rounds smuggled to a Jewish importer.",
+  "src": "Morris 2001 p.123 (cf. Porath 1977 p.136)",
+  "srcType": "secondary",
+  "wave": "1930–35",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 6
+ },
+ {
+  "cat": "ambush",
+  "date": "1936-04-15",
+  "year": 1936,
+  "location": "Tulkarm–Nablus road (hill country east of Tulkarm)",
+  "event": "Roadblock; 3 Jewish drivers shot — 'One died on the spot, another died five days later, and the third survived' (Morris = 2 killed). Survey p.34 says 'three Jews were killed'; Porath p.162 refers to 'the two murdered Jews.' Seen as the first victims of the revolt; an Irgun Bet revenge killing of two Arabs near Petah Tikva followed two days later.",
+  "quote": "They then shot three Jewish drivers. One died on the spot, another died five days later, and the third survived. They were later seen as the first victims of the Arab rebellion.",
+  "perp": "armed Arab gang manning a roadblock (extorting 'contributions' from Arab drivers)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "2 killed, 1 wounded",
+  "scaleBig": "2",
+  "scaleNote": "Roadblock; 3 Jewish drivers shot — 'One died on the spot, another died five days later, and the third survived' (Morris = 2 killed). Survey p.34 says 'three Jews were killed'; Porath p.162 refers to 'the two murdered Jews.' Seen as the first victims of the revolt; an Irgun Bet revenge killing of two Arabs near Petah Tikva followed two days later.",
+  "pretext": "",
+  "src": "Morris 2001 p.~129; corrob. Survey of Palestine 1946 p.34 ('hold-up by Arab robbers on the Tulkarm—Nablus road'); Porath 1977 p.162",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 7
+ },
+ {
+  "cat": "ambush",
+  "date": "1936-08",
+  "year": 1936,
+  "location": "Mount Carmel forests (Haifa area)",
+  "event": "Four Jews murdered in the Mount Carmel forests; cited (with the Jaffa nurses and a Tel Aviv child) as the killings that pushed the Haganah briefly off havlaga in mid-August.",
+  "quote": "Only in mid-August, after the murder of the two nurses in Jaffa, four Jews in the Mount Carmel forests, and a child in Tel Aviv, did the Haganah briefly deviate from its policy of passive defense.",
+  "perp": "Arab band (Haifa/Carmel area, ex-Qassam territory)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "4 killed",
+  "scaleBig": "4",
+  "scaleNote": "Four Jews murdered in the Mount Carmel forests; cited (with the Jaffa nurses and a Tel Aviv child) as the killings that pushed the Haganah briefly off havlaga in mid-August.",
+  "pretext": "",
+  "src": "Morris 2001 p.~135",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Only in mid-August, after the murder of the two nurses in Jaffa, four Jews in the Mount Carmel forests, and a child in Tel Aviv, did the Haganah briefly deviate from its policy of passive defense."
+   }
+  ],
+  "searchTerms": [],
+  "n": 8
+ },
+ {
+  "cat": "other",
+  "date": "1936-08-17",
+  "year": 1936,
+  "location": "Jaffa (government hospital)",
+  "event": "Two Jewish nurses working at Jaffa's government hospital murdered. Helped trigger the Haganah's brief mid-August deviation from havlaga.",
+  "quote": "There were also lethal assaults, and on August 17 two Jewish nurses working in Jaffa's government hospital were murdered.",
+  "perp": "Arab assailants (unnamed)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "2 killed",
+  "scaleBig": "2",
+  "scaleNote": "Two Jewish nurses working at Jaffa's government hospital murdered. Helped trigger the Haganah's brief mid-August deviation from havlaga.",
+  "pretext": "",
+  "src": "Morris 2001 p.~130",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "In the course of the rebellion the Arabs uprooted an estimated 200,000 “Jewish” trees.71 There were also lethal assaults, and on August 17 two Jewish nurses working in Jaffa's government hospital were murdered.72 The immediate British response to the unrest was restrained."
+   }
+  ],
+  "searchTerms": [],
+  "n": 5
+ },
+ {
+  "cat": "other",
+  "date": "1936-08",
+  "year": 1936,
+  "location": "Tel Aviv",
+  "event": "A Jewish child murdered in Tel Aviv — one of the mid-August killings that prompted the brief Haganah retaliation.",
+  "quote": "Only in mid-August, after the murder of the two nurses in Jaffa, four Jews in the Mount Carmel forests, and a child in Tel Aviv, did the Haganah briefly deviate from its policy of passive defense.",
+  "perp": "Arab assailant (unnamed)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "A Jewish child murdered in Tel Aviv — one of the mid-August killings that prompted the brief Haganah retaliation.",
+  "pretext": "",
+  "src": "Morris 2001 p.~135",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "Only in mid-August, after the murder of the two nurses in Jaffa, four Jews in the Mount Carmel forests, and a child in Tel Aviv, did the Haganah briefly deviate from its policy of passive defense."
+   }
+  ],
+  "searchTerms": [],
+  "n": 6
+ },
+ {
+  "cat": "riot",
+  "date": "1936-04-19",
+  "year": 1936,
+  "location": "Jaffa",
+  "event": "Opening pogrom of the revolt. Morris: 'killing nine Jews and injuring almost sixty'; Porath p.162: 'killing nine and wounding about ten.' Thousands of Jewish residents of Jaffa fled to Tel Aviv; a British officer killed two rioters.",
+  "quote": "On April 19 mobs of unemployed peasants and migrant workers from Syria, fired by rumors that an Arab woman and three Syrian laborers had been murdered in Tel Aviv, rampaged through Jaffa, killing nine Jews and injuring almost sixty.",
+  "perp": "mobs of unemployed peasants and migrant/day labourers from the Hawran (Syria) and Transjordan; reportedly incited by young a'yan incl. Fakhri Nashashibi",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "9 killed, ~60 wounded",
+  "scaleBig": "9",
+  "scaleNote": "Opening pogrom of the revolt. Morris: 'killing nine Jews and injuring almost sixty'; Porath p.162: 'killing nine and wounding about ten.' Thousands of Jewish residents of Jaffa fled to Tel Aviv; a British officer killed two rioters.",
+  "pretext": "rumors that an Arab woman and three Syrian laborers had been murdered in Tel Aviv (following the 17 Apr funeral-riot beating of Arab passers-by)",
+  "src": "Morris 2001 p.~129; Porath 1977 p.162 ('killing nine and wounding about ten')",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 9
+ },
+ {
+  "cat": "riot",
+  "date": "1936-04-19/21",
+  "year": 1936,
+  "location": "Jaffa–Tel Aviv boundary neighbourhoods",
+  "event": "Two further days of mutual attacks along the boundary; looting and arson of shops/homes. 'Eight more Jews and six Arabs were killed, the latter by police.' Porath p.162-63: 'On 20th April the Arabs again attacked Jews in the quarters between Jaffa and Tel Aviv.'",
+  "quote": "For the next two days Jews and Arabs in neighborhoods on the Jaffa-Tel Aviv boundary attacked one another, looting and setting fire to shops and homes. Eight more Jews and six Arabs were killed, the latter by police.",
+  "perp": "Arab residents of mixed Jaffa/Tel Aviv border quarters",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "8 killed",
+  "scaleBig": "8",
+  "scaleNote": "Two further days of mutual attacks along the boundary; looting and arson of shops/homes. 'Eight more Jews and six Arabs were killed, the latter by police.' Porath p.162-63: 'On 20th April the Arabs again attacked Jews in the quarters between Jaffa and Tel Aviv.'",
+  "pretext": "spillover of the 19 Apr Jaffa riot; reciprocal Jaffa–Tel Aviv clashes",
+  "src": "Morris 2001 p.~129; Porath 1977 p.162-63",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [],
+  "searchTerms": [],
+  "n": 10
+ },
+ {
+  "cat": "sniping",
+  "date": "1936-05-16",
+  "year": 1936,
+  "location": "unspecified in source (amid Jaffa/Haifa urban terror)",
+  "event": "Gunman fired on a Jewish crowd leaving a cinema.",
+  "quote": "On May 16, an Arab fired on a Jewish crowd leaving a movie theater, killing three and wounding two.",
+  "perp": "lone Arab gunman",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "3 killed, 2 wounded",
+  "scaleBig": "3",
+  "scaleNote": "Gunman fired on a Jewish crowd leaving a cinema.",
+  "pretext": "",
+  "src": "Morris 2001 p.~130",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "On May 16, an Arab fired on a Jewish crowd leaving a movie theater, killing three and wounding two."
+   }
+  ],
+  "searchTerms": [],
+  "n": 1
+ },
+ {
+  "cat": "other",
+  "date": "1936-04/10",
+  "year": 1936,
+  "location": "Palestine (nationwide)",
+  "event": "SUMMARY / AGGREGATE — first six months of the revolt (Apr–Oct 1936). Survey official list: Jews 80 killed, 308 wounded (of 314 killed / 1,337 wounded total: 195 Arabs, 21 Defence Forces, 16 police/TJFF, 2 non-Arab Christians). Morris gives the same '~eighty Jews.' Not an individual incident.",
+  "quote": "The official list of casualties during the six months of disturbances gave the following figures :— ... Jews 80 [killed] 308 [wounded].",
+  "perp": "Arab rioters, bands and irregulars (first stage of revolt)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "80 killed, 308 wounded",
+  "scaleBig": "80",
+  "scaleNote": "SUMMARY / AGGREGATE — first six months of the revolt (Apr–Oct 1936). Survey official list: Jews 80 killed, 308 wounded (of 314 killed / 1,337 wounded total: 195 Arabs, 21 Defence Forces, 16 police/TJFF, 2 non-Arab Christians). Morris gives the same '~eighty Jews.' Not an individual incident.",
+  "pretext": "",
+  "src": "Survey of Palestine 1946 p.38 (corrob. Morris 2001 p.~131: 'eighty Jews ... were killed')",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": true,
+  "passages": [
+   {
+    "file": "survey_of_palestine_complete_edition_1946",
+    "text": "The official list of casualties during the six months of disturb- ances gave the following figures :— Killed Wounded Defence Forces 21 104 Police and T.J.F.F."
+   }
+  ],
+  "searchTerms": [],
+  "n": 7
+ },
+ {
+  "cat": "settlement",
+  "date": "1937",
+  "year": 1937,
+  "location": "Kiryat Anavim (Jerusalem Corridor)",
+  "event": "Five workers of kibbutz Kiryat Anavim murdered in late 1937; the neighbouring kibbutz Ma'aleh ha-Hamisha ('the Ascent of the Five') was named in their memory. Murderers traced to the nearby village of Qatanna.",
+  "quote": "They also captured men who had murdered five workers at Kiryat Anavim in late 1937 (the neighboring kibbutz, Ma'aleh ha-Hamisha, was named in their memory).",
+  "perp": "rebel detachment from the village of Qatanna (captured later via Abu Ghosh / Sheikh Nimer)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "5 killed",
+  "scaleBig": "5",
+  "scaleNote": "Five workers of kibbutz Kiryat Anavim murdered in late 1937; the neighbouring kibbutz Ma'aleh ha-Hamisha ('the Ascent of the Five') was named in their memory. Murderers traced to the nearby village of Qatanna.",
+  "pretext": "",
+  "src": "Cohen 2008 (Army of Shadows) p.~149",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "cohen_army_of_shadows_palestinian_collaboration_with_zionism_1917-1948_2008",
+    "text": "They also captured men who had murdered five workers at Kiryat Anavim in late 1937 (the neighboring kibbutz, Ma'aleh ha-Hamisha, was named in their memory)."
+   }
+  ],
+  "searchTerms": [],
+  "n": 16
+ },
+ {
+  "cat": "other",
+  "date": "1937-10",
+  "year": 1937,
+  "location": "Palestine (nationwide; Galilee, Samaria, mixed towns)",
+  "event": "SUMMARY — renewal of the revolt: 'the upsurge of Arab terrorism in October 1937' (sniping at cars/pedestrians, grenades into Jewish homes/cars). Centres of gravity shifted to lower/western Galilee and northern Samaria adjacent to Jewish population. This Arab upsurge triggered the first Irgun mass bombings (Jewish actions, excluded).",
+  "quote": "But the upsurge of Arab terrorism in October 1937 triggered a wave of Irgun bombings against Arab crowds and buses, introducing a new dimension into the conflict.",
+  "perp": "rebel bands (second stage of the revolt, Husseini-aligned)",
+  "actorType": [
+   "rebel-husayni"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "SUMMARY — renewal of the revolt: 'the upsurge of Arab terrorism in October 1937' (sniping at cars/pedestrians, grenades into Jewish homes/cars). Centres of gravity shifted to lower/western Galilee and northern Samaria adjacent to Jewish population. This Arab upsurge triggered the first Irgun mass bombings (Jewish actions, excluded).",
+  "pretext": "second stage of revolt following Peel partition plan (Jul 1937) and the 26 Sep 1937 assassination of District Commissioner Lewis Andrews (a British target)",
+  "src": "Morris 2001 p.~147",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": true,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "But the upsurge of Arab terrorism in October 1937 triggered a wave of Irgun bombings against Arab crowds and buses,161 introducing a new dimension into the conflict."
+   }
+  ],
+  "searchTerms": [],
+  "n": 8
+ },
+ {
+  "cat": "massacre",
+  "date": "2 October 1938",
+  "year": 1938,
+  "location": "Kiryat Shmuel neighborhood, Tiberias",
+  "event": "Community massacre — 19 Jews killed, 11 of them children; local synagogue torched; the curate murdered.",
+  "quote": "On October 2, raiders attacked the Kiryat Shmuel neighborhood in Tiberias, killing nineteen Jews (eleven of them children), torching the local synagogue, and murdering the curate.",
+  "perp": "Arab rebel band (raiders; unnamed in source)",
+  "actorType": [
+   "rebel-husayni"
+  ],
+  "scale": "19 killed",
+  "scaleBig": "19",
+  "scaleNote": "Community massacre — 19 Jews killed, 11 of them children; local synagogue torched; the curate murdered.",
+  "pretext": "",
+  "src": "Morris 2001 p.159",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "On October 2, raiders attacked the Kiryat Shmuel neighborhood in Tiberias, killing nineteen Jews (eleven of them children), torching the local synagogue, and murdering the curate.176 A few weeks later, on October 27, Arabs murdered Tiberias's Jewish mayor, Zaki Alhadif.177 On October 15, rebel bands penetrated Jerusalem and completely occupied the Old City, hoisting their flag over the walls."
+   }
+  ],
+  "searchTerms": [],
+  "n": 6
+ },
+ {
+  "cat": "other",
+  "date": "27 October 1938",
+  "year": 1938,
+  "location": "Tiberias",
+  "event": "Targeted assassination of Tiberias's Jewish mayor, Zaki Alhadif.",
+  "quote": "A few weeks later, on October 27, Arabs murdered Tiberias's Jewish mayor, Zaki Alhadif.",
+  "perp": "Arab assassins (rebel)",
+  "actorType": [
+   "rebel-husayni"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "Targeted assassination of Tiberias's Jewish mayor, Zaki Alhadif.",
+  "pretext": "",
+  "src": "Morris 2001 p.159",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "On October 2, raiders attacked the Kiryat Shmuel neighborhood in Tiberias, killing nineteen Jews (eleven of them children), torching the local synagogue, and murdering the curate.176 A few weeks later, on October 27, Arabs murdered Tiberias's Jewish mayor, Zaki Alhadif.177 On October 15, rebel bands penetrated Jerusalem and completely occupied the Old City, hoisting their flag over the walls."
+   }
+  ],
+  "searchTerms": [],
+  "n": 9
+ },
+ {
+  "cat": "other",
+  "date": "1938 (full year)",
+  "year": 1938,
+  "location": "Palestine (countrywide)",
+  "event": "ANNUAL SUMMARY ROW — 5,708 incidents of violence; 651 attacks on Jewish settlements and quarters (plus 331 bomb-throwings, 215 abductions, 430 assassinations/attempts countrywide). Jews killed 255, wounded 390, by terrorist/gang activity (excludes rebels killed by military/police). Morris corroborates: 651 attacks on Jewish targets; 255 Jews died.",
+  "quote": "There were 5,708 incidents of violence during the year, of which 986 were attacks on police or military, 651 attacks on Jewish settlements and quarters, 331 bomb throwings, 215 abductions ... The casualties from terrorist and gang activities were as follows :— ... Jews 255 390",
+  "perp": "Arab rebels / gangs (various bands)",
+  "actorType": [
+   "rebel-husayni"
+  ],
+  "scale": "255 killed, 390 wounded",
+  "scaleBig": "255",
+  "scaleNote": "ANNUAL SUMMARY ROW — 5,708 incidents of violence; 651 attacks on Jewish settlements and quarters (plus 331 bomb-throwings, 215 abductions, 430 assassinations/attempts countrywide). Jews killed 255, wounded 390, by terrorist/gang activity (excludes rebels killed by military/police). Morris corroborates: 651 attacks on Jewish targets; 255 Jews died.",
+  "pretext": "Revolt second stage; background precipitants per sources: Peel partition recommendation (July 1937) plus continued Jewish immigration and land sales; Irgun market bombings part of the reciprocal escalation.",
+  "src": "Survey of Palestine 1946 p.45 (Morris 2001 p.160 corrob.: '651 attacks on Jewish targets ... 255 Jews died')",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": true,
+  "passages": [
+   {
+    "file": "survey_of_palestine_complete_edition_1946",
+    "text": "There were 5,708 incidents of violence during the year, of which 986 were attacks on police or military, 651 attacks on Jewish settlements and quarters, 331 bomb throwings, 215 abductions, 720 attacks on telegraph communications, 341 incidents of sabot- age of railways and roads, 104 punctures of the pipeline and 430 assassinations and attempted assassinations."
+   }
+  ],
+  "searchTerms": [],
+  "n": 10
+ },
+ {
+  "cat": "other",
+  "date": "1939 (full year)",
+  "year": 1939,
+  "location": "Palestine (countrywide)",
+  "event": "ANNUAL SUMMARY ROW — 3,315 incidents of violence (down from 5,708 in 1938); 136 attacks on Jewish settlements and quarters (plus 82 bomb-throwings, 135 abductions, 136 assassinations/attempts countrywide). Jews killed 94, wounded 159, by terrorist/gang activity (excludes rebels killed by military/police). Morris/St James note corroborates 94 Jewish lives.",
+  "quote": "The number of incidents of violence during 1939 was 3,315 (compared with 5,708 in 1938) ; of these 230 were attacks on police or military, 136 attacks on Jewish settlements and quarters, 82 bomb throwings ... Jews 94 159",
+  "perp": "Arab rebels / gangs (increasingly decentralized bands and outlaws)",
+  "actorType": [
+   "rebel-husayni"
+  ],
+  "scale": "94 killed, 159 wounded",
+  "scaleBig": "94",
+  "scaleNote": "ANNUAL SUMMARY ROW — 3,315 incidents of violence (down from 5,708 in 1938); 136 attacks on Jewish settlements and quarters (plus 82 bomb-throwings, 135 abductions, 136 assassinations/attempts countrywide). Jews killed 94, wounded 159, by terrorist/gang activity (excludes rebels killed by military/police). Morris/St James note corroborates 94 Jewish lives.",
+  "pretext": "Waning revolt degenerating into reprisal crimes and band/personal feuds (Survey); the 27 Feb 1939 bombings that killed 38 Arabs were Jewish/Irgun, not counted here.",
+  "src": "Survey of Palestine 1946 p.48 (Morris 2001 p.161 corrob.: '94 Jewish ... lives' in 1939)",
+  "srcType": "secondary",
+  "wave": "1936–39 Revolt",
+  "aggregate": true,
+  "passages": [
+   {
+    "file": "survey_of_palestine_complete_edition_1946",
+    "text": "The number of incidents of violence during 1939 was 3,315 (compared with 5,708 in 1938) ; of these 230 were attacks on police or military, 136 attacks on Jewish settlements and quarters, 82 bomb throwings, 135 abductions, 245 attacks on telegraph communications, 94 incidents of sabotage of other communica- tions, 39 punctures of the pipe line and 136 assassinations and attempted assassinations."
+   }
+  ],
+  "searchTerms": [],
+  "n": 11
+ },
+ {
+  "cat": "other",
+  "date": "1940 to 1947-11-29",
+  "year": 1940,
+  "location": "Palestine (Mandate-wide)",
+  "event": "PERIOD CHARACTERIZATION, NOT A DISCRETE ATTACK. Morris frames the whole window as quiet on the Arab-Jewish front: the revolt 'petered out' by May 1939; the war years were 'an extended breathing space'; the British 'managed to keep Jewish immigration down and the Arabs quiescent.' Documented violence 1940-Nov 1947 was Jewish-vs-British insurgency (Saison, Hebrew Resistance Movement, King David Hotel Jul 1946, Acre prison break May 1947) and intra-Arab killings of collaborators/land-sellers (Cohen's entire 1940-47 record). Morris's Arab-on-Jewish attack record (convoy ambushes, Hatikvah, urban bombings, Bedouin assaults on kibbutzim) begins Dec 1947, after the 30 Nov outbreak.",
+  "quote": "As a result, during 1939–46, political life was paralyzed.",
+  "perp": "—",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "PERIOD CHARACTERIZATION, NOT A DISCRETE ATTACK. Morris frames the whole window as quiet on the Arab-Jewish front: the revolt 'petered out' by May 1939; the war years were 'an extended breathing space'; the British 'managed to keep Jewish immigration down and the Arabs quiescent.' Documented violence 1940-Nov 1947 was Jewish-vs-British insurgency (Saison, Hebrew Resistance Movement, King David Hotel Jul 1946, Acre prison break May 1947) and intra-Arab killings of collaborators/land-sellers (Cohen's entire 1940-47 record). Morris's Arab-on-Jewish attack record (convoy ambushes, Hatikvah, urban bombings, Bedouin assaults on kibbutzim) begins Dec 1947, after the 30 Nov outbreak.",
+  "pretext": "",
+  "src": "Morris 2001, Righteous Victims, ch.4 (Revolt aftermath); ch.5 (WWII period). Note: OCR extract lacks printed pagination.",
+  "srcType": "secondary",
+  "wave": "1940–47",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "As a result, during 1939–46, political life was paralyzed."
+   }
+  ],
+  "searchTerms": [],
+  "n": 12
+ },
+ {
+  "cat": "ambush",
+  "date": "1945-03-24",
+  "year": 1945,
+  "location": "Isolated area west of the Dead Sea (Judean Desert), Mandate Palestine",
+  "event": "Small attack on a Jewish hiking party in a remote desert area; the sole concrete Arab-on-Jewish attack inside Palestine attested in the four sources for the entire 1940-29 Nov 1947 window.",
+  "quote": "On 24th March a large party of Jews hiking in the isolated area west of the Dead Sea was attacked by armed Arabs and one Jew killed and three wounded.",
+  "perp": "armed Arabs (unspecified; remote Dead Sea/Judean-desert locale is classic Bedouin raiding territory, but the source names only 'armed Arabs')",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "1 killed, 3 wounded",
+  "scaleBig": "1",
+  "scaleNote": "Small attack on a Jewish hiking party in a remote desert area; the sole concrete Arab-on-Jewish attack inside Palestine attested in the four sources for the entire 1940-29 Nov 1947 window.",
+  "pretext": "",
+  "src": "Survey of Palestine 1946 p.74",
+  "srcType": "secondary",
+  "wave": "1940–47",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "survey_of_palestine_complete_edition_1946",
+    "text": "On 24th March a large party of Jews hiking in the isolated area west of the Dead Sea was attacked by armed Arabs and one Jew killed and three wounded."
+   }
+  ],
+  "searchTerms": [],
+  "n": 9
+ },
+ {
+  "cat": "riot",
+  "date": "1945-11-02",
+  "year": 1945,
+  "location": "Alexandria (Egypt) and Tripoli/Libya — OUTSIDE Palestine",
+  "event": "OUT-OF-TERRITORY CONTEXT ROW — anti-Jewish but NOT anti-Yishuv (diaspora Jews in Egypt/Libya, not Mandate Palestine). Included for completeness; should be filtered out of a Palestine/Yishuv ledger. Balfour-Day anti-Zionist demonstrations across Syria, Egypt, Lebanon, Iraq; in Alexandria crowds attacked Jewish shops/homes/synagogues; in British-governed Libya mobs killed about 100 Jews.",
+  "quote": "In Alexandria, crowds attacked Jewish shops, homes, and synagogues; in British-governed Libya, the mobs slaughtered about one hundred Jews.",
+  "perp": "Arab crowds/mobs (Balfour Declaration Day, 2 Nov 1945)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "~100 (in Libya) killed",
+  "scaleBig": "100",
+  "scaleNote": "OUT-OF-TERRITORY CONTEXT ROW — anti-Jewish but NOT anti-Yishuv (diaspora Jews in Egypt/Libya, not Mandate Palestine). Included for completeness; should be filtered out of a Palestine/Yishuv ledger. Balfour-Day anti-Zionist demonstrations across Syria, Egypt, Lebanon, Iraq; in Alexandria crowds attacked Jewish shops/homes/synagogues; in British-governed Libya mobs killed about 100 Jews.",
+  "pretext": "Anti-Zionist Balfour Declaration Day demonstrations across the Arab world; reaction to Truman's push for 100,000 Jewish immigrants to Palestine.",
+  "src": "Morris 2001, Righteous Victims, ch.5 (WWII period). Note: OCR extract lacks printed pagination.",
+  "srcType": "secondary",
+  "wave": "1940–47",
+  "aggregate": false,
+  "passages": [
+   {
+    "file": "morris_righteous_victims_a_history_of_the_zionist-arab_conflict_1881-2001_2001",
+    "text": "In Alexandria, crowds attacked Jewish shops, homes, and synagogues; in British-governed Libya, the mobs slaughtered about one hundred Jews.88 The dilemma was stark: To turn down Truman's proposal might jeopardize the cornerstone of British foreign policy, the Anglo-American alliance."
+   }
+  ],
+  "searchTerms": [],
+  "n": 11
+ }
+]
