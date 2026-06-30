@@ -2,33 +2,6 @@
  {
   "cat": "ambush",
   "n": 1,
-  "date": "1 December 1947",
-  "year": 1947,
-  "location": "Haifa–Nazareth road",
-  "event": "bus ambushed during the AHC general strike",
-  "quote": "Arab prisoners rampaged at Acre's central jail and a gang ambushed a bus on the Haifa—Nazareth road.",
-  "perp": "an Arab gang",
-  "actorType": [
-   "criminal-band"
-  ],
-  "scale": "— killed",
-  "scaleBig": "—",
-  "scaleNote": "bus ambushed during the AHC general strike",
-  "pretext": "AHC three-day general strike against the UN partition resolution",
-  "src": "Gelber p.17",
-  "srcType": "secondary",
-  "phase": "civil-war",
-  "passages": [
-   {
-    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
-    "text": "Arab prisoners rampaged at Acre's central jail and a gang ambushed a bus on the Haifa—Nazareth road."
-   }
-  ],
-  "searchTerms": []
- },
- {
-  "cat": "ambush",
-  "n": 2,
   "date": "10 December 1947",
   "year": 1947,
   "location": "between Bethlehem and Gush Etzion",
@@ -55,7 +28,7 @@
  },
  {
   "cat": "ambush",
-  "n": 3,
+  "n": 2,
   "date": "11 December 1947",
   "year": 1947,
   "location": "Jerusalem–Etzion Bloc road (south of Bethlehem)",
@@ -82,7 +55,7 @@
  },
  {
   "cat": "ambush",
-  "n": 4,
+  "n": 3,
   "date": "14 December 1947",
   "year": 1947,
   "location": "Near Beit Nabala military camp (Ben Shemen road, near Lydda)",
@@ -109,7 +82,7 @@
  },
  {
   "cat": "ambush",
-  "n": 5,
+  "n": 4,
   "date": "18 December 1947",
   "year": 1947,
   "location": "Near Kibbutz Ma'ayan Baruch, Eastern Galilee (Khisas area)",
@@ -136,7 +109,7 @@
  },
  {
   "cat": "ambush",
-  "n": 6,
+  "n": 5,
   "date": "30 November 1947",
   "year": 1947,
   "location": "Coastal Plain near Kfar Syrkin",
@@ -163,7 +136,7 @@
  },
  {
   "cat": "ambush",
-  "n": 7,
+  "n": 6,
   "date": "30 November 1947",
   "year": 1947,
   "location": "Coastal Plain, road southbound from Hadera",
@@ -190,61 +163,7 @@
  },
  {
   "cat": "ambush",
-  "n": 8,
-  "date": "30 November 1947",
-  "year": 1947,
-  "location": "near Lydda (now Ben-Gurion) Airport",
-  "event": "bloodiest incident of the day-after-vote scattered riots",
-  "quote": "The initial riots were scattered and of limited scope with an attack on Jewish buses near Lydda (now Ben-Gurion) Airport being the bloodiest incident.",
-  "perp": "well-known criminals / veteran brigands",
-  "actorType": [
-   "criminal-band"
-  ],
-  "scale": "— killed",
-  "scaleBig": "—",
-  "scaleNote": "bloodiest incident of the day-after-vote scattered riots",
-  "pretext": "framed as 'a robbery disguised as a reaction to the UN decision' or possibly revenge for an LHI action a few weeks earlier",
-  "src": "Gelber p.17",
-  "srcType": "secondary",
-  "phase": "civil-war",
-  "passages": [
-   {
-    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
-    "text": "The initial riots were scattered and of limited scope with an attack on Jewish buses near Lydda (now Ben-Gurion) Airport being the bloodiest incident."
-   }
-  ],
-  "searchTerms": []
- },
- {
-  "cat": "ambush",
-  "n": 9,
-  "date": "30 November 1947",
-  "year": 1947,
-  "location": "Jerusalem and Haifa",
-  "event": "shots fired at Jewish buses; no casualties stated",
-  "quote": "Shots were also fired at Jewish buses in Jerusalem and Haifa.",
-  "perp": "Arab gunmen (unidentified)",
-  "actorType": [
-   "unknown"
-  ],
-  "scale": "— killed",
-  "scaleBig": "—",
-  "scaleNote": "shots fired at Jewish buses; no casualties stated",
-  "pretext": "",
-  "src": "Morris 1948 p.76",
-  "srcType": "secondary",
-  "phase": "civil-war",
-  "passages": [
-   {
-    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
-    "text": "Shots were also fired at Jewish buses in Jerusalem and Haifa."
-   }
-  ],
-  "searchTerms": []
- },
- {
-  "cat": "ambush",
-  "n": 10,
+  "n": 7,
   "date": "7 December 1947",
   "year": 1947,
   "location": "Jerusalem–Tel Aviv road",
@@ -407,33 +326,6 @@
  {
   "cat": "riot",
   "n": 2,
-  "date": "December 1947",
-  "year": 1947,
-  "location": "Hatikva Quarter, Tel Aviv",
-  "event": "From a photo caption (CZA): attack on the Hatikva Quarter; no casualty figures given in-text",
-  "quote": "Arab militiaman carries 'captured' Jewish baby after attack on Hatikva Quarter, December 1947",
-  "perp": "Arab militiamen",
-  "actorType": [
-   "local-irregulars"
-  ],
-  "scale": "— killed",
-  "scaleBig": "—",
-  "scaleNote": "From a photo caption (CZA): attack on the Hatikva Quarter; no casualty figures given in-text",
-  "pretext": "",
-  "src": "Morris 1948 p.272 (photo caption)",
-  "srcType": "secondary",
-  "phase": "civil-war",
-  "passages": [
-   {
-    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
-    "text": "Arab militiaman carries “captured” Jewish baby after attack on Hatikva Quarter, December 1947 (By permission of the Central Zionist Archives) To view this image, please refer to the print version of this book."
-   }
-  ],
-  "searchTerms": []
- },
- {
-  "cat": "riot",
-  "n": 3,
   "date": "December 1947 (exact date not given in text; ~late Dec)",
   "year": 1947,
   "location": "Haifa oil refinery",
@@ -460,7 +352,7 @@
  },
  {
   "cat": "riot",
-  "n": 4,
+  "n": 3,
   "date": "early December 1947 (start of the Arab general strike)",
   "year": 1947,
   "location": "Jerusalem — new commercial centre",
@@ -595,7 +487,7 @@
  },
  {
   "cat": "ambush",
-  "n": 11,
+  "n": 8,
   "date": "12-14 January 1948",
   "year": 1948,
   "location": "Etzion Bloc / West Jerusalem-Etzion road (Hebron hills)",
@@ -622,7 +514,7 @@
  },
  {
   "cat": "ambush",
-  "n": 12,
+  "n": 9,
   "date": "13 April 1948",
   "year": 1948,
   "location": "Sheikh Jarrah, East Jerusalem (Hadassah Hospital–Hebrew University road to Mount Scopus)",
@@ -649,7 +541,7 @@
  },
  {
   "cat": "ambush",
-  "n": 13,
+  "n": 10,
   "date": "14–15 May 1948",
   "year": 1948,
   "location": "near Kibbutz Kfar Darom, Negev",
@@ -676,7 +568,7 @@
  },
  {
   "cat": "ambush",
-  "n": 14,
+  "n": 11,
   "date": "15 January 1948",
   "year": 1948,
   "location": "En route to the Etzion Bloc (Hebron hills, near Surif)",
@@ -703,7 +595,7 @@
  },
  {
   "cat": "ambush",
-  "n": 15,
+  "n": 12,
   "date": "15 January 1948",
   "year": 1948,
   "location": "Judean Hills, en route to the besieged Etzion Bloc",
@@ -730,7 +622,7 @@
  },
  {
   "cat": "ambush",
-  "n": 16,
+  "n": 13,
   "date": "20 January 1948",
   "year": 1948,
   "location": "Near Kibbutz Yehiam, Western Galilee",
@@ -757,7 +649,7 @@
  },
  {
   "cat": "ambush",
-  "n": 17,
+  "n": 14,
   "date": "18 March 1948",
   "year": 1948,
   "location": "Near Har-Tuv, Jerusalem area",
@@ -784,7 +676,7 @@
  },
  {
   "cat": "ambush",
-  "n": 18,
+  "n": 15,
   "date": "24 March 1948",
   "year": 1948,
   "location": "Saris, Jerusalem area",
@@ -811,7 +703,7 @@
  },
  {
   "cat": "ambush",
-  "n": 19,
+  "n": 16,
   "date": "24 March 1948",
   "year": 1948,
   "location": "Atarot, Jerusalem area",
@@ -838,7 +730,7 @@
  },
  {
   "cat": "ambush",
-  "n": 20,
+  "n": 17,
   "date": "27 March 1948",
   "year": 1948,
   "location": "Nabi Daniyal, just south of Bethlehem (Jerusalem–Etzion Bloc road)",
@@ -865,7 +757,7 @@
  },
  {
   "cat": "ambush",
-  "n": 21,
+  "n": 18,
   "date": "27 March 1948",
   "year": 1948,
   "location": "Near Kabri, on the road to Kibbutz Yehiam, Western Galilee",
@@ -892,7 +784,7 @@
  },
  {
   "cat": "ambush",
-  "n": 22,
+  "n": 19,
   "date": "31 March 1948",
   "year": 1948,
   "location": "Near Kibbutz Hulda (Hulda–Jerusalem road)",
@@ -919,7 +811,7 @@
  },
  {
   "cat": "ambush",
-  "n": 23,
+  "n": 20,
   "date": "25 January 1948",
   "year": 1948,
   "location": "upgrade to Qastel, west of Jerusalem",
@@ -946,7 +838,7 @@
  },
  {
   "cat": "ambush",
-  "n": 24,
+  "n": 21,
   "date": "February 1948",
   "year": 1948,
   "location": "Gaza / Negev",
@@ -973,7 +865,7 @@
  },
  {
   "cat": "ambush",
-  "n": 25,
+  "n": 22,
   "date": "July 1948 (continuing into Second Truce from 18 July)",
   "year": 1948,
   "location": "coast road S. of Haifa (Ijzim, Ein Ghazal, Jaba — 'the Little Triangle')",
@@ -1000,7 +892,7 @@
  },
  {
   "cat": "ambush",
-  "n": 26,
+  "n": 23,
   "date": "last ten days of March 1948",
   "year": 1948,
   "location": "Jerusalem road and isolated settlements around Jerusalem",
@@ -1027,7 +919,7 @@
  },
  {
   "cat": "ambush",
-  "n": 27,
+  "n": 24,
   "date": "last ten days of March 1948",
   "year": 1948,
   "location": "convoy route to Yechi'am, western Galilee",
@@ -1054,7 +946,7 @@
  },
  {
   "cat": "ambush",
-  "n": 28,
+  "n": 25,
   "date": "mid-January 1948",
   "year": 1948,
   "location": "road to Gush Etzion (Hebron hills)",
@@ -1081,7 +973,7 @@
  },
  {
   "cat": "ambush",
-  "n": 29,
+  "n": 26,
   "date": "mid-January 1948 (shortly after 14 Jan; date not given in text)",
   "year": 1948,
   "location": "Hebron hills, en route to reinforce Gush Etzion",
@@ -1108,7 +1000,7 @@
  },
  {
   "cat": "ambush",
-  "n": 30,
+  "n": 27,
   "date": "~late March 1948",
   "year": 1948,
   "location": "Near Kabri/Ghabisiya, Western Galilee (convoy to Kibbutz Yehiam)",
@@ -1540,7 +1432,7 @@
  },
  {
   "cat": "riot",
-  "n": 5,
+  "n": 4,
   "date": "12 February 1948",
   "year": 1948,
   "location": "Shmuel Hanavi Street, Jerusalem",
@@ -1567,7 +1459,7 @@
  },
  {
   "cat": "riot",
-  "n": 6,
+  "n": 5,
   "date": "28 February 1948",
   "year": 1948,
   "location": "Hayotzek Factory near Holon",
@@ -1594,7 +1486,7 @@
  },
  {
   "cat": "riot",
-  "n": 7,
+  "n": 6,
   "date": "February 1948 (date not given in text)",
   "year": 1948,
   "location": "Damascus gate, Jerusalem",
