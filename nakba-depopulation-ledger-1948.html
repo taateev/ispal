@@ -829,6 +829,7 @@
   .heborder .heb-t { font-style:italic; color:var(--accent); }
   .heborder .heb-n { font-family:var(--sans); font-size:11.5px; color:var(--ink-3); margin-top:3px; }
   .hebtag { display:block; font-family:var(--serif); font-size:15px; color:var(--accent); margin-top:3px; cursor:help; }
+  .etype-tag { display:block; font-family:var(--sans); font-size:8.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:#8a5a2b; margin-top:3px; }
 </style>
 </head>
 <body>
@@ -863,30 +864,31 @@
     <p>
       Morris codes each village's departure and states that <span class="bq">&ldquo;a single-cause explanation of the exodus
       from most sites is untenable&rdquo;</span>; he assigned a primary code per village (Map 2) but never totalled them. This
-      totals his own codes, <b>two ways</b> — because event-count and people are different questions.
-      <b>Denominator:</b> 376 rows = 335 displacement + 41 retention; the combatant-status cross-tab below covers all 376;
-      people-weighting covers the 80 displacement rows Morris gives a number for.
+      totals his own codes — across three measures, because the unit and the weighting are different questions.
+      <b>Headline = final depopulations</b> (the comparable unit), by event.
     </p>
     <div style="overflow-x:auto;">
-    <table class="xtab" style="max-width:660px;">
-      <thead><tr><th>Cause of departure</th><th>events</th><th>by event</th><th>people</th><th>by people</th></tr></thead>
+    <table class="xtab" style="max-width:740px;">
+      <thead><tr><th>Cause of departure</th><th>final depop. (201)</th><th>all displ. (335)</th><th>all, by people</th></tr></thead>
       <tbody>
-        <tr class="hi-m"><td><b>Military assault (M)</b></td><td>120</td><td>35%</td><td>217,569</td><td class="big-active">57%</td></tr>
-        <tr class="hi-e"><td><b>Expulsion (E)</b></td><td>101</td><td>30%</td><td>111,497</td><td>29%</td></tr>
-        <tr><td>Fear (F)</td><td>54</td><td>16%</td><td>50,250</td><td>13%</td></tr>
-        <tr><td>Nearby-fall (C)</td><td>24</td><td>7%</td><td>304</td><td>0%</td></tr>
-        <tr><td>Arab-order (A)</td><td>24</td><td>7%</td><td>354</td><td>0%</td></tr>
-        <tr><td>Atrocity-fear (W)</td><td>12</td><td>3%</td><td>60</td><td>0%</td></tr>
+        <tr class="hi-m"><td><b>Military assault (M)</b></td><td class="big-active">41%</td><td>35%</td><td>57%</td></tr>
+        <tr class="hi-e"><td><b>Expulsion (E)</b></td><td>26%</td><td>30%</td><td>29%</td></tr>
+        <tr><td>Fear (F)</td><td>15%</td><td>16%</td><td>13%</td></tr>
+        <tr><td>Nearby-fall (C)</td><td>8%</td><td>7%</td><td>&lt;1%</td></tr>
+        <tr><td>Arab-order (A)</td><td>3%</td><td>7%</td><td>&lt;1%</td></tr>
+        <tr><td>Atrocity-fear (W)</td><td>4%</td><td>3%</td><td>&lt;1%</td></tr>
       </tbody>
     </table>
     </div>
     <p style="font-size:13.5px;">
-      335 displacement events (41 retention events sit apart). <b>By event</b> counts each village once — a 200-person hamlet
-      equals 70,000-person Lydda–Ramle. <b>By people</b> covers only the <b>80</b> events Morris numbers (380,034 counted) and is
-      carried by the big urban falls (Haifa, Jaffa, the Hiram pocket = M) and Lydda–Ramle (E) — which is why M runs 35% by event
-      but 57% by people. Neither is definitive; both are shown. Read M and E separately: M is flight under combat, E is deliberate
-      driving-out; &ldquo;the Arabs were told to leave&rdquo; (code A) is 7% by event, 0% by people. Codes are Morris's reading; every
-      row's anchor phrase is verbatim in his text.
+      <b>Denominator:</b> 376 rows = 335 displacement + 41 retention. The 335 displacement rows split by <b>event_type</b>:
+      <b>201 final depopulations</b>, 49 partial (women/children evacuations, surviving mixed towns), 38 postwar-clearance
+      (1949–50 anti-infiltration), 28 policy/multi-village aggregates, 15 temporary (fled then returned), 4 remnant-expulsions.
+      <b>Final depopulations</b> is the comparable unit — a partial women-and-children evacuation should not count equal to a
+      village permanently emptied. Restricting to it <b>raises M (35→41%) and halves A (7→3%)</b>: most Arab-order events were
+      partial dependents-evacuations, not final depopulations. <b>By people</b> (all displacement) covers only the 80 rows Morris
+      numbers and is carried by the big urban falls — indicative, not definitive. Filter the ledger by <b>event type</b> below.
+      Codes are Morris's; every row's anchor phrase is verbatim in his text.
     </p>
     <div class="clipstrip">
       <figure class="srcclip"><div class="srccap">Morris, <i>Birth Revisited</i> (2004) — the Lydda order</div><img src="src-nakba-lydda-order-morris.png" alt="Morris, Birth Revisited — the 12 July 1948 written order: the inhabitants of Lydda must be expelled quickly without attention to age" loading="lazy" /></figure>
@@ -1060,6 +1062,7 @@ const ACTOR_LABEL = {
 };
 const ALL_ACTORS = ["idf","palmah","irgun-lehi","jnf","fled","arab-cmd","retained"];
 const MIL_LABEL = { "active":"militarily active", "inactive":"no military activity", "unknown":"no record" };
+const ETYPE_LABEL = { "final":"final depopulation", "partial":"partial", "temporary":"temporary", "remnant-expulsion":"remnant expulsion", "postwar-clearance":"postwar clearance", "policy-aggregate":"policy / aggregate", "retention":"retention" };
 const COMB_LABEL = { "organized-force":"organized force (ALA / Holy War Army / regular unit)", "local-militia":"local militia / armed villagers", "none-noted":"none noted (undefended / fled-first / surrendered)", "unknown":"unknown — record silent" };
 const LOCATIONS = ["Safad","Haifa","Acre","Jerusalem","Jaffa","Tiberias","Tulkarm","Nazareth","Ramle","Beisan","Hebron","Gaza","Negev","Galilee","Coastal Plain"];
 
@@ -1259,6 +1262,7 @@ function App() {
   const [loc, setLoc] = useState("all");
   const [actor, setActor] = useState("all");
   const [mil, setMil] = useState("all");
+  const [etype, setEtype] = useState("all");
   const [evid, setEvid] = useState("all");
   const [sortKey, setSortKey] = useState("year");
   const [sortDir, setSortDir] = useState("asc");
@@ -1278,6 +1282,7 @@ function App() {
     if (loc !== "all") r = r.filter((x) => x.location.includes(loc));
     if (actor !== "all") r = r.filter((x) => (x.actorType || []).includes(actor));
     if (mil !== "all") r = r.filter((x) => x.milstatus === mil);
+    if (etype !== "all") r = r.filter((x) => x.event_type === etype);
     if (evid !== "all") r = r.filter((x) => x.srcType === evid);
     if (q.trim()) {
       const t = q.trim().toLowerCase();
@@ -1297,13 +1302,13 @@ function App() {
       return a.year - b.year;
     });
     return r;
-  }, [cat, q, loc, actor, mil, evid, sortKey, sortDir]);
+  }, [cat, q, loc, actor, mil, etype, evid, sortKey, sortDir]);
 
   function setSort(k) {
     if (sortKey === k) setSortDir((d) => d === "asc" ? "desc" : "asc");
     else { setSortKey(k); setSortDir("asc"); }
   }
-  function clearFilters() { setCat("all"); setQ(""); setLoc("all"); setActor("all"); setMil("all"); setEvid("all"); }
+  function clearFilters() { setCat("all"); setQ(""); setLoc("all"); setActor("all"); setMil("all"); setEtype("all"); setEvid("all"); }
   const sortMark = (k) => sortKey === k ? (sortDir === "asc" ? "▲" : "▼") : "·";
   const showSectionHeads = cat === "all" && sortKey === "cat";
 
@@ -1343,12 +1348,21 @@ function App() {
           <option value="inactive">Affirmatively inactive</option>
           <option value="unknown">Unknown / no record</option>
         </select>
+        <select className="select" value={etype} onChange={(e)=>setEtype(e.target.value)}>
+          <option value="all">Any event type</option>
+          <option value="final">Final depopulation</option>
+          <option value="partial">Partial</option>
+          <option value="temporary">Temporary (returned)</option>
+          <option value="remnant-expulsion">Remnant expulsion</option>
+          <option value="postwar-clearance">Postwar clearance</option>
+          <option value="policy-aggregate">Policy / aggregate</option>
+        </select>
         <select className="select" value={evid} onChange={(e)=>setEvid(e.target.value)}>
           <option value="all">All evidence</option>
           <option value="primary">Primary</option>
           <option value="secondary">Secondary</option>
         </select>
-        {(cat!=="all"||q||loc!=="all"||actor!=="all"||mil!=="all"||evid!=="all") &&
+        {(cat!=="all"||q||loc!=="all"||actor!=="all"||mil!=="all"||etype!=="all"||evid!=="all") &&
           <button className="clearbtn" onClick={clearFilters}>Clear &#10005;</button>}
       </div>
 
@@ -1376,7 +1390,7 @@ function App() {
                 {showHead && (<tr className="sec"><td colSpan="7">{CAT_LABEL[r.cat]} <span className="secsub">{CAT_SUB[r.cat]}</span></td></tr>)}
                 <tr ref={(el) => rowRefs.current[id] = el} className={`clickable ${isOpen ? "expanded" : ""}`} onClick={() => toggleRow(id)}>
                   <td className="num">{String(r.n).padStart(2,"0")}</td>
-                  <td className="col-date">{r.date}<span className={`sub sub-${r.cat}`}>{CAT_TAB[r.cat]}</span></td>
+                  <td className="col-date">{r.date}<span className={`sub sub-${r.cat}`}>{CAT_TAB[r.cat]}</span>{r.event_type && r.event_type!=="final" && <span className="etype-tag">{ETYPE_LABEL[r.event_type]}</span>}</td>
                   <td className="col-loc"><span className="loc-name">{r.location}</span><span className={`milbadge mil-${r.milstatus}`}>{MIL_LABEL[r.milstatus]}</span>{r.hebrew && <span className="hebtag" title={`${r.hebrew.translit} — ${r.hebrew.gloss}`}>{r.hebrew.script}</span>}</td>
                   <td className="col-event">{r.event}{r.quote && <blockquote>{r.quote}</blockquote>}</td>
                   <td className="col-actor">
