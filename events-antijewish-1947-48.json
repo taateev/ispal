@@ -1,0 +1,3502 @@
+[
+ {
+  "cat": "ambush",
+  "n": 1,
+  "date": "1 December 1947",
+  "year": 1947,
+  "location": "Haifa–Nazareth road",
+  "event": "bus ambushed during the AHC general strike",
+  "quote": "Arab prisoners rampaged at Acre's central jail and a gang ambushed a bus on the Haifa—Nazareth road.",
+  "perp": "an Arab gang",
+  "actorType": [
+   "criminal-band"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "bus ambushed during the AHC general strike",
+  "pretext": "AHC three-day general strike against the UN partition resolution",
+  "src": "Gelber p.17",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "Arab prisoners rampaged at Acre's central jail and a gang ambushed a bus on the Haifa—Nazareth road."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 2,
+  "date": "10 December 1947",
+  "year": 1947,
+  "location": "between Bethlehem and Gush Etzion",
+  "event": "first organized attack on a convoy; 10 passengers and escorts killed",
+  "quote": "The first organized attack on a convoy took place on 10 December between Bethlehem and Gush Etzion. Ten passengers and escorts were killed.",
+  "perp": "Arab gang (Hebron/Bethlehem area)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "10 killed",
+  "scaleBig": "10",
+  "scaleNote": "first organized attack on a convoy; 10 passengers and escorts killed",
+  "pretext": "",
+  "src": "Gelber p.26",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The first organized attack on a convoy took place on 10 December between Bethlehem and Gush Etzion."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 3,
+  "date": "11 December 1947",
+  "year": 1947,
+  "location": "Jerusalem–Etzion Bloc road (south of Bethlehem)",
+  "event": "Convoy from Jerusalem to the isolated Etzion Bloc ambushed; 10 Jews died",
+  "quote": "On 11 December, a convoy from Jerusalem to the isolated gEtzion Bloc of Jewish settlements south of Bethlehem was ambushed by a fazga of Arab villagers; ten Jews died.",
+  "perp": "A faz'a (popular muster) of Arab villagers",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "10 killed",
+  "scaleBig": "10",
+  "scaleNote": "Convoy from Jerusalem to the isolated Etzion Bloc ambushed; 10 Jews died",
+  "pretext": "",
+  "src": "Morris 1948 p.105",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 11 December, a convoy from Jerusalem to the isolated gEtzion Bloc of Jewish settlements south of Bethlehem was am- T H E FI R S T S TAG E O FT H E C I V I LWAR 105 bushed by a fazga of Arab villagers; ten Jews died."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 4,
+  "date": "14 December 1947",
+  "year": 1947,
+  "location": "Near Beit Nabala military camp (Ben Shemen road, near Lydda)",
+  "event": "Convoy headed for Ben Shemen shot up; 14 killed, 10 injured",
+  "quote": "On 14 December, a second convoy, headed for Ben Shemen, near Lydda, was shot up near the Beit Nabala military camp: fourteen Jews were killed and ten injured—shot by Arab Legionnaires serving with the British army in Palestine.",
+  "perp": "Arab Legionnaires (Transjordan) serving with the British army in Palestine",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "14 killed, 10 wounded",
+  "scaleBig": "14",
+  "scaleNote": "Convoy headed for Ben Shemen shot up; 14 killed, 10 injured",
+  "pretext": "",
+  "src": "Morris 1948 p.105",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 14 December, a second convoy, headed for Ben Shemen, near Lydda, was shot up near the Beit Nabala military camp: fourteen Jews were killed and ten injured—shot by Arab Legionnaires serving with the British army in Palestine.150 The Jews retaliated in kind."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 5,
+  "date": "18 December 1947",
+  "year": 1947,
+  "location": "Near Kibbutz Ma'ayan Baruch, Eastern Galilee (Khisas area)",
+  "event": "A Jewish cart driver ambushed and shot dead",
+  "quote": "On 18 December a group of Arabs ambushed and shot dead a Jewish cart driver near Kibbutz Magayan Baruch.",
+  "perp": "A group of Arabs (Khisas-area villagers)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "A Jewish cart driver ambushed and shot dead",
+  "pretext": "Part of the Khisas escalation: after the Jewish guard shot a Khisas villager dead (2 Dec) and was arrested, villagers sniped at Jews and then ambushed the cart driver",
+  "src": "Morris 1948 p.103",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 18 December a group of Arabs ambushed and shot dead a Jewish cart driver near Kibbutz Magayan Baruch.140 The local Palmah contingent requested permission to retaliate against Khisas and other villages."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 6,
+  "date": "30 November 1947",
+  "year": 1947,
+  "location": "Coastal Plain near Kfar Syrkin",
+  "event": "Jewish bus ambushed at 8:20 am; 5 killed, others wounded",
+  "quote": "an eight-man Jaffa-based armed band, led by Seif al-Din Abu Kishk, ambushed a Jewish bus in the Coastal Plain near Kfar Syrkin, killing five and wounding others.",
+  "perp": "Seif al-Din Abu Kishk's eight-man Jaffa-based armed band (Abu Kishk bedouin)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "5 killed, ~several wounded",
+  "scaleBig": "5",
+  "scaleNote": "Jewish bus ambushed at 8:20 am; 5 killed, others wounded",
+  "pretext": "HIS majority view: revenge for an LHI raid ~10 days earlier on an Abu Kishk house near Raanana in which five Shubaki men were executed; minority HIS view held the aim was robbery under cover of a response to the 29 Nov UN partition vote",
+  "src": "Morris 1948 p.76",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "At 8:20 am on 30 November 1947, an eight-man Jaffa-based armed band, led by Seif al-Din Abu Kishk, ambushed a Jewish bus in the Coastal Plain near Kfar Syrkin, killing five and wounding others."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 7,
+  "date": "30 November 1947",
+  "year": 1947,
+  "location": "Coastal Plain, road southbound from Hadera",
+  "event": "second bus ambushed half an hour after the first; 2 killed",
+  "quote": "Half an hour later the gunmen let loose at a second bus, southbound from Hadera, killing two more.",
+  "perp": "Seif al-Din Abu Kishk's band (same gunmen)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "2 killed",
+  "scaleBig": "2",
+  "scaleNote": "second bus ambushed half an hour after the first; 2 killed",
+  "pretext": "Same band/precipitant as the first ambush: revenge for the LHI Abu Kishk/Shubaki raid (minority HIS view: robbery under cover of the UN-vote response)",
+  "src": "Morris 1948 p.76",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Half an hour later the gunmen let loose at a second bus, southbound from Hadera, killing two more."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 8,
+  "date": "30 November 1947",
+  "year": 1947,
+  "location": "near Lydda (now Ben-Gurion) Airport",
+  "event": "bloodiest incident of the day-after-vote scattered riots",
+  "quote": "The initial riots were scattered and of limited scope with an attack on Jewish buses near Lydda (now Ben-Gurion) Airport being the bloodiest incident.",
+  "perp": "well-known criminals / veteran brigands",
+  "actorType": [
+   "criminal-band"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "bloodiest incident of the day-after-vote scattered riots",
+  "pretext": "framed as 'a robbery disguised as a reaction to the UN decision' or possibly revenge for an LHI action a few weeks earlier",
+  "src": "Gelber p.17",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The initial riots were scattered and of limited scope with an attack on Jewish buses near Lydda (now Ben-Gurion) Airport being the bloodiest incident."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 9,
+  "date": "30 November 1947",
+  "year": 1947,
+  "location": "Jerusalem and Haifa",
+  "event": "shots fired at Jewish buses; no casualties stated",
+  "quote": "Shots were also fired at Jewish buses in Jerusalem and Haifa.",
+  "perp": "Arab gunmen (unidentified)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "shots fired at Jewish buses; no casualties stated",
+  "pretext": "",
+  "src": "Morris 1948 p.76",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Shots were also fired at Jewish buses in Jerusalem and Haifa."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 10,
+  "date": "7 December 1947",
+  "year": 1947,
+  "location": "Jerusalem–Tel Aviv road",
+  "event": "senior Haganah commander Yehoshua Globerman killed",
+  "quote": "On 7 December 1947 one of the Haganah's most senior commanders, Yehoshua Globerman, was killed by an Arab ambush on his way back from Jerusalem to Tel Aviv.",
+  "perp": "Arab ambush party (unidentified, village-based)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "senior Haganah commander Yehoshua Globerman killed",
+  "pretext": "",
+  "src": "Gelber p.26",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "On 7 December 1947 one of the Haganah's most senior commanders, Yehoshua Globerman, was killed by an Arab ambush on his way back from Jerusalem to Tel Aviv."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 1,
+  "date": "8 December 1947",
+  "year": 1947,
+  "location": "Hatikva Quarter, eastern Tel Aviv",
+  "event": "First organized Arab urban attack; hundreds of irregulars; a few houses fell & were looted/burned; Arabs ~60 dead, Jews 2",
+  "quote": "The following day, 8 December 1947, hundreds of irregulars, led by Hassan Salame, assaulted the Hatikva Quarter.",
+  "perp": "Hundreds of irregulars led by Hassan Salame (British suspected Husseini ordered it)",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "2 killed",
+  "scaleBig": "2",
+  "scaleNote": "First organized Arab urban attack; hundreds of irregulars; a few houses fell & were looted/burned; Arabs ~60 dead, Jews 2",
+  "pretext": "Followed several days of sniping; launched the day after the Haganah blew up a house on the outskirts of neighbouring Salame village",
+  "src": "Morris 1948 p.101",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The following day, 8 December 1947, hundreds of irregulars, led by Hassan Salame, assaulted the Hatikva Quarter."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 1,
+  "date": "2 December 1947",
+  "year": 1947,
+  "location": "Khisas, tip of the (Hula) Panhandle, Eastern Galilee",
+  "event": "Several Arabs attacked a Jewish guard at a kiosk; the guard shot one attacker dead (no Jewish casualties); opened the Khisas revenge cycle. NB: Morris's text prints '2 December 1948', evidently a typo for 1947",
+  "quote": "On 2 December 1948, several Arabs attacked a Jewish guard buying cigarettes in a kiosk in the village of Khisas, at the tip of the Panhandle.",
+  "perp": "Several Khisas villagers",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "0 killed",
+  "scaleBig": "0",
+  "scaleNote": "Several Arabs attacked a Jewish guard at a kiosk; the guard shot one attacker dead (no Jewish casualties); opened the Khisas revenge cycle. NB: Morris's text prints '2 December 1948', evidently a typo for 1947",
+  "pretext": "",
+  "src": "Morris 1948 p.103",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 2 December 1948, several Arabs attacked a Jewish guard buying cigarettes in a kiosk in the village of Khisas, at the tip of the Panhandle."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 2,
+  "date": "late December 1947 (undated; before the early-January 1948 Qalandia evacuation)",
+  "year": 1947,
+  "location": "vicinity of Dir Mukhayzin (Lydda–Ramle area)",
+  "event": "Two senior Haganah officers assassinated in two separate incidents near the village",
+  "quote": "the inhabitants of Dir Mukhayzin temporarily abandoned their village following the assassination of two senior Haganah officers in separate incidents in the vicinity of the village.",
+  "perp": "Arab assailants (unnamed)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "2 killed",
+  "scaleBig": "2",
+  "scaleNote": "Two senior Haganah officers assassinated in two separate incidents near the village",
+  "pretext": "",
+  "src": "Gelber p.77",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The Beginnings of the Palestinians' Mass-Flight 77 Apparently fearing vengeance, the inhabitants of Dir Mukhayzin temporarily abandoned their village following the assassination of t w o senior Haganah officers in separate incidents in the vicinity of the village."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 3,
+  "date": "start of the war (c. late 1947–early 1948)",
+  "year": 1947,
+  "location": "Dabburiyya village, Lower Galilee",
+  "event": "Two Jewish girls murdered; three houses of the alleged killers later demolished by the IDF after the Ten Days",
+  "quote": "In Dabburiyya, three houses belonging to persons alleged to have murdered two Jewish girls at the start of the war were demolished.",
+  "perp": "Dabburiyya villagers",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "2 killed",
+  "scaleBig": "2",
+  "scaleNote": "Two Jewish girls murdered; three houses of the alleged killers later demolished by the IDF after the Ten Days",
+  "pretext": "",
+  "src": "Morris 1948 p.283",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "In Dabburiyya, three houses belonging to persons alleged to have murdered two Jewish girls at the start of the war were demolished.65 The troops systematically disarmed the villages (Druze villagers were allowed to keep weapons) and rounded up and incarcerated adult males believed to have fought alongside, or hel"
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "riot",
+  "n": 1,
+  "date": "2 December 1947",
+  "year": 1947,
+  "location": "New Commercial Center, Mamilla Street, Jerusalem",
+  "event": "mob with clubs and knives attacked Jewish passersby and shops, district set alight; a number injured, one seriously",
+  "quote": "On 2 December a large Arab mob, armed with clubs and knives, burst out of Jerusalem's Old City and descended on the New Commercial Center at Mamilla Street, attacking Jewish passersby and shops.",
+  "perp": "Arab mob led by AHC officials Muhammad Ali Salah and Mahmoud al-Umari",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed, ~several wounded",
+  "scaleBig": "—",
+  "scaleNote": "mob with clubs and knives attacked Jewish passersby and shops, district set alight; a number injured, one seriously",
+  "pretext": "AHC-declared three-day general strike (begun 2 Dec), an organized response to the 29 Nov UN partition resolution, guided by Haj Amin al-Husseini from Cairo",
+  "src": "Morris 1948 p.76-77",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 2 December a large Arab mob, armed with clubs and knives, burst out of Jerusalem's Old City and descended on the New Commercial Center at Mamilla Street, attacking Jewish passersby and shops."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "riot",
+  "n": 2,
+  "date": "December 1947",
+  "year": 1947,
+  "location": "Hatikva Quarter, Tel Aviv",
+  "event": "From a photo caption (CZA): attack on the Hatikva Quarter; no casualty figures given in-text",
+  "quote": "Arab militiaman carries 'captured' Jewish baby after attack on Hatikva Quarter, December 1947",
+  "perp": "Arab militiamen",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "From a photo caption (CZA): attack on the Hatikva Quarter; no casualty figures given in-text",
+  "pretext": "",
+  "src": "Morris 1948 p.272 (photo caption)",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Arab militiaman carries “captured” Jewish baby after attack on Hatikva Quarter, December 1947 (By permission of the Central Zionist Archives) To view this image, please refer to the print version of this book."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "riot",
+  "n": 3,
+  "date": "December 1947 (exact date not given in text; ~late Dec)",
+  "year": 1947,
+  "location": "Haifa oil refinery",
+  "event": "massacre of Jewish employees on the refinery premises",
+  "quote": "However, an IZL action near the refineries, the subsequent massacre of Jewish employees on the premises of the plant and the Haganah's retaliation against two adjacent villages on the following night, increased tension and undermined the agreement.",
+  "perp": "Arab refinery workers (mob)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "massacre of Jewish employees on the refinery premises",
+  "pretext": "precipitated by an IZL action near the refineries (bomb that killed Arab workers)",
+  "src": "Gelber p.21",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The pact was almost consummated and the negotiators devised arrangements for mutual liaison to secure its functioning.2? However, an IZL action near the refineries, the subsequent massacre of Jewish employees on the premises of the plant and the Haganabh's retaliation against t w o adjacent villages on the following night, increased tension and undermined the agreement.' Frictions between Christian and M u s l i m Arabs, and between the national committee and radical groups that pretended to act upon the Mufti's orders, hindered a truce."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "riot",
+  "n": 4,
+  "date": "early December 1947 (start of the Arab general strike)",
+  "year": 1947,
+  "location": "Jerusalem — new commercial centre",
+  "event": "Mob's successful assault (looting/burning) on the new Jerusalem commercial centre at the opening of the Arab strike; Haganah caught unprepared in the cities",
+  "quote": "the mob's successful assault on the new commercial centre in Jerusalem had demonstrated at the beginning of the Arab strike.",
+  "perp": "Arab urban mob",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Mob's successful assault (looting/burning) on the new Jerusalem commercial centre at the opening of the Arab strike; Haganah caught unprepared in the cities",
+  "pretext": "Arab general strike following the 29 Nov 1947 UN partition vote",
+  "src": "Gelber p.60",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "Consequently, preparedness in the cities was inadequate, as the mob's successful assault on the new commercial centre in Jerusalem had demonstrated at the beginning of the Arab strike.é Unlike most of his colleagues, Sasson — the Jewish Agency's leading authority on Arabs — argued that the disturbances were already in full swing."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 1,
+  "date": "11 December 1947",
+  "year": 1947,
+  "location": "Jewish Quarter, Old City, Jerusalem",
+  "event": "Unsuccessful attack on the Jewish Quarter; afterward British troops cordoned the perimeter",
+  "quote": "Following an unsuccessful attack by Arab militiamen on 11 December 1947, British troops took up positions around the quarter, forming an outer cordon sanitaire around the Haganah-defended perimeter.",
+  "perp": "Arab militiamen",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Unsuccessful attack on the Jewish Quarter; afterward British troops cordoned the perimeter",
+  "pretext": "",
+  "src": "Morris 1948 p.217",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Before the war, most of the inhabitants— almost all ultra-Orthdox—had been “on good terms with their Arab neighbours,” resented the Haganah presence, and “were loath to see their homes sacrificed to Zionist heroics,” as one British diplomat put it.182 Following an unsuccessful attack by Arab militiamen on 11 December 1947, British troops took up positions around the quarter, forming an outer cordon sanitaire around the Haganah-defended perimeter."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 2,
+  "date": "4 December 1947",
+  "year": 1947,
+  "location": "Ef'al, small kibbutz northeast of Tel Aviv",
+  "event": "120–150 attackers; settlers + Palmah reinforcements beat them off",
+  "quote": "On 4 December a band of 120 –150 gunmen from Salame attacked Ef gal, a small kibbutz northeast of Tel Aviv.",
+  "perp": "Band of 120–150 gunmen from Salame village",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "120–150 attackers; settlers + Palmah reinforcements beat them off",
+  "pretext": "",
+  "src": "Morris 1948 p.102",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 4 December a band of 120 –150 gunmen from Salame attacked Ef gal, a small kibbutz northeast of Tel Aviv."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 3,
+  "date": "27 December 1947",
+  "year": 1947,
+  "location": "Kfar Yavetz (near Qalansuwa/Taiyiba)",
+  "event": "Repulsed with Haganah + British armoured column help; attackers left dead behind; several Haganah men killed",
+  "quote": "A more forceful attack was launched on 27 December against nearby Kfar Yavetz by militiamen from Qalansuwa and Taiyiba.",
+  "perp": "Militiamen from Qalansuwa and Taiyiba",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "several killed",
+  "scaleBig": "—",
+  "scaleNote": "Repulsed with Haganah + British armoured column help; attackers left dead behind; several Haganah men killed",
+  "pretext": "Responding to provocative Haganah patrolling and the demolition of a nearby well",
+  "src": "Morris 1948 p.102",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "A more forceful attack was launched on 27 December against nearby Kfar Yavetz by militiamen from Qalansuwa and Taiyiba."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 1,
+  "date": "30 November 1947",
+  "year": 1947,
+  "location": "Jaffa (Manshiya) into southern Tel Aviv",
+  "event": "sniping from Manshiya into southern Tel Aviv; at least 1 killed (among the first dead of the war)",
+  "quote": "Later that morning, Arab snipers began to fire from Jaffa's Manshiya neighborhood into southern Tel Aviv, killing at least one person.",
+  "perp": "Arab snipers, Jaffa (Manshiya neighborhood)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "~1 killed",
+  "scaleBig": "1",
+  "scaleNote": "sniping from Manshiya into southern Tel Aviv; at least 1 killed (among the first dead of the war)",
+  "pretext": "",
+  "src": "Morris 1948 p.76",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Later that morning, Arab snipers began to fire from Jaffa's Manshiya neighborhood into southern Tel Aviv, killing at least one person."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 11,
+  "date": "12-14 January 1948",
+  "year": 1948,
+  "location": "Etzion Bloc / West Jerusalem-Etzion road (Hebron hills)",
+  "event": "Convoy ambushed; assault on the kibbutzim by several thousand militiamen repulsed; bloc thereafter under siege",
+  "quote": "Starting on 12-14 January 1948—when a convoy from West Jerusalem to the bloc was ambushed by villagers and an attack on the kibbutzim by several thousand local militiamen was repulsed—the bloc was effectively under siege.",
+  "perp": "Local villagers + several thousand local militiamen",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Convoy ambushed; assault on the kibbutzim by several thousand militiamen repulsed; bloc thereafter under siege",
+  "pretext": "",
+  "src": "Morris 1948 p.168",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "as in any event you will be removed by force” and promised that the settlers would be compensated for their lands.304 Starting on 12–14 January 1948—when a convoy from West Jerusalem to the bloc was ambushed by villagers and an attack on the kibbutzim by several thousand local militiamen was repulsed305—the bloc was effectively under siege."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 12,
+  "date": "13 April 1948",
+  "year": 1948,
+  "location": "Sheikh Jarrah, East Jerusalem (Hadassah Hospital–Hebrew University road to Mount Scopus)",
+  "event": "78 academics, doctors, students, nurses and Haganah men killed; many roasted alive; only 30 bodies recovered",
+  "quote": "On the morning of 13 April, hundreds of militiamen from Jerusalem and surrounding villages, taking revenge for Deir Yassin and the death of gAbd al-Qadir, descended on the road running through the East Jerusalem neighborhood of Sheikh Jarrah... and ambushed a ten-vehicle Haganah convoy carrying mostly unarmed Jewish lecturers, students, nurses and doctors on their way to the mountaintop Hadassah Hospital–Hebrew University campus.",
+  "perp": "hundreds of militiamen from Jerusalem and surrounding villages",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "78 killed",
+  "scaleBig": "78",
+  "scaleNote": "78 academics, doctors, students, nurses and Haganah men killed; many roasted alive; only 30 bodies recovered",
+  "pretext": "Revenge for the Deir Yassin massacre (9 Apr) and the death of Abd al-Qadir al-Husseini; no British escort that day",
+  "src": "Morris 1948 p.128",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On the morning of 13 April, hundreds of militiamen from Jerusalem and surrounding villages, taking revenge for Deir Yassin and the death of gAbd al-Qadir, descended on the road running through the East Jerusalem neighborhood of Sheikh Jarrah, which linked Jewish Jerusalem and Mount Scopus, and ambushed a ten-vehicle Haganah convoy carrying mostly unarmed Jewish lecturers, students, nurses and doctors on their way to the mountaintop Hadassah Hospital–Hebrew University campus."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 13,
+  "date": "14–15 May 1948",
+  "year": 1948,
+  "location": "near Kibbutz Kfar Darom, Negev",
+  "event": "Palmah relief column ambushed a mile short of the kibbutz; >12 killed or wounded",
+  "quote": "A Palmah relief column was ambushed a mile short of the kibbutz on the night of 14–15 May, and more than a dozen were killed or wounded.",
+  "perp": "Arab forces near Kfar Darom (Egyptian/Muslim Brotherhood)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "part of >12 killed, part of >12 wounded",
+  "scaleBig": "12",
+  "scaleNote": "Palmah relief column ambushed a mile short of the kibbutz; >12 killed or wounded",
+  "pretext": "",
+  "src": "Morris 1948 p.237",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "A Palmah relief column was ambushed a mile short of the kibbutz on the night of 14 –15 May, and more than a dozen were killed or wounded."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 14,
+  "date": "15 January 1948",
+  "year": 1948,
+  "location": "En route to the Etzion Bloc (Hebron hills, near Surif)",
+  "event": "Entire 35-man Haganah relief column killed ('to a man') — the Lamed-Heh",
+  "quote": "On 15 January a thirty-five-man Haganah relief column was destroyed to a man.",
+  "perp": "Local militiamen/villagers",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "35 killed, 0 wounded",
+  "scaleBig": "35",
+  "scaleNote": "Entire 35-man Haganah relief column killed ('to a man') — the Lamed-Heh",
+  "pretext": "Relief column dispatched because the bloc was under siege after the 12-14 Jan ambush",
+  "src": "Morris 1948 p.168",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 15 January a thirty-five-man Haganah relief column was destroyed to a man.306 During the following months the Yishuv leadership repeatedly debated the possible evacuation of the bloc (as the British recommended)."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 15,
+  "date": "15 January 1948",
+  "year": 1948,
+  "location": "Judean Hills, en route to the besieged Etzion Bloc",
+  "event": "Reinforced 35-man platoon (mostly Hebrew University students) trying to reach the blockaded Etzion Bloc on foot; all killed in a drawn-out battle, bodies reportedly mutilated (the 'Lamed-Heh'); 15–16 Jan",
+  "quote": "The column was spotted and ambushed by a fazga. The villagers killed all of them in a drawn-out battle (and then, according to some reports, mutilated their bodies).",
+  "perp": "A faz'a of Arab villagers",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "35 killed",
+  "scaleBig": "35",
+  "scaleNote": "Reinforced 35-man platoon (mostly Hebrew University students) trying to reach the blockaded Etzion Bloc on foot; all killed in a drawn-out battle, bodies reportedly mutilated (the 'Lamed-Heh'); 15–16 Jan",
+  "pretext": "Attempt to bypass the Palestinian blockade of the Jerusalem–Etzion Bloc road and relieve the besieged bloc",
+  "src": "Morris 1948 p.107",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The villagers killed all of them in a drawn-out battle (and then, according to some reports, mutilated their bodies).161 Side by side with ambushes along the roads, the Husseini-affiliated irregulars turned to large-scale urban terrorism, despite an incr"
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 16,
+  "date": "20 January 1948",
+  "year": 1948,
+  "location": "Near Kibbutz Yehiam, Western Galilee",
+  "event": "Six Jews killed in a nearby ALA ambush, in addition to the 4 lost in the Yehiam assault the same day (Morris gives no further detail)",
+  "quote": "Yehiam sustained four dead—and six more were killed in a nearby ALA ambush.",
+  "perp": "ALA (Second Yarmuk Battalion sector)",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "6 killed",
+  "scaleBig": "6",
+  "scaleNote": "Six Jews killed in a nearby ALA ambush, in addition to the 4 lost in the Yehiam assault the same day (Morris gives no further detail)",
+  "pretext": "",
+  "src": "Morris 1948 p.106",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Wave after wave of as- 106 T H E FI R S T S TAG E O FT H E C I V I LWAR saults failed to crack the defenses and the ALA withdrew, after suffering thirty dead and sixty wounded; Yehiam sustained four dead—and six more were killed in a nearby ALA ambush.156 The First Yarmuk went into action a month later, on 16 February."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 17,
+  "date": "18 March 1948",
+  "year": 1948,
+  "location": "Near Har-Tuv, Jerusalem area",
+  "event": "Road setback near Har-Tuv; one of three Jerusalem-area road setbacks (Har-Tuv 18 Mar, Atarot & Saris 24 Mar) in which the Haganah suffered a COMBINED 26 men killed and 18 vehicles destroyed",
+  "quote": "First came three serious setbacks in the Jerusalem area—near Har-Tuv (18 March), gAtarot (24 March), and Saris (24 March)—in which the Haganah suffered twenty-six men killed and eighteen vehicles destroyed.",
+  "perp": "Arab irregulars (Jerusalem-area; force unnamed)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Road setback near Har-Tuv; one of three Jerusalem-area road setbacks (Har-Tuv 18 Mar, Atarot & Saris 24 Mar) in which the Haganah suffered a COMBINED 26 men killed and 18 vehicles destroyed",
+  "pretext": "",
+  "src": "Morris 1948 p.109",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "First came three serious setbacks in the Jerusalem area—near Har-Tuv (18 March), gAtarot (24 March), and Saris (24 March)—in which the Haganah suffered twenty-six men killed and eighteen vehicles destroyed.169 Greater disasters followed."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 18,
+  "date": "24 March 1948",
+  "year": 1948,
+  "location": "Saris, Jerusalem area",
+  "event": "Road setback at Saris; one of three Jerusalem-area road setbacks (Har-Tuv 18 Mar, Atarot & Saris 24 Mar) with a COMBINED 26 Haganah killed and 18 vehicles destroyed",
+  "quote": "First came three serious setbacks in the Jerusalem area—near Har-Tuv (18 March), gAtarot (24 March), and Saris (24 March)—in which the Haganah suffered twenty-six men killed and eighteen vehicles destroyed.",
+  "perp": "Arab irregulars (Jerusalem-area; force unnamed)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Road setback at Saris; one of three Jerusalem-area road setbacks (Har-Tuv 18 Mar, Atarot & Saris 24 Mar) with a COMBINED 26 Haganah killed and 18 vehicles destroyed",
+  "pretext": "",
+  "src": "Morris 1948 p.109",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "First came three serious setbacks in the Jerusalem area—near Har-Tuv (18 March), gAtarot (24 March), and Saris (24 March)—in which the Haganah suffered twenty-six men killed and eighteen vehicles destroyed.169 Greater disasters followed."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 19,
+  "date": "24 March 1948",
+  "year": 1948,
+  "location": "Atarot, Jerusalem area",
+  "event": "Road setback at Atarot; one of three Jerusalem-area road setbacks (Har-Tuv 18 Mar, Atarot & Saris 24 Mar) with a COMBINED 26 Haganah killed and 18 vehicles destroyed",
+  "quote": "First came three serious setbacks in the Jerusalem area—near Har-Tuv (18 March), gAtarot (24 March), and Saris (24 March)—in which the Haganah suffered twenty-six men killed and eighteen vehicles destroyed.",
+  "perp": "Arab irregulars (Jerusalem-area; force unnamed)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Road setback at Atarot; one of three Jerusalem-area road setbacks (Har-Tuv 18 Mar, Atarot & Saris 24 Mar) with a COMBINED 26 Haganah killed and 18 vehicles destroyed",
+  "pretext": "",
+  "src": "Morris 1948 p.109",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "First came three serious setbacks in the Jerusalem area—near Har-Tuv (18 March), gAtarot (24 March), and Saris (24 March)—in which the Haganah suffered twenty-six men killed and eighteen vehicles destroyed.169 Greater disasters followed."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 20,
+  "date": "27 March 1948",
+  "year": 1948,
+  "location": "Nabi Daniyal, just south of Bethlehem (Jerusalem–Etzion Bloc road)",
+  "event": "The biggest convoy ambush of the war; large Jerusalem→Etzion convoy halted at a barrier, 186 troopers besieged 30 hours in a stone house, surrendered weapons to British; 15 dead, 73 wounded, 39 vehicles lost (27–28 March)",
+  "quote": "Haganah losses were fifteen dead and seventy-three wounded, as well as ten armored cars, four buses, and twenty-five armor-clad trucks.",
+  "perp": "Kamal Erikat (Abd al-Qadir al-Husseini's deputy) + thousands of armed villagers/townsmen from Hebron, Bethlehem and Jerusalem",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "15 killed, 73 wounded",
+  "scaleBig": "15",
+  "scaleNote": "The biggest convoy ambush of the war; large Jerusalem→Etzion convoy halted at a barrier, 186 troopers besieged 30 hours in a stone house, surrendered weapons to British; 15 dead, 73 wounded, 39 vehicles lost (27–28 March)",
+  "pretext": "",
+  "src": "Morris 1948 pp.109-110",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On the morning of 27 March a large convoy—three dozen supplies-laden trucks accompanied by five busloads of troops and seven armored cars—snaked its way from Jerusalem to the gEtzion Bloc."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 21,
+  "date": "27 March 1948",
+  "year": 1948,
+  "location": "Near Kabri, on the road to Kibbutz Yehiam, Western Galilee",
+  "event": "Seven-vehicle convoy carrying 89 men and women ambushed; vehicles stopped and burned; 47 bodies found, many mutilated; ~3 dozen escaped on foot; Arab losses only 3–6 dead",
+  "quote": "The following morning, the British and Haganah found forty-seven bodies, many of them mutilated.",
+  "perp": "ALA Second Yarmuk Battalion + local militiamen",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "47 killed",
+  "scaleBig": "47",
+  "scaleNote": "Seven-vehicle convoy carrying 89 men and women ambushed; vehicles stopped and burned; 47 bodies found, many mutilated; ~3 dozen escaped on foot; Arab losses only 3–6 dead",
+  "pretext": "",
+  "src": "Morris 1948 p.111",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The following morning, the British and Haganah found forty-seven bodies, many of them mutilated."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 22,
+  "date": "31 March 1948",
+  "year": 1948,
+  "location": "Near Kibbutz Hulda (Hulda–Jerusalem road)",
+  "event": "37-vehicle convoy of reinforcements/supplies for Jerusalem; trucks overturned, occupants of one vehicle blew themselves up; 22 Haganah dead, 16 wounded, 4 vehicles lost; first time a whole convoy failed to reach Jerusalem; Arab losses 8 dead",
+  "quote": "But twenty-two Haganah men had died and sixteen were wounded, and four more vehicles were lost.",
+  "perp": "Mustered militiamen from villages surrounding the route",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "22 killed, 16 wounded",
+  "scaleBig": "22",
+  "scaleNote": "37-vehicle convoy of reinforcements/supplies for Jerusalem; trucks overturned, occupants of one vehicle blew themselves up; 22 Haganah dead, 16 wounded, 4 vehicles lost; first time a whole convoy failed to reach Jerusalem; Arab losses 8 dead",
+  "pretext": "The previous night Haganah troops had blown up a house and killed 15 Arabs in nearby Abu Shusha; and the convoy itself fired on an Arab bus as it set out, killing the driver and wounding passengers, raising the alarm in surrounding villages",
+  "src": "Morris 1948 p.111",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "But twenty-two Haganah men had died and sixteen were wounded, and four more vehicles were lost."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 23,
+  "date": "25 January 1948",
+  "year": 1948,
+  "location": "upgrade to Qastel, west of Jerusalem",
+  "event": "first time masses of fallahin joined the war on the roads; convoy attacked, roadblocks set; plan went badly",
+  "quote": "On 25 January 1948 al-Husayni's Tzurif-based gang assailed a Jewish convoy on the steep upgrade to Qastel, and deployed roadblocks to obstruct arrival of reinforcements or possible British intervention.",
+  "perp": "Abd al-Qadir al-Husayni's Tzurif-based gang + Faz'a fallahin",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "first time masses of fallahin joined the war on the roads; convoy attacked, roadblocks set; plan went badly",
+  "pretext": "",
+  "src": "Gelber p.26",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "On 25 January 1948 al- Husayni's Tzurif-based gang assailed a Jewish convoy on the steep upgrade to Qastel, and deployed roadblocks to obstruct arrival of rein- forcements or possible British intervention."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 24,
+  "date": "February 1948",
+  "year": 1948,
+  "location": "Gaza / Negev",
+  "event": "ambush of a Jewish patrol; ended in a fiasco",
+  "quote": "One of the Egyptian officers put his men's competence to the test by ambushing a Jewish patrol. The assault ended in a fiasco.",
+  "perp": "Egyptian officer + Gaza fallahin (preparing for the ALA Egyptian contingent)",
+  "actorType": [
+   "foreign-volunteers"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "ambush of a Jewish patrol; ended in a fiasco",
+  "pretext": "Egyptian officer testing his men's competence (no retaliation pretext)",
+  "src": "Gelber p.28",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "One of the Egyptian officers put his men's competence to the test by ambushing a Jewish patrol."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 25,
+  "date": "July 1948 (continuing into Second Truce from 18 July)",
+  "year": 1948,
+  "location": "coast road S. of Haifa (Ijzim, Ein Ghazal, Jaba — 'the Little Triangle')",
+  "event": "Villages repeatedly sniped at Israeli traffic on the coast road; refused to desist or surrender (triggering the Israeli Operation Policeman, 24-26 July)",
+  "quote": "The villages repeatedly fired at Israeli traffic along the coast road and were supplied by the Iraqis from northern Samaria.",
+  "perp": "village militiamen of Ijzim, Ein Ghazal, Jaba (supplied by the Iraqis)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Villages repeatedly sniped at Israeli traffic on the coast road; refused to desist or surrender (triggering the Israeli Operation Policeman, 24-26 July)",
+  "pretext": "",
+  "src": "Morris 1948 p.296",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The villages repeatedly fired at Israeli traffic along the coast road and were supplied by the Iraqis from northern Samaria."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 26,
+  "date": "last ten days of March 1948",
+  "year": 1948,
+  "location": "Jerusalem road and isolated settlements around Jerusalem",
+  "event": "The 'convoys' crisis' — a cluster of successful Arab convoy ambushes on the Jerusalem road and to isolated settlements; heavy blows to the Yishuv's lines of communication, celebrated by the Palestinian press",
+  "quote": "The list of setbacks included several successful attacks by the Arabs on Jewish convoys to Jerusalem and to isolated settlements around the town, and one attack on a convoy to Yechi'am in western Galilee.",
+  "perp": "Abd al-Qadir al-Husayni's Mujahidin (Jihad al-Muqaddas)",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "The 'convoys' crisis' — a cluster of successful Arab convoy ambushes on the Jerusalem road and to isolated settlements; heavy blows to the Yishuv's lines of communication, celebrated by the Palestinian press",
+  "pretext": "Arab seizure of the initiative in the campaign of the roads / siege of Jewish Jerusalem",
+  "src": "Gelber p.70",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The list of setbacks included several successful attacks by the Arabs on Jewish convoys to Jerusalem and to isolated settlements around the town, and one attack on a convoy to Yechi'am in western Galilee."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 27,
+  "date": "last ten days of March 1948",
+  "year": 1948,
+  "location": "convoy route to Yechi'am, western Galilee",
+  "event": "Ambush of a Jewish convoy to Yechi'am, part of the late-March 'convoys' crisis'",
+  "quote": "and one attack on a convoy to Yechi'am in western Galilee. All took place during the last ten days of March 1948.",
+  "perp": "Arab irregulars (western Galilee, unnamed)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Ambush of a Jewish convoy to Yechi'am, part of the late-March 'convoys' crisis'",
+  "pretext": "",
+  "src": "Gelber p.70",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The list of setbacks included several successful attacks by the Arabs on Jewish convoys to Jerusalem and to isolated settlements around the town, and one attack on a convoy to Yechi'am in western Galilee."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 28,
+  "date": "mid-January 1948",
+  "year": 1948,
+  "location": "road to Gush Etzion (Hebron hills)",
+  "event": "The 'Lamed Heh' — 35 Haganah/PALMAH members killed en route to relieve besieged Gush Etzion (commemorated in operation name)",
+  "quote": "Operation LAMED HE (35), after the 35 Haganah and PALMAH members who had been killed on their way to Gush Etzion in mid-January.",
+  "perp": "Arab villagers/irregulars (unnamed)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "35 killed",
+  "scaleBig": "35",
+  "scaleNote": "The 'Lamed Heh' — 35 Haganah/PALMAH members killed en route to relieve besieged Gush Etzion (commemorated in operation name)",
+  "pretext": "Jewish relief party moving to the besieged Gush Etzion bloc",
+  "src": "Gelber p.67",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "Galili asked for Ben-Gurion's approval of these actions, given the code name “Operation LAMED HE (35)>, after the 35 Haganah and PALMAH members who had been killed on their way to Gush Etzion in mid-January.* Ben-Gurion was in no hurry to approve the raids."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 29,
+  "date": "mid-January 1948 (shortly after 14 Jan; date not given in text)",
+  "year": 1948,
+  "location": "Hebron hills, en route to reinforce Gush Etzion",
+  "event": "entire 35-man Haganah relief detachment annihilated (the 'Lamed Heh')",
+  "quote": "The Arabs' compensation was the complete annihilation of a 35-strong Haganah detachment that was caught in hostile territory as they rushed on foot to reinforce Gush Etzion in expectation of further assaults.",
+  "perp": "local Arab fallahin/irregulars (Hebron hills)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "35 killed",
+  "scaleBig": "35",
+  "scaleNote": "entire 35-man Haganah relief detachment annihilated (the 'Lamed Heh')",
+  "pretext": "framed by Gelber as the Arabs' 'compensation' after the failed 14 Jan Gush Etzion assault",
+  "src": "Gelber p.26",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The Arabs' compensation was the complete annihilation of a 35-strong Haganab detachment that was caught in hostile territory as they rushed on foot to reinforce Gush Etzion in expectation of further assaults."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "ambush",
+  "n": 30,
+  "date": "~late March 1948",
+  "year": 1948,
+  "location": "Near Kabri/Ghabisiya, Western Galilee (convoy to Kibbutz Yehiam)",
+  "event": "The Yehiam Convoy ambushed (back-reference; 'two months before' the 20-22 May operation; no casualty figure given in this text)",
+  "quote": "executed six more (allegedly because of the villagers' participation in the ambush of the Yehiam Convoy two months before).",
+  "perp": "Local villagers (including Ghabisiya)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "The Yehiam Convoy ambushed (back-reference; 'two months before' the 20-22 May operation; no casualty figure given in this text)",
+  "pretext": "",
+  "src": "Morris 1948 p.166",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "But the troops opened fire, hitting several villagers, and then executed six more (allegedly because of the villagers' participation in the ambush of the Yehiam Convoy two months before)."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 2,
+  "date": "15 May 1948",
+  "year": 1948,
+  "location": "Tel Aviv (Sdeh Dov airfield + Reading Power Station)",
+  "event": "Opening blow of the invasion; aircraft destroyed/hit; antiaircraft caught unprepared",
+  "quote": "In classic fashion, the Egyptians heralded the invasion with a dawn attack by a foursome of Spitfires on 15 May on Tel Aviv's airfield, Sdeh Dov... A number of Israeli aircraft were destroyed and others hit, and five Israelis were killed.",
+  "perp": "Egyptian air force (four Spitfires)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "5 killed",
+  "scaleBig": "5",
+  "scaleNote": "Opening blow of the invasion; aircraft destroyed/hit; antiaircraft caught unprepared",
+  "pretext": "",
+  "src": "Morris 1948 p.235",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "In classic fashion, the Egyptians heralded the invasion with a dawn attack by a foursome of Spitfires on 15 May on Tel Aviv's airfield, Sdeh Dov—where the bulk of the Haganah aircraft were concentrated—and the neighboring Reading Power Station."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 3,
+  "date": "16–17 July 1948",
+  "year": 1948,
+  "location": "Tel Aviv",
+  "event": "Repeated bombing of Tel Aviv; Egyptians lost one Dakota",
+  "quote": "The Egyptians responded on 16 and 17 July by repeatedly bombing Tel Aviv with Dakotas, accompanied by a Spitfire fighter escort, killing at least fifteen Israelis.",
+  "perp": "Egyptian air force (Dakotas + Spitfire escort)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "15 killed",
+  "scaleBig": "15",
+  "scaleNote": "Repeated bombing of Tel Aviv; Egyptians lost one Dakota",
+  "pretext": "Egyptian response to the 15 July IAF B-17 bombing of King Farouk's Abdeen Palace in Cairo",
+  "src": "Morris 1948 p.295",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "n Airfield.136 The Egyptians responded on 16 and 17 July by repeatedly bombing Tel Aviv with Dakotas, accompanied by a Spitfire fighter escort, killing at least fifteen Israelis."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 4,
+  "date": "1 February 1948",
+  "year": 1948,
+  "location": "Palestine Post building, downtown West Jerusalem",
+  "event": "Truck bomb (night of 1–2 Feb) gutted the building and damaged the adjacent Himmelfarb Hotel (housing Palmah); 1 dead, 20+ injured",
+  "quote": "...the truck exploded, gutting the building and damaging the adjacent Himmelfarb Hotel, which housed Palmah troops. One man died and more than twenty were injured.",
+  "perp": "Abu Khalil Janho (working for Abd al-Qadir al-Husseini) + two British deserters",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "1 killed, 20+ wounded",
+  "scaleBig": "1",
+  "scaleNote": "Truck bomb (night of 1–2 Feb) gutted the building and damaged the adjacent Himmelfarb Hotel (housing Palmah); 1 dead, 20+ injured",
+  "pretext": "",
+  "src": "Morris 1948 p.107",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On the night of 1–2 February two British deserters, Eddie Brown and Peter Madi-son, and an Arab, Abu Khalil Janho, working for gAbd al-Qadir al-Husseini, drove a British army truck and a police car to the entrance of the Palestine Post building in downtown West Jerusalem."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 5,
+  "date": "22 February 1948",
+  "year": 1948,
+  "location": "Ben-Yehuda Street, Jewish West Jerusalem",
+  "event": "Three stolen British trucks + an armoured car; bombs leveled four buildings; 58 dead (almost all civilians), 32 seriously injured; the war's worst attack to date",
+  "quote": "The trucks blew up at 6:30 AM, leveling four buildings... But fifty-eight people died, almost all civilians, and thirty-two were seriously injured.",
+  "perp": "Abd al-Qadir al-Husseini's organization; trucks rigged by bomb-maker Fawzi al-Kutub, driven by six British army deserters/ex-policemen",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "58 killed, 32 wounded",
+  "scaleBig": "58",
+  "scaleNote": "Three stolen British trucks + an armoured car; bombs leveled four buildings; 58 dead (almost all civilians), 32 seriously injured; the war's worst attack to date",
+  "pretext": "",
+  "src": "Morris 1948 p.108",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "But fifty-eight people died, almost all civilians, and thirty-two were seriously injured."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 6,
+  "date": "11 March 1948",
+  "year": 1948,
+  "location": "National Institutions compound (Jewish Agency / JNF HQ), Jerusalem",
+  "event": "Car bomb driven into the courtyard of the Jewish Agency/JNF headquarters; 12 killed, 10 seriously wounded; morale in Jewish Jerusalem shaken",
+  "quote": "A few minutes later, the car exploded. Twelve people were killed and ten seriously wounded.",
+  "perp": "Husseini agent Anton Daoud Camilio (an American consulate driver who doubled as an HIS informer)",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "12 killed, 10 wounded",
+  "scaleBig": "12",
+  "scaleNote": "Car bomb driven into the courtyard of the Jewish Agency/JNF headquarters; 12 killed, 10 seriously wounded; morale in Jewish Jerusalem shaken",
+  "pretext": "",
+  "src": "Morris 1948 p.108",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Twelve people were killed and ten seriously wounded."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 7,
+  "date": "30 May 1948",
+  "year": 1948,
+  "location": "Rehovot (Sieff/Weizmann Institute)",
+  "event": "Bombers aiming for Ekron airfield hit town center incl. the Sieff Institute",
+  "quote": "On 30 May Egyptian bombers, aiming for gEqron, hit the center of the town of Rehovot, including the Sieff (later, Weizmann) Institute, killing seven and wounding thirty.",
+  "perp": "Egyptian air force (bombers)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "7 killed, 30 wounded",
+  "scaleBig": "7",
+  "scaleNote": "Bombers aiming for Ekron airfield hit town center incl. the Sieff Institute",
+  "pretext": "",
+  "src": "Morris 1948 p.261",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 30 May Egyptian bombers, aiming for gEqron, hit the center of the town of Rehovot, including the Sieff (later, Weizmann) Institute, killing seven and wounding thirty."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 8,
+  "date": "February 1948 (before 22 Feb; date not given in text)",
+  "year": 1948,
+  "location": "Jerusalem, Ben Yehuda Street (downtown)",
+  "event": "car bombs on Ben Yehuda Street; 53 killed",
+  "quote": "Tension in the city climaxed after the Ben Yehuda Street's outrage. The perpetrators were British defectors in Abd al-Qadir al-Husayni's service.",
+  "perp": "British defectors in Abd al-Qadir al-Husayni's service",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "53 killed",
+  "scaleBig": "53",
+  "scaleNote": "car bombs on Ben Yehuda Street; 53 killed",
+  "pretext": "",
+  "src": "Gelber p.24",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The perpetrators were British defectors in Abd al-Qadir al-Husayni's service."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 9,
+  "date": "February 1948 (date not given in text)",
+  "year": 1948,
+  "location": "Jerusalem, Palestine Post editorial offices (downtown)",
+  "event": "car bomb at The Palestine Post; 22 killed",
+  "quote": "The first bomb exploded near the editorial offices of The Palestine Post... The death toll was exceedingly high: 22 in the first explosion.",
+  "perp": "unknown (Jews suspected British complicity)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "22 killed",
+  "scaleBig": "22",
+  "scaleNote": "car bomb at The Palestine Post; 22 killed",
+  "pretext": "",
+  "src": "Gelber p.24",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The first bomb exploded near the editorial offices of The Palestine Post; the second on Ben Yehuda Street and the third in the courtyard of the Jewish Agency's building."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "bombing",
+  "n": 10,
+  "date": "February–March 1948 (date not given in text)",
+  "year": 1948,
+  "location": "Jerusalem, Jewish Agency courtyard",
+  "event": "car bomb in the Jewish Agency building courtyard; 13 killed",
+  "quote": "...the third in the courtyard of the Jewish Agency's building. The death toll was exceedingly high... 13 in the third.",
+  "perp": "unknown (not attributed in text)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "13 killed",
+  "scaleBig": "13",
+  "scaleNote": "car bomb in the Jewish Agency building courtyard; 13 killed",
+  "pretext": "",
+  "src": "Gelber p.24",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The first bomb exploded near the editorial offices of The Palestine Post; the second on Ben Yehuda Street and the third in the courtyard of the Jewish Agency's building."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 4,
+  "date": "13 May 1948",
+  "year": 1948,
+  "location": "Kfar Etzion, Gush Etzion (Hebron hills)",
+  "event": "Massacre of the surrendered defenders following Gush Etzion's downfall on 13 May; number of victims unstated in this passage (reported via Dr Rudolf Wert / IRC delegates)",
+  "quote": "Upon his return, he gave an account of the massacre that had taken place in Kfar Etzion following the surrender.",
+  "perp": "Arab forces after the surrender (assault attributed in passage to a Legion unit; massacre's perpetrators not named here)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Massacre of the surrendered defenders following Gush Etzion's downfall on 13 May; number of victims unstated in this passage (reported via Dr Rudolf Wert / IRC delegates)",
+  "pretext": "",
+  "src": "Gelber p.96",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "Upon his return, he gave an account of the massacre that had taken place in Kfar Etzion following the surrender.®® Having listened to his report, Shealtiel concluded: “The enemy is not a disciplined and civi- lized army."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 5,
+  "date": "18 July 1948",
+  "year": 1948,
+  "location": "Karatiya (IDF-held), south coastal plain",
+  "event": "Tank-led counterattack on the entrenched 53rd Battalion failed; a lone PIAT knocked out a tank, the rest fled",
+  "quote": "as did their counterattack, led by half a dozen tanks, on 18 July against the Fifty-third Battalion entrenched at Karatiya.",
+  "perp": "Egyptian army (armored, ~6 tanks)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Tank-led counterattack on the entrenched 53rd Battalion failed; a lone PIAT knocked out a tank, the rest fled",
+  "pretext": "Egyptian counterattack to retake Karatiya (captured by Dayan's 89th Bn during the Ten Days)",
+  "src": "Morris 1948 p.277",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "14 July) and Beherot Yitzhak (15 July)23 but failed, as did their counterattack, led by half a dozen tanks, on 18 July against the Fifty-third Battalion entrenched at Karatiya."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 6,
+  "date": "4 June 1948",
+  "year": 1948,
+  "location": "off Tel Aviv",
+  "event": "Attempted naval bombardment/commando raid on Tel Aviv; engaged by frigate Eilat + IAF and driven back to Port Said",
+  "quote": "On the morning of 4 June, a three-boat Egyptian flotilla (a corvette, a landing craft, and an armed troop carrier) were sighted off Tel Aviv, apparently aiming to shell the city or launch a commando raid.",
+  "perp": "Egyptian navy (3-boat flotilla)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "0 killed, 0 wounded",
+  "scaleBig": "0",
+  "scaleNote": "Attempted naval bombardment/commando raid on Tel Aviv; engaged by frigate Eilat + IAF and driven back to Port Said",
+  "pretext": "",
+  "src": "Morris 1948 p.263",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On the morning of 4 June, a three-boat Egyptian flotilla (a corvette, a landing craft, and an armed troop carrier) were sighted off Tel Aviv, appar- T H E PA N - A R A B I N VA S I O N 263 ently aiming to shell the city or launch a commando raid."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 7,
+  "date": "June/early July 1948",
+  "year": 1948,
+  "location": "Nazareth area",
+  "event": "A Jewish farmer murdered and his body dragged through the streets behind a motorcycle to the cheers of bystanders",
+  "quote": "though sometime in June or early July some locals had murdered a Jewish farmer and dragged his body through the streets behind a motorcycle, to the cheers of bystanders",
+  "perp": "local Arabs (Nazareth)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "1 killed",
+  "scaleBig": "1",
+  "scaleNote": "A Jewish farmer murdered and his body dragged through the streets behind a motorcycle to the cheers of bystanders",
+  "pretext": "",
+  "src": "Morris 1948 p.281",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "nt toward the Yishuv (though sometime in June or early July some locals had murdered a Jewish farmer and dragged his body through the streets behind a motorcycle, to the cheers of bystanders),43 and the IDF had no reason to unleash its firepower on the town."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 8,
+  "date": "c. 16 July 1948",
+  "year": 1948,
+  "location": "Qula (W. Samaria seam), near Lydda",
+  "event": "Bodies of 16 Alexandroni troopers found severely mutilated (stab wounds, severed genitals/ears) after the Legion took the position; some appear killed after capture while alive",
+  "quote": "In place they found the bodies of sixteen Alexandroni troopers left behind when the Legion took the position two days before.",
+  "perp": "Arab Legion (First Brigade)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "16 killed",
+  "scaleBig": "16",
+  "scaleNote": "Bodies of 16 Alexandroni troopers found severely mutilated (stab wounds, severed genitals/ears) after the Legion took the position; some appear killed after capture while alive",
+  "pretext": "Seesaw battle for Qula during Operation Dani; Legion took the position two days before the IDF retook it 18 July",
+  "src": "Morris 1948 p.293",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "e the Second Truce came into effect.122 In place they found the bodies of sixteen Alexandroni troopers left behind when the Legion took the position two days before."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "other",
+  "n": 9,
+  "date": "~29 February 1948 (after the 29 Feb LHI train ambush)",
+  "year": 1948,
+  "location": "near Jaffa",
+  "event": "12 disarmed Haganah personnel killed at their position",
+  "quote": "British soldiers retaliated against a Haganah position near Jaffa, confiscating the garrison's weapons, leaving the personnel unarmed at the site where subsequently Arabs attacked and killed 12 of them.",
+  "perp": "Arabs (unspecified, near Jaffa)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "12 killed",
+  "scaleBig": "12",
+  "scaleNote": "12 disarmed Haganah personnel killed at their position",
+  "pretext": "British army confiscated the garrison's weapons and left the personnel unarmed, in retaliation after LHI ambushed a military train on 29 Feb as a reprisal for the Ben Yehuda Street bombing",
+  "src": "Gelber p.24",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "British soldiers retaliated against a Haganah position near Jaffa, confiscating the garrison's weapons, leaving the personnel unarmed at the site where subsequently Arabs attacked and killed 12 of them."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "riot",
+  "n": 5,
+  "date": "12 February 1948",
+  "year": 1948,
+  "location": "Shmuel Hanavi Street, Jerusalem",
+  "event": "four disarmed Haganah roadblock men lynched and mutilated",
+  "quote": "The four men were later \"released\" unarmed into the hands of an Arab mob, which lynched them and mutilated their bodies.",
+  "perp": "Arab mob, Jerusalem",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "4 killed",
+  "scaleBig": "4",
+  "scaleNote": "four disarmed Haganah roadblock men lynched and mutilated",
+  "pretext": "A British patrol disarmed the Haganah roadblock and arrested its members, then 'released' them unarmed into the mob's hands",
+  "src": "Morris 1948 p.81",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The four men were later “released” unarmed into the hands of an Arab mob, which lynched them and mutilated their bodies.19 A similar incident occurred a fortnight later, on 28 February, when British troops disarmed Haganah men at a position in the Hayotzek Factory near Holon."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "riot",
+  "n": 6,
+  "date": "28 February 1948",
+  "year": 1948,
+  "location": "Hayotzek Factory near Holon",
+  "event": "eight disarmed Haganah men 'butchered'",
+  "quote": "A similar incident occurred a fortnight later, on 28 February, when British troops disarmed Haganah men at a position in the Hayotzek Factory near Holon. Eight men were \"butchered.\"",
+  "perp": "Arab mob/attackers, near Holon",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "8 killed",
+  "scaleBig": "8",
+  "scaleNote": "eight disarmed Haganah men 'butchered'",
+  "pretext": "British troops disarmed the Haganah men at their position and handed them over (Morris frames it as 'a similar incident' to the 12 Feb lynching)",
+  "src": "Morris 1948 p.81",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The four men were later “released” unarmed into the hands of an Arab mob, which lynched them and mutilated their bodies.19 A similar incident occurred a fortnight later, on 28 February, when British troops disarmed Haganah men at a position in the Hayotzek Factory near Holon. Eight men were “butchered.”20 (The next day, LHI terrorists blew up a British troop train near Rehovot, killing twenty-eight British troops and wounding dozens more.) Moreover, Whitehall's fears that the circumstan"
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "riot",
+  "n": 7,
+  "date": "February 1948 (date not given in text)",
+  "year": 1948,
+  "location": "Damascus gate, Jerusalem",
+  "event": "4 arrested Haganah members released to an Arab mob to be lynched",
+  "quote": "After policemen arrested four Haganah members and deliberately released them near the Damascus gate to be lynched by an Arab mob, the Haganah's district commander ordered his men to forcibly resist arrest.",
+  "perp": "Arab mob",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "~4 killed",
+  "scaleBig": "4",
+  "scaleNote": "4 arrested Haganah members released to an Arab mob to be lynched",
+  "pretext": "British policemen deliberately released the four arrested Haganah men near the Damascus gate to the mob",
+  "src": "Gelber p.24",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "After policemen arrested four Haganah members and deliber- ately released them near the Damascus gate to be lynched by an Arab mob, the Haganah's district commander ordered his men to forcibly resist arrest."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 4,
+  "date": "1-2 May 1948",
+  "year": 1948,
+  "location": "Galilee Panhandle — kibbutzim Dan, Dafna, Kfar Szold, Lehavot Habashan",
+  "event": "Four kibbutzim attacked",
+  "quote": "on 1–2 May, armed bands from Syria had attacked the kibbutzim Dan, Dafna, Kfar Szold, and Lehavot Habashan and ALA forces from Lebanon were attacking Kibbutz Ramot Naftali.",
+  "perp": "Armed bands from Syria",
+  "actorType": [
+   "foreign-volunteers"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Four kibbutzim attacked",
+  "pretext": "",
+  "src": "Morris 1948 p.157",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "What they couldn't take they shot.”223 In parallel, mortars were used to neutralize and clear a cluster of villages (Firgim, Mughar al-Kheit, Qabbaga) north of Rosh Pina,224 securing the road to the Galilee Panhandle, where, on 1–2 May, armed bands from Syria had attacked the kibbutzim Dan, Dafna, Kfar Szold, and Lehavot Habashan and ALA forces from Lebanon were attacking Kibbutz Ramot Naftali.225 But all this was merely a prelude to the battle for Safad, the strategically important mixed town that served as the “capital” of Eastern Galilee."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 5,
+  "date": "1-2 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Ramot Naftali, Galilee Panhandle",
+  "event": "Kibbutz under attack",
+  "quote": "ALA forces from Lebanon were attacking Kibbutz Ramot Naftali.",
+  "perp": "ALA forces from Lebanon",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Kibbutz under attack",
+  "pretext": "",
+  "src": "Morris 1948 p.157",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "kibbutzim Dan, Dafna, Kfar Szold, and Lehavot Habashan and ALA forces from Lebanon were attacking Kibbutz Ramot Naftali.225 But all this was merely a prelude to the battle for Safad, the strategically important mixed town that served as the “capital” of Eastern Galilee."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 6,
+  "date": "10 June 1948",
+  "year": 1948,
+  "location": "Kibbutz Gezer",
+  "event": "68 Haganah defenders (13 women); kibbutz overrun after 4-hr fight; most surrendered, 1-2 executed; looted by irregulars and villagers; retaken by Yiftah that evening; 2 Legionnaires also died",
+  "quote": "A battalion-size force, composed of Legionnaires and irregulars, with a dozen armored cars, attacked Kibbutz Gezer.",
+  "perp": "Arab Legion + irregulars (battalion-size force, poss. Capt. T. N. Bromage's private initiative)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "29 killed",
+  "scaleBig": "29",
+  "scaleNote": "68 Haganah defenders (13 women); kibbutz overrun after 4-hr fight; most surrendered, 1-2 executed; looted by irregulars and villagers; retaken by Yiftah that evening; 2 Legionnaires also died",
+  "pretext": "Attackers overran the kibbutz shouting 'Deir Yassin, Abu Shusha' (invoking those massacres as a revenge motif)",
+  "src": "Morris 1948 p.230",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Bromage.227 A battalion-size force, composed of Legionnaires and irregulars, with a dozen armored cars, attacked Kibbutz Gezer."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 7,
+  "date": "11 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Kfar Darom (coast road between Rafah and Gaza)",
+  "event": "Pre-dawn artillery barrage, smoke bombs, then infantry advance; defenders held the perimeter; attackers retreated leaving ~70 dead",
+  "quote": "Just before dawn on 11 May the battalion, which had infiltrated into Palestine two weeks before, launched an artillery barrage.",
+  "perp": "Muslim Brotherhood volunteer battalion commanded by Egyptian army officers",
+  "actorType": [
+   "foreign-volunteers"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Pre-dawn artillery barrage, smoke bombs, then infantry advance; defenders held the perimeter; attackers retreated leaving ~70 dead",
+  "pretext": "One of two Arab operations to clear the way for the Egyptian expeditionary force on the eve of the invasion",
+  "src": "Morris 1948 p.167",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Just before dawn on 11 May the battalion, which had infiltrated into Palestine two weeks before, launched an artillery barrage."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 8,
+  "date": "11–14 May 1948",
+  "year": 1948,
+  "location": "Beit Mahsir / Bab al-Wad–Latrun, Jerusalem Corridor",
+  "event": "counterattack on Harel's hilltop positions repulsed; Palmahniks held on (no Jewish casualties tied to this counterattack; Harel had cumulatively lost 67 dead/155 wounded over the prior fortnight)",
+  "quote": "ALA units, backed by 75 mm artillery pieces and (unusually) a squadron of British armored cars, counterattacked, but the Palmahniks in the hilltop positions held on.",
+  "perp": "ALA units (75 mm artillery + a squadron of British armored cars)",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "counterattack on Harel's hilltop positions repulsed; Palmahniks held on (no Jewish casualties tied to this counterattack; Harel had cumulatively lost 67 dead/155 wounded over the prior fortnight)",
+  "pretext": "Harel Brigade had taken the hilltops south of the Jerusalem road during Operation Maccabi and dug in",
+  "src": "Morris 1948 p.132",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "ALA units, backed by 75 mm artillery pieces and (unusually) a squadron of British armored cars, counterattacked, but the Palmahniks in the hilltop positions held on."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 9,
+  "date": "11–16 April 1948",
+  "year": 1948,
+  "location": "Kibbutz Ramat Yohanan (east of Haifa, near Shafa-gAmr)",
+  "event": "shelling of Ramat Yohanan + nine assaults on the Carmeli positions (16 Apr); 19 Carmeli soldiers killed in the battle",
+  "quote": "His troops occupied two semiabandoned villages, Hawsha and Khirbet Kayasir, west of Shafa-gAmr, and began to shell Ramat Yohanan and harass the neighboring settlements.",
+  "perp": "ALA Druze Battalion under Shakib Wahab",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "19 killed",
+  "scaleBig": "19",
+  "scaleNote": "shelling of Ramat Yohanan + nine assaults on the Carmeli positions (16 Apr); 19 Carmeli soldiers killed in the battle",
+  "pretext": "al-Qawuqji's 11 Apr cable ordering the Druze Battalion to begin operations around Ramat Yohanan to ease pressure around Mishmar Hagemek; recapturing the lost villages became a Druze 'matter of honor'",
+  "src": "Morris 1948 p.137",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "His troops occupied two semiabandoned villages, Hawsha and Khirbet Kayasir, west of Shafa- gAmr, and began to shell Ramat Yohanan and harass the neighboring settlements.111 The Haganah responded."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 10,
+  "date": "11–16 July 1948",
+  "year": 1948,
+  "location": "Ilaniya (Sejera), Eastern Galilee",
+  "event": "Rolling ALA offensive (infantry, armored cars, 75mm battery) on the Jewish promontory; repeated assaults failed against Golani 12th Bn; ALA took heavy losses",
+  "quote": "Repeated ALA assaults during 11–16 July failed to break the Golani Twelfth Battalion defenses; al-Qawuqji's men took heavy losses.",
+  "perp": "ALA (Fawzi al-Qawuqji)",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Rolling ALA offensive (infantry, armored cars, 75mm battery) on the Jewish promontory; repeated assaults failed against Golani 12th Bn; ALA took heavy losses",
+  "pretext": "al-Qawuqji sought to conquer at least one Jewish settlement to show for his efforts",
+  "src": "Morris 1948 p.282",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 11,
+  "date": "12 April 1948",
+  "year": 1948,
+  "location": "Kfar Etzion outposts (Etzion Bloc)",
+  "event": "Armored-car attack on outposts, then withdrew",
+  "quote": "On 12 April Legion armored cars attacked Kfar gEtzion's outposts, and then withdrew.",
+  "perp": "Arab Legion (Transjordan regular army)",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Armored-car attack on outposts, then withdrew",
+  "pretext": "Response to repeated Haganah ambushes of Arab Legion and British traffic along the Hebron-Bethlehem road",
+  "src": "Morris 1948 p.168",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 12 April Legion armored cars attacked Kfar gEtzion's outposts, and then withdrew.309 Further Haganah attacks followed, with the Legion taking casualties."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 12,
+  "date": "12 July 1948",
+  "year": 1948,
+  "location": "Kibbutz Negba",
+  "event": "~100 defenders; 'wave after wave' repulsed; Egyptians fired ~4,000 rounds, lost ~200-300; turning point of Ten Days in the south",
+  "quote": "the main Egyptian force—the Ninth Battalion, commanded by Lieutenant Colonel Rahmani—struck at Kibbutz Negba itself, the hinge of the Israeli line.",
+  "perp": "Egyptian Ninth Battalion (Fourth Brigade, Lt. Col. Rahmani)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "5 killed, 16 wounded",
+  "scaleBig": "5",
+  "scaleNote": "~100 defenders; 'wave after wave' repulsed; Egyptians fired ~4,000 rounds, lost ~200-300; turning point of Ten Days in the south",
+  "pretext": "Egyptian counterattack during the Ten Days, after the IDF's Operation An-Far",
+  "src": "Morris 1948 p.277",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "With diversionary assaults by elements of the Sixth and Second battalions at Julis and Ibdis, the main Egyptian force—the Ninth Battalion, commanded by Lieutenant Colonel Rahmani—struck at Kibbutz Negba itself, the hinge of the Israeli line."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 13,
+  "date": "12 May 1948",
+  "year": 1948,
+  "location": "Gush Etzion, Judean Hills",
+  "event": "Legion opened its assault on the Etzion bloc the morning of the 12 May People's Administration meeting; 'the situation there is very bad'",
+  "quote": "That morning, the Arab Legion had attacked Gush gEtzion. “The situation there is very bad,” Yigael Yadin, Haganah chief of operations, told the gathering.",
+  "perp": "Arab Legion (Jordan regular army)",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Legion opened its assault on the Etzion bloc the morning of the 12 May People's Administration meeting; 'the situation there is very bad'",
+  "pretext": "",
+  "src": "Morris 1948 p.176",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "That morning, the Arab Legion had attacked Gush gEtzion."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 14,
+  "date": "12-13 May 1948",
+  "year": 1948,
+  "location": "Kfar Etzion (Etzion Bloc), between Bethlehem and Hebron",
+  "event": "Kfar Etzion overrun; after surrender 'almost all the men and women were murdered' — 106 men + 27 women killed in the battle/slaughter that day plus 24 defenders killed the first day",
+  "quote": "Almost all the men and women were murdered.",
+  "perp": "Arab Legion (6th & 12th garrison companies) + ALA company + 1,000+ local militiamen; post-surrender massacre carried out largely by the local militiamen",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "~157 killed",
+  "scaleBig": "157",
+  "scaleNote": "Kfar Etzion overrun; after surrender 'almost all the men and women were murdered' — 106 men + 27 women killed in the battle/slaughter that day plus 24 defenders killed the first day",
+  "pretext": "Morris: motivated in part by revenge for prior Legion casualties at the hands of the bloc's fighters (April-May road ambushes), by the obligation to secure the road for British traffic, by Hebron-notable pressure, and to facilitate the forthcoming invasion",
+  "src": "Morris 1948 p.170",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "A mass of Arabs poured into the settlements from all sides and attacked the men in the center of the settlement and in the outposts shouting wildly 'Deir Yassin.'”318 Almost all the men and women were murdered."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 15,
+  "date": "14 April 1948",
+  "year": 1948,
+  "location": "Kibbutz Kfar Darom, Negev",
+  "event": "First of two unsuccessful Muslim Brotherhood assaults",
+  "quote": "Some of the Muslim Brotherhood volunteers had been in the northern Negev for weeks and had twice unsuccessfully attacked Kibbutz Kfar Darom (on 14 April and 10 May).",
+  "perp": "Muslim Brotherhood volunteers",
+  "actorType": [
+   "foreign-volunteers"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "First of two unsuccessful Muslim Brotherhood assaults",
+  "pretext": "",
+  "src": "Morris 1948 p.234",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Some of the Muslim Brotherhood volunteers had been in the northern Negev for weeks and had twice unsuccessfully attacked Kibbutz Kfar Darom (on 14 April and 10 May).242 On 19 May gAbd al-gAziz's force headed eastward, occupying Beersheba, and then veered northeastward, into the Hebron Hills, passing through Hebron and reaching the Bethlehem area and the outskirts of Jerusalem three days later."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 16,
+  "date": "14 January 1948",
+  "year": 1948,
+  "location": "Gush Etzion, Mount Hebron, south of Jerusalem",
+  "event": "hundreds of fallahin in the onslaught; the foray ended in a fiasco",
+  "quote": "The first assault took place on 14 January 1948. This attack should have glorified the reputation of the Palestinian chief, Abd al-Qadir al-Husayni... The foray, however, ended in a fiasco.",
+  "perp": "Abd al-Qadir al-Husayni's force + hundreds of fallahin (Faz'a)",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "hundreds of fallahin in the onslaught; the foray ended in a fiasco",
+  "pretext": "intended to glorify Abd al-Qadir al-Husayni and attract recruits to his Tzurif base",
+  "src": "Gelber p.25",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The first assault took place on 14 January 1948."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 17,
+  "date": "14 July 1948",
+  "year": 1948,
+  "location": "Kibbutz Gal-On",
+  "event": "Attack failed",
+  "quote": "The Egyptians, for their part, attacked the kibbutzim Gal-On (14 July) and Beherot Yitzhak (15 July) but failed...",
+  "perp": "Egyptian army",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Attack failed",
+  "pretext": "Egyptian counterattack during the Ten Days",
+  "src": "Morris 1948 p.277",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "take Kaukaba and Huleikat.22 The Egyptians, for their part, attacked the kibbutzim Gal-On (14 July) and Beherot Yitzhak (15 July)23 but failed, as did their counterattack, led by half a dozen tanks, on 18 July against the Fifty-third Battalion entrenched at Karatiya."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 18,
+  "date": "14 May 1948",
+  "year": 1948,
+  "location": "Etzion Bloc — Revadim, Ein Tzurim, Massuot Yitzhak",
+  "event": "During surrender of the three remaining kibbutzim, firefights broke out and a number of disarmed Jews were murdered before Legionnaires intervened to protect the POWs",
+  "quote": "Firefights broke out; a number of disarmed Jews were murdered. Another massacre loomed.",
+  "perp": "Local militiamen (Arab Legion units actually protected most POWs and took 357 to Transjordan)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "~several killed",
+  "scaleBig": "—",
+  "scaleNote": "During surrender of the three remaining kibbutzim, firefights broke out and a number of disarmed Jews were murdered before Legionnaires intervened to protect the POWs",
+  "pretext": "",
+  "src": "Morris 1948 p.171",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Firefights broke out; a number of disarmed Jews were murdered."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 19,
+  "date": "14-16 May 1948",
+  "year": 1948,
+  "location": "Atarot and Neveh Yaakov settlements, north of Sheikh Jarrah, Jerusalem",
+  "event": "Two Jewish settlements attacked by irregulars and Legion units and abandoned; defenders withdrew to Mount Scopus",
+  "quote": "During 14 –16 May the Jewish settlements of gAtarot and Neveh Yagakov, north of Sheikh Jarrah, were attacked by irregulars and Legion units and abandoned, the defenders withdrawing to Mount Scopus.",
+  "perp": "Arab irregulars + Arab Legion units",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Two Jewish settlements attacked by irregulars and Legion units and abandoned; defenders withdrew to Mount Scopus",
+  "pretext": "",
+  "src": "Morris 1948 p.217",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "During 14 –16 May the Jewish settlements of gAtarot and Neveh Yagakov, north of Sheikh Jarrah, were attacked by irregulars and Legion units and abandoned, the defenders withdrawing to Mount Scopus."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 20,
+  "date": "15 July 1948",
+  "year": 1948,
+  "location": "Kibbutz Be'erot Yitzhak",
+  "event": "Attack failed",
+  "quote": "The Egyptians, for their part, attacked the kibbutzim Gal-On (14 July) and Beherot Yitzhak (15 July) but failed...",
+  "perp": "Egyptian army",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Attack failed",
+  "pretext": "Egyptian counterattack during the Ten Days",
+  "src": "Morris 1948 p.277",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 21,
+  "date": "15 May 1948",
+  "year": 1948,
+  "location": "al-Malikiya (Palmah-held), Galilee Panhandle",
+  "event": "Yiftah First Battalion driven from village; carried ~150 dead and wounded back down the slope",
+  "quote": "By nightfall, the Israelis began to retreat eastward, carrying as many as 150 dead and wounded back down the slope to the Jordan Valley.",
+  "perp": "ALA (2nd Yarmuk Bn, Shishakli) + Jordanian bedouin volunteers",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "part of ~150 killed, part of ~150 wounded",
+  "scaleBig": "150",
+  "scaleNote": "Yiftah First Battalion driven from village; carried ~150 dead and wounded back down the slope",
+  "pretext": "Palmah's Yiftah Brigade had occupied al-Malikiya the previous night",
+  "src": "Morris 1948 p.259",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "By nightfall, the Israelis began to retreat eastward, carrying as many as 150 dead and wounded back down the slope to the Jordan Valley.365 The Arabs dug in at al-Malikiya and the neighboring village of Qadis."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 22,
+  "date": "15 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Nirim (Dangour), western Negev",
+  "event": "45 defenders repulsed ~400-500 infantry + armor/artillery; buildings completely destroyed; attack failed",
+  "quote": "The Egyptian Sixth Battalion attacked that morning, pounding the settlement first with artillery and mortars and then with an infantry assault.",
+  "perp": "Egyptian Sixth Battalion",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "7 killed, a handful wounded",
+  "scaleBig": "7",
+  "scaleNote": "45 defenders repulsed ~400-500 infantry + armor/artillery; buildings completely destroyed; attack failed",
+  "pretext": "",
+  "src": "Morris 1948 p.236",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The Egyptian Sixth Battalion attacked that morning, pounding the settlement first with artillery and mortars and then with an infantry assault."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 23,
+  "date": "15 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Ein-Gev, eastern Sea of Galilee",
+  "event": "Diversionary attack; fighter-bomber missed, infantry machine-gun fire, no ground assault came",
+  "quote": "Early on 15 May, elements of the ill-equipped Syrian Second Brigade attacked Kibbutz gEin-Gev, on the Sea of Galilee's eastern shore.",
+  "perp": "Syrian Second Brigade",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Diversionary attack; fighter-bomber missed, infantry machine-gun fire, no ground assault came",
+  "pretext": "",
+  "src": "Morris 1948 p.253",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Early on 15 May, elements of the ill-equipped Syrian Second Brigade attacked Kibbutz gEin-Gev, on the Sea of Galilee's eastern shore."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 24,
+  "date": "15 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Sha'ar Hagolan, Jordan Valley",
+  "event": "Infantry company attack beaten back; children/women later evacuated",
+  "quote": "One infantry company attacked Kibbutz Shagar Hagolan but was beaten back.",
+  "perp": "Syrian army (First Brigade, infantry company)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Infantry company attack beaten back; children/women later evacuated",
+  "pretext": "",
+  "src": "Morris 1948 p.253",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "One infantry company attacked Kibbutz Shagar Hagolan but was beaten back."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 25,
+  "date": "15-16 May 1948",
+  "year": 1948,
+  "location": "Jewish Quarter / Greek Orthodox church, Old City, Jerusalem",
+  "event": "Arab irregulars attacked and overran most Haganah strongpoints on the western edge of the Jewish Quarter, including the Greek Orthodox church",
+  "quote": "On 15 –16 May, the Old City’s Arab irregulars attacked and conquered most of these strongpoints, including the Greek Orthodox church, on the western edge of the quarter.",
+  "perp": "Old City Arab irregulars",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Arab irregulars attacked and overran most Haganah strongpoints on the western edge of the Jewish Quarter, including the Greek Orthodox church",
+  "pretext": "Response to Haganah Operation Viper (Shefifon, 13 May), which had occupied abandoned British positions and expanded the Quarter's perimeter",
+  "src": "Morris 1948 p.210",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 15 –16 May, the Old City's Arab irregulars attacked and conquered most of these strongpoints, including the Greek Orthodox church, on the western edge of the quarter."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 26,
+  "date": "15–16 February 1948",
+  "year": 1948,
+  "location": "kibbutz Tirat Zvi, Jordan/Beit She'an valley",
+  "event": "ALA assault on the kibbutz, repelled; British counted 38 ALA dead and about as many wounded; no Jewish toll stated; spurred ALA defections",
+  "quote": "The warnings probably related to the futile attack on Tirat Zvi on the night of 15-16 February that once more ended in a fiasco.",
+  "perp": "Arab Liberation Army (ALA)",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "ALA assault on the kibbutz, repelled; British counted 38 ALA dead and about as many wounded; no Jewish toll stated; spurred ALA defections",
+  "pretext": "Tied to the anticipated 15 February wholesale Arab assault on Jewish settlements (which was then postponed)",
+  "src": "Gelber p.55",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "The Haganah and the British anticipated an Arab assault to begin on 15 February, and British intelligence forecast a series of night raids on Jewish targets.'' The warnings probably related to the futile attack on Tirat Zvi on the night of 15-16 February that once more ended in a fiasco."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 27,
+  "date": "15–18 May 1948",
+  "year": 1948,
+  "location": "Samakh (Haganah-held), southern Sea of Galilee",
+  "event": "Attacked 15, 16, then 18 May with tanks; defenders (Jordan Valley kibbutzniks) overrun, fell 18 May; 3 captured, 54 dead left behind",
+  "quote": "Israeli losses that morning were three captured and fifty-four dead, most of them Jordan Valley kibbutzniks.",
+  "perp": "Syrian First Brigade (+ Renault tanks, artillery)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "~52-54 killed",
+  "scaleBig": "52",
+  "scaleNote": "Attacked 15, 16, then 18 May with tanks; defenders (Jordan Valley kibbutzniks) overrun, fell 18 May; 3 captured, 54 dead left behind",
+  "pretext": "",
+  "src": "Morris 1948 p.254",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Israeli losses that morning were three captured and fifty-four dead, most of them Jordan Valley kibbutzniks.332 (The Syrian general staff had a poor picture of what was happening."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 28,
+  "date": "15–22 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Gesher + police fort, Jordan Valley",
+  "event": "Repeated infantry/armor assaults + 5-day siege; defenders + Golani repulsed Iraqis with heavy Iraqi losses",
+  "quote": "On the morning of 15 May they forded the river, their objective Kibbutz Gesher and the neighboring police fort, which overlooked the river.",
+  "perp": "Iraqi army (Second Brigade)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Repeated infantry/armor assaults + 5-day siege; defenders + Golani repulsed Iraqis with heavy Iraqi losses",
+  "pretext": "",
+  "src": "Morris 1948 p.247",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On the morning of 15 May they forded the river, their objective Kibbutz Gesher and the neighboring police fort, which overlooked the river."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 29,
+  "date": "19 May 1948",
+  "year": 1948,
+  "location": "Sheikh Jarrah and the Police School, Jerusalem",
+  "event": "Legion brushed aside IZL defenders at Sheikh Jarrah and the Police School, killing six and wounding fifteen, then linked up with the Old City at Damascus Gate",
+  "quote": "At Sheikh Jarrah and the Police School, the Legionnaires brushed aside the IZL defenders—killing six and wounding fifteen—and proceeded southward, reaching the Old City’s Damascus Gate in the afternoon.",
+  "perp": "Arab Legion (battalion-sized force from Ramallah)",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "6 killed, 15 wounded",
+  "scaleBig": "6",
+  "scaleNote": "Legion brushed aside IZL defenders at Sheikh Jarrah and the Police School, killing six and wounding fifteen, then linked up with the Old City at Damascus Gate",
+  "pretext": "Legion's Jerusalem push triggered by Haganah Operations Pitchfork/Kilshon (14 May) seizing West Jerusalem positions and threatening the Old City; Arab notables' S.O.S. appeals to save it",
+  "src": "Morris 1948 p.212",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "At Sheikh Jarrah and the Police School, the Legionnaires brushed aside the IZL defenders—killing six and wounding fifteen—and proceeded southward, reaching the Old City's Damascus Gate in the afternoon."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 30,
+  "date": "19 May 1948",
+  "year": 1948,
+  "location": "Mount Scopus / Sanhedria, Beit Yisrael, Mandelbaum Gate, Jerusalem",
+  "event": "Legion effort to break into Mount Scopus repulsed; armored thrusts into Sanhedria/Beit Yisrael/Mandelbaum Gate beaten off, three Legion armored cars disabled",
+  "quote": "A Legion effort to break into Mount Scopus that day was repulsed by the Haganah, as were small armored thrusts westward, into the Sanhedria, Beit Yisrael, and Mandelbaum Gate areas.",
+  "perp": "Arab Legion (infantry + armored cars)",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Legion effort to break into Mount Scopus repulsed; armored thrusts into Sanhedria/Beit Yisrael/Mandelbaum Gate beaten off, three Legion armored cars disabled",
+  "pretext": "Legion's Jerusalem push triggered by Haganah Operations Pitchfork/Kilshon (14 May) seizing West Jerusalem positions and threatening the Old City",
+  "src": "Morris 1948 p.214",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "A Legion effort to break into Mount Scopus that day was repulsed by the Haganah, as were small armored thrusts westward, into the Sanhedria, Beit Yisrael, and Mandelbaum Gate areas."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 31,
+  "date": "19-25 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Ramat Rachel, southern Jerusalem",
+  "event": "Weeklong battle: kibbutz bombarded and almost leveled, taken/retaken several times; 26 Israelis killed, 84 wounded; >100 Arabs died",
+  "quote": "In the weeklong battle, more than a hundred Arabs died; among the Israelis, twenty-six were killed and eighty-four were wounded.",
+  "perp": "Hundreds of local irregulars + ~800 Egyptian regulars & Muslim Brotherhood fighters + Legionnaire platoons",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "26 killed, 84 wounded",
+  "scaleBig": "26",
+  "scaleNote": "Weeklong battle: kibbutz bombarded and almost leveled, taken/retaken several times; 26 Israelis killed, 84 wounded; >100 Arabs died",
+  "pretext": "",
+  "src": "Morris 1948 p.215",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "In the weeklong battle, more than a hundred Arabs died; among the Israelis, twenty-six were killed and eighty-four were wounded."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 32,
+  "date": "19-28 May 1948",
+  "year": 1948,
+  "location": "Jewish Quarter, Old City, Jerusalem",
+  "event": "Legion + ALA-assisted irregulars besieged and methodically reduced the Quarter, blowing up each house; Hurva Synagogue blown up 26-27 May; surrender 28 May; of 213 defenders 39 dead, 134 wounded; Quarter pillaged and razed by mob afterward",
+  "quote": "The assault on the Jewish Quarter was renewed. The Legionnaires were assisted by irregulars, half of them ALA.",
+  "perp": "Arab Legion Sixth Regiment (gAbdullah Tall) + irregulars, half of them ALA",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "39 killed, 134 wounded",
+  "scaleBig": "39",
+  "scaleNote": "Legion + ALA-assisted irregulars besieged and methodically reduced the Quarter, blowing up each house; Hurva Synagogue blown up 26-27 May; surrender 28 May; of 213 defenders 39 dead, 134 wounded; Quarter pillaged and razed by mob afterward",
+  "pretext": "Legion's Jerusalem intervention triggered by Haganah Operations Pitchfork/Kilshon (14 May); assault renewed after Haganah took Mount Zion and attempted the Zion Gate link-up (18-19 May)",
+  "src": "Morris 1948 p.219",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The assault on the Jewish Quarter was renewed."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 33,
+  "date": "1929",
+  "year": 1948,
+  "location": "Givgat Shaul (Jewish neighborhood, Jerusalem)",
+  "event": "background reference: 1929 gunmen attack on the adjacent Jewish neighborhood (casualties unstated)",
+  "quote": "In 1929, gunmen from Deir Yassin had attacked the neighborhood.",
+  "perp": "gunmen from Deir Yassin",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "background reference: 1929 gunmen attack on the adjacent Jewish neighborhood (casualties unstated)",
+  "pretext": "",
+  "src": "Morris 1948 p.126",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "In 1929, gunmen from Deir Yassin had attacked the neighborhood."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 34,
+  "date": "9 January 1948",
+  "year": 1948,
+  "location": "Kibbutz Kfar Szold, Syrian border",
+  "event": "Several hundred attackers; driven off with eventual British armoured-column help; 24 Arabs dead, 67 wounded",
+  "quote": "...on 9 January 1948, several hundred bedouin, mostly from Syria, directed by Emir Fagur, attacked Kibbutz Kfar Szold on the Syrian border.",
+  "perp": "Several hundred bedouin (mostly from Syria) directed by the local effendi Emir Fagur",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "1 killed, 4 wounded",
+  "scaleBig": "1",
+  "scaleNote": "Several hundred attackers; driven off with eventual British armoured-column help; 24 Arabs dead, 67 wounded",
+  "pretext": "Revenge for the Palmah reprisal raid (under Yigal Allon) on Khisas and Emir Fagur's mansion, which had killed villagers and four of the emir's men",
+  "src": "Morris 1948 p.104",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "But the Arabs were bent on exacting re- 104 T H E FI R S T S TAG E O FT H E C I V I LWAR venge: on 9 January 1948, several hundred bedouin, mostly from Syria, directed by Emir Fagur, attacked Kibbutz Kfar Szold on the Syrian border."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 35,
+  "date": "11 January 1948",
+  "year": 1948,
+  "location": "Kfar Uriah, near Ramla",
+  "event": "Routed by a Palmah force + British armour; 25 Arabs died",
+  "quote": "A more extensive attack, also resulting from local friction, took place on 11 January 1948, against Kfar Uriah, near Ramla.",
+  "perp": "Attackers from neighbouring Beit Jiz and Khirbet Beit Far",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "3 killed, 13 wounded",
+  "scaleBig": "3",
+  "scaleNote": "Routed by a Palmah force + British armour; 25 Arabs died",
+  "pretext": "Resulting from local friction",
+  "src": "Morris 1948 p.102",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "A more extensive attack, also resulting from local friction, took place on 11 January 1948, against Kfar Uriah, near Ramla."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 36,
+  "date": "20 January 1948",
+  "year": 1948,
+  "location": "Kibbutz Yehiam, Western Galilee",
+  "event": "~400 attackers vs ~70 defenders; wave after wave failed; ALA withdrew with 30 dead/60 wounded; Yehiam 4 dead",
+  "quote": "On 20 January the Second Yarmuk... attacked Kibbutz Yehiam, in Western Galilee (an area earmarked for Arab sovereignty)...",
+  "perp": "ALA Second Yarmuk Battalion (Adib Shishakli) + Abu Ibrahim al-Sghir's irregulars + local villagers (~400 men)",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "4 killed",
+  "scaleBig": "4",
+  "scaleNote": "~400 attackers vs ~70 defenders; wave after wave failed; ALA withdrew with 30 dead/60 wounded; Yehiam 4 dead",
+  "pretext": "",
+  "src": "Morris 1948 p.106",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 20 January the Second Yarmuk, supported by Abu Ibrahim al-Sghir's irregulars and local villagers—perhaps four hundred men, armed with obsolete rifles, three medium machine guns, and a light mortar— attacked Kibbutz Yehiam, in Western Galilee (an area earmarked for Arab sovereignty), which was defended by its members, a handful of Palmahniks, and a unit of the Twenty-first Battalion of the Levanoni (later, Carmeli) Brigade—in all, about seventy men, with one medium machine gun, and two light mortars."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 37,
+  "date": "10 February 1948",
+  "year": 1948,
+  "location": "Yemin Moshe neighbourhood, Jerusalem (across the Vale of Hinnom from Old City)",
+  "event": "~150 attackers; beaten off by Haganah + British troops; 16 Arabs killed, dozens wounded",
+  "quote": "On 10 February 1948, about 150 Arabs poured out of the Old City and attacked the Yemin Moshe neighborhood to the west, across the Vale of Hinnom.",
+  "perp": "~150 Arabs from the Old City, with covering fire from the city walls",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "1 killed, 5 wounded",
+  "scaleBig": "1",
+  "scaleNote": "~150 attackers; beaten off by Haganah + British troops; 16 Arabs killed, dozens wounded",
+  "pretext": "Attackers claimed they were retaliating for a Jewish attack on a bus",
+  "src": "Morris 1948 p.102",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 10 February 1948, about 150 Arabs poured out of the Old City and attacked the Yemin Moshe neighborhood to the west, across the Vale of Hinnom."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 38,
+  "date": "19–24 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Yad Mordechai (Deir Suneid), coastal Negev",
+  "event": "110 defenders; 5 dead/11 wounded (19 May), 13 dead/20 wounded (20 May); by 23 May ~half dead/wounded; 2 members + a wounded Palmahnik bayoneted during night breakout; kibbutz leveled; Egyptians delayed 4-5 days",
+  "quote": "The Egyptians attacked just after dawn, 19 May, when fighters, batteries of twenty-five-pounders and mortars pounded the settlement.",
+  "perp": "Egyptian army (First, Seventh, Second Battalions, + tanks)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "~21 killed, >31 wounded",
+  "scaleBig": "21",
+  "scaleNote": "110 defenders; 5 dead/11 wounded (19 May), 13 dead/20 wounded (20 May); by 23 May ~half dead/wounded; 2 members + a wounded Palmahnik bayoneted during night breakout; kibbutz leveled; Egyptians delayed 4-5 days",
+  "pretext": "",
+  "src": "Morris 1948 p.238",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The Egyptians attacked just after dawn, 19 May, when fighters, batteries of twenty-five-pounders and mortars pounded the settlement."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 39,
+  "date": "1–2 June 1948",
+  "year": 1948,
+  "location": "Kibbutz Negba",
+  "event": "70 members + 70 Givati troopers; armor briefly broke perimeter, driven off; Egyptians >100 casualties",
+  "quote": "On 1–2 June the Egyptian First Battalion attacked in force, with hundreds of infantrymen back by fighter-bombers, a company of light tanks, a company of armored cars, and three batteries of field artillery.",
+  "perp": "Egyptian First Battalion",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "8 killed, 11 wounded",
+  "scaleBig": "8",
+  "scaleNote": "70 members + 70 Givati troopers; armor briefly broke perimeter, driven off; Egyptians >100 casualties",
+  "pretext": "",
+  "src": "Morris 1948 p.243",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 1–2 June the Egyptian First Battalion attacked in force, with hundreds of infantrymen back by fighter-bombers, a company of light tanks, a company of armored cars, and three batteries of field artillery."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 40,
+  "date": "20 January 1948",
+  "year": 1948,
+  "location": "kibbutz Yechi'am, western Galilee",
+  "event": "ALA settlement assault; failed, regiment withdrew",
+  "quote": "Yarmuk's commander Adib Shishakli attempted to assault a Jewish settlement and on 20 January attacked kibbutz Yechi'am in the western Galilee.",
+  "perp": "ALA 2nd Yarmuk regiment, Adib Shishakli",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "ALA settlement assault; failed, regiment withdrew",
+  "pretext": "",
+  "src": "Gelber p.25",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "Yarmuk's commander Adib Shishakli attempted to assault a Jewish settle- ment and on 20 January attacked kibbutz Yechi'am in the western Galilee."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 41,
+  "date": "20 May 1948",
+  "year": 1948,
+  "location": "Notre Dame de France monastery, Jerusalem",
+  "event": "Legion armored cars attacked Haganah/Gadna positions on the top floors of Notre Dame; failed, abandoning several cars burned out by Molotov cocktails",
+  "quote": "On 20 May Legion armored cars attacked the Haganah and Gadna positions on the top floors of Notre Dame, which dominated the northern wall of the Old City.",
+  "perp": "Arab Legion armored cars",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Legion armored cars attacked Haganah/Gadna positions on the top floors of Notre Dame; failed, abandoning several cars burned out by Molotov cocktails",
+  "pretext": "Legion's Jerusalem push triggered by Haganah Operations Pitchfork/Kilshon (14 May) seizing West Jerusalem positions and threatening the Old City",
+  "src": "Morris 1948 p.214",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "that the Legion's armor and artillery could be stopped.164 On 20 May Legion armored cars attacked the Haganah and Gadna positions on the top floors of Notre Dame, which dominated the northern wall of the Old City."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 42,
+  "date": "20 May 1948",
+  "year": 1948,
+  "location": "Degania Aleph & Degania Bet, Jordan Valley",
+  "event": "~150 defenders; dawn artillery barrage then armor/infantry; tanks halted at perimeter (PIAT, Molotovs, grenades); both Deganias held; Syrians then routed by 65mm guns",
+  "quote": "As anticipated by the Haganah, the Syrians launched a major push against the two Deganias.",
+  "perp": "Syrian First Brigade (Third Battalion + Renault 35 tanks, armored cars)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "~150 defenders; dawn artillery barrage then armor/infantry; tanks halted at perimeter (PIAT, Molotovs, grenades); both Deganias held; Syrians then routed by 65mm guns",
+  "pretext": "",
+  "src": "Morris 1948 p.256",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "As anticipated by the Haganah, the Syrians launched a major push against the two Deganias."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 43,
+  "date": "22 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Negba",
+  "event": "First (unsuccessful) Egyptian attack on Negba after relieving Muslim Brotherhood at Iraq Suweidan fort",
+  "quote": "On 22 May, Egyptian regulars replaced them and then unsuccessfully attacked the well-fortified Kibbutz Negba, about a mile to the north.",
+  "perp": "Egyptian regulars",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "First (unsuccessful) Egyptian attack on Negba after relieving Muslim Brotherhood at Iraq Suweidan fort",
+  "pretext": "",
+  "src": "Morris 1948 p.243",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 22 May, Egyptian regulars replaced them and then unsuccessfully attacked the well-fortified Kibbutz Negba, about a mile to the north.288 Negba was to remain a focus of Egyptian attention until the start of the First Truce on 11 June."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 44,
+  "date": "28 May 1948",
+  "year": 1948,
+  "location": "Geulim, Coastal Plain (SE of Netanya)",
+  "event": "Iraqis took part of the settlement; Alexandroni counterattacked while Iraqis looted and retook it",
+  "quote": "On 28 May an Iraqi battalion attacked and took part of the Coastal Plain settlement of Geulim, southeast of Netanya.",
+  "perp": "Iraqi army (one battalion)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Iraqis took part of the settlement; Alexandroni counterattacked while Iraqis looted and retook it",
+  "pretext": "Diversionary attack at Glubb's request, to disperse Haganah pressure on the Legion at Latrun",
+  "src": "Morris 1948 p.248",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 28 May an Iraqi battalion attacked and took part of the Coastal Plain settlement of Geulim, southeast of Netanya."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 45,
+  "date": "30 April–1 May 1948",
+  "year": 1948,
+  "location": "Saint Simeon Monastery / Katamon, West Jerusalem",
+  "event": "21 dead, 83 wounded (entire Katamon operation, incl. the Jewish assault); by noon most Palmahniks at St Simeon dead or wounded",
+  "quote": "The following morning he counterattacked; wave after wave of Arabs assaulted the monastery.",
+  "perp": "Abu Diya's forces (wave assaults on the Jewish-held monastery)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "21 killed, 83 wounded",
+  "scaleBig": "21",
+  "scaleNote": "21 dead, 83 wounded (entire Katamon operation, incl. the Jewish assault); by noon most Palmahniks at St Simeon dead or wounded",
+  "pretext": "Harel Brigade companies had seized St Simeon Monastery (night of 29–30 Apr) in the assault on Katamon; Abu Diya counterattacked the next morning",
+  "src": "Morris 1948 p.131",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The troopers understood—as, apparently, did Abu Diya—that the fate of the monastery “would decide the fate of Jerusalem.”83 The following morning he counterattacked; wave after wave of Arabs assaulted the monastery."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 46,
+  "date": "4 May 1948",
+  "year": 1948,
+  "location": "Etzion Bloc (the 'Russian Monastery', eastern edge)",
+  "event": "Legion took the 'Russian Monastery' and other positions, then withdrew; 12 Haganah killed, 30 wounded; several dozen Arabs (mainly local militiamen) died",
+  "quote": "Twelve Haganah soldiers died and thirty were wounded, and some light mortars and machine guns were lost.",
+  "perp": "Arab Legion (Transjordan) infantry + armored cars + local militiamen",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "12 killed, 30 wounded",
+  "scaleBig": "12",
+  "scaleNote": "Legion took the 'Russian Monastery' and other positions, then withdrew; 12 Haganah killed, 30 wounded; several dozen Arabs (mainly local militiamen) died",
+  "pretext": "Punitive attack ordered because Haganah had been ambushing Arab traffic on the Hebron-Bethlehem road from these positions",
+  "src": "Morris 1948 p.168",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Twelve Haganah soldiers died and thirty were wounded, and some light mortars and machine guns were lost."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 47,
+  "date": "4–15 April 1948",
+  "year": 1948,
+  "location": "Kibbutz Mishmar Hagemek (Jenin–Haifa road, western Jezreel Valley)",
+  "event": "first use of artillery in the war; a handful of members killed/wounded; dozens of livestock killed; most settlement buildings collapsed/damaged; follow-up infantry assault failed to breach perimeter",
+  "quote": "He targeted Mishmar Hagemek, a prestigious target and one whose capture might assist the prospective invading Arab armies in achieving a major objective—the conquest of Haifa.",
+  "perp": "al-Qawuqji's Arab Liberation Army (seven 75/105 mm field guns + infantry)",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "~few killed, ~few wounded",
+  "scaleBig": "—",
+  "scaleNote": "first use of artillery in the war; a handful of members killed/wounded; dozens of livestock killed; most settlement buildings collapsed/damaged; follow-up infantry assault failed to breach perimeter",
+  "pretext": "al-Qawuqji violated his pledge to Cunningham to desist until 15 May; possibly prodded by the Damascus Military Committee to relieve pressure on the Palestinians in the Jerusalem area, or out of jealousy of Abd al-Qadir al-Husseini's successes",
+  "src": "Morris 1948 p.133",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "He targeted Mishmar Hagemek, a prestigious target and one whose capture might assist the prospective invading Arab armies in achieving a major objective—the conquest of Haifa."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 48,
+  "date": "4–9 April 1948",
+  "year": 1948,
+  "location": "al-Qastal, Jerusalem Corridor (west of Jerusalem)",
+  "event": "75 Israeli dead at al-Qastal between 3–9 Apr; dozens dead/wounded in the final 8–9 Apr assault; some Jewish corpses badly mutilated",
+  "quote": "But dozens of Haganah and Palmah men were already dead or wounded, and a mass of Arab militiamen was pressing up the alleyways toward the mukhtar's house.",
+  "perp": "Abd al-Qadir al-Husseini's irregulars + Iraqi volunteers (later Ibrahim Abu Diya, irregulars from Nablus/Hebron/Suba)",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "~75 killed",
+  "scaleBig": "75",
+  "scaleNote": "75 Israeli dead at al-Qastal between 3–9 Apr; dozens dead/wounded in the final 8–9 Apr assault; some Jewish corpses badly mutilated",
+  "pretext": "Haganah/Palmah had conquered al-Qastal (2–3 Apr) during Operation Nahshon and garrisoned it with an gEtzioni platoon; Arabs counterattacked repeatedly to retake the strategic village dominating the western entrance to Jerusalem; Abd al-Qadir vowed 'I'll take al-Qastal or die fighting'",
+  "src": "Morris 1948 p.124",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "But dozens of Haganah and Palmah men were already dead or wounded, and a mass of Arab militiamen was pressing up the alleyways toward the mukhtar's house."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 49,
+  "date": "5–10 June 1948",
+  "year": 1948,
+  "location": "Mishmar Hayarden (moshav), Upper Galilee",
+  "event": "5-6 June assault failed; 9-10 June forded Jordan and took moshav after fierce fight; ~24 settlers captured; Syrians held a west-bank toehold to war's end",
+  "quote": "The moshav, defended only by several dozen members, fell after a fierce fight. The Syrian assault was assisted by strafing runs by fighter-bombers. Some two dozen settlers were taken prisoner.",
+  "perp": "Syrian First + Second Brigades",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "120 (Syrian-historian claim; only 'several dozen' defenders — treat skeptically) killed",
+  "scaleBig": "120",
+  "scaleNote": "5-6 June assault failed; 9-10 June forded Jordan and took moshav after fierce fight; ~24 settlers captured; Syrians held a west-bank toehold to war's end",
+  "pretext": "",
+  "src": "Morris 1948 p.257",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "A mortar and artillery barrage preceded the assault.353 The moshav, defended only by several dozen members, fell after a fierce fight."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 50,
+  "date": "5–6 June 1948",
+  "year": 1948,
+  "location": "al-Malikiya (Haganah garrison), Galilee Panhandle",
+  "event": "Surprised and overwhelmed a Haganah garrison company; reopened supply route to ALA; Lebanon's only success",
+  "quote": "But on 5–6 June, as we have seen, the Lebanese army, assisted by a Syrian battalion and the ALA, recaptured al-Malikiya, which had been left in the hands of a Haganah garrison company.",
+  "perp": "Lebanese army + Syrian battalion + ALA",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Surprised and overwhelmed a Haganah garrison company; reopened supply route to ALA; Lebanon's only success",
+  "pretext": "Yiftah Brigade had retaken al-Malikiya on the night of 28-29 May",
+  "src": "Morris 1948 p.260",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "In all, the Palmah suffered two dead and three wounded in the operation.369 But on 5 – 6 June, as we have seen, the Lebanese army, assisted by a Syrian battalion and the ALA, recaptured al-Malikiya, which had been left in the hands of a Haganah garrison company."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 51,
+  "date": "6–7 April 1948",
+  "year": 1948,
+  "location": "Deir Muheizin, Jerusalem Corridor",
+  "event": "counterattacks on the Jewish garrison beaten off; no Jewish casualties stated",
+  "quote": "Arab militiamen from the Ramla area mounted counterattacks, but the Jewish garrison in Deir Muheizin, reinforced from Kibbutz Hulda, beat them off.",
+  "perp": "Arab militiamen from the Ramla area",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "counterattacks on the Jewish garrison beaten off; no Jewish casualties stated",
+  "pretext": "Palmah/Givati had just taken Arab Khulda and Deir Muheizin (6 Apr) during Operation Nahshon",
+  "src": "Morris 1948 p.130",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Arab militiamen from the Ramla area mounted counterattacks, but the Jewish garrison in Deir Muheizin, reinforced from Kibbutz Hulda, beat them off."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 52,
+  "date": "6–7 June 1948",
+  "year": 1948,
+  "location": "Kibbutz Nitzanim (between Majdal and Isdud)",
+  "event": "140 defenders rolled up; 105 surrendered; OC Schwarzstein shot under white flag, radiowoman Mira Ben-Ari killed; 3-4 POWs murdered by Egyptians/irregulars",
+  "quote": "Thirty-three of the defenders were dead and sixteen wounded when the outpost's commanders realized that further resistance was useless and opted for surrender.",
+  "perp": "Egyptian Ninth Battalion (+ Seventh; local auxiliaries)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "33 (+3–4 POWs murdered) killed, 16 wounded",
+  "scaleBig": "33",
+  "scaleNote": "140 defenders rolled up; 105 surrendered; OC Schwarzstein shot under white flag, radiowoman Mira Ben-Ari killed; 3-4 POWs murdered by Egyptians/irregulars",
+  "pretext": "",
+  "src": "Morris 1948 p.244",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 6 –7 June, the Ninth Battalion, supported by troops from the Seventh Battalion, armor, artillery, and fighter-bombers, launched a determined assault and, despite an initial repulse, penetrated the perimeter fence."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 53,
+  "date": "8 April 1948",
+  "year": 1948,
+  "location": "Qastel (Jerusalem corridor)",
+  "event": "Arabs stormed and retook the Haganah-held village of Qastel; Abd al-Qadir killed in the battle (Mujahidin then abandoned positions for his funeral, letting the Haganah recapture it)",
+  "quote": "On 8 April the Arabs successfully stormed Qastel, but Abd al-Qadir was killed in the battle and several of his lieutenants were wounded.",
+  "perp": "Mujahidin from Bir Zeit (Abd al-Qadir al-Husayni) + National Guards from Ramallah and Jerusalem",
+  "actorType": [
+   "holy-war-army"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Arabs stormed and retook the Haganah-held village of Qastel; Abd al-Qadir killed in the battle (Mujahidin then abandoned positions for his funeral, letting the Haganah recapture it)",
+  "pretext": "Counter-attack to retake Qastel after the Haganah's opening conquest during operation Nahshon; an enflamed Jerusalem mob demanded its recapture",
+  "src": "Gelber p.87",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "National Guards from Ramallah and Jerusalem joined the Mujabidin from Bir Zeit in the assault and messengers went to nearby villages, urging their youth to assist in recap- turing the village.\" On 8 April the Arabs successfully stormed Qastel, but Abd al-Qadir was killed in the battle and several of his lieutenants were wounded."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 54,
+  "date": "8 July 1948",
+  "year": 1948,
+  "location": "Beit Daras / Julis / Sawafir villages (S. coastal plain)",
+  "event": "Attack on Beit Daras (Givati 53rd Bn) and Julis repulsed; Egyptians took Hill 113, Kaukaba, Huleikat and key crossroads",
+  "quote": "The attack on Beit Daras, held by Givgati's Fifty-third Battalion, was swiftly repulsed, the Sudanese and Israelis engaging with 'bayonets and grenades' on the outskirts of the village.",
+  "perp": "Egyptian army (Second & Fourth Brigades, incl. Sudanese battalion)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Attack on Beit Daras (Givati 53rd Bn) and Julis repulsed; Egyptians took Hill 113, Kaukaba, Huleikat and key crossroads",
+  "pretext": "Egyptian preemptive strike a day before the First Truce's scheduled 9 July expiry, to forestall the IDF's Operation An-Far",
+  "src": "Morris 1948 p.275",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Their minor effort, by the Second Brigade (Seventh and Sixth battalions, and the newly arrived Sudanese battalion), starting out from the Isdud area, targeted Beit Daras and the Sawafir villages8 (perhaps with the ultimate aim of reaching the Masmiya Junction).9 The attack on Beit Daras, held by Givgati's Fifty-third Battalion, was swiftly repulsed, the Sudanese and Israelis engaging with “bayonets and grenades”10 on the outskirts of the village.11 Nasser ascribes the Egyptian defeat to bungling by the Sudanese, who fired"
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 55,
+  "date": "January 1948",
+  "year": 1948,
+  "location": "Gush Etzion (Hebron hills)",
+  "event": "Abortive frontal attack on the bloc; repelled. After it, British intel expected the Arabs to avoid large-scale frontal attacks on rural settlements",
+  "quote": "Following the abortive attack on Gush Etzion in January, they expected the Arabs to avoid large-scale frontal attacks on Jewish rural settlements and concentrate on hit-and-run actions in the cities.",
+  "perp": "Arab irregulars (Hebron-area, unnamed)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Abortive frontal attack on the bloc; repelled. After it, British intel expected the Arabs to avoid large-scale frontal attacks on rural settlements",
+  "pretext": "AHC directive (per Sasson) to force the evacuation of several Jewish settlements, primarily Gush Etzion",
+  "src": "Gelber p.66",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "Following the abortive attack on Gush Etzion in January, they expected the Arabs to avoid large-scale frontal attacks on Jewish rural settlements and concen- t r a t e on hit-and-run actions in the cities."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 56,
+  "date": "early March 1948",
+  "year": 1948,
+  "location": "kibbutz Kfar Darom, Negev",
+  "event": "Untrained mob assault repelled by the kibbutz; invaders withdrew leaving a heavy toll of Egyptian and Palestinian dead and injured; Egyptian officers had warned it would be a massacre",
+  "quote": "the inhabitants of Han Yunis and Deir al-Balah schemed to attack nearby Kfar Darom ... The kibbutz repelled the attack and the invaders withdrew, leaving behind a heavy toll of dead and injured, Egyptians and Palestinians.",
+  "perp": "Inhabitants of Khan Yunis & Deir al-Balah + Egyptian volunteers (untrained mob)",
+  "actorType": [
+   "civilian-mob"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Untrained mob assault repelled by the kibbutz; invaders withdrew leaving a heavy toll of Egyptian and Palestinian dead and injured; Egyptian officers had warned it would be a massacre",
+  "pretext": "",
+  "src": "Gelber p.57",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "Their passports were found in the t o w n after its downfall in July 1948.¢! The war's escalation impacted on the Negev's Arab population as well, and the inhabitants of Han Yunis and Deir al-Balah schemed to attack nearby Kfar Darom."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 57,
+  "date": "mid-April 1948",
+  "year": 1948,
+  "location": "two settlements north-east of Haifa",
+  "event": "Druze regiment assaulted two settlements NE of Haifa; all assaults repelled by Haganah troops and settlers; the Druze retreated with ~100 casualties",
+  "quote": "In mid-April, Wahab responded to Qawugqji's call and assaulted two settlements north-east of Haifa. Haganah troops and the settlers repelled all the assaults.",
+  "perp": "Shakib Wahab's Druze regiment (ALA)",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Druze regiment assaulted two settlements NE of Haifa; all assaults repelled by Haganah troops and settlers; the Druze retreated with ~100 casualties",
+  "pretext": "Response to Qawuqji's appeal for assistance after his defeat at Mishmar Ha'emek",
+  "src": "Gelber p.93",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "gelber_palestine_1948_war_escape_and_the_emergence_of_the_palestinian_refugee_problem_2006",
+    "text": "In mid-April, Wahab responded to Qawugqji's call and assaulted t w o settlements north-east of Haifa."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "settlement",
+  "n": 58,
+  "date": "night of 16 April 1948",
+  "year": 1948,
+  "location": "Safad, Jewish Quarter",
+  "event": "Attack on Jewish Quarter driven back; Arab militias then began to fall apart",
+  "quote": "That night the Arabs assailed the Jewish Quarter. The local Arab militia, of two hundred men, had been joined by more than two hundred ALA troops and Jordanian volunteers... The Jews drove back the Arab attack.",
+  "perp": "Local Arab militia (~200) + 200+ ALA troops + Jordanian volunteers",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Attack on Jewish Quarter driven back; Arab militias then began to fall apart",
+  "pretext": "British evacuated Safad on 16 April and handed the Arabs the two dominant positions (the hilltop Citadel and the Mount Canaan Tegart fort)",
+  "src": "Morris 1948 p.157",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "That night the Arabs assailed the Jewish Quarter."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "siege",
+  "n": 1,
+  "date": "17-18 May 1948",
+  "year": 1948,
+  "location": "Latrun / Bab al-Wad, Tel Aviv–Jerusalem road",
+  "event": "Legion deployed between Bab al-Wad and Latrun; on 18 May severed the Tel Aviv–Jerusalem road, putting West Jerusalem (~100,000 Jews) under siege again",
+  "quote": "The troops began to deploy between Bab al-Wad and Latrun that night. On 18 May the road to Jerusalem was severed.",
+  "perp": "Arab Legion Fourth Regiment (Habas al-Majali)",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Legion deployed between Bab al-Wad and Latrun; on 18 May severed the Tel Aviv–Jerusalem road, putting West Jerusalem (~100,000 Jews) under siege again",
+  "pretext": "",
+  "src": "Morris 1948 p.220",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 18 May the road to Jerusalem was severed."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "siege",
+  "n": 2,
+  "date": "21 April 1948",
+  "year": 1948,
+  "location": "Najada House, Wadi Rushmiya quarter, Haifa",
+  "event": "Haganah platoon under 17-hour sniping/MG/grenade siege; losses mounted steadily (unstated); armored relief cars unable to evacuate wounded",
+  "quote": "But for the next seventeen hours, the platoon was under constant sniping, machine gun, and grenade attack—indeed, under siege—from surrounding Arab buildings.",
+  "perp": "Haifa Arab militiamen (from surrounding buildings)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Haganah platoon under 17-hour sniping/MG/grenade siege; losses mounted steadily (unstated); armored relief cars unable to evacuate wounded",
+  "pretext": "Haganah platoon had occupied Najada House during Operation Passover Cleaning after the abrupt British withdrawal from downtown Haifa",
+  "src": "Morris 1948 p.142",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "But for the next seventeen hours, the platoon was under constant sniping, machine gun, and grenade attack—indeed, under siege— from surrounding Arab buildings."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "siege",
+  "n": 3,
+  "date": "March 1948",
+  "year": 1948,
+  "location": "Tiberias (south-north shore road, Sea of Galilee)",
+  "event": "periodic interdiction of Jewish traffic along the south-north road; small Jewish Quarter in the Old City cut off; sporadic firefights",
+  "quote": "The Arabs periodically interdicted Jewish traffic along the south-north road.",
+  "perp": "local Tiberias-area militiamen (incl. Syrian irregulars with a German officer by late March)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "periodic interdiction of Jewish traffic along the south-north road; small Jewish Quarter in the Old City cut off; sporadic firefights",
+  "pretext": "Morris: relations deteriorated 'in large measure because of Haganah provocations'",
+  "src": "Morris 1948 p.139",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "By the end of the month several dozen foreign irregulars, apparently Syrians with “a German officer,” had moved in.125 The Arabs periodically interdicted Jewish traffic along the south-north road."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "siege",
+  "n": 4,
+  "date": "from mid-May 1948",
+  "year": 1948,
+  "location": "Ben Shemen (Jewish boarding-school compound), east of Lydda",
+  "event": "Compound under siege from mid-May until relieved by the Yiftah Brigade ~10 July",
+  "quote": "...and linked up with the Jewish boarding school compound of Ben Shemen, east of Lydda, which had been under siege since mid-May.",
+  "perp": "local Arab irregulars (Lydda area)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Compound under siege from mid-May until relieved by the Yiftah Brigade ~10 July",
+  "pretext": "",
+  "src": "Morris 1948 p.287",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The Yiftah Brigade, advancing from al-Bariya northward, took the villages of al-Kunaiyisa, gInnaba, Kharruba, Jimzu, Daniyal, and Khirbet al-Dhuheiriya, and linked up with the Jewish boarding school compound of Ben Shemen, east of Lydda, which had been under siege since mid-May."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "siege",
+  "n": 5,
+  "date": "from ~24 May 1948",
+  "year": 1948,
+  "location": "Negev settlement enclave (Majdal–Faluja–Beit Jibrin line)",
+  "event": "West-east chain of positions cut off ~two dozen Jewish settlements + the Negev Brigade; Egyptians barred resupply convoys (continued, contrary to terms, into the Second Truce)",
+  "quote": "The troops dug in and established a chain of positions on either side of the road... cutting off the two dozen Jewish settlements south of the road, effectively besieging them and the Negev Brigade.",
+  "perp": "Egyptian army (First Battalion + chain of positions)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "West-east chain of positions cut off ~two dozen Jewish settlements + the Negev Brigade; Egyptians barred resupply convoys (continued, contrary to terms, into the Second Truce)",
+  "pretext": "",
+  "src": "Morris 1948 p.242",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The troops dug in and established a chain of positions on either side of the road, thus both securing the west-east axis and linking the invasion's two arms, and cutting off the two dozen Jewish settlements south of the road, effectively besieging them and the Negev Brigade."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "siege",
+  "n": 6,
+  "date": "~April–early May 1948",
+  "year": 1948,
+  "location": "Main south-north road, between Sea of Galilee and Rosh Pina",
+  "event": "Weeks of sniping at Jewish traffic (aggregate; cited as the precipitant for the Haganah's Operation Broom, 3-4 May)",
+  "quote": "the Arab al-Shamalina and Arab al-Zangariya bedouin, who for weeks had sniped at Jewish traffic along the main south-north road",
+  "perp": "Arab al-Shamalina and Arab al-Zangariya bedouin",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Weeks of sniping at Jewish traffic (aggregate; cited as the precipitant for the Haganah's Operation Broom, 3-4 May)",
+  "pretext": "",
+  "src": "Morris 1948 p.157",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 3 – 4 May, the Palmah's First Battalion, in a suboperation named mivtza matate (Operation Broom), cleared of Arab inhabitants—mainly the Arab al-Shamalina and Arab al-Zangariya bedouin, who for weeks had sniped at Jewish traffic along the main south-north road—the area between the Sea of Galilee and Rosh Pina: “The tents were burned and most of the houses were blown up.”221 The Palmah had defined the aim as “the destruction of bases of the enemy ."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "siege",
+  "n": 7,
+  "date": "~early 1948 (months before 13 May 1948)",
+  "year": 1948,
+  "location": "Kfar Saba (Jewish settlement) and nearby road, near Qalqilya",
+  "event": "Intermittent attacks on Jewish traffic and on the settlement of Kfar Saba 'during the previous months' (aggregate)",
+  "quote": "The local village militia, supported by an enlarged platoon of ALA troops, had intermittently attacked Jewish traffic and Kfar Saba during the previous months.",
+  "perp": "Kafr Saba village militia + an enlarged ALA platoon",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Intermittent attacks on Jewish traffic and on the settlement of Kfar Saba 'during the previous months' (aggregate)",
+  "pretext": "",
+  "src": "Morris 1948 p.164",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The local village militia, supported by an enlarged platoon of ALA troops, had intermittently attacked Jewish traffic and Kfar Saba during the previous months."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 2,
+  "date": "15 May 1948",
+  "year": 1948,
+  "location": "Kibbutzim Nir-Am, Beheri (Bror Hayil), Be'erot Yitzhak (east of Gaza)",
+  "event": "Settlements heavily shelled but not assaulted",
+  "quote": "A number of Israeli settlements to the east—Nir-gAm, Beheri, and Beherot Yitzhak—were heavily shelled but not assaulted.",
+  "perp": "Egyptian army",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Settlements heavily shelled but not assaulted",
+  "pretext": "",
+  "src": "Morris 1948 p.237",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Three of Kfar Darom's defenders were killed, and thirty were wounded.257 A number of Israeli settlements to the east—Nir-gAm, Beheri, and Beherot Yitzhak—were heavily shelled but not assaulted."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 3,
+  "date": "15-31 May 1948",
+  "year": 1948,
+  "location": "West Jerusalem (northern neighborhoods)",
+  "event": "Largely indiscriminate Jordanian artillery barrages; scarcely a home unshelled, scarcely a family without dead or wounded; Hadassah Hospital alone treated ~1,000 shell casualties in two weeks",
+  "quote": "Although some shelling was directed at Israeli mortar batteries or government buildings, much was indiscriminate, and Jewish civilian casualties were extensive.",
+  "perp": "Arab Legion / Jordanian artillery",
+  "actorType": [
+   "national-guard"
+  ],
+  "scale": "— killed, ~1000 wounded",
+  "scaleBig": "—",
+  "scaleNote": "Largely indiscriminate Jordanian artillery barrages; scarcely a home unshelled, scarcely a family without dead or wounded; Hadassah Hospital alone treated ~1,000 shell casualties in two weeks",
+  "pretext": "",
+  "src": "Morris 1948 p.215",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "treated one thousand shell casualties in the two weeks between May 15th and 31st."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 4,
+  "date": "2 June 1948",
+  "year": 1948,
+  "location": "Qisariya (Caesarea) naval station",
+  "event": "Corvette briefly shelled the small Israeli naval station, then withdrew; little damage",
+  "quote": "On 2 June, an Egyptian corvette briefly shelled Qisariya, where there was a small Israeli naval station, and then withdrew, causing no injuries and little damage.",
+  "perp": "Egyptian navy (corvette)",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "0 killed, 0 wounded",
+  "scaleBig": "0",
+  "scaleNote": "Corvette briefly shelled the small Israeli naval station, then withdrew; little damage",
+  "pretext": "",
+  "src": "Morris 1948 p.262",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "On 2 June, an Egyptian corvette briefly shelled Qisariya, where there was a small Israeli naval station, and then withdrew, causing no injuries and little damage."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 5,
+  "date": "c. 15 May 1948",
+  "year": 1948,
+  "location": "Kibbutz Hanita, Western Galilee",
+  "event": "Mortar barrage 'to show that the Lebanese were also taking part'; otherwise Lebanon stayed defensive",
+  "quote": "let loose against [Kibbutz] Hanita [in Western Galilee] with a mortar barrage in order to show that the Lebanese were also taking part in the war.",
+  "perp": "Lebanese army",
+  "actorType": [
+   "unknown"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Mortar barrage 'to show that the Lebanese were also taking part'; otherwise Lebanon stayed defensive",
+  "pretext": "",
+  "src": "Morris 1948 p.259",
+  "srcType": "secondary",
+  "phase": "invasion",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "did not join the invasion as its main forces were concentrated between Tyre and Ras al- Naqurah [to the west]”;366 another, that General Shihab had “refused to invade [Palestine] and argued that his army is only a defensive army and [incapable] of offense, but let loose against [Kibbutz] Hanita [in Western Galilee] with a mortar barrage in order to show that the Lebanese were also taking part in the war.”367 Al-Malikiya had been a severe blow."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 6,
+  "date": "late April 1948",
+  "year": 1948,
+  "location": "Katamon, West Jerusalem",
+  "event": "sniping from Katamon at Jewish areas (unstated casualties) — cited by Morris as a precipitant of the Haganah attack",
+  "quote": "The Haganah attack on Katamon was partly triggered by sniping from Katamon at Jewish areas and, perhaps, by the British evacuation of the Alamein Camp, just east of the neighborhood, which was then occupied by Arab militiamen.",
+  "perp": "Abu Diya's band holding Katamon",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "sniping from Katamon at Jewish areas (unstated casualties) — cited by Morris as a precipitant of the Haganah attack",
+  "pretext": "",
+  "src": "Morris 1948 p.131",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The Haganah attack on Katamon was partly triggered by sniping from Katamon at Jewish areas and, perhaps, by the British evacuation of the Alamein Camp, just east of the neighborhood, which was then occupied by Arab militiamen.82 An initial Palmah attack on Katamon, on the night of 26 –27 April, failed."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 7,
+  "date": "mid-April 1948",
+  "year": 1948,
+  "location": "Herzl Street / Hadar (Jewish neighborhood), Haifa",
+  "event": "increased militia pressure against Haganah positions along Herzl Street and the Jewish neighborhood of Hadar (unstated casualties)",
+  "quote": "Khoushi's soundings had been made in part in response to the increased pressure during the previous days by Arab militiamen against Haganah positions along Herzl Street and the Jewish neighborhood of Hadar behind it.",
+  "perp": "Haifa Arab militiamen",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "increased militia pressure against Haganah positions along Herzl Street and the Jewish neighborhood of Hadar (unstated casualties)",
+  "pretext": "",
+  "src": "Morris 1948 p.141",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "The general had warned against it, implying that the army would have to respond.132 Khoushi's soundings had been made in part in response to the increased pressure during the previous days by Arab militiamen against Haganah positions along Herzl Street and the Jewish neighborhood of Hadar behind it."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 8,
+  "date": "~9-10 May 1948",
+  "year": 1948,
+  "location": "Safad, Jewish Quarter",
+  "event": "Intermittent artillery shelling of the Jewish Quarter from a nearby hill",
+  "quote": "Meanwhile, his artillery began intermittently to shell the Jewish Quarter from a nearby hill.",
+  "perp": "ALA (Adib Shishakli, regional commander) + a company of Jordanians",
+  "actorType": [
+   "ALA"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Intermittent artillery shelling of the Jewish Quarter from a nearby hill",
+  "pretext": "",
+  "src": "Morris 1948 p.158",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "Meanwhile, his artillery began intermittently to shell the Jewish Quarter from a nearby hill."
+   }
+  ],
+  "searchTerms": []
+ },
+ {
+  "cat": "sniping",
+  "n": 9,
+  "date": "~early 1948 (months before late April 1948)",
+  "year": 1948,
+  "location": "Southern Tel Aviv (from Jaffa's northern neighborhoods)",
+  "event": "Months of sniping into Tel Aviv (aggregate; named as a motive for the IZL assault on Jaffa)",
+  "quote": "no objective was more attractive than Jaffa, which bordered on Tel Aviv, the IZL's main base of recruitment and operations, which for months had endured sniping from Jaffa's northern neighborhoods.",
+  "perp": "Jaffa militiamen (northern neighborhoods)",
+  "actorType": [
+   "local-irregulars"
+  ],
+  "scale": "— killed",
+  "scaleBig": "—",
+  "scaleNote": "Months of sniping into Tel Aviv (aggregate; named as a motive for the IZL assault on Jaffa)",
+  "pretext": "",
+  "src": "Morris 1948 p.149",
+  "srcType": "secondary",
+  "phase": "civil-war",
+  "passages": [
+   {
+    "file": "morris_1948_a_history_of_the_first_arab-israeli_war_from_epub_2008",
+    "text": "But news of the Haganah conquest of Haifa (and Tiberias) spurred the IZL to seek a victory of its own,164 and no objective was more attractive than Jaffa, which bordered on Tel Aviv, the IZL's main base of recruitment and operations, which for months had endured sniping from Jaffa's northern neighborhoods."
+   }
+  ],
+  "searchTerms": []
+ }
+]
