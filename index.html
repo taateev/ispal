@@ -9,6 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="broadsheet.css" />
 <link rel="stylesheet" href="landing.css" />
+<style>
+  .periods { align-items: start; }
+  .period h2 a { color: inherit; text-decoration: none; }
+  .period h2 a:hover { color: var(--accent); }
+  .period .hubdesc { font-family: var(--serif); font-size: 13.5px; color: var(--ink-3); line-height: 1.5; margin: 2px 0 10px; }
+  ul.pglist { list-style: none; margin: 0; padding: 0; }
+  ul.pglist li { margin: 0 0 6px; line-height: 1.35; }
+  ul.pglist a { font-family: var(--serif); font-size: 14px; color: var(--ink); text-decoration: none; }
+  ul.pglist a:hover { color: var(--accent); text-decoration: underline; }
+  ul.pglist .x { font-family: var(--sans); font-size: 9px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-4); margin-left: 5px; }
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -29,52 +40,80 @@
   <p class="dek">
     A set of descriptive inventories of life in Palestine and the wider region, drawn from a multi-source historical
     corpus. Each topic is tabulated as a <em>neutral, source-tagged ledger</em> — rows surface the underlying passages,
-    and connected events are cross-linked. Choose a period to enter.
+    and connected events are cross-linked. Every page is listed below; the <a href="site-tree.html">site tree</a> gives
+    the full cross-referenced view.
   </p>
 
-  <!-- ── Period chooser ─────────────────────────────────────────────── -->
-  <h2 class="section">Periods</h2>
+  <!-- ── Every page, by hub (mirrors the site tree) ──────────────────── -->
+  <h2 class="section">Browse</h2>
   <div class="periods">
 
-    <a class="period" href="ottoman.html">
+    <div class="period">
+      <div class="pspan">The epistemic problem</div>
+      <h2><a href="closed-worldview-anatomy.html">Motivation</a></h2>
+      <div class="hubdesc">Why a contentious question is approached through disinterested, source-tagged data — and the traps that make these debates resist evidence.</div>
+      <ul class="pglist">
+        <li><a href="closed-worldview-anatomy.html">Anatomy of a closed worldview</a></li>
+        <li><a href="nakba-90-percent-edit-history.html">Wikipedia land-ownership claims</a></li>
+        <li><a href="colonizer-apartheid-genocide.html">Colonizer · apartheid · genocide</a></li>
+        <li><a href="colonizer-the-data.html">The settler-colonial claim — the data</a></li>
+        <li><a href="attention-analysis.html">News attention vs. conflict severity</a></li>
+        <li><a href="cross-party-perceptions.html">Mutual perceptions across the divide</a></li>
+      </ul>
+    </div>
+
+    <div class="period">
       <div class="pspan">Part I · 1516–1917</div>
-      <h2>Ottoman Palestine</h2>
-      <p>
-        The full Ottoman period — communities, in-migration cohorts, and population reconstruction across four
-        centuries, from the conquest to the Mandate threshold.
-      </p>
-      <span class="enter">Enter →</span>
-    </a>
+      <h2><a href="ottoman.html">Ottoman Palestine</a></h2>
+      <div class="hubdesc">Communities, in-migration cohorts, the land regime, and population reconstruction across four centuries.</div>
+      <ul class="pglist">
+        <li><a href="jewish.html">Jewish life in Ottoman Palestine, 1516–1914</a></li>
+        <li><a href="hebron.html">The Jews of Hebron, c.638–1540</a></li>
+        <li><a href="christian.html">Christian life, 1516–1931</a></li>
+        <li><a href="samaritan.html">Samaritan life, 1516–1931</a></li>
+        <li><a href="jewish-migration-1516-1917.html">Jewish in-migration, 1516–1917</a></li>
+        <li><a href="christian-migration-1516-1917.html">Christian in-migration, 1516–1917</a></li>
+        <li><a href="muslim-migration-1516-1917.html">Muslim in-migration, 1516–1917</a></li>
+        <li><a href="coast-population-1800-1914.html">Population of the coast, 1800–1914</a></li>
+        <li><a href="population-by-community-1878-present.html">Population by community, 1878–present</a></li>
+      </ul>
+    </div>
 
-    <a class="period" href="mandate.html">
+    <div class="period">
       <div class="pspan">Part II · 1917–1948</div>
-      <h2>Mandatory Palestine</h2>
-      <p>
-        The British Mandate — beginning with the Arab Revolt of 1936–39 as a multi-sided event ledger, held to the
-        same source-tagged discipline.
-      </p>
-      <span class="enter">Enter →</span>
-    </a>
+      <h2><a href="mandate.html">Mandatory Palestine</a></h2>
+      <div class="hubdesc">The British Mandate and the 1948 war, held to the same source-tagged discipline.</div>
+      <ul class="pglist">
+        <li><a href="arab-revolt.html">The Arab Revolt, 1936–1939</a></li>
+        <li><a href="jewish-defense-organizations-1907-1948.html">Jewish defense organizations, 1907–1948</a></li>
+        <li><a href="arab-displacement-causes-1948.html">Causes of the 1948 Palestinian displacement</a></li>
+        <li><a href="nakba-depopulation-ledger-1948.html">The 1948 depopulation ledger</a></li>
+        <li><a href="zionist-conviction-1880-1948.html">Zionist conviction &amp; affiliation, 1880–1948</a></li>
+        <li><a href="jewish-arab-labor-1906-1948.html">Jewish–Arab labor, 1906–1948</a></li>
+        <li><a href="land-regime-1831-1947.html">The land regime, 1831–1947</a></li>
+      </ul>
+    </div>
 
-    <a class="period" href="contemporary.html">
+    <div class="period">
       <div class="pspan">Part III · 1948–present</div>
-      <h2>Contemporary</h2>
-      <p>
-        After 1948 — Gaza's demography and casualty record, comparative atrocity figures, and the long run of
-        Palestinian &amp; Israeli survey opinion.
-      </p>
-      <span class="enter">Enter →</span>
-    </a>
+      <h2><a href="contemporary.html">Contemporary</a></h2>
+      <div class="hubdesc">Gaza's casualty record, survey opinion, the disposition of the land, and the contemporary arguments as data.</div>
+      <ul class="pglist">
+        <li><a href="gaza-casualties.html">Gaza casualties</a></li>
+        <li><a href="peace-process.html">Disposition of the land, 1915–2020</a></li>
+        <li><a href="public-opinion.html">Palestinian &amp; Israeli public opinion</a></li>
+        <li><a href="minorities-law-on-the-books.html">The law on the books — 19 legal systems</a></li>
+      </ul>
+    </div>
 
-    <a class="period" href="wider-region.html">
-      <div class="pspan">Beyond Palestine · 1870–1992</div>
-      <h2>The wider region</h2>
-      <p>
-        Jewish communities across the Middle East and North Africa — the near-total disappearance of a world after
-        1948, recorded as a demographic event log.
-      </p>
-      <span class="enter">Enter →</span>
-    </a>
+    <div class="period">
+      <div class="pspan">Beyond Palestine · 1870–present</div>
+      <h2><a href="wider-region.html">The wider region</a></h2>
+      <div class="hubdesc">The Middle East and North Africa beyond Palestine, same ledger discipline.</div>
+      <ul class="pglist">
+        <li><a href="jewish-exodus-arab-lands.html">The Jewish communities of MENA, 1870–1992</a></li>
+      </ul>
+    </div>
 
   </div>
 
