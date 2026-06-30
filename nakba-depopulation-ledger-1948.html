@@ -823,6 +823,12 @@
   table.xtab tr.hi-e { background:rgba(45,90,122,0.06); }
   table.xtab .big-active { color:#b0231a; font-weight:700; }
   table.xtab .big-inactive { color:#2d5a7a; font-weight:700; }
+  /* Hebrew operational verb (where Morris transliterates the order) */
+  .heborder { font-family:var(--serif); font-size:14px; color:var(--ink); margin:2px 0 10px; }
+  .heborder .heb-s { font-size:19px; font-weight:600; }
+  .heborder .heb-t { font-style:italic; color:var(--accent); }
+  .heborder .heb-n { font-family:var(--sans); font-size:11.5px; color:var(--ink-3); margin-top:3px; }
+  .hebtag { display:block; font-family:var(--serif); font-size:15px; color:var(--accent); margin-top:3px; cursor:help; }
 </style>
 </head>
 <body>
@@ -1207,6 +1213,12 @@ function DetailPanel({ event, onNavigate }) {
           {event.combEvidence && <div className="combevid">{event.combEvidence}{event.attackerSourced && <span className="attsrc"> · ⚠ rests on an attacker-sourced claim</span>}{event.combConf && <span className="combconf"> · confidence: {event.combConf}</span>}</div>}
         </React.Fragment>
       )}
+      {event.hebrew && (
+        <React.Fragment>
+          <div className="detail-section-head">Hebrew in the order</div>
+          <div className="heborder"><span className="heb-s">{event.hebrew.script}</span> <span className="heb-t">{event.hebrew.translit}</span> — &ldquo;{event.hebrew.gloss}&rdquo;<div className="heb-n">{event.hebrew.note}</div></div>
+        </React.Fragment>
+      )}
       {passages.length > 0 && (
         <React.Fragment>
           <div className="detail-section-head">Corpus passage</div>
@@ -1362,7 +1374,7 @@ function App() {
                 <tr ref={(el) => rowRefs.current[id] = el} className={`clickable ${isOpen ? "expanded" : ""}`} onClick={() => toggleRow(id)}>
                   <td className="num">{String(r.n).padStart(2,"0")}</td>
                   <td className="col-date">{r.date}<span className={`sub sub-${r.cat}`}>{CAT_TAB[r.cat]}</span></td>
-                  <td className="col-loc"><span className="loc-name">{r.location}</span><span className={`milbadge mil-${r.milstatus}`}>{MIL_LABEL[r.milstatus]}</span></td>
+                  <td className="col-loc"><span className="loc-name">{r.location}</span><span className={`milbadge mil-${r.milstatus}`}>{MIL_LABEL[r.milstatus]}</span>{r.hebrew && <span className="hebtag" title={`${r.hebrew.translit} — ${r.hebrew.gloss}`}>{r.hebrew.script}</span>}</td>
                   <td className="col-event">{r.event}{r.quote && <blockquote>{r.quote}</blockquote>}</td>
                   <td className="col-actor">
                     {(r.actorType||[]).map((p) => <span key={p} className={`chip ${p}`}>{ACTOR_LABEL[p]||p}</span>)}

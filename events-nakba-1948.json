@@ -1864,7 +1864,13 @@
   "milstatus": "active",
   "combEvidence": "Birth p.120-121: cycle of violence at Romema began with 'attacks on Jewish traffic leaving Jerusalem'; petrol-station owner scouted Jewish convoys for the irregulars; villagers threw a grenade at a Jewish bus; daily exchanges of fire; 'some militiamen had apparently stayed' though HIS reported Romema 'empty' by early January. Depopulated by repeated Haganah/IZL/LHI raids + flight, not a defensive battle.",
   "combConf": "medium",
-  "attackerSourced": false
+  "attackerSourced": false,
+  "hebrew": {
+   "script": "סילוק",
+   "translit": "siluk",
+   "gloss": "eviction / removal",
+   "note": "Haganah OC: the 'eviction [siluk] of Arab Romema' eased his situation (Morris p.121)"
+  }
  },
  {
   "cat": "assault",
@@ -5647,7 +5653,13 @@
   "milstatus": "inactive",
   "combEvidence": "Op An-Far: 51st Bn took Tel as Safi at dawn 9 July under mortar/MG barrage; after taking the tel they fired on houses 'increasing the mass flight.' The IDF order's reference to destroying 'the enemy's fighting force' is attacker-sourced and vague, and the narrative shows mass flight not resistance — so harbored coded unknown, resisted 'no' from the neutral flight account. Village was described as cut off from Egyptian/irregular forces to east/south (i.e. they were elsewhere).",
   "combConf": "medium",
-  "attackerSourced": false
+  "attackerSourced": false,
+  "hebrew": {
+   "script": "להשמיד · להרוג · לגרש",
+   "translit": "lehashmid · laharog · legaresh",
+   "gloss": "destroy · kill · expel",
+   "note": "the written Tel as Safi order (Morris p.437)"
+  }
  },
  {
   "cat": "assault",
@@ -8853,7 +8865,13 @@
   "milstatus": "active",
   "combEvidence": "Same locality (Lydda) as assault-94: Legionnaires+irregulars held the police fort; Legion armoured-car firefight 12 July 'sparked sniping by armed Lydda townspeople against the occupying troops'; 'some still armed.' organized-force, launched yes, arms yes, resisted yes — all neutral-documented. The expulsion order followed the 'uprising.'",
   "combConf": "high",
-  "attackerSourced": false
+  "attackerSourced": false,
+  "hebrew": {
+   "script": "גרש אותם",
+   "translit": "garesh otam",
+   "gloss": "expel them",
+   "note": "Ben-Gurion's verbal order at Lydda, 12 July (Morris p.429)"
+  }
  },
  {
   "cat": "expulsion",
@@ -9162,7 +9180,13 @@
   "milstatus": "active",
   "combEvidence": "Event is the 28 Aug Operation Nikayon dunes 'cleansing'; people actually encountered were hungry refugees reaping fields, not combatants (order's 'armed units' aim is attacker-sourced). But 'Arab Suqrir had a documented militia: on 9 Jan 1948 'militiamen from the small village of ‘Arab Suqrir murdered 11 Haganah scouts' near Gan-Yavne, and ~30 men 'stayed behind to guard the village' before fleeing the 25 Jan raid ('found the village empty'). Coded on that documented village action.",
   "combConf": "medium",
-  "attackerSourced": false
+  "attackerSourced": false,
+  "hebrew": {
+   "script": "לטהר",
+   "translit": "letaher",
+   "gloss": "to cleanse",
+   "note": "Operation Nikayon order — 'cleansing [letaher]' the Wadi Suqrir–Rubin area (Morris p.444)"
+  }
  },
  {
   "cat": "expulsion",
@@ -9250,7 +9274,13 @@
   "milstatus": "active",
   "combEvidence": "Yiftah 51st/53rd battalions ordered to 'cleanse' areas 'of the enemy [i.e., unfriendly beduin tribes]'; the operation 'was mounted because Arab marauders had blown up a Jewish water pipeline and mined roads' — corroborated by the regional reference (Negev pipeline 'continuously sabotaged'). Armed beduin marauders = local militia. The 'enemy'/justification framing is IDF-operational (attacker-sourced). 'All the Arabs expelled save for one friendly tribe'; no resistance described.",
   "combConf": "medium",
-  "attackerSourced": true
+  "attackerSourced": true,
+  "hebrew": {
+   "script": "לטהר",
+   "translit": "letaher",
+   "gloss": "to cleanse",
+   "note": "Yiftah 51st/53rd Bns ordered 'to cleanse [letaher]' the Negev (Morris p.447)"
+  }
  },
  {
   "cat": "expulsion",
@@ -9556,7 +9586,13 @@
   "milstatus": "inactive",
   "combEvidence": "Morris (Birth Revisited p.477): al Rama 'was overrun without a fight by Golani on 30 October'; the next day the 91st Bn expelled its ~1,000 Christian/Muslim inhabitants on pain of death (Druse allowed to stay). Taken without a fight -> none-noted, resisted=no. No attacks or arms attributed to Rama -> unknown.",
   "combConf": "high",
-  "attackerSourced": false
+  "attackerSourced": false,
+  "hebrew": {
+   "script": "טיהור · לגרש (נמנע)",
+   "translit": "tihur · legaresh (avoided)",
+   "gloss": "cleansing · 'to expel' (the word the order avoided)",
+   "note": "the 31 Oct order was 'couched in euphemistic terms, avoiding the verb to expel (legaresh)' (Morris p.477, 481)"
+  }
  },
  {
   "cat": "expulsion",
@@ -15563,7 +15599,13 @@
   "milstatus": "active",
   "combEvidence": "Heart of the Faluja Pocket: ~4,000 stranded/surrounded Egyptian regular troops (incl. Nasser) held the two villages under IDF siege late Oct 1948–late Feb 1949 — a famous Egyptian holdout never taken militarily, evacuated only under the 24 Feb armistice. Garrison armed; pocket resisted. Neutral/well-documented (UN+Quaker observers present).",
   "combConf": "high",
-  "attackerSourced": false
+  "attackerSourced": false,
+  "hebrew": {
+   "script": "תעמולת לחש",
+   "translit": "ta'amulat lahash",
+   "gloss": "whispering propaganda",
+   "note": "the psy-war campaign to drive out the Faluja pocket (Morris p.522–525)"
+  }
  },
  {
   "cat": "expulsion",
