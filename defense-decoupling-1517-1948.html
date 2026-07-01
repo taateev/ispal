@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Jewish defense predicament, 1517–1948 — decoupled by affiliation, welded by violence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #f5f1e8;
+    --paper-2: #ede7d8;
+    --paper-3: #e3dcc7;
+    --ink: #1a1714;
+    --ink-2: #3a352d;
+    --ink-3: #6b6358;
+    --ink-4: #9a9080;
+    --rule: #c9bfa6;
+    --rule-soft: #d9d0b8;
+    --accent: #7a2c1e;
+    --accent-2: #5a4a2e;
+    --accent-3: #2d4a3a;
+    --accent-4: #3a4a6b;
+    --accent-5: #8a5a2b;
+    --accent-6: #6b7280;
+    --highlight: #f0e5c5;
+    --serif: "Source Serif 4", "Iowan Old Style", "Palatino", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at top, rgba(0,0,0,0.02), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.04 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: clamp(28px, 4vw, 56px) clamp(18px, 4vw, 48px) 96px; }
+  .mast {
+    border-top: 3px double var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 18px 0 22px;
+    margin-bottom: 36px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 24px;
+  }
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.06;
+    margin: 8px 0 0;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  h1 em { font-style: italic; color: var(--ink-2); font-weight: 500; }
+  .mast .meta {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-3);
+    text-align: right;
+    line-height: 1.6;
+  }
+  .mast .meta b { color: var(--ink); font-weight: 600; }
+  .dek {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    max-width: 820px;
+    margin: 0 0 28px;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin: 0 0 36px;
+  }
+  .stat {
+    padding: 14px 12px;
+    border-right: 1px solid var(--rule-soft);
+    text-align: center;
+  }
+  .stat:last-child { border-right: 0; }
+  .stat .n {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .stat .l {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-top: 6px;
+    font-weight: 500;
+  }
+  /* Controls */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    align-items: center;
+    padding: 12px 14px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    margin-bottom: 28px;
+    font-family: var(--sans);
+  }
+  .controls label {
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .tabs { display: flex; gap: 0; flex-wrap: wrap; }
+  .tab {
+    appearance: none;
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 11.5px;
+    font-weight: 500;
+    padding: 7px 12px;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    border-right-width: 0;
+  }
+  .tab:last-child { border-right-width: 1px; }
+  .tab.on { background: var(--ink); color: var(--paper); }
+  .tab.on.imm { background: var(--accent-3); border-color: var(--accent-3); }
+  .tab.on.hal { background: var(--accent-2); border-color: var(--accent-2); }
+  .tab.on.inst { background: var(--accent-4); border-color: var(--accent-4); }
+  .tab.on.rest { background: var(--accent-5); border-color: var(--accent-5); }
+  .tab.on.dis { background: var(--accent-6); border-color: var(--accent-6); }
+  .tab .count {
+    font-family: var(--mono);
+    font-size: 10px;
+    margin-left: 6px;
+    opacity: 0.7;
+  }
+  .tab.on .count { opacity: 0.85; }
+  .search {
+    flex: 1 1 200px;
+    min-width: 160px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 7px 10px;
+    font-family: var(--sans);
+    font-size: 12.5px;
+    color: var(--ink);
+    border-radius: 2px;
+  }
+  .search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .select {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 6px 10px;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: var(--ink);
+    border-radius: 2px;
+  }
+  .clearbtn {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 6px 0;
+  }
+  /* Table */
+  table.t {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--paper);
+    font-family: var(--serif);
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+  table.t thead th {
+    text-align: left;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+    padding: 14px 14px 12px;
+    border-bottom: 2px solid var(--ink);
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  table.t thead th .sortmark {
+    font-family: var(--mono);
+    font-size: 10px;
+    margin-left: 4px;
+    color: var(--ink-4);
+  }
+  table.t thead th.sorted .sortmark { color: var(--accent); }
+  table.t tbody td {
+    padding: 14px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  table.t tbody tr:hover { background: var(--highlight); }
+  table.t tbody tr.expanded { background: var(--paper-2); }
+  table.t tbody tr.expanded:hover { background: var(--paper-2); }
+  .num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-4);
+    width: 36px;
+  }
+  .col-date {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 14.5px;
+    width: 110px;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .col-date .sub {
+    display: block;
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+  .sub-violence, .sub-extortion, .sub-expulsion { color: var(--accent); }
+  .sub-immigration { color: var(--accent-3); }
+  .sub-halukah { color: var(--accent-2); }
+  .sub-institution { color: var(--accent-4); }
+  .sub-restriction { color: var(--accent-5); }
+  .sub-disaster { color: var(--accent-6); }
+  .col-loc {
+    width: 140px;
+    font-weight: 500;
+  }
+  .col-loc .loc-name {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .col-event {
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+  .col-event blockquote {
+    font-style: italic;
+    color: var(--ink-2);
+    border-left: 2px solid var(--accent-2);
+    padding: 2px 0 2px 10px;
+    margin: 6px 0 0;
+    font-size: 13.5px;
+  }
+  .col-actor {
+    width: 170px;
+    font-size: 13.5px;
+    color: var(--ink-2);
+  }
+  .col-scale {
+    width: 120px;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.45;
+  }
+  .col-scale .big {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 2px;
+    line-height: 1;
+  }
+  .col-src {
+    width: 165px;
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+  .col-src .pill {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    padding: 1px 6px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    background: var(--paper);
+  }
+  .col-src .pill.primary { border-color: var(--accent); color: var(--accent); background: #faf0eb; }
+  .col-src .pill.eyewitness { border-color: var(--accent-3); color: var(--accent-3); background: #ebf0ec; }
+  .col-src .pill.secondary { border-color: var(--rule); color: var(--ink-3); }
+  /* Actor chips */
+  .chip {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-weight: 600;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border: 1px solid currentColor;
+    background: transparent;
+  }
+  .chip.ottoman { color: #5a4a2e; }
+  .chip.local   { color: #7a2c1e; }
+  .chip.bedouin { color: #6b3d12; }
+  .chip.druze   { color: #2d4a3a; }
+  .chip.egyptian{ color: #3a4a6b; }
+  .chip.christian{color: #5a2c5a; }
+  .chip.creditor{ color: #4a3a2d; }
+  .chip.sephardi { color: #2d5a4a; }
+  .chip.ashkenazi { color: #3a3a6b; }
+  .chip.maghrebi { color: #6b4a2d; }
+  .chip.hasidic { color: #4a2d5a; }
+  .chip.consular-regime { color: #2d4a5a; }
+  .chip.ottoman-state { color: #5a4a2e; }
+  .chip.sabbatean { color: #5a3a4a; }
+  .chip.internal { color: #6b6358; }
+  .chip.pekidim { color: #2d5a3a; }
+  .chip.kollelim { color: #5a4a2e; }
+  .chip.sheluchim { color: #3a5a4a; }
+  .chip.philanthropist { color: #4a3a5a; }
+  .chip.alliance { color: #3a5a6b; }
+  .chip.religious { color: #5a4a3a; }
+  .chip.settlement { color: #4a6b3a; }
+  /* Link indicator */
+  .link-badge {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 9px;
+    color: var(--accent-4);
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 4px;
+    opacity: 0.7;
+  }
+  .link-badge:hover { opacity: 1; }
+  /* Expanded detail row */
+  .detail-row td {
+    padding: 0 !important;
+    border-bottom: 2px solid var(--rule) !important;
+  }
+  .detail-panel {
+    padding: 18px 24px 22px;
+    background: var(--paper-2);
+    border-left: 3px solid var(--accent);
+  }
+  .detail-panel.cat-immigration { border-left-color: var(--accent-3); }
+  .detail-panel.cat-halukah { border-left-color: var(--accent-2); }
+  .detail-panel.cat-institution { border-left-color: var(--accent-4); }
+  .detail-panel.cat-restriction { border-left-color: var(--accent-5); }
+  .detail-panel.cat-disaster { border-left-color: var(--accent-6); }
+  .detail-section-head {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+  .detail-section-head:not(:first-child) { margin-top: 18px; }
+  .passage {
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background: var(--paper);
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
+  }
+  .passage-file {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .passage-text {
+    font-family: var(--serif);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .no-passages {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-4);
+  }
+  /* Linked event cards */
+  .linked-cards { display: flex; flex-wrap: wrap; gap: 10px; }
+  .linked-card {
+    appearance: none;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 8px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: left;
+    max-width: 360px;
+    transition: border-color 0.15s;
+  }
+  .linked-card:hover { border-color: var(--accent); }
+  .linked-card .lc-label {
+    font-family: var(--sans);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    margin-bottom: 3px;
+  }
+  .linked-card .lc-title {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .linked-card .lc-cat {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 1px 5px;
+    border: 1px solid var(--rule);
+    margin-right: 6px;
+  }
+  /* Section heads inside table */
+  table.t tbody tr.sec td {
+    background: var(--paper-3);
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 10px 14px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  table.t tbody tr.sec td .secsub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--ink-3);
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  /* Notes */
+  .notes {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 36px;
+  }
+  .notes h2 {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--ink);
+    font-weight: 700;
+  }
+  .notes p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    margin: 0 0 12px;
+  }
+  .notes .legend {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 12px;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+  .legend .pill {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    padding: 1px 6px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--paper);
+    height: fit-content;
+  }
+  .legend .pill.primary { border-color: var(--accent); color: var(--accent); background: #faf0eb; }
+  .legend .pill.eyewitness { border-color: var(--accent-3); color: var(--accent-3); background: #ebf0ec; }
+  .legend .pill.secondary { border-color: var(--rule); color: var(--ink-3); }
+  .disasters {
+    margin-top: 40px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    padding: 18px 22px 20px;
+  }
+  .disasters h3 {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 4px;
+    font-weight: 700;
+  }
+  .disasters p.cap {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--ink-3);
+    font-size: 13px;
+    margin: 0 0 14px;
+  }
+  table.dis {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--serif);
+    font-size: 14px;
+  }
+  table.dis th {
+    text-align: left;
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    padding: 6px 12px 6px 0;
+    border-bottom: 1px solid var(--ink);
+    font-weight: 600;
+  }
+  table.dis td {
+    padding: 10px 12px 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    color: var(--ink-2);
+  }
+  table.dis td:first-child { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+  table.dis td:last-child  { font-weight: 500; color: var(--ink); }
+  .empty {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--ink-3);
+    font-style: italic;
+  }
+  .colophon {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 3px double var(--ink);
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-3);
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.06em;
+  }
+  .colophon b { color: var(--ink); font-weight: 600; }
+  .clickable { cursor: pointer; }
+  /* --- Synthesis sections (population, comparison, halukah) --- */
+  .synth h2 {
+    font-family: var(--sans); font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--ink); margin: 0 0 14px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--ink); font-weight: 700;
+  }
+  .pop { margin: 8px 0 44px; }
+  .pop svg { width: 100%; height: auto; display: block; }
+  .cap {
+    font-family: var(--serif); font-style: italic; color: var(--ink-3);
+    font-size: 13px; margin: 12px 0 0; max-width: 980px; line-height: 1.55;
+  }
+  .cap b { font-style: normal; color: var(--ink); font-weight: 600; }
+  .compare { margin: 0 0 44px; }
+  .cmp-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); }
+  .cmp-col { padding: 18px 22px 20px; }
+  .cmp-col.pre { background: #faf2ef; border-right: 1px solid var(--rule); }
+  .cmp-col.post { background: #edf2ed; }
+  .cmp-col h3 { font-family: var(--sans); font-size: 12px; letter-spacing: 0.06em; margin: 0; font-weight: 700; color: var(--ink); }
+  .cmp-col .sub { font-family: var(--sans); font-size: 11px; color: var(--ink-3); margin: 3px 0 14px; letter-spacing: 0.03em; }
+  .cmp-row { display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--rule-soft); align-items: baseline; }
+  .cmp-row:last-child { border-bottom: 0; }
+  .cmp-row .k { font-family: var(--sans); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-3); }
+  .cmp-row .v { font-family: var(--serif); font-size: 17px; font-weight: 600; text-align: right; }
+  .cmp-col.pre .v { color: var(--accent); }
+  .cmp-col.post .v { color: var(--accent-3); }
+  .halukah { margin: 0 0 44px; background: var(--paper-2); border: 1px solid var(--rule); padding: 18px 22px 22px; }
+  .halukah table { width: 100%; border-collapse: collapse; font-family: var(--serif); font-size: 14px; margin: 4px 0; }
+  .halukah th { text-align: left; font-family: var(--sans); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); padding: 6px 14px 6px 0; border-bottom: 1px solid var(--ink); font-weight: 600; }
+  .halukah td { padding: 8px 14px 8px 0; border-bottom: 1px solid var(--rule-soft); color: var(--ink-2); }
+  .halukah td:last-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+  .halukah p { font-size: 13.5px; line-height: 1.6; color: var(--ink-2); margin: 14px 0 0; max-width: 960px; }
+  .halukah p b { color: var(--ink); }
+  @media (max-width: 720px) { .cmp-grid { grid-template-columns: 1fr; } .cmp-col.pre { border-right: 0; border-bottom: 1px solid var(--rule); } }
+
+  /* ── Mobile ─────────────────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .mast { grid-template-columns: 1fr; gap: 14px; }
+    .mast .meta { text-align: left; }
+    .notes { grid-template-columns: 1fr; gap: 28px; }
+  }
+  /* the stacked comparison card (card-combined.jsx) */
+  @media (max-width: 640px) {
+    .cmb .cmb-cmp { grid-template-columns: 1fr !important; }
+    .cmb .cmb-cmp .col.post { border-left: 0 !important; border-top: 1px solid #ddd4c2 !important; }
+    .cmb .cmb-head, .cmb .cmb-body { padding-left: 20px !important; padding-right: 20px !important; }
+  }
+  /* control rail */
+  @media (max-width: 680px) {
+    .controls { padding: 12px 11px; gap: 10px 12px; }
+    .controls label { width: 100%; margin-bottom: -2px; }
+    .tabs { width: 100%; }
+    .tab { flex: 1 1 auto; text-align: center; padding: 8px 7px; }
+    .search { flex: 1 1 100%; order: 5; }
+    .select { flex: 1 1 calc(50% - 7px); order: 6; }
+    .clearbtn { order: 7; }
+    /* inner data tables scroll within their panel instead of bursting the page */
+    .halukah, .disasters { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .halukah table, table.dis { min-width: 460px; }
+  }
+  /* the ledger restacks into broadsheet clipping cards */
+  @media (max-width: 600px) {
+    table.t { display: block; min-width: 0; font-size: 15px; }
+    table.t thead { display: none; }
+    table.t tbody { display: block; }
+    table.t tbody tr { display: block; }
+    table.t tbody tr.sec td { display: block; margin: 24px 0 13px; }
+    table.t tbody tr.sec:first-child td { margin-top: 4px; }
+    table.t tbody tr:not(.detail-row):not(.sec) {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 14px;
+      align-items: baseline;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--ink);
+      border-radius: 2px;
+      padding: 14px 15px 15px;
+      margin-bottom: 11px;
+    }
+    table.t tbody tr.expanded { background: var(--paper-2); margin-bottom: 0; }
+    table.t tbody tr:not(.detail-row):not(.sec):hover { background: var(--paper); }
+    table.t tbody tr.expanded:hover { background: var(--paper-2); }
+    table.t tbody tr:not(.detail-row):not(.sec) td { display: block; border: none !important; padding: 0; width: auto; }
+    table.t tbody tr:not(.detail-row):not(.sec) td.num { display: none !important; }
+    .col-date { grid-column: 1; font-size: 17px; }
+    .col-date .sub { margin-top: 5px; }
+    .col-loc { grid-column: 2; text-align: right; }
+    .col-loc .loc-name { font-size: 13px; color: var(--ink-3); }
+    .col-event { grid-column: 1 / -1; margin-top: 11px; font-size: 15px; }
+    .col-event blockquote { font-size: 14px; }
+    /* the actor / scale / source columns get a small label since the head is gone */
+    .col-actor, .col-scale, .col-src {
+      grid-column: 1 / -1;
+      margin-top: 12px;
+      padding-top: 11px !important;
+      border-top: 1px solid var(--rule-soft) !important;
+      width: 100%;
+    }
+    .col-actor::before, .col-scale::before, .col-src::before {
+      display: block;
+      font-family: var(--sans);
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .col-actor::before { content: "Actors"; }
+    .col-scale::before { content: "Scale"; }
+    .col-src::before { content: "Source"; }
+    .col-scale .big { display: inline-block; font-size: 17px; }
+    .detail-row { display: block; margin-bottom: 11px; }
+    .detail-row td { display: block; }
+    .detail-panel {
+      border: 1px solid var(--rule);
+      border-left-width: 3px;
+      border-radius: 0 0 2px 2px;
+      padding: 16px 16px 18px;
+    }
+    .linked-card { max-width: 100%; }
+  }
+
+  /* ── Decoupling ledger: five thesis lanes ───── */
+  .sub-vuln{color:#8a6d3b}.sub-decouple{color:#7a1f14}.sub-response{color:#2d5a3a}.sub-weld{color:#3a4a6b}.sub-counter{color:#6b7280}
+  .detail-panel.cat-vuln{border-left-color:#8a6d3b}.detail-panel.cat-decouple{border-left-color:#7a1f14}
+  .detail-panel.cat-response{border-left-color:#2d5a3a}.detail-panel.cat-weld{border-left-color:#3a4a6b}
+  .detail-panel.cat-counter{border-left-color:#6b7280}
+  .tab.on.vl{background:#8a6d3b;border-color:#8a6d3b}.tab.on.dc{background:#7a1f14;border-color:#7a1f14}
+  .tab.on.rs{background:#2d5a3a;border-color:#2d5a3a}.tab.on.wl{background:#3a4a6b;border-color:#3a4a6b}
+  .tab.on.ct{background:#6b7280;border-color:#6b7280}
+  .chip.dhimmi{color:#8a6d3b}.chip.mob{color:#b0231a}.chip.egyptian-troops{color:#3a4a6b}.chip.druze{color:#2d4a3a}
+  .chip.bedouin{color:#8a5a2b}.chip.fellahin{color:#a85432}.chip.ottoman-official{color:#5a4a2e}.chip.local-notable{color:#6b3d12}
+  .chip.creditor{color:#4a3a2d}.chip.brigands{color:#7a2c1e}.chip.pirates{color:#3a5a6b}.chip.haganah{color:#2d5a3a}
+  .chip.irgun{color:#7a1f14}.chip.lehi{color:#5a2c2c}.chip.british-sns{color:#3a4a6b}.chip.arab-legion{color:#2d4a5a}
+  .chip.husseini-network{color:#6b3d12}.chip.police{color:#4a6a7a}.chip.qassamite{color:#6b3d12}.chip.british{color:#3a4a6b}.chip.unspecified{color:#6b7280}
+  /* victims / supports / verify markers */
+  .vic{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;}
+  .vic.nonzionist,.vic.antizionist{color:#7a1f14}.vic.zionist{color:#2d5a3a}.vic.mixed{color:#8a5a2b}.vic.arab{color:#3a4a6b}.vic.na{color:#9a9080}
+  .sup{display:inline-block;font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:1px 6px;border:1px solid currentColor;border-radius:2px;}
+  .sup.vuln{color:#8a6d3b}.sup.decouple{color:#7a1f14}.sup.response{color:#2d5a3a}.sup.weld{color:#3a4a6b}.sup.counter{color:#6b7280}
+  .vf{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;}
+  .vf.confirmed{color:#2d5a3a}.vf.qualified{color:#8a5a2b}.vf.unverified{color:#9a3a2a}.vf.dash{color:#9a9080}
+  .col-src .pill.official{border-color:#5a4a2e;color:#5a4a2e;background:#f4efe4}.col-src .pill.structural{border-color:#6b7280;color:#6b7280}
+  .prelude .xtab{width:100%;border-collapse:collapse;font-family:var(--serif);font-size:13.5px;margin:2px 0;}
+  .prelude .xtab th{text-align:left;font-family:var(--sans);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);padding:5px 10px 5px 0;border-bottom:1px solid var(--ink);font-weight:600;}
+  .prelude .xtab td{padding:6px 10px 6px 0;border-bottom:1px solid var(--rule-soft);color:var(--ink-2);}
+  .prelude .xtab td:nth-child(2){font-family:var(--mono);color:var(--ink);}
+  .detail-meta{font-size:13.5px;line-height:1.6;margin-bottom:14px;}
+  .detail-meta > div{margin-bottom:3px;}
+  .detail-meta .mech{margin-top:7px;padding:8px 11px;background:#f4efe4;border-left:3px solid #8a6d3b;border-radius:3px;color:#5a4a38;}
+  .detail-meta .aggnote{margin-top:7px;padding:8px 11px;background:#eef2f4;border-left:3px solid #6b7280;border-radius:3px;color:#444;font-size:12.5px;}
+  .tl-wrap{background:var(--paper);border:1px solid var(--rule);padding:14px 16px 10px;margin:0 0 30px;overflow-x:auto}
+  .tl-wrap svg{display:block}
+  .tl-title{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);font-weight:700;margin:0 0 2px}
+  .tl-sub{font-family:var(--serif);font-style:italic;color:var(--ink-3);font-size:13px;margin:0 0 10px;max-width:900px}
+  .tl-dot{cursor:pointer;}
+  .tl-plot{position:relative;}
+  .tl-tip{position:absolute;z-index:6;background:#211d18;color:#f1ece2;border-radius:8px;padding:11px 13px 12px;box-shadow:0 14px 34px -12px rgba(0,0,0,0.6);pointer-events:none;width:268px;max-width:82vw;}
+  .tl-tip.above{transform:translate(-50%,calc(-100% - 13px));}
+  .tl-tip.below{transform:translate(-50%,13px);}
+  .tl-tip .arw{position:absolute;left:50%;margin-left:-7px;border:7px solid transparent;}
+  .tl-tip.above .arw{bottom:-7px;border-top-color:#211d18;border-bottom:0;}
+  .tl-tip.below .arw{top:-7px;border-bottom-color:#211d18;border-top:0;}
+  .tl-tip .cat{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;gap:7px;}
+  .tl-tip .cat .sw{width:9px;height:9px;border-radius:50%;flex:none;}
+  .tl-tip .yp{font-family:var(--serif);font-size:15px;font-weight:600;margin:5px 0 4px;display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;}
+  .tl-tip .yp .pl{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:0.03em;text-transform:uppercase;color:#a89e8d;}
+  .tl-tip .tx{font-size:13px;line-height:1.44;color:#d9d2c5;}
+  .tl-tip .meta{font-family:var(--sans);font-size:10.5px;color:#b9b09d;margin-top:6px;font-style:italic;}
+  .tl-tip .src{font-family:var(--sans);font-size:10px;letter-spacing:0.02em;color:#8f8675;margin-top:5px;}
+  /* source clip — the cited page, as printed (highlighted passage), shown inline */
+  .srcclip { margin:11px 0 3px; }
+  .srcclip .srccap { font-family:var(--sans); font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-3); margin:0 0 6px; }
+  .srcclip img { display:block; width:100%; max-width:540px; border:1px solid var(--rule); border-radius:2px; box-shadow:0 1px 5px rgba(0,0,0,.09); background:#fff; }
+  .clipstrip { display:grid; grid-template-columns:repeat(auto-fit,minmax(238px,1fr)); gap:16px; margin:14px 0 4px; align-items:start; }
+  .clipstrip .srcclip { margin:0; }
+  .clipstrip .srcclip img { max-width:100%; }
+  .prelude { margin:6px 0 26px; padding:20px 22px; background:var(--paper-2,#f4efe4); border:1px solid var(--rule); border-left:3px solid var(--accent); border-radius:3px; }
+  .prelude h2 { font-family:var(--serif); font-weight:600; font-size:22px; margin:0 0 4px; color:var(--ink); }
+  .prelude .sub { font-family:var(--sans); font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 12px; }
+  .prelude p { font-family:var(--serif); font-size:15px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .prelude p:last-of-type { margin-bottom:4px; }
+  .prelude .bq { font-family:var(--serif); font-style:italic; color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">An Event Ledger — Corpus-Connected</div>
+      <h1>The Jewish defense predicament<br/><em>decoupled by affiliation, welded by violence · 1517–1948</em></h1>
+    </div>
+    <div class="meta">
+      <b>Span</b> 1517 → 1948 · Old Yishuv to the 1948 war<br/>
+      <b>Thesis</b> defense need tracked Jewishness, not Zionism<br/>
+      <b>Corpus</b> H. Cohen <i>Year Zero</i> · Morris · Schwartz/Halevi · Schwarz 1850<br/>
+      <span style="opacity:0.7;">85 events · 7-lane sweep + adversarial verify (45 confirmed)</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    Across four centuries the Jewish communities of Palestine were repeatedly targeted <em>as Jews</em> — and the least-Zionist among them, the Old Yishuv of Hebron and Safed, died most. This ledger enumerates the <b>85 events</b> behind one finding: the defense predicament was <b>decoupled from Zionist political affiliation</b> at the moment of violence, and <b>welded to it in consequence</b> — <span class="bq">“in 1929 the Arabs created the Yishuv”</span> (Cohen). Companion to the <a href="antijewish-violence-mandate-1920-1947.html">Mandate anti-Jewish-violence ledger</a> and the <a href="hebron.html">Hebron page</a>; full synthesis and source index in the research repository. Click any row for its mechanism, source and verification.
+  </p>
+
+  <section class="prelude">
+    <h2>Decoupled at victim-selection and origin; welded in consequence</h2>
+    <div class="sub">85 events · VULN 30 · DECOUPLE 23 · RESPONSE 12 · WELD 2 · COUNTER 18 · 45 adversarially confirmed</div>
+    <div style="display:flex;flex-wrap:wrap;gap:26px;">
+      <div style="flex:1;min-width:280px;">
+        <table class="xtab"><thead><tr><th>Thesis lane</th><th>n</th><th>%</th></tr></thead><tbody>
+          <tr><td><b style="color:#8a6d3b;">Pre-Zionist vulnerability</b></td><td>30</td><td>35%</td></tr>
+          <tr><td><b style="color:#7a1f14;">Decoupled targeting</b></td><td>23</td><td>27%</td></tr>
+          <tr><td><b style="color:#6b7280;">Coupling counter-current</b></td><td>18</td><td>21%</td></tr>
+          <tr><td><b style="color:#2d5a3a;">Defense as response</b></td><td>12</td><td>14%</td></tr>
+          <tr><td><b style="color:#3a4a6b;">Welded into defense</b></td><td>2</td><td>2%</td></tr>
+        </tbody></table>
+        <p style="font-size:12.5px;margin:8px 0 0;">Verify: 45 confirmed · 1 qualified · 2 unverified · 37 not individually mapped. Counter-current events are retained, not buried.</p>
+      </div>
+      <div style="flex:1;min-width:280px;">
+        <table class="xtab"><thead><tr><th>Period</th><th>events</th><th>note</th></tr></thead><tbody>
+          <tr><td>Pre-1882 (Old Yishuv)</td><td>30</td><td>vulnerability predates Zionism</td></tr>
+          <tr><td>1882–1919</td><td>3</td><td>first defense orgs</td></tr>
+          <tr><td>1920–1929</td><td>27</td><td>the paradigm (Hebron/Safed)</td></tr>
+          <tr><td>1930–1939</td><td>15</td><td>Arab Revolt</td></tr>
+          <tr><td>1940–1948</td><td>10</td><td>recoupled: affiliation near-universal</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    <p style="font-size:13.5px;">
+      <b>The refined thesis.</b> (1) Jewish soft-target vulnerability <b>predates Zionism</b> — via dhimmi physical defenselessness, not a pre-existing categorical animus. (2) In 1920 and 1929 <b>victim-selection ran inverse to affiliation</b>: the anti-Zionist Old Yishuv of Hebron rejected Haganah protection and was the single largest victim group. (3) That decoupling is exactly what <b>welded</b> the communities — the predicament drove non-Zionist Jews into organized defense.
+    </p>
+    <p style="font-size:13.5px;">
+      <b>Guardrail (symmetric rigor).</b> “Qua Jews” is not “decoupled from Zionism”: Cohen’s own thesis is that 1929 fused all Jews to the Zionist project in Arab perception. Victim-decoupling is escalation-conditioned, not a stable structural fact; the mechanism (mob + accessibility) is not the same as intent; and protection tracked the power configuration too (the Druze <em>rescued</em> Safed’s Jews in 1834, <em>attacked</em> them in 1838). The 18 <b>counter-current</b> rows carry these cases.
+    </p>
+  </section>
+
+  <div id="stats-root"></div>
+  <div id="root"></div>
+
+  <section class="notes">
+    <div>
+      <h2>How to read this ledger</h2>
+      <p><b>Five thesis lanes.</b> <span style="color:#8a6d3b;font-weight:600;">Vulnerability</span> (the pre-Zionist soft-target record, 1517–1846 — the baseline, not a categorical animus), <span style="color:#7a1f14;font-weight:600;">decoupling</span> (victims not sorted by Zionism), <span style="color:#2d5a3a;font-weight:600;">response</span> (defense triggered by violence), <span style="color:#3a4a6b;font-weight:600;">welding</span> (non-Zionists absorbed into defense), and <span style="color:#6b7280;font-weight:600;">counter-current</span> (where the distinction held, or the clean reading is too strong). The <b>Victims</b> column marks each event’s targeted population by affiliation; <b>Supports</b> tags the lane; the detail panel carries the mechanism and the adversarial-verification verdict.</p>
+      <p><b>Vulnerability ≠ decoupling.</b> The 30 pre-1882 rows are tagged <span style="color:#8a6d3b;font-weight:600;">Vulnerability</span>, not decoupling — they cannot be “decoupled” from a movement that did not yet exist. They establish that the soft-target predicament (dhimmi defenselessness at every breakdown of order) long preceded Zionism; the categorical “qua-Jews” mob form is a later, 1929 development.</p>
+      <p><b>The reverse arrow is the point.</b> The best-supported finding is not that violence ignored Zionism but that the decoupled predicament <b>produced</b> coupling: pre-1929 Sephardi participation in the Haganah was ~nil (“There were no members of the Sephardi community in the Haganah” — Yekutieli), and the riots drove Mizrahi and Old-Yishuv Jews into organized defense. Decoupled at the moment of violence; welded in the aftermath.</p>
+      <p><b>Symmetric rigor.</b> Counter-current rows are retained, not buried (18 of 85): Arab neighbours who sheltered ~250 Jews at Hebron; the leadership/press distinction between Jews and Zionists (Antonius, Sakakini); the Jewish-side categorical violence (Irgun 1937–38 market bombings; Sadeh’s Haifa incursions). Commission framings (Shaw) are not read as transparent fact.</p>
+    </div>
+    <div>
+      <h2>Evidentiary Legend</h2>
+      <div class="legend">
+        <span class="pill primary">Primary</span><span>Eyewitness / contemporary / archival: Schwarz 1850, Burckhardt 1822, David 1999, Haganah &amp; Israel State Archives testimony, Survey of Palestine.</span>
+        <span class="pill secondary">Secondary</span><span>Scholarly history: H. Cohen <i>Year Zero</i>, Morris <i>Righteous Victims</i>/<i>1948</i>, Schwartz/Halevi, Porath.</span>
+      </div>
+      <p style="margin-top:14px;font-size:12.5px;"><b>Verify.</b> <span style="color:#2d5a3a;font-weight:600;">Confirmed</span> against a verbatim primary (45) · <span style="color:#8a5a2b;font-weight:600;">qualified</span> (1, Tel Hai) · <span style="color:#9a3a2a;font-weight:600;">unverified</span> (2) · — not individually mapped (37).</p>
+      <p style="font-size:12px;color:var(--ink-3);"><b>Sources:</b> Hillel Cohen, <i>Year Zero of the Arab-Israeli Conflict 1929</i> (2015); Benny Morris, <i>Righteous Victims</i> (2001) &amp; <i>1948</i> (2008); Schwartz &amp; Halevi, <i>Ghosts of a Holy War</i>; Joseph Schwarz (1850); Burckhardt (1822); Abraham David (1999); Amnon Cohen (1984); Anita Shapira, <i>Land and Power</i>; <i>A Survey of Palestine</i> (1946). Full synthesis, 85-event log and source index in the research repository.</p>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div><b>The Jewish defense predicament, 1517–1948</b> · decoupled by affiliation, welded by violence · Corpus-connected</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono</div>
+  </footer>
+
+</div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script>
+window.DATA = [];
+fetch("events-defense-decoupling-1517-1948.json").then(r => r.json()).then(data => {
+  window.DATA = data;
+  window.__render();
+}).catch(err => {
+  document.getElementById("root").innerHTML =
+    '<p style="color:#7a2c1e;font-style:italic;padding:40px;">Could not load events-defense-decoupling-1517-1948.json. Serve the directory: python3 -m http.server 8080</p>';
+});
+</script>
+<script type="text/babel">
+const { useState, useMemo, useRef, useCallback } = React;
+
+const CAT_LABEL = { vuln:"Pre-Zionist vulnerability", decouple:"Decoupled targeting", response:"Defense as response", weld:"Welded into defense", counter:"Coupling counter-current" };
+const CAT_SUB = {
+  vuln:"soft-target vulnerability under dhimmi defenselessness — predates Zionism",
+  decouple:"victim-selection ran independent of / inverse to Zionist affiliation",
+  response:"self-defense founded or triggered by violence (British protection-failure a co-trigger)",
+  weld:"non/anti-Zionist Jews absorbed into organized defense after violence",
+  counter:"where the Jews-vs-Zionists distinction held, or the clean reading is too strong",
+};
+const CAT_TAB = { vuln:"Vulnerability", decouple:"Decoupling", response:"Response", weld:"Welding", counter:"Counter" };
+const TAB_KEY = { vuln:"vl", decouple:"dc", response:"rs", weld:"wl", counter:"ct" };
+const CAT_COLOR = { vuln:"#8a6d3b", decouple:"#7a1f14", response:"#2d5a3a", weld:"#3a4a6b", counter:"#6b7280" };
+const CAT_ORDER = ["vuln","decouple","response","weld","counter"];
+const ACTOR_LABEL = { dhimmi:"Dhimmi-order", mob:"Mob", "egyptian-troops":"Egyptian troops", druze:"Druze", bedouin:"Bedouin", fellahin:"Fellahin", "ottoman-official":"Ottoman official", "local-notable":"Local notable", creditor:"Creditor", brigands:"Brigands", pirates:"Corsairs", haganah:"Haganah", irgun:"Irgun", lehi:"Lehi", "british-sns":"British (SNS)", "arab-legion":"Arab Legion", "husseini-network":"Husseini network", police:"Police", qassamite:"Qassamite", british:"British", unspecified:"Unspecified" };
+
+function slug(s){ return String(s||"").split("(")[0].toLowerCase().replace(/[^a-z]/g,"") || "na"; }
+function vslug(v){ return (v==="—"||!v) ? "dash" : String(v).toLowerCase(); }
+
+function StatsBar() {
+  const c = useMemo(() => {
+    const o = { total: window.DATA.length };
+    CAT_ORDER.forEach((k) => o[k] = 0);
+    window.DATA.forEach((r) => o[r.cat] = (o[r.cat] || 0) + 1);
+    return o;
+  }, []);
+  return (
+    <section className="stats">
+      <div className="stat"><div className="n">{c.total}</div><div className="l">Events</div></div>
+      {CAT_ORDER.map((k) => (
+        <div className="stat" key={k}><div className="n" style={{ color: CAT_COLOR[k] }}>{c[k]}</div><div className="l">{CAT_TAB[k]}</div></div>
+      ))}
+    </section>
+  );
+}
+
+function DetailPanel({ event }) {
+  const passages = event.passages || [];
+  const panelClass = "detail-panel cat-" + event.cat;
+  return (
+    <div className={panelClass}>
+      <div className="detail-meta">
+        {event.perp && <div><b>Actor:</b> {event.perp}</div>}
+        {event.victims && event.victims !== "n/a" && <div><b>Victims:</b> {event.victims}</div>}
+        <div><b>Supports:</b> <span className={"sup " + event.cat}>{event.supports}</span>{(event.supportsSecondary||[]).map((x)=> <span key={x} className="sup" style={{marginLeft:6,opacity:0.7}}>{x}</span>)}</div>
+        <div><b>Verify:</b> <span className={"vf " + vslug(event.verify)}>{event.verify}</span>{event.level ? <span> · <b>Level:</b> {event.level}</span> : null}</div>
+        {event.mechanism && <div className="mech"><b>Mechanism:</b> {event.mechanism}</div>}
+        {event.aggregate && <div className="aggnote"><b>Aggregate row:</b> a wave / period summary total, shown for context; its localities appear as their own rows.</div>}
+      </div>
+      {event.quote && (<React.Fragment><div className="detail-section-head">Cited passage</div><div className="passage"><div className="passage-text">“{event.quote}”</div></div></React.Fragment>)}
+      <div className="detail-section-head">Source</div>
+      <div className="passage"><div className="passage-text">{event.src}</div></div>
+      {passages.length === 0 && (<div className="no-passages">No source clip yet — a highlighted-page-image pass is pending; the citation is in Source above.</div>)}
+    </div>
+  );
+}
+
+function App() {
+  const [cat, setCat] = useState("all");
+  const [q, setQ] = useState("");
+  const [loc, setLoc] = useState("all");
+  const [actor, setActor] = useState("all");
+  const [vic, setVic] = useState("all");
+  const [vf, setVf] = useState("all");
+  const [sortKey, setSortKey] = useState("year");
+  const [sortDir, setSortDir] = useState("asc");
+  const [openId, setOpenId] = useState(null);
+  const rowRefs = useRef({});
+
+  const counts = useMemo(() => {
+    const c = { all: window.DATA.length };
+    CAT_ORDER.forEach((k) => c[k] = 0);
+    window.DATA.forEach((r) => c[r.cat] = (c[r.cat] || 0) + 1);
+    return c;
+  }, []);
+  const LOCATIONS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.location))).sort(), []);
+  const ALL_ACTORS = useMemo(()=>Array.from(new Set(window.DATA.flatMap(e=>e.actorType||[]))).sort(), []);
+  const VICTIMS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.victims).filter(v=>v&&v!=="n/a"))).sort(), []);
+
+  const rows = useMemo(() => {
+    let r = window.DATA.slice();
+    if (cat !== "all") r = r.filter((x) => x.cat === cat);
+    if (loc !== "all") r = r.filter((x) => (x.location||"").includes(loc));
+    if (actor !== "all") r = r.filter((x) => (x.actorType || []).includes(actor));
+    if (vic !== "all") r = r.filter((x) => x.victims === vic);
+    if (vf !== "all") r = r.filter((x) => x.verify === vf);
+    if (q.trim()) {
+      const t = q.trim().toLowerCase();
+      r = r.filter((x) =>
+        (x.event||"").toLowerCase().includes(t) || (x.quote||"").toLowerCase().includes(t) ||
+        (x.location||"").toLowerCase().includes(t) || (x.perp||"").toLowerCase().includes(t) ||
+        (x.mechanism||"").toLowerCase().includes(t) ||
+        (x.src||"").toLowerCase().includes(t) || (x.date||"").toLowerCase().includes(t));
+    }
+    r.sort((a, b) => {
+      let av, bv;
+      if (sortKey === "location") { av = a.location; bv = b.location; }
+      else if (sortKey === "cat") { av = CAT_ORDER.indexOf(a.cat); bv = CAT_ORDER.indexOf(b.cat); }
+      else if (sortKey === "src") { av = (a.srcType||"")+a.src; bv = (b.srcType||"")+b.src; }
+      else { av = a.year; bv = b.year; }
+      if (av < bv) return sortDir === "asc" ? -1 : 1;
+      if (av > bv) return sortDir === "asc" ? 1 : -1;
+      return a.year - b.year;
+    });
+    return r;
+  }, [cat, q, loc, actor, vic, vf, sortKey, sortDir]);
+
+  function setSort(k) { if (sortKey === k) setSortDir((d) => d === "asc" ? "desc" : "asc"); else { setSortKey(k); setSortDir("asc"); } }
+  function clearFilters() { setCat("all"); setQ(""); setLoc("all"); setActor("all"); setVic("all"); setVf("all"); }
+  const sortMark = (k) => sortKey === k ? (sortDir === "asc" ? "▲" : "▼") : "·";
+  const showSectionHeads = cat === "all" && sortKey === "cat";
+  const toggleRow = useCallback((id) => setOpenId((p) => p === id ? null : id), []);
+
+  return (
+    <React.Fragment>
+      <div className="controls">
+        <label>Lane</label>
+        <div className="tabs">
+          <button className={"tab " + (cat==="all"?"on":"")} onClick={()=>{setCat("all");setActor("all");}}>All <span className="count">{counts.all}</span></button>
+          {CAT_ORDER.map((k) => (
+            <button key={k} className={"tab " + TAB_KEY[k] + " " + (cat===k?"on":"")} onClick={()=>{setCat(k);setActor("all");}}>{CAT_TAB[k]} <span className="count">{counts[k]||0}</span></button>
+          ))}
+        </div>
+        <input className="search" type="text" placeholder="Search events, sources, mechanisms..." value={q} onChange={(e)=>setQ(e.target.value)} />
+        <select className="select" value={loc} onChange={(e)=>setLoc(e.target.value)}><option value="all">All locations</option>{LOCATIONS.map((l) => <option key={l} value={l}>{l}</option>)}</select>
+        <select className="select" value={actor} onChange={(e)=>setActor(e.target.value)}><option value="all">All actors</option>{ALL_ACTORS.map((k) => <option key={k} value={k}>{ACTOR_LABEL[k]||k}</option>)}</select>
+        <select className="select" value={vic} onChange={(e)=>setVic(e.target.value)}><option value="all">All victims</option>{VICTIMS.map((k) => <option key={k} value={k}>{k}</option>)}</select>
+        <select className="select" value={vf} onChange={(e)=>setVf(e.target.value)}><option value="all">All verify</option><option>CONFIRMED</option><option>QUALIFIED</option><option>UNVERIFIED</option></select>
+        {(cat!=="all"||q||loc!=="all"||actor!=="all"||vic!=="all"||vf!=="all") && <button className="clearbtn" onClick={clearFilters}>Clear &#10005;</button>}
+      </div>
+
+      <div style={{ overflowX: "auto" }}>
+      <table className="t">
+        <thead>
+          <tr>
+            <th onClick={()=>setSort("year")} className={sortKey==="year"?"sorted":""}>Date <span className="sortmark">{sortMark("year")}</span></th>
+            <th onClick={()=>setSort("location")} className={sortKey==="location"?"sorted":""}>Location <span className="sortmark">{sortMark("location")}</span></th>
+            <th>Event</th>
+            <th>Victims</th>
+            <th onClick={()=>setSort("cat")} className={sortKey==="cat"?"sorted":""}>Supports <span className="sortmark">{sortMark("cat")}</span></th>
+            <th onClick={()=>setSort("src")} className={sortKey==="src"?"sorted":""}>Source <span className="sortmark">{sortMark("src")}</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.length === 0 && <tr><td colSpan="6" className="empty">No matching events. Adjust filters to widen.</td></tr>}
+          {rows.map((r, i) => {
+            const id = r.id;
+            const isOpen = openId === id;
+            const showHead = showSectionHeads && (i === 0 || rows[i-1].cat !== r.cat);
+            return (
+              <React.Fragment key={id}>
+                {showHead && (<tr className="sec"><td colSpan="6">{CAT_LABEL[r.cat]} <span className="secsub">{CAT_SUB[r.cat]}</span></td></tr>)}
+                <tr ref={(el) => rowRefs.current[id] = el} className={"clickable " + (isOpen ? "expanded" : "")} onClick={() => toggleRow(id)}>
+                  <td className="col-date">{r.date}<span className={"sub sub-" + r.cat}>{CAT_TAB[r.cat]}</span></td>
+                  <td className="col-loc"><span className="loc-name">{r.location}</span></td>
+                  <td className="col-event">{r.event}{r.quote && <blockquote>{r.quote}</blockquote>}</td>
+                  <td className="col-actor"><span className={"vic " + slug(r.victims)}>{r.victims}</span>{r.perp && <div style={{ marginTop: 4, fontSize: "12px", color: "var(--ink-3)", fontFamily: "var(--serif)", fontStyle: "italic" }}>{r.perp}</div>}</td>
+                  <td className="col-scale"><span className={"sup " + r.cat}>{r.supports}</span><span style={{ display:"block", marginTop:6 }} className={"vf " + vslug(r.verify)}>{r.verify}</span></td>
+                  <td className="col-src"><span className={"pill " + r.srcType}>{r.srcType}</span><br/>{r.src}</td>
+                </tr>
+                {isOpen && (<tr className="detail-row"><td colSpan="6"><DetailPanel event={r} /></td></tr>)}
+              </React.Fragment>
+            );
+          })}
+        </tbody>
+      </table>
+      </div>
+
+      <div style={{ fontFamily: "var(--sans)", fontSize: "11px", color: "var(--ink-3)", marginTop: "14px", letterSpacing: "0.04em" }}>
+        Showing <b style={{ color: "var(--ink)" }}>{rows.length}</b> of {window.DATA.length} events. Click a row for its mechanism, source and verification. Headers sort; filters combine as AND.
+      </div>
+    </React.Fragment>
+  );
+}
+
+window.__render = function () {
+  ReactDOM.createRoot(document.getElementById("stats-root")).render(<StatsBar />);
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+};
+if (window.DATA.length > 0) window.__render();
+</script>
+</body>
+</html>
