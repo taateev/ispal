@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The foreclosed alternatives, 1791–1948 — how the field narrowed to a nation-state</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #f5f1e8;
+    --paper-2: #ede7d8;
+    --paper-3: #e3dcc7;
+    --ink: #1a1714;
+    --ink-2: #3a352d;
+    --ink-3: #6b6358;
+    --ink-4: #9a9080;
+    --rule: #c9bfa6;
+    --rule-soft: #d9d0b8;
+    --accent: #7a2c1e;
+    --accent-2: #5a4a2e;
+    --accent-3: #2d4a3a;
+    --accent-4: #3a4a6b;
+    --accent-5: #8a5a2b;
+    --accent-6: #6b7280;
+    --highlight: #f0e5c5;
+    --serif: "Source Serif 4", "Iowan Old Style", "Palatino", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at top, rgba(0,0,0,0.02), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.04 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: clamp(28px, 4vw, 56px) clamp(18px, 4vw, 48px) 96px; }
+  .mast {
+    border-top: 3px double var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 18px 0 22px;
+    margin-bottom: 36px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 24px;
+  }
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.06;
+    margin: 8px 0 0;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  h1 em { font-style: italic; color: var(--ink-2); font-weight: 500; }
+  .mast .meta {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-3);
+    text-align: right;
+    line-height: 1.6;
+  }
+  .mast .meta b { color: var(--ink); font-weight: 600; }
+  .dek {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    max-width: 880px;
+    margin: 0 0 28px;
+  }
+  /* Controls */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    align-items: center;
+    padding: 12px 14px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    margin-bottom: 28px;
+    font-family: var(--sans);
+  }
+  .controls label {
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .tabs { display: flex; gap: 0; flex-wrap: wrap; }
+  .tab {
+    appearance: none;
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 11.5px;
+    font-weight: 500;
+    padding: 7px 12px;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    border-right-width: 0;
+  }
+  .tab:last-child { border-right-width: 1px; }
+  .tab.on { background: var(--ink); color: var(--paper); }
+  .tab.on.bl{background:#8a6d3b;border-color:#8a6d3b}
+  .tab.on.lv{background:#2d5a3a;border-color:#2d5a3a}
+  .tab.on.rc{background:#5a2c5a;border-color:#5a2c5a}
+  .tab.on.lg{background:#8a5a2b;border-color:#8a5a2b}
+  .tab.on.vi{background:#7a1f14;border-color:#7a1f14}
+  .tab.on.in{background:#3a4a6b;border-color:#3a4a6b}
+  .tab.on.st{background:#2d4a5a;border-color:#2d4a5a}
+  .tab.on.de{background:#6b7280;border-color:#6b7280}
+  .tab .count {
+    font-family: var(--mono);
+    font-size: 10px;
+    margin-left: 6px;
+    opacity: 0.7;
+  }
+  .tab.on .count { opacity: 0.85; }
+  .search {
+    flex: 1 1 200px;
+    min-width: 160px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 7px 10px;
+    font-family: var(--sans);
+    font-size: 12.5px;
+    color: var(--ink);
+    border-radius: 2px;
+  }
+  .search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .select {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 6px 10px;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: var(--ink);
+    border-radius: 2px;
+    max-width: 230px;
+  }
+  .clearbtn {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 6px 0;
+  }
+  /* Stats */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin: 0 0 36px;
+  }
+  .stat {
+    padding: 14px 12px;
+    border-right: 1px solid var(--rule-soft);
+    text-align: center;
+  }
+  .stat:last-child { border-right: 0; }
+  .stat .n {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .stat .l {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-top: 6px;
+    font-weight: 500;
+  }
+  /* Table */
+  table.t {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--paper);
+    font-family: var(--serif);
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+  table.t thead th {
+    text-align: left;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+    padding: 14px 14px 12px;
+    border-bottom: 2px solid var(--ink);
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  table.t thead th .sortmark {
+    font-family: var(--mono);
+    font-size: 10px;
+    margin-left: 4px;
+    color: var(--ink-4);
+  }
+  table.t thead th.sorted .sortmark { color: var(--accent); }
+  table.t tbody td {
+    padding: 14px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  table.t tbody tr:hover { background: var(--highlight); }
+  table.t tbody tr.expanded { background: var(--paper-2); }
+  table.t tbody tr.expanded:hover { background: var(--paper-2); }
+  .col-date {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 14.5px;
+    width: 118px;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .col-date .sub {
+    display: block;
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+  .sub-baseline{color:#8a6d3b}.sub-live{color:#2d5a3a}.sub-reclass{color:#5a2c5a}.sub-legal{color:#8a5a2b}
+  .sub-violence{color:#7a1f14}.sub-institutional{color:#3a4a6b}.sub-strategic{color:#2d4a5a}.sub-demographic{color:#6b7280}
+  .col-loc { width: 96px; font-weight: 500; }
+  .col-loc .loc-name {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .col-event { color: var(--ink-2); line-height: 1.5; }
+  .col-event blockquote {
+    font-style: italic;
+    color: var(--ink-2);
+    border-left: 2px solid var(--accent-2);
+    padding: 2px 0 2px 10px;
+    margin: 6px 0 0;
+    font-size: 13.5px;
+  }
+  .col-actor { width: 160px; font-size: 13px; color: var(--ink-2); font-style: italic; }
+  .col-closes { width: 210px; font-family: var(--sans); font-size: 11px; line-height: 1.5; }
+  .altchip {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 1px 7px;
+    font-family: var(--sans);
+    font-size: 9.5px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ink-2);
+    background: var(--paper);
+    margin: 0 3px 3px 0;
+  }
+  .verb {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 1px 6px;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    margin-top: 3px;
+  }
+  .verb.foreclosed{color:#7a1f14}.verb.severely-weakened{color:#8a5a2b}.verb.accelerated-decline{color:#a3722e}
+  .verb.walked-back{color:#3a4a6b}.verb.diagnosed{color:#5a2c5a}.verb.live{color:#2d5a3a}.verb.opened{color:#2d5a3a}.verb.evidence{color:#6b7280}
+  .reg {
+    display:block;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    color: var(--ink-4);
+    margin-top: 4px;
+  }
+  .col-src {
+    width: 175px;
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+  .col-src .pill {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    padding: 1px 6px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    background: var(--paper);
+  }
+  .col-src .pill.primary { border-color: var(--accent); color: var(--accent); background: #faf0eb; }
+  .col-src .pill.official { border-color: #5a4a2e; color: #5a4a2e; background: #f4efe4; }
+  .col-src .pill.secondary { border-color: var(--rule); color: var(--ink-3); }
+  .col-src .pill.context { border-color: var(--rule-soft); color: var(--ink-4); }
+  .lvl { display:block; font-family: var(--mono); font-size: 9px; letter-spacing: 0.05em; margin-top: 3px; }
+  .lvl.PRIMARY-DIRECT{color:#2d5a3a}.lvl.PRIMARY-IN-SECONDARY{color:#5a4a2e}.lvl.HISTORIAN{color:#3a4a6b}.lvl.STRUCTURAL{color:#6b7280}.lvl.CONTEXT{color:#9a9080}
+  /* Expanded detail row */
+  .detail-row td {
+    padding: 0 !important;
+    border-bottom: 2px solid var(--rule) !important;
+  }
+  .detail-panel {
+    padding: 18px 24px 22px;
+    background: var(--paper-2);
+    border-left: 3px solid var(--accent);
+  }
+  .detail-panel.cat-baseline{border-left-color:#8a6d3b}.detail-panel.cat-live{border-left-color:#2d5a3a}
+  .detail-panel.cat-reclass{border-left-color:#5a2c5a}.detail-panel.cat-legal{border-left-color:#8a5a2b}
+  .detail-panel.cat-violence{border-left-color:#7a1f14}.detail-panel.cat-institutional{border-left-color:#3a4a6b}
+  .detail-panel.cat-strategic{border-left-color:#2d4a5a}.detail-panel.cat-demographic{border-left-color:#6b7280}
+  .detail-section-head {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+  .detail-section-head:not(:first-child) { margin-top: 18px; }
+  .detail-meta{font-size:13.5px;line-height:1.6;margin-bottom:14px;}
+  .detail-meta > div{margin-bottom:3px;}
+  .detail-meta .mech{margin-top:7px;padding:8px 11px;background:#f4efe4;border-left:3px solid #8a6d3b;border-radius:3px;color:#5a4a38;}
+  .detail-meta .caveat{margin-top:7px;padding:8px 11px;background:#eef2f4;border-left:3px solid #6b7280;border-radius:3px;color:#444;font-size:12.5px;}
+  .passage {
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background: var(--paper);
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
+  }
+  .passage-text {
+    font-family: var(--serif);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .invids { font-family: var(--mono); font-size: 10px; color: var(--ink-4); line-height: 1.6; word-break: break-all; }
+  /* Section heads inside table */
+  table.t tbody tr.sec td {
+    background: var(--paper-3);
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 10px 14px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  table.t tbody tr.sec td .secsub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--ink-3);
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  /* Prelude */
+  .prelude { margin:6px 0 26px; padding:20px 22px; background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--accent); border-radius:3px; }
+  .prelude h2 { font-family:var(--serif); font-weight:600; font-size:22px; margin:0 0 4px; color:var(--ink); }
+  .prelude .sub { font-family:var(--sans); font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 12px; }
+  .prelude p { font-family:var(--serif); font-size:14.5px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .prelude p:last-of-type { margin-bottom:4px; }
+  .prelude .xwrap { overflow-x: auto; }
+  .prelude .xtab{width:100%;border-collapse:collapse;font-family:var(--serif);font-size:13px;margin:2px 0 14px;min-width:640px;}
+  .prelude .xtab th{text-align:left;font-family:var(--sans);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);padding:5px 10px 5px 0;border-bottom:1px solid var(--ink);font-weight:600;}
+  .prelude .xtab td{padding:6px 10px 6px 0;border-bottom:1px solid var(--rule-soft);color:var(--ink-2);vertical-align:top;line-height:1.45;}
+  .prelude .xtab td:first-child{font-weight:600;color:var(--ink);white-space:nowrap;}
+  .prelude .xtab td:last-child{font-family:var(--sans);font-size:11px;}
+  .stages { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin:6px 0 14px; }
+  .stagebox { background:var(--paper); border:1px solid var(--rule); border-radius:2px; padding:10px 12px; }
+  .stagebox .sn { font-family:var(--mono); font-size:10px; color:var(--accent); font-weight:600; letter-spacing:.08em; }
+  .stagebox .st { font-family:var(--sans); font-size:12px; font-weight:600; color:var(--ink); margin:3px 0 4px; line-height:1.35; }
+  .stagebox .sd { font-family:var(--serif); font-size:12px; color:var(--ink-3); line-height:1.45; }
+  /* Notes */
+  .notes {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 36px;
+  }
+  .notes h2 {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--ink);
+    font-weight: 700;
+  }
+  .notes p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    margin: 0 0 12px;
+  }
+  .notes .legend {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 12px;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+  .legend .pill {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    padding: 1px 6px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--paper);
+    height: fit-content;
+    white-space: nowrap;
+  }
+  .empty {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--ink-3);
+    font-style: italic;
+  }
+  .colophon {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 3px double var(--ink);
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-3);
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.06em;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .colophon b { color: var(--ink); font-weight: 600; }
+  .clickable { cursor: pointer; }
+  /* ── Mobile ─────────────────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .mast { grid-template-columns: 1fr; gap: 14px; }
+    .mast .meta { text-align: left; }
+    .notes { grid-template-columns: 1fr; gap: 28px; }
+  }
+  @media (max-width: 680px) {
+    .controls { padding: 12px 11px; gap: 10px 12px; }
+    .controls label { width: 100%; margin-bottom: -2px; }
+    .tabs { width: 100%; }
+    .tab { flex: 1 1 auto; text-align: center; padding: 8px 7px; }
+    .search { flex: 1 1 100%; order: 5; }
+    .select { flex: 1 1 calc(50% - 7px); order: 6; max-width: none; }
+    .clearbtn { order: 7; }
+  }
+  @media (max-width: 600px) {
+    table.t { display: block; min-width: 0; font-size: 15px; }
+    table.t thead { display: none; }
+    table.t tbody { display: block; }
+    table.t tbody tr { display: block; }
+    table.t tbody tr.sec td { display: block; margin: 24px 0 13px; }
+    table.t tbody tr.sec:first-child td { margin-top: 4px; }
+    table.t tbody tr:not(.detail-row):not(.sec) {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 14px;
+      align-items: baseline;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--ink);
+      border-radius: 2px;
+      padding: 14px 15px 15px;
+      margin-bottom: 11px;
+    }
+    table.t tbody tr.expanded { background: var(--paper-2); margin-bottom: 0; }
+    table.t tbody tr:not(.detail-row):not(.sec):hover { background: var(--paper); }
+    table.t tbody tr.expanded:hover { background: var(--paper-2); }
+    table.t tbody tr:not(.detail-row):not(.sec) td { display: block; border: none !important; padding: 0; width: auto; }
+    .col-date { grid-column: 1; font-size: 17px; }
+    .col-date .sub { margin-top: 5px; }
+    .col-loc { grid-column: 2; text-align: right; }
+    .col-event { grid-column: 1 / -1; margin-top: 11px; font-size: 15px; }
+    .col-event blockquote { font-size: 14px; }
+    .col-actor, .col-closes, .col-src {
+      grid-column: 1 / -1;
+      margin-top: 12px;
+      padding-top: 11px !important;
+      border-top: 1px solid var(--rule-soft) !important;
+      width: 100%;
+    }
+    .col-actor::before, .col-closes::before, .col-src::before {
+      display: block;
+      font-family: var(--sans);
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-style: normal;
+    }
+    .col-actor::before { content: "Actor"; }
+    .col-closes::before { content: "Bears on"; }
+    .col-src::before { content: "Source"; }
+    .detail-row { display: block; margin-bottom: 11px; }
+    .detail-row td { display: block; }
+    .detail-panel {
+      border: 1px solid var(--rule);
+      border-left-width: 3px;
+      border-radius: 0 0 2px 2px;
+      padding: 16px 16px 18px;
+    }
+    .stages { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">An Event Ledger — Corpus-Connected</div>
+      <h1>The foreclosed alternatives<br/><em>how the field narrowed to a nation-state · 1791–1948</em></h1>
+    </div>
+    <div class="meta">
+      <b>Span</b> 1791 → 1948 · emancipation to the armistices<br/>
+      <b>Thesis</b> statehood as residue, not blueprint<br/>
+      <b>Framework</b> foreclosure-as-method v1.2 · inventory v0.27<br/>
+      <span style="opacity:0.7;">76 events · 8 mechanism lanes · 16 tracked alternatives</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    Israel's 1948 ethno-national state form was neither the inevitable execution of an original blueprint nor the innocent byproduct of self-defense. It was the <b>surviving institutional form after a sequence of alternatives was progressively closed</b> — by law, violence, demographic shock, imperial reversal, category-shift, and collapse of mutual credibility. This ledger dates each closing event, names its mechanism and the alternatives it bore on, and anchors it to the corpus. Foreclosure is not inevitability: the claim is about the narrowing of the field, never about the choices — and crimes — made inside it, which are marked separately on all sides. Companion pages: the <a href="defense-decoupling-1517-1948.html">defense-predicament ledger</a>, the <a href="antijewish-violence-mandate-1920-1947.html">Mandate anti-Jewish-violence ledger</a>, the <a href="nakba-depopulation-ledger-1948.html">1948 depopulation ledger</a>, and the <a href="land-regime-1831-1947.html">land-regime page</a>. Click any row for its mechanism, caveats, and evidence-inventory anchors.
+  </p>
+
+  <section class="prelude">
+    <h2>What counts as foreclosure — and what doesn't</h2>
+    <div class="sub">Four-part test · degrees of closure · six stages · symmetric guardrails</div>
+    <p>
+      A foreclosed alternative must pass four tests: <b>(1)</b> it was a real alternative, not a retrospective fantasy; <b>(2)</b> it had an actual constituency or institution; <b>(3)</b> it had a plausible path to implementation; <b>(4)</b> a concrete mechanism closed it. Degrees are marked, not blurred: <b>hard foreclosure</b> (no actor could revive it by 1947 — the Holocaust-destroyed constituencies), <b>severe narrowing</b> (still pursued but past the survival threshold — dispersed emigration, trusteeship), <b>political marginalization</b> (real advocates, never a majority — Ihud), and <b>retrospective alternative</b> (no enforcement vehicle existed — which is where Arab-majority constitutionalism sits, its genuine democratic force notwithstanding). Causal verbs are graded the same way: <b>foreclosed</b> &gt; <b>severely weakened</b> &gt; <b>accelerated the decline of</b> — the ledger uses the weakest verb the evidence supports.
+    </p>
+    <div class="xwrap">
+    <table class="xtab">
+      <thead><tr><th>Alternative</th><th>Vehicle / constituency</th><th>What closed it</th><th>Degree</th></tr></thead>
+      <tbody>
+        <tr><td>Assimilation (Europe)</td><td>Emancipation politics, Reform Judaism, 1791–1930s</td><td>Racial reclassification 1870s+ (Hess 1862, Marr 1879); Nazi extermination</td><td>Hard (social, then physical)</td></tr>
+        <tr><td>Bundism / Jewish socialism</td><td>Bund (Vilna 1897); Polish-Jewish electoral base into 1939</td><td>Stalinism + Holocaust destruction of the constituency</td><td>Hard</td></tr>
+        <tr><td>Soviet path</td><td>Yevsektsiya 1918; Birobidzhan 1934</td><td>Anti-cosmopolitan campaign 1948–53; JAC executions</td><td>Hard (post-1948, corroborative)</td></tr>
+        <tr><td>Religious quietism (Old Yishuv)</td><td>Four holy cities, halukkah networks, ~24,000 by 1881</td><td>Demographic dilution; 1929 Hebron; 1948 Old City; Holocaust heartlands</td><td>Hard (physical + demographic)</td></tr>
+        <tr><td>Dispersed emigration</td><td>2.5M emigrants 1881–1914; ~73% US-bound, ~6% Palestine</td><td>Johnson-Reed 1924 → Évian 1938 → White Paper 1939 → blockade 1940–48</td><td>Severe narrowing (never total)</td></tr>
+        <tr><td>Refugee rescue via legal doors</td><td>Certificates, quota admissions, British protection</td><td>White Paper cap + naval enforcement during the Holocaust</td><td>Severe</td></tr>
+        <tr><td>Carlsbad coexistence</td><td>XII Zionist Congress 1921 — the movement's official position</td><td>Practice–rhetoric divergence (land/labor); 1929; the Revolt</td><td>Severe / superseded</td></tr>
+        <tr><td>Binationalism (Jewish side)</td><td>Brit Shalom 1925; Ihud 1942; Magnes</td><td>No mass constituency; Hadassah convoy April 1948 forces Magnes out</td><td>Marginalization → credibility</td></tr>
+        <tr><td>Binationalism (Arab side)</td><td>Fawzi al-Husayni's New Palestine 1946; Taha's PAWS</td><td>Assassination — Nov 1946, Sept 1947 — atop the 1936–39 decapitation</td><td>Hard (physical)</td></tr>
+        <tr><td>Joint Arab–Jewish labor</td><td>Haifa General Workers' Club 1925; PLL; railway unions</td><td>Economic-structural decline + the 1929 shock + the Revolt</td><td>Severe → structural</td></tr>
+        <tr><td>Havlagah (defensive minimalism)</td><td>Mainstream Haganah doctrine, 1920s–mid-30s</td><td>1929; 1936–39; Irgun 1931 / Lehi 1940 institutionalized rejection</td><td>Strategic</td></tr>
+        <tr><td>Mandate-mediated compromise</td><td>British administration, 1920–48</td><td>Incompatible promises; White Paper 1939; withdrawal without successor</td><td>Institutional</td></tr>
+        <tr><td>Arab-majority constitutional Palestine</td><td>AHC program; ~70% demographic majority</td><td>Minority-security credibility destroyed 1920–39; no refugee-absorption answer; no enforcement mechanism</td><td>Retrospective → credibility</td></tr>
+        <tr><td>UN trusteeship / federal path</td><td>UNSCOP minority plan 1947; US pivot March 1948</td><td>No member state supplied troops; Mandate expired first</td><td>Severe — died for want of an army</td></tr>
+        <tr><td>Partition without displacement</td><td>GA Res 181 with minority-protection clauses</td><td>Civil war, invasion, and operational choices within the war</td><td>Wartime conversion</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="stages">
+      <div class="stagebox"><div class="sn">STAGE 1</div><div class="st">Diaspora closures</div><div class="sd">Racial antisemitism, closed doors, then the Holocaust end the European alternatives — and channel a majority-refugee population to Palestine.</div></div>
+      <div class="stagebox"><div class="sn">STAGE 2</div><div class="st">The Mandate contradiction</div><div class="sd">Britain legitimates incompatible expectations, zigzags under pressure, and reverses the bargain in 1939.</div></div>
+      <div class="stagebox"><div class="sn">STAGE 3</div><div class="st">Coexistence bases close</div><div class="sd">The 1920→1939 anti-civilian signal chain and economic separation end joint-labor and minority-status credibility.</div></div>
+      <div class="stagebox"><div class="sn">STAGE 4</div><div class="st">Compromise politics decapitated</div><div class="sd">Sacralization makes moderation betrayal; the Husseini faction's terror makes it lethal — on the Arab side first and worst.</div></div>
+      <div class="stagebox"><div class="sn">STAGE 5</div><div class="st">The residue consolidates</div><div class="sd">Transfer discourse, demographic arithmetic, and militarized capacity make statehood the executable surviving form.</div></div>
+      <div class="stagebox"><div class="sn">STAGE 6</div><div class="st">Wartime conversion</div><div class="sd">The 1947–49 war operationalizes the narrowed field — displacement, statehood, non-return. Choices and crimes, on all sides, within constraint.</div></div>
+    </div>
+    <p>
+      <b>Temporal-register guardrail.</b> The pre-war credibility chain (1920 → 1921 → 1929 → 1936–39) ran primarily in one direction — Arab-against-Jew — and closed the <i>pre-war</i> alternatives. Yishuv anti-civilian violence at scale came inside the 1948 war (Deir Yassin, Lydda, Hiram) and closed <i>post-war</i> alternatives: return, and trust in Israeli-majority guarantees — the symmetric entailment the framework owns rather than buries. Both registers use the same mechanism; they sit at different points in the causal chain and are tagged separately below.
+    </p>
+    <p>
+      <b>Symmetric-rigor guardrails.</b> The Zionist transfer current of 1937–39 is in the ledger, with its walk-backs. Yishuv-initiated violence is in the ledger, from Petah Tikva 1886 forward. The Jewish Quarter's protected surrender is in the ledger against the defeat-counterfactual's maximal reading. The Ottoman legal asymmetry beneath the "demographic majority" baseline is in the ledger. Rhetoric and operational conduct are marked as separate axes; disputed translation chains (Azzam, Akhbar al-Yom) are flagged, not laundered.
+    </p>
+  </section>
+
+  <div id="stats-root"></div>
+  <div id="root"></div>
+
+  <section class="notes">
+    <div>
+      <h2>How to read this ledger</h2>
+      <p><b>Eight mechanism lanes.</b> <span style="color:#8a6d3b;font-weight:600;">Baseline</span> (the pre-Zionist subordination record — why every non-sovereign arrangement depended on an external guarantor), <span style="color:#2d5a3a;font-weight:600;">alternative live</span> (a path is articulated or institutionalized — foundings, platforms, official positions), <span style="color:#5a2c5a;font-weight:600;">reclassification</span> (racial recoding, sacralization, traitor-labeling: category-shifts that make compromise identities untenable), <span style="color:#8a5a2b;font-weight:600;">legal</span> (states close paths by law), <span style="color:#7a1f14;font-weight:600;">violence</span> (physical destruction and credibility-by-atrocity), <span style="color:#3a4a6b;font-weight:600;">institutional</span> (mediating structures fail), <span style="color:#2d4a5a;font-weight:600;">strategic</span> (actors choose harder, narrower options), and <span style="color:#6b7280;font-weight:600;">demographic</span> (population movement changes what is politically plausible). Most alternatives were closed by several mechanisms in sequence — the gain is in specifying which operated on which.</p>
+      <p><b>The "bears on" column</b> tags each event with the tracked alternatives it opened, weakened, or closed, plus the graded causal verb. "Evidence" rows document the record without asserting closure — the baseline rows, the counterfactual rows, and the symmetric-rigor rows all use it.</p>
+      <p><b>Constraint ≠ choice ≠ crime.</b> Foreclosure explains the narrowing field; it does not absorb agency. The 1948 operational decisions — Lydda-Ramle, Deir Yassin, Hiram, non-return, the invasion, the AHC's armed rejection — are choices within the narrowed field, and the atrocities among them are crimes, marked as such on every side.</p>
+      <p><b>Commission framings are not transparent fact.</b> Shaw, Hope Simpson, Peel, Woodhead and the Survey are quoted as primary documents of what the British state found and did — their narrative choices are read against the corpus, per project discipline.</p>
+    </div>
+    <div>
+      <h2>Evidentiary legend</h2>
+      <div class="legend">
+        <span class="pill" style="border-color:#2d5a3a;color:#2d5a3a;">PRIMARY-DIRECT</span><span>Original document verified in corpus: Cmd. papers, UN/FRUS documents, Survey of Palestine, Burckhardt, Schwarz, Finn, Mishaqa, Hebrew primaries.</span>
+        <span class="pill" style="border-color:#5a4a2e;color:#5a4a2e;">PRIMARY-IN-SECONDARY</span><span>Primary text quoted verbatim inside a corpus secondary (Weizmann memo via Khalidi; Fawzi platform via Magnes/Goren; Jamal al-Husseini via Cohen).</span>
+        <span class="pill" style="border-color:#3a4a6b;color:#3a4a6b;">HISTORIAN</span><span>Scholarly synthesis: Morris, Lockman, Shapira, Cohen, Alroey, Lavsky, Segev, Porath.</span>
+        <span class="pill" style="border-color:#6b7280;color:#6b7280;">STRUCTURAL / CONTEXT</span><span>Pattern-level or dating rows anchored in the framework document rather than a single passage.</span>
+      </div>
+      <p style="margin-top:14px;font-size:12.5px;">Each expanded row lists its <b>evidence-inventory anchors</b> — stable IDs into <span style="font-family:var(--mono);font-size:11px;">foreclosed-alternatives-thesis.json</span> (v0.27, 88 primary citations), where the full passages, provenance chains, and source-status labels live.</p>
+      <p style="font-size:12px;color:var(--ink-3);"><b>Load-bearing corpus:</b> Shaw Cmd. 3530 · Haycraft Cmd. 1540 · Hope Simpson Cmd. 3686 · Peel Cmd. 5479 · Woodhead Cmd. 5854 · Cmd. 6019 · Survey of Palestine 1946 · UNSCOP A/364 · S/676 · FRUS 1948 V · Morris <i>1948</i> · Cohen <i>Army of Shadows</i> · Lockman · Shapira <i>Land and Power</i> · Alroey ×2 · Lavsky · Segev · Khalidi <i>Haven</i> + <i>All That Remains</i> · Burckhardt 1822 · Schwarz 1850 · Finn 1878 · Mishaqa · Mandel 1976 · Avineri · Elpeleg ed. Full framework: <span style="font-family:var(--mono);font-size:11px;">foreclosure-thesis-combined.md</span> in the research repository.</p>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div><b>The foreclosed alternatives, 1791–1948</b> · an event ledger beneath the foreclosure framework · Corpus-connected</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono</div>
+  </footer>
+
+</div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script>
+window.DATA = [];
+fetch("events-foreclosed-alternatives-1791-1948.json").then(r => r.json()).then(data => {
+  window.DATA = data;
+  window.__render();
+}).catch(err => {
+  document.getElementById("root").innerHTML =
+    '<p style="color:#7a2c1e;font-style:italic;padding:40px;">Could not load events-foreclosed-alternatives-1791-1948.json. Serve the directory: python3 -m http.server 8080</p>';
+});
+</script>
+<script type="text/babel">
+const { useState, useMemo, useRef, useCallback } = React;
+
+const CAT_LABEL = {
+  baseline:"Subordination baseline", live:"Alternative live", reclass:"Reclassification",
+  legal:"Legal closure", violence:"Violence", institutional:"Institutional collapse",
+  strategic:"Strategic narrowing", demographic:"Demographic shift",
+};
+const CAT_SUB = {
+  baseline:"the pre-Zionist regional-governance record — security only via withdrawable external guarantors",
+  live:"an alternative is articulated or institutionalized — foundings, platforms, official positions",
+  reclass:"racial recoding, sacralization, traitor-labeling — category-shifts that make compromise untenable",
+  legal:"states close paths by law and policy",
+  violence:"physical destruction of constituencies + credibility-by-atrocity signals, all actors",
+  institutional:"the mediating structures collapse or fail to enforce",
+  strategic:"actors choose harder, narrower options because softer ones no longer look survivable",
+  demographic:"population movement changes the plausibility of prior political arrangements",
+};
+const CAT_TAB = { baseline:"Baseline", live:"Live", reclass:"Reclassify", legal:"Legal", violence:"Violence", institutional:"Institutional", strategic:"Strategic", demographic:"Demographic" };
+const TAB_KEY = { baseline:"bl", live:"lv", reclass:"rc", legal:"lg", violence:"vi", institutional:"in", strategic:"st", demographic:"de" };
+const CAT_COLOR = { baseline:"#8a6d3b", live:"#2d5a3a", reclass:"#5a2c5a", legal:"#8a5a2b", violence:"#7a1f14", institutional:"#3a4a6b", strategic:"#2d4a5a", demographic:"#6b7280" };
+const CAT_ORDER = ["baseline","live","reclass","legal","violence","institutional","strategic","demographic"];
+
+const ALT_LABEL = {
+  "assimilation":"Assimilation (Europe)",
+  "bundism":"Bundism",
+  "soviet":"Soviet path",
+  "quietism":"Religious quietism (Old Yishuv)",
+  "emigration":"Dispersed emigration",
+  "rescue":"Refugee rescue (legal doors)",
+  "carlsbad":"Carlsbad coexistence",
+  "binational-y":"Binationalism (Jewish-side)",
+  "binational-a":"Binationalism (Arab-side)",
+  "joint-labor":"Joint Arab–Jewish labor",
+  "havlagah":"Havlagah",
+  "mandate":"Mandate-mediated compromise",
+  "arab-majority":"Arab-majority constitutional Palestine",
+  "trusteeship":"UN trusteeship / federal path",
+  "partition-intact":"Partition without displacement",
+  "return":"Post-war return / minority trust",
+};
+const REG_LABEL = { "BASELINE":"baseline", "DIASPORA":"diaspora", "PRE-WAR":"pre-war", "WARTIME":"wartime", "POST-WAR":"wartime → post-war", "CORROBORATIVE":"corroborative" };
+
+function vslug(v){ return String(v||"").toLowerCase().replace(/[^a-z]+/g,"-"); }
+
+function StatsBar() {
+  const c = useMemo(() => {
+    const o = { total: window.DATA.length };
+    CAT_ORDER.forEach((k) => o[k] = 0);
+    window.DATA.forEach((r) => o[r.cat] = (o[r.cat] || 0) + 1);
+    return o;
+  }, []);
+  return (
+    <section className="stats">
+      <div className="stat"><div className="n">{c.total}</div><div className="l">Events</div></div>
+      {CAT_ORDER.map((k) => (
+        <div className="stat" key={k}><div className="n" style={{ color: CAT_COLOR[k] }}>{c[k]}</div><div className="l">{CAT_TAB[k]}</div></div>
+      ))}
+    </section>
+  );
+}
+
+function DetailPanel({ event }) {
+  const panelClass = "detail-panel cat-" + event.cat;
+  return (
+    <div className={panelClass}>
+      <div className="detail-meta">
+        {event.actor && <div><b>Actor:</b> {event.actor}</div>}
+        <div><b>Register:</b> {REG_LABEL[event.register] || event.register}{event.stage ? <span> · <b>Stage:</b> {event.stage} of 6</span> : null}{event.degree ? <span> · <b>Degree:</b> {event.degree}</span> : null}</div>
+        <div><b>Bears on:</b> {(event.alternatives||[]).length ? event.alternatives.map(a => ALT_LABEL[a]||a).join(" · ") : "— (record/context row)"}</div>
+        <div><b>Level:</b> <span className={"lvl " + event.level} style={{display:"inline"}}>{event.level}</span></div>
+        {event.mechanism && <div className="mech"><b>Mechanism:</b> {event.mechanism}</div>}
+        {event.note && <div className="caveat"><b>Caveats & cross-links:</b> {event.note}</div>}
+      </div>
+      <div className="detail-section-head">Source</div>
+      <div className="passage"><div className="passage-text">{event.src}</div></div>
+      {(event.invIds||[]).length > 0 && (
+        <React.Fragment>
+          <div className="detail-section-head">Evidence-inventory anchors</div>
+          <div className="invids">{event.invIds.join(" · ")}</div>
+        </React.Fragment>
+      )}
+    </div>
+  );
+}
+
+function App() {
+  const [cat, setCat] = useState("all");
+  const [q, setQ] = useState("");
+  const [theater, setTheater] = useState("all");
+  const [alt, setAlt] = useState("all");
+  const [reg, setReg] = useState("all");
+  const [lvl, setLvl] = useState("all");
+  const [sortKey, setSortKey] = useState("year");
+  const [sortDir, setSortDir] = useState("asc");
+  const [openId, setOpenId] = useState(null);
+  const rowRefs = useRef({});
+
+  const counts = useMemo(() => {
+    const c = { all: window.DATA.length };
+    CAT_ORDER.forEach((k) => c[k] = 0);
+    window.DATA.forEach((r) => c[r.cat] = (c[r.cat] || 0) + 1);
+    return c;
+  }, []);
+  const THEATERS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.theater))).sort(), []);
+  const ALTS = useMemo(()=>Array.from(new Set(window.DATA.flatMap(e=>e.alternatives||[]))).sort((a,b)=>(ALT_LABEL[a]||a).localeCompare(ALT_LABEL[b]||b)), []);
+  const REGS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.register))), []);
+  const LEVELS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.level))), []);
+
+  const rows = useMemo(() => {
+    let r = window.DATA.slice();
+    if (cat !== "all") r = r.filter((x) => x.cat === cat);
+    if (theater !== "all") r = r.filter((x) => x.theater === theater);
+    if (alt !== "all") r = r.filter((x) => (x.alternatives || []).includes(alt));
+    if (reg !== "all") r = r.filter((x) => x.register === reg);
+    if (lvl !== "all") r = r.filter((x) => x.level === lvl);
+    if (q.trim()) {
+      const t = q.trim().toLowerCase();
+      r = r.filter((x) =>
+        (x.event||"").toLowerCase().includes(t) || (x.quote||"").toLowerCase().includes(t) ||
+        (x.actor||"").toLowerCase().includes(t) || (x.mechanism||"").toLowerCase().includes(t) ||
+        (x.note||"").toLowerCase().includes(t) ||
+        (x.src||"").toLowerCase().includes(t) || (x.date||"").toLowerCase().includes(t) ||
+        (x.alternatives||[]).some(a => (ALT_LABEL[a]||a).toLowerCase().includes(t)));
+    }
+    r.sort((a, b) => {
+      let av, bv;
+      if (sortKey === "theater") { av = a.theater; bv = b.theater; }
+      else if (sortKey === "cat") { av = CAT_ORDER.indexOf(a.cat); bv = CAT_ORDER.indexOf(b.cat); }
+      else { av = a.year; bv = b.year; }
+      if (av < bv) return sortDir === "asc" ? -1 : 1;
+      if (av > bv) return sortDir === "asc" ? 1 : -1;
+      return a.year - b.year;
+    });
+    return r;
+  }, [cat, q, theater, alt, reg, lvl, sortKey, sortDir]);
+
+  function setSort(k) { if (sortKey === k) setSortDir((d) => d === "asc" ? "desc" : "asc"); else { setSortKey(k); setSortDir("asc"); } }
+  function clearFilters() { setCat("all"); setQ(""); setTheater("all"); setAlt("all"); setReg("all"); setLvl("all"); }
+  const sortMark = (k) => sortKey === k ? (sortDir === "asc" ? "▲" : "▼") : "·";
+  const showSectionHeads = cat === "all" && sortKey === "cat";
+  const toggleRow = useCallback((id) => setOpenId((p) => p === id ? null : id), []);
+
+  return (
+    <React.Fragment>
+      <div className="controls">
+        <label>Lane</label>
+        <div className="tabs">
+          <button className={"tab " + (cat==="all"?"on":"")} onClick={()=>setCat("all")}>All <span className="count">{counts.all}</span></button>
+          {CAT_ORDER.map((k) => (
+            <button key={k} className={"tab " + TAB_KEY[k] + " " + (cat===k?"on":"")} onClick={()=>setCat(k)}>{CAT_TAB[k]} <span className="count">{counts[k]||0}</span></button>
+          ))}
+        </div>
+        <input className="search" type="text" placeholder="Search events, actors, mechanisms, sources..." value={q} onChange={(e)=>setQ(e.target.value)} />
+        <select className="select" value={theater} onChange={(e)=>setTheater(e.target.value)}><option value="all">All theaters</option>{THEATERS.map((l) => <option key={l} value={l}>{l}</option>)}</select>
+        <select className="select" value={alt} onChange={(e)=>setAlt(e.target.value)}><option value="all">All alternatives</option>{ALTS.map((k) => <option key={k} value={k}>{ALT_LABEL[k]||k}</option>)}</select>
+        <select className="select" value={reg} onChange={(e)=>setReg(e.target.value)}><option value="all">All registers</option>{REGS.map((k) => <option key={k} value={k}>{REG_LABEL[k]||k}</option>)}</select>
+        <select className="select" value={lvl} onChange={(e)=>setLvl(e.target.value)}><option value="all">All levels</option>{LEVELS.map((k) => <option key={k} value={k}>{k}</option>)}</select>
+        {(cat!=="all"||q||theater!=="all"||alt!=="all"||reg!=="all"||lvl!=="all") && <button className="clearbtn" onClick={clearFilters}>Clear &#10005;</button>}
+      </div>
+
+      <div style={{ overflowX: "auto" }}>
+      <table className="t">
+        <thead>
+          <tr>
+            <th onClick={()=>setSort("year")} className={sortKey==="year"?"sorted":""}>Date <span className="sortmark">{sortMark("year")}</span></th>
+            <th onClick={()=>setSort("theater")} className={sortKey==="theater"?"sorted":""}>Theater <span className="sortmark">{sortMark("theater")}</span></th>
+            <th>Event</th>
+            <th>Actor</th>
+            <th onClick={()=>setSort("cat")} className={sortKey==="cat"?"sorted":""}>Bears on <span className="sortmark">{sortMark("cat")}</span></th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.length === 0 && <tr><td colSpan="6" className="empty">No matching events. Adjust filters to widen.</td></tr>}
+          {rows.map((r, i) => {
+            const id = r.id;
+            const isOpen = openId === id;
+            const showHead = showSectionHeads && (i === 0 || rows[i-1].cat !== r.cat);
+            return (
+              <React.Fragment key={id}>
+                {showHead && (<tr className="sec"><td colSpan="6">{CAT_LABEL[r.cat]} <span className="secsub">{CAT_SUB[r.cat]}</span></td></tr>)}
+                <tr ref={(el) => rowRefs.current[id] = el} className={"clickable " + (isOpen ? "expanded" : "")} onClick={() => toggleRow(id)}>
+                  <td className="col-date">{r.date}<span className={"sub sub-" + r.cat}>{CAT_TAB[r.cat]}</span></td>
+                  <td className="col-loc"><span className="loc-name">{r.theater}</span></td>
+                  <td className="col-event">{r.event}{r.quote && <blockquote>{r.quote}</blockquote>}</td>
+                  <td className="col-actor">{r.actor}</td>
+                  <td className="col-closes">
+                    {(r.alternatives||[]).map((a)=> <span key={a} className="altchip">{ALT_LABEL[a]||a}</span>)}
+                    <span className={"verb " + vslug(r.verb)}>{r.verb}</span>
+                    <span className="reg">{REG_LABEL[r.register]||r.register}</span>
+                  </td>
+                  <td className="col-src"><span className={"pill " + r.srcType}>{r.srcType}</span><br/>{r.src}<span className={"lvl " + r.level}>{r.level}</span></td>
+                </tr>
+                {isOpen && (<tr className="detail-row"><td colSpan="6"><DetailPanel event={r} /></td></tr>)}
+              </React.Fragment>
+            );
+          })}
+        </tbody>
+      </table>
+      </div>
+
+      <div style={{ fontFamily: "var(--sans)", fontSize: "11px", color: "var(--ink-3)", marginTop: "14px", letterSpacing: "0.04em" }}>
+        Showing <b style={{ color: "var(--ink)" }}>{rows.length}</b> of {window.DATA.length} events. Click a row for its mechanism, caveats and evidence-inventory anchors. Headers sort; filters combine as AND.
+      </div>
+    </React.Fragment>
+  );
+}
+
+window.__render = function () {
+  ReactDOM.createRoot(document.getElementById("stats-root")).render(<StatsBar />);
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+};
+if (window.DATA.length > 0) window.__render();
+</script>
+</body>
+</html>
