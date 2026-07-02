@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The host order, 1831–1948 — firmans, codes, capitulations, caps, and collapses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #f5f1e8;
+    --paper-2: #ede7d8;
+    --paper-3: #e3dcc7;
+    --ink: #1a1714;
+    --ink-2: #3a352d;
+    --ink-3: #6b6358;
+    --ink-4: #9a9080;
+    --rule: #c9bfa6;
+    --rule-soft: #d9d0b8;
+    --accent: #7a2c1e;
+    --accent-2: #5a4a2e;
+    --accent-3: #2d4a3a;
+    --accent-4: #3a4a6b;
+    --accent-5: #8a5a2b;
+    --accent-6: #6b7280;
+    --highlight: #f0e5c5;
+    --serif: "Source Serif 4", "Iowan Old Style", "Palatino", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at top, rgba(0,0,0,0.02), transparent 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.04 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: clamp(28px, 4vw, 56px) clamp(18px, 4vw, 48px) 96px; }
+  .mast {
+    border-top: 3px double var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 18px 0 22px;
+    margin-bottom: 36px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 24px;
+  }
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.06;
+    margin: 8px 0 0;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  h1 em { font-style: italic; color: var(--ink-2); font-weight: 500; }
+  .mast .meta {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-3);
+    text-align: right;
+    line-height: 1.6;
+  }
+  .mast .meta b { color: var(--ink); font-weight: 600; }
+  .dek {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    max-width: 880px;
+    margin: 0 0 28px;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    align-items: center;
+    padding: 12px 14px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    margin-bottom: 28px;
+    font-family: var(--sans);
+  }
+  .controls label {
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .tabs { display: flex; gap: 0; flex-wrap: wrap; }
+  .tab {
+    appearance: none;
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 11.5px;
+    font-weight: 500;
+    padding: 7px 12px;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    border-right-width: 0;
+  }
+  .tab:last-child { border-right-width: 1px; }
+  .tab.on { background: var(--ink); color: var(--paper); }
+  .tab.on.st{background:#2d5a3a;border-color:#2d5a3a}
+  .tab.on.tn{background:#8a5a2b;border-color:#8a5a2b}
+  .tab.on.en{background:#7a1f14;border-color:#7a1f14}
+  .tab.on.ef{background:#3a4a6b;border-color:#3a4a6b}
+  .tab.on.sg{background:#6b7280;border-color:#6b7280}
+  .tab.on.sv{background:#5a2c5a;border-color:#5a2c5a}
+  .tab .count {
+    font-family: var(--mono);
+    font-size: 10px;
+    margin-left: 6px;
+    opacity: 0.7;
+  }
+  .tab.on .count { opacity: 0.85; }
+  .search {
+    flex: 1 1 200px;
+    min-width: 160px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 7px 10px;
+    font-family: var(--sans);
+    font-size: 12.5px;
+    color: var(--ink);
+    border-radius: 2px;
+  }
+  .search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .select {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 6px 10px;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    color: var(--ink);
+    border-radius: 2px;
+    max-width: 230px;
+  }
+  .clearbtn {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    cursor: pointer;
+    padding: 6px 0;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin: 0 0 36px;
+  }
+  .stat {
+    padding: 14px 12px;
+    border-right: 1px solid var(--rule-soft);
+    text-align: center;
+  }
+  .stat:last-child { border-right: 0; }
+  .stat .n {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .stat .l {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-top: 6px;
+    font-weight: 500;
+  }
+  table.t {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--paper);
+    font-family: var(--serif);
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+  table.t thead th {
+    text-align: left;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+    padding: 14px 14px 12px;
+    border-bottom: 2px solid var(--ink);
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  table.t thead th .sortmark {
+    font-family: var(--mono);
+    font-size: 10px;
+    margin-left: 4px;
+    color: var(--ink-4);
+  }
+  table.t thead th.sorted .sortmark { color: var(--accent); }
+  table.t tbody td {
+    padding: 14px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  table.t tbody tr:hover { background: var(--highlight); }
+  table.t tbody tr.expanded { background: var(--paper-2); }
+  table.t tbody tr.expanded:hover { background: var(--paper-2); }
+  .col-date {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 14.5px;
+    width: 118px;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .col-date .sub {
+    display: block;
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+  .sub-status{color:#2d5a3a}.sub-tenure{color:#8a5a2b}.sub-entry{color:#7a1f14}
+  .sub-enforcement{color:#3a4a6b}.sub-strength{color:#6b7280}.sub-sovereignty{color:#5a2c5a}
+  .col-loc { width: 104px; font-weight: 500; }
+  .col-loc .loc-name {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .col-loc .phase {
+    display:block;
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--ink-4);
+    margin-top: 3px;
+  }
+  .col-event { color: var(--ink-2); line-height: 1.5; }
+  .col-event blockquote {
+    font-style: italic;
+    color: var(--ink-2);
+    border-left: 2px solid var(--accent-2);
+    padding: 2px 0 2px 10px;
+    margin: 6px 0 0;
+    font-size: 13.5px;
+  }
+  .col-inst { width: 180px; font-size: 12.5px; color: var(--ink-2); font-style: italic; }
+  .col-effect { width: 120px; font-family: var(--sans); font-size: 11px; }
+  .eff {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 1px 6px;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+  }
+  .eff.UNSEALS{color:#2d5a3a}.eff.SEALS{color:#7a1f14}.eff.ENFORCES{color:#3a4a6b}
+  .eff.LEAKS{color:#a3722e}.eff.CAPACITY{color:#6b7280}.eff.TRANSFERS{color:#5a2c5a}
+  .col-src {
+    width: 175px;
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+  .col-src .pill {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    padding: 1px 6px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    background: var(--paper);
+  }
+  .col-src .pill.primary { border-color: var(--accent); color: var(--accent); background: #faf0eb; }
+  .col-src .pill.official { border-color: #5a4a2e; color: #5a4a2e; background: #f4efe4; }
+  .col-src .pill.secondary { border-color: var(--rule); color: var(--ink-3); }
+  .col-src .pill.context { border-color: var(--rule-soft); color: var(--ink-4); }
+  .lvl { display:block; font-family: var(--mono); font-size: 9px; letter-spacing: 0.05em; margin-top: 3px; }
+  .lvl.PRIMARY-DIRECT{color:#2d5a3a}.lvl.PRIMARY-IN-SECONDARY{color:#5a4a2e}.lvl.HISTORIAN{color:#3a4a6b}.lvl.STRUCTURAL{color:#6b7280}.lvl.CONTEXT{color:#9a9080}
+  .detail-row td {
+    padding: 0 !important;
+    border-bottom: 2px solid var(--rule) !important;
+  }
+  .detail-panel {
+    padding: 18px 24px 22px;
+    background: var(--paper-2);
+    border-left: 3px solid var(--accent);
+  }
+  .detail-panel.cat-status{border-left-color:#2d5a3a}.detail-panel.cat-tenure{border-left-color:#8a5a2b}
+  .detail-panel.cat-entry{border-left-color:#7a1f14}.detail-panel.cat-enforcement{border-left-color:#3a4a6b}
+  .detail-panel.cat-strength{border-left-color:#6b7280}.detail-panel.cat-sovereignty{border-left-color:#5a2c5a}
+  .detail-section-head {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+  .detail-section-head:not(:first-child) { margin-top: 18px; }
+  .detail-meta{font-size:13.5px;line-height:1.6;margin-bottom:14px;}
+  .detail-meta > div{margin-bottom:3px;}
+  .detail-meta .caveat{margin-top:7px;padding:8px 11px;background:#eef2f4;border-left:3px solid #6b7280;border-radius:3px;color:#444;font-size:12.5px;}
+  .passage {
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background: var(--paper);
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
+  }
+  .passage-text {
+    font-family: var(--serif);
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  table.t tbody tr.sec td {
+    background: var(--paper-3);
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+    padding: 10px 14px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  table.t tbody tr.sec td .secsub {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--ink-3);
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .prelude { margin:6px 0 26px; padding:20px 22px; background:var(--paper-2); border:1px solid var(--rule); border-left:3px solid var(--accent); border-radius:3px; }
+  .prelude h2 { font-family:var(--serif); font-weight:600; font-size:22px; margin:0 0 4px; color:var(--ink); }
+  .prelude .sub { font-family:var(--sans); font-size:11px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin:0 0 12px; }
+  .prelude p { font-family:var(--serif); font-size:14.5px; line-height:1.6; color:var(--ink-2); margin:0 0 11px; }
+  .prelude p:last-of-type { margin-bottom:4px; }
+  .stack { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin:6px 0 14px; }
+  .stackbox { background:var(--paper); border:1px solid var(--rule); border-radius:2px; padding:10px 12px; }
+  .stackbox .sn { font-family:var(--mono); font-size:10px; font-weight:600; letter-spacing:.08em; }
+  .stackbox.leg1 .sn{color:#2d5a3a} .stackbox.leg2 .sn{color:#8a5a2b} .stackbox.leg3 .sn{color:#8a5a2b} .stackbox.leg4 .sn{color:#3a4a6b}
+  .stackbox .st { font-family:var(--sans); font-size:12px; font-weight:600; color:var(--ink); margin:3px 0 4px; line-height:1.35; }
+  .stackbox .sd { font-family:var(--serif); font-size:12px; color:var(--ink-3); line-height:1.45; }
+  .stages { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; margin:6px 0 14px; }
+  .stagebox { background:var(--paper); border:1px solid var(--rule); border-radius:2px; padding:10px 12px; }
+  .stagebox .sn { font-family:var(--mono); font-size:10px; color:var(--accent); font-weight:600; letter-spacing:.08em; }
+  .stagebox .st { font-family:var(--sans); font-size:12px; font-weight:600; color:var(--ink); margin:3px 0 4px; line-height:1.35; }
+  .stagebox .sd { font-family:var(--serif); font-size:12px; color:var(--ink-3); line-height:1.45; }
+  .notes {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 36px;
+  }
+  .notes h2 {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--ink);
+    font-weight: 700;
+  }
+  .notes p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    margin: 0 0 12px;
+  }
+  .notes .legend {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 12px;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+  .legend .pill {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    padding: 1px 6px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--paper);
+    height: fit-content;
+    white-space: nowrap;
+  }
+  .empty {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--ink-3);
+    font-style: italic;
+  }
+  .colophon {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 3px double var(--ink);
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--ink-3);
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.06em;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .colophon b { color: var(--ink); font-weight: 600; }
+  .clickable { cursor: pointer; }
+  @media (max-width: 900px) {
+    .mast { grid-template-columns: 1fr; gap: 14px; }
+    .mast .meta { text-align: left; }
+    .notes { grid-template-columns: 1fr; gap: 28px; }
+  }
+  @media (max-width: 680px) {
+    .controls { padding: 12px 11px; gap: 10px 12px; }
+    .controls label { width: 100%; margin-bottom: -2px; }
+    .tabs { width: 100%; }
+    .tab { flex: 1 1 auto; text-align: center; padding: 8px 7px; }
+    .search { flex: 1 1 100%; order: 5; }
+    .select { flex: 1 1 calc(50% - 7px); order: 6; max-width: none; }
+    .clearbtn { order: 7; }
+  }
+  @media (max-width: 600px) {
+    table.t { display: block; min-width: 0; font-size: 15px; }
+    table.t thead { display: none; }
+    table.t tbody { display: block; }
+    table.t tbody tr { display: block; }
+    table.t tbody tr.sec td { display: block; margin: 24px 0 13px; }
+    table.t tbody tr.sec:first-child td { margin-top: 4px; }
+    table.t tbody tr:not(.detail-row):not(.sec) {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 14px;
+      align-items: baseline;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--ink);
+      border-radius: 2px;
+      padding: 14px 15px 15px;
+      margin-bottom: 11px;
+    }
+    table.t tbody tr.expanded { background: var(--paper-2); margin-bottom: 0; }
+    table.t tbody tr:not(.detail-row):not(.sec):hover { background: var(--paper); }
+    table.t tbody tr.expanded:hover { background: var(--paper-2); }
+    table.t tbody tr:not(.detail-row):not(.sec) td { display: block; border: none !important; padding: 0; width: auto; }
+    .col-date { grid-column: 1; font-size: 17px; }
+    .col-date .sub { margin-top: 5px; }
+    .col-loc { grid-column: 2; text-align: right; }
+    .col-event { grid-column: 1 / -1; margin-top: 11px; font-size: 15px; }
+    .col-event blockquote { font-size: 14px; }
+    .col-inst, .col-effect, .col-src {
+      grid-column: 1 / -1;
+      margin-top: 12px;
+      padding-top: 11px !important;
+      border-top: 1px solid var(--rule-soft) !important;
+      width: 100%;
+    }
+    .col-inst::before, .col-effect::before, .col-src::before {
+      display: block;
+      font-family: var(--sans);
+      font-size: 9px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-style: normal;
+    }
+    .col-inst::before { content: "Instrument"; }
+    .col-effect::before { content: "Effect"; }
+    .col-src::before { content: "Source"; }
+    .detail-row { display: block; margin-bottom: 11px; }
+    .detail-row td { display: block; }
+    .detail-panel {
+      border: 1px solid var(--rule);
+      border-left-width: 3px;
+      border-radius: 0 0 2px 2px;
+      padding: 16px 16px 18px;
+    }
+    .stack, .stages { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="eyebrow">An Event Ledger — Corpus-Connected</div>
+      <h1>The host order<br/><em>firmans, codes, capitulations, caps, and collapses · 1831–1948</em></h1>
+    </div>
+    <div class="meta">
+      <b>Span</b> 1831 → 1948 · two sovereigns, one ground<br/>
+      <b>Thesis</b> the substrate had to fail — in a particular way<br/>
+      <b>Corpus</b> Ma'oz · Schölch · Stein · Mandel · İnalcık · Eliav · Survey<br/>
+      <span style="opacity:0.7;">34 events · 6 instrument lanes · 4 phases</span>
+    </div>
+  </header>
+
+  <p class="dek">
+    The sovereign-side account: how legally frozen ground came unsealed, who tried to re-seal it, and why neither sovereign could hold its own line. Under the <a href="foreclosed-alternatives-1791-1948.html">foreclosed-alternatives ledger</a> and the conjunction model sits a substrate — the strength of the host order itself — and this ledger dates its instruments: the emancipation edicts, the Land Code, the foreign-ownership law, the consular enforcement layer that made them real, the caps that tried to close what the reforms had opened, and the two imperial collapses that ended the question. Companion to the <a href="land-regime-1831-1947.html">land-regime derivation graph</a> (the same 1858/1867 stack in tenure detail) and the <a href="jewish-migration-1516-1917.html">in-migration ledgers</a>. Click any row for its caveats and cross-links.
+  </p>
+
+  <section class="prelude">
+    <h2>Four instruments had to stack — and the stack cut both ways</h2>
+    <div class="sub">The unsealing triad + its enforcement layer · four phases · the double edge</div>
+    <div class="stack">
+      <div class="stackbox leg1"><div class="sn">STATUS · 1839/1856</div><div class="st">Emancipated persons</div><div class="sd">Gülhane, then the Islahat edict: non-Muslims who can hold and litigate. Alone: emancipated paupers.</div></div>
+      <div class="stackbox leg2"><div class="sn">TENURE · 1858</div><div class="st">Something to buy</div><div class="sd">The Land Code: registered, alienable title — and, perversely, the concentrated absentee estates that made scale possible.</div></div>
+      <div class="stackbox leg3"><div class="sn">CAPITAL · 1867</div><div class="st">The diaspora's money admitted</div><div class="sd">Foreign ownership legalized. Without it, Rothschild's money stays in Paris.</div></div>
+      <div class="stackbox leg4"><div class="sn">ENFORCEMENT · 1838–</div><div class="st">Parchment made real</div><div class="sd">The consular-capitulatory layer: the courts the reforms didn't supply. Withdrawn 1914; buried at Lausanne.</div></div>
+    </div>
+    <p>
+      The before-and-after in one detail: Montefiore's Jaffa orchard (1855) and Mishkenot Sha'ananim (1860) each required a <b>personal imperial firman</b> — a sultan's individual dispensation per transaction. Two decades after the stack completed, purchase was routine registration. And the Land Code did one more thing, perversely decisive: fellahin under-registered to dodge taxes and conscription while notables registered en bloc, so a cash-starved state selling whole village clusters (the Sursuq purchases, 1869/1872 — 230,000 dunums for £20,000) manufactured not only the buyer's legal capacity but the <b>seller class</b> whose consolidated tracts made purchase-at-scale possible.
+    </p>
+    <div class="stages">
+      <div class="stagebox"><div class="sn">PHASE I · 1831–1881</div><div class="st">The weak-empire unsealing</div><div class="sd">Reforms extracted under duress lay the legal preconditions; the consular layer enforces them; the state sells the villages.</div></div>
+      <div class="stagebox"><div class="sn">PHASE II · 1881–1914</div><div class="st">The cap that couldn't hold</div><div class="sd">Concentration feared, entry rationed — and the seal leaks through the same capitulations that gutted everything else.</div></div>
+      <div class="stagebox"><div class="sn">PHASE III · 1914–1923</div><div class="st">The warden's death</div><div class="sd">Enforcement layer abolished, the Yishuv nearly destroyed, the empire partitioned — and the charter granted by its conqueror.</div></div>
+      <div class="stagebox"><div class="sn">PHASE IV · 1920–1948</div><div class="st">The successor's arc</div><div class="sd">Charter → machinery → zigzag → political cap → navy-enforced seal → exhaustion → second withdrawal without successor.</div></div>
+    </div>
+    <p>
+      <b>The double edge.</b> The same enfeeblement that made the reforms unrefusable made the empire fear Jewish concentration: having watched Greece, Serbia, Bulgaria and the Armenian question run the European-patronized-minority template, the Porte read Zionism as the same play — which is why the 1881–82 restrictions targeted concentration in Palestine while welcoming Jews elsewhere in the empire. Band-width tracked imperial confidence: the strong sixteenth-century empire absorbed the entire Sephardi expulsion; the weak nineteenth-century one rationed a few thousand entries at Jaffa. And the weakness that motivated the cap made it unenforceable — the state whose finances passed to the European-run Public Debt Administration in 1881 was attempting demographic sovereignty over one district, and on the order of 60,000 Jews entered against standing policy by 1914.
+    </p>
+    <p>
+      <b>Same instrument, opposite outcome.</b> A sovereign's cap on Jewish entry appears twice in this file. The Hamidian cap fell on ~25,000 subsidized dependents and yielded leakage and compliance. The 1939 cap fell on ~475,000 people with a para-state, a trained officer cadre, and a fleet-improvising Mossad le-Aliyah Bet — and yielded Lehi, the blockade war, and the insurgency that helped exhaust the patron. Suppression before the tracks matured caps the movement; suppression after merely selects its enemies.
+    </p>
+    <p>
+      <b>Guardrails (symmetric rigor).</b> The unsealing was not pro-Jewish design: it was general capitulation-weakness, and Christian protégés and Templer colonists were earlier beneficiaries of the same layer. The consular shield that protected Jews was the same battering ram that gutted Ottoman sovereignty — and much of the majority experienced the equality edicts themselves as a violation of the established order (Rose's 1841 dispatch; Damascus 1860; Lewis on the dhimma). The reforms were extracted under duress, not believed. And the British successor ran the same arc in reverse — charter, zigzag, cap, navy, exhaustion, withdrawal — its 1940 land freeze echoing the 1892 Hamidian one, its 1947 fiscal collapse echoing 1875–81. The removal test closes the file: no Ottoman collapse → the cap holds, the Yishuv plateaus as a capped millet, no charter ever exists — and after 1924, European Jewry faces the 1930s with no exit at all.
+    </p>
+  </section>
+
+  <div id="stats-root"></div>
+  <div id="root"></div>
+
+  <section class="notes">
+    <div>
+      <h2>How to read this ledger</h2>
+      <p><b>Six instrument lanes.</b> <span style="color:#2d5a3a;font-weight:600;">Status</span> (who may hold and litigate), <span style="color:#8a5a2b;font-weight:600;">tenure</span> (what may be owned and sold), <span style="color:#7a1f14;font-weight:600;">entry</span> (who may come), <span style="color:#3a4a6b;font-weight:600;">enforcement</span> (what makes any of it real), <span style="color:#6b7280;font-weight:600;">strength</span> (the sovereign's own capacity), and <span style="color:#5a2c5a;font-weight:600;">sovereignty</span> (who holds the ground at all).</p>
+      <p><b>Effects are graded, not narrated.</b> <span class="eff UNSEALS">unseals</span> opens ground; <span class="eff SEALS">seals</span> closes it; <span class="eff ENFORCES">enforces</span> makes parchment real; <span class="eff LEAKS">leaks</span> marks a sovereign's failure to hold its own line; <span class="eff CAPACITY">capacity</span> indexes the substrate's strength; <span class="eff TRANSFERS">transfers</span> changes the sovereign. The story of the page is that every seal by a weak sovereign leaked, and both sovereigns exited without successors.</p>
+      <p><b>Division of labor.</b> This is the sovereign-side file. What the closures did to the <i>alternatives</i> is the foreclosed-alternatives ledger; what the land instruments did parcel by parcel is the land-regime page; who came through the doors is the in-migration ledger set. Rows cross-reference rather than duplicate.</p>
+      <p><b>Commission and consular documents are not transparent fact.</b> The Survey, the Cmd. papers, and the FO files are quoted as records of what the sovereign found, decreed, and admitted about itself — their framings are read against the corpus, per project discipline.</p>
+    </div>
+    <div>
+      <h2>Evidentiary legend</h2>
+      <div class="legend">
+        <span class="pill" style="border-color:#2d5a3a;color:#2d5a3a;">PRIMARY-DIRECT</span><span>Original document verified in corpus: FO instructions via Eliav, Finn, Herzl's diary, Survey of Palestine, Cmd. papers, Mandate text.</span>
+        <span class="pill" style="border-color:#5a4a2e;color:#5a4a2e;">PRIMARY-IN-SECONDARY</span><span>Primary text quoted inside a corpus secondary: the 1840 firman via Frankel/Montefiore, Rose 1841 via Ma'oz, Oliphant 1883 via Schölch, FO 195 via Mandel.</span>
+        <span class="pill" style="border-color:#3a4a6b;color:#3a4a6b;">HISTORIAN</span><span>Scholarly synthesis: Ma'oz, Schölch, Stein, Mandel, İnalcık &amp; Quataert, Fahmy, Segev.</span>
+        <span class="pill" style="border-color:#6b7280;color:#6b7280;">CONTEXT</span><span>Dating/context rows anchored in the framework or standard record rather than a verified passage.</span>
+      </div>
+      <p style="font-size:12px;color:var(--ink-3);margin-top:14px;"><b>Load-bearing corpus:</b> Ma'oz, <i>Ottoman Reform in Syria and Palestine 1840–1861</i> · Schölch, <i>Palestine in Transformation 1856–1882</i> · Stein, <i>The Land Question in Palestine 1917–1939</i> · Mandel, <i>The Arabs and Zionism Before World War I</i> · İnalcık &amp; Quataert, <i>ESHOE 1300–1914</i> · Eliav, <i>Britain and the Holy Land 1838–1914</i> · Finn, <i>Stirring Times</i> · Frankel, <i>The Damascus Affair</i> · Herzl, <i>Complete Diaries</i> · Hope Simpson Cmd. 3686 · <i>A Survey of Palestine</i> 1946 · Davison · Fahmy · Segev. Framework: the pasha-cascade thread + <span style="font-family:var(--mono);font-size:11px;">foreclosure-thesis-combined.md</span> §9 in the research repository.</p>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div><b>The host order, 1831–1948</b> · the sovereign-side substrate ledger · Corpus-connected</div>
+    <div>Set in Source Serif 4 / Inter / JetBrains Mono</div>
+  </footer>
+
+</div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script>
+window.DATA = [];
+fetch("events-host-order-1831-1948.json").then(r => r.json()).then(data => {
+  window.DATA = data;
+  window.__render();
+}).catch(err => {
+  document.getElementById("root").innerHTML =
+    '<p style="color:#7a2c1e;font-style:italic;padding:40px;">Could not load events-host-order-1831-1948.json. Serve the directory: python3 -m http.server 8080</p>';
+});
+</script>
+<script type="text/babel">
+const { useState, useMemo, useRef, useCallback } = React;
+
+const CAT_LABEL = {
+  status:"Civil status", tenure:"Land tenure", entry:"Entry & immigration",
+  enforcement:"Enforcement layer", strength:"Sovereign capacity", sovereignty:"Sovereignty",
+};
+const CAT_SUB = {
+  status:"who may hold and litigate — the emancipation instruments",
+  tenure:"what may be owned, registered, and sold — and to whom",
+  entry:"who may come — quotas, permits, caps, and their enforcement record",
+  enforcement:"the consular-capitulatory layer (then the navy) that made paper real",
+  strength:"the sovereign's own fiscal and coercive capacity — the substrate itself",
+  sovereignty:"who holds the ground — occupations, conquests, charters, withdrawals",
+};
+const CAT_TAB = { status:"Status", tenure:"Tenure", entry:"Entry", enforcement:"Enforcement", strength:"Strength", sovereignty:"Sovereignty" };
+const TAB_KEY = { status:"st", tenure:"tn", entry:"en", enforcement:"ef", strength:"sg", sovereignty:"sv" };
+const CAT_COLOR = { status:"#2d5a3a", tenure:"#8a5a2b", entry:"#7a1f14", enforcement:"#3a4a6b", strength:"#6b7280", sovereignty:"#5a2c5a" };
+const CAT_ORDER = ["status","tenure","entry","enforcement","strength","sovereignty"];
+const PHASE_LABEL = { 1:"I · unsealing 1831–81", 2:"II · the cap 1881–1914", 3:"III · warden's death 1914–23", 4:"IV · successor 1920–48" };
+
+function StatsBar() {
+  const c = useMemo(() => {
+    const o = { total: window.DATA.length };
+    CAT_ORDER.forEach((k) => o[k] = 0);
+    window.DATA.forEach((r) => o[r.cat] = (o[r.cat] || 0) + 1);
+    return o;
+  }, []);
+  return (
+    <section className="stats">
+      <div className="stat"><div className="n">{c.total}</div><div className="l">Events</div></div>
+      {CAT_ORDER.map((k) => (
+        <div className="stat" key={k}><div className="n" style={{ color: CAT_COLOR[k] }}>{c[k]}</div><div className="l">{CAT_TAB[k]}</div></div>
+      ))}
+    </section>
+  );
+}
+
+function DetailPanel({ event }) {
+  const panelClass = "detail-panel cat-" + event.cat;
+  return (
+    <div className={panelClass}>
+      <div className="detail-meta">
+        <div><b>Sovereign:</b> {event.sovereign} · <b>Phase:</b> {PHASE_LABEL[event.phase]}</div>
+        <div><b>Instrument:</b> {event.instrument}</div>
+        <div><b>Effect:</b> <span className={"eff " + event.effect}>{event.effect}</span> · <b>Level:</b> <span className={"lvl " + event.level} style={{display:"inline"}}>{event.level}</span></div>
+        {event.note && <div className="caveat"><b>Caveats & cross-links:</b> {event.note}</div>}
+      </div>
+      <div className="detail-section-head">Source</div>
+      <div className="passage"><div className="passage-text">{event.src}</div></div>
+    </div>
+  );
+}
+
+function App() {
+  const [cat, setCat] = useState("all");
+  const [q, setQ] = useState("");
+  const [sov, setSov] = useState("all");
+  const [phase, setPhase] = useState("all");
+  const [eff, setEff] = useState("all");
+  const [lvl, setLvl] = useState("all");
+  const [sortKey, setSortKey] = useState("year");
+  const [sortDir, setSortDir] = useState("asc");
+  const [openId, setOpenId] = useState(null);
+  const rowRefs = useRef({});
+
+  const counts = useMemo(() => {
+    const c = { all: window.DATA.length };
+    CAT_ORDER.forEach((k) => c[k] = 0);
+    window.DATA.forEach((r) => c[r.cat] = (c[r.cat] || 0) + 1);
+    return c;
+  }, []);
+  const SOVS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.sovereign))).sort(), []);
+  const PHASES = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.phase))).sort(), []);
+  const EFFS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.effect))), []);
+  const LEVELS = useMemo(()=>Array.from(new Set(window.DATA.map(e=>e.level))), []);
+
+  const rows = useMemo(() => {
+    let r = window.DATA.slice();
+    if (cat !== "all") r = r.filter((x) => x.cat === cat);
+    if (sov !== "all") r = r.filter((x) => x.sovereign === sov);
+    if (phase !== "all") r = r.filter((x) => String(x.phase) === String(phase));
+    if (eff !== "all") r = r.filter((x) => x.effect === eff);
+    if (lvl !== "all") r = r.filter((x) => x.level === lvl);
+    if (q.trim()) {
+      const t = q.trim().toLowerCase();
+      r = r.filter((x) =>
+        (x.event||"").toLowerCase().includes(t) || (x.quote||"").toLowerCase().includes(t) ||
+        (x.instrument||"").toLowerCase().includes(t) || (x.note||"").toLowerCase().includes(t) ||
+        (x.src||"").toLowerCase().includes(t) || (x.date||"").toLowerCase().includes(t) ||
+        (x.sovereign||"").toLowerCase().includes(t));
+    }
+    r.sort((a, b) => {
+      let av, bv;
+      if (sortKey === "sovereign") { av = a.sovereign; bv = b.sovereign; }
+      else if (sortKey === "cat") { av = CAT_ORDER.indexOf(a.cat); bv = CAT_ORDER.indexOf(b.cat); }
+      else { av = a.year; bv = b.year; }
+      if (av < bv) return sortDir === "asc" ? -1 : 1;
+      if (av > bv) return sortDir === "asc" ? 1 : -1;
+      return a.year - b.year;
+    });
+    return r;
+  }, [cat, q, sov, phase, eff, lvl, sortKey, sortDir]);
+
+  function setSort(k) { if (sortKey === k) setSortDir((d) => d === "asc" ? "desc" : "asc"); else { setSortKey(k); setSortDir("asc"); } }
+  function clearFilters() { setCat("all"); setQ(""); setSov("all"); setPhase("all"); setEff("all"); setLvl("all"); }
+  const sortMark = (k) => sortKey === k ? (sortDir === "asc" ? "▲" : "▼") : "·";
+  const showSectionHeads = cat === "all" && sortKey === "cat";
+  const toggleRow = useCallback((id) => setOpenId((p) => p === id ? null : id), []);
+
+  return (
+    <React.Fragment>
+      <div className="controls">
+        <label>Lane</label>
+        <div className="tabs">
+          <button className={"tab " + (cat==="all"?"on":"")} onClick={()=>setCat("all")}>All <span className="count">{counts.all}</span></button>
+          {CAT_ORDER.map((k) => (
+            <button key={k} className={"tab " + TAB_KEY[k] + " " + (cat===k?"on":"")} onClick={()=>setCat(k)}>{CAT_TAB[k]} <span className="count">{counts[k]||0}</span></button>
+          ))}
+        </div>
+        <input className="search" type="text" placeholder="Search events, instruments, sources..." value={q} onChange={(e)=>setQ(e.target.value)} />
+        <select className="select" value={sov} onChange={(e)=>setSov(e.target.value)}><option value="all">All sovereigns</option>{SOVS.map((l) => <option key={l} value={l}>{l}</option>)}</select>
+        <select className="select" value={phase} onChange={(e)=>setPhase(e.target.value)}><option value="all">All phases</option>{PHASES.map((k) => <option key={k} value={k}>{PHASE_LABEL[k]}</option>)}</select>
+        <select className="select" value={eff} onChange={(e)=>setEff(e.target.value)}><option value="all">All effects</option>{EFFS.map((k) => <option key={k} value={k}>{k}</option>)}</select>
+        <select className="select" value={lvl} onChange={(e)=>setLvl(e.target.value)}><option value="all">All levels</option>{LEVELS.map((k) => <option key={k} value={k}>{k}</option>)}</select>
+        {(cat!=="all"||q||sov!=="all"||phase!=="all"||eff!=="all"||lvl!=="all") && <button className="clearbtn" onClick={clearFilters}>Clear &#10005;</button>}
+      </div>
+
+      <div style={{ overflowX: "auto" }}>
+      <table className="t">
+        <thead>
+          <tr>
+            <th onClick={()=>setSort("year")} className={sortKey==="year"?"sorted":""}>Date <span className="sortmark">{sortMark("year")}</span></th>
+            <th onClick={()=>setSort("sovereign")} className={sortKey==="sovereign"?"sorted":""}>Sovereign <span className="sortmark">{sortMark("sovereign")}</span></th>
+            <th>Event</th>
+            <th>Instrument</th>
+            <th onClick={()=>setSort("cat")} className={sortKey==="cat"?"sorted":""}>Effect <span className="sortmark">{sortMark("cat")}</span></th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.length === 0 && <tr><td colSpan="6" className="empty">No matching events. Adjust filters to widen.</td></tr>}
+          {rows.map((r, i) => {
+            const id = r.id;
+            const isOpen = openId === id;
+            const showHead = showSectionHeads && (i === 0 || rows[i-1].cat !== r.cat);
+            return (
+              <React.Fragment key={id}>
+                {showHead && (<tr className="sec"><td colSpan="6">{CAT_LABEL[r.cat]} <span className="secsub">{CAT_SUB[r.cat]}</span></td></tr>)}
+                <tr ref={(el) => rowRefs.current[id] = el} className={"clickable " + (isOpen ? "expanded" : "")} onClick={() => toggleRow(id)}>
+                  <td className="col-date">{r.date}<span className={"sub sub-" + r.cat}>{CAT_TAB[r.cat]}</span></td>
+                  <td className="col-loc"><span className="loc-name">{r.sovereign}</span><span className="phase">{PHASE_LABEL[r.phase]}</span></td>
+                  <td className="col-event">{r.event}{r.quote && <blockquote>{r.quote}</blockquote>}</td>
+                  <td className="col-inst">{r.instrument}</td>
+                  <td className="col-effect"><span className={"eff " + r.effect}>{r.effect}</span></td>
+                  <td className="col-src"><span className={"pill " + r.srcType}>{r.srcType}</span><br/>{r.src}<span className={"lvl " + r.level}>{r.level}</span></td>
+                </tr>
+                {isOpen && (<tr className="detail-row"><td colSpan="6"><DetailPanel event={r} /></td></tr>)}
+              </React.Fragment>
+            );
+          })}
+        </tbody>
+      </table>
+      </div>
+
+      <div style={{ fontFamily: "var(--sans)", fontSize: "11px", color: "var(--ink-3)", marginTop: "14px", letterSpacing: "0.04em" }}>
+        Showing <b style={{ color: "var(--ink)" }}>{rows.length}</b> of {window.DATA.length} events. Click a row for its caveats and cross-links. Headers sort; filters combine as AND.
+      </div>
+    </React.Fragment>
+  );
+}
+
+window.__render = function () {
+  ReactDOM.createRoot(document.getElementById("stats-root")).render(<StatsBar />);
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+};
+if (window.DATA.length > 0) window.__render();
+</script>
+</body>
+</html>
