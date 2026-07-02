@@ -155,6 +155,14 @@
     .colophon { break-inside: avoid; }
     a[href] { color: inherit; text-decoration: none; }
   }
+
+  /* ── Inline source clips: the cited page as printed, highlighted, always visible ─── */
+  tr.srcrow > td { padding: 0; background: var(--paper); border-bottom: 1px solid var(--rule); }
+  .cliprow { display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 10px 18px 18px 46px; align-items: flex-start; }
+  .srcclip { margin: 0; max-width: 430px; flex: 0 1 auto; }
+  .srcclip .srccap { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 5px; line-height: 1.35; }
+  .srcclip img { display: block; width: 100%; border: 1px solid var(--rule); border-radius: 2px; box-shadow: 0 1px 5px rgba(0,0,0,.09); background: #fff; }
+  @media (max-width: 860px) { .cliprow { padding-left: 14px; } .srcclip { max-width: 100%; } }
 </style>
 </head>
 <body>
@@ -264,6 +272,10 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Lewis &amp; Cohen, <i>Population &amp; Revenue in the Towns of Palestine</i> (1978), p. 161</div><img src="src-mig-j1a-safed-p161.png" loading="lazy" alt="Table 6, Quarters and Population of Safed: Jewish households total 233 to 719 to 945, 1525 to 1568" /></figure>
+          <figure class="srcclip"><div class="srccap">Lewis &amp; Cohen (1978), p. 94</div><img src="src-mig-j1b-jerusalem-p94.png" loading="lazy" alt="Table 1, Jerusalem: Jewish quarter (Maslakh) households rising to a peak of 324" /></figure>
+        </div></td></tr>
 
         <!-- 2 — Italian / Maghrebi / Ashkenazi congregations -->
         <tr>
@@ -292,6 +304,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Lewis &amp; Cohen (1978), p. 161</div><img src="src-mig-j2-safed-congs-p161.png" loading="lazy" alt="Safed congregations by household: Maghribis, Apulia, Calabria, Italian, German (Alaman), Hungarian" /></figure>
+        </div></td></tr>
 
         <!-- 3 — Don Joseph Nasi Tiberias -->
         <tr>
@@ -320,6 +335,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">David, <i>To Come to the Land</i> (1999), p. 30</div><img src="src-mig-j3-nasi-p30.png" loading="lazy" alt="Suleiman gave Don Joseph Nasi the ruins of Tiberias and seven villages; perimeter wall rebuilt 1563/64" /></figure>
+        </div></td></tr>
 
         <!-- 4 — Sephardi pilgrimage baseline -->
         <tr>
@@ -348,6 +366,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Barnai, <i>The Jews in Palestine in the 18th Century</i> (1992), p. 172</div><img src="src-mig-j4-baseline-p172.png" loading="lazy" alt="Some 6,000 to 8,000 Jews in Palestine; Jerusalem about 3,000 of 15,000; Hebron, Safed and Tiberias" /></figure>
+        </div></td></tr>
 
         <!-- 5 — Sabbatean migrants -->
         <tr>
@@ -376,6 +397,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Barnai (1992), p. 34</div><img src="src-mig-j5-sabbatean-p34.png" loading="lazy" alt="The failure of Sabbateanism drove the 1700 immigration: Judah Hasid and R. Abraham Rovigo of Modena" /></figure>
+        </div></td></tr>
 
         <tr class="era"><td colspan="7">Religious aliyot &amp; the Old Yishuv <span class="yr">1700 – 1882</span></td></tr>
 
@@ -407,6 +431,9 @@
             <span class="pill testimony">Testimony</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Barnai (1992), p. 21</div><img src="src-mig-j6-hurva-p21.png" loading="lazy" alt="Barnai on the tragedy of 1720, the burning of the synagogue" /></figure>
+        </div></td></tr>
 
         <!-- 7 — Abulafia Tiberias revival -->
         <tr>
@@ -435,6 +462,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Barnai (1992), p. 153</div><img src="src-mig-j7-abulafia-p153.png" loading="lazy" alt="R. Abulafia received with great honor by Dahir al-Umar; renewal of the settlement of Tiberias" /></figure>
+        </div></td></tr>
 
         <!-- 8 — Ibn Attar -->
         <tr>
@@ -463,6 +493,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Barnai (1992), p. 36</div><img src="src-mig-j8-ibnattar-p36.png" loading="lazy" alt="In 1741 R. Haim ben Attar immigrated from Morocco with dozens of students; founded the Knesseth Israel yeshiva" /></figure>
+        </div></td></tr>
 
         <!-- 9 — Hasidic aliyot -->
         <tr>
@@ -491,6 +524,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Barnai (1992), p. 38</div><img src="src-mig-j9-hasidic-p38.png" loading="lazy" alt="The 1777 Hasidic immigration was relatively large: several hundred, led by three Hasidic leaders of White Russia" /></figure>
+        </div></td></tr>
 
         <!-- 10 — Perushim -->
         <tr>
@@ -503,7 +539,7 @@
           </td>
           <td class="col-scale">
             <span class="big">~511</span>
-            <span class="scale-note">by 1815; disciples of the Vilna Gaon</span>
+            <span class="scale-note">by 1813; disciples of the Vilna Gaon</span>
           </td>
           <td class="col-status">
             <span class="stat-lead">Foreign-subject protégés</span>
@@ -518,6 +554,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Morgenstern, <i>Hastening Redemption</i> (2006), p. 55</div><img src="src-mig-j10-perushim-p55.png" loading="lazy" alt="The community of Perushim in the Land of Israel; by 1813 they numbered 511 souls" /></figure>
+        </div></td></tr>
 
         <!-- 11 — Habad Hebron -->
         <tr>
@@ -544,6 +583,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Morgenstern, <i>Hastening Redemption</i> (2006), p. 244</div><img src="src-mig-j11-habad-hebron-p244.png" loading="lazy" alt="An 1834 letter to the Habad Hasidim in Hebron, who had requested support for building a synagogue" /></figure>
+        </div></td></tr>
 
         <!-- 12 — Old Yishuv protected immigration -->
         <tr>
@@ -575,6 +617,10 @@
             <span class="pill census">Census</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Schölch, <i>Palestine in Transformation 1856–1882</i> (1993), p. 26</div><img src="src-mig-j12a-oldyishuv-p26.png" loading="lazy" alt="By 1882 the number of Jews in Palestine had grown to about 24,000" /></figure>
+          <figure class="srcclip"><div class="srccap">Eliav, <i>Britain and the Holy Land 1838–1914</i> (1997), p. 23</div><img src="src-mig-j12b-consular-p23.png" loading="lazy" alt="19 September 1838 Palmerston directive: protection of the Jews in Palestine as a duty of the Vice-Consul" /></figure>
+        </div></td></tr>
 
         <tr class="era"><td colspan="7">Late Ottoman / the first Aliyot <span class="yr">1881 – 1917</span></td></tr>
 
@@ -606,6 +652,10 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Shafir, <i>Land, Labor &amp; the Origins</i> (1996), p. 258</div><img src="src-mig-j13a-firstaliyah-p258.png" loading="lazy" alt="First Aliyah: an estimated 25,000, in part Zionist, immigrants who arrived 1882 to 1903" /></figure>
+          <figure class="srcclip"><div class="srccap">Alroey, <i>An Unpromising Land</i> (2014), p. 5</div><img src="src-mig-j13b-moshavot-p5.png" loading="lazy" alt="The first aliyah 1882 to 1903, colonists who founded the moshavot" /></figure>
+        </div></td></tr>
 
         <!-- 14 — Yemenite -->
         <tr>
@@ -614,12 +664,12 @@
           <td class="col-event">
             <div class="cohort-name">Yemenite Jews</div>
             <p>Yemenite Jews began arriving from 1881, drawn by religious and messianic expectation rather
-            than political Zionism, settling in Jerusalem, Hebron and the Galilee at an average of about
-            <span class="fig">184</span> a year before the First World War.</p>
+            than political Zionism, settling in Jerusalem, Hebron and the Galilee; by 1914 some
+            <span class="fig">5,000</span> had arrived — about 8 per cent of Yemen's Jews.</p>
           </td>
           <td class="col-scale">
-            <span class="big">~184 / yr</span>
-            <span class="scale-note">pre-WWII average; religious-messianic</span>
+            <span class="big">≈5,000</span>
+            <span class="scale-note">cumulative by 1914 (~8% of Yemen's Jews); religious-messianic</span>
           </td>
           <td class="col-status">
             <span class="stat-lead">Ottoman subjects</span>
@@ -634,6 +684,10 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Klorman, <i>Traditional Society in Transition</i> (2014), p. 19</div><img src="src-mig-j14-yemenite-p19.png" loading="lazy" alt="Yemenite migration that began in 1881, seen as preparing the way for the messiah" /></figure>
+          <figure class="srcclip"><div class="srccap">Klorman (2014), p. 90</div><img src="src-mig-j14b-yemenite-figure-p90.png" loading="lazy" alt="By 1914 about 5,000 Yemeni Jews, roughly 8 percent of Yemen's Jews, had made their way to Palestine, 7.9 percent of all Jews there" /></figure>
+        </div></td></tr>
 
         <!-- 15 — Bukharian / Persian / Iraqi -->
         <tr>
@@ -662,6 +716,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Cooper, <i>Bukharan Jews and the Dynamics of Global Judaism</i> (2012), p. 133</div><img src="src-mig-j15-bukharan-p133.png" loading="lazy" alt="In 1891 the Jews from Central Asia founded the society to build houses for the people of Bukhara, Samarkand and Tashkent" /></figure>
+        </div></td></tr>
 
         <!-- 16 — Second Aliyah -->
         <tr>
@@ -690,6 +747,11 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Alroey (2014), p. 20</div><img src="src-mig-j16a-secondaliyah-p20.png" loading="lazy" alt="Second Aliyah 35,000 to 40,000, overwhelmingly Eastern European, after Kishinev 1903; pioneers only 1,500 to 2,500" /></figure>
+          <figure class="srcclip"><div class="srccap">Alroey (2014), p. 211</div><img src="src-mig-j16b-yerida-p211.png" loading="lazy" alt="Departure reached about 80 percent; only 20 to 25 percent succeeded in settling" /></figure>
+          <figure class="srcclip"><div class="srccap">Shafir (1996), p. 75</div><img src="src-mig-j16c-yerida-shafir-p75.png" loading="lazy" alt="Second Aliya had the largest emigration; only 5,965 immigrants remained" /></figure>
+        </div></td></tr>
 
       </tbody>
     </table>

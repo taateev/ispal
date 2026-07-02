@@ -187,6 +187,14 @@
     .colophon { break-inside: avoid; }
     a[href] { color: inherit; text-decoration: none; }
   }
+
+  /* ── Inline source clips: the cited page as printed, highlighted, always visible ─── */
+  tr.srcrow > td { padding: 0; background: var(--paper); border-bottom: 1px solid var(--rule); }
+  .cliprow { display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 10px 18px 18px 46px; align-items: flex-start; }
+  .srcclip { margin: 0; max-width: 430px; flex: 0 1 auto; }
+  .srcclip .srccap { font-family: var(--sans); font-size: 10px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 5px; line-height: 1.35; }
+  .srcclip img { display: block; width: 100%; border: 1px solid var(--rule); border-radius: 2px; box-shadow: 0 1px 5px rgba(0,0,0,.09); background: #fff; }
+  @media (max-width: 860px) { .cliprow { padding-left: 14px; } .srcclip { max-width: 100%; } }
 </style>
 </head>
 <body>
@@ -297,6 +305,9 @@
             <span class="pill sijill">Sijill</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Lewis &amp; Cohen, <i>Population &amp; Revenue in the Towns of Palestine</i> (1978), p. 82</div><img src="src-mig-m1-maghariba-p82.png" loading="lazy" alt="The community of Maghribis in Jerusalem, 31 households; Saladin constituted the quarter they inhabit as a waqf" /></figure>
+        </div></td></tr>
 
         <!-- 2 — Mamluk-era ethnic quarters -->
         <tr>
@@ -325,6 +336,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Lewis &amp; Cohen (1978), p. 34</div><img src="src-mig-m2-quarters-p34.png" loading="lazy" alt="The Kurdish, Turcoman and Bashkir quarters, a relic of early Mamluk policy; no evidence they kept their ethnic character" /></figure>
+        </div></td></tr>
 
         <!-- 3 — Jundi veterans -->
         <tr>
@@ -352,6 +366,9 @@
             <span class="pill defter">Defter</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Lewis &amp; Cohen (1978), p. 34</div><img src="src-mig-m3-jundi-p34.png" loading="lazy" alt="The jundis still very substantially represented in Gaza eighty years after the Mamluk regime was uprooted" /></figure>
+        </div></td></tr>
 
         <!-- 4 — Tarabay -->
         <tr>
@@ -380,6 +397,9 @@
             <span class="pill sijill">Sijill</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Ze'evi, <i>An Ottoman Century</i> (1996), p. 42</div><img src="src-mig-m4-tarabay-p42.png" loading="lazy" alt="The Turabay clan, appointed governor of Lajjun in 1559: bedouin sedentarizing into a governing dynasty" /></figure>
+        </div></td></tr>
 
         <!-- 5 — Farrukh dynasty (thin) -->
         <tr class="thin">
@@ -407,6 +427,9 @@
             <span class="pill sijill">Sijill</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Ze'evi (1996), p. 43</div><img src="src-mig-m5-farrukh-p43.png" loading="lazy" alt="The Circassian amir Farrukh began his career as a military slave; the Farrukh dynasty ruled Jerusalem" /></figure>
+        </div></td></tr>
 
         <!-- 6 — Druze under Fakhr al-Din -->
         <tr>
@@ -435,6 +458,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Firro, <i>A History of the Druzes</i> (1992), p. 42</div><img src="src-mig-m6-druze-firro-p42.png" loading="lazy" alt="Under Fakhr al-Din (1590-1633), with Safad in his imara, immigrants from Lebanon came to settle in Palestine; the Hamdan family in the Galilee and on the Carmel" /></figure>
+        </div></td></tr>
 
         <tr class="era"><td colspan="7">Late Ottoman-classical &amp; Pasha-cascade <span class="yr">1700 – 1882</span></td></tr>
 
@@ -466,6 +492,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Seetzen, <i>Reisen durch Syrien, Palästina…</i> (1854), p. 47</div><img src="src-mig-m7-anaza-p47.png" loading="lazy" alt="Der grösste Stamm ist Arab Anaséh: the Anaza, the largest tribe, grazing in Hauran (Seetzen, 1805)" /></figure>
+        </div></td></tr>
 
         <!-- 8 — Zaydani -->
         <tr>
@@ -494,6 +523,9 @@
             <span class="pill consular">Consular</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">A. Cohen, <i>Palestine in the 18th Century</i> (1973), p. 132</div><img src="src-mig-m8-zahir-p132.png" loading="lazy" alt="Zahir al-Umar's efforts to fortify and populate Acre; the commercial development of Acre" /></figure>
+        </div></td></tr>
 
         <!-- 9 — Jezzar -->
         <tr>
@@ -522,6 +554,9 @@
             <span class="pill consular">Consular</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">A. Cohen (1973), p. 284</div><img src="src-mig-m9-jazzar-p284.png" loading="lazy" alt="Al-Jazzar's unit of Bosnian fusiliers; Jazzar himself was of Bosnian origin" /></figure>
+        </div></td></tr>
 
         <!-- 10 — Mercenary streams -->
         <tr>
@@ -550,6 +585,9 @@
             <span class="pill consular">Consular</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">A. Cohen (1973), p. 284</div><img src="src-mig-m10-mercenaries-p284.png" loading="lazy" alt="Levend horsemen and others, who served mainly as garrison troops in various towns" /></figure>
+        </div></td></tr>
 
         <!-- 11 — Egyptians under Ibrahim Pasha -->
         <tr>
@@ -580,6 +618,9 @@
             <span class="pill archival">Archival</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Grossman, <i>Rural Arab Demography</i> (2011), p. 52</div><img src="src-mig-m11-egyptian-p52.png" loading="lazy" alt="At least nineteen villages with families of Egyptian origin; some five hundred or more; new saknat" /></figure>
+        </div></td></tr>
 
         <!-- 12 — Maghribi / Abd al-Qadir -->
         <tr>
@@ -608,6 +649,9 @@
             <span class="pill sijill">Sijill</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Schölch, <i>Palestine in Transformation 1856–1882</i> (1993), p. 156</div><img src="src-mig-m12-algerian-p156.png" loading="lazy" alt="Algerians who had followed Abd al-Qadir settled at the end of the 1850s near Tiberias and Safad" /></figure>
+        </div></td></tr>
 
         <tr class="era"><td colspan="7">Late Ottoman / early Mandate <span class="yr">1860 – 1917</span></td></tr>
 
@@ -637,6 +681,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Grossman (2011), p. 143</div><img src="src-mig-m13-druze-p143.png" loading="lazy" alt="The Carmel Druze trace their settlement to refugees who escaped Muslim persecution in Lebanon" /></figure>
+        </div></td></tr>
 
         <!-- 14 — Circassians -->
         <tr>
@@ -666,6 +713,9 @@
             <span class="pill archival">Archival</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Hamed-Troyansky, <i>Empire of Refugees</i> (2024), p. 122</div><img src="src-mig-m14-circassian-p122.png" loading="lazy" alt="Circassians established the villages of Kafr Kama and Rehaniye in Palestine" /></figure>
+        </div></td></tr>
 
         <!-- 15 — Chechens -->
         <tr>
@@ -694,6 +744,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Hamed-Troyansky (2024), p. 122</div><img src="src-mig-m15-chechen-p122.png" loading="lazy" alt="Circassian and Chechen villages around Amman in Transjordan and Quneitra in the Golan" /></figure>
+        </div></td></tr>
 
         <!-- 16 — Bosnians -->
         <tr>
@@ -723,6 +776,9 @@
             <span class="pill archival">Archival</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Hamed-Troyansky (2024), p. 65</div><img src="src-mig-m16-bosnian-p65.png" loading="lazy" alt="Up to 150,000 Bosnian Muslims fled Habsburg occupation to the Ottoman Empire" /></figure>
+        </div></td></tr>
 
         <!-- 17 — Turkmen & Kurds (weak) -->
         <tr class="thin">
@@ -750,6 +806,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Grossman (2011), p. 63</div><img src="src-mig-m17-turkmen-p63.png" loading="lazy" alt="Nomads mainly Turkmen and Kurds; using Ruha; a number of villages in Samaria" /></figure>
+        </div></td></tr>
 
         <!-- 18 — Indians (weak) -->
         <tr class="thin">
@@ -777,6 +836,9 @@
             <span class="pill secondary">Secondary</span>
           </td>
         </tr>
+        <tr class="srcrow"><td colspan="7"><div class="cliprow">
+          <figure class="srcclip"><div class="srccap">Büssow, <i>Hamidian Palestine</i> (2011), p. 441</div><img src="src-mig-m18-indian-p441.png" loading="lazy" alt="Foreign Muslim pilgrims who stayed in Palestine — Maghrebis, Sudanese, Indians and Afghans — also settled in the District" /></figure>
+        </div></td></tr>
 
       </tbody>
     </table>
